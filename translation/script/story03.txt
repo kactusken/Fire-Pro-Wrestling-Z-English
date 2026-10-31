@@ -1,0 +1,9363 @@
+# Story mode, scenario 3 (STORY.OAH SCENA\STORY03.STO). One block per page; ids are
+# story.message.page. Only the text lines are here: the build keeps each page's speaker and codes,
+# puts in the English, word-wraps it and encodes it for the story window.
+# Room: 20 cells a line, 4 lines a page counting the speaker line (so 3 text lines with a speaker,
+# 4 without). English is drawn two letters a cell: about 40 characters a line, 120 a page with a
+# speaker. %ssN is wrestler N's short name (roster), drawn one cell a letter. Write plain lines;
+# your line breaks are kept where they fit, and long lines are wrapped.
+# Codes: %ssN name (keep), %c0 / %c1 colour (keep where they are), %sw/%st/%sk match results.
+# Speaker labels that are words (記者 Reporter) are in translation/text/speakers.csv.
+# Choices and chapter titles (ids C...) are one line each: 40 characters at most.
+
+@ 3.004.00
+# speaker: 旗本 (%ss88)
+JP 　%ss99からＩＧＰのベルトを
+JP 　奪い返した俺は、
+EN After taking the <IGP> belt back
+EN from %ss99...
+
+@ 3.004.01
+# speaker: 旗本 (%ss88)
+JP 　その後、２度の防衛戦に勝利し、
+JP 　ＩＧＰ王者の地位を
+JP 　不動のものとしていた。
+EN I won two title defenses and made
+EN my place as <IGP> champion rock solid.
+
+@ 3.004.02
+# speaker: 旗本 (%ss88)
+JP 　だが、%ss99との一戦は
+JP 　その後、意外なところから
+JP 　強敵を出現させることになる・・・！
+EN But that fight with %ss99 would bring a tough new rival out of a place nobody expected...!
+
+@ 3.005.00
+# speaker: 記者
+JP 「%ss33さん。
+JP 　フリー宣言の後の、
+JP 　突然のＶＪＰ参戦表明ですが、」
+EN "%ss33, right after going freelance, you've suddenly announced you'll fight in <VJP>..."
+
+@ 3.005.01
+# speaker: 記者
+JP 「古巣のＶＪＰで闘うことには、
+JP 　何か特別な理由でも
+JP 　おありになるんですか？」
+EN "Is there any special reason for
+EN fighting in your old home, <VJP>?"
+
+@ 3.006.00
+# speaker: 山本 (%ss33)
+JP 「特別と言うほどでも
+JP 　ないけどね。」
+EN "Nothing that special, really."
+
+@ 3.006.01
+# speaker: 山本 (%ss33)
+JP 「この前の、%ss99さんと
+JP 　%ss88の試合を見て、」
+EN "I saw that recent match between
+EN %ss99 and %ss88..."
+
+@ 3.006.02
+# speaker: 山本 (%ss33)
+JP 「純粋に%ss88と
+JP 　やってみたいと思ったんだ。」
+EN "And I just plain wanted to
+EN fight %ss88."
+
+@ 3.006.03
+# speaker: 山本 (%ss33)
+JP 「それと、フリーでやって行くには
+JP 　やっぱりタイトルが欲しいからね。」
+EN "Plus, if I'm going freelance,
+EN I really want a title."
+
+@ 3.006.04
+# speaker: 山本 (%ss33)
+JP 「%ss88を破って、
+JP 　ＩＧＰのベルトは俺がもらうよ。」
+EN "I'll beat %ss88 and take
+EN the <IGP> belt."
+
+@ 3.007.00
+# speaker: 旗本 (%ss88)
+JP 　やらねえよ。
+JP 　ベルトどころか、
+JP 　そもそも試合をな。
+EN Like hell I'll give it to you.
+EN Forget the belt, I won't even
+EN give you the match.
+
+@ 3.007.01
+# speaker: 旗本 (%ss88)
+JP 　だいたいな、
+EN Listen, pal...
+
+@ 3.007.02
+# speaker: 旗本 (%ss88)
+JP 　ＩＧＰのベルトは、
+JP 　よそ者が簡単に手が出せるほど
+JP 　軽いものじゃない・・・！！
+EN The <IGP> belt isn't some cheap
+EN thing an outsider can just
+EN waltz in and grab...!!
+
+@ 3.008.00
+# speaker: 旗本 (%ss88)
+JP 　だが、俺の気持ちとは裏腹に、
+JP 　ＶＪＰの首脳陣は
+JP 　%ss33との防衛戦を正式に決定し、
+EN But in spite of how I felt, the <VJP>
+EN brass officially booked my title
+EN defense against %ss33...
+
+@ 3.008.01
+# speaker: 旗本 (%ss88)
+JP 　俺は、またしても
+JP 　格闘色の強いレスラーと
+JP 　闘うことになった。
+EN And once again, I was set to face
+EN a wrestler with a hard fighting style.
+
+@ 3.009.00
+# speaker: カイザー (%ss15)
+JP 「気をつけろよ、%ss88。」
+EN "Watch yourself, %ss88."
+
+@ 3.009.01
+# speaker: カイザー (%ss15)
+JP 「%ss33は
+JP 　レスラーというより
+JP 　シューターだからな。」
+EN "%ss33 is more of a shooter
+EN than a wrestler."
+
+@ 3.009.02
+# speaker: カイザー (%ss15)
+JP 「気持ち的には、
+JP 　異種格闘技戦を闘うつもりで
+JP 　のぞんだ方がいい。」
+EN "Go in like it's a mixed-style fight."
+
+@ 3.009.03
+# speaker: 旗本 (%ss88)
+JP 「キックの撃ち合いになったら
+JP 　俺の方が強力だろ。」
+EN "If it turns into a kicking
+EN contest, I'm the stronger one."
+
+@ 3.009.04
+# speaker: 旗本 (%ss88)
+JP 「俺がチャンピオンでいる限り、
+JP 　ベルトは絶対外には出さない。」
+EN "As long as I'm champion, that belt
+EN never leaves this promotion."
+
+@ 3.009.05
+# speaker: 旗本 (%ss88)
+JP 「ＩＧＰのベルトが
+JP 　どれほど重いものなのか、
+JP 　身をもって教えてやるぜ・・・！！」
+EN "I'll teach him firsthand just how
+EN heavy the <IGP> belt is...!!"
+
+@ 3.010.00
+# speaker: 記者
+JP 「%ss33さん！！
+JP 　いよいよ%ss88選手に
+JP 　挑戦ですが、」
+EN "%ss33!! You finally get your
+EN shot at %ss88..."
+
+@ 3.010.01
+# speaker: 記者
+JP 「何か特別な作戦など
+JP 　立てられているのでしょうか！？」
+EN "Do you have any special
+EN strategy planned?!"
+
+@ 3.011.00
+# speaker: 山本 (%ss33)
+JP 「作戦なんて無いよ。
+JP 　そんなもの多分通用しない。
+JP 　ぶっつけ本番だね。」
+EN "No strategy. It probably wouldn't
+EN work anyway. I'll just wing it."
+
+@ 3.011.01
+# speaker: 山本 (%ss33)
+JP 「まあ、勝算はあるよ。
+JP 　体調は悪くないから。」
+EN "Well, I think I can win.
+EN I'm in good shape."
+
+@ 3.011.02
+# speaker: 山本 (%ss33)
+JP 「キックの撃ち合いになったら
+JP 　こっちに分があると思うし。」
+EN "If it turns into a kicking contest,
+EN I think I've got the edge."
+
+@ 3.011.03
+# speaker: 山本 (%ss33)
+JP 「あとは、力で負けないように
+JP 　するだけだな・・・！」
+EN "After that, I just have to not lose
+EN on power...!"
+
+@ 3.012.00
+# speaker: 旗本 (%ss88)
+JP 　ＩＧＰのベルトは
+JP 　ＶＪＰの強さの象徴だ。
+EN The <IGP> belt is the symbol
+EN of <VJP>'s strength.
+
+@ 3.012.01
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰ以外のレスラーに
+JP 　持っていかれるわけには
+JP 　いかねえんだよ！！
+EN I can't let some wrestler from
+EN outside <VJP> walk off with it!!
+
+@ 3.012.02
+# speaker: 旗本 (%ss88)
+JP 　%ss33！！
+JP 　おまえがどれほど
+JP 　無謀な挑戦をしているか、
+EN %ss33!! You're gonna learn just how reckless
+
+@ 3.012.03
+# speaker: 旗本 (%ss88)
+JP 　キッチリと教えてやるぜ！！
+EN this challenge of yours is!!
+
+@ 3.014.00
+# speaker: 旗本 (%ss88)
+JP 　そうだ・・・
+EN That's right...
+
+@ 3.014.01
+# speaker: 旗本 (%ss88)
+JP 　本当の闘いは
+JP 　ここから始まる。
+EN The real fight starts here.
+
+@ 3.014.02
+# speaker: 旗本 (%ss88)
+JP 　やるからには
+JP 　天下を取る・・・！
+EN If I'm going to do this,
+EN I'll rule the land...!
+
+@ 3.014.03
+# speaker: 旗本 (%ss88)
+JP 　人生なんて短いものだ。
+EN Life is short.
+
+@ 3.014.04
+# speaker: 旗本 (%ss88)
+JP 　だったら、でかく
+JP 　生きようじゃねえか。
+EN So why not live big?
+
+@ 3.014.05
+# speaker: 旗本 (%ss88)
+JP 　人間五十年、
+JP 　下天のうちをくらぶれば、
+JP 　夢幻の如くなり・・・
+EN "Man's fifty years, against the
+EN world beneath heaven, are but
+EN a dream, an illusion..."
+
+@ 3.014.06
+# speaker: 旗本 (%ss88)
+JP 　太く短く。
+JP 　信長も言っている。
+EN Live hard and short.
+EN Even Nobunaga said so.
+
+@ 3.014.07
+# speaker: 旗本 (%ss88)
+JP 　俺は
+JP 　プロレスで天下を取る。
+EN I'm going to rule the land
+EN through pro wrestling.
+
+@ 3.014.08
+# speaker: 旗本 (%ss88)
+JP 　それが、俺の
+JP 　生き方なんだよ。
+JP 　%sf88
+EN That's the way I live.
+EN %sf88
+
+@ 3.015.00
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　本当に壮絶な闘いでした！！」
+EN "%ss88!! That was a truly
+EN ferocious fight!!"
+
+@ 3.015.01
+# speaker: 記者
+JP 「%ss44選手との
+JP 　試合を終えた今、
+JP 　何を思いますか！？」
+EN "Now that your match with %ss44
+EN is over, what's on your mind?!"
+
+@ 3.015.02
+# speaker: 旗本 (%ss88)
+JP 「まだ、何も
+JP 　終わっちゃいないですよ。」
+EN "Nothing's over yet."
+
+@ 3.015.03
+# speaker: 旗本 (%ss88)
+JP 「ＮＥＯ－ＯＮＥという団体は、
+JP 　今、生まれたばかりなんです。」
+EN "<NEO-ONE> as a promotion has
+EN only just been born."
+
+@ 3.015.04
+# speaker: 旗本 (%ss88)
+JP 「全てはこれから・・・」
+EN "Everything starts now..."
+
+@ 3.015.05
+# speaker: 旗本 (%ss88)
+JP 「これからなんだ・・・！！」
+EN "It starts now...!!"
+
+@ 3.021.00
+# speaker: 記者
+JP 「本当にすばらしい試合でした！！
+JP 　%ss41さん！！」
+EN "That was a truly amazing match!!
+EN %ss41!!"
+
+@ 3.021.01
+# speaker: 記者
+JP 「%ss88選手との
+JP 　歴史的な一戦を終えた、
+JP 　今の心境をお願いします！！」
+EN "After that historic fight with
+EN %ss88, how do you feel now?!"
+
+@ 3.022.00
+# speaker: 龍 (%ss41)
+JP 「すごいよ、%ss88は。
+JP 　ハンパなくすごい。」
+EN "%ss88 is something else.
+EN Seriously something else."
+
+@ 3.022.01
+# speaker: 龍 (%ss41)
+JP 「何かエネルギーを
+JP 　植え付けられた気持ちになるよ。」
+EN "It's like he planted some kind
+EN of energy in me."
+
+@ 3.022.02
+# speaker: 龍 (%ss41)
+JP 「%ss94に負けたことが、
+JP 　いい意味でプラスになってるんじゃ
+JP 　ないか？」
+EN "Losing to %ss94 might've done him
+EN some good, in a way."
+
+@ 3.022.03
+# speaker: 龍 (%ss41)
+JP 「%ss44との闘いは
+JP 　楽しみだね。」
+EN "I'm looking forward to his
+EN fight with %ss44."
+
+@ 3.022.04
+# speaker: 龍 (%ss41)
+JP 「あいつも、
+JP 　%ss88とは別のタイプの
+JP 　すごいレスラーだからな。」
+EN "He's an amazing wrestler too,
+EN just a different type from
+EN %ss88."
+
+@ 3.023.00
+# speaker: 旗本 (%ss88)
+JP 　%ss41との闘いは
+JP 　壮絶を極めた。
+EN The fight with %ss41 was
+EN as brutal as it gets.
+
+@ 3.023.01
+# speaker: 旗本 (%ss88)
+JP 　何でこんなに強いんだ！？
+EN How is he this strong?!
+
+@ 3.023.02
+# speaker: 旗本 (%ss88)
+JP 　もう、半世紀近く生きてんだろ、
+JP 　おい！！
+EN The guy's pushing fifty, for crying out loud!!
+
+@ 3.023.03
+# speaker: 旗本 (%ss88)
+JP 　まったく・・・
+JP 　あきれたおっさんだよ。
+EN Honestly... what an unbelievable
+EN old man.
+
+@ 3.023.04
+# speaker: 旗本 (%ss88)
+JP 　とにかく、
+JP 　この%ss41とのシングルマッチで、
+EN Anyway, through this singles match
+EN with %ss41...
+
+@ 3.023.05
+# speaker: 旗本 (%ss88)
+JP 　長いブランクのせいで
+JP 　錆び付いていた、
+JP 　勘を取り戻すことが出来た。
+EN I got back the instincts that had
+EN rusted over during my long layoff.
+
+@ 3.023.06
+# speaker: 旗本 (%ss88)
+JP 　またしても
+JP 　%ss41に助けられた形になったが、
+JP 　ここからが俺の全開だ！！
+EN Once again %ss41 had helped me out,
+EN but from here on, I'm going all out!!
+
+@ 3.024.00
+# speaker: 記者
+JP 「%ss44さん。
+JP 　今回の
+JP 　歴史的な対抗戦について、」
+EN "%ss44. About this historic
+EN interpromotional war..."
+
+@ 3.024.01
+# speaker: 記者
+JP 「%ss44さんは、どのような
+JP 　ご感想をお持ちでしょうか？」
+EN "What are your thoughts on it,
+EN %ss44?"
+
+@ 3.025.00
+# speaker: 風間 (%ss44)
+JP 「%ss58さんがいたら、
+JP 　ＶＪＰとはやらなかったろうね。」
+EN "If %ss58 were still around, we'd
+EN never have worked with <VJP>."
+
+@ 3.025.01
+# speaker: 風間 (%ss44)
+JP 「でも、対抗戦をやることで
+JP 　ＯＪＰが生かされるなら、
+JP 　%ss58さんも納得するでしょう。」
+EN "But if an interpromotional war
+EN keeps <OJP> alive, %ss58 would
+EN understand."
+
+@ 3.025.02
+# speaker: 風間 (%ss44)
+JP 「どことやっても、
+JP 　どこでやっても、
+JP 　ＯＪＰはＯＪＰですからね。」
+EN "Whoever we fight, wherever we fight,
+EN <OJP> is still <OJP>."
+
+@ 3.026.00
+# speaker: 旗本 (%ss88)
+JP 　マイペースな奴だぜ。
+EN He sure goes at his own pace.
+
+@ 3.026.01
+# speaker: 旗本 (%ss88)
+JP 　俺は、%ss44と闘うのは
+JP 　初めてだが、
+EN This is my first time
+EN fighting %ss44...
+
+@ 3.026.02
+# speaker: 旗本 (%ss88)
+JP 　何となく
+JP 　肌から伝わる
+JP 　威圧感のようなものを感じていた。
+EN But somehow I could feel a kind of
+EN pressure coming off him.
+
+@ 3.026.03
+# speaker: 旗本 (%ss88)
+JP 　自己主張の激しいこの世界で、
+JP 　これほど口数の少ない男も
+JP 　珍しいだろう。
+EN In a world full of loudmouths, a man
+EN this quiet is a rare thing.
+
+@ 3.026.04
+# speaker: 旗本 (%ss88)
+JP 　それだけに不気味だよ。
+EN That's what makes him so creepy.
+
+@ 3.026.05
+# speaker: 旗本 (%ss88)
+JP 　もっともＯＪＰらしい
+JP 　プロレスをする、
+JP 　ＯＪＰのレスラー・・・
+EN An <OJP> wrestler who wrestles
+EN the most <OJP> style of all...
+
+@ 3.026.06
+# speaker: 旗本 (%ss88)
+JP 　相手にとって不足はない！！
+EN He's a worthy opponent!!
+
+@ 3.027.00
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　次の%ss44選手との
+JP 　試合なんですが、」
+EN "%ss88!! About your next match
+EN with %ss44..."
+
+@ 3.027.01
+# speaker: 記者
+JP 「%ss88さんは
+JP 　新団体を旗揚げしたとはいえ、」
+EN "%ss88, even though you've
+EN launched a new promotion..."
+
+@ 3.027.02
+# speaker: 記者
+JP 「この試合は、
+JP 　事実上のＶＪＰ対ＯＪＰの
+JP 　頂点対決になると思います！！」
+EN "This match is effectively <VJP> vs.
+EN <OJP>, top man against top man!!"
+
+@ 3.027.03
+# speaker: 記者
+JP 「歴史的な対抗戦のメインを張る、
+JP 　今の心境をお聞かせ下さい！！」
+EN "How do you feel, headlining this
+EN historic interpromotional war?!"
+
+@ 3.027.04
+# speaker: 旗本 (%ss88)
+JP 「頂点がどうのこうのなんて
+JP 　関係ない。」
+EN "Top man this, top man that...
+EN it doesn't matter."
+
+@ 3.027.05
+# speaker: 旗本 (%ss88)
+JP 「俺は、ＮＥＯ－ＯＮＥを
+JP 　引っ張って行く者として、」
+EN "As the man leading <NEO-ONE>..."
+
+@ 3.027.06
+# speaker: 旗本 (%ss88)
+JP 「目の前にいる敵を
+JP 　全力で叩き潰すだけだ！！」
+EN "I'll just crush the enemy in front
+EN of me with everything I've got!!"
+
+@ 3.028.00
+# speaker: 旗本 (%ss88)
+JP 　今後の俺のレスラー人生は、
+JP 　これからの
+JP 　俺の闘い方にかかっている。
+EN The rest of my career as a wrestler
+EN hangs on how I fight from now on.
+
+@ 3.028.01
+# speaker: 旗本 (%ss88)
+JP 　一試合たりとも気は抜かねえ！！
+EN I'm not letting up for a single match!!
+
+@ 3.028.02
+# speaker: 旗本 (%ss88)
+JP 　%ss44がＯＪＰを
+JP 　背負って立っているなら、
+EN If %ss44 is carrying <OJP>
+EN on his back...
+
+@ 3.028.03
+# speaker: 旗本 (%ss88)
+JP 　俺はＮＥＯ－ＯＮＥを
+JP 　背負ってるんだ！！
+EN I'm carrying <NEO-ONE>
+EN on mine!!
+
+@ 3.028.04
+# speaker: 旗本 (%ss88)
+JP 　プロレスに
+JP 　新世紀をもたらすために、
+JP 　俺は闘う！！
+EN I fight to bring a new century
+EN to pro wrestling!!
+
+@ 3.034.00
+# speaker: 旗本 (%ss88)
+JP 　あれだけの観衆の前で
+JP 　引退を決意した俺だったが・・・
+EN I'd decided to retire in front of
+EN that huge crowd, but...
+
+@ 3.034.01
+# speaker: 旗本 (%ss88)
+JP 　やっぱり、心のどこかに
+JP 　プロレスへの未練はあった。
+EN Somewhere in my heart, I still
+EN couldn't let go of pro wrestling.
+
+@ 3.034.02
+# speaker: 旗本 (%ss88)
+JP 　だけど、復帰しようとは
+JP 　考えなかったよ。
+EN But I never thought about
+EN coming back.
+
+@ 3.034.03
+# speaker: 旗本 (%ss88)
+JP 　俺は、嘘つきには
+JP 　なりたくなかったからな。
+EN I didn't want to be a liar.
+
+@ 3.034.04
+# speaker: 旗本 (%ss88)
+JP 　引退した後、しばらくは
+JP 　出口のない迷路を
+JP 　さまよっている感じだった・・・
+EN After I retired, for a while it felt
+EN like I was wandering a maze
+EN with no exit...
+
+@ 3.034.05
+# speaker: 旗本 (%ss88)
+JP 　%ss98さんから
+JP 　電話がかかって来たのは、
+JP 　そんな時だったんだ・・・。
+EN That's when I got a phone call
+EN from %ss98...
+
+@ 3.035.00
+# speaker: 武蔵 (%ss98)
+JP 「%ss88か？」
+EN "%ss88?"
+
+@ 3.035.01
+# speaker: 旗本 (%ss88)
+JP 「%ss98さん・・・！」
+EN "%ss98...!"
+
+@ 3.035.02
+# speaker: 旗本 (%ss88)
+JP 「お久しぶりです・・・。」
+EN "It's been a long time..."
+
+@ 3.035.03
+# speaker: 武蔵 (%ss98)
+JP 「%ss88、どうだ、」
+EN "%ss88, how about it..."
+
+@ 3.035.04
+# speaker: 武蔵 (%ss98)
+JP 「おまえＵ．Ｎ．Ｏに来ないか？」
+EN "Why don't you come to <U.N.O>?"
+
+@ 3.035.05
+# speaker: 旗本 (%ss88)
+JP 「・・・！」
+EN "...!"
+
+@ 3.036.00
+# speaker: 旗本 (%ss88)
+JP 　一瞬・・・
+JP 　どうしようもないほどの怒りが
+JP 　俺の全身を駆け巡った・・・！！
+EN For a moment... a rage I couldn't
+EN control ran through my whole body...!!
+
+@ 3.036.01
+# speaker: 旗本 (%ss88)
+JP 　%ss98さんは
+JP 　紛れもなく俺の師匠だが、
+EN %ss98 is my master, no doubt
+EN about it...
+
+@ 3.036.02
+# speaker: 旗本 (%ss88)
+JP 　今は、%ss94という
+JP 　宿敵を育てた敵の参謀である。
+EN But now he's the enemy's strategist,
+EN the man who raised my archrival
+EN %ss94.
+
+@ 3.036.03
+# speaker: 旗本 (%ss88)
+JP 　確かに俺は
+JP 　プロレスに未練がある・・・
+EN Sure, I can't let go of
+EN pro wrestling...
+
+@ 3.036.04
+# speaker: 旗本 (%ss88)
+JP 　だが、敵の救いの手は
+JP 　どうしても受けられない・・・！！
+EN But I just can't take a helping hand
+EN from the enemy...!!
+
+@ 3.036.05
+# speaker: 旗本 (%ss88)
+JP 「%ss98さん、すみません。
+JP 　俺はＵ．Ｎ．Ｏには入れません。」
+EN "%ss98, I'm sorry.
+EN I can't join <U.N.O>."
+
+@ 3.036.06
+# speaker: 旗本 (%ss88)
+JP 「俺は・・・」
+EN "I..."
+
+@ 3.036.07
+# speaker: 旗本 (%ss88)
+JP 「俺は必ず、自分の力で
+JP 　ここから這い上がって
+JP 　見せます・・・！！」
+EN "I'll climb back up from here
+EN on my own strength, you'll see...!!"
+
+@ 3.037.00
+# speaker: 旗本 (%ss88)
+JP 　引退した後、
+JP 　多くのファンからの
+JP 　温かい声援があった。
+EN After I retired, so many fans
+EN sent me warm words of support.
+
+@ 3.037.01
+# speaker: 旗本 (%ss88)
+JP 　その声援に、俺がどれほど
+JP 　励まされたか分からない。
+EN I can't say how much those
+EN cheers lifted me up.
+
+@ 3.037.02
+# speaker: 旗本 (%ss88)
+JP 　だが・・・
+EN But...
+
+@ 3.037.03
+# speaker: 旗本 (%ss88)
+JP 　最終的に、俺を
+JP 　復帰への道へといざなったものは
+JP 　他の何ものでもない・・・
+EN In the end, what led me down the road back was nothing else...
+
+@ 3.037.04
+# speaker: 旗本 (%ss88)
+JP 　このままで終わってたまるかという
+JP 　怒りの力だった・・・！！
+EN but the power of anger, the feeling that I won't let it end like this...!!
+
+@ 3.038.00
+# speaker: 旗本 (%ss88)
+JP 「私、
+JP 　%sf88は、」
+EN "I,
+EN %sf88..."
+
+@ 3.038.01
+# speaker: 旗本 (%ss88)
+JP 「近日中に
+JP 　新団体『ＮＥＯ－ＯＮＥ』を
+JP 　旗揚げすることをご報告します。」
+EN "Hereby announce that I will soon
+EN launch a new promotion,
+EN <NEO-ONE>."
+
+@ 3.039.00
+# speaker: 記者
+JP 「%ss88さん、新団体って・・・
+JP 　ＶＪＰサイドは
+JP 　それを了承したんですか！？」
+EN "%ss88, a new promotion...?
+EN Did <VJP> agree to this?!"
+
+@ 3.039.01
+# speaker: 旗本 (%ss88)
+JP 「ＶＪＰとは
+JP 　すでに話がついています。」
+EN "It's already settled with <VJP>."
+
+@ 3.039.02
+# speaker: 旗本 (%ss88)
+JP 「ＮＥＯ－ＯＮＥは、
+JP 　ＶＪＰとは別の
+JP 　独立した団体ですが、」
+EN "<NEO-ONE> is an independent
+EN promotion, separate from <VJP>..."
+
+@ 3.039.03
+# speaker: 旗本 (%ss88)
+JP 「形態としては
+JP 　ＶＪＰ傘下の子団体となります。」
+EN "But in structure, it will be
+EN a sister promotion under <VJP>."
+
+@ 3.040.00
+# speaker: 旗本 (%ss88)
+JP 　俺は、復帰と同時に
+JP 　新団体ＮＥＯ－ＯＮＥを
+JP 　旗揚げした。
+EN The moment I came back, I launched
+EN a new promotion, <NEO-ONE>.
+
+@ 3.040.01
+# speaker: 旗本 (%ss88)
+JP 　何としても以前の俺とは違う、
+JP 　新しい%sf88を
+JP 　作りたかったんだ。
+EN No matter what, I wanted to create
+EN a new %sf88, different from
+EN the old me.
+
+@ 3.040.02
+# speaker: 旗本 (%ss88)
+JP 　そのためには、
+EN To do that...
+
+@ 3.040.03
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰや%ss98さんから
+JP 　ある程度、距離をおくことが
+JP 　必要だっだ。
+EN I needed to keep some distance from
+EN <VJP> and %ss98.
+
+@ 3.040.04
+# speaker: 旗本 (%ss88)
+JP 　プロレス界は
+JP 　今、低迷の一途をたどっている。
+EN The wrestling world is in
+EN a steady slump right now.
+
+@ 3.040.05
+# speaker: 旗本 (%ss88)
+JP 　ＮＥＯ－ＯＮＥという団体は、
+JP 　プロレスを活性化させるために
+JP 　生まれた。
+EN The promotion <NEO-ONE> was born to bring
+EN pro wrestling back to life.
+
+@ 3.040.06
+# speaker: 旗本 (%ss88)
+JP 　生まれ変わった
+JP 　%sf88は、
+EN The reborn
+EN %sf88...
+
+@ 3.040.07
+# speaker: 旗本 (%ss88)
+JP 　新しいプロレスを作り出すために
+JP 　突き進むんだ・・・！！
+EN will charge ahead to create a new kind of wrestling...!!
+
+@ 3.041.00
+# speaker: 旗本 (%ss88)
+JP 「%ss0さん。
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮ　プロレスを
+JP 　呼び込んで、」
+EN "%ss0. How about bringing in
+EN <OLIVE JAPAN> Pro Wrestling..."
+
+@ 3.041.01
+# speaker: 旗本 (%ss88)
+JP 「ＮＥＯ－ＯＮＥとＶＪＰ、
+JP 　三つ巴の対抗戦をやりませんか？」
+EN "And doing a three-way interpromotional war between <NEO-ONE>, <VJP> and them?"
+
+@ 3.041.02
+# speaker: 大和 (%ss0)
+JP 「%ss88・・・」
+EN "%ss88..."
+
+@ 3.041.03
+# speaker: 大和 (%ss0)
+JP 「いいか、ＯＪＰとは
+JP 　今までにも何度か
+JP 　そういう話はあった。」
+EN "Listen, there's been talk like
+EN that with <OJP> a few times
+EN before."
+
+@ 3.041.04
+# speaker: 大和 (%ss0)
+JP 「だがな、うちとＯＪＰには
+JP 　抜き差しならない確執があるんだ。」
+EN "But there's deep-rooted bad blood
+EN between us and <OJP>."
+
+@ 3.041.05
+# speaker: 大和 (%ss0)
+JP 「その話は無理だぞ。」
+EN "It's not going to happen."
+
+@ 3.041.06
+# speaker: 旗本 (%ss88)
+JP 「%ss0さん、
+JP 　今は昔とは状況が違う。」
+EN "%ss0, things are different
+EN from back then."
+
+@ 3.041.07
+# speaker: 旗本 (%ss88)
+JP 「ＯＪＰは、選手の九割が
+JP 　新団体にとられたため
+JP 　今、崩壊寸前です。」
+EN "<OJP> lost 90% of its roster to
+EN a new promotion. It's on the
+EN verge of collapse."
+
+@ 3.041.08
+# speaker: 旗本 (%ss88)
+JP 「この話は
+JP 　絶対に上手く行く。」
+EN "This will work for sure."
+
+@ 3.041.09
+# speaker: 旗本 (%ss88)
+JP 「いや、
+JP 　俺達がやるんです・・・！！」
+EN "No... we'll make it work...!!"
+
+@ 3.042.00
+# speaker: 旗本 (%ss88)
+JP 　勢いまかせに、
+JP 　話を一気に押し通そうとした
+JP 　俺だったが、
+EN I tried to push the whole thing
+EN through on sheer momentum...
+
+@ 3.042.01
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰの首脳陣には
+JP 　対抗戦に難色を示す者もいて、
+JP 　話はなかなか先へと進展しなかった。
+EN But some of the <VJP> brass balked
+EN at an interpromotional war, and talks
+EN went nowhere fast.
+
+@ 3.042.02
+# speaker: 旗本 (%ss88)
+JP 　しかし、ＯＪＰに
+JP 　ある大物レスラーが
+JP 　入団したことによって、
+EN But when a certain big-name wrestler
+EN joined <OJP>...
+
+@ 3.042.03
+# speaker: 旗本 (%ss88)
+JP 　突破口は開かれた・・・！
+EN The breakthrough came...!
+
+@ 3.043.00
+# speaker: 龍 (%ss41)
+JP 「俺はその話に賛成するよ。
+JP 　全面的に協力する。」
+EN "I'm for it. I'll back it
+EN all the way."
+
+@ 3.043.01
+# speaker: 旗本 (%ss88)
+JP 「%ss41さん・・・！」
+EN "%ss41...!"
+
+@ 3.044.00
+# speaker: 旗本 (%ss88)
+JP 　以前、俺と死闘を演じた
+JP 　%ss41は、
+EN %ss41, who'd once fought me in a war to the death...
+
+@ 3.044.01
+# speaker: 旗本 (%ss88)
+JP 　骨をうずめる場所として
+JP 　古巣、ＯＪＰに戻っていた。
+EN had gone back to his old home, <OJP>, as the place to finish his career.
+
+@ 3.044.02
+# speaker: 旗本 (%ss88)
+JP 　%ss41の全面的な協力により、
+JP 　ＯＪＰサイドが譲歩の姿勢を見せ、
+EN With %ss41 backing it all the way,
+EN <OJP> showed a willingness to deal...
+
+@ 3.044.03
+# speaker: 旗本 (%ss88)
+JP 　ＮＥＯ－ＯＮＥ、ＶＪＰ、
+JP 　ＯＪＰの三つ巴戦は
+JP 　ついに実現した・・・！！
+EN And the three-way war between
+EN <NEO-ONE>, <VJP> and <OJP> finally
+EN became reality...!!
+
+@ 3.045.00
+# speaker: リングアナウンサー
+JP 「ついに、この日が
+JP 　やってまいりました！！」
+EN "At last, the day has come!!"
+
+@ 3.045.01
+# speaker: リングアナウンサー
+JP 「ＶＪＰ、ＯＪＰ、
+JP 　ＮＥＯ－ＯＮＥ、」
+EN "<VJP>, <OJP>,
+EN <NEO-ONE>..."
+
+@ 3.045.02
+# speaker: リングアナウンサー
+JP 「三団体による、
+JP 　歴史的な対抗戦です！！」
+EN "A historic interpromotional war among three promotions!!"
+
+@ 3.046.00
+# speaker: 記者
+JP 「%ss41さん！！
+JP 　数年ぶりの%ss88選手との
+JP 　一戦ですが、」
+EN "%ss41!! It's your first match with
+EN %ss88 in years..."
+
+@ 3.046.01
+# speaker: 記者
+JP 「ＯＪＰの選手として闘う、
+JP 　今の心境をお聞かせ下さい！！」
+EN "How do you feel, fighting as
+EN an <OJP> wrestler?!"
+
+@ 3.046.02
+# speaker: 龍 (%ss41)
+JP 「%ss88が、前に闘った時より
+JP 　強くなっていることは間違いない。」
+EN "No doubt %ss88 is stronger than
+EN the last time we fought."
+
+@ 3.046.03
+# speaker: 龍 (%ss41)
+JP 「全力で叩き潰すよ。
+JP 　ＯＪＰのレスラーとしてね・・・！！」
+EN "I'll crush him with everything
+EN I've got. As an <OJP> wrestler...!!"
+
+@ 3.047.00
+# speaker: 旗本 (%ss88)
+JP 　俺は、かつてのＶＪＰ時代、
+EN Back in my old <VJP> days...
+
+@ 3.047.01
+# speaker: 旗本 (%ss88)
+JP 　重度のスランプを、
+JP 　%ss41と闘うことで
+JP 　克服したことがある・・・。
+EN I once got out of a bad slump
+EN by fighting %ss41...
+
+@ 3.047.02
+# speaker: 旗本 (%ss88)
+JP 　%ss41というレスラーは
+JP 　ハンパじゃない。
+EN %ss41 is no ordinary wrestler.
+
+@ 3.047.03
+# speaker: 旗本 (%ss88)
+JP 　だが・・・
+JP 　負けるわけにはいかねえ！！
+EN But... I can't afford to lose!!
+
+@ 3.047.04
+# speaker: 旗本 (%ss88)
+JP 　この試合には、
+JP 　ＮＥＯ－ＯＮＥの未来が
+JP 　かかっているんだ！！
+EN The future of <NEO-ONE>
+EN is riding on this match!!
+
+@ 3.047.05
+# speaker: 旗本 (%ss88)
+JP 　必ず勝つ！！
+EN I'll win, no matter what!!
+
+@ 3.049.00
+# speaker: 旗本 (%ss88)
+JP 　俺は・・・
+EN I...
+
+@ 3.049.01
+# speaker: 旗本 (%ss88)
+JP 　闘うことでしか
+JP 　自分を表現できない。
+EN Fighting is the only way I can
+EN express myself.
+
+@ 3.049.02
+# speaker: 旗本 (%ss88)
+JP 　プロレスラーとして
+JP 　闘い続けることだけが、
+JP 　俺という人間を際立たせる。
+EN Only fighting on as a pro wrestler
+EN makes me stand out as a man.
+
+@ 3.049.03
+# speaker: 旗本 (%ss88)
+JP 　長生きしようなんて
+JP 　思っちゃいない。
+EN I'm not planning to live long.
+
+@ 3.049.04
+# speaker: 旗本 (%ss88)
+JP 　くたばるまで闘い続ける。
+EN I'll keep fighting till I drop.
+
+@ 3.049.05
+# speaker: 旗本 (%ss88)
+JP 　それが
+JP 　俺の選んだ生き方だよ。
+JP 　%sf88
+EN That's the way of life I chose.
+EN %sf88
+
+@ 3.054.00
+# speaker: 旗本 (%ss88)
+JP 　%ss202戦に
+JP 　一応の決着はついたものの、
+EN The %ss202 fight was settled,
+EN more or less...
+
+@ 3.054.01
+# speaker: 旗本 (%ss88)
+JP 　レスラー対
+JP 　Ｓ－１戦士の闘いは、
+JP 　その後も継続的に行われた。
+EN But the battles between wrestlers and
+EN <S-1> fighters kept going after that.
+
+@ 3.054.02
+# speaker: 旗本 (%ss88)
+JP 　そういった選手の中で、
+JP 　特に%ss95の活躍は目覚しく、
+EN Of all those wrestlers, %ss95 stood out
+EN the most...
+
+@ 3.054.03
+# speaker: 旗本 (%ss88)
+JP 　奴は、なみいるＳ－１の強豪を
+JP 　次々と撃破していった。
+EN He took down one big <S-1> name
+EN after another.
+
+@ 3.054.04
+# speaker: 旗本 (%ss88)
+JP 　俺と%ss95との関係が
+JP 　緊迫したものへと変化したのは、
+EN Things between me and %ss95
+EN turned tense...
+
+@ 3.054.05
+# speaker: 旗本 (%ss88)
+JP 　%ss95が%ss202との
+JP 　対戦を実現し、
+JP 　その試合に快勝したからだった・・・！
+EN When %ss95 got his match with
+EN %ss202, and won it easily...!
+
+@ 3.055.00
+# speaker: アナウンサー
+JP 「おおっと・・・%ss95！！
+JP 　%ss202に低いタックル！！」
+EN "Whoa... %ss95!! A low tackle
+EN on %ss202!!"
+
+@ 3.055.01
+# speaker: アナウンサー
+JP 「%ss202を押さえた・・・！！
+JP 　%ss202を押さえました！！」
+EN "He's got %ss202 pinned down...!!
+EN He's got %ss202 down!!"
+
+@ 3.056.00
+# speaker: アナウンサー
+JP 「%ss202必死の抵抗！！
+JP 　ああーーーっと！！
+JP 　%ss95・・・！！」
+EN "%ss202 struggles desperately!!
+EN Ohhh!! %ss95...!!"
+
+@ 3.056.01
+# speaker: アナウンサー
+JP 「%ss202の首を取った！！
+JP 　フロントネックの体勢だあ！！」
+EN "He's got %ss202's neck!!
+EN It's a front necklock!!"
+
+@ 3.056.02
+# speaker: アナウンサー
+JP 「決まった！！決まった！！
+JP 　%ss202！！ギブアップ！！」
+EN "It's locked in!! It's locked in!!
+EN %ss202!! He gives up!!"
+
+@ 3.057.00
+# speaker: アナウンサー
+JP 「%ss95が%ss202を
+JP 　フロントネックで破りました！！」
+EN "%ss95 has beaten %ss202 with
+EN the front necklock!!"
+
+@ 3.057.01
+# speaker: アナウンサー
+JP 「ウイナーは%ss95だあ！！」
+EN "The winner is %ss95!!"
+
+@ 3.058.00
+# speaker: 記者
+JP 「%ss95選手にお聞きします。」
+EN "A question for %ss95."
+
+@ 3.058.01
+# speaker: 記者
+JP 「今回の%ss202戦は、」
+EN "Your match with %ss202..."
+
+@ 3.058.02
+# speaker: 記者
+JP 「一部では、%ss88選手を
+JP 　意識したものではないかと
+JP 　言われていますが、」
+EN "Some say it was aimed
+EN at %ss88..."
+
+@ 3.058.03
+# speaker: 記者
+JP 「それについて
+JP 　何かコメントはありますか？」
+EN "Do you have any comment
+EN on that?"
+
+@ 3.059.00
+# speaker: 梶田 (%ss95)
+JP 「僕が%ss202とやりたかったのは、
+JP 　やっぱり頭にきてたってことが
+JP 　一番の理由でしょうね。」
+EN "The main reason I wanted %ss202
+EN was that he'd really made me mad."
+
+@ 3.059.01
+# speaker: 梶田 (%ss95)
+JP 「%ss88さんとは
+JP 　関係ないですよ。」
+EN "It has nothing to do with %ss88."
+
+@ 3.059.02
+# speaker: 梶田 (%ss95)
+JP 「確かに、
+JP 　トンビに油揚げじゃ
+JP 　ないけど・・・」
+EN "Sure, it's not like a hawk swooped in and stole my lunch, but..."
+
+@ 3.059.03
+# speaker: 梶田 (%ss95)
+JP 「先に試合をされたっていうのは
+JP 　ありましたよ。」
+EN "He did get his match in
+EN before me."
+
+@ 3.059.04
+# speaker: 梶田 (%ss95)
+JP 「でも、%ss98会長が
+JP 　決めたことですからね。
+JP 　僕は従うだけです。」
+EN "But that was Chairman %ss98's
+EN decision. I just follow it."
+
+@ 3.059.05
+# speaker: 記者
+JP 「%ss88選手は、以前、
+JP 　%ss98軍で代表決定戦を
+JP 　やってもいいと言っていましたが、」
+EN "%ss88 once said he'd have a
+EN play-off within the %ss98 Army..."
+
+@ 3.059.06
+# speaker: 記者
+JP 「%ss88選手にその気があれば、
+JP 　%ss95選手は
+JP 　受けて立つ気はありますか？」
+EN "If %ss88 wants it, would you
+EN accept, %ss95?"
+
+@ 3.059.07
+# speaker: 梶田 (%ss95)
+JP 「向こうに
+JP 　その気があるなら・・・」
+EN "If he wants it..."
+
+@ 3.059.08
+# speaker: 梶田 (%ss95)
+JP 「俺はいつでも
+JP 　やりますよ。」
+EN "I'll do it anytime."
+
+@ 3.060.00
+# speaker: 旗本 (%ss88)
+JP 　%ss95の
+JP 　このインタビューは、
+EN That interview with %ss95...
+
+@ 3.060.01
+# speaker: 旗本 (%ss88)
+JP 　翌日のスポーツ紙に、
+JP 　『トンビ（%ss88）に油揚げ』
+JP 　発言としてデカデカと報じられた。
+EN made the next day's sports papers in huge type: the "<Hawk> (%ss88) Stole My Lunch" remark.
+
+@ 3.060.02
+# speaker: 旗本 (%ss88)
+JP 　誰がトンビだって！！ああっ！？
+EN Who're you calling a hawk?! Huh?!
+
+@ 3.060.03
+# speaker: 旗本 (%ss88)
+JP 　ずいぶんと挑戦的じゃねえか。
+JP 　挑発するなら
+JP 　俺はいつだってやってやるぞ。
+EN Pretty cocky, isn't he? If he's
+EN picking a fight, I'll take him
+EN on anytime.
+
+@ 3.060.04
+# speaker: 旗本 (%ss88)
+JP 　元々、ＩＧＰのベルトを
+JP 　二本持っているってことが
+JP 　気に入らなかったんだ・・・！
+EN I never liked him holding both
+EN <IGP> belts in the first place...!
+
+@ 3.060.05
+# speaker: 旗本 (%ss88)
+JP 　統一チャンピオンが
+JP 　どれほどのものか、
+JP 　見せてもらおうじゃねえか！！
+EN Let's see just how good this
+EN unified champion really is!!
+
+@ 3.061.00
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　突然の%ss95選手への
+JP 　対戦表明ですが、」
+EN "%ss88!! About your sudden call-out
+EN of %ss95..."
+
+@ 3.061.01
+# speaker: 記者
+JP 「こういう
+JP 　いきさつになった原因は、
+JP 　何だったんですか！？」
+EN "What led to all this?!"
+
+@ 3.061.02
+# speaker: 旗本 (%ss88)
+JP 「原因？
+JP 　色々ありますよ。」
+EN "What led to it?
+EN Lots of things."
+
+@ 3.061.03
+# speaker: 旗本 (%ss88)
+JP 「正直いうと、あいつが
+JP 　%ss202と闘った時点で、」
+EN "Honestly, the moment he
+EN fought %ss202..."
+
+@ 3.061.04
+# speaker: 旗本 (%ss88)
+JP 「俺はもう、
+JP 　冷静じゃなかったからね。」
+EN "I wasn't calm anymore."
+
+@ 3.061.05
+# speaker: 旗本 (%ss88)
+JP 「一度火がついたら
+JP 　止まらないから、俺。」
+EN "Once I'm fired up, there's no
+EN stopping me."
+
+@ 3.061.06
+# speaker: 記者
+JP 「%ss95選手に
+JP 　何か言いたいことはありますか？」
+EN "Anything you want to say
+EN to %ss95?"
+
+@ 3.061.07
+# speaker: 旗本 (%ss88)
+JP 「死ぬ気で来い！！」
+EN "Come at me ready to die!!"
+
+@ 3.061.08
+# speaker: 旗本 (%ss88)
+JP 「ぶっ潰してやるからな！！」
+EN "I'm gonna smash you!!"
+
+@ 3.062.00
+# speaker: 旗本 (%ss88)
+JP 　俺の対戦表明を、
+JP 　%ss95はあっさりと承諾する。
+EN %ss95 accepted my call-out
+EN without a second thought.
+
+@ 3.062.01
+# speaker: 旗本 (%ss88)
+JP 　初めからやりたかったんだろ、
+JP 　%ss95？
+EN You wanted this from the start,
+EN didn't you, %ss95?
+
+@ 3.062.02
+# speaker: 旗本 (%ss88)
+JP 　こうなったら、
+JP 　どっちが本当に強いのか
+JP 　白黒ハッキリさせようぜ・・・！！
+EN Fine, then. Let's settle once and for
+EN all which one of us is really
+EN stronger...!!
+
+@ 3.063.00
+# speaker: 旗本 (%ss88)
+JP 　つくづく
+JP 　プロレスラーなんだと思うよ、
+JP 　俺は。
+EN I really am a pro wrestler
+EN through and through.
+
+@ 3.063.01
+# speaker: 旗本 (%ss88)
+JP 　こういう流れになると、
+JP 　行くとこまで行かないと
+JP 　止まれねえからな。
+EN Once things start rolling like this,
+EN I can't stop till I've gone all
+EN the way.
+
+@ 3.063.02
+# speaker: 旗本 (%ss88)
+JP 　目の前に目障りな奴がいれば、
+JP 　絶対よけては通らない。
+EN If someone gets in my face,
+EN I never step around him.
+
+@ 3.063.03
+# speaker: 旗本 (%ss88)
+JP 　破壊するしかねえんだ！！
+EN I have to destroy him!!
+
+@ 3.065.00
+# speaker: 記者
+JP 「%ss202選手・・・
+JP 　%ss202選手！！」
+EN "%ss202... %ss202!!"
+
+@ 3.065.01
+# speaker: 記者
+JP 「試合後の感想を・・・！！
+JP 　感想を一言お願いします！！」
+EN "Your thoughts on the match...!!
+EN Just a word, please!!"
+
+@ 3.065.02
+# speaker: サバンナ (%ss202)
+JP 「何も話すことはない・・・」
+EN "I have nothing to say..."
+
+@ 3.065.03
+# speaker: サバンナ (%ss202)
+JP 「ノーコメントだ。」
+EN "No comment."
+
+@ 3.067.00
+# speaker: 記者
+JP 「%ss88さん・・・
+JP 　%ss88さん！！」
+EN "%ss88... %ss88!!"
+
+@ 3.067.01
+# speaker: 記者
+JP 「試合後の感想を・・・
+JP 　感想を一言お願いします！！」
+EN "Your thoughts on the match...
+EN Just a word, please!!"
+
+@ 3.067.02
+# speaker: 旗本 (%ss88)
+JP 「話すことは何もない・・・」
+EN "I have nothing to say..."
+
+@ 3.067.03
+# speaker: 旗本 (%ss88)
+JP 「一から出直しです・・・。」
+EN "I'm starting over from scratch..."
+
+@ 3.073.00
+# speaker: 旗本 (%ss88)
+JP 　%ss94とのタッグは、
+JP 　二人の心情的な確執を除けば、
+EN Aside from the bad blood between us,
+EN teaming with %ss94...
+
+@ 3.073.01
+# speaker: 旗本 (%ss88)
+JP 　これ以上ないと言うほどの
+JP 　破壊力を生み出した。
+EN had more destructive power than anything I could have imagined.
+
+@ 3.073.02
+# speaker: 旗本 (%ss88)
+JP 　俺と奴とのタッグが、
+JP 　これほどハマッたことには
+JP 　少なからずショックを受けたが、
+EN It shook me more than a little
+EN that he and I clicked so well
+EN as a team...
+
+@ 3.073.03
+# speaker: 旗本 (%ss88)
+JP 　%ss94の実力を
+JP 　あらためて認めないわけには
+JP 　いかないだろう。
+EN But I had to give %ss94 credit
+EN for his ability all over again.
+
+@ 3.073.04
+# speaker: 旗本 (%ss88)
+JP 　とにかく形だけではあったが、
+JP 　俺と%ss94は、これを機に
+JP 　一時休戦状態となった。
+EN Anyway, it was only for show, but %ss94 and I called a truce for the time being.
+
+@ 3.073.05
+# speaker: 旗本 (%ss88)
+JP 　まずは、小生意気なエセ格闘家を
+JP 　ぶっ飛ばさなければならないからな。
+EN First, we had to knock that
+EN cocky fake fighter flat.
+
+@ 3.073.06
+# speaker: 旗本 (%ss88)
+JP 　試合が近づくにつれて、
+JP 　%ss202の大口は
+JP 　ますますでかくなっていく。
+EN As the match drew closer, %ss202's
+EN big mouth just kept getting bigger.
+
+@ 3.073.07
+# speaker: 旗本 (%ss88)
+JP 　本当に耳障りな奴だぜ・・・！
+EN That guy really grates on my ears...!
+
+@ 3.074.00
+# speaker: 記者
+JP 「いよいよ、%ss98軍との
+JP 　闘いが近づいて来たわけですが、」
+EN "The fight with the %ss98 Army
+EN is finally coming up..."
+
+@ 3.074.01
+# speaker: 記者
+JP 「%ss202選手の
+JP 　今の心境をお聞かせ下さい。」
+EN "How are you feeling right now,
+EN %ss202?"
+
+@ 3.075.00
+# speaker: サバンナ (%ss202)
+JP 「気が乗らないね。」
+EN "I'm not in the mood."
+
+@ 3.075.01
+# speaker: サバンナ (%ss202)
+JP 「プロレスなんて
+JP 　頭の足りない奴らがする踊りだろ。」
+EN "Pro wrestling is just a dance for
+EN people with half a brain, right?"
+
+@ 3.075.02
+# speaker: サバンナ (%ss202)
+JP 「むさくるしい男同士で
+JP 　密着し合って、
+JP 　いったい何が面白いんだ？」
+EN "Sweaty guys clinging to each other...
+EN what's fun about that?"
+
+@ 3.075.03
+# speaker: サバンナ (%ss202)
+JP 「そんな奴らとの試合に
+JP 　気乗りするわけがないぜ。」
+EN "How could I get excited about
+EN a match with guys like that?"
+
+@ 3.075.04
+# speaker: サバンナ (%ss202)
+JP 「抱きつかれたら気味が悪いから、
+JP 　試合はすぐに終わらせるよ。」
+EN "Being hugged would creep me out,
+EN so I'll end the match fast."
+
+@ 3.076.00
+# speaker: 旗本 (%ss88)
+JP 　何だろうな、こいつは・・・
+EN What's with this guy...
+
+@ 3.076.01
+# speaker: 旗本 (%ss88)
+JP 　ぶっ殺されてえのか？
+EN Does he want to get killed?
+
+@ 3.076.02
+# speaker: 旗本 (%ss88)
+JP 　頭にきすぎて、逆に
+JP 　悪魔のような笑いが出るよ。
+EN I'm so mad it's making me laugh
+EN like the devil.
+
+@ 3.076.03
+# speaker: 旗本 (%ss88)
+JP 　まあ、辛抱するのも
+JP 　後ちょっとだ。
+EN Well, I only have to put up
+EN with it a little longer.
+
+@ 3.076.04
+# speaker: 旗本 (%ss88)
+JP 　%ss98祭りで、
+JP 　俺がこいつとやるのは
+JP 　ほぼ確実だからな。
+EN At the %ss98 Festival, I'm almost
+EN certain to face him.
+
+@ 3.076.05
+# speaker: 旗本 (%ss88)
+JP 　マジで楽しみだよ、
+JP 　こいつとやるのは・・・！！
+EN I'm honestly looking forward
+EN to fighting this guy...!!
+
+@ 3.077.00
+# speaker: 旗本 (%ss88)
+JP 　俺は、%ss202戦で
+JP 　大爆発するために
+JP 　日々、集中力を高めていた。
+EN I sharpened my focus day by day,
+EN ready to explode against %ss202.
+
+@ 3.077.01
+# speaker: 旗本 (%ss88)
+JP 　ところが、
+JP 　試合の直前になってマスコミが
+JP 　水を差して来やがった。
+EN But right before the match,
+EN the press threw cold water on it.
+
+@ 3.078.00
+# speaker: 記者
+JP 「%ss88さん。
+JP 　一部のマスコミが
+JP 　対%ss202戦の相手として、」
+EN "%ss88. Some in the press say
+EN that as an opponent for %ss202..."
+
+@ 3.078.01
+# speaker: 記者
+JP 「%ss88さんよりも、
+JP 　%ss95選手の方が相応しいと
+JP 　報じていますが、」
+EN "%ss95 would be a better fit
+EN than you, %ss88..."
+
+@ 3.078.02
+# speaker: 記者
+JP 「それについて
+JP 　何かコメントはありますか？」
+EN "Do you have any comment
+EN on that?"
+
+@ 3.078.03
+# speaker: 旗本 (%ss88)
+JP 「アレだろ？
+JP 　前に%ss94とやった時、
+JP 　ボロボロに負けたことがあったろ？」
+EN "That thing, right? The time I fought
+EN %ss94 and got beaten to a pulp?"
+
+@ 3.078.04
+# speaker: 旗本 (%ss88)
+JP 「あの試合を分析して、
+JP 　%ss88はパンチに弱いって
+JP 　言ってるらしいけど、」
+EN "They analyzed that match and say
+EN %ss88 is weak to punches, but..."
+
+@ 3.078.05
+# speaker: 旗本 (%ss88)
+JP 「そんなもん、
+JP 　言いたいように
+JP 　言わせておけばいいんだよ。」
+EN "Let 'em say whatever
+EN they want."
+
+@ 3.078.06
+# speaker: 記者
+JP 「今の%ss88さんは、
+JP 　顔面に対するパンチを
+JP 　完全に克服していますからね。」
+EN "Now you've completely overcome
+EN punches to the face, %ss88."
+
+@ 3.078.07
+# speaker: 記者
+JP 「ただ、%ss95選手も
+JP 『出来るなら自分がやりたい』と
+JP 　言っているようですが・・・」
+EN "Still, %ss95 has been saying
+EN 'I'd do it myself if I could'..."
+
+@ 3.078.08
+# speaker: 記者
+JP 「その点については
+JP 　どうお考えですか？」
+EN "What are your thoughts on that?"
+
+@ 3.078.09
+# speaker: 旗本 (%ss88)
+JP 「ああん？」
+EN "Huh?"
+
+@ 3.078.10
+# speaker: 旗本 (%ss88)
+JP 「しつこいね。
+JP 　何なら、マスコミの前で
+JP 　代表決定戦でもやりましょうか？」
+EN "You don't let up, do you? Should we
+EN have a play-off in front of the press?"
+
+@ 3.078.11
+# speaker: 旗本 (%ss88)
+JP 「試合の内容なら、
+JP 　%ss202戦より、そっちの方が
+JP 　面白いかもしれないからな。」
+EN "As a match, that might be more fun
+EN than the %ss202 fight."
+
+@ 3.079.00
+# speaker: 旗本 (%ss88)
+JP 　俺は、試合前で
+JP 　ピリピリしていた。
+EN I was on edge before the match.
+
+@ 3.079.01
+# speaker: 旗本 (%ss88)
+JP 　まったく
+JP 　イライラする
+JP 　インタビューだったぜ。
+EN What an irritating interview
+EN that was.
+
+@ 3.079.02
+# speaker: 旗本 (%ss88)
+JP 　とにかく、仕切り直して
+JP 　%ss202戦に向けて
+JP 　集中し直しだ。
+EN Anyway, time to reset and refocus
+EN on the %ss202 fight.
+
+@ 3.080.00
+# speaker: 旗本 (%ss88)
+JP 　俺と%ss202の、
+JP 　異種格闘技戦をメインとする
+JP 　%ss98祭りの会場は、
+EN The %ss98 Festival, headlined by my mixed-style match with %ss202...
+
+@ 3.080.01
+# speaker: 旗本 (%ss88)
+JP 　超満員の観衆に
+JP 　埋め尽くされていた。
+EN was packed to the rafters.
+
+@ 3.080.02
+# speaker: 旗本 (%ss88)
+JP 　これだけ証人がいれば十分だ。
+EN That's plenty of witnesses.
+
+@ 3.080.03
+# speaker: 旗本 (%ss88)
+JP 　本当のプロレスが
+JP 　どういうものか教えてやる。
+EN I'll show them what real
+EN pro wrestling is.
+
+@ 3.080.04
+# speaker: 旗本 (%ss88)
+JP 　ボコボコにしてやるから
+JP 　覚悟しろよ！！
+EN I'm gonna beat you to a pulp,
+EN so brace yourself!!
+
+@ 3.082.00
+# speaker: アナウンサー
+JP 「%ss88が、%ss98に対し
+JP 　深々と礼をしています。」
+EN "%ss88 is bowing deeply
+EN to %ss98."
+
+@ 3.082.01
+# speaker: 解説者
+JP 「%ss88にとって、%ss94は
+JP 　%ss98が与えた試練のようなもの
+JP 　でしたからね。」
+EN "For %ss88, %ss94 was like a trial
+EN %ss98 had set for him."
+
+@ 3.082.02
+# speaker: 解説者
+JP 「この闘いを制したことで、
+JP 　%ss88は更に力をつけたんじゃ
+JP 　ないですか。」
+EN "By winning this fight, %ss88 must
+EN have grown even stronger."
+
+@ 3.083.00
+# speaker: 旗本 (%ss88)
+JP 　俺は、%ss94に勝った。
+EN I beat %ss94.
+
+@ 3.083.01
+# speaker: 旗本 (%ss88)
+JP 　引退を賭けて闘い、
+JP 　リベンジを果たしたことによって、
+EN I fought with retirement on the line,
+EN and by getting my revenge...
+
+@ 3.083.02
+# speaker: 旗本 (%ss88)
+JP 　結果的に、
+JP 　この世界での自分の格を
+JP 　更に上げることにもなった。
+EN In the end, I raised my own standing
+EN in this business even higher.
+
+@ 3.083.03
+# speaker: 旗本 (%ss88)
+JP 　だが、その勝利の余韻も
+JP 　覚めやらぬうちに、
+EN But before the glow of that win
+EN had even faded...
+
+@ 3.083.04
+# speaker: 旗本 (%ss88)
+JP 　新たな闘いの火種が、
+JP 　俺の知らないところで
+JP 　立ち上ろうとしていた・・・。
+EN The spark of a new fight was about to
+EN flare up where I couldn't see it...
+
+@ 3.084.00
+# speaker: 記者
+JP 「%ss202選手、
+JP 　すさまじい試合でした。」
+EN "%ss202, that was a ferocious fight."
+
+@ 3.084.01
+# speaker: 記者
+JP 「%ss198選手を
+JP 　１ラウンドＫＯという、
+JP 　驚くべき偉業を達成したわけですが、」
+EN "A first-round KO of %ss198...
+EN an amazing feat."
+
+@ 3.084.02
+# speaker: 記者
+JP 「%ss202選手の
+JP 　今後の展望を聞かせていただけますか？」
+EN "Could you tell us your plans
+EN from here, %ss202?"
+
+@ 3.085.00
+# speaker: サバンナ (%ss202)
+JP 「もう、Ｓ－１に
+JP 　俺の敵はいないな。」
+EN "There's nobody left in <S-1>
+EN who can touch me."
+
+@ 3.085.01
+# speaker: サバンナ (%ss202)
+JP 「見つかるわけはないが、
+JP 　もっと真剣に闘える相手が欲しいよ。」
+EN "I won't find one, but I want
+EN someone I can really fight."
+
+@ 3.085.02
+# speaker: サバンナ (%ss202)
+JP 「別にＳ－１ファイターに
+JP 　限らなくてもいい。」
+EN "It doesn't have to be
+EN an <S-1> fighter."
+
+@ 3.085.03
+# speaker: サバンナ (%ss202)
+JP 「俺はどんな奴でも
+JP 　ＫＯできるパンチを持っているからね。」
+EN "I've got a punch that can
+EN KO anybody."
+
+@ 3.085.04
+# speaker: 記者
+JP 「どんな奴でも・・・ですか？」
+EN "Anybody... you say?"
+
+@ 3.085.05
+# speaker: 記者
+JP 「それは、プロレスや
+JP 　総合格闘技の選手なども
+JP 　含まれるのでしょうか？」
+EN "Does that include pro wrestlers
+EN and MMA fighters?"
+
+@ 3.085.06
+# speaker: サバンナ (%ss202)
+JP 「おまえは耳が聞こえないのか？
+JP 　同じことを二度言わせるな。」
+EN "Are you deaf? Don't make me
+EN say the same thing twice."
+
+@ 3.086.00
+# speaker: 旗本 (%ss88)
+JP 　このバカの発言自体は、
+JP 　この世界ではよくあることだから
+JP 　俺は気にもとめていなかった。
+EN Talk like that from this idiot is
+EN common in this business, so I
+EN didn't pay it any mind.
+
+@ 3.086.01
+# speaker: 旗本 (%ss88)
+JP 　だが、一部のマスコミや
+JP 　レスラー達が反論したことによって、
+JP 　話は徐々に大きくなって行く・・・。
+EN But some of the press and some
+EN wrestlers fired back, and it slowly
+EN got bigger and bigger...
+
+@ 3.087.00
+# speaker: 梶田 (%ss95)
+JP 「%ss202ですか？」
+EN "%ss202?"
+
+@ 3.087.01
+# speaker: 梶田 (%ss95)
+JP 「面白いこと言ってるらしいじゃ
+JP 　ないですか。」
+EN "I hear he's been saying some
+EN funny things."
+
+@ 3.087.02
+# speaker: 梶田 (%ss95)
+JP 「やるって言うなら、
+JP 　俺は別に構わないですよ。」
+EN "If he wants to fight, I don't
+EN mind at all."
+
+@ 3.088.00
+# speaker: 旗本 (%ss88)
+JP 　%ss95が%ss202に対して
+JP 　対戦意欲をほのめかしたことによって、
+JP 　騒ぎはますますエスカレートする。
+EN When %ss95 hinted he'd fight
+EN %ss202, the uproar got even
+EN bigger.
+
+@ 3.089.00
+# speaker: 記者
+JP 「%ss98さん。
+JP 　Ｓ－１の増田館長が、」
+EN "%ss98. <S-1>'s director, Masuda..."
+
+@ 3.089.01
+# speaker: 記者
+JP 「%ss202選手を筆頭とする、
+JP 　Ｓ－１戦士対
+JP 　レスラーの全面戦争に対して、」
+EN "About an all-out war between <S-1>
+EN fighters led by %ss202 and
+EN wrestlers..."
+
+@ 3.089.02
+# speaker: 記者
+JP 「かなり本気で取り組む姿勢を
+JP 　見せていますが、」
+EN "He seems to be taking it
+EN very seriously..."
+
+@ 3.089.03
+# speaker: 記者
+JP 「それについて
+JP 　%ss98さんのお考えを
+JP 　お聞かせ下さい。」
+EN "What are your thoughts on that,
+EN %ss98?"
+
+@ 3.090.00
+# speaker: 武蔵 (%ss98)
+JP 「本気で仕掛けてくるなら
+JP 　受けて立とうじゃないか。」
+EN "If they're serious about coming
+EN at us, we'll take them on."
+
+@ 3.090.01
+# speaker: 武蔵 (%ss98)
+JP 「%ss88、
+JP 　%ss94、
+JP 　%ss95・・・」
+EN "%ss88,
+EN %ss94,
+EN %ss95..."
+
+@ 3.090.02
+# speaker: 武蔵 (%ss98)
+JP 「１０人出すから、
+JP 　そっちも出せばいいんじゃないか。」
+EN "I'll put up ten men.
+EN They can put up ten too."
+
+@ 3.090.03
+# speaker: 武蔵 (%ss98)
+JP 「こっちは
+JP 　いつだって臨戦体制だ。」
+EN "We're always ready for war."
+
+@ 3.090.04
+# speaker: 武蔵 (%ss98)
+JP 「白黒ハッキリさせてやるぞ・・・！」
+EN "We'll settle this once and for all...!"
+
+@ 3.091.00
+# speaker: 旗本 (%ss88)
+JP 　最終的に、
+JP 　%ss98さんが
+JP 　本気になってしまったことで、
+EN In the end, because %ss98
+EN got serious...
+
+@ 3.091.01
+# speaker: 旗本 (%ss88)
+JP 　Ｓ－１対
+JP 　%ss98軍の全面戦争は、
+JP 　決定的となった・・・！
+EN The all-out war between <S-1> and
+EN the %ss98 Army was set in stone...!
+
+@ 3.092.00
+# speaker: 旗本 (%ss88)
+JP 　%ss98軍の大将として、
+JP 　%ss98さんから名指しで
+JP 　指名された俺だったが、
+EN %ss98 named me personally as
+EN the %ss98 Army's leader...
+
+@ 3.092.01
+# speaker: 旗本 (%ss88)
+JP 　心の中には一つの懸念があった。
+EN But one thing was weighing on me.
+
+@ 3.092.02
+# speaker: 旗本 (%ss88)
+JP 　それは、同じ%ss98軍の中に、
+JP 　この前まで壮絶な闘いを繰り広げていた
+JP 　%ss94がいることだった・・・！
+EN In the same %ss98 Army was
+EN %ss94, the man I'd just been in
+EN a brutal war with...!
+
+@ 3.093.00
+# speaker: 旗本 (%ss88)
+JP 「%ss98さん。
+JP 　俺に用件って何ですか？」
+EN "%ss98. What did you want
+EN to see me about?"
+
+@ 3.094.00
+# speaker: 旗本 (%ss88)
+JP 「%ss94・・・！！」
+EN "%ss94...!!"
+
+@ 3.094.01
+# speaker: 武蔵 (%ss98)
+JP 「%ss88。
+JP 　%ss94には今話したんだが、」
+EN "%ss88. I just told %ss94..."
+
+@ 3.094.02
+# speaker: 武蔵 (%ss98)
+JP 「おまえら、
+JP 　Ｓ－１とやる前に
+JP 　一度タッグを組んでおけ。」
+EN "Before you face <S-1>,
+EN you two will form a tag team."
+
+@ 3.094.03
+# speaker: 旗本 (%ss88)
+JP 「タッグって・・・
+JP 　%ss98さん、
+JP 　それは無理ですよ・・・！！」
+EN "A tag team... %ss98, that's
+EN impossible...!!"
+
+@ 3.094.04
+# speaker: 武蔵 (%ss98)
+JP 「無理じゃない。
+JP 　やれ。」
+EN "It's not impossible. Do it."
+
+@ 3.094.05
+# speaker: 武蔵 (%ss98)
+JP 「中の結束を固めないで、
+JP 　外との闘いに立ち向かえると
+JP 　思うか？」
+EN "Do you think we can stand up to
+EN an outside fight without being
+EN united inside?"
+
+@ 3.094.06
+# speaker: 武蔵 (%ss98)
+JP 「%ss94と組むんだ、
+JP 　%ss88！！」
+EN "Team up with %ss94,
+EN %ss88!!"
+
+@ 3.094.07
+# speaker: 旗本 (%ss88)
+JP 「・・・。」
+EN "..."
+
+@ 3.094.08
+# speaker: 旗本 (%ss88)
+JP 「%ss94、おまえ・・・
+JP 　俺とタッグを組むことに
+JP 　抵抗はないのか？」
+EN "%ss94, are you really OK
+EN with teaming up with me?"
+
+@ 3.094.09
+# speaker: 野川 (%ss94)
+JP 「俺はプロですからね・・・。」
+EN "I'm a professional..."
+
+@ 3.094.10
+# speaker: 野川 (%ss94)
+JP 「%ss98さんに
+JP 　そう言われたら、
+JP 　従うしかないですよ。」
+EN "If %ss98 tells me to,
+EN I have to follow."
+
+@ 3.094.11
+# speaker: 旗本 (%ss88)
+JP 「おまえの目は
+JP 　そうは言ってねえよ・・・」
+EN "That's not what your eyes
+EN are saying..."
+
+@ 3.094.12
+# speaker: 旗本 (%ss88)
+JP 「どうなっても知らねえぞ、
+JP 　俺は・・・！」
+EN "Don't blame me for whatever
+EN happens...!"
+
+@ 3.095.00
+# speaker: 旗本 (%ss88)
+JP 　%ss98さんの提案とはいえ、
+EN It was %ss98's idea, but...
+
+@ 3.095.01
+# speaker: 旗本 (%ss88)
+JP 　まさか、この俺が
+JP 　%ss94とタッグを組むことに
+JP 　なるとは・・・。
+EN Who'd have thought I'd end up
+EN teaming with %ss94...
+
+@ 3.095.02
+# speaker: 旗本 (%ss88)
+JP 　だが、考えようによっては、
+EN But look at it another way...
+
+@ 3.095.03
+# speaker: 旗本 (%ss88)
+JP 　タッグのパートナーとして、
+JP 　これほど強力な男は
+JP 　いないかもしれない。
+EN There may be no stronger man
+EN to have as a tag partner.
+
+@ 3.095.04
+# speaker: 旗本 (%ss88)
+JP 　%ss98さんは
+JP 　%ss202戦を想定して、
+EN With the %ss202 fight in mind,
+EN %ss98...
+
+@ 3.095.05
+# speaker: 旗本 (%ss88)
+JP 　タッグ戦の相手に、
+JP 　格闘系の%ss179、%ss99を
+JP 　指名するらしい。
+EN is apparently naming the shoot-style %ss179 and %ss99 as our opponents.
+
+@ 3.095.06
+# speaker: 旗本 (%ss88)
+JP 　相手にとって不足はねえよ。
+EN Worthy opponents, no complaints.
+
+@ 3.095.07
+# speaker: 旗本 (%ss88)
+JP 　俺と%ss94が
+JP 　どれほど格闘に強いか、
+JP 　その試合で証明してやる・・・！
+EN In that match, I'll prove just how
+EN tough %ss94 and I are in a real fight...!
+
+@ 3.096.00
+# speaker: 記者
+JP 「%ss179さん！！
+JP 　%ss99さん！！」
+EN "%ss179!! %ss99!!"
+
+@ 3.096.01
+# speaker: 記者
+JP 「お二人は
+JP 　%ss98さんから指名され、」
+EN "You two were named by %ss98..."
+
+@ 3.096.02
+# speaker: 記者
+JP 「%ss88、%ss94組との
+JP 　タッグ戦を承諾した訳ですが、」
+EN "And agreed to a tag match
+EN against %ss88 and %ss94..."
+
+@ 3.096.03
+# speaker: 記者
+JP 「今日の試合を前にして、
+JP 　何か言っておきたいことは
+JP 　ありますか！？」
+EN "Anything you want to say before
+EN today's match?!"
+
+@ 3.097.00
+# speaker: 佐岳 (%ss179)
+JP 「格闘をなめるなって
+JP 　言いたいですね。」
+EN "I'd like to say, don't take
+EN real fighting lightly."
+
+@ 3.097.01
+# speaker: 佐岳 (%ss179)
+JP 「確かに%ss202は
+JP 　頭にくる。」
+EN "Sure, %ss202 makes me mad."
+
+@ 3.097.02
+# speaker: 佐岳 (%ss179)
+JP 「けど、それは、
+JP 　それだけ自分の強さに自信があるっていう
+JP 　裏返しでもある。」
+EN "But it also shows he's that
+EN confident in his own strength."
+
+@ 3.097.03
+# speaker: 佐岳 (%ss179)
+JP 「とにかく今日の試合は
+JP 　ただのプロレスとは違う、」
+EN "Anyway, today's match won't be
+EN your ordinary pro wrestling..."
+
+@ 3.097.04
+# speaker: 佐岳 (%ss179)
+JP 「格闘の恐ろしさを
+JP 　たっぷり教えてやりますよ。」
+EN "We'll teach them all about how
+EN scary real fighting is."
+
+@ 3.097.05
+# speaker: 真田 (%ss99)
+JP 「%ss98さんは、」
+EN "%ss98..."
+
+@ 3.097.06
+# speaker: 真田 (%ss99)
+JP 「%ss88と%ss94の
+JP 　結束を固めるために
+JP 　この試合を組んだらしいですが、」
+EN "Seems he set up this match to bring
+EN %ss88 and %ss94 together, but..."
+
+@ 3.097.07
+# speaker: 真田 (%ss99)
+JP 「こっちにだって
+JP 　プライドはありますよ。」
+EN "We've got our pride too."
+
+@ 3.097.08
+# speaker: 真田 (%ss99)
+JP 「まだ、引き立て役になるわけには
+JP 　いかない。」
+EN "We're not ready to be anyone's
+EN stepping stones yet."
+
+@ 3.097.09
+# speaker: 真田 (%ss99)
+JP 「全力で
+JP 　叩き潰します・・・！」
+EN "We'll crush them with everything
+EN we've got...!"
+
+@ 3.098.00
+# speaker: 旗本 (%ss88)
+JP 　言いたいこと
+JP 　言ってくれるじゃねえか・・・！
+EN They've got a lot of nerve,
+EN talking like that...!
+
+@ 3.098.01
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰの
+JP 　%ss88をなめんなよ！！
+EN Don't you look down on
+EN <VJP>'s %ss88!!
+
+@ 3.098.02
+# speaker: 旗本 (%ss88)
+JP 　死ぬ気でかかって来い！！
+JP 　おらあ！！
+EN Come at me ready to die!! Come on!!
+
+@ 3.104.00
+# speaker: 旗本 (%ss88)
+JP 　どんなことでも
+JP 　理想を追い求めることは難しい・・・
+EN Chasing an ideal is hard,
+EN whatever it is...
+
+@ 3.104.01
+# speaker: 旗本 (%ss88)
+JP 　だが、諦めたら
+JP 　そこで終わりになってしまう。
+EN But give up, and that's the end of it.
+
+@ 3.104.02
+# speaker: 旗本 (%ss88)
+JP 　プロレスラーという生き方を通して、
+JP 　俺は自分の夢を追い続けたい。
+EN Through my life as a pro wrestler,
+EN I want to keep chasing my dream.
+
+@ 3.104.03
+# speaker: 旗本 (%ss88)
+JP 　人の一生なんて
+JP 　短いものだ。
+EN A man's life is short.
+
+@ 3.104.04
+# speaker: 旗本 (%ss88)
+JP 　だったら
+JP 　やりたいようにやって、
+JP 　天下を取りたいじゃないか。
+EN So why not do things my way
+EN and rule the land?
+
+@ 3.104.05
+# speaker: 旗本 (%ss88)
+JP 　俺は、自分の人生に
+JP 　満足したいからな。
+JP 　%sf88
+EN I want to be satisfied
+EN with my life.
+EN %sf88
+
+@ 3.105.00
+# speaker: 旗本 (%ss88)
+JP 「%ss21！！
+JP 　これでどうだ！！」
+EN "%ss21!! How do you like that?!"
+
+@ 3.105.01
+JP 「誰にも
+JP 　文句は言わせねえ！！」
+EN "Nobody gets to complain now!!"
+
+@ 3.105.02
+JP 「ＶＪＰのトップは
+JP 　俺がもらった！！」
+EN "The top spot in <VJP> is mine!!"
+
+@ 3.107.00
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　一言・・・！！」
+EN "%ss88...!! A word...!!"
+
+@ 3.107.01
+# speaker: 旗本 (%ss88)
+JP 「%ss21ーーー！！
+JP 　これで勝ったと思うなよ！！」
+EN "%ss21!!! Don't think
+EN you've won this!!"
+
+@ 3.107.02
+# speaker: 旗本 (%ss88)
+JP 「ここからが
+JP 　本当の始まりだ！！」
+EN "This is where it really begins!!"
+
+@ 3.107.03
+# speaker: 旗本 (%ss88)
+JP 「俺はまだまだ
+JP 　終わらねえ・・・！！」
+EN "I'm far from finished...!!"
+
+@ 3.107.04
+JP 「必ずＶＪＰのトップを
+JP 　取ってやるぞ！！」
+EN "I'll take the top spot in <VJP>,
+EN you watch!!"
+
+@ 3.113.00
+# speaker: 記者
+JP 「%ss0さん！！
+JP 　%ss88選手との下克上戦を終えた
+JP 　今の感想をお願いします！！」
+EN "%ss0!! Your thoughts after the upstart challenge from %ss88?!"
+
+@ 3.113.01
+# speaker: 大和 (%ss0)
+JP 「%ss88の気持ちは
+JP 　充分伝わって来ましたよ・・・」
+EN "%ss88 got his message across loud and clear..."
+
+@ 3.113.02
+# speaker: 大和 (%ss0)
+JP 「ただなあ、%ss88！！
+JP 　おまえの好きにはさせないぞ！！」
+EN "But listen, %ss88!! I won't let
+EN you have your way!!"
+
+@ 3.113.03
+# speaker: 大和 (%ss0)
+JP 「文句があるならいつでも来い！！
+JP 　いつでも相手になってやる！！」
+EN "If you've got a problem, come at me!! I'll take you on anytime!!"
+
+@ 3.114.00
+# speaker: 記者
+JP 「%ss88さん！！」
+EN "%ss88!"
+
+@ 3.114.01
+# speaker: 記者
+JP 「すさまじい試合でしたが、
+JP 　今後も%ss0選手との抗争は
+JP 　続くのでしょうか！？」
+EN "That was a ferocious match. Will
+EN your feud with %ss0 go on?!"
+
+@ 3.114.02
+# speaker: 旗本 (%ss88)
+JP 「ああっ！？」
+EN "Huh?!"
+
+@ 3.114.03
+# speaker: 旗本 (%ss88)
+JP 「%ss0！！
+JP 　いいか、よく聞け！！」
+EN "%ss0!! Listen up, and listen good!!"
+
+@ 3.114.04
+# speaker: 旗本 (%ss88)
+JP 「こっちは、
+JP 　グダグダ無意味な試合なんか
+JP 　やってる暇はねえんだ！！」
+EN "I don't have time to waste on
+EN pointless matches!!"
+
+@ 3.114.05
+# speaker: 旗本 (%ss88)
+JP 「社長の椅子をかけて勝負しろ！！」
+EN "Put the president's chair on the line!!"
+
+@ 3.114.06
+# speaker: 旗本 (%ss88)
+JP 「次に試合をやった時、
+JP 　おまえが負けたら社長をやめろ！！」
+EN "Next time we fight, if you lose,
+EN you step down as president!!"
+
+@ 3.114.07
+# speaker: 旗本 (%ss88)
+JP 「おまえは器じゃねえぞ！！
+JP 　俺がＶＪＰを変えてやる！！」
+EN "You're not cut out for it!!
+EN I'll change <VJP> myself!!"
+
+@ 3.115.00
+# speaker: 旗本 (%ss88)
+JP 　俺の言った『社長退陣発言』は、
+JP 　全マスコミを震撼させ
+JP 　一大センセーショナルとなった。
+EN My "step down, Mr. President" remark
+EN shook the whole press and caused
+EN a huge sensation.
+
+@ 3.115.01
+# speaker: 旗本 (%ss88)
+JP 　それはそうだな。
+EN And no wonder.
+
+@ 3.115.02
+# speaker: 旗本 (%ss88)
+JP 　今まで、社長の椅子を賭けての
+JP 　マジ抗争なんて
+JP 　聞いたことがないからな。
+EN Nobody had ever heard of a real feud
+EN with the president's chair at stake.
+
+@ 3.115.03
+# speaker: 旗本 (%ss88)
+JP 　だが・・・
+EN But...
+
+@ 3.115.04
+# speaker: 旗本 (%ss88)
+JP 　俺の主張に対して、
+JP 　ＶＪＰがとった行動は非情なものだった。
+EN <VJP>'s response to my demands
+EN was cold-blooded.
+
+@ 3.116.00
+# speaker: 大和 (%ss0)
+JP 「苦渋の選択ではありますが、
+JP 　昨日の幹部会での決定により、」
+EN "It was a painful decision, but
+EN by order of yesterday's board
+EN meeting..."
+
+@ 3.116.01
+# speaker: 大和 (%ss0)
+JP 「ＶＩＥＷ　ＪＡＰＡＮ　プロレスは
+JP 　本日付をもって」
+EN "<VIEW JAPAN> Pro Wrestling,
+EN effective today..."
+
+@ 3.116.02
+# speaker: 大和 (%ss0)
+JP 「%sf88を
+JP 　解雇します。」
+EN "is releasing %sf88."
+
+@ 3.117.00
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　%ss88さん！！」
+EN "%ss88...!! %ss88!!"
+
+@ 3.117.01
+# speaker: 記者
+JP 「今回の
+JP 　ＶＪＰサイドの解雇通知について、
+JP 　何か反論はありますか！？」
+EN "Do you have any response to
+EN <VJP>'s notice of release?!"
+
+@ 3.117.02
+# speaker: 旗本 (%ss88)
+JP 「ただ一言・・・
+JP 　残念です。」
+EN "Just one thing...
+EN It's a shame."
+
+@ 3.117.03
+# speaker: 旗本 (%ss88)
+JP 「こうなってしまったら、
+JP 　もう何も言うことはないですよ。」
+EN "Now that it's come to this,
+EN I've got nothing more to say."
+
+@ 3.118.00
+# speaker: 旗本 (%ss88)
+JP 　がっかりした・・・というのが、
+JP 　その時の俺の感想だった。
+EN Disappointed... that's how I felt
+EN at the time.
+
+@ 3.118.01
+# speaker: 旗本 (%ss88)
+JP 　一つだけ救いだったのは、
+EN My only comfort...
+
+@ 3.118.02
+# speaker: 旗本 (%ss88)
+JP 　%ss0さん本人は、
+JP 　最後まで俺の解雇に
+JP 　反対していたということぐらいか。
+EN was that %ss0 himself opposed my release right to the end, I guess.
+
+@ 3.118.03
+# speaker: 旗本 (%ss88)
+JP 　まあ、こうなったら
+JP 　しょうがねえよ。
+EN Well, it can't be helped now.
+
+@ 3.118.04
+# speaker: 旗本 (%ss88)
+JP 　とりあえず、
+JP 　フリーとして『Ｓ－ＮＯＶＡ』でも
+JP 　攻めに行くか！！
+EN For now, maybe I'll go freelance
+EN and take a run at <S-NOVA>!!
+
+@ 3.118.05
+# speaker: 旗本 (%ss88)
+JP 　だが、俺のＶＪＰ解雇に
+JP 　真っ向から待ったをかける男が
+JP 　現れる・・・！
+EN But then a man appeared who flat-out
+EN challenged my release from <VJP>...!
+
+@ 3.119.00
+# speaker: 河野 (%ss21)
+JP 「%ss88！！
+JP 　どっか、よそに
+JP 　行く気じゃねえだろうな！！」
+EN "%ss88!! You aren't thinking of
+EN going somewhere else, are you?!"
+
+@ 3.119.01
+# speaker: 河野 (%ss21)
+JP 「そんなもん！！ああっ！！
+JP 　許さねえぞ！！」
+EN "Like hell!! Huh?!
+EN I won't allow it!!"
+
+@ 3.119.02
+# speaker: 河野 (%ss21)
+JP 「おまえはな！！
+JP 　俺と勝負するんだよ！！」
+EN "You!! You're gonna fight me!!"
+
+@ 3.119.03
+# speaker: 河野 (%ss21)
+JP 「勝負しねえうちは、
+JP 　俺がＶＪＰやめさせねえからな！！」
+EN "Until you fight me, I won't let
+EN you leave <VJP>!!"
+
+@ 3.119.04
+# speaker: 記者
+JP 「・・・%ss21さん！」
+EN "...%ss21!"
+
+@ 3.119.05
+# speaker: 記者
+JP 「%ss88選手は、すでにＶＪＰを
+JP 　解雇になっていますが・・・」
+EN "But %ss88 has already been
+EN released by <VJP>..."
+
+@ 3.119.06
+# speaker: 河野 (%ss21)
+JP 「誰が決めたんだ！！
+JP 　ああっ！！
+JP 　俺は知らねえぞ！！」
+EN "Who decided that?! Huh?!
+EN I never heard about it!!"
+
+@ 3.119.07
+# speaker: 河野 (%ss21)
+JP 「%ss88！！
+JP 　逃げんじゃねえ！！」
+EN "%ss88!! Don't you run!!"
+
+@ 3.119.08
+# speaker: 河野 (%ss21)
+JP 「俺とやれ！！
+JP 　分かったな！！」
+EN "Fight me!! You got that?!"
+
+@ 3.120.00
+# speaker: 旗本 (%ss88)
+JP 　信じられないことだが、
+JP 　%ss21のこの発言によって、
+EN Hard to believe, but because of
+EN what %ss21 said...
+
+@ 3.120.01
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰサイドは
+JP 　急遽、俺の解雇を保留とした・・・！
+EN <VJP> suddenly put my release
+EN on hold...!
+
+@ 3.120.02
+# speaker: 旗本 (%ss88)
+JP 　一説によれば、
+EN According to one story...
+
+@ 3.120.03
+# speaker: 旗本 (%ss88)
+JP 　%ss21が自分の首を賭けて、
+JP 　ＶＪＰの首脳陣に直訴したとか
+JP 　色々と噂になっていたが、
+EN Rumor had it %ss21 put his job on the line and went straight to the <VJP> brass, among other stories...
+
+@ 3.120.04
+# speaker: 旗本 (%ss88)
+JP 　いずれにしても、
+JP 　%ss21の対戦表明がなければ
+JP 　事態は動きはしなかったろう。
+EN Either way, without %ss21's call-out,
+EN nothing would have changed.
+
+@ 3.120.05
+# speaker: 旗本 (%ss88)
+JP 　とにかく、
+JP 　俺のＶＪＰレスラー人生は
+JP 　首の皮一枚でつながった・・・
+EN Anyway, my career as a <VJP>
+EN wrestler survived by a hair...
+
+@ 3.120.06
+# speaker: 旗本 (%ss88)
+JP 　残ったのなら、
+JP 　初心を貫徹するため
+JP 　突き進むしかない！！
+EN Now that I'm staying, I have to
+EN charge ahead and stick to what
+EN I set out to do!!
+
+@ 3.120.07
+# speaker: 旗本 (%ss88)
+JP 　%ss21！！
+JP 　礼は言わねえぞ！！
+EN %ss21!! Don't expect
+EN any thanks!!
+
+@ 3.120.08
+# speaker: 旗本 (%ss88)
+JP 　俺はＶＪＰを変える・・・！！
+EN I'm going to change <VJP>...!!
+
+@ 3.120.09
+# speaker: 旗本 (%ss88)
+JP 　そのためには
+JP 　勝ち続けるしかねえんだ！！
+EN And to do that, I have to
+EN keep winning!!
+
+@ 3.121.00
+# speaker: リングアナウンサー
+JP 「赤コーナー！！」
+EN "In the red corner!!"
+
+@ 3.122.00
+# speaker: リングアナウンサー
+JP 「%sl21ーーー！！
+JP 　%ss21ーーー！！」
+EN "%sl21!!!
+EN %ss21!!!"
+
+@ 3.123.00
+# speaker: リングアナウンサー
+JP 「青コーナー！！」
+EN "In the blue corner!!"
+
+@ 3.124.00
+# speaker: リングアナウンサー
+JP 「%sl88ーーー！！
+JP 　%ss88ーーー！！」
+EN "%sl88!!!
+EN %ss88!!!"
+
+@ 3.125.00
+# speaker: 河野 (%ss21)
+JP 「おらあ！！
+JP 　%ss88！！」
+EN "Come on!! %ss88!!"
+
+@ 3.125.01
+# speaker: 河野 (%ss21)
+JP 「おまえの好きには
+JP 　させねえぞ！！」
+EN "I won't let you have your way!!"
+
+@ 3.125.02
+# speaker: 河野 (%ss21)
+JP 「かかってこい！！」
+EN "Bring it!!"
+
+@ 3.127.00
+# speaker: アナウンサー
+JP 「%ss88・・・！！
+JP 　%ss88やりました！！」
+EN "%ss88...!! %ss88 has done it!!"
+
+@ 3.127.01
+# speaker: アナウンサー
+JP 「自らの引退を賭けた大一番で、
+JP 　ついに%ss94を
+JP 　倒しました！！」
+EN "In the biggest match of his life,
+EN with retirement on the line,
+EN he has finally beaten %ss94!!"
+
+@ 3.127.02
+# speaker: 解説者
+JP 「%ss98が来ますね・・・！」
+EN "Here comes %ss98...!"
+
+@ 3.127.03
+# speaker: アナウンサー
+JP 「おおーーっと！！
+JP 　%ss98です・・・！！」
+EN "Ohhh!! It's %ss98...!!"
+
+@ 3.127.04
+# speaker: アナウンサー
+JP 「%ss98がリングに上がりました！！
+JP 　%ss88に歩みよります！！」
+EN "%ss98 is in the ring!!
+EN He's walking up to %ss88!!"
+
+@ 3.128.00
+# speaker: 武蔵 (%ss98)
+JP 「%ss88よくやった。」
+EN "%ss88, well done."
+
+@ 3.128.01
+# speaker: 武蔵 (%ss98)
+JP 「だが、本当の闘いは
+JP 　これからだぞ！！」
+EN "But the real fight
+EN starts now!!"
+
+@ 3.131.00
+# speaker: 旗本 (%ss88)
+JP 「何がこれからだ・・・」
+EN "What do you mean, starts now..."
+
+@ 3.131.01
+# speaker: 旗本 (%ss88)
+JP 「%ss98さん・・・！！
+JP 　俺はもう、あんたには
+JP 　ついて行けねえ・・・！！」
+EN "%ss98...!! I can't follow
+EN you anymore...!!"
+
+@ 3.131.02
+# speaker: 旗本 (%ss88)
+JP 「今のＶＪＰに
+JP 　改革が必要なのは分かります・・・！！」
+EN "I know <VJP> needs reform
+EN right now...!!"
+
+@ 3.131.03
+# speaker: 旗本 (%ss88)
+JP 「だが！！
+JP 　俺は、あんたの
+JP 　操り人形じゃねえんだ！！」
+EN "But!! I'm not your puppet!!"
+
+@ 3.131.04
+# speaker: 武蔵 (%ss98)
+JP 「何だと%ss88・・・！！」
+EN "What did you say, %ss88...!!"
+
+@ 3.132.00
+# speaker: アナウンサー
+JP 「ああーーーっと！！
+JP 　%ss98！！%ss88に対して
+JP 　突然の鉄拳制裁！！」
+EN "Ohhh!! %ss98 suddenly lays into
+EN %ss88 with his fists!!"
+
+@ 3.133.00
+# speaker: アナウンサー
+JP 「%ss88応戦・・・！！
+JP 　%ss98に左ミドルを
+JP 　叩き込んだああ！！」
+EN "%ss88 fights back...!! A left
+EN middle kick into %ss98!!"
+
+@ 3.133.01
+# speaker: 解説者
+JP 「%ss1と・・・！
+JP 　%ss0もリングに
+JP 　上がりましたよ・・・！！」
+EN "%ss1 and...! %ss0 have come
+EN into the ring too...!!"
+
+@ 3.134.00
+# speaker: アナウンサー
+JP 「リング上はパニックです！！」
+EN "It's pandemonium in the ring!!"
+
+@ 3.134.01
+# speaker: アナウンサー
+JP 「いったい
+JP 　何が起こったんだあ！？」
+EN "What on earth is going on?!"
+
+@ 3.135.00
+# speaker: 旗本 (%ss88)
+JP 　一瞬・・・
+EN In a split second...
+
+@ 3.135.01
+# speaker: 旗本 (%ss88)
+JP 　本当に一瞬の
+JP 　感情の爆発だった・・・。
+EN It was a split-second explosion of emotion...
+
+@ 3.135.02
+# speaker: 旗本 (%ss88)
+JP 　リングで
+JP 　%ss98さんの顔を見た時、
+EN When I saw %ss98's face there in the ring,
+
+@ 3.135.03
+# speaker: 旗本 (%ss88)
+JP 　俺は、この人の手のひらの上で
+JP 　踊らされてるって・・・
+JP 　そう思っちまったんだ。
+EN it hit me... I was just dancing in the palm of this man's hand.
+
+@ 3.135.04
+# speaker: 旗本 (%ss88)
+JP 　%ss94戦の後で、
+JP 　気持ちが高ぶってたことも
+JP 　あったんだが、
+EN I was still worked up from the match with %ss94, too,
+
+@ 3.135.05
+# speaker: 旗本 (%ss88)
+JP 　やっちまったもんは
+JP 　しょうがねえ。
+EN but what's done is done.
+
+@ 3.135.06
+# speaker: 旗本 (%ss88)
+JP 　%ss98さん、
+JP 　お世話になりました。
+EN %ss98, thank you for everything.
+
+@ 3.135.07
+# speaker: 旗本 (%ss88)
+JP 　あなたとは完全に
+JP 　決別させていただきます。
+EN From now on, I'm cutting all ties with you.
+
+@ 3.136.00
+# speaker: 記者
+JP 「%ss21さん！」
+EN "%ss21!"
+
+@ 3.136.01
+# speaker: 記者
+JP 「今後の
+JP 　%ss98、%ss88問題に
+JP 　ついて、」
+EN "About this %ss98-%ss88 situation,"
+
+@ 3.136.02
+# speaker: 記者
+JP 「%ss21さんは
+JP 　どのようにお考えですか？」
+EN "%ss21, what are your thoughts?"
+
+@ 3.137.00
+# speaker: 河野 (%ss21)
+JP 「ＶＪＰには一年に一度、
+JP 　%ss98さんが用意する
+JP 　強烈な台風がやって来るんだ。」
+EN "Once a year, %ss98 cooks up a real typhoon and sends it through <VJP>."
+
+@ 3.137.01
+# speaker: 河野 (%ss21)
+JP 「それを拒絶して、
+JP 　ＶＪＰじゃ生きていけないんだよ。」
+EN "You can't turn your back on that and survive in <VJP>."
+
+@ 3.137.02
+# speaker: 河野 (%ss21)
+JP 「俺は%ss88の主張には
+JP 　賛同できない。」
+EN "I can't go along with what %ss88 is saying."
+
+@ 3.137.03
+# speaker: 河野 (%ss21)
+JP 「おい、%ss88！！」
+EN "Hey, %ss88!"
+
+@ 3.137.04
+# speaker: 河野 (%ss21)
+JP 「文句があるなら俺に言え！！
+JP 　俺がおまえをぶっ潰してやる！！」
+EN "If you've got a problem, bring it to me!! I'll crush you myself!!"
+
+@ 3.137.05
+# speaker: 河野 (%ss21)
+JP 「それだけだよ。」
+EN "That's all I've got to say."
+
+@ 3.138.00
+# speaker: 記者
+JP 「%ss88さん。
+JP 　%ss88さんは、%ss98さんと
+JP 　決別したことによって、」
+EN "%ss88. %ss88, by breaking with %ss98,"
+
+@ 3.138.01
+# speaker: 記者
+JP 「ある意味、ＶＪＰ全体を
+JP 　敵に回してたと言っても
+JP 　過言ではないでしょうが・・・」
+EN "you've more or less made an enemy of all of <VJP>..."
+
+@ 3.138.02
+# speaker: 記者
+JP 「今後、どのような考えで
+JP 　進んで行かれるおつもりですか？」
+EN "Where do you go from here?"
+
+@ 3.138.03
+# speaker: 旗本 (%ss88)
+JP 「近く、%ss0社長と
+JP 　会談を持ちます。」
+EN "I'll be sitting down with President %ss0 soon."
+
+@ 3.138.04
+# speaker: 旗本 (%ss88)
+JP 「俺はこうなったら、
+JP 　%ss98主導の今のＶＪＰ体制を
+JP 　根本から変革するつもりなんですよ。」
+EN "The way things are now, I intend to tear down this %ss98-run <VJP> and rebuild it from the ground up."
+
+@ 3.138.05
+# speaker: 旗本 (%ss88)
+JP 「誰かが
+JP 　やらなくちゃ
+JP 　ならないことですから・・・。」
+EN "Somebody has to do it..."
+
+@ 3.138.06
+# speaker: 記者
+JP 「%ss21選手の
+JP 『%ss88潰す』発言について、
+JP 　何かコメントはありますか？」
+EN "Any comment on %ss21 saying he'll 'crush %ss88'?"
+
+@ 3.138.07
+# speaker: 旗本 (%ss88)
+JP 「%ss21とは、いずれ
+JP 　じっくりと話し合おうと
+JP 　思ってますよ。」
+EN "Sooner or later, %ss21 and I are going to have a long talk."
+
+@ 3.138.08
+# speaker: 旗本 (%ss88)
+JP 「ただね。
+JP 　あいつも頑固だから、」
+EN "Thing is, he's stubborn too,"
+
+@ 3.138.09
+# speaker: 旗本 (%ss88)
+JP 「分からねえようだったら
+JP 　やるしかねえかな。」
+EN "so if he doesn't get it, I guess we'll just have to fight."
+
+@ 3.139.00
+# speaker: 旗本 (%ss88)
+JP 　%ss0社長との会談当日、
+JP 　俺は、二つの要求を提示した。
+EN On the day of the meeting, I put two demands to President %ss0.
+
+@ 3.139.01
+# speaker: 旗本 (%ss88)
+JP 　一つは、今後、
+JP 　俺の試合は団体に関係なく、
+JP 　自分の意思でマッチメイク出来ること。
+EN First: from now on, I'd make my own matches, whatever the promotion.
+
+@ 3.139.02
+# speaker: 旗本 (%ss88)
+JP 　そして、もう一つは・・・
+EN And second...
+
+@ 3.139.03
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰが、%ss98さんとの関係を
+JP 　完全に断ち切ることだった・・・！
+EN was that <VJP> cut all ties with %ss98...!
+
+@ 3.140.00
+# speaker: 大和 (%ss0)
+JP 「%ss88、
+JP 　おまえの言い分は
+JP 　よく分かる・・・。」
+EN "%ss88, I understand where you're coming from..."
+
+@ 3.140.01
+# speaker: 大和 (%ss0)
+JP 「だがな、ＶＪＰが
+JP 　%ss98さんとの関係を
+JP 　完全に切るというのは、」
+EN "But for <VJP> to cut all ties with %ss98,"
+
+@ 3.140.02
+# speaker: 大和 (%ss0)
+JP 「根本的に無理なことなんだ。」
+EN "that's just plain impossible."
+
+@ 3.140.03
+# speaker: 旗本 (%ss88)
+JP 「%ss0さん・・・！
+JP 　俺だって、%ss98さんの
+JP 　重要性はよく分かってますよ！！」
+EN "%ss0...! I know how important %ss98 is as well as anyone!!"
+
+@ 3.140.04
+# speaker: 旗本 (%ss88)
+JP 「ただね、それじゃあ
+JP 　いつまで経ったって新しいＶＪＰなんか
+JP 　つくれっこない！！」
+EN "But that way, we'll never build a new <VJP>!!"
+
+@ 3.140.05
+# speaker: 旗本 (%ss88)
+JP 「引退した人間がいなけりゃ
+JP 　ダメってことなんですか！！」
+EN "Are you saying we're nothing without a retired man?!"
+
+@ 3.140.06
+# speaker: 旗本 (%ss88)
+JP 「そんなの
+JP 　おかしいじゃねえか！？」
+EN "That ain't right, is it?!"
+
+@ 3.140.07
+# speaker: 大和 (%ss0)
+JP 「・・・。」
+EN "..."
+
+@ 3.140.08
+# speaker: 旗本 (%ss88)
+JP 「何で黙ってんだ！！
+JP 　あんたドラゴンだろ！！」
+EN "Why are you just sitting there?! You're the Dragon, aren't you?!"
+
+@ 3.140.09
+# speaker: 旗本 (%ss88)
+JP 「俺の言っていることが
+JP 　分かんねえのか！？」
+EN "Don't you get what I'm saying?!"
+
+@ 3.140.10
+# speaker: 旗本 (%ss88)
+JP 「だったら、分かるように
+JP 　してやろうか！？ああっ！？」
+EN "Then maybe I should make you get it?! Huh?!"
+
+@ 3.140.11
+# speaker: 大和 (%ss0)
+JP 「%ss88・・・！！
+JP 　調子に乗るなよ！！」
+EN "%ss88...!! Don't push your luck!!"
+
+@ 3.140.12
+# speaker: 大和 (%ss0)
+JP 「おまえは
+JP 　まだまだ甘いんだ！！」
+EN "You've still got a lot to learn!!"
+
+@ 3.140.13
+# speaker: 大和 (%ss0)
+JP 「力ずくで
+JP 　ねじ伏せてやっても
+JP 　いいんだぞ！！」
+EN "I can put you down by force if I have to!!"
+
+@ 3.140.14
+# speaker: 旗本 (%ss88)
+JP 「やってみろ！！コラあ！！」
+EN "Try it!! Come on!!"
+
+@ 3.141.00
+# speaker: 旗本 (%ss88)
+JP 　勢いあまってとは
+JP 　まさに、このことだった・・・！
+EN Getting carried away... that's exactly what it was...!
+
+@ 3.141.01
+# speaker: 旗本 (%ss88)
+JP 　完全に流れだったが、
+JP 　熱くなってしまったものは
+JP 　しょうがない！！
+EN It just happened in the heat of the moment, but there was no taking it back!!
+
+@ 3.141.02
+# speaker: 旗本 (%ss88)
+JP 　まずは%ss0社長を撃破して、
+JP 　俺の主張を貫き通す！！
+EN First I'd beat President %ss0, and then I'd push my demands through!!
+
+@ 3.142.00
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　%ss88さん！！」
+EN "%ss88...!! %ss88!!"
+
+@ 3.142.01
+# speaker: 記者
+JP 「突然の%ss0戦ですが・・・
+JP 　新たな権力抗争の勃発ですか！？」
+EN "A sudden match against %ss0... Is this the start of a new power struggle?!"
+
+@ 3.142.02
+# speaker: 旗本 (%ss88)
+JP 「いいか！！
+JP 　俺は、マジでＶＪＰを変える！！
+JP 　そのための闘いだ！！」
+EN "Listen up!! I'm dead serious about changing <VJP>!! That's what this fight is for!!"
+
+@ 3.142.03
+# speaker: 旗本 (%ss88)
+JP 「俺はＶＪＰを変える！！
+JP 　変えるぞ！！」
+EN "I'm changing <VJP>!! You hear me?!"
+
+@ 3.148.00
+# speaker: 旗本 (%ss88)
+JP 　ただ突き進むこと・・・
+EN Just keep charging forward...
+
+@ 3.148.01
+# speaker: 旗本 (%ss88)
+JP 　俺は今まで、
+JP 　自分の信じるものを目指して
+JP 　突き進んで来た。
+EN All my life, I've charged straight ahead toward what I believe in.
+
+@ 3.148.02
+# speaker: 旗本 (%ss88)
+JP 　これからも
+JP 　その生き方は変わらないだろう。
+EN That's not going to change from here on out.
+
+@ 3.148.03
+# speaker: 旗本 (%ss88)
+JP 　長く生きようなんて
+JP 　思っちゃいない。
+EN I'm not looking to live a long life.
+
+@ 3.148.04
+# speaker: 旗本 (%ss88)
+JP 　太く短く。
+EN Live hard and die young.
+
+@ 3.148.05
+# speaker: 旗本 (%ss88)
+JP 　その間に天下を取れれば、
+JP 　俺は自分の人生に満足できる。
+EN If I can take the top spot before then, I'll die a satisfied man.
+
+@ 3.148.06
+# speaker: 旗本 (%ss88)
+JP 　武人として生きることが、
+JP 　俺の理想の生き方だから。
+JP 　%sf88
+EN Living as a warrior is the life I want.
+EN %sf88
+
+@ 3.149.00
+# speaker: 記者
+JP 「%ss66さん・・・
+JP 　%ss66さん！！」
+EN "%ss66... %ss66!!"
+
+@ 3.149.01
+# speaker: 記者
+JP 「一言いいですか！？
+JP 　%ss66さん！！」
+EN "Just a word?! %ss66!!"
+
+@ 3.150.00
+# speaker: 氷川 (%ss66)
+JP 「やられたね、今日は。」
+EN "He got me today."
+
+@ 3.150.01
+# speaker: 氷川 (%ss66)
+JP 「最後・・・
+JP 　あそこで
+JP 　ああ来るとは思わなかったよ。」
+EN "That finish... I never saw that coming."
+
+@ 3.150.02
+# speaker: 氷川 (%ss66)
+JP 「完敗だな。」
+EN "A clean loss."
+
+@ 3.152.00
+# speaker: 旗本 (%ss88)
+JP 「%ss66ーー！！
+JP 　これで勝ったと思うなよ！！」
+EN "%ss66!! Don't think you've won this!!"
+
+@ 3.152.01
+# speaker: 旗本 (%ss88)
+JP 「まだまだ
+JP 　これからだぞ！！」
+EN "This is only the beginning!!"
+
+@ 3.153.00
+# speaker: 記者
+JP 「%ss88さん・・・！！」
+EN "%ss88...!!"
+
+@ 3.153.01
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　コメントを・・・」
+EN "%ss88!! A comment, please..."
+
+@ 3.154.00
+# speaker: 記者
+JP 「うわあああ！！」
+EN "Waaagh!!"
+
+@ 3.155.00
+# speaker: 旗本 (%ss88)
+JP 「ここからが本当の勝負だ！！」
+EN "This is where the real fight begins!!"
+
+@ 3.155.01
+# speaker: 旗本 (%ss88)
+JP 「もう一回勝負しろ！！
+JP 　%ss66ーーー！！」
+EN "Fight me again!! %ss66!!!"
+
+@ 3.161.00
+# speaker: 野川 (%ss94)
+JP 「%ss88！！」
+EN "%ss88!!"
+
+@ 3.161.01
+# speaker: 野川 (%ss94)
+JP 「てめえ、何Ｓ－ＮＯＶＡなんかと
+JP 　試合やってんだ！！
+JP 　俺ともう一回勝負しろお！！」
+EN "What the hell are you doing wrestling <S-NOVA>?!! Fight me again!!"
+
+@ 3.162.00
+# speaker: アナウンサー
+JP 「%ss94です・・・！！
+JP 　%ss94がＮＥＯ－ＯＮＥの
+JP 　旗揚げ戦に乱入して来ました！！」
+EN "It's %ss94...!! %ss94 has stormed <NEO-ONE>'s first show!!"
+
+@ 3.163.00
+# speaker: 氷川 (%ss66)
+JP 「おまえ・・・！！
+JP 　何やってんだ、こらあ！！」
+EN "You...!! What the hell do you think you're doing?!"
+
+@ 3.164.00
+# speaker: アナウンサー
+JP 「ああーーっと・・・！！
+JP 　%ss66が・・・
+JP 　%ss66が！！」
+EN "Ohhh...!! %ss66... %ss66!!"
+
+@ 3.164.01
+# speaker: アナウンサー
+JP 「%ss94に
+JP 　強烈なエルボーだああ！！」
+EN "A brutal elbow on %ss94!!"
+
+@ 3.165.00
+# speaker: アナウンサー
+JP 「凄い光景です・・・！！
+JP 　%ss88、%ss66、
+JP 　%ss94、」
+EN "What a sight...!! %ss88, %ss66, %ss94,"
+
+@ 3.165.01
+# speaker: アナウンサー
+JP 「夢の大乱闘となっております！！」
+EN "it's a dream brawl!!"
+
+@ 3.166.00
+# speaker: 解説者（%ss42）
+JP 「すごいね。
+JP 　俺も行こうかな。」
+EN "Wow. Maybe I'll jump in too."
+
+@ 3.167.00
+# speaker: 旗本 (%ss88)
+JP 　%ss94は以前から、
+JP 　%ss66が自分を格下扱いしたことに
+JP 　腹を立てており、
+EN %ss94 had long been angry at %ss66 for treating him as second-rate,
+
+@ 3.167.01
+# speaker: 旗本 (%ss88)
+JP 　Ｓ－ＮＯＶＡに対して
+JP 　敵対心を持っていた。
+EN and he had it in for <S-NOVA>.
+
+@ 3.167.02
+# speaker: 旗本 (%ss88)
+JP 　%ss94の思わぬ暴走で、
+JP 　最後はメチャクチャになったが、
+EN %ss94's rampage turned the ending into total chaos,
+
+@ 3.167.03
+# speaker: 旗本 (%ss88)
+JP 　観客は大熱狂し、
+JP 　旗揚げとしては大成功だった。
+EN but the crowd went wild, and our first show was a huge success.
+
+@ 3.167.04
+# speaker: 旗本 (%ss88)
+JP 　だが、%ss66は
+JP 　この幕切れについて激怒する・・・！
+EN %ss66, though, was furious about how it ended...!
+
+@ 3.168.00
+# speaker: 氷川 (%ss66)
+JP 「%ss94？
+JP 　バカと絡むつもりはないね。」
+EN "%ss94? I'm not getting mixed up with an idiot."
+
+@ 3.168.01
+# speaker: 氷川 (%ss66)
+JP 「こんな流れは
+JP 　うちのプロレスにはない。」
+EN "That kind of thing has no place in our wrestling."
+
+@ 3.168.02
+# speaker: 氷川 (%ss66)
+JP 「乱闘がやりたいなら、勝手にやればいい。
+JP 　こっちには
+JP 　こっちのやり方があるから。」
+EN "If they want a brawl, they can have one. We've got our own way of doing things."
+
+@ 3.168.03
+# speaker: 記者
+JP 「%ss66さん、今後、
+JP 　%ss88選手との一騎打ちは
+JP 　あり得るんでしょうか？」
+EN "%ss66, will we ever see you one-on-one with %ss88?"
+
+@ 3.168.04
+# speaker: 氷川 (%ss66)
+JP 「こんな事が起きるんじゃ
+JP 　話にならない。」
+EN "Not if things like this are going to happen."
+
+@ 3.168.05
+# speaker: 氷川 (%ss66)
+JP 「ＮＥＯ－ＯＮＥとの交流は
+JP 　いったん白紙に戻すよ。」
+EN "Our relationship with <NEO-ONE> is off, for now."
+
+@ 3.169.00
+# speaker: 旗本 (%ss88)
+JP 　冗談じゃない・・・！！
+EN You've got to be kidding me...!!
+
+@ 3.169.01
+# speaker: 旗本 (%ss88)
+JP 　せっかく
+JP 　いい流れでスタートが切れたんだ。
+EN We'd just gotten off to a great start.
+
+@ 3.169.02
+# speaker: 旗本 (%ss88)
+JP 　ＮＥＯ－ＯＮＥと
+JP 　Ｓ－ＮＯＶＡの関係は、
+JP 　絶対に途絶えさせねえぞ・・・！！
+EN I'm not letting the tie between <NEO-ONE> and <S-NOVA> die...!!
+
+@ 3.169.03
+# speaker: 旗本 (%ss88)
+JP 　俺は初め、イケイケで
+JP 　押していた。
+EN At first, I came on full force.
+
+@ 3.169.04
+# speaker: 旗本 (%ss88)
+JP 　勢いに乗っていたからな。
+EN I was riding high, after all.
+
+@ 3.169.05
+# speaker: 旗本 (%ss88)
+JP 　だが、%ss66という男は、
+JP 　ＶＪＰ流の挑発には
+JP 　まるで乗ってこなかった。
+EN But %ss66 just wouldn't take the bait the <VJP> way.
+
+@ 3.169.06
+# speaker: 旗本 (%ss88)
+JP 　俺の挑発は、かえって
+JP 　%ss66の態度を
+JP 　硬化させるだけだった・・・。
+EN My taunts only made %ss66 dig in his heels...
+
+@ 3.170.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　%ss88選手から挑戦状が
+JP 　届いたそうですが・・・」
+EN "%ss66!! We hear %ss88 has sent you a challenge..."
+
+@ 3.170.01
+# speaker: 氷川 (%ss66)
+JP 「見たくないね。」
+EN "I don't want to see it."
+
+@ 3.170.02
+# speaker: 氷川 (%ss66)
+JP 「まずは、キチンと筋を通してもらいたい。
+JP 　向こうは何か、勘違いをしてるんじゃ
+JP 　ないのか？」
+EN "First, he can do things the proper way. Doesn't he have the wrong idea about something?"
+
+@ 3.171.00
+# speaker: 旗本 (%ss88)
+JP 　勘違いってなんだ！？
+EN The wrong idea?! What's that supposed to mean?!
+
+@ 3.171.01
+# speaker: 旗本 (%ss88)
+JP 　筋を通せってどういうことだ！？
+JP 　このやろう・・・！
+EN Do it the proper way?! What the hell?! Damn him...!
+
+@ 3.172.00
+# speaker: 旗本 (%ss88)
+JP 　今までの相手なら、
+JP 　実力行使で乱入でもすれば、
+JP 　そのまま直接対決まで持ち込めた・・・
+EN With anyone else, I could just storm their ring and drag them into a fight...
+
+@ 3.172.01
+# speaker: 旗本 (%ss88)
+JP 　だが、%ss66には
+JP 　そういう方法論は通用しない。
+EN But that approach doesn't work on %ss66.
+
+@ 3.172.02
+# speaker: 旗本 (%ss88)
+JP 　この後、俺は挑発をやめ、
+JP 　俺なりの筋を通すため、
+JP 　正式に%ss66に会談を申し込んだ。
+EN So I quit the taunts and, to do it properly my way, formally asked %ss66 for a meeting.
+
+@ 3.172.03
+# speaker: 旗本 (%ss88)
+JP 　しかし、%ss66は
+JP 　この会談をも蹴った・・・。
+EN But %ss66 turned down the meeting too...
+
+@ 3.173.00
+# speaker: 旗本 (%ss88)
+JP 　ＮＥＯ－ＯＮＥの
+JP 　真の目的・・・
+EN <NEO-ONE>'s true goal...
+
+@ 3.173.01
+# speaker: 旗本 (%ss88)
+JP 　それは、プロレス界に存在する
+JP 　見えない境界線を排除し、
+EN It's to wipe out the invisible lines that divide the wrestling world,
+
+@ 3.173.02
+# speaker: 旗本 (%ss88)
+JP 　本当の意味での最強を
+JP 　決定できる場所を作り出すことにある。
+EN and create a place to decide who's truly the strongest.
+
+@ 3.173.03
+# speaker: 旗本 (%ss88)
+JP 　その大志を実現するためには、
+JP 　まず、Ｓ－ＮＯＶＡを攻略できなければ
+JP 　話にならない・・・！
+EN To make that dream real, we had to conquer <S-NOVA> first...!
+
+@ 3.173.04
+# speaker: 旗本 (%ss88)
+JP 　筋を通す・・・！！
+EN Do it the proper way...!!
+
+@ 3.173.05
+# speaker: 旗本 (%ss88)
+JP 　俺は、ＮＥＯ－ＯＮＥを、
+JP 　Ｓ－ＮＯＶＡに負けないくらいの
+JP 　メジャー団体に成長させてやる！！
+EN I'll make <NEO-ONE> a major promotion that's every bit as big as <S-NOVA>!!
+
+@ 3.173.06
+# speaker: 旗本 (%ss88)
+JP 　そうなれば
+JP 　文句は言えねえだろ・・・！！
+EN Then they won't have anything to complain about...!!
+
+@ 3.174.00
+# speaker: 旗本 (%ss88)
+JP 　短期決戦から、
+JP 　長期戦に切り替えた俺は、
+EN I switched from a quick strike to a long campaign,
+
+@ 3.174.01
+# speaker: 旗本 (%ss88)
+JP 　まずは、個性的な選手、
+JP 　有望な選手の育成に着手した。
+EN and set about developing unique, promising wrestlers.
+
+@ 3.174.02
+# speaker: 旗本 (%ss88)
+JP 　その結果、
+JP 　ＮＥＯ－ＯＮＥのリングでは
+JP 　斬新な闘いが展開されるようになり、
+EN Soon, fresh new kinds of fights were breaking out in the <NEO-ONE> ring,
+
+@ 3.174.03
+# speaker: 旗本 (%ss88)
+JP 　単独でも
+JP 　大きな興行が打てるようになった。
+EN and we could run big shows on our own.
+
+@ 3.174.04
+# speaker: 旗本 (%ss88)
+JP 　そして、
+JP 　２年の月日が流れる・・・
+EN And so, two years went by...
+
+@ 3.175.00
+# speaker: アナウンサー
+JP 「ついに・・・
+JP 　ついに！！この時が
+JP 　やってまいりました！！」
+EN "At last... at last!! The moment has arrived!!"
+
+@ 3.175.01
+# speaker: アナウンサー
+JP 「%sf88率いる
+JP 　ＮＥＯ－ＯＮＥと、」
+EN "%sf88's <NEO-ONE>,"
+
+@ 3.175.02
+# speaker: アナウンサー
+JP 「%ss66率いるＳ－ＮＯＶＡとの、
+JP 『統一王者』をかけての
+JP 　一大決戦です！！」
+EN "versus %ss66's <S-NOVA>, in an all-out war for the 'Unified Champion'!!"
+
+@ 3.175.03
+# speaker: アナウンサー
+JP 「何と言っても、メインの
+JP 　%ss88対%ss66の
+JP 　シングルマッチが楽しみですね！！」
+EN "And of course, we're all waiting for the main event: %ss88 vs. %ss66 one-on-one!!"
+
+@ 3.175.04
+# speaker: 解説者
+JP 「%ss88にとっては、
+JP 　２年越しの念願が
+JP 　かなうわけですからね。」
+EN "For %ss88, it's a dream two years in the making."
+
+@ 3.175.05
+# speaker: 解説者
+JP 「両雄の意地がぶつかり合う、
+JP 　すさまじい闘いになると思いますよ。」
+EN "Two proud men colliding... it's going to be a fierce fight."
+
+@ 3.176.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　%ss88選手との一騎打ちが
+JP 　ついに実現しました！！」
+EN "%ss66!! Your one-on-one with %ss88 is finally happening!!"
+
+@ 3.176.01
+# speaker: 記者
+JP 「試合を前にして、
+JP 　一言コメントをお願いします！！」
+EN "A word before the match, please!!"
+
+@ 3.176.02
+# speaker: 氷川 (%ss66)
+JP 「熱いね、久しぶりに。」
+EN "I'm fired up. First time in a while."
+
+@ 3.176.03
+# speaker: 氷川 (%ss66)
+JP 「弱小団体が、正攻法で
+JP 　ここまで登りつめたんだ。」
+EN "A small promotion climbed all the way up here, playing it straight."
+
+@ 3.176.04
+# speaker: 氷川 (%ss66)
+JP 「色んな意味で
+JP 　認めないわけにはいかないね。」
+EN "In more ways than one, I have to give them credit."
+
+@ 3.176.05
+# speaker: 氷川 (%ss66)
+JP 「ただ、勝負となれば話は別だ。
+JP 　意地と意地のぶつかり合いなら
+JP 　こっちは絶対に負けない・・・！」
+EN "But a match is a different story. If it's pride against pride, I won't lose...!"
+
+@ 3.177.00
+# speaker: 旗本 (%ss88)
+JP 　今はもう、何も言うことはない・・・
+EN There's nothing left to say now...
+
+@ 3.177.01
+# speaker: 旗本 (%ss88)
+JP 　俺は、ここまで来たんだ。
+JP 　後は勝つのみ・・・！
+EN I've come this far. All that's left is to win...!
+
+@ 3.177.02
+# speaker: 旗本 (%ss88)
+JP 　絶対に勝つ！！
+EN I'll win, no matter what!
+
+@ 3.183.00
+# speaker: 記者
+JP 「%ss88さん！！」
+EN "%ss88!"
+
+@ 3.183.01
+# speaker: 記者
+JP 「ＮＥＯ－ＯＮＥの旗揚げ戦に、
+JP 　Ｓ－ＮＯＶＡの%ss66選手と
+JP 　%ss69選手が、」
+EN "For <NEO-ONE>'s first show, %ss66 and %ss69 of <S-NOVA>"
+
+@ 3.183.02
+# speaker: 記者
+JP 「タッグを組んで
+JP 　参戦するというのは本当なんですか！？」
+EN "are teaming up? Is that true?!"
+
+@ 3.183.03
+# speaker: 旗本 (%ss88)
+JP 「一応、俺の方からは
+JP 　そういう風に要請しているよ。」
+EN "Well, that's what I've asked them for."
+
+@ 3.183.04
+# speaker: 旗本 (%ss88)
+JP 「ただ、%ss69は
+JP 　相当嫌がっているみたいだけどな。」
+EN "Though it sounds like %ss69 really hates the idea."
+
+@ 3.183.05
+# speaker: 記者
+JP 「%ss69選手は今、
+JP 　%ss66選手との抗争の
+JP 　真っ最中ですからね・・・」
+EN "%ss69 is right in the middle of a feud with %ss66, after all..."
+
+@ 3.183.06
+# speaker: 記者
+JP 「タッグを組むというのは、
+JP 　容易なことじゃないでしょう・・・。」
+EN "Getting them to team up can't be easy..."
+
+@ 3.183.07
+# speaker: 旗本 (%ss88)
+JP 「向こうは
+JP 　つりあいを気にしているんだ。」
+EN "They're worried the match won't be even."
+
+@ 3.183.08
+# speaker: 旗本 (%ss88)
+JP 「俺が、%ss66・%ss69に
+JP 　匹敵するぐらいの選手を
+JP 　用意出来ないと思ってる。」
+EN "They don't think I can find a partner who measures up to %ss66 and %ss69."
+
+@ 3.183.09
+# speaker: 旗本 (%ss88)
+JP 「今のところ
+JP 『Ｘ』という選手になっているけど、」
+EN "Right now my partner is listed as 'X',"
+
+@ 3.183.10
+# speaker: 旗本 (%ss88)
+JP 「旗揚げまでには
+JP 　必ず大物をつれて来てみせるよ。」
+EN "but I'll have a big name lined up by the first show. Count on it."
+
+@ 3.184.00
+# speaker: 旗本 (%ss88)
+JP 　記者には強気で対応したが、
+JP 　この時点で、まだ、
+JP 　Ｘを誰にするかは決まっていなかった。
+EN I talked tough to the press, but I still hadn't decided who X would be.
+
+@ 3.184.01
+# speaker: 旗本 (%ss88)
+JP 　正直言って時間がない・・・。
+EN Honestly, I was running out of time...
+
+@ 3.184.02
+# speaker: 旗本 (%ss88)
+JP 　けれど、いよいよ
+JP 　ヤバイって時になって、
+EN But just when things were getting really bad,
+
+@ 3.184.03
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰから、強力なレスラーが
+JP 　名乗りをあげてくれたんだ・・・！
+EN a powerful wrestler from <VJP> stepped up...!
+
+@ 3.185.00
+# speaker: 阪田 (%ss8)
+JP 「%ss88さん。
+JP 　ＮＥＯ－ＯＮＥの旗揚げ戦、
+JP 　俺を使って下さい。」
+EN "%ss88. Use me for <NEO-ONE>'s first show."
+
+@ 3.185.01
+# speaker: 旗本 (%ss88)
+JP 「%ss8・・・！」
+EN "%ss8...!"
+
+@ 3.185.02
+# speaker: 阪田 (%ss8)
+JP 「会社の了承は得て来ました。」
+EN "The company's already given me the OK."
+
+@ 3.185.03
+# speaker: 阪田 (%ss8)
+JP 「俺は、あくまでＶＪＰのレスラーですが、
+JP 　この闘いは俺にとって
+JP 　必ず大きな資産になる。」
+EN "I'm a <VJP> wrestler, no question, but this fight is going to be a real asset to me."
+
+@ 3.185.04
+# speaker: 阪田 (%ss8)
+JP 「いっしょに
+JP 　ぶちかましましょう！！」
+EN "Let's go out there and tear it up!!"
+
+@ 3.186.00
+# speaker: 旗本 (%ss88)
+JP 　%ss8は、今のＶＪＰを
+JP 　背負って立っている男の一人だ。
+EN %ss8 is one of the men carrying <VJP> today.
+
+@ 3.186.01
+# speaker: 旗本 (%ss88)
+JP 　これで、格がどうのこうの
+JP 　ゴネる奴がいたら、
+JP 　そんな奴は俺がぶっ飛ばしてやる。
+EN If anybody whines about rank now, I'll knock their block off myself.
+
+@ 3.186.02
+# speaker: 旗本 (%ss88)
+JP 　とにかく
+JP 　駒は揃った。
+EN Anyway, the pieces were in place.
+
+@ 3.186.03
+# speaker: 旗本 (%ss88)
+JP 　見てろよ・・・
+EN Just watch...
+
+@ 3.186.04
+# speaker: 旗本 (%ss88)
+JP 　ＮＥＯ－ＯＮＥは
+JP 　プロレス界に新時代を築く！！
+EN <NEO-ONE> is going to bring a new era to the wrestling world!!
+
+@ 3.187.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　%ss69さん！！」
+EN "%ss66!! %ss69!!"
+
+@ 3.187.01
+# speaker: 記者
+JP 「今夜のタッグマッチは、
+JP 　プロレス界のドリームマッチと
+JP 　言えると思うのですが、」
+EN "Tonight's tag match could be called the wrestling world's dream match,"
+
+@ 3.187.02
+# speaker: 記者
+JP 「%ss88・%ss8組との
+JP 　対戦にあたって、一言コメントを
+JP 　お願いします！！」
+EN "so please give us a word on facing %ss88 and %ss8!!"
+
+@ 3.187.03
+# speaker: 氷川 (%ss66)
+JP 「ドリームマッチかどうか知らないが、
+JP 　納得の行く試合には
+JP 　しないとな。」
+EN "Dream match or not, we have to make it a match worth seeing."
+
+@ 3.187.04
+# speaker: 氷川 (%ss66)
+JP 「内容が名前に負けたら、
+JP 　元も子もないからね。」
+EN "If the match doesn't live up to the names, there's no point."
+
+@ 3.187.05
+# speaker: 記者
+JP 「%ss69さんはどうですか？」
+EN "%ss69, what about you?"
+
+@ 3.187.06
+# speaker: 秋沢 (%ss69)
+JP 「向こうは『闘魂』を
+JP 　掲げてるみたいだけどね。」
+EN "They're making a big deal about 'fighting spirit.'"
+
+@ 3.187.07
+# speaker: 秋沢 (%ss69)
+JP 「それが何？って感じですよ。
+JP 　レスラーは皆、闘魂を持って
+JP 　闘っているから。」
+EN "So what? Every wrestler fights with fighting spirit."
+
+@ 3.187.08
+# speaker: 秋沢 (%ss69)
+JP 「試合については
+JP 　やってみなければ分からない。」
+EN "As for the match, you never know until you do it."
+
+@ 3.187.09
+# speaker: 秋沢 (%ss69)
+JP 「まあ、やれば分かるでしょう。」
+EN "Well, we'll find out when we do."
+
+@ 3.188.00
+# speaker: 旗本 (%ss88)
+JP 　%ss69、おまえは
+JP 　頭に来るぜ・・・！！
+EN %ss69, you really get under my skin...!!
+
+@ 3.188.01
+# speaker: 旗本 (%ss88)
+JP 　スカしていられるのも
+JP 　今のうちだぞ！！
+EN Act cool while you still can!!
+
+@ 3.188.02
+# speaker: 旗本 (%ss88)
+JP 　本物の闘魂ってやつを
+JP 　教えてやるぜ！！
+EN I'll show you what real fighting spirit is!!
+
+@ 3.190.00
+# speaker: 旗本 (%ss88)
+JP 　熱いじゃねえか・・・！！
+JP 　これだよ、これ！！
+EN Now that's what I'm talking about...!! This is it!!
+
+@ 3.190.01
+# speaker: 旗本 (%ss88)
+JP 　だがな、こいつじゃ役不足だ！！
+EN But this guy isn't enough for me!!
+
+@ 3.190.02
+# speaker: 旗本 (%ss88)
+JP 　%ss70との前哨戦で
+JP 　感覚をつかんだ俺は、
+EN Getting a feel for things in the warm-up match with %ss70,
+
+@ 3.190.03
+# speaker: 旗本 (%ss88)
+JP 　いよいよ本格的に
+JP 　ＮＥＯ－ＯＮＥ旗揚げへと
+JP 　動き出す・・・！
+EN I finally got moving on <NEO-ONE>'s launch for real...!
+
+@ 3.196.00
+# speaker: 旗本 (%ss88)
+JP 「私、
+JP 　%sf88は、」
+EN "I,
+EN %sf88..."
+
+@ 3.196.01
+# speaker: 旗本 (%ss88)
+JP 「近日中に
+JP 　新団体『ＮＥＯ－ＯＮＥ』を
+JP 　旗揚げすることをご報告します。」
+EN "Hereby announce that I will soon
+EN launch a new promotion,
+EN <NEO-ONE>."
+
+@ 3.196.02
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　新団体って・・・！？」
+EN "%ss88...!! A new promotion...?!"
+
+@ 3.196.03
+# speaker: 記者
+JP 「ＶＪＰサイドは、
+JP 　それを了承したんですか！？」
+EN "Has <VJP> agreed to this?!"
+
+@ 3.196.04
+# speaker: 旗本 (%ss88)
+JP 「いえ、会社とは
+JP 　まだ何も話していません。」
+EN "No, I haven't talked to the company about it yet."
+
+@ 3.196.05
+# speaker: 旗本 (%ss88)
+JP 「今のところ、ＶＪＰ傘下の
+JP 　子団体というスタイルで
+JP 　やって行きたいと考えています。」
+EN "For now, I'd like it to be a sister promotion under the <VJP> umbrella."
+
+@ 3.196.06
+# speaker: 旗本 (%ss88)
+JP 「俺が理想としている
+JP 　プロレスを展開して行くには、」
+EN "For me to put on the kind of wrestling I believe in,"
+
+@ 3.196.07
+# speaker: 旗本 (%ss88)
+JP 「完全なＶＪＰの専属レスラーとしてでは、
+JP 　何かと不都合が生じる
+JP 　はずですから・・・。」
+EN "being a full-time <VJP> wrestler would get in the way..."
+
+@ 3.196.08
+# speaker: 記者
+JP 「不都合というと・・・
+JP 　具体的には
+JP 　どのようなことですか・・・？」
+EN "Get in the way... how, exactly...?"
+
+@ 3.196.09
+# speaker: 旗本 (%ss88)
+JP 「俺は、ＶＪＰ以外の
+JP 　他団体との対抗戦を考えています。」
+EN "I'm thinking of interpromotional matches with promotions besides <VJP>."
+
+@ 3.196.10
+# speaker: 記者
+JP 「他団体との対抗戦って・・・」
+EN "Interpromotional matches..."
+
+@ 3.196.11
+# speaker: 記者
+JP 「ＶＪＰは、すでに
+JP 　ＯＪＰとの対抗戦を決定する
+JP 　方向じゃないですか・・・？」
+EN "But isn't <VJP> already set on an interpromotional series with <OJP>...?"
+
+@ 3.196.12
+# speaker: 記者
+JP 「あ・・・！
+JP 　もしかして、Ｓ－ＮＯＶＡですか！？」
+EN "Ah...! Don't tell me... <S-NOVA>?!"
+
+@ 3.196.13
+# speaker: 旗本 (%ss88)
+JP 「どのように推測されても構いません。
+JP 　俺もそれを否定するつもりは
+JP 　ありません。」
+EN "Guess whatever you like. I'm not going to deny it."
+
+@ 3.196.14
+# speaker: 記者
+JP 「%ss88さん・・・
+JP 　Ｓ－ＮＯＶＡは難しいでしょう・・・！」
+EN "%ss88... <S-NOVA> will be a tough sell...!"
+
+@ 3.196.15
+# speaker: 記者
+JP 「もしＶＪＰが
+JP 　それを許さないと判断した場合は、
+JP 　どうなされるおつもりですか？」
+EN "And if <VJP> decides not to allow it, what will you do?"
+
+@ 3.196.16
+# speaker: 旗本 (%ss88)
+JP 「その場合は・・・」
+EN "In that case..."
+
+@ 3.196.17
+# speaker: 旗本 (%ss88)
+JP 「自分の信念を貫く方を
+JP 　選択したいと思います・・・！」
+EN "I'd choose to stick to what I believe in...!"
+
+@ 3.197.00
+# speaker: 旗本 (%ss88)
+JP 　復帰後すぐの、
+JP 　この記者会見によって
+JP 　ＶＪＰ内部は騒然となった。
+EN That press conference, right after my comeback, threw <VJP> into an uproar.
+
+@ 3.197.01
+# speaker: 旗本 (%ss88)
+JP 　特に問題にされたのは、
+JP 　会見場でＳ－ＮＯＶＡという名前が
+JP 　出たことだった。
+EN What caused the most trouble was me saying the name <S-NOVA> at the press conference.
+
+@ 3.197.02
+# speaker: 旗本 (%ss88)
+JP 　過去の
+JP 　Ｓ－ＮＯＶＡとＯＪＰの
+JP 　確執を考えれば、
+EN Given the bad blood between <S-NOVA> and <OJP>,
+
+@ 3.197.03
+# speaker: 旗本 (%ss88)
+JP 　ＯＪＰとの対抗戦を進めていたＶＪＰが、
+JP 　Ｓ－ＮＯＶＡという団体に
+JP 　神経質になったのも当然だろう。
+EN it was only natural that <VJP>, working toward an interpromotional series with <OJP>, got nervous about <S-NOVA>.
+
+@ 3.197.04
+# speaker: 旗本 (%ss88)
+JP 　だが、この時点で
+JP 　俺の心は、
+EN But by then,
+
+@ 3.197.05
+# speaker: 旗本 (%ss88)
+JP 　すでに、
+JP 　%ss66というレスラーのいる
+JP 　Ｓ－ＮＯＶＡへと飛んでいた・・・！
+EN my heart had already flown to <S-NOVA>, where a wrestler named %ss66 was waiting...!
+
+@ 3.198.00
+# speaker: 大和 (%ss0)
+JP 「ＶＩＥＷ　ＪＡＰＡＮ　プロレスは
+JP 　今日付けをもって・・・」
+EN "As of today, <VIEW JAPAN> Pro Wrestling..."
+
+@ 3.198.01
+# speaker: 大和 (%ss0)
+JP 「%sf88を
+JP 　解雇します。」
+EN "is releasing %sf88."
+
+@ 3.199.00
+# speaker: 旗本 (%ss88)
+JP 　俺の行動に対して、
+JP 　会社が下した判断は
+JP 『解雇』という二文字だった。
+EN The company's answer to what I'd done was one word: "fired."
+
+@ 3.199.01
+# speaker: 旗本 (%ss88)
+JP 　%ss0さんは、最後まで
+JP 　俺をかばってくれたようだったが、
+JP 　こうなることは覚悟していたよ。
+EN %ss0 stood up for me to the end, I heard, but I'd been ready for this.
+
+@ 3.199.02
+# speaker: 旗本 (%ss88)
+JP 　俺は
+JP 　ＶＩＥＷ　ＪＡＰＡＮ　プロレスという
+JP 　会社を愛していた・・・
+EN I loved <VIEW JAPAN> Pro Wrestling...
+
+@ 3.199.03
+# speaker: 旗本 (%ss88)
+JP 　だが、これからはＮＥＯ－ＯＮＥの
+JP 　%sf88として
+JP 　生きていかなければならないんだ。
+EN But from here on, I had to live as %sf88 of <NEO-ONE>.
+
+@ 3.199.04
+# speaker: 旗本 (%ss88)
+JP 　まってろよ、
+JP 　%ss66・・・！！
+EN Wait for me, %ss66...!!
+
+@ 3.200.00
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　Ｓ－ＮＯＶＡへの個人参戦が
+JP 　決まったようですが、」
+EN "%ss88!! Your solo appearance in <S-NOVA> seems to be set,"
+
+@ 3.200.01
+# speaker: 記者
+JP 「今の心境をお聞かせ下さい！」
+EN "so how are you feeling right now?"
+
+@ 3.200.02
+# speaker: 旗本 (%ss88)
+JP 「Ｓ－ＮＯＶＡの選手の中に、
+JP 　俺が参戦するのを
+JP 　嫌がってる奴がいて、」
+EN "Some guys in <S-NOVA> didn't want me there,"
+
+@ 3.200.03
+# speaker: 旗本 (%ss88)
+JP 「ここまでこぎつけるのに
+JP 　相当苦労したけど・・・」
+EN "and it was a real struggle to get this far..."
+
+@ 3.200.04
+# speaker: 旗本 (%ss88)
+JP 「最終的には
+JP 　受け入れてくれたんで、
+JP 　感謝してますよ。」
+EN "but in the end they accepted me, and I'm grateful for that."
+
+@ 3.200.05
+# speaker: 記者
+JP 「対戦相手は
+JP 　%ss70選手だそうですが、」
+EN "We hear your opponent is %ss70,"
+
+@ 3.200.06
+# speaker: 記者
+JP 「その点については
+JP 　どうお考えですか？」
+EN "so what are your thoughts on that?"
+
+@ 3.200.07
+# speaker: 旗本 (%ss88)
+JP 「%ss70・・・？
+JP 　よく知らないんだよね。」
+EN "%ss70...? I don't really know him."
+
+@ 3.200.08
+# speaker: 旗本 (%ss88)
+JP 「まあ、段階を踏んで来いって
+JP 　ことなんだろうな。
+JP 　こしゃくなことするね。」
+EN "Guess they want me to work my way up. Cheeky of them."
+
+@ 3.200.09
+# speaker: 旗本 (%ss88)
+JP 「ただ、これだけは
+JP 　言っておく・・・」
+EN "But I'll say this much..."
+
+@ 3.200.10
+# speaker: 旗本 (%ss88)
+JP 「おい！！Ｓ－ＮＯＶＡ！！
+JP 　お前ら、俺との闘いは
+JP 　覚悟しておけよ！！コラあ！！」
+EN "Hey!! <S-NOVA>!! You'd better be ready when you fight me!! You hear me?!"
+
+@ 3.200.11
+# speaker: 旗本 (%ss88)
+JP 「本物のストロングスタイルを
+JP 　教えてやる！！」
+EN "I'll teach you what real Strong Style is!!"
+
+@ 3.201.00
+# speaker: 旗本 (%ss88)
+JP 　一部のマスコミは、
+EN Some of the press
+
+@ 3.201.01
+# speaker: 旗本 (%ss88)
+JP 　俺のＳ－ＮＯＶＡ参戦を、
+JP 　事実上のＶＪＰ対ＯＪＰの
+JP 　頂点対決と騒ぎまくった。
+EN hyped my <S-NOVA> appearance as a showdown between the top of <VJP> and <OJP>.
+
+@ 3.201.02
+# speaker: 旗本 (%ss88)
+JP 　だが、俺には
+JP 　そんなことは関係なかったよ。
+EN But none of that mattered to me.
+
+@ 3.201.03
+# speaker: 旗本 (%ss88)
+JP 　とにかく
+JP 　無様な試合をしないこと・・・
+EN All that mattered was not putting on a sorry match...
+
+@ 3.201.04
+# speaker: 旗本 (%ss88)
+JP 　この試合が、
+JP 　今後の俺のレスラー人生を
+JP 　決定付ける・・・！！
+EN This match would decide the rest of my career as a wrestler...!!
+
+@ 3.201.05
+# speaker: 旗本 (%ss88)
+JP 　もう、死に物狂いで闘うだけだ。
+EN All I could do was fight like my life depended on it.
+
+@ 3.202.00
+# speaker: 大林 (%ss70)
+JP 「こらあ！！クソブタ！！
+JP 　やってみろ！！」
+EN "Come on!! You fat pig!! Bring it!!"
+
+@ 3.203.00
+# speaker: 旗本 (%ss88)
+JP 「てめえ・・・
+JP 　殺されたいのか・・・！！」
+EN "You... You want me to kill you...?!!"
+
+@ 3.205.00
+# speaker: 旗本 (%ss88)
+JP 　あれだけの観衆の前で
+JP 　引退を決意した俺だったが・・・
+EN I'd decided to retire in front of
+EN that huge crowd, but...
+
+@ 3.205.01
+# speaker: 旗本 (%ss88)
+JP 　やっぱり、心のどこかに
+JP 　プロレスへの未練はあった。
+EN Somewhere in my heart, I still
+EN couldn't let go of pro wrestling.
+
+@ 3.205.02
+# speaker: 旗本 (%ss88)
+JP 　だけど、復帰しようとは
+JP 　考えなかったよ。
+EN But I never thought about
+EN coming back.
+
+@ 3.205.03
+# speaker: 旗本 (%ss88)
+JP 　俺は、嘘つきには
+JP 　なりたくなかったからな。
+EN I didn't want to be a liar.
+
+@ 3.205.04
+# speaker: 旗本 (%ss88)
+JP 　引退した後、しばらくは
+JP 　出口のない迷路を
+JP 　さまよっている感じだった・・・
+EN After I retired, for a while it felt
+EN like I was wandering a maze
+EN with no exit...
+
+@ 3.205.05
+# speaker: 旗本 (%ss88)
+JP 　予期せぬ人物から
+JP 　電話がかかって来たのは、
+JP 　そんな時だったんだ・・・。
+EN That's when I got a call from someone I never expected...
+
+@ 3.206.00
+# speaker: 氷川 (%ss66)
+JP 「『Ｓ－ＮＯＶＡ』の%ss66です。
+JP 　%ss88さんですね。」
+EN "This is %ss66, from <S-NOVA>. Is this %ss88?"
+
+@ 3.206.01
+# speaker: 旗本 (%ss88)
+JP 「・・・！」
+EN "...!"
+
+@ 3.207.00
+# speaker: 旗本 (%ss88)
+JP 　驚いたよ。
+JP 　それと同時にうれしかった。
+EN I was surprised. And glad, too.
+
+@ 3.207.01
+# speaker: 旗本 (%ss88)
+JP 　団体は違えども
+JP 　同じプロレスで生きて来た者として、
+EN We were in different promotions, but as someone who'd lived for wrestling too,
+
+@ 3.207.02
+# speaker: 旗本 (%ss88)
+JP 　%ss66さんは、
+JP 　俺のことを気にかけてくれたんだ。
+EN %ss66 had been worried about me.
+
+@ 3.207.03
+# speaker: 旗本 (%ss88)
+JP 　%ss66さんは俺に、
+JP 『いつかＳ－ＮＯＶＡのリングで
+JP 　闘えたらいい』と語ってくれた。
+EN %ss66 told me he hoped we could fight in the <S-NOVA> ring someday.
+
+@ 3.207.04
+# speaker: 旗本 (%ss88)
+JP 　気持ちは本当にうれしかった。
+EN I was really, truly glad.
+
+@ 3.207.05
+# speaker: 旗本 (%ss88)
+JP 　だが、その時の俺には、
+JP 　それを具体的に考えるだけの
+JP 　気概はなかった・・・。
+EN But back then, I didn't have the drive to really think about it...
+
+@ 3.207.06
+# speaker: 旗本 (%ss88)
+JP 「今の俺には・・・
+JP 　%ss66さんの気持ちに
+JP 　応えられるだけの力はありません。」
+EN "Right now... I don't have it in me to live up to your offer, %ss66."
+
+@ 3.207.07
+# speaker: 旗本 (%ss88)
+JP 「%ss66さんの
+JP 　その気持ちだけ、ありがたく
+JP 　受け取らせていただきます。」
+EN "I'll gratefully accept just the thought, %ss66."
+
+@ 3.207.08
+# speaker: 氷川 (%ss66)
+JP 「そうですか・・・。」
+EN "I see..."
+
+@ 3.207.09
+# speaker: 氷川 (%ss66)
+JP 「%ss88さん・・・
+JP 　一言だけいいですか。」
+EN "%ss88... Can I say just one thing?"
+
+@ 3.207.10
+# speaker: 氷川 (%ss66)
+JP 「負けることは
+JP 　勝つことへの布石ですよ。」
+EN "Losing is a stepping stone to winning."
+
+@ 3.207.11
+# speaker: 氷川 (%ss66)
+JP 「プロレスはドラマだから。」
+EN "Wrestling is drama, after all."
+
+@ 3.207.12
+# speaker: 氷川 (%ss66)
+JP 「俺は、%ss88さんに
+JP 　期待しているんですよ。」
+EN "I'm expecting great things from you, %ss88."
+
+@ 3.207.13
+# speaker: 旗本 (%ss88)
+JP 「%ss66さん・・・。」
+EN "%ss66..."
+
+@ 3.208.00
+# speaker: 旗本 (%ss88)
+JP 　負けることは
+JP 　勝つことへの布石・・・
+EN Losing is a stepping stone to winning...
+
+@ 3.208.01
+# speaker: 旗本 (%ss88)
+JP 　%ss66さんの
+JP 　この一言で、
+JP 　暗闇をもがき続ける俺の心に、
+EN With those words from %ss66, deep in the darkness I'd been struggling through,
+
+@ 3.208.02
+# speaker: 旗本 (%ss88)
+JP 　小さな出口の光が
+JP 　見え始めたんだ。
+EN I started to see a small light at the way out.
+
+@ 3.209.00
+# speaker: 旗本 (%ss88)
+JP 　%ss66さんとの電話の後、
+JP 　漠然と先のことを
+JP 　考え始めた俺だったが、
+EN After that call with %ss66, I started thinking vaguely about the future,
+
+@ 3.209.01
+# speaker: 旗本 (%ss88)
+JP 　最終的に復帰することを
+JP 　決断させたのは、
+JP 　やっぱりファンの力だった。
+EN but in the end, what made me decide to come back was the fans.
+
+@ 3.209.02
+# speaker: 旗本 (%ss88)
+JP 　俺をリングに戻すために、
+JP 　俺のファン達は一万人もの
+JP 　署名を集めてくれたんだ。
+EN To bring me back to the ring, my fans had collected ten thousand signatures.
+
+@ 3.209.03
+# speaker: 旗本 (%ss88)
+JP 　考えてもみてくれ。
+EN Just think about it.
+
+@ 3.209.04
+# speaker: 旗本 (%ss88)
+JP 　一万人分の署名を前にして、
+JP 『やっぱりプロレスは出来ません』
+JP 　とは言えないよ。
+EN Faced with ten thousand signatures, you can't say, "Sorry, I'm done with wrestling."
+
+@ 3.209.05
+# speaker: 旗本 (%ss88)
+JP 　ここで、ファンの気持ちを無視して
+JP 　復帰しないようだったら、
+EN If I ignored the fans' feelings and didn't come back,
+
+@ 3.209.06
+# speaker: 旗本 (%ss88)
+JP 　俺はプロレスラーどころか、
+JP 　人間じゃなくなっちまう。
+EN I wouldn't just be failing as a pro wrestler. I'd be failing as a human being.
+
+@ 3.209.07
+# speaker: 旗本 (%ss88)
+JP 　ただ、復帰した後、
+JP 　以前のままの俺だったら
+JP 　申し訳ないだろ。
+EN But if I came back the same as before, I'd be letting them down.
+
+@ 3.209.08
+# speaker: 旗本 (%ss88)
+JP 　俺を押し上げてくれた人達のためにも、
+EN For the people who pushed me back up,
+
+@ 3.209.09
+# speaker: 旗本 (%ss88)
+JP 　俺は、
+JP 　新しい%sf88を
+JP 　見せなければならなかったんだ。
+EN I had to show them a new %sf88.
+
+@ 3.209.10
+# speaker: 旗本 (%ss88)
+JP 　そのためには、
+JP 　ＶＪＰという団体の枠から
+JP 　一歩飛び出す必要があった・・・！
+EN And for that, I needed to step outside the walls of the <VJP> promotion...!
+
+@ 3.209.11
+# speaker: 旗本 (%ss88)
+JP 　俺は迷った・・・。
+EN I was torn...
+
+@ 3.209.12
+# speaker: 旗本 (%ss88)
+JP 　フリーとして生きて行く道も
+JP 　悪くはない。
+EN Going freelance wouldn't be so bad.
+
+@ 3.209.13
+# speaker: 旗本 (%ss88)
+JP 　だが、ファンはそれで
+JP 　納得してくれるだろうか・・・。
+EN But would the fans be happy with that...?
+
+@ 3.209.14
+# speaker: 旗本 (%ss88)
+JP 　俺が本当にやりたいことは、
+JP 　フリーの立場じゃ達成できない。
+EN What I really wanted to do, I couldn't do as a freelancer.
+
+@ 3.209.15
+# speaker: 旗本 (%ss88)
+JP 　だったら、道は一つだな。
+EN Then there was only one way to go.
+
+@ 3.211.00
+# speaker: 記者
+JP 「%ss88さん、今後の・・・
+JP 　今後の方針をお願いします・・・！」
+EN "%ss88, your plans... What are your plans now...?!"
+
+@ 3.211.01
+# speaker: 旗本 (%ss88)
+JP 「お世話になりました。
+JP 　それだけです・・・。」
+EN "Thank you for everything. That's all..."
+
+@ 3.211.02
+# speaker: 記者
+JP 「%ss88さん・・・！」
+EN "%ss88...!"
+
+@ 3.211.03
+# speaker: 記者
+JP 「紙一重だったじゃないですか・・・
+JP 　やめないで下さい！！」
+EN "It was so close...! Please don't quit!!"
+
+@ 3.211.04
+# speaker: 旗本 (%ss88)
+JP 「・・・。」
+EN "..."
+
+@ 3.211.05
+# speaker: 旗本 (%ss88)
+JP 「すみません・・・
+JP 　約束は約束ですから・・・。」
+EN "I'm sorry... A promise is a promise..."
+
+@ 3.212.00
+# speaker: 旗本 (%ss88)
+JP 　不思議な気持ちだったよ・・・
+JP 　何て言うか、真っ白って言うか・・・
+EN It was a strange feeling... How do I put it... just blank...
+
+@ 3.212.01
+# speaker: 旗本 (%ss88)
+JP 　頭の中で
+JP 　何も物を考えられない・・・
+EN I couldn't think about anything at all...
+
+@ 3.212.02
+# speaker: 旗本 (%ss88)
+JP 　プロレスをやめた後の俺は、
+JP 　完全に抜け殻のように
+JP 　なっちまった・・・。
+EN After I quit wrestling, I was nothing but an empty shell...
+
+@ 3.219.00
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰの首脳陣は、
+JP 　俺と%ss94との闘いが
+JP 　金になると判断したんだろう。
+EN <VJP>'s top brass must have figured my fights with %ss94 would make money.
+
+@ 3.219.01
+# speaker: 旗本 (%ss88)
+JP 　試合後の記者会見で、
+JP 　３週間後という異例のスピードで
+JP 　%ss94との再戦は決定した。
+EN At the post-match press conference, a rematch with %ss94 was set for just three weeks later. Unheard of.
+
+@ 3.219.02
+# speaker: 旗本 (%ss88)
+JP 　第２戦は、初戦以上に
+JP 　壮絶な試合となった。
+EN The second match was even fiercer than the first.
+
+@ 3.219.03
+# speaker: 旗本 (%ss88)
+JP 　俺は%ss94の不意をつき、
+EN I caught %ss94 off guard,
+
+@ 3.219.04
+# speaker: 旗本 (%ss88)
+JP 　%ss94の頭部に
+JP 　キックをぶち込み、
+JP 　からくも勝利をモノにする。
+EN drilled a kick into %ss94's head, and barely pulled out the win.
+
+@ 3.220.00
+# speaker: 旗本 (%ss88)
+JP 　だが、問題は第３戦だった・・・
+EN But the third match was the problem...
+
+@ 3.221.00
+# speaker: アナウンサー
+JP 「%ss88ーーー・・・！！
+JP 　防戦一方です！！」
+EN "%ss88...!! He's on the defensive!!"
+
+@ 3.222.00
+# speaker: アナウンサー
+JP 「%ss94が容赦なく
+JP 　%ss88を殴りつける！！」
+EN "%ss94 is pounding on %ss88 without mercy!!"
+
+@ 3.223.00
+# speaker: アナウンサー
+JP 「一方的な試合になって来ました！！」
+EN "This has turned into a one-sided match!!"
+
+@ 3.223.01
+# speaker: アナウンサー
+JP 「%ss88・・・！！
+JP 　%ss88！！何も出来ず・・・！！」
+EN "%ss88...!! %ss88!! He can't do a thing...!!"
+
+@ 3.224.00
+# speaker: 野川 (%ss94)
+JP 「オイオイ・・・！
+JP 　もう、終わりかよ！！」
+EN "Hey, hey...! You done already?!"
+
+@ 3.224.01
+# speaker: 野川 (%ss94)
+JP 「ＶＩＥＷ　ＪＡＰＡＮ　プロレス
+JP 　ファンの皆さん！！
+JP 　目を覚まして下さい！！」
+EN "<VIEW JAPAN> Pro Wrestling fans!! Wake up!!"
+
+@ 3.225.00
+# speaker: 旗本 (%ss88)
+JP 　惨敗だったよ・・・。
+EN I got crushed...
+
+@ 3.225.01
+# speaker: 旗本 (%ss88)
+JP 　%ss94の突然の顔面攻撃に、
+JP 　俺は対処できなかった・・・。
+EN I couldn't deal with %ss94's sudden shots to the face...
+
+@ 3.225.02
+# speaker: 旗本 (%ss88)
+JP 　正直言って
+JP 　ビビっちまったんだ。
+JP 　顔面攻撃にな・・・。
+EN To be honest, I got scared. Scared of those shots to the face...
+
+@ 3.225.03
+# speaker: 旗本 (%ss88)
+JP 　%ss0さんが
+JP 　新しくＶＪＰの社長に就任して、
+EN %ss0 had just taken over as <VJP>'s new president,
+
+@ 3.225.04
+# speaker: 旗本 (%ss88)
+JP 　せっかく手配してくれた
+JP 　復讐のための第４戦も、
+EN and he went out of his way to set up a fourth match for my revenge,
+
+@ 3.225.05
+# speaker: 旗本 (%ss88)
+JP 　まったく良い所なく
+JP 　無残に負けちまった・・・。
+EN but I lost that one too, miserably, without a single good moment...
+
+@ 3.225.06
+# speaker: 旗本 (%ss88)
+JP 　俺は・・・
+EN I...
+
+@ 3.225.07
+# speaker: 旗本 (%ss88)
+JP 　俺は完全に、泥沼の迷路に
+JP 　はまっちまったんだ・・・。
+EN I was completely stuck in a swamp, with no way out...
+
+@ 3.226.00
+# speaker: 大和 (%ss0)
+JP 「%ss88、
+JP 　まあ座れ。」
+EN "%ss88, sit down."
+
+@ 3.226.01
+# speaker: 旗本 (%ss88)
+JP 「%ss0さん、俺に用って
+JP 　何ですか・・・。」
+EN "%ss0, what did you want with me..."
+
+@ 3.226.02
+# speaker: 大和 (%ss0)
+JP 「おまえの心中を考えれば、
+JP 　言いにくいことなんだが・・・」
+EN "I know how you must feel, so this is hard to say..."
+
+@ 3.226.03
+# speaker: 大和 (%ss0)
+JP 「おまえ、今度の試合で、
+JP 　%ss94と
+JP 　タッグを組んでくれないか。」
+EN "In your next match, I want you to team up with %ss94."
+
+@ 3.226.04
+# speaker: 旗本 (%ss88)
+JP 「・・・！！」
+EN "...!!"
+
+@ 3.226.05
+# speaker: 大和 (%ss0)
+JP 「これは、社命なんだ。
+JP 　選択の余地はない。」
+EN "This is a company order. You don't have a choice."
+
+@ 3.226.06
+# speaker: 大和 (%ss0)
+JP 「いいな。」
+EN "Understood?"
+
+@ 3.226.07
+# speaker: 旗本 (%ss88)
+JP 「・・・。」
+EN "..."
+
+@ 3.227.00
+# speaker: 旗本 (%ss88)
+JP 　社命だと・・・
+EN A company order, he says...
+
+@ 3.227.01
+# speaker: 旗本 (%ss88)
+JP 　選択の余地はないだと・・・！！
+EN No choice, he says...?!!
+
+@ 3.227.02
+# speaker: 旗本 (%ss88)
+JP 　ふざけるな！！
+JP 　人をコケにしやがって・・・！！
+EN Screw that!! Making a fool of me...!!
+
+@ 3.227.03
+# speaker: 旗本 (%ss88)
+JP 　会社は俺に見切りをつけたのか！！
+EN Had the company given up on me?!!
+
+@ 3.227.04
+# speaker: 旗本 (%ss88)
+JP 　俺が、もう
+JP 　%ss94に勝てないと
+JP 　見切りをつけたのか！！
+EN Had they decided I could never beat %ss94?!!
+
+@ 3.227.05
+# speaker: 旗本 (%ss88)
+JP 　ふざけんじゃねえぞ・・・
+EN Don't screw with me...
+
+@ 3.227.06
+# speaker: 旗本 (%ss88)
+JP 　関係ねえ奴らは
+JP 　出てくるんじゃねえ！！
+EN Anyone who's got nothing to do with this can stay the hell out of it!!
+
+@ 3.227.07
+# speaker: 旗本 (%ss88)
+JP 　これはな・・・！！
+JP 　男のプライドを賭けた
+JP 　俺の闘いなんだ！！
+EN This is...!! This is my fight, with my pride as a man on the line!!
+
+@ 3.228.00
+# speaker: アナウンサー
+JP 「さあ、続いて
+JP 　%ss94、%ss88組の
+JP 　入場です！」
+EN "And now, entering the ring, the team of %ss94 and %ss88!"
+
+@ 3.228.01
+# speaker: アナウンサー
+JP 「しかし驚きましたね・・・！
+JP 　まさか、%ss94と%ss88が
+JP 　タッグを組むとは・・・。」
+EN "What a surprise...! Who'd have thought %ss94 and %ss88 would team up..."
+
+@ 3.228.02
+# speaker: 解説者
+JP 「%ss88は、苦渋の選択
+JP 　だったでしょうね・・・。」
+EN "It must have been a bitter pill for %ss88..."
+
+@ 3.228.03
+# speaker: 解説者
+JP 「本人は、%ss94と
+JP 　闘いたかったんでしょうが・・・。」
+EN "He wanted to fight %ss94, not team with him..."
+
+@ 3.228.04
+# speaker: アナウンサー
+JP 「おおーーっと・・・！！
+JP 　何だあ！？」
+EN "Ohhh...!! What's this?!"
+
+@ 3.228.05
+# speaker: アナウンサー
+JP 「%ss88が
+JP 　突然マイクを持った・・・！！
+JP 　何か喋ろうとしているぞ・・・！？」
+EN "%ss88 has grabbed the mic...!! He's going to say something...?!"
+
+@ 3.229.00
+# speaker: 旗本 (%ss88)
+JP 「次の試合！！引退を賭けて
+JP 　おまえとやるぞ！！」
+EN "Next match, it's you and me!! If I lose, I retire!!"
+
+@ 3.229.01
+# speaker: 旗本 (%ss88)
+JP 「それでどおだああああ！！
+JP 　%ss94ーーーーーーーーー！！」
+EN "How about THAT?!! %ss94!!!"
+
+@ 3.230.00
+# speaker: 旗本 (%ss88)
+JP 　会社なんか関係ねえ！！
+JP 　俺は%ss94を
+JP 　ぶち殺さなきゃ気がすまねえ！！
+EN To hell with the company!! I won't rest until I've killed %ss94!!
+
+@ 3.230.01
+# speaker: 旗本 (%ss88)
+JP 　%ss94！！
+JP 　覚悟しろ！！
+EN %ss94!! Get ready!!
+
+@ 3.231.00
+# speaker: 記者
+JP 「%ss94さん・・・！！
+JP 　試合前の一言を
+JP 　お願いします！！」
+EN "%ss94...!! A word before the match, please!!"
+
+@ 3.232.00
+# speaker: 野川 (%ss94)
+JP 「向こうがやる気なら、
+JP 　徹底的にやってやるだけですよ。」
+EN "If he wants it, I'll give it to him all the way."
+
+@ 3.232.01
+# speaker: 野川 (%ss94)
+JP 「もう、どうなっても
+JP 　知らねえぞ・・・！！」
+EN "Whatever happens now, it's on him...!!"
+
+@ 3.233.00
+# speaker: 旗本 (%ss88)
+JP 　引退を賭けて試合をすれば・・・
+JP 　もう、誰も
+JP 　この闘いの邪魔は出来ねえだろ！！
+EN If I put my retirement on the line... nobody can get in the way of this fight!!
+
+@ 3.233.01
+# speaker: 旗本 (%ss88)
+JP 　俺はなあ・・・！！
+JP 　本気で人を殺したい気分になってんだ！！
+EN Let me tell you...!! I honestly feel like killing someone right now!!
+
+@ 3.233.02
+# speaker: 旗本 (%ss88)
+JP 　%ss94！！
+JP 　おまえだよ！！おまえ！！
+JP 　ぶっ殺してやるぞ！！
+EN %ss94!! I mean you!! You!! I'm going to kill you!!
+
+@ 3.235.00
+# speaker: アナウンサー
+JP 「ああーーーっと！！
+JP 　%ss88立てません！！
+JP 　無情にもゴングが打ち鳴らされる！！」
+EN "Ohhh!! %ss88 can't get up!! And the bell rings, without mercy!!"
+
+@ 3.235.01
+# speaker: アナウンサー
+JP 「%ss88・・・！！
+JP 　%ss88敗れましたあ・・・！！」
+EN "%ss88...!! %ss88 has lost...!!"
+
+@ 3.236.00
+# speaker: アナウンサー
+JP 「%ss94がリング内を
+JP 　飛び回って喜んでいます！！」
+EN "%ss94 is jumping all over the ring for joy!!"
+
+@ 3.237.00
+# speaker: 旗本 (%ss88)
+JP 　%ss94の強さは
+JP 　俺の想像をはるかに越えていた・・・！
+EN %ss94 was far, far stronger than I'd imagined...!
+
+@ 3.237.01
+# speaker: 旗本 (%ss88)
+JP 　対戦相手をなめていたのは
+JP 　俺の方だったんだ・・・。
+EN I was the one who'd underestimated my opponent...
+
+@ 3.237.02
+# speaker: 旗本 (%ss88)
+JP 　試合後の俺は、
+JP 　不本意な試合内容に冷静さを失い
+JP 　完全にキレていた・・・。
+EN After the match, upset at how it went, I lost my cool and completely snapped...
+
+@ 3.238.00
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　ちょっといいですか・・・！！」
+EN "%ss88...!! Can we have a moment...?!!"
+
+@ 3.238.01
+# speaker: 旗本 (%ss88)
+JP 「%ss94ーーー！！
+JP 　俺は何度でもやってやるぞ！！」
+EN "%ss94!! I'll fight you as many times as it takes!!"
+
+@ 3.238.02
+# speaker: 旗本 (%ss88)
+JP 「今度はベルトを賭けてやってやる！！
+JP 　ブッ殺してやるぞ！！この野郎！！」
+EN "Next time we put the belt on the line!! I'll kill you!! You bastard!!"
+
+@ 3.244.00
+# speaker: 旗本 (%ss88)
+JP 「失礼します。」
+EN "Excuse me."
+
+@ 3.245.00
+# speaker: 中内
+JP 「おう、%ss88。
+JP 　まあ座れ。」
+EN "Ah, %ss88. Have a seat."
+
+@ 3.245.01
+# speaker: 旗本 (%ss88)
+JP 「何です？
+JP 　俺に用件って？」
+EN "What is it? You wanted to see me?"
+
+@ 3.245.02
+# speaker: 中内
+JP 「%ss88、おまえ
+JP 　%sf94を
+JP 　知ってるか？」
+EN "%ss88, do you know %sf94?"
+
+@ 3.245.03
+# speaker: 旗本 (%ss88)
+JP 「知ってますよ。
+JP 　俺も柔道やってましたから。」
+EN "Sure I do. I did judo too."
+
+@ 3.245.04
+# speaker: 旗本 (%ss88)
+JP 「五輪、銀メダルの
+JP 　%ss94ですよね。」
+EN "%ss94, the Olympic silver medalist, right?"
+
+@ 3.245.05
+# speaker: 旗本 (%ss88)
+JP 「それが？」
+EN "What about him?"
+
+@ 3.245.06
+# speaker: 中内
+JP 「今度、%ss94を
+JP 　ウチでデビューさせることに
+JP 　なったんだ。」
+EN "We're going to have %ss94 debut here."
+
+@ 3.245.07
+# speaker: 中内
+JP 「それでな、おまえ、
+JP 　この前のドームの試合が
+JP 　流れちまったろ。」
+EN "Now, your match at the last Dome show fell through, right?"
+
+@ 3.245.08
+# speaker: 中内
+JP 「そこで次のドームで
+JP 　%ss94を当てたいんだが・・・」
+EN "So I'd like to put you against %ss94 at the next Dome show..."
+
+@ 3.245.09
+# speaker: 中内
+JP 「おまえ、奴と
+JP 　やってくれないか？」
+EN "Will you take him on?"
+
+@ 3.245.10
+# speaker: 旗本 (%ss88)
+JP 「・・・。」
+EN "..."
+
+@ 3.245.11
+# speaker: 旗本 (%ss88)
+JP 「別に、いいですよ。」
+EN "Sure, fine."
+
+@ 3.245.12
+# speaker: 旗本 (%ss88)
+JP 「会社がそう決めようとしているなら、
+JP 　俺には断る理由は
+JP 　無いですからね・・・。」
+EN "If that's what the company wants, I've got no reason to say no..."
+
+@ 3.246.00
+# speaker: カイザー (%ss15)
+JP 「まったく、どうかしてる！
+JP 　会社は！」
+EN "This is insane! The company's lost it!"
+
+@ 3.246.01
+# speaker: カイザー (%ss15)
+JP 「何で、現ＩＧＰのチャンピオンが
+JP 　闘わなくちゃならないんだ！？」
+EN "Why should the reigning <IGP> champion have to fight him?!"
+
+@ 3.246.02
+# speaker: カイザー (%ss15)
+JP 「どう考えたって、
+JP 　%ss88と%ss94じゃ
+JP 　つり合うわけない！！」
+EN "There's no way %ss88 and %ss94 are on the same level!!"
+
+@ 3.246.03
+# speaker: カイザー (%ss15)
+JP 「%ss88は、素人の
+JP 　引き立て役じゃねえだろ！！」
+EN "%ss88 isn't some prop to make an amateur look good!!"
+
+@ 3.246.04
+# speaker: 旗本 (%ss88)
+JP 「いいんじゃねえの・・・」
+EN "What's the big deal..."
+
+@ 3.246.05
+# speaker: 旗本 (%ss88)
+JP 「俺も気乗りはしないけど、
+JP 　やったらやったで
+JP 　半殺しにしてやればいいんだから。」
+EN "I'm not into it either, but if we're going to do it, I'll just beat him half to death."
+
+@ 3.246.06
+# speaker: カイザー (%ss15)
+JP 「そうか・・・
+JP 　そうだな。」
+EN "I see... Yeah, you're right."
+
+@ 3.246.07
+# speaker: カイザー (%ss15)
+JP 「とにかく、格の違いを
+JP 　見せつけてやれよ・・・！」
+EN "Anyway, show him what a different class you're in...!"
+
+@ 3.247.00
+# speaker: 旗本 (%ss88)
+JP 　この俺が
+JP 　引き立て役・・・？
+EN Me... a prop to make him look good...?
+
+@ 3.247.01
+# speaker: 旗本 (%ss88)
+JP 　ふざけんな・・・！！
+EN Screw that...!!
+
+@ 3.247.02
+# speaker: 旗本 (%ss88)
+JP 　俺には
+JP 　プロのリングで闘ってきた
+JP 　キャリアがある。
+EN I've got a career of fighting in the pro ring.
+
+@ 3.247.03
+# speaker: 旗本 (%ss88)
+JP 　会社がそこを
+JP 　軽視しているのには
+JP 　マジでムカついたよ。
+EN The company brushing that aside really pissed me off.
+
+@ 3.247.04
+# speaker: 旗本 (%ss88)
+JP 　%ss94には
+JP 　別に恨みなんてないが、
+EN I've got nothing against %ss94 personally,
+
+@ 3.247.05
+# speaker: 旗本 (%ss88)
+JP 　マジで潰す・・・！
+EN but I'm going to crush him. For real...!
+
+@ 3.248.00
+# speaker: 記者
+JP 「%ss94選手。
+JP 　いよいよ格闘家としての
+JP 　デビュー戦ですが、」
+EN "%ss94. Your debut as a fighter is finally here,"
+
+@ 3.248.01
+# speaker: 記者
+JP 「今の心境を
+JP 　一言、お願いします。」
+EN "so how are you feeling right now?"
+
+@ 3.248.02
+# speaker: 野川 (%ss94)
+JP 「やるだけやりますよ。」
+EN "I'll do all I can."
+
+@ 3.248.03
+# speaker: 野川 (%ss94)
+JP 「俺は、%ss88選手のことは
+JP 　ほとんど知らないですからね。」
+EN "I hardly know anything about %ss88."
+
+@ 3.248.04
+# speaker: 野川 (%ss94)
+JP 「まあ、相手は誰だって
+JP 　いいんですが・・・」
+EN "Well, it doesn't matter who I'm up against..."
+
+@ 3.248.05
+# speaker: 野川 (%ss94)
+JP 「これから俺が、この世界で
+JP 　どれだけやれるのか、」
+EN "I want to find out how far I can go in this world,"
+
+@ 3.248.06
+# speaker: 野川 (%ss94)
+JP 「そこのところを
+JP 　今日の試合でつかみたい。
+JP 　それだけです。」
+EN "and today's match should tell me. That's all."
+
+@ 3.248.07
+# speaker: 記者
+JP 「%ss88選手のことは
+JP 　ほとんど知らないんですか・・・？
+JP 　研究は、されなかったんでしょうか？」
+EN "You hardly know anything about %ss88...? You didn't study him?"
+
+@ 3.248.08
+# speaker: 野川 (%ss94)
+JP 「ええ、これと言って。」
+EN "No, not really."
+
+@ 3.248.09
+# speaker: 野川 (%ss94)
+JP 「あ、でも、
+JP 　ゲームでは
+JP 　シミュレートしましたよ。」
+EN "Oh, but I did simulate it in a video game."
+
+@ 3.248.10
+# speaker: 野川 (%ss94)
+JP 「%ss88選手も出ている
+JP 『何とかプロレスリング』ってやつ。」
+EN "The one %ss88 is in. 'Something Pro Wrestling,' or whatever."
+
+@ 3.248.11
+# speaker: 野川 (%ss94)
+JP 「ＤＤＴっていう技だけは、
+JP 　喰らっちゃダメっていうことが
+JP 　分かりました。」
+EN "I learned that I can't let him hit me with that move called the DDT."
+
+@ 3.248.12
+# speaker: 記者
+JP 「は、はあ・・・
+JP 　そうですか・・・。」
+EN "Uh, um... I see..."
+
+@ 3.249.00
+# speaker: 旗本 (%ss88)
+JP 　%ss94・・・！！
+EN %ss94...!!
+
+@ 3.249.01
+# speaker: 旗本 (%ss88)
+JP 　相手は
+JP 　誰でもよかっただと・・・！！
+EN Doesn't matter who he fights, he says...?!!
+
+@ 3.249.02
+# speaker: 旗本 (%ss88)
+JP 　ふざけんな、こらあ！！
+JP 　プロレスをなめやがって！！
+EN Screw you, punk!! Treating wrestling like a joke!!
+
+@ 3.249.03
+# speaker: 旗本 (%ss88)
+JP 　徹底的にやってやるぞ！！
+EN I'm going to tear him apart!!
+
+@ 3.255.00
+# speaker: 旗本 (%ss88)
+JP 　%ss1戦後のＶＪＰは、
+EN After the match with %ss1, <VJP>
+
+@ 3.255.01
+# speaker: 旗本 (%ss88)
+JP 　間違いなく
+JP 　%ss42、%ss21、そして俺、
+JP 　３人の天下となった。
+EN was without a doubt ruled by three men: %ss42, %ss21, and me.
+
+@ 3.255.02
+# speaker: 旗本 (%ss88)
+JP 　だが・・・
+EN But...
+
+@ 3.255.03
+# speaker: 旗本 (%ss88)
+JP 　同時にそれは、他の選手達から
+JP 　明確に追われる立場になったと
+JP 　いうことでもあった・・・！
+EN That also meant we were now the ones the other wrestlers were openly gunning for...!
+
+@ 3.256.00
+# speaker: アナウンサー
+JP 「%ss2が攻める！！攻める！！」
+EN "%ss2 is on the attack!! He keeps coming!!"
+
+@ 3.256.01
+# speaker: アナウンサー
+JP 「%ss88、たまらず
+JP 　リング下にエスケープ・・・！！」
+EN "%ss88 can't take any more and escapes out of the ring...!!"
+
+@ 3.256.02
+# speaker: アナウンサー
+JP 「%ss2！！
+JP 　すさまじい猛攻だあ！！」
+EN "%ss2!! What a ferocious assault!!"
+
+@ 3.257.00
+# speaker: 記者
+JP 「%ss2選手！！
+JP 　今日のタッグ戦は
+JP 　すさまじい気迫でした！！」
+EN "%ss2!! You were fired up in today's tag match!!"
+
+@ 3.257.01
+# speaker: 記者
+JP 「特に、%ss88選手に対して
+JP 　執拗な攻めを見せていましたが、」
+EN "You went after %ss88 relentlessly,"
+
+@ 3.257.02
+# speaker: 記者
+JP 「%ss88選手を、
+JP 　今後の目標に定めたということ
+JP 　でしょうか？」
+EN "so does this mean %ss88 is your next target?"
+
+@ 3.258.00
+# speaker: 慶介 (%ss2)
+JP 「目標？
+JP 　ただ頭に来ただけだよ。」
+EN "Target? He just pissed me off, that's all."
+
+@ 3.258.01
+# speaker: 慶介 (%ss2)
+JP 「%ss1さんを
+JP 　追い込んだからって、
+JP 　天下取った気になってる。」
+EN "He backed %ss1 into a corner, and now he thinks he rules the place."
+
+@ 3.258.02
+# speaker: 慶介 (%ss2)
+JP 「気に入らねえんだよ・・・！」
+EN "I can't stand it...!"
+
+@ 3.258.03
+# speaker: 慶介 (%ss2)
+JP 「いいか、%ss88！！
+JP 　シングルで俺とやってみろ！！」
+EN "Listen, %ss88!! Face me one-on-one!!"
+
+@ 3.258.04
+# speaker: 慶介 (%ss2)
+JP 「叩き潰してやるからな！！
+JP 　分かったか！！」
+EN "I'll smash you to pieces!! Got it?!"
+
+@ 3.259.00
+# speaker: 記者
+JP 「%ss88さん。
+JP 　%ss2選手が、盛んに
+JP 　挑発を仕掛けているようですが、」
+EN "%ss88. %ss2 seems to be calling you out at every turn,"
+
+@ 3.259.01
+# speaker: 記者
+JP 「それについて
+JP 　どのようにお考えですか？」
+EN "so what are your thoughts on that?"
+
+@ 3.259.02
+# speaker: 旗本 (%ss88)
+JP 「考え？」
+EN "Thoughts?"
+
+@ 3.259.03
+# speaker: 旗本 (%ss88)
+JP 「もう、どうにもならねえよ。
+JP 　やるしかねえだろ。」
+EN "It's past the point of talking. We'll just have to fight."
+
+@ 3.259.04
+# speaker: 旗本 (%ss88)
+JP 「よく聞いとけよ、%ss2！！
+JP 　俺とやるんだったら
+JP 　死ぬ気で来い！！」
+EN "Listen good, %ss2!! If you want to fight me, come ready to die!!"
+
+@ 3.259.05
+# speaker: 旗本 (%ss88)
+JP 「逃げんじゃねえぞ！！
+JP 　潰し合いだ！！」
+EN "Don't you run away!! It's a fight to the finish!!"
+
+@ 3.260.00
+# speaker: 旗本 (%ss88)
+JP 　%ss1の息がかかっている
+JP 　%ss2は、
+EN %ss2, who was under %ss1's wing,
+
+@ 3.260.01
+# speaker: 旗本 (%ss88)
+JP 　俺が%ss1と
+JP 　タメを張ったことが、
+JP 　よほど気に入らなかったらしい。
+EN really didn't like me standing toe to toe with %ss1.
+
+@ 3.260.02
+# speaker: 旗本 (%ss88)
+JP 　上等じゃねえか・・・！！
+EN Fine by me...!!
+
+@ 3.260.03
+# speaker: 旗本 (%ss88)
+JP 　俺とガチンコでやったら
+JP 　どういうことになるか、
+JP 　たっぷりと教えてやる。
+EN I'll show him exactly what happens when he goes at it with me for real.
+
+@ 3.260.04
+# speaker: 旗本 (%ss88)
+JP 　%ss2！！
+JP 　ぶっ潰すぞ、このやろう！！
+EN %ss2!! I'm going to crush you, you bastard!!
+
+@ 3.261.00
+# speaker: リングアナウンサー
+JP 「赤コーナーー！！」
+EN "In the red corner!!"
+
+@ 3.261.01
+# speaker: リングアナウンサー
+JP 「%sl2ーー！！
+JP 　%ss2ーーー！！」
+EN "%sl2!! %ss2!!!"
+
+@ 3.262.00
+# speaker: リングアナウンサー
+JP 「青コーナーー！！」
+EN "In the blue corner!!"
+
+@ 3.262.01
+# speaker: リングアナウンサー
+JP 「%ss88ーー！！
+JP 　%sl88ーーー！！」
+EN "%sl88!! %ss88!!!"
+
+@ 3.263.00
+# speaker: 慶介 (%ss2)
+JP 「おらあ！！%ss88！！
+JP 　来い！！」
+EN "Come on!! %ss88!! Bring it!!"
+
+@ 3.263.01
+# speaker: 旗本 (%ss88)
+JP 「てめえ・・・！！
+JP 　ぶっ倒す！！」
+EN "You bastard...!! I'll take you down!!"
+
+@ 3.265.00
+# speaker: 旗本 (%ss88)
+JP 　なみいる強豪達との死闘は、
+JP 　確実に俺のレベルを引き上げ、
+EN My life-or-death battles with all those top wrestlers definitely raised my game,
+
+@ 3.265.01
+# speaker: 旗本 (%ss88)
+JP 　俺は今や、
+JP 　押しも押されもせぬ
+JP 　ＶＪＰの看板レスラーとなっていた。
+EN and now I was <VJP>'s undisputed top star.
+
+@ 3.265.02
+# speaker: 旗本 (%ss88)
+JP 　まさに、絶頂期と呼ぶに
+JP 　ふさわしい。
+EN It truly was the peak of my career.
+
+@ 3.265.03
+# speaker: 旗本 (%ss88)
+JP 　だが、一人の男の出現が、
+EN But one man's arrival
+
+@ 3.265.04
+# speaker: 旗本 (%ss88)
+JP 　その後の俺の
+JP 　プロレス人生を、
+JP 　大きく変えようとしていた・・・。
+EN was about to change my wrestling life in a big way...
+
+@ 3.267.00
+# speaker: 旗本 (%ss88)
+JP 　この試合の
+JP 　%ss1さんはすごかった・・・！
+EN %ss1 was incredible in this match...!
+
+@ 3.268.00
+# speaker: 旗本 (%ss88)
+JP 　パワーといい、スピードといい、
+JP 　まさに全盛期を思わせる、
+JP 　鬼気迫る闘い方だったよ。
+EN The power, the speed... it was a fierce, desperate fight, like he was back in his prime.
+
+@ 3.268.01
+# speaker: 旗本 (%ss88)
+JP 　俺にはこの時、
+JP 　何となく感じるものがあった・・・。
+EN Right then, I had a feeling about something...
+
+@ 3.268.02
+# speaker: 旗本 (%ss88)
+JP 　表向きは否定しているが、
+JP 　%ss1さんは
+JP 　この試合で、
+EN He denied it in public, but in this match, %ss1
+
+@ 3.268.03
+# speaker: 旗本 (%ss88)
+JP 　本当に自分のプロレス人生に
+JP 　けじめをつけるつもりだったんじゃ
+JP 　ないだろうか・・・。
+EN might really have meant to bring his wrestling career to a close...
+
+@ 3.268.04
+# speaker: 旗本 (%ss88)
+JP 　だとしたら、
+JP 　そういう試合の相手に
+JP 　俺を選んでくれたことは、
+EN If so, then picking me as his opponent for that kind of match
+
+@ 3.268.05
+# speaker: 旗本 (%ss88)
+JP 　俺としては光栄なことだ・・・。
+EN was an honor for me...
+
+@ 3.275.00
+# speaker: 旗本 (%ss88)
+JP 　%ss99との
+JP 　団体の威信をかけた死闘に勝利し、
+JP 　ベルトを奪い返した俺は、
+EN After winning a war for my promotion's pride against %ss99 and taking the belt back,
+
+@ 3.275.01
+# speaker: 旗本 (%ss88)
+JP 　その後、２度の防衛戦に勝利し、
+JP 　ＩＧＰ王者の地位を
+JP 　不動の物としていた。
+EN I won two title defenses after that, and my place as <IGP> champion was rock solid.
+
+@ 3.275.02
+# speaker: 旗本 (%ss88)
+JP 　だがここで、
+JP 　思わぬ大物が挑戦者として
+JP 　名乗りを上げて来る・・・！
+EN But then, an unexpected big name stepped forward as challenger...!
+
+@ 3.276.00
+# speaker: 河野 (%ss21)
+JP 「次のタイトルマッチ、
+JP 　挑戦者は、どうやら
+JP 　%ss1さんらしいぞ。」
+EN "For the next title match, looks like the challenger is %ss1."
+
+@ 3.276.01
+# speaker: 旗本 (%ss88)
+JP 「%ss1か・・・」
+EN "%ss1, huh..."
+
+@ 3.276.02
+# speaker: 旗本 (%ss88)
+JP 「望むところだ・・・！
+JP 　今がもう、俺達の時代だってことを
+JP 　力でねじ伏せて証明してやる！！」
+EN "Bring it on...! I'll put him down by force and prove this is our era now!!"
+
+@ 3.276.03
+# speaker: 河野 (%ss21)
+JP 「それがな、
+JP 　これはハッキリしないが・・・」
+EN "Thing is, this isn't confirmed, but..."
+
+@ 3.276.04
+# speaker: 河野 (%ss21)
+JP 「どうも%ss1さんは、
+JP 　その試合を事実上の引退試合に
+JP 　しようとしているらしいんだ。」
+EN "word is, %ss1 means for that match to be his retirement match, in all but name."
+
+@ 3.276.05
+# speaker: 旗本 (%ss88)
+JP 「・・・！」
+EN "...!"
+
+@ 3.277.00
+# speaker: 旗本 (%ss88)
+JP 　%ss1の引退・・・
+EN %ss1 was going to retire...
+
+@ 3.277.01
+# speaker: 旗本 (%ss88)
+JP 　別に感傷に浸るわけじゃないが、
+EN Not that I'm getting sentimental,
+
+@ 3.277.02
+# speaker: 旗本 (%ss88)
+JP 　２０年以上プロレスで生きて来た
+JP 　先輩の引退は、やっぱり
+JP 　感慨深いものがあるよな。
+EN but seeing a senior who's lived for wrestling over 20 years retire... it does get to you.
+
+@ 3.277.03
+# speaker: 旗本 (%ss88)
+JP 　だからと言って、
+JP 　手を抜く気持ちなんて
+JP 　さらさらねえけど。
+EN That said, I had no intention of going easy on him.
+
+@ 3.277.04
+# speaker: 旗本 (%ss88)
+JP 　俺って、そんな気の利いたこと
+JP 　出来ねえもん。
+EN I'm just not that considerate.
+
+@ 3.278.00
+# speaker: 記者
+JP 「%ss1さんに
+JP 　お聞きしたいんですが、」
+EN "%ss1, I'd like to ask you something,"
+
+@ 3.278.01
+# speaker: 記者
+JP 「今日の試合・・・
+JP 　一部のマスコミでは、」
+EN "today's match... some of the press"
+
+@ 3.278.02
+# speaker: 記者
+JP 「%ss1さんの
+JP 　引退試合になるのではないかと
+JP 　報道しています。」
+EN "are reporting it may be your retirement match, %ss1."
+
+@ 3.278.03
+# speaker: 記者
+JP 「本当のところは
+JP 　どうなんでしょうか？」
+EN "What's the truth?"
+
+@ 3.279.00
+# speaker: 力丸 (%ss1)
+JP 「オラーーーッ！！」
+EN "Raaagh!!"
+
+@ 3.279.01
+# speaker: 記者
+JP 「うわあっ！！」
+EN "Waaah!!"
+
+@ 3.279.02
+# speaker: 力丸 (%ss1)
+JP 「何言ってんだ！！おまえ！！
+JP 　引退なんてあるわけねえだろ！！
+JP 　オラあ！！」
+EN "What're you talking about?!! There's no way I'd retire!! Huh?!"
+
+@ 3.279.03
+# speaker: 記者
+JP 「あ・・・す、すみません！！
+JP 　し、試合、頑張って下さい！！」
+EN "Ah... S-sorry!! G-good luck in the match!!"
+
+@ 3.280.00
+# speaker: 旗本 (%ss88)
+JP 　何だよ！？
+JP 　引退するんじゃねえのかよ！？
+EN What?! He's not going to retire?!
+
+@ 3.280.01
+# speaker: 旗本 (%ss88)
+JP 　どっちなんだよ！？
+JP 　こっちは少し、
+JP 　センチメンタル入ってたんだぞ！！
+EN Which is it?! I was getting a little sentimental here!!
+
+@ 3.280.02
+# speaker: 旗本 (%ss88)
+JP 　まあ、いいよ。
+JP 　どのみち、ぶっ潰すつもりで
+JP 　いたからな。
+EN Oh well. I was going to crush him either way.
+
+@ 3.280.03
+# speaker: 旗本 (%ss88)
+JP 　とにかく、この試合で
+JP 　ハッキリ時代が変わったってことを
+JP 　教えてやる。
+EN Anyway, in this match I'll show him the times have changed for good.
+
+@ 3.280.04
+# speaker: 旗本 (%ss88)
+JP 　引導を渡してやるぞ！！
+JP 　%ss1！！
+EN I'm going to send you off for good!! %ss1!!
+
+@ 3.282.00
+# speaker: 記者
+JP 「%ss99さん・・・
+JP 　一言、いいですか？」
+EN "%ss99... Just a word?"
+
+@ 3.282.01
+# speaker: 記者
+JP 「今日の試合について、
+JP 　ポイントとなるところは
+JP 　どの辺だったんでしょうか？」
+EN "What would you say was the key point in today's match?"
+
+@ 3.283.00
+# speaker: 真田 (%ss99)
+JP 「やっぱり・・・
+JP 　気持ちでしょうね。」
+EN "I'd have to say... heart."
+
+@ 3.283.01
+# speaker: 真田 (%ss99)
+JP 「%ss88の
+JP 　勝ちに対する執念が、」
+EN "%ss88's hunger for the win"
+
+@ 3.283.02
+# speaker: 真田 (%ss99)
+JP 「俺のそれを
+JP 　上回ったということでしょう。」
+EN "was stronger than mine."
+
+@ 3.283.03
+# speaker: 真田 (%ss99)
+JP 「完敗です・・・。」
+EN "He beat me fair and square..."
+
+@ 3.285.00
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　一言、お願いします！！」
+EN "%ss88...!! A word, please!!"
+
+@ 3.285.01
+# speaker: 旗本 (%ss88)
+JP 「コメントなんて・・・
+JP 　ああっ！！
+JP 　ねえんだ！！こらあ！！」
+EN "A comment... Argh!! I've got nothing to say!! Get lost!!"
+
+@ 3.285.02
+# speaker: 旗本 (%ss88)
+JP 「俺は認めん！！
+JP 　負けたなんて認めんぞ！！」
+EN "I won't accept it!! I won't accept that I lost!!"
+
+@ 3.285.03
+# speaker: 旗本 (%ss88)
+JP 「もう一回勝負しろ！！
+JP 　%ss99！！」
+EN "Fight me again!! %ss99!!"
+
+@ 3.286.00
+# speaker: 旗本 (%ss88)
+JP 　屈辱だった・・・！！
+JP 　絶対に負けちゃならない試合での
+JP 　敗戦・・・！！
+EN It was humiliating...!! A loss in a match I absolutely couldn't lose...!!
+
+@ 3.286.01
+# speaker: 旗本 (%ss88)
+JP 　俺は、その後
+JP 　なりふり構わずに
+JP 　%ss99を追った。
+EN After that, I went after %ss99 with no regard for appearances.
+
+@ 3.286.02
+# speaker: 旗本 (%ss88)
+JP 　どうしても俺の手で、
+JP 　ＩＧＰのベルトを
+JP 　奪い返さなければ気がすまない・・・！！
+EN I had to take back the <IGP> belt with my own hands, no matter what...!!
+
+@ 3.286.03
+# speaker: 旗本 (%ss88)
+JP 　狂ったように
+JP 　%ss99につきまとった俺は、
+EN I hounded %ss99 like a madman,
+
+@ 3.286.04
+# speaker: 旗本 (%ss88)
+JP 　３ヶ月後、ついに
+JP 　ベルト奪還の試合までこぎつける。
+EN and three months later, I finally got my match to take back the belt.
+
+@ 3.286.05
+# speaker: 旗本 (%ss88)
+JP 　試合は一進一退だったが、
+JP 　最後は俺の三角絞めが極まり、
+JP 　%ss99はギブアップした。
+EN It was a back-and-forth match, but in the end I locked in my Triangle Choke, and %ss99 gave up.
+
+@ 3.286.06
+# speaker: 旗本 (%ss88)
+JP 　ＩＧＰのベルトは、
+JP 　実に１０ヶ月ぶりに
+JP 　ＶＪＰに戻ることになったんだ。
+EN The <IGP> belt was back in <VJP> for the first time in 10 months.
+
+@ 3.286.07
+# speaker: 旗本 (%ss88)
+JP 　正直言うと俺は・・・
+EN To be honest...
+
+@ 3.286.08
+# speaker: 旗本 (%ss88)
+JP 　ベルトが戻ったうれしさより、
+JP 　責任が果たせてホッとしたという
+JP 　気持ちの方が強かったな・・・。
+EN more than happy to have the belt back, I was relieved I'd done my duty...
+
+@ 3.293.00
+# speaker: 旗本 (%ss88)
+JP 　以前、大量離脱問題を引き起こした
+JP 　%ss1さんは、
+EN %ss1, who had once caused a mass walkout,
+
+@ 3.293.01
+# speaker: 旗本 (%ss88)
+JP 　数年前にＶＪＰに復帰し、
+JP 　今はＶＪＰの幹部でありながら
+JP 　異端な集団として活動していた。
+EN had come back to <VJP> years ago and, though an executive, led his own maverick faction.
+
+@ 3.293.02
+# speaker: 旗本 (%ss88)
+JP 　うちとＵＷＨインテグラルには
+JP 　前々から確執があったんだけど、
+EN There'd been bad blood between us and <UWH Integral> for a long time,
+
+@ 3.293.03
+# speaker: 旗本 (%ss88)
+JP 　ＵＷＨインテグラルを脱退した選手が
+JP 　%ss1軍と闘ったことで、
+EN and when wrestlers who'd left <UWH Integral> fought %ss1's army,
+
+@ 3.293.04
+# speaker: 旗本 (%ss88)
+JP 　２つの団体の関係は
+JP 　ますますこじれちまった。
+EN things between the two promotions got even worse.
+
+@ 3.293.05
+# speaker: 旗本 (%ss88)
+JP 　結局は、
+JP 　ＶＪＰとＵＷＨインテグラルとの
+JP 　全面戦争になったわけだが、
+EN In the end, it turned into all-out war between <VJP> and <UWH Integral>,
+
+@ 3.293.06
+# speaker: 旗本 (%ss88)
+JP 　初めのうち、俺は
+JP 　何だか冷めていたんだ。
+EN but at first, I didn't really care.
+
+@ 3.293.07
+# speaker: 旗本 (%ss88)
+JP 　ＩＧＰの王者
+JP 　%ss42が、
+JP 　ＵＷＨインテグラルの頂点、
+EN Not until <IGP> champion %ss42 lost to the top man in <UWH Integral>,
+
+@ 3.293.08
+# speaker: 旗本 (%ss88)
+JP 　%sf99に
+JP 　負けるまでは・・・！
+EN %sf99...!
+
+@ 3.294.00
+# speaker: アナウンサー
+JP 「ああーーーっと！！」
+EN "Ohhh!!"
+
+@ 3.294.01
+# speaker: アナウンサー
+JP 「%ss99が%ss42の
+JP 　四の字をしのいで、
+JP 　腕十字にいったあ！！」
+EN "%ss99 survives %ss42's Figure-Four and goes for an armbar!!"
+
+@ 3.295.00
+# speaker: 解説者
+JP 「%ss42、まずいですよ・・・！！」
+EN "%ss42 is in trouble...!!"
+
+@ 3.295.01
+# speaker: アナウンサー
+JP 「あ、ああっ・・・
+JP 　レフェリーが腕を振ったあ！！」
+EN "Oh, ohhh... the referee is waving it off!!"
+
+@ 3.295.02
+# speaker: アナウンサー
+JP 「%ss42が・・・！！
+JP 　%ss42が敗れました！！」
+EN "%ss42... %ss42 has lost!!"
+
+@ 3.296.00
+# speaker: アナウンサー
+JP 「新チャンピオンは%ss99です！！」
+EN "The new champion is %ss99!!"
+
+@ 3.296.01
+# speaker: アナウンサー
+JP 「ＩＧＰのベルトが、
+JP 　ＵＷＨインテグラルの
+JP 　%ss99の手に渡りました！！」
+EN "The <IGP> belt is in the hands of %ss99 of <UWH Integral>!!"
+
+@ 3.296.02
+# speaker: 旗本 (%ss88)
+JP 　バカ野郎！！
+JP 　何で負けんだよ、%ss42！！
+EN You idiot!! Why'd you lose, %ss42?!!
+
+@ 3.296.03
+# speaker: 旗本 (%ss88)
+JP 　こんなところで負けて
+JP 　どうすんだ・・・！！
+EN What good does losing here do anybody...!!
+
+@ 3.297.00
+# speaker: 旗本 (%ss88)
+JP 　ＩＧＰのベルトが
+JP 　他団体に渡ったことで、
+JP 　ＶＪＰ内部は一時騒然となる。
+EN With the <IGP> belt in another promotion's hands, <VJP> was in an uproar for a while.
+
+@ 3.297.01
+# speaker: 旗本 (%ss88)
+JP 　この直後、俺は
+JP 　%ss1さんに呼び出され
+JP 　こう言われる・・・
+EN Right after, %ss1 called me in and told me this...
+
+@ 3.298.00
+# speaker: 力丸 (%ss1)
+JP 「%ss88・・・」
+EN "%ss88..."
+
+@ 3.298.01
+# speaker: 力丸 (%ss1)
+JP 「こうなったら
+JP 　おまえしかいないぞ。」
+EN "Now it's all on you."
+
+@ 3.298.02
+# speaker: 旗本 (%ss88)
+JP 「言われなくても
+JP 　分かってますよ・・・！」
+EN "You don't have to tell me...!"
+
+@ 3.298.03
+# speaker: 旗本 (%ss88)
+JP 「%ss99・・・
+JP 　ＶＪＰは甘くねえぞ。
+JP 　首を洗って待ってろよ！！」
+EN "%ss99... <VJP> isn't so easy. Get ready, 'cause I'm coming!!"
+
+@ 3.299.00
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰは、すぐさま
+JP 　ベルト奪還の刺客として
+JP 　俺を%ss99にぶち当てた。
+EN <VJP> wasted no time sending me after %ss99 as their assassin to take back the belt.
+
+@ 3.299.01
+# speaker: 旗本 (%ss88)
+JP 　これは、ただの試合じゃない・・・
+EN This wasn't just any match...
+
+@ 3.299.02
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰの威信をかけた
+JP 　闘いなんだ・・・！！
+EN This was a fight for <VJP>'s pride...!!
+
+@ 3.300.00
+# speaker: 記者
+JP 「%ss99さん！！」
+EN "%ss99!!"
+
+@ 3.300.01
+# speaker: 記者
+JP 「今日の%ss88選手との
+JP 　防衛戦について、
+JP 　一言コメントをお願いします！！」
+EN "A word on today's title defense against %ss88, please!!"
+
+@ 3.301.00
+# speaker: 真田 (%ss99)
+JP 「絶対に勝ちますよ。
+JP 　命に換えてもね・・・」
+EN "I'm going to win. Even if it costs me my life..."
+
+@ 3.301.01
+# speaker: 真田 (%ss99)
+JP 「俺は、負けるわけには
+JP 　いかないですから・・・！」
+EN "Because I can't afford to lose...!"
+
+@ 3.302.00
+# speaker: 旗本 (%ss88)
+JP 　%ss99・・・
+JP 　命を賭けてプロレスしてるのは
+JP 　自分だけだと思うなよ・・・！！
+EN %ss99... Don't think you're the only one putting his life on the line in wrestling...!!
+
+@ 3.302.01
+# speaker: 旗本 (%ss88)
+JP 　こっちは命より重い、
+JP 　ＶＪＰの威信がかかっているんだ！！
+EN On my side, <VJP>'s pride is at stake, and that's worth more than my life!!
+
+@ 3.302.02
+# speaker: 旗本 (%ss88)
+JP 　ベルトは絶対に奪い返す！！
+JP 　初めから全開だ！！この野郎！！
+EN I'm taking that belt back, no matter what!! Full throttle from the bell!! Damn it!!
+
+@ 3.304.00
+# speaker: 河野 (%ss21)
+JP 「聞いたか？」
+EN "You hear?"
+
+@ 3.304.01
+# speaker: 河野 (%ss21)
+JP 「%ss1さんが、
+JP 『ＵＷＨインテグラル』との
+JP 　対抗戦を承諾したらしいぞ。」
+EN "Word is, %ss1 agreed to an interpromotional series with '<UWH Integral>.'"
+
+@ 3.304.02
+# speaker: 旗本 (%ss88)
+JP 「ああ、聞いたよ。」
+EN "Yeah, I heard."
+
+@ 3.304.03
+# speaker: 旗本 (%ss88)
+JP 「ＵＷＨインテグラルなんて、
+JP 　俺はうっとうしいと思ってるだけだ。
+JP 　やるなら、勝手にやってくれ。」
+EN "<UWH Integral> just gets on my nerves, is all. If he wants to do it, let him."
+
+@ 3.306.00
+# speaker: 記者
+JP 「おめでとうございます！！
+JP 　%ss88選手！！」
+EN "Congratulations!! %ss88!!"
+
+@ 3.306.01
+# speaker: 記者
+JP 「伝統あるベルトを、
+JP 　腰に巻いた感想を
+JP 　聞かせてもらえますか！？」
+EN "How does it feel to wear such a storied belt?!"
+
+@ 3.306.02
+# speaker: 旗本 (%ss88)
+JP 「言葉にならないね・・・」
+EN "I can't put it into words..."
+
+@ 3.306.03
+# speaker: 旗本 (%ss88)
+JP 「とにかく
+JP 　うれしい・・・！」
+EN "I'm just so happy...!"
+
+@ 3.306.04
+# speaker: 旗本 (%ss88)
+JP 「相手が%ss42だから
+JP 　なおさらだよ。」
+EN "Even more so since it was %ss42."
+
+@ 3.306.05
+# speaker: 旗本 (%ss88)
+JP 「これで
+JP 　俺はＶＪＰの頂点に立った。」
+EN "Now I'm at the top of <VJP>."
+
+@ 3.306.06
+# speaker: 旗本 (%ss88)
+JP 「ここからが
+JP 　本当の闘いだ・・・！」
+EN "This is where the real fight begins...!"
+
+@ 3.307.00
+# speaker: 旗本 (%ss88)
+JP 　だが、喜びも
+JP 　つかの間・・・
+EN But the joy didn't last long...
+
+@ 3.307.01
+# speaker: 旗本 (%ss88)
+JP 　５度目の防衛戦で、
+JP 　俺は再び
+JP 　%ss42にベルトを奪取される。
+EN In my fifth title defense, %ss42 took the belt from me again.
+
+@ 3.307.02
+# speaker: 旗本 (%ss88)
+JP 　やっぱりあいつは
+JP 　したたかだよ。
+EN That guy really is a crafty one.
+
+@ 3.307.03
+# speaker: 旗本 (%ss88)
+JP 　やられたことは、
+JP 　しっかり
+JP 　やり返して来るからな。
+EN Whatever you do to him, he pays you back in full.
+
+@ 3.309.00
+# speaker: 記者
+JP 「%ss88さん、
+JP 　今日の試合なんですが・・・」
+EN "%ss88, about today's match..."
+
+@ 3.309.01
+# speaker: 旗本 (%ss88)
+JP 「ああっ！？」
+EN "Huh?!"
+
+@ 3.309.02
+# speaker: 旗本 (%ss88)
+JP 「負けたら
+JP 　しょうがねえんだよ！！
+JP 　負けたら！！」
+EN "I lost, and that's that!! I lost!!"
+
+@ 3.309.03
+# speaker: 旗本 (%ss88)
+JP 「次だ！！次！！」
+EN "Next time!! Next!!"
+
+@ 3.310.00
+# speaker: 旗本 (%ss88)
+JP 　俺の本当の力は
+JP 　こんなもんじゃねえはずだ・・・！！
+EN This can't be all I've got...!!
+
+@ 3.310.01
+# speaker: 旗本 (%ss88)
+JP 　必ず頂点に立ってみせる・・・
+EN I'll make it to the top, I swear...
+
+@ 3.310.02
+# speaker: 旗本 (%ss88)
+JP 　必ず・・・！！
+EN I swear...!!
+
+@ 3.316.00
+# speaker: 旗本 (%ss88)
+JP 　%ss41との一連の抗争で、
+JP 　完全に自分を取り戻した俺は、
+EN My feud with %ss41 got me completely back to my old self,
+
+@ 3.316.01
+# speaker: 旗本 (%ss88)
+JP 　勢いまかせに、
+JP 　ＶＪＰの強さの象徴である
+JP 　ＩＧＰのベルトに挑戦する。
+EN and riding that wave, I challenged for the <IGP> belt, the symbol of <VJP>'s strength.
+
+@ 3.316.02
+# speaker: 旗本 (%ss88)
+JP 　現、ＩＧＰ王者は
+JP 　%sl43%ss43・・・
+EN The reigning <IGP> champion was %sl43 %ss43...
+
+@ 3.317.00
+# speaker: 旗本 (%ss88)
+JP 　倒さなければならなかったのは、
+JP 　旧知の友、
+JP 　%ss42%sl42だった。
+EN The man I had to beat was my old friend, %sl42 %ss42.
+
+@ 3.318.00
+# speaker: 旗本 (%ss88)
+JP 　俺は、いつになく
+JP 　神経質になっていた。
+EN I was more on edge than I'd ever been.
+
+@ 3.318.01
+# speaker: 旗本 (%ss88)
+JP 　そりゃあそうさ、
+EN Well, of course I was.
+
+@ 3.318.02
+# speaker: 旗本 (%ss88)
+JP 　%ss42が俺の
+JP 　同期である以上、
+EN %ss42 came up in the same rookie class as me,
+
+@ 3.318.03
+# speaker: 旗本 (%ss88)
+JP 　俺にとっては
+JP 　永久に比較される相手であり、
+JP 　ライバルだからな。
+EN so we'll always be compared, and he'll always be my rival.
+
+@ 3.318.04
+# speaker: 旗本 (%ss88)
+JP 　現時点で、%ss42は
+JP 　確実に俺より前を行っていた。
+EN Right now, %ss42 was definitely a step ahead of me.
+
+@ 3.318.05
+# speaker: 旗本 (%ss88)
+JP 　そんな%ss42との
+JP 　大一番を前にして、
+EN With a big match against %ss42 coming up,
+
+@ 3.318.06
+# speaker: 旗本 (%ss88)
+JP 　神経質になるなと言う方が
+JP 　無理ってもんだろ。
+EN you'd have to be crazy not to be on edge.
+
+@ 3.318.07
+# speaker: 旗本 (%ss88)
+JP 　でも、このたかぶりは
+JP 　マズ過ぎる・・・。
+EN But being this wound up was really bad...
+
+@ 3.318.08
+# speaker: 旗本 (%ss88)
+JP 　こんなに神経がピリピリしてたんじゃ、
+JP 　勝ちにいくどころか
+JP 　試合にもならねえ・・・
+EN With my nerves this frayed, forget winning. I wouldn't even put up a fight...
+
+@ 3.318.09
+# speaker: 旗本 (%ss88)
+JP 　そんな焦りがピークに達した頃、
+EN Just as the panic hit its peak,
+
+@ 3.318.10
+# speaker: 旗本 (%ss88)
+JP 　道場で、%ss42が
+JP 　俺に話しかけて来たんだ。
+EN %ss42 came up and talked to me at the dojo.
+
+@ 3.319.00
+# speaker: 俊藤 (%ss42)
+JP 「なあ、おまえ・・・
+JP 　また太ったんじゃない？」
+EN "Hey, man... did you put on weight again?"
+
+@ 3.319.01
+# speaker: 旗本 (%ss88)
+JP 「はあっ！？」
+EN "Whaaat?!"
+
+@ 3.319.02
+# speaker: 旗本 (%ss88)
+JP 　何で日常会話なんだよ！！
+JP 　おかしいだろ！？この状況で！？
+EN Small talk?! Now?! In this situation?!
+
+@ 3.319.03
+# speaker: 旗本 (%ss88)
+JP 　まったく、
+JP 　どういう神経してんだよ、
+JP 　この男は・・・。
+EN Seriously, what kind of nerves does this guy have...
+
+@ 3.319.04
+# speaker: 旗本 (%ss88)
+JP 　まあ、でも、
+JP 　%ss42らしいと言えば
+JP 　%ss42らしいか。
+EN Well, then again, that's just %ss42 being %ss42.
+
+@ 3.319.05
+# speaker: 旗本 (%ss88)
+JP 　公私を完全に分けてるということは、
+JP 　それだけプロに徹してると
+JP 　いうことだからな・・・。
+EN Keeping work and life completely separate means he's a true pro, through and through...
+
+@ 3.319.06
+# speaker: 旗本 (%ss88)
+JP 　その後、俺達２人は、
+JP 　しばらくの間
+JP 　バカ話に花を咲かせていた。
+EN After that, the two of us shot the breeze for a while.
+
+@ 3.319.07
+# speaker: 旗本 (%ss88)
+JP 　結局、タイトルマッチの話は
+JP 　２人とも口にしなかった・・・
+EN In the end, neither of us said a word about the title match...
+
+@ 3.319.08
+# speaker: 旗本 (%ss88)
+JP 　ただ最後に一言だけ、
+JP 　%ss42はこう言った。
+EN Only at the very end, %ss42 said one thing.
+
+@ 3.319.09
+# speaker: 俊藤 (%ss42)
+JP 「渡さねえよ、俺は・・・。」
+EN "I'm not giving it up..."
+
+@ 3.319.10
+# speaker: 旗本 (%ss88)
+JP 「・・・！」
+EN "...!"
+
+@ 3.320.00
+# speaker: 旗本 (%ss88)
+JP 　俺には分かったよ。
+EN I knew right then.
+
+@ 3.320.01
+# speaker: 旗本 (%ss88)
+JP 　あいつも、俺と同じように
+JP 　プレッシャーを感じている・・・
+EN He was feeling the pressure, same as me...
+
+@ 3.320.02
+# speaker: 旗本 (%ss88)
+JP 　%ss42にとっても、
+JP 　俺とのタイトルマッチは
+JP 　特別なことだったんだ・・・。
+EN To %ss42 too, a title match with me was something special...
+
+@ 3.321.00
+# speaker: 旗本 (%ss88)
+JP 　試合前になると、俺は不思議と
+JP 　落ち着きを取り戻していた。
+EN By match time, I'd somehow calmed back down.
+
+@ 3.321.01
+# speaker: 旗本 (%ss88)
+JP 　それは、%ss42も同じく、
+JP 　俺を意識していたということを
+JP 　知ったからだ・・・
+EN It was because I knew %ss42 had his eye on me too...
+
+@ 3.321.02
+# speaker: 旗本 (%ss88)
+JP 　%ss21も含め、
+JP 　俺達３人は永久にライバルなんだ。
+EN The three of us, %ss21 included, would be rivals forever.
+
+@ 3.321.03
+# speaker: 旗本 (%ss88)
+JP 　負けねえよ、俺は・・・！
+EN I'm not losing...!
+
+@ 3.321.04
+# speaker: 旗本 (%ss88)
+JP 　おまえ達が
+JP 　俺に負けたくないように、
+JP 　俺も、おまえ達には負けたくねえ！！
+EN Just like you guys don't want to lose to me, I don't want to lose to you either!!
+
+@ 3.321.05
+# speaker: 旗本 (%ss88)
+JP 　%ss42！！俺は絶対に
+JP 　おまえを越えてみせる！！
+EN %ss42!! I'm going to get past you, no matter what!!
+
+@ 3.323.00
+# speaker: 旗本 (%ss88)
+JP 　%ss21との闘いは、
+JP 　お互いの意地と意地とが
+JP 　ぶつかり合い、
+EN The fight with %ss21 was pride against pride,
+
+@ 3.323.01
+# speaker: 旗本 (%ss88)
+JP 　壮絶な幕切れとなった。
+EN and it ended in a brutal finish.
+
+@ 3.323.02
+# speaker: 旗本 (%ss88)
+JP 　俺達がプロレスラーである以上、
+JP 　この関係は
+JP 　永遠に続いて行くんだろうな。
+EN As long as we're pro wrestlers, I guess this is how it'll always be between us.
+
+@ 3.323.03
+# speaker: 旗本 (%ss88)
+JP 　闘いの火種は、何も
+JP 　内輪に限っての話ってわけじゃない。
+EN Fights don't only break out among your own, though.
+
+@ 3.323.04
+# speaker: 旗本 (%ss88)
+JP 　時として、
+JP 　火の粉は外から
+JP 　降りかかることもある・・・。
+EN Sometimes, the sparks come flying in from outside...
+
+@ 3.324.00
+# speaker: カイザー (%ss15)
+JP 「聞いたか？」
+EN "You hear?"
+
+@ 3.324.01
+# speaker: カイザー (%ss15)
+JP 「%ss1さんが、
+JP 『ＵＷＨインテグラル』との
+JP 　対抗戦を承諾したらしいぞ。」
+EN "Word is, %ss1 agreed to an interpromotional series with '<UWH Integral>.'"
+
+@ 3.324.02
+# speaker: 旗本 (%ss88)
+JP 「ああ、聞いたよ。」
+EN "Yeah, I heard."
+
+@ 3.324.03
+# speaker: 旗本 (%ss88)
+JP 「ＵＷＨインテグラルなんて、
+JP 　俺はうっとうしいと思ってるだけだ。
+JP 　やるなら、勝手にやってくれ。」
+EN "<UWH Integral> just gets on my nerves, is all. If he wants to do it, let him."
+
+@ 3.330.00
+# speaker: 旗本 (%ss88)
+JP 　%ss41との一連の抗争で
+JP 　完全に自分を取り戻した俺は、
+EN My feud with %ss41 got me completely back to my old self,
+
+@ 3.330.01
+# speaker: 旗本 (%ss88)
+JP 　その勢いをそのままに、
+JP 　ＶＪＰの強さの象徴である
+JP 　ＩＧＰのベルトに挑戦しようとした。
+EN and riding that wave, I set out to challenge for the <IGP> belt, the symbol of <VJP>'s strength.
+
+@ 3.330.02
+# speaker: 旗本 (%ss88)
+JP 　だが・・・！
+EN But...!
+
+@ 3.331.00
+# speaker: 河野 (%ss21)
+JP 「%ss88ー！！
+JP 　ふざけんなよ、おまえ！！」
+EN "%ss88!! Who do you think you are?!!"
+
+@ 3.331.01
+# speaker: 河野 (%ss21)
+JP 「おまえは、まだ
+JP 　ＩＧＰに挑戦できる
+JP 　レベルじゃねえんだよ！！」
+EN "You're nowhere near ready to challenge for the <IGP>!!"
+
+@ 3.331.02
+# speaker: 河野 (%ss21)
+JP 「俺が叩き潰してやる！！
+JP 　やってやるぞ、%ss88！！」
+EN "I'm gonna crush you!! You're mine, %ss88!!"
+
+@ 3.331.03
+# speaker: 記者
+JP 「%ss21さん・・・！！」
+EN "%ss21...!!"
+
+@ 3.331.04
+# speaker: 記者
+JP 「それは、%ss88選手への
+JP 　対戦表明として
+JP 　受け取っていいんですか！？」
+EN "Should we take that as a challenge to %ss88?!"
+
+@ 3.331.05
+# speaker: 河野 (%ss21)
+JP 「当たり前だ！！ああっ！！
+JP 　やるっつったら
+JP 　やるんだよ俺は！！」
+EN "You bet it is!! Got that?!! When I say I'll do it, I do it!!"
+
+@ 3.331.06
+# speaker: 河野 (%ss21)
+JP 「逃げるなよ%ss88！！
+JP 　その首、俺が取ってやるぞ！！」
+EN "Don't you run, %ss88!! Your head is mine!!"
+
+@ 3.332.00
+# speaker: 旗本 (%ss88)
+JP 　%ss21、てめえ・・・
+JP 　何、水差してんだ
+JP 　このやろう！！
+EN %ss21, you bastard... What are you butting in for?!!
+
+@ 3.332.01
+# speaker: 旗本 (%ss88)
+JP 　やるって言うなら
+JP 　いつでもやってやるぞ！！
+JP 　コラあ！！
+EN If you want a fight, I'll take you on anytime!! You hear me?!
+
+@ 3.333.00
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　%ss21選手の
+JP 　対戦表明ですが・・・！！」
+EN "%ss88...!! About %ss21's challenge...!!"
+
+@ 3.333.01
+# speaker: 記者
+JP 「受けられるんですか！？」
+EN "Will you accept?!"
+
+@ 3.333.02
+# speaker: 旗本 (%ss88)
+JP 「受けるもクソもあるか！！」
+EN "Accept, hell!!"
+
+@ 3.333.03
+# speaker: 旗本 (%ss88)
+JP 「俺は、あれだけ露骨に言われて
+JP 　黙っていられるほど、
+JP 　人間できてねえからな！！」
+EN "After he says something that blatant, I'm not the type to just sit there and take it!!"
+
+@ 3.333.04
+# speaker: 旗本 (%ss88)
+JP 「%ss21！！
+JP 　よく聞けよ！！」
+EN "%ss21!! You listen to me!!"
+
+@ 3.333.05
+# speaker: 旗本 (%ss88)
+JP 「どっちが強いか、
+JP 　白黒ハッキリさせてやる！！」
+EN "We'll settle once and for all who's stronger!!"
+
+@ 3.333.06
+# speaker: 旗本 (%ss88)
+JP 「どうなっても知らねえぞ！！
+JP 　死ぬ気で来い！！」
+EN "Whatever happens, it's on you!! Come ready to die!!"
+
+@ 3.334.00
+# speaker: 旗本 (%ss88)
+JP 　闘争三戦鬼を結成してから・・・
+EN Ever since we formed the Three War Demons...
+
+@ 3.334.01
+# speaker: 旗本 (%ss88)
+JP 　いや、同じ日に
+JP 　ＶＪＰに入門した時から、
+EN no, ever since the day we all joined <VJP> together,
+
+@ 3.334.02
+# speaker: 旗本 (%ss88)
+JP 　%ss42、%ss21、
+JP 　俺の３人は、見えない糸でつながれた
+JP 　永遠のライバルだと思っている。
+EN I've thought of %ss42, %ss21 and me as eternal rivals, tied by an invisible thread.
+
+@ 3.334.03
+# speaker: 旗本 (%ss88)
+JP 　%ss21もそれを意識している。
+JP 　単純に、他の２人には
+JP 　負けたくねえんだ・・・！
+EN %ss21 knows it too. We just don't want to lose to the other two...!
+
+@ 3.334.04
+# speaker: 旗本 (%ss88)
+JP 　%ss21！！%ss42！！
+JP 　俺はおまえらには負けねえ！！
+EN %ss21!! %ss42!! I'm not losing to you guys!!
+
+@ 3.334.05
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰの頂点に立つのは
+JP 　俺だ！！
+EN I'm the one who'll stand at the top of <VJP>!!
+
+@ 3.340.00
+# speaker: 旗本 (%ss88)
+JP 　%ss41との一連の抗争で
+JP 　完全に自分を取り戻した俺は、
+EN My feud with %ss41 got me completely back to my old self,
+
+@ 3.340.01
+# speaker: 旗本 (%ss88)
+JP 　勢いまかせに、
+JP 　ＶＪＰの強さの象徴である
+JP 　ＩＧＰのベルトに挑戦する。
+EN and riding that wave, I challenged for the <IGP> belt, the symbol of <VJP>'s strength.
+
+@ 3.340.02
+# speaker: 旗本 (%ss88)
+JP 　現、ＩＧＰ王者
+JP 　%sf42。
+EN The reigning <IGP> champion: %sf42.
+
+@ 3.341.00
+# speaker: 旗本 (%ss88)
+JP 　倒さなければならなかったのは、
+JP 　旧知の友だった・・・。
+EN The man I had to beat was an old friend...
+
+@ 3.342.00
+# speaker: 旗本 (%ss88)
+JP 　表面的には
+JP 　平静を装っていた俺だったが、
+JP 　内心は穏やかじゃなかった。
+EN On the surface, I acted calm, but inside I was anything but.
+
+@ 3.342.01
+# speaker: 旗本 (%ss88)
+JP 　現時点で、%ss42は
+JP 　確実に俺の前を歩いている。
+EN Right now, %ss42 was definitely a step ahead of me.
+
+@ 3.342.02
+# speaker: 旗本 (%ss88)
+JP 　ここ一番という勝負で
+JP 　俺は%ss42に勝ったことがない。
+EN When it really counted, I'd never once beaten %ss42.
+
+@ 3.342.03
+# speaker: 旗本 (%ss88)
+JP 　何でだ！？
+EN Why?!
+
+@ 3.342.04
+# speaker: 旗本 (%ss88)
+JP 　同じ日に入門して、
+JP 　同じようにトレーニングして、
+JP 　差が開いちまうのは才能か！？
+EN We joined the same day, trained the same way... Is it talent that's put the gap between us?!
+
+@ 3.342.05
+# speaker: 旗本 (%ss88)
+JP 　そんなもん
+JP 　認めねえ・・・
+EN I won't accept that...
+
+@ 3.342.06
+# speaker: 旗本 (%ss88)
+JP 　俺は絶対に認めねえぞ！！
+EN I'll never accept it!!
+
+@ 3.343.00
+# speaker: 俊藤 (%ss42)
+JP 「おい、どうした？
+JP 　深刻な顔して？」
+EN "Hey, what's up? Why the serious face?"
+
+@ 3.343.01
+# speaker: 旗本 (%ss88)
+JP （うわっ・・・！
+JP 　こいつすげえ・・・）
+EN (Whoa...! This guy's unbelievable...)
+
+@ 3.343.02
+# speaker: 旗本 (%ss88)
+JP （俺とのタイトルマッチは
+JP 　明日だっていうのに、）
+EN (Our title match is tomorrow,)
+
+@ 3.343.03
+# speaker: 旗本 (%ss88)
+JP （何で
+JP 　こんなにフランクに
+JP 　話し掛けられるんだ！？）
+EN (so how can he talk to me so casually?!)
+
+@ 3.343.04
+# speaker: 俊藤 (%ss42)
+JP 「だからさ・・・
+JP 　例の彼女とは、もう
+JP 　別れようと思ってるんだよ。」
+EN "So anyway... I'm thinking about breaking up with that girl."
+
+@ 3.343.05
+# speaker: 旗本 (%ss88)
+JP （女かよ！？）
+EN (A girl?!)
+
+@ 3.343.06
+# speaker: 旗本 (%ss88)
+JP （女の話なんか
+JP 　してる場合じゃねえだろ！？）
+EN (This is no time to talk about girls, is it?!)
+
+@ 3.343.07
+# speaker: 旗本 (%ss88)
+JP （いったい
+JP 　どういう神経してんだよ、
+JP 　こいつ！？）
+EN (What kind of nerves does this guy have?!)
+
+@ 3.343.08
+# speaker: 俊藤 (%ss42)
+JP 「まあ、何があったか知らないけど、
+JP 　そんなに深く落ち込むなって。」
+EN "Well, I don't know what happened, but don't get so down."
+
+@ 3.343.09
+# speaker: 俊藤 (%ss42)
+JP 「そのうち
+JP 　いいこともあるさ。」
+EN "Something good'll come along."
+
+@ 3.343.10
+# speaker: 旗本 (%ss88)
+JP 「・・・。」
+EN "..."
+
+@ 3.343.11
+# speaker: 旗本 (%ss88)
+JP 　（ブチッ）・・・
+EN (Snap)...
+
+@ 3.343.12
+# speaker: 旗本 (%ss88)
+JP 　絶対倒す！！
+EN I'm beating him for sure!!
+
+@ 3.343.13
+# speaker: 旗本 (%ss88)
+JP 　何だか知らねえけど
+JP 　むしょうにムカついた！！
+EN I don't even know why, but he made me so mad!!
+
+@ 3.343.14
+# speaker: 旗本 (%ss88)
+JP 　こいつにだけは
+JP 　絶対に負けられねえ！！
+EN He's the one guy I can't lose to!!
+
+@ 3.343.15
+# speaker: 旗本 (%ss88)
+JP 　何が何でも勝つ！！
+EN I'm winning, whatever it takes!!
+
+@ 3.344.00
+# speaker: 記者
+JP 「%ss42選手！！
+JP 　いよいよ%ss88選手との
+JP 　防衛戦ですが、」
+EN "%ss42!! The title defense against %ss88 is almost here,"
+
+@ 3.344.01
+# speaker: 記者
+JP 「王者としての、
+JP 　試合前の意気込みをお願いします！！」
+EN "so tell us how you feel going into the match as champion!!"
+
+@ 3.345.00
+# speaker: 俊藤 (%ss42)
+JP 「絶対勝つよ。
+JP 　絶対に負けたくない・・・！！」
+EN "I'm going to win. I absolutely don't want to lose...!!"
+
+@ 3.345.01
+# speaker: 俊藤 (%ss42)
+JP 「王者の意地にかけて、
+JP 　%ss88は必ず叩き潰す！！」
+EN "On my pride as champion, I'm going to crush %ss88!!"
+
+@ 3.346.00
+# speaker: 旗本 (%ss88)
+JP 　はあ！？
+JP 　昨日と全然
+JP 　違うじゃねえか・・・！？
+EN What?! He's nothing like he was yesterday...?!
+
+@ 3.346.01
+# speaker: 旗本 (%ss88)
+JP 　なるほど・・・
+EN I see...
+
+@ 3.346.02
+# speaker: 旗本 (%ss88)
+JP 　%ss42は、プロとして
+JP 　徹底してるってことか。
+EN So %ss42 is a pro through and through.
+
+@ 3.346.03
+# speaker: 旗本 (%ss88)
+JP 　公私の切り替えが
+JP 　完璧に出来ている。
+EN He can switch between work and life perfectly.
+
+@ 3.346.04
+# speaker: 旗本 (%ss88)
+JP 　この辺の割り切りが、
+JP 　俺と奴との差なのかもしれない・・・
+EN Maybe that clean split is the difference between him and me...
+
+@ 3.347.00
+# speaker: 旗本 (%ss88)
+JP 　だがな、%ss42・・・！
+JP 　今の俺は
+JP 　今までの俺とは違うぞ。
+EN But listen, %ss42...! I'm not the same guy I used to be.
+
+@ 3.347.01
+# speaker: 旗本 (%ss88)
+JP 　ホークや%ss41との
+JP 　死闘を経て、俺は
+JP 　確実に強くなった・・・！！
+EN After those wars with <Hawk> and %ss41, I've definitely gotten stronger...!!
+
+@ 3.347.02
+# speaker: 旗本 (%ss88)
+JP 　同期のおまえに、
+JP 　いつまでも先を
+JP 　歩かせるわけにはいかねえ！！
+EN You started the same day I did, and I can't let you stay ahead of me forever!!
+
+@ 3.347.03
+# speaker: 旗本 (%ss88)
+JP 　ＩＧＰのタイトルは必ずもらう！！
+JP 　覚悟しろよ！！
+EN I'm taking that <IGP> title, no matter what!! Get ready!!
+
+@ 3.352.00
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　すばらしい試合でしたよ！！」
+EN "%ss88!! That was a fantastic match!!"
+
+@ 3.352.01
+# speaker: 記者
+JP 「何かが
+JP 　ふっきれたような・・・
+JP 　満足できたんじゃないですか！？」
+EN "It's like something broke loose... You must be satisfied?!"
+
+@ 3.352.02
+# speaker: 旗本 (%ss88)
+JP 「%ss41はすごいよ・・・」
+EN "%ss41 is amazing..."
+
+@ 3.352.03
+# speaker: 旗本 (%ss88)
+JP 「すごいから、
+JP 　こっちも全てを出し切れる。」
+EN "He's so good, I can give it everything I've got."
+
+@ 3.352.04
+# speaker: 旗本 (%ss88)
+JP 「とにかく
+JP 　これで俺は復活した。」
+EN "Anyway, with this, I'm back."
+
+@ 3.352.05
+# speaker: 旗本 (%ss88)
+JP 「今はすがすがしい
+JP 　気分だね。」
+EN "Right now I feel refreshed."
+
+@ 3.354.00
+# speaker: 記者
+JP 「%ss41さん！！
+JP 　本当にすばらしい試合でした！！」
+EN "%ss41!! That was a truly fantastic match!!"
+
+@ 3.354.01
+# speaker: 記者
+JP 「個人的には
+JP 　今年のベストバウトだと思います！！」
+EN "Personally, I think it was this year's best bout!!"
+
+@ 3.355.00
+# speaker: 龍 (%ss41)
+JP 「%ss88とは、
+JP 　当分ライバル関係が続きそうだな。」
+EN "Looks like %ss88 and I will be rivals for a while."
+
+@ 3.355.01
+# speaker: 龍 (%ss41)
+JP 「俺としても、
+JP 　ここまで本気になれる相手は
+JP 　そういなかったから。」
+EN "There haven't been many guys I could get this serious about, either."
+
+@ 3.355.02
+# speaker: 龍 (%ss41)
+JP 「あいつは
+JP 　スランプだったみたいだけど、
+JP 　これでふっきれたんじゃないか。」
+EN "He seemed to be in a slump, but I'd say this snapped him out of it."
+
+@ 3.361.00
+# speaker: 旗本 (%ss88)
+JP 　俺の心を熱くさせるような
+JP 　強烈な敵・・・
+EN A fierce enemy who could set my heart on fire...
+
+@ 3.361.01
+# speaker: 旗本 (%ss88)
+JP 　そんな時
+JP 　奴が現れたんだ・・・！
+EN That's when he showed up...!
+
+@ 3.362.00
+# speaker: アナウンサー
+JP 「おおーーっと！！
+JP 　%ss41！！ものすごい形相で
+JP 　%ss88に襲いかかったあ！！」
+EN "Ohhh!! %ss41!! He tears into %ss88 with a terrifying look!!"
+
+@ 3.362.01
+# speaker: アナウンサー
+JP 「%ss41は%ss88の膝を
+JP 　狙ってますね！？」
+EN "%ss41 is going after %ss88's knee, isn't he?!"
+
+@ 3.362.02
+# speaker: 解説者
+JP 「まずいですよ、これは・・・！」
+EN "This is bad...!"
+
+@ 3.362.03
+# speaker: 解説者
+JP 「%ss88は膝に
+JP 　爆弾を抱えていますからね・・・！！」
+EN "%ss88's knee is a ticking time bomb...!!"
+
+@ 3.362.04
+# speaker: アナウンサー
+JP 「ああっと！！
+JP 　%ss88が完全にキレました！！」
+EN "Ohhh!! %ss88 has completely snapped!!"
+
+@ 3.363.00
+# speaker: アナウンサー
+JP 「レフェリーが制止を・・・」
+EN "The referee tries to stop him..."
+
+@ 3.364.00
+# speaker: アナウンサー
+JP 「%ss88！！レフェリーを
+JP 　突き飛ばした！！」
+EN "%ss88!! He shoved the referee!!"
+
+@ 3.365.00
+# speaker: アナウンサー
+JP 「ゴングです！！
+JP 　ゴングがなります！！」
+EN "There's the bell!! The bell is ringing!!"
+
+@ 3.366.00
+# speaker: アナウンサー
+JP 「%ss88、%ss41の
+JP 　術中にはまったかあ！？」
+EN "Did %ss88 fall right into %ss41's trap?!"
+
+@ 3.367.00
+# speaker: 旗本 (%ss88)
+JP 　%sf41・・・
+EN %sf41...
+
+@ 3.367.01
+# speaker: 旗本 (%ss88)
+JP 　かつて、ＯＪＰで
+JP 　一時代を築いた%ss41は、
+EN %ss41, who once ruled an era in <OJP>,
+
+@ 3.367.02
+# speaker: 旗本 (%ss88)
+JP 　ＯＪＰを脱退した後
+JP 『ＲＹＵ』を立ち上げ、
+JP 　独自の興行を展開していた。
+EN left <OJP>, founded "<RYU>," and was running his own shows.
+
+@ 3.367.03
+# speaker: 旗本 (%ss88)
+JP 　ＲＹＵがＶＪＰに参戦することが
+JP 　決まった時、ＶＪＰは
+JP 　よそ者を撃退するために、
+EN When it was decided that <RYU> would invade <VJP>, <VJP> set out to drive off the outsiders,
+
+@ 3.367.04
+# speaker: 旗本 (%ss88)
+JP 　外敵に強い俺を中心に
+JP 　６人タッグマッチをメイクして、
+JP 　それを迎え討った。
+EN and put together a six-man tag built around me, the one who's best against outsiders, to meet them head-on.
+
+@ 3.367.05
+# speaker: 旗本 (%ss88)
+JP 　結果は・・・
+EN The result...
+
+@ 3.367.06
+# speaker: 旗本 (%ss88)
+JP 　見ての通り、俺がレフェリーを
+JP 　突き飛ばしたことによる
+JP 　反則負け・・・
+EN As you saw, a disqualification loss, because I shoved the referee...
+
+@ 3.367.07
+# speaker: 旗本 (%ss88)
+JP 　このままで
+JP 　すむわけねえよなあ・・・！
+EN There's no way I'm leaving it like this...!
+
+@ 3.368.00
+# speaker: 記者
+JP 「%ss88選手！！
+JP 　今日の試合・・・」
+EN "%ss88!! About today's match..."
+
+@ 3.368.01
+# speaker: 旗本 (%ss88)
+JP 「うるせえぞ！！
+JP 　こらあ！！」
+EN "Shut up!! Get lost!!"
+
+@ 3.368.02
+# speaker: 旗本 (%ss88)
+JP 「このままじゃ
+JP 　終わらせねえって言ってんだ！！」
+EN "I'm telling you, this isn't over!!"
+
+@ 3.368.03
+# speaker: 旗本 (%ss88)
+JP 「どこまでも追いかける！！
+JP 　追い詰めるからな！！
+JP 　%ss41！！」
+EN "I'll chase you anywhere!! I'll hunt you down!! %ss41!!"
+
+@ 3.369.00
+# speaker: 旗本 (%ss88)
+JP 　%ss41の膝攻撃で、
+JP 　完全にキレていた俺だったが・・・
+EN %ss41's attack on my knee had made me snap, but...
+
+@ 3.369.01
+# speaker: 旗本 (%ss88)
+JP 　本能的な部分では、
+JP 『待ち望んでいた相手が現れた』という
+JP 　高揚感で打ち震えていた。
+EN deep down, I was trembling with excitement. "The opponent I've been waiting for is finally here."
+
+@ 3.369.02
+# speaker: 旗本 (%ss88)
+JP 　もう、ストーカーのように
+JP 　追いまくったよ。
+EN I went after him like a stalker.
+
+@ 3.369.03
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰのシリーズを欠場して
+JP 　ＲＹＵの興行に乱入までしたし、
+JP 　控え室も襲撃してやった。
+EN I skipped a <VJP> tour, stormed a <RYU> show, and even raided his locker room.
+
+@ 3.369.04
+# speaker: 旗本 (%ss88)
+JP 　とにかく、%ss41と
+JP 　シングルでやりたかった。
+EN I just had to face %ss41 one-on-one.
+
+@ 3.369.05
+# speaker: 旗本 (%ss88)
+JP 　俺にとっては、
+JP 　絶対に価値ある一戦になると
+JP 　確信していたんだ・・・！
+EN I was sure it would be a match that really meant something to me...!
+
+@ 3.370.00
+# speaker: 記者
+JP 「%ss41さん！！
+JP 　%ss88選手との一騎打ちを
+JP 　承諾したそうですが、」
+EN "%ss41!! We hear you've accepted %ss88's challenge for a one-on-one,"
+
+@ 3.370.01
+# speaker: 記者
+JP 「今の心境をお聞かせ下さい！！」
+EN "How are you feeling right now?!"
+
+@ 3.371.00
+# speaker: 龍 (%ss41)
+JP 「%ss88は面白いんだよ。
+JP 　とにかく、本気で
+JP 　コノヤローって思える。」
+EN "%ss88 is fun. He really makes me go, 'Why, you little...!'"
+
+@ 3.371.01
+# speaker: 龍 (%ss41)
+JP 「%ss88との試合は
+JP 　Ｋ点を越えられるからね。」
+EN "Matches with %ss88 go past the K-point, you know."
+
+@ 3.371.02
+# speaker: 龍 (%ss41)
+JP 「すごい試合を見せるよ。」
+EN "We'll put on an incredible match."
+
+@ 3.372.00
+# speaker: 旗本 (%ss88)
+JP 　自分の限界を超えなければ
+JP 　勝てない相手・・・
+EN An opponent I couldn't beat without going past my own limits...
+
+@ 3.372.01
+# speaker: 旗本 (%ss88)
+JP 　それが、
+JP 　%sf41
+JP 　だった。
+EN That was %sf41.
+
+@ 3.372.02
+# speaker: 旗本 (%ss88)
+JP 　名目は外敵駆除だが、
+JP 　これは、俺の本当の復活を賭けての
+JP 　闘いなんだ。
+EN On paper, it was about driving off an outsider, but this was a fight for my true comeback.
+
+@ 3.372.03
+# speaker: 旗本 (%ss88)
+JP 　%ss41戦には
+JP 　それだけの価値がある！！
+EN A match with %ss41 is worth that much!!
+
+@ 3.372.04
+# speaker: 旗本 (%ss88)
+JP 　やるぞ、俺は！！
+EN I'm going to do this!!
+
+@ 3.374.00
+# speaker: 旗本 (%ss88)
+JP 　俺はひたすら
+JP 　トレーニングに打ち込んだ。
+EN I threw myself into training, nothing else.
+
+@ 3.374.01
+# speaker: 旗本 (%ss88)
+JP 　だが・・・
+EN But...
+
+@ 3.374.02
+# speaker: 旗本 (%ss88)
+JP 　やはりトレーニングだけでは
+JP 　だめなんだ・・・。
+EN Training alone just wasn't cutting it...
+
+@ 3.374.03
+# speaker: 旗本 (%ss88)
+JP 　俺の心を熱くさせるような
+JP 　強烈な敵・・・
+EN A fierce enemy who could set my heart on fire...
+
+@ 3.374.04
+# speaker: 旗本 (%ss88)
+JP 　そうだ、今の俺には
+JP 　敵が必要なんだ！
+EN That's it, what I need right now is an enemy!
+
+@ 3.376.00
+# speaker: 旗本 (%ss88)
+JP 　ホークとの闘いは
+JP 　すさまじかった。
+EN The war with <Hawk> was brutal.
+
+@ 3.376.01
+# speaker: 旗本 (%ss88)
+JP 　だが、その闘いが一応の決着を見た時、
+JP 　俺は重大な落とし穴にはまっていた。
+EN But once it was more or less settled, I found I'd fallen into a serious trap.
+
+@ 3.376.02
+# speaker: 旗本 (%ss88)
+JP 　長い間、格闘技に
+JP 　染まっていたことが災いして、
+EN I'd spent so long steeped in martial arts
+
+@ 3.376.03
+# speaker: 旗本 (%ss88)
+JP 　俺のプロレスに対する勘が
+JP 　完全に鈍ってしまっていたんだ・・・。
+EN that my feel for wrestling had completely dulled...
+
+@ 3.376.04
+# speaker: 旗本 (%ss88)
+JP 　試合をしても
+JP 　どうも俺らしくない・・・
+EN Even in my matches, it just didn't feel like me...
+
+@ 3.376.05
+# speaker: 旗本 (%ss88)
+JP 　しょっぱい試合が多くなった。
+EN I was having more and more lousy matches.
+
+@ 3.376.06
+# speaker: 旗本 (%ss88)
+JP 　このままじゃマズい。
+JP 　この状況をふっきるには
+JP 　何か強烈な刺激がなければ・・・
+EN This was bad. To break out of it, I needed some kind of jolt...
+
+@ C3.378
+# choice or chapter title
+JP １）強敵を捜す
+EN 1) Find a strong opponent
+
+@ C3.380
+# choice or chapter title
+JP ２）とにかくトレーニングに打ち込む
+EN 2) Throw myself into training
+
+@ 3.381.00
+# speaker: 記者
+JP 「%ss88選手・・・！！」
+EN "%ss88...!!"
+
+@ 3.381.01
+# speaker: 記者
+JP 「すごい試合・・・
+JP 　本当にすごい試合でした！！」
+EN "What a match... What an incredible match!!"
+
+@ 3.381.02
+# speaker: 記者
+JP 「ついに！！
+JP 　ついにホークを
+JP 　倒しましたよ！！」
+EN "You finally... you finally beat <Hawk>!!"
+
+@ 3.381.03
+# speaker: 旗本 (%ss88)
+JP 「長かったよ・・・
+JP 　この４ヶ月は。」
+EN "It's been a long four months..."
+
+@ 3.381.04
+# speaker: 旗本 (%ss88)
+JP 「けど、今日の勝ちで
+JP 　全てが清算できたような気がする。」
+EN "But with today's win, I feel like I've settled the score."
+
+@ 3.381.05
+# speaker: 旗本 (%ss88)
+JP 「こんな気分は久しぶりです。」
+EN "I haven't felt like this in a long time."
+
+@ 3.383.00
+# speaker: 記者
+JP 「%ss88さん・・・！！
+JP 　ちょっと・・・
+JP 　いいですか！？」
+EN "%ss88...!! Can we... have a moment?!"
+
+@ 3.383.01
+# speaker: 記者
+JP 「%ss88さん！！」
+EN "%ss88!"
+
+@ 3.383.02
+# speaker: 旗本 (%ss88)
+JP 「こんなもんじゃねえ・・・！！」
+EN "This isn't enough...!!"
+
+@ 3.383.03
+# speaker: 旗本 (%ss88)
+JP 「ああっ！！
+JP 　こんなもんじゃねえぞ！！
+JP 　俺は！！」
+EN "Argh!! This isn't enough!! Not for me!!"
+
+@ 3.383.04
+# speaker: 旗本 (%ss88)
+JP 「ホーーーーク！！
+JP 　次はねえぞ！！」
+EN "<Hawk>!!! You won't get another chance!!"
+
+@ 3.383.05
+# speaker: 旗本 (%ss88)
+JP 「必ず
+JP 　おまえをぶっ潰してやる！！」
+EN "I'm going to crush you, no matter what!!"
+
+@ 3.384.00
+# speaker: 旗本 (%ss88)
+JP 　このままで終わるわけには
+JP 　いかなかった・・・！！
+EN I couldn't let it end like that...!!
+
+@ 3.384.01
+# speaker: 旗本 (%ss88)
+JP 　その後、俺は
+JP 　ホークとの４度目の闘いに
+JP 　こぎつけ、
+EN After that, I got my fourth fight with <Hawk>,
+
+@ 3.384.02
+# speaker: 旗本 (%ss88)
+JP 　グラウンドに持ち込んで
+JP 　奴を失神させてやった。
+EN took him to the mat, and choked him out cold.
+
+@ 3.384.03
+# speaker: 旗本 (%ss88)
+JP 　ついに・・・
+EN At last...
+
+@ 3.384.04
+# speaker: 旗本 (%ss88)
+JP 　ついに俺は
+JP 　ホークに勝った・・・！！
+EN At last, I'd beaten <Hawk>...!!
+
+@ 3.384.05
+# speaker: 旗本 (%ss88)
+JP 　リベンジに成功したんだ！！
+EN I got my revenge!!
+
+@ 3.390.00
+# speaker: 河野 (%ss21)
+JP 「おい、どうだ？
+JP 　膝の具合は？」
+EN "Hey, how's the knee?"
+
+@ 3.390.01
+# speaker: 旗本 (%ss88)
+JP 「最悪だよ。
+JP 　全然動かねえ・・・」
+EN "Terrible. It won't move at all..."
+
+@ 3.391.00
+# speaker: 八薙
+JP 「%ss88は、このところ
+JP 　無茶な試合ばかり
+JP 　してたからな・・・。」
+EN "%ss88, you've been fighting reckless matches one after another lately..."
+
+@ 3.391.01
+# speaker: 八薙
+JP 「体調を万全にするために、
+JP 　少し休養した方がいいんじゃ
+JP 　ないか・・・？」
+EN "Shouldn't you rest up a while, so you're in top shape...?"
+
+@ 3.391.02
+# speaker: 旗本 (%ss88)
+JP 「だめだ。
+JP 　俺はやる。」
+EN "No. I'm doing it."
+
+@ 3.391.03
+# speaker: 八薙
+JP 「やるって
+JP 　おまえ・・・」
+EN "Doing it? Come on, man..."
+
+@ 3.391.04
+# speaker: 旗本 (%ss88)
+JP 「心配するな。
+JP 　何とかなるさ。」
+EN "Don't worry. I'll manage."
+
+@ 3.392.00
+# speaker: 旗本 (%ss88)
+JP 　勢いまかせに
+JP 　激しいファイトをしていた俺は、
+EN Charging into one wild fight after another,
+
+@ 3.392.01
+# speaker: 旗本 (%ss88)
+JP 　知らない間に、膝に大きな負担を
+JP 　かけていたんだ・・・。
+EN I'd been putting a huge strain on my knee without even knowing it...
+
+@ 3.392.02
+# speaker: 旗本 (%ss88)
+JP 　だが、こんなところで
+JP 　立ち止まるわけにはいかなかった。
+EN But I couldn't stop now.
+
+@ 3.392.03
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰは今、
+JP 　%ss98イズムの継承として
+JP 　異種格闘技戦を推進している。
+EN To carry on %ss98's philosophy, <VJP> was pushing mixed-style fights.
+
+@ 3.392.04
+# speaker: 旗本 (%ss88)
+JP 　格闘系の外敵に強い俺が、
+JP 　今、休むわけにはいかない。
+EN I was the one who was strong against fighters from outside. I couldn't take a break now.
+
+@ 3.392.05
+# speaker: 旗本 (%ss88)
+JP 　俺が倒さなければならない相手は
+JP 　元ヘビー級のボクサー、
+JP 　ジミー・ホーク・・・！！
+EN The man I had to beat was a former heavyweight boxer, <Jimmy Hawk>...!!
+
+@ 3.392.06
+# speaker: 旗本 (%ss88)
+JP 　俺は、プロレスこそが
+JP 　世界最強の格闘技だと信じている。
+EN I believe pro wrestling is the strongest fighting art in the world.
+
+@ 3.392.07
+# speaker: 旗本 (%ss88)
+JP 　それを証明するためにも、
+JP 　やるしかねえんだ・・・！！
+EN To prove it, I've just got to do this...!!
+
+@ 3.393.00
+# speaker: アナウンサー
+JP 「ああーーーっと！！
+JP 　%ss88ダウン・・・！！
+JP 　%ss88がダウンしました！！」
+EN "Ohhh!! %ss88 is down...!! %ss88 is down!!"
+
+@ 3.393.01
+# speaker: アナウンサー
+JP 「%ss88・・・
+JP 　痛恨のＴＫＯ負け・・・！！
+EN "%ss88... a crushing TKO loss...!!
+
+@ 3.393.02
+# speaker: アナウンサー
+JP 　%ss88が・・・！！
+JP 　プロレスが
+JP 　ボクシングに敗れました・・・！！」
+EN %ss88 has... Pro wrestling has lost to boxing...!!"
+
+@ 3.394.00
+# speaker: 旗本 (%ss88)
+JP 　クソッ・・・！！
+JP 　クソッ！！
+JP 　チキショウ！！！
+EN Damn it...!! Damn it!! Dammit all!!!
+
+@ 3.394.01
+# speaker: 旗本 (%ss88)
+JP 　最悪じゃねえか・・・
+EN This is the worst...
+
+@ 3.394.02
+# speaker: 旗本 (%ss88)
+JP 　これほど膝が
+JP 　いうこときかないなんて・・・。
+EN My knee just won't do what I tell it to...
+
+@ 3.394.03
+# speaker: 旗本 (%ss88)
+JP 　しかも、この敗戦で
+JP 　我を忘れた俺は、
+EN And on top of that, this loss made me lose my head,
+
+@ 3.394.04
+# speaker: 旗本 (%ss88)
+JP 　膝の回復もままならぬまま
+JP 　２ヶ月後ホークと再戦し、
+EN so before my knee had even healed, I had a rematch with <Hawk> two months later,
+
+@ 3.394.05
+# speaker: 旗本 (%ss88)
+JP 　再びＴＫＯ負けを喫する・・・。
+EN and suffered another TKO loss...
+
+@ 3.395.00
+# speaker: 旗本 (%ss88)
+JP 　もう、ダメだと思ったね。
+EN I thought I was done.
+
+@ 3.395.01
+# speaker: 旗本 (%ss88)
+JP 　精神的にも、肉体的にも
+JP 　これほど落ち込んだことは
+JP 　今までなかった・・・。
+EN I'd never been this low before, mentally or physically...
+
+@ 3.395.02
+# speaker: 旗本 (%ss88)
+JP 　とにかく、この動かない膝を
+JP 　どうにかしなくちゃいけない。
+EN Whatever it took, I had to do something about this useless knee.
+
+@ 3.395.03
+# speaker: 旗本 (%ss88)
+JP 　これじゃ、初めから
+JP 　ボクサーのパンチなんて
+JP 　よけられるわけがねえ・・・！
+EN Like this, I never stood a chance of dodging a boxer's punches...!
+
+@ 3.396.00
+# speaker: 旗本 (%ss88)
+JP 「%ss98さん、俺を中国に
+JP 　行かせて下さい・・・。」
+EN "%ss98, please let me go to China..."
+
+@ 3.396.01
+# speaker: 武蔵 (%ss98)
+JP 「%ss88・・・
+JP 　逃げるのか？」
+EN "%ss88... Are you running away?"
+
+@ 3.396.02
+# speaker: 旗本 (%ss88)
+JP 「逃げません！！
+JP 　俺は逃げねえ！！」
+EN "No!! I'm not running away!!"
+
+@ 3.396.03
+# speaker: 旗本 (%ss88)
+JP 「ホークに勝つためには、
+JP 　どうしても中国での修行が
+JP 　必要なんです・・・！！」
+EN "To beat <Hawk>, I need to go train in China, no matter what...!!"
+
+@ 3.396.04
+# speaker: 旗本 (%ss88)
+JP 「お願いします！！
+JP 　俺を中国へ行かせて下さい！！」
+EN "Please!! Let me go to China!!"
+
+@ 3.396.05
+# speaker: 武蔵 (%ss98)
+JP 「%ss88・・・」
+EN "%ss88..."
+
+@ 3.396.06
+# speaker: 武蔵 (%ss98)
+JP 「なぜ中国か分からんが、
+JP 　戻って来たら
+JP 　絶対にホークを倒すんだぞ！！」
+EN "I don't know why China, but when you come back, you'd better beat <Hawk>!!"
+
+@ 3.396.07
+# speaker: 武蔵 (%ss98)
+JP 「倒すまで
+JP 　絶対に諦めるな！！」
+EN "Don't you give up until you do!!"
+
+@ 3.396.08
+# speaker: 旗本 (%ss88)
+JP 「%ss98さん・・・！
+JP 　俺は必ずやりますよ！！」
+EN "%ss98...! I'll do it, I swear!!"
+
+@ 3.397.00
+# speaker: 旗本 (%ss88)
+JP 　%ss98さんは
+JP 　俺の気持ちを分かってくれた・・・！！
+EN %ss98 understood how I felt...!!
+
+@ 3.397.01
+# speaker: 旗本 (%ss88)
+JP 　俺は、すぐさま中国へ飛び、
+JP 　膝の治療と新技の開発に専念した。
+EN I flew straight to China and focused on treating my knee and creating a new move.
+
+@ 3.397.02
+# speaker: 旗本 (%ss88)
+JP 　４ヶ月かかったよ。
+EN It took four months.
+
+@ 3.397.03
+# speaker: 旗本 (%ss88)
+JP 　４ヶ月かかって俺は、
+JP 　膝の治療と一つの新技を体得した。
+EN In four months, my knee was healed, and I'd mastered a new move.
+
+@ 3.397.04
+# speaker: 旗本 (%ss88)
+JP 『水面蹴り』だ！！
+EN The Leg Sweep!!
+
+@ 3.397.05
+# speaker: 旗本 (%ss88)
+JP 　俺は帰国後すぐに
+JP 　ホークに再戦を申し込んだ。
+EN As soon as I got back to Japan, I challenged <Hawk> to a rematch.
+
+@ 3.397.06
+# speaker: 旗本 (%ss88)
+JP 　見てろよホーク・・・！
+JP 　完全体のレスラーの恐ろしさを
+JP 　教えてやるぜ！！
+EN Just watch, <Hawk>...! I'll show you how scary a wrestler at full strength is!!
+
+@ 3.398.00
+# speaker: 記者
+JP 「ホーク選手。」
+EN "<Hawk>."
+
+@ 3.398.01
+# speaker: 記者
+JP 「４ヶ月という時を経て、
+JP 　三度、%ss88選手と闘うことに
+JP 　なったわけですが、」
+EN "After four months, you'll face %ss88 for the third time,"
+
+@ 3.398.02
+# speaker: 記者
+JP 「今の心境と、
+JP 　%ss88選手について
+JP 　コメントをお願いします。」
+EN "so how are you feeling, and what do you think of %ss88?"
+
+@ 3.399.00
+# speaker: ホーク
+JP 「%ss88という男はバカなのか？」
+EN "Is this %ss88 guy an idiot?"
+
+@ 3.399.01
+# speaker: ホーク
+JP 「奴は、まだ
+JP 　どちらが本物の強者なのか
+JP 　分からないらしいな。」
+EN "Seems he still hasn't figured out which of us is the real deal."
+
+@ 3.399.02
+# speaker: ホーク
+JP 「日本の言葉に
+JP 『バカにつける薬はない』と言うのが
+JP 　あるが、」
+EN "In Japan, they have a saying: 'There's no cure for stupid,'"
+
+@ 3.399.03
+# speaker: ホーク
+JP 「俺はつけてやるよ。
+JP 　この拳でね・・・！」
+EN "but I'll give him one. With these fists...!"
+
+@ 3.400.00
+# speaker: 旗本 (%ss88)
+JP 　潰す・・・
+EN I'll crush him...
+
+@ 3.400.01
+# speaker: 旗本 (%ss88)
+JP 　絶対に倒す・・・！！
+EN I'm taking him down, no matter what...!!
+
+@ 3.400.02
+# speaker: 旗本 (%ss88)
+JP 　ぶっ潰してやる！！！
+EN I'm going to crush him!!!
+
+@ 3.402.00
+# speaker: 記者
+JP 「%ss42さん・・・！！
+JP 　あっ、%ss88さん！！
+JP 　ちょっとコメント、いいですか！？」
+EN "%ss42...!! Ah, %ss88!! Can we get a comment?!"
+
+@ 3.402.01
+# speaker: 旗本 (%ss88)
+JP 「ああっ！？」
+EN "Huh?!"
+
+@ 3.402.02
+# speaker: 記者
+JP 「きょ・・・今日の試合は、
+JP 　３人共
+JP 　すさまじい暴れぶりでしたが、」
+EN "T-today's match... all three of you went absolutely wild,"
+
+@ 3.402.03
+# speaker: 記者
+JP 「闘争三戦鬼としての
+JP 　今後の抱負を聞かせて下さい！！」
+EN "so tell us your plans as the Three War Demons!!"
+
+@ 3.403.00
+# speaker: 俊藤 (%ss42)
+JP 「抱負もクソもねえだろ！！
+JP 　これからは俺達の時代なんだよ！！」
+EN "Plans? Screw plans!! From now on, it's our era!!"
+
+@ 3.403.01
+# speaker: 河野 (%ss21)
+JP 「%ss0ーーー！！
+JP 　あれがチャンピオンの試合かよ！！
+JP 　あれが！？」
+EN "%ss0!!! You call that a champion's match?!! Huh?!"
+
+@ 3.403.02
+# speaker: 河野 (%ss21)
+JP 「いつでも来い！！
+JP 　いつでもやってやるぞ！！」
+EN "Come at me anytime!! I'll take you on anytime!!"
+
+@ 3.404.00
+# speaker: 旗本 (%ss88)
+JP 　とにかく、３人共
+JP 　えらくキレてた。
+EN Anyway, all three of us were seriously wound up.
+
+@ 3.404.01
+# speaker: 旗本 (%ss88)
+JP 　人間って、人生の中で
+JP 　何度か殻を破る瞬間ってあると思うけど、
+JP 　この日の俺が間違いなくそうだったよ。
+EN I think everyone has a few moments in life when they break out of their shell, and that day was definitely one of mine.
+
+@ 3.404.02
+# speaker: 旗本 (%ss88)
+JP 　ワンマッチだけの一日帰国だったから、
+JP 　試合が終わった後、俺達３人は
+JP 　それぞれの遠征先に戻ったけど、
+EN We'd only come home for one match, so afterward, the three of us went back to our overseas tours,
+
+@ 3.404.03
+# speaker: 旗本 (%ss88)
+JP 　この日を境に、ふっきれたように
+JP 　思い切った試合が出来るようになったね。
+EN but after that day, it was like something had snapped loose, and I could fight all-out matches.
+
+@ 3.405.00
+# speaker: 旗本 (%ss88)
+JP 　その後、俺は
+JP 　日本と海外を行き来しながら
+JP 　試合を続け、
+EN After that, I kept having matches, going back and forth between Japan and overseas,
+
+@ 3.405.01
+# speaker: 旗本 (%ss88)
+JP 　２年後、
+JP 　完全に日本に戻る。
+EN and two years later, I came home to Japan for good.
+
+@ 3.406.00
+# speaker: アナウンサー
+JP 「%ss88！！
+JP 　すさまじい蹴りです・・・！！
+JP 　すさまじい蹴り！！」
+EN "%ss88!! What vicious kicks...!! Vicious kicks!!"
+
+@ 3.406.01
+# speaker: アナウンサー
+JP 「中内に容赦なく
+JP 　蹴りを叩き込みます！！」
+EN "He's drilling <Nakauchi> with kicks, no mercy!!"
+
+@ 3.406.02
+# speaker: アナウンサー
+JP 「中内、たまらず
+JP 　リング外にエスケープ！！」
+EN "<Nakauchi> can't take any more and escapes out of the ring!!"
+
+@ 3.406.03
+# speaker: 解説者
+JP 「%ss88が何か
+JP 　要求してますね・・・！」
+EN "%ss88 is asking for something...!"
+
+@ 3.406.04
+# speaker: アナウンサー
+JP 「あ、マイクですか・・・！？
+JP 　%ss88がマイクを持ちました！！」
+EN "Oh, the mic...?! %ss88 has the mic!!"
+
+@ 3.407.00
+# speaker: 旗本 (%ss88)
+JP 「時は来た！！」
+EN "The time has come!!"
+
+@ 3.408.00
+# speaker: 旗本 (%ss88)
+JP 　まさに、俺の時代が来たと
+JP 　思ったね。
+EN I really felt my era had arrived.
+
+@ 3.408.01
+# speaker: 旗本 (%ss88)
+JP 　俺は遠征前、よく試合相手を
+JP 　怪我させていたから
+JP 『クラッシャー』と呼ばれていたけど、
+EN Before I went overseas, I hurt my opponents in matches so often that they called me "the Crusher,"
+
+@ 3.408.02
+# speaker: 旗本 (%ss88)
+JP 　最近ではランクが上がって、
+JP 『爆殺クラッシャー』と呼ばれるように
+JP 　なった。
+EN but lately I'd moved up in the world, and they'd started calling me "the Explosive Crusher."
+
+@ 3.408.03
+# speaker: 旗本 (%ss88)
+JP 　とにかく、%ss42、
+JP 　%ss21の２人も帰国して、
+EN Anyway, with %ss42 and %ss21 back home too,
+
+@ 3.408.04
+# speaker: 旗本 (%ss88)
+JP 　俺達『三戦鬼』が、
+JP 　ＶＪＰの新しい原動力として
+JP 　波に乗っているのは間違いなかった。
+EN there was no doubt we "Three War Demons" were on a roll as <VJP>'s new driving force.
+
+@ 3.408.05
+# speaker: 旗本 (%ss88)
+JP 　でも、やっぱり、
+JP 　いい時ばかりが長く続くってことは
+JP 　ないんだよな・・・。
+EN But, of course, the good times never last long...
+
+@ 3.414.00
+# speaker: 旗本 (%ss88)
+JP 　遠征先のカナダでの修行は、
+JP 　まあ、充実していたとは言えなかったが、
+JP 　それなりに得る物はあった。
+EN My training in Canada wasn't exactly fulfilling, but I did get something out of it.
+
+@ 3.414.01
+# speaker: 旗本 (%ss88)
+JP 『すげえよコレ・・・！！』って
+JP 　技があったんだ。
+EN There was a move that made me go, "This is incredible...!!"
+
+@ 3.414.02
+# speaker: 旗本 (%ss88)
+JP 『ＤＤＴ』と言う技だった。
+EN It was a move called the "DDT."
+
+@ 3.414.03
+# speaker: 旗本 (%ss88)
+JP 　難しい技だったけど、
+JP 　絶対にモノにしてやるって思ったね。
+EN It was a tough one, but I swore I'd make it mine.
+
+@ 3.414.04
+# speaker: 旗本 (%ss88)
+JP 　勢いで来てしまった海外だったから、
+JP 　正直に言えば、すぐにでも
+JP 　帰りたかったけど・・・
+EN I'd come overseas on impulse, so honestly, I wanted to go home right away...
+
+@ 3.414.05
+# speaker: 旗本 (%ss88)
+JP 　俺は男の意地で頑張った。
+EN But I stuck it out, out of pride as a man.
+
+@ 3.414.06
+# speaker: 旗本 (%ss88)
+JP 　ところが・・・
+EN But then...
+
+@ 3.414.07
+# speaker: 旗本 (%ss88)
+JP 　カナダに来て
+JP 　８ヶ月ほど経った頃、
+EN About eight months after I came to Canada,
+
+@ 3.414.08
+# speaker: 旗本 (%ss88)
+JP 　突然、%ss98さんから国際電話が
+JP 　かかって来て、俺は
+JP 　いったん日本へ戻ることになる。
+EN I suddenly got an international call from %ss98, and I ended up going back to Japan for a while.
+
+@ 3.414.09
+# speaker: 旗本 (%ss88)
+JP 　どんな用件なのか分からなかったけど、
+JP 　%ss98さんに声をかけられたのは
+JP 　本当にうれしかったな。
+EN I didn't know what it was about, but I was really happy %ss98 had called on me.
+
+@ 3.415.00
+# speaker: 旗本 (%ss88)
+JP 「いやあ、でも驚いたよ。」
+EN "Man, I was surprised, though."
+
+@ 3.415.01
+# speaker: 旗本 (%ss88)
+JP 「俺以外にも、%ss42や
+JP 　%ss21まで、%ss98さんに
+JP 　声かけられてるなんてな。」
+EN "Besides me, %ss98 called on %ss42 and %ss21 too."
+
+@ 3.415.02
+# speaker: 俊藤 (%ss42)
+JP 「俺から言わせれば、
+JP 　おまえが声かけられてる方が
+JP 　何でかな？って感じだよ。」
+EN "If you ask me, what I don't get is why he called on you."
+
+@ 3.415.03
+# speaker: 旗本 (%ss88)
+JP 「どういう意味なのよ、それ！？
+JP 　傷つくようなこと言うなよ！！」
+EN "What's that supposed to mean?! Don't say hurtful stuff like that!!"
+
+@ 3.415.04
+# speaker: 河野 (%ss21)
+JP 「おい、２人共・・・
+JP 　こんなところでやめろよ。」
+EN "Hey, you two... Knock it off. Not here."
+
+@ 3.415.05
+# speaker: 河野 (%ss21)
+JP 「それより、海外修行中の俺達を
+JP 　わざわざ呼び戻すなんて・・・」
+EN "More importantly, calling us all back from training overseas..."
+
+@ 3.415.06
+# speaker: 河野 (%ss21)
+JP 「%ss98さん、いったい
+JP 　どういうつもりなのかな？」
+EN "what's %ss98 up to?"
+
+@ 3.415.07
+# speaker: 俊藤 (%ss42)
+JP 「分かんねえけど・・・」
+EN "Beats me..."
+
+@ 3.415.08
+# speaker: 俊藤 (%ss42)
+JP 「なんか、やたらとカメラマンが
+JP 　多くないか？
+JP 　芸能人でも来てるのかな？」
+EN "But aren't there an awful lot of cameramen? Is some celebrity here?"
+
+@ 3.415.09
+# speaker: 旗本 (%ss88)
+JP 「俺、こう見えて
+JP 　アイドル好きなんだよね。
+JP 　アイドルだったらいいな。」
+EN "Believe it or not, I'm a big fan of idols. I hope it's an idol."
+
+@ 3.416.00
+# speaker: 記者
+JP 「%ss42さん！！
+JP 　%ss21さん！！
+JP 　%ss88さん！！」
+EN "%ss42!! %ss21!! %ss88!!"
+
+@ 3.416.01
+# speaker: 記者
+JP 「ＶＪＰ期待の若手３人が、
+JP 『闘争三戦鬼』として
+JP 　チームを組んだわけですが、」
+EN "Three of <VJP>'s most promising young wrestlers have teamed up as the 'Three War Demons,'"
+
+@ 3.416.02
+# speaker: 記者
+JP 「今の心境を聞かせて下さい！！」
+EN "so tell us how you're feeling!!"
+
+@ 3.417.00
+JP %ss42・%ss21：
+JP 「俺らの取材かい！？」
+EN %ss42 & %ss21:
+EN "They're here for us?!"
+
+@ 3.417.01
+# speaker: 旗本 (%ss88)
+JP 「なんだ！？『闘争三戦鬼』って！？」
+EN "What?! 'Three War Demons'?!"
+
+@ 3.418.00
+# speaker: 旗本 (%ss88)
+JP 　俺達は、一度ＶＪＰの事務所に寄って、
+JP 　中内さん達から
+JP 　詳しい事情を聞いた。
+EN We stopped by the <VJP> office first and got the whole story from <Nakauchi> and the others.
+
+@ 3.418.01
+# speaker: 旗本 (%ss88)
+JP 　どうやら、全ては
+JP 　%ss98さんの仕組んだことらしく、
+EN Apparently the whole thing was %ss98's idea,
+
+@ 3.418.02
+# speaker: 旗本 (%ss88)
+JP 　俺と%ss42、
+JP 　%ss21の３人は、
+EN and %ss42, %ss21 and I
+
+@ 3.418.03
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰの新ユニットとして
+JP 　売り出されることになったらしい。
+EN were going to be pushed as a new <VJP> unit.
+
+@ 3.419.00
+# speaker: 旗本 (%ss88)
+JP 　一時帰国のワンマッチだったけど、
+JP 　記者会見で
+JP 　マスコミがあれだけ騒ぐなんて・・・
+EN It was a one-off match while I was home for a visit, but the press made such a fuss at the press conference...
+
+@ 3.419.01
+# speaker: 旗本 (%ss88)
+JP 　%ss98さんの力は
+JP 　本当にすげえと思ったよ。
+EN %ss98's pull really was something else.
+
+@ 3.419.02
+# speaker: 旗本 (%ss88)
+JP 　ただ・・・
+EN But...
+
+@ 3.419.03
+# speaker: 旗本 (%ss88)
+JP 　このネーミングセンスだけは
+JP 　何とかなんねえのかな。
+EN couldn't he do something about his taste in names?
+
+@ 3.419.04
+# speaker: 旗本 (%ss88)
+JP 　闘争三戦鬼って・・・
+EN The "Three War Demons"... seriously...
+
+@ 3.420.00
+# speaker: 旗本 (%ss88)
+JP 　とにかく、気分的に
+JP 　俺は弾けていた。
+EN Anyway, I was all fired up.
+
+@ 3.420.01
+# speaker: 旗本 (%ss88)
+JP 　期待されてるっていう
+JP 　使命感みたいなものもあったけど、
+EN I felt a sense of duty, knowing people were counting on us,
+
+@ 3.420.02
+# speaker: 旗本 (%ss88)
+JP 　やっぱり、海外でプロレスして
+JP 　自信がついてたんだろうな。
+EN but mostly, wrestling overseas had given me confidence.
+
+@ 3.420.03
+# speaker: 旗本 (%ss88)
+JP 　もう、雨が降ろうと
+JP 　ヤリが降ろうと関係ねえって
+JP 　感じだったよ。
+EN I felt like nothing could stop me, come hell or high water.
+
+@ 3.420.04
+# speaker: 旗本 (%ss88)
+JP 　３対３のタッグマッチっていうのも
+JP 　無茶ができて丁度いい。
+EN And a six-man tag was perfect for cutting loose.
+
+@ 3.420.05
+# speaker: 旗本 (%ss88)
+JP 　なにせ、味方は旧知の
+JP 　%ss42と%ss21だからな。
+EN After all, my partners were my old pals %ss42 and %ss21.
+
+@ 3.420.06
+# speaker: 旗本 (%ss88)
+JP 　どうせ、今日が終われば
+JP 　カナダに戻るんだ。
+EN Once today was over, I'd be going back to Canada anyway.
+
+@ 3.420.07
+# speaker: 旗本 (%ss88)
+JP 　メチャクチャ暴れてやるぜ！！
+EN I'm gonna tear the place apart!!
+
+@ 3.422.00
+# speaker: 旗本 (%ss88)
+JP 　%ss21との試合は、お互い
+JP 　意地と意地のぶつかり合いで
+JP 　熾烈を極めた。
+EN My match with %ss21 was a brutal clash of pride against pride.
+
+@ 3.422.01
+# speaker: 旗本 (%ss88)
+JP 　このヤングタイガー杯での
+JP 　俺、%ss42、%ss21の
+JP 　３人の活躍は突出していて、
+EN In that <Young Tiger Cup>, %ss42, %ss21 and I stood out from everyone else,
+
+@ 3.422.02
+# speaker: 旗本 (%ss88)
+JP 　俺達は一躍
+JP 　若手のホープとなった。
+EN and overnight we became the great hopes among the young boys.
+
+@ 3.422.03
+# speaker: 旗本 (%ss88)
+JP 　%ss42なんか、いわゆる
+JP 　スター街道まっしぐらってやつで、
+EN %ss42 was on the fast track to stardom, as they say,
+
+@ 3.422.04
+# speaker: 旗本 (%ss88)
+JP 　この後すぐに
+JP 　フロリダに海外遠征に行かされたよ。
+EN and right after that he was sent on an overseas tour to Florida.
+
+@ 3.422.05
+# speaker: 旗本 (%ss88)
+JP 　でも、俺はというと・・・
+EN But me...
+
+@ 3.422.06
+# speaker: 旗本 (%ss88)
+JP 　どうしても
+JP 　ここ一番というところで
+JP 　勝つ事が出来ねえんだよな・・・。
+EN I just couldn't win when it really counted...
+
+@ 3.423.00
+# speaker: 旗本 (%ss88)
+JP 　その後、２年もの間・・・
+EN For two whole years after that...
+
+@ 3.423.01
+# speaker: 旗本 (%ss88)
+JP 　俺は実力は認められていたものの
+JP 　それを完全に発揮することが出来ず、
+JP 　何とも煮え切らない状態が続いちまった。
+EN everyone said I had the talent, but I could never fully show it, and I stayed stuck in limbo.
+
+@ 3.423.02
+# speaker: 旗本 (%ss88)
+JP 　がむしゃらになればなるほど
+JP 　空回りしてしまう・・・
+EN The harder I pushed, the more I spun my wheels...
+
+@ 3.423.03
+# speaker: 旗本 (%ss88)
+JP 　どうにか
+JP 　なんねえかな、この状態・・・
+EN Isn't there some way out of this rut...?
+
+@ 3.424.00
+# speaker: 記者
+JP 「前回、前々回のヤングタイガー杯で、
+JP 　好成績を残している
+JP 　%ss88選手ですが、」
+EN "%ss88, you did well in the last two <Young Tiger Cup>s,"
+
+@ 3.424.01
+# speaker: 記者
+JP 「今年のヤングタイガー杯では、
+JP 　ついに決勝まで駒を進めました。」
+EN "and at this year's <Young Tiger Cup> you've finally made the final."
+
+@ 3.424.02
+# speaker: 記者
+JP 「今の心境を
+JP 　聞かせてもらえますか？」
+EN "Can you tell us how you're feeling?"
+
+@ 3.424.03
+# speaker: 旗本 (%ss88)
+JP 「決勝の相手は
+JP 　%ss21ですからね・・・」
+EN "Well, it's %ss21 in the final..."
+
+@ 3.424.04
+# speaker: 旗本 (%ss88)
+JP 「どうなるかは分かりませんが、
+JP 　今年こそは優勝して、胸を張って
+JP 　海外遠征に旅立ちたいです。」
+EN "I don't know how it'll go, but this year I want to win it and leave on my overseas tour with my head held high."
+
+@ 3.424.05
+# speaker: 記者
+JP 「応援してます。
+JP 　頑張って下さい。」
+EN "We're rooting for you. Good luck."
+
+@ 3.425.00
+# speaker: 旗本 (%ss88)
+JP 　ヤングタイガー杯に優勝した者は、
+JP 　海外行きのキップが手に入るというのが
+JP 　このリーグ戦の特典だった。
+EN The <Young Tiger Cup> winner got a ticket overseas - that was the prize for winning the league.
+
+@ 3.425.01
+# speaker: 旗本 (%ss88)
+JP 　海外に行きたいとは思ってなかったが、
+JP 　今度こそは絶対に優勝するつもりで
+JP 　のぞんだよ。
+EN I didn't really care about going abroad, but I went in dead set on winning it this time.
+
+@ 3.425.02
+# speaker: 旗本 (%ss88)
+JP 　%ss21とは、すでに
+JP 　何度も闘っている。
+EN I'd already fought %ss21 plenty of times.
+
+@ 3.425.03
+# speaker: 旗本 (%ss88)
+JP 　俺自身は、今回は『イケる』と
+JP 　思っていたんだ・・・
+EN This time, I really thought I had it...
+
+@ 3.425.04
+# speaker: 旗本 (%ss88)
+JP 　だけど、ここでもまた、
+JP 　大一番での弱さが出ちまった・・・。
+EN But once again, my weakness in the big one showed...
+
+@ 3.426.00
+# speaker: アナウンサー
+JP 「おおーーっと！！
+JP 　これは・・・」
+EN "Ohhh!! What's this...?"
+
+@ 3.426.01
+# speaker: アナウンサー
+JP 「%ss21が、%ss88を
+JP 　丸め込んだ！！」
+EN "%ss21 rolls up %ss88!!"
+
+@ 3.426.02
+# speaker: 解説者
+JP 「首固めです！
+JP 　これは、ガッチリ極まってますよ！」
+EN "A small package! And it's locked in tight!"
+
+@ 3.427.00
+# speaker: アナウンサー
+JP 「ゴングです！！
+JP 　ゴングがなったあ！！」
+EN "There's the bell!! The bell has rung!!"
+
+@ 3.427.01
+# speaker: アナウンサー
+JP 「%ss21です！！」
+EN "It's %ss21!!"
+
+@ 3.427.02
+# speaker: アナウンサー
+JP 「%ss21が
+JP 　ヤングタイガー杯を制しました！！
+JP 　ウイナーは%ss21だあ！！」
+EN "%ss21 has won the <Young Tiger Cup>!! Your winner, %ss21!!"
+
+@ 3.428.00
+# speaker: アナウンサー
+JP 「%ss88は納得いかないんでしょう。
+JP 　顔を真っ赤にして
+JP 　レフェリーに何度も確認しています。」
+EN "%ss88 can't accept it. He's red in the face, asking the referee again and again."
+
+@ 3.428.01
+# speaker: 解説者
+JP 「今回は%ss21の執念が
+JP 　%ss88を
+JP 　上回ったということでしょう。」
+EN "This time %ss21 just wanted it more than %ss88."
+
+@ 3.429.00
+# speaker: 旗本 (%ss88)
+JP 　クソッ！！
+JP 　どうしてこうなっちまうんだ・・・！！
+JP 　クソッ！！クソッ！！クソッ！！
+EN Damn it!! Why does it always end up like this...?! Damn it!! Damn it!! Damn it!!
+
+@ 3.429.01
+# speaker: 旗本 (%ss88)
+JP 　ヤングタイガー杯で
+JP 　優勝した%ss21は、
+JP 　そのままヨーロッパに飛び立って行った。
+EN %ss21, the <Young Tiger Cup> winner, flew straight off to Europe.
+
+@ 3.429.02
+# speaker: 旗本 (%ss88)
+JP 　また、俺だけ日本に居残りか・・・
+EN And once again, I'm the one left behind in Japan...
+
+@ 3.429.03
+# speaker: 旗本 (%ss88)
+JP 　冗談じゃねえ！！
+JP 　これ以上遅れをとってたまるか！！
+EN No way!! I'm not falling any further behind!!
+
+@ 3.429.04
+# speaker: 旗本 (%ss88)
+JP 　俺は行く！！
+JP 　絶対に海外に行くぞ！！
+EN I'm going!! I'm going overseas no matter what!!
+
+@ 3.430.00
+# speaker: 旗本 (%ss88)
+JP 　結局・・・
+EN In the end...
+
+@ 3.430.01
+# speaker: 旗本 (%ss88)
+JP 　俺は、
+JP 　%ss21より４ヶ月遅れで
+JP 　海外遠征に出ることになった。
+EN I left on my overseas tour four months after %ss21.
+
+@ 3.430.02
+# speaker: 旗本 (%ss88)
+JP 　マスコミからは『左遷』とか、
+JP 『都落ち』とか色々言われたよ。
+EN The press called it a "demotion," "exile to the sticks," all sorts of things.
+
+@ 3.430.03
+# speaker: 旗本 (%ss88)
+JP 　左遷？
+JP 　都落ち？
+EN Demotion? Exile?
+
+@ 3.430.04
+# speaker: 旗本 (%ss88)
+JP 　おまえら・・・
+JP 　帰って来たら見てろよ！！
+EN You bastards... Just wait till I get back!!
+
+@ 3.436.00
+# speaker: 若元 (%ss36)
+JP 「おまえら、若手の登竜門、
+JP 『%sf219杯』
+JP 　は知ってるな？」
+EN "You all know the %sf219 Cup, the gateway for young wrestlers, right?"
+
+@ 3.436.01
+# speaker: 旗本 (%ss88)
+JP 「はい。
+JP 　確か・・・何年か前にやってた、
+JP 　新人だけのリーグ戦ですよね？」
+EN "Yes, sir. That's... the rookies-only league they held a few years back, right?"
+
+@ 3.436.02
+# speaker: 若元 (%ss36)
+JP 「そうだ。
+JP 　今度、それを『ヤングタイガー杯』と
+JP 　改めて、急遽執り行うことが決定した。」
+EN "Right. It's been renamed the '<Young Tiger Cup>,' and they've decided to hold it on short notice."
+
+@ 3.436.03
+# speaker: 若元 (%ss36)
+JP 「おまえらが出るんだ。」
+EN "You boys are in it."
+
+@ 3.436.04
+# speaker: 若元 (%ss36)
+JP 「チャンスだぞ。
+JP 　日頃のトレーニングの成果を
+JP 　見せてみろ。」
+EN "This is your chance. Show us what all that training has done for you."
+
+@ 3.436.05
+# speaker: 旗本 (%ss88)
+JP 「は、はい！！」
+EN "Y-yes, sir!!"
+
+@ 3.437.00
+# speaker: 旗本 (%ss88)
+JP 　それまで
+JP 　前座の１試合目、２試合目で
+JP 　闘っていた俺にとって、
+EN Up to then I'd been wrestling in the first and second matches of the undercard,
+
+@ 3.437.01
+# speaker: 旗本 (%ss88)
+JP 　ヤングタイガー杯は
+JP 　初めての大きな大会だった。
+EN so the <Young Tiger Cup> was my first big tournament.
+
+@ 3.437.02
+# speaker: 旗本 (%ss88)
+JP 　すでに%ss42や%ss21も
+JP 　デビューしていて、
+EN %ss42 and %ss21 had debuted by then too,
+
+@ 3.437.03
+# speaker: 旗本 (%ss88)
+JP 　俺達は揃い踏みで、このリーグ戦に
+JP 　出場することになったんだ。
+EN so all three of us were entered in the league together.
+
+@ 3.437.04
+# speaker: 旗本 (%ss88)
+JP 　今、上の人達が抜けたことによって、
+JP 　前例が無いくらい若手が注目されている。
+EN With the top guys gone, the young boys were getting more attention than ever before.
+
+@ 3.437.05
+# speaker: 旗本 (%ss88)
+JP 　これは間違いなく
+JP 　自分をアピールするチャンスだ！！
+EN No doubt about it, this was my chance to show what I had!!
+
+@ 3.438.00
+# speaker: 記者
+JP 「%ss88選手、
+JP 　ちょっといいかな？」
+EN "%ss88, got a minute?"
+
+@ 3.438.01
+# speaker: 記者
+JP 「今回のリーグ戦について、
+JP 　一言コメントをもらいたいんだけど。」
+EN "We'd like a quick comment on this league."
+
+@ 3.438.02
+# speaker: 旗本 (%ss88)
+JP 「コメントですか？」
+EN "A comment?"
+
+@ 3.438.03
+# speaker: 旗本 (%ss88)
+JP 「ただ、一生懸命闘うだけですよ。」
+EN "I'm just gonna fight as hard as I can."
+
+@ 3.438.04
+# speaker: 記者
+JP 「今回のリーグ戦の目標と言うか・・・
+JP 　ズバリ、ライバルは誰ですか？」
+EN "Your goal for the league, or... simply put, who's your rival?"
+
+@ 3.438.05
+# speaker: 旗本 (%ss88)
+JP 「そんなもん、全員です。」
+EN "Everybody, obviously."
+
+@ 3.438.06
+# speaker: 旗本 (%ss88)
+JP 「さしあたって、
+JP 　今日は%ss21とやりますんで、
+JP 　今は%ss21かな。」
+EN "Well, I'm facing %ss21 today, so for now, it's %ss21, I guess."
+
+@ 3.439.00
+# speaker: 旗本 (%ss88)
+JP 　後から知ったことだけど・・・
+EN I found out later...
+
+@ 3.439.01
+# speaker: 旗本 (%ss88)
+JP 　別の場所のインタビューで、
+JP 　%ss21は『%ss88にだけは
+JP 　負けたくない。』と言っていたらしい。
+EN that in an interview somewhere else, %ss21 said, "%ss88 is the one guy I won't lose to."
+
+@ 3.439.02
+# speaker: 旗本 (%ss88)
+JP 　分かるよ、その気持ち。
+JP 　仲のいい仲間だからこそ、
+JP 　負けたくないもんな。
+EN I get it. It's because we're good friends that we don't wanna lose to each other.
+
+@ 3.439.03
+# speaker: 旗本 (%ss88)
+JP 　俺も同じだ。
+JP 　この試合は絶対に負けられねえ！！
+EN Same here. There's no way I'm losing this match!!
+
+@ 3.441.00
+# speaker: 旗本 (%ss88)
+JP 　大量離脱の問題より、
+EN Sure, the real problem is me, for thinking that, next to the mass walkout,
+
+@ 3.441.01
+# speaker: 旗本 (%ss88)
+JP 　水虫のクスリの方が問題だったという
+JP 　俺が一番問題だが、
+EN the athlete's foot medicine was the bigger deal... but anyway,
+
+@ 3.441.02
+# speaker: 旗本 (%ss88)
+JP 　%ss1さん達が脱退したことは、
+JP 　ＶＪＰにとっては大きなマイナスだった。
+EN losing %ss1 and the others was a big blow for <VJP>.
+
+@ 3.441.03
+# speaker: 旗本 (%ss88)
+JP 　もっとも、自分のことで精一杯だった
+JP 　俺達にとっては、離脱問題なんて
+JP 　考えてる余裕は全然なかったけど。
+EN Not that we had any time to think about walkouts. We had our hands full just looking after ourselves.
+
+@ 3.441.04
+# speaker: 旗本 (%ss88)
+JP 　皆、自分を強くすることに
+JP 　必死だったからな。
+EN We were all desperate to get stronger.
+
+@ 3.441.05
+# speaker: 旗本 (%ss88)
+JP 　ただ、多くの先輩達が抜けたことは、
+JP 　俺達若手に確実な恩恵をもたらした。
+EN Still, with so many seniors gone, we young boys definitely came out ahead.
+
+@ 3.443.00
+# speaker: 旗本 (%ss88)
+JP 「俺も、そう思うよ。
+JP 　これはチャンスだと思うね。
+JP 　名を上げるチャンス。」
+EN "I think so too. This is a chance. A chance to make a name for ourselves."
+
+@ 3.443.01
+# speaker: 俊藤 (%ss42)
+JP 「%ss88は
+JP 　無理じゃないか・・・？」
+EN "Not for %ss88, though..."
+
+@ 3.443.02
+# speaker: 俊藤 (%ss42)
+JP 「おまえ、この前
+JP 　中内さんの
+JP 　１０万円もする水虫のクスリ、」
+EN "The other day you broke <Nakauchi>'s athlete's foot medicine - the 100,000-yen stuff -"
+
+@ 3.443.03
+# speaker: 俊藤 (%ss42)
+JP 「中内さんの目の前で
+JP 　割っちまったろ。」
+EN "right in front of him, didn't you?"
+
+@ 3.443.04
+# speaker: 俊藤 (%ss42)
+JP 「おまえはＶＪＰクビになるかも。」
+EN "You might get fired from <VJP>."
+
+@ 3.443.05
+# speaker: 旗本 (%ss88)
+JP 「何てこと言うんだよ！！
+JP 　すげえ気にしてんだぞ、俺！！」
+EN "Why would you say that?! I feel terrible about it!!"
+
+@ 3.445.00
+# speaker: 旗本 (%ss88)
+JP 「俺は、そうは思わないね。」
+EN "I don't think so."
+
+@ 3.445.01
+# speaker: 旗本 (%ss88)
+JP 「先輩達がいなくなった分、
+JP 　俺達一人一人にかかる責任は、
+JP 　前よりずっと重くなるはずだ。」
+EN "With the seniors gone, each of us is gonna carry a lot more responsibility than before."
+
+@ 3.445.02
+# speaker: 旗本 (%ss88)
+JP 「気を引き締めていかないと、
+JP 　ヤバいことになるかもよ・・・。」
+EN "If we don't stay sharp, we could be in big trouble..."
+
+@ 3.445.03
+# speaker: 俊藤 (%ss42)
+JP 「おまえは、
+JP 　気を引き締めてもヤバいだろ？」
+EN "You're in trouble even if you stay sharp, aren't you?"
+
+@ 3.445.04
+# speaker: 俊藤 (%ss42)
+JP 「おまえ、この前
+JP 　中内さんの
+JP 　１０万円もする水虫のクスリ、」
+EN "The other day you broke <Nakauchi>'s athlete's foot medicine - the 100,000-yen stuff -"
+
+@ 3.445.05
+# speaker: 俊藤 (%ss42)
+JP 「中内さんの目の前で
+JP 　割っちまったからな。」
+EN "right in front of him."
+
+@ 3.445.06
+# speaker: 俊藤 (%ss42)
+JP 「ＶＪＰクビになるかも。」
+EN "You might get fired from <VJP>."
+
+@ 3.445.07
+# speaker: 旗本 (%ss88)
+JP 「何てこと言うんだよ！！
+JP 　すげえ気にしてんだぞ、俺！！」
+EN "Why would you say that?! I feel terrible about it!!"
+
+@ 3.447.00
+# speaker: 旗本 (%ss88)
+JP 　強くなりたい一心、
+JP 　ただそれだけだった。
+EN All I wanted was to get stronger. That was it.
+
+@ 3.447.01
+# speaker: 旗本 (%ss88)
+JP 　死ぬ気でのぞんだ
+JP 　トレーニングだったけど、
+JP 　毎日本当に死んだな。
+EN I trained like my life depended on it, and every day it nearly killed me.
+
+@ 3.447.02
+# speaker: 旗本 (%ss88)
+JP 　それ程、ＶＪＰのトレーニングは
+JP 　厳しかったよ。
+EN That's how tough <VJP>'s training was.
+
+@ 3.447.03
+# speaker: 旗本 (%ss88)
+JP 　でも不思議なことに、
+JP 　初めの印象が悪かった相手って
+JP 　後々、すげえ仲良くなるんだよな。
+EN But it's funny - the guys you can't stand at first end up being your best friends later.
+
+@ 3.447.04
+# speaker: 旗本 (%ss88)
+JP 　%ss21とも%ss42さんとも
+JP 　２ヶ月もすると、
+EN Within two months, %ss21 and %ss42 and I
+
+@ 3.447.05
+# speaker: 旗本 (%ss88)
+JP 　もう、昔からの仲間のように
+JP 　親しくなっちまった。
+EN were as close as if we'd known each other forever.
+
+@ 3.447.06
+# speaker: 旗本 (%ss88)
+JP 　トレーニング中、苦しくなった時
+JP 『こいつが、まだやってるなら
+JP 　俺もやめない』って練習してると、
+EN When training got rough, I'd think, "If this guy's still going, I'm not quitting either,"
+
+@ 3.447.07
+# speaker: 旗本 (%ss88)
+JP 　そのうち『こいつがいるから
+JP 　頑張れる』っていう、目に見えない
+JP 　友情みたいなものが生まれて来るんだ。
+EN and before long, something like an invisible friendship formed: "I can keep going because he's here."
+
+@ 3.447.08
+# speaker: 旗本 (%ss88)
+JP 　まあ%ss42さんなんかは、
+JP 　毎日のように『俺は、もうやめる』って
+JP 　言ってたけどな。
+EN Well, %ss42 said "I'm quitting" pretty much every day.
+
+@ 3.447.09
+# speaker: 旗本 (%ss88)
+JP 　それにつられて
+JP 　本当に一人やめちまったし。
+EN One guy actually did quit because of it, too.
+
+@ 3.447.10
+# speaker: 旗本 (%ss88)
+JP 　それで当の本人は
+JP 　平気な顔して残ってんだから、
+JP 　すごいよ。
+EN And the man himself stayed on like nothing happened. Unbelievable.
+
+@ 3.447.11
+# speaker: 旗本 (%ss88)
+JP 　デビューは俺が一番早かったんだけど、
+JP 　その時、二人がくれた言葉は
+JP 　本当にうれしかったな。
+EN I was the first of us to debut, and what those two said to me then made me really happy.
+
+@ 3.448.00
+# speaker: 俊藤 (%ss42)
+JP 「デビュー戦、決まったんだってな。
+JP 　とにかく、がんばれよ。」
+EN "Heard your debut match is set. Anyway, give it your all."
+
+@ 3.448.01
+# speaker: 河野 (%ss21)
+JP 「負けたら、遠慮なく
+JP 　けなしてやるからな。」
+EN "If you lose, I'll rip into you, no holding back."
+
+@ 3.448.02
+# speaker: 河野 (%ss21)
+JP 「それが嫌だったら・・・」
+EN "If you don't want that..."
+
+@ 3.448.03
+# speaker: 河野 (%ss21)
+JP 「勝てよ。」
+EN "win."
+
+@ 3.448.04
+# speaker: 旗本 (%ss88)
+JP 「%ss21・・・
+JP 　%ss42さん・・・」
+EN "%ss21... %ss42..."
+
+@ 3.448.05
+# speaker: 旗本 (%ss88)
+JP 「俺、絶対に勝つよ！！」
+EN "I'm gonna win, no matter what!!"
+
+@ 3.449.00
+# speaker: 旗本 (%ss88)
+JP 　%ss42さんも%ss21も、
+JP 　入門した日は、いっしょだけど・・・
+JP 　２人とも俺より年上だった。
+EN %ss42 and %ss21 joined the same day I did... but both of them were older than me.
+
+@ 3.449.01
+# speaker: 旗本 (%ss88)
+JP 　一番初めにデビューできたって
+JP 　優越感はあったけど・・・
+EN Being the first to debut made me feel a little superior, but...
+
+@ 3.449.02
+# speaker: 旗本 (%ss88)
+JP 　本当に俺が
+JP 　先にデビューしていいのかって、
+JP 　不安はあったよ。
+EN I also worried whether I really should be going first.
+
+@ 3.449.03
+# speaker: 旗本 (%ss88)
+JP 　特に、%ss42さんには
+JP 　スパーリングで一度も勝ったことが
+JP 　なかったからな。
+EN Especially since I'd never once beaten %ss42 in sparring.
+
+@ 3.449.04
+# speaker: 旗本 (%ss88)
+JP 　とにかく俺は、
+JP 　プロとして恥ずかしくないよう
+JP 　気合を入れて試合にのぞんだ・・・！
+EN Anyway, I went into that match fired up, determined not to embarrass myself as a pro...!
+
+@ 3.450.00
+# speaker: 旗本 (%ss88)
+JP 　結局、デビュー戦は負けてしまった。
+EN In the end, I lost my debut match.
+
+@ 3.450.01
+# speaker: 旗本 (%ss88)
+JP 　後から思い出そうとしても、試合中
+JP 　何をやったか、さっぱり覚えてない。
+JP 　やっぱり緊張してたんだな。
+EN Afterward, I couldn't remember a thing I did in that match. Must have been nerves.
+
+@ 3.450.02
+# speaker: 旗本 (%ss88)
+JP 　ただ、デビューできたことは
+JP 　本当にうれしかった。
+EN But I was really happy to have debuted.
+
+@ 3.450.03
+# speaker: 旗本 (%ss88)
+JP 　今日から俺は
+JP 　闘いのプロになったんだ！！
+EN As of today, I'm a professional fighter!!
+
+@ 3.450.04
+# speaker: 旗本 (%ss88)
+JP 　うれしくて、うれしくて、
+JP 　知り合いに電話をかけまくったよ。
+EN I was so happy I called everyone I knew.
+
+@ 3.451.00
+# speaker: 旗本 (%ss88)
+JP 　デビュー戦から１ヶ月後、
+JP 　ＶＪＰ内部で大事件が発生した。
+EN A month after my debut, a huge incident broke out inside <VJP>.
+
+@ 3.451.01
+# speaker: 旗本 (%ss88)
+JP 　原因はよく分からなかったが、
+JP 　%ss1率いる
+JP 『倒幕軍』の選手達が、
+EN Nobody really knew why, but the wrestlers of the "Rebel Army" led by %ss1
+
+@ 3.451.02
+# speaker: 旗本 (%ss88)
+JP 　ＶＪＰから大量に脱退したんだ。
+EN walked out of <VJP> en masse.
+
+@ 3.452.00
+# speaker: 中内
+JP 「皆、聞いてくれ。」
+EN "Everyone, listen up."
+
+@ 3.452.01
+# speaker: 中内
+JP 「今、うちはゴタゴタの真っ最中だが、
+JP 　できるだけ気にせずトレーニングに
+JP 　集中してくれ。」
+EN "Things are a mess here right now, but try not to let it bother you and focus on your training."
+
+@ 3.452.02
+# speaker: 中内
+JP 「何も心配することはない。」
+EN "There's nothing to worry about."
+
+@ 3.453.00
+# speaker: 河野 (%ss21)
+JP 「別に俺らには関係ねえけど・・・
+JP 　%ss1さん達、
+JP 　マジでやめたんだな。」
+EN "Not that it's got anything to do with us... but %ss1 and the others really quit, huh?"
+
+@ 3.454.00
+# speaker: 俊藤 (%ss42)
+JP 「ラッキーじゃないか、これって？」
+EN "Isn't this kind of lucky for us?"
+
+@ 3.454.01
+# speaker: 俊藤 (%ss42)
+JP 「ほとんどの先輩がいなくなるんだから、
+JP 　俺達だけで、のびのびと
+JP 　練習できるだろ。」
+EN "With most of the seniors gone, we'll have the place to ourselves to train."
+
+@ C3.456
+# choice or chapter title
+JP １）俺も、そう思う。
+EN 1) I think so too.
+
+@ C3.458
+# choice or chapter title
+JP ２）そうは思わない
+EN 2) I don't think so.
+
+@ 3.459.00
+# speaker: 旗本 (%ss88)
+JP 「何もかも、この男が悪いんです。」
+EN "It's all this guy's fault."
+
+@ 3.459.01
+# speaker: 河野 (%ss21)
+JP 「うわっ！！何だおまえ！！
+JP 　見たことねえよ！！
+JP 　おまえみたいにひでえ奴！！」
+EN "Whoa!! What the hell?! I've never met anybody as rotten as you!!"
+
+@ 3.459.02
+# speaker: 旗本 (%ss88)
+JP 「何がよ！？
+JP 　本当のことだろ！？」
+EN "What?! It's the truth, isn't it?!"
+
+@ 3.459.03
+# speaker: 河野 (%ss21)
+JP 「マジで頭にきたぞ・・・
+JP 　てめえぇ！！」
+EN "Now I'm really pissed... You bastard!!"
+
+@ 3.460.00
+# speaker: 俊藤 (%ss42)
+JP 「やめろ、おまえら。
+JP 　ガキじゃあるまいし。
+JP 　もう、いいかげんにしろ。」
+EN "Knock it off, you two. You're not kids. That's enough."
+
+@ 3.460.01
+# speaker: 河野 (%ss21)
+JP 「ガキなんだよ俺達は！！
+JP 　あんたは関係ねえだろ！！
+JP 　すっこんでてくれ！！」
+EN "We ARE kids!! This has nothing to do with you!! Butt out!!"
+
+@ 3.460.02
+# speaker: 俊藤 (%ss42)
+JP 「はあ？」
+EN "Huh?"
+
+@ 3.460.03
+# speaker: 俊藤 (%ss42)
+JP 「何だ、おまえ！！
+JP 　もう一回言ってみろ！！」
+EN "What'd you say?! Say that again!!"
+
+@ 3.461.00
+# speaker: 若元 (%ss36)
+JP 「やめろ、やめろ！」
+EN "Stop it, stop it!"
+
+@ 3.461.01
+# speaker: 若元 (%ss36)
+JP 「バカか、おまえら！？」
+EN "Are you idiots?!"
+
+@ 3.461.02
+# speaker: 若元 (%ss36)
+JP 「おまえら
+JP 　スクワット２千回だ！！
+JP 　今すぐやれ！！！」
+EN "2,000 squats, all of you!! Right now!!!"
+
+@ 3.461.03
+# speaker: 旗本 (%ss88)
+JP 「は、はい！！
+JP 　すみません・・・！！」
+EN "Y-yes, sir!! We're sorry...!!"
+
+@ 3.462.00
+# speaker: 旗本 (%ss88)
+JP 　入門３日目で、何なんだこれ？
+EN Third day in the dojo, and what is this?
+
+@ 3.462.01
+# speaker: 旗本 (%ss88)
+JP 　とにかく、こいつら・・・
+JP 　同期の%ss21、
+JP 　%ss42には負けられない！！
+EN Anyway, these guys... %ss21 and %ss42 joined with me, and I won't lose to them!!
+
+@ 3.462.02
+# speaker: 旗本 (%ss88)
+JP 　死ぬ気になって
+JP 　やるぞ俺は！！
+EN I'm gonna give it everything I've got!!
+
+@ 3.464.00
+# speaker: 中内
+JP 「スクワット千回だ。
+JP 　やっとけよ、おまえら。」
+EN "A thousand squats. Get to it, you two."
+
+@ 3.464.01
+# speaker: 河野 (%ss21)
+JP 「はい。
+JP 　すみませんでした。」
+EN "Yes, sir. We're sorry."
+
+@ 3.464.02
+# speaker: 旗本 (%ss88)
+JP 「すみませんでした・・・。」
+EN "We're sorry..."
+
+@ 3.465.00
+# speaker: 河野 (%ss21)
+JP 「おまえ・・・
+JP 　だいたい、おまえが悪いんだぞ。」
+EN "You... this is mostly your fault, you know."
+
+@ 3.465.01
+# speaker: 河野 (%ss21)
+JP 「千回だぞ、千回！！
+JP 　これからは、キチンと順番守れよ！」
+EN "A thousand, man, a thousand!! From now on, wait your turn!"
+
+@ 3.465.02
+# speaker: 旗本 (%ss88)
+JP 「何が順番なんだよ・・・」
+EN "What turn...?"
+
+@ 3.465.03
+# speaker: 旗本 (%ss88)
+JP 「いろ！！
+JP 　おまえは洗濯機の前に！！
+JP 　ずっとな！！」
+EN "Then stay there!! In front of the washing machine!! All day!!"
+
+@ 3.465.04
+# speaker: 河野 (%ss21)
+JP 「何だと、てめえ・・・！！」
+EN "What'd you say, you bastard...!!"
+
+@ 3.466.00
+# speaker: 俊藤 (%ss42)
+JP 「やめろ、おまえら。
+JP 　ガキじゃあるまいし。
+JP 　もう、いいかげんにしろ。」
+EN "Knock it off, you two. You're not kids. That's enough."
+
+@ 3.466.01
+# speaker: 河野 (%ss21)
+JP 「ガキなんだよ俺達は！！
+JP 　あんたは関係ねえだろ！！
+JP 　すっこんでてくれ！！」
+EN "We ARE kids!! This has nothing to do with you!! Butt out!!"
+
+@ 3.466.02
+# speaker: 俊藤 (%ss42)
+JP 「はあ？」
+EN "Huh?"
+
+@ 3.466.03
+# speaker: 俊藤 (%ss42)
+JP 「何だ、おまえ！！
+JP 　もう一回言ってみろ！！」
+EN "What'd you say?! Say that again!!"
+
+@ 3.467.00
+# speaker: 八薙
+JP 「大変です、%ss36さん！！」
+EN "Big trouble, %ss36!!"
+
+@ 3.467.01
+# speaker: 八薙
+JP 「%ss88君と%ss21君が・・・
+JP 　今度は%ss42さんも
+JP 　いっしょになって喧嘩してます！！」
+EN "%ss88 and %ss21 are... and now %ss42's fighting with them too!!"
+
+@ 3.467.02
+# speaker: 若元 (%ss36)
+JP 「何！？」
+EN "What?!"
+
+@ 3.468.00
+# speaker: 若元 (%ss36)
+JP 「バカか、おまえら！？」
+EN "Are you idiots?!"
+
+@ 3.468.01
+# speaker: 若元 (%ss36)
+JP 「おまえら
+JP 　スクワット３千回だ！！
+JP 　今すぐやれ！！！」
+EN "3,000 squats, all of you!! Right now!!!"
+
+@ 3.468.02
+# speaker: 旗本 (%ss88)
+JP 「は、はい！！
+JP 　すみません・・・！！」
+EN "Y-yes, sir!! We're sorry...!!"
+
+@ 3.469.00
+# speaker: 旗本 (%ss88)
+JP 　入門３日目で、何なんだこれ？
+EN Third day in the dojo, and what is this?
+
+@ 3.469.01
+# speaker: 旗本 (%ss88)
+JP 　とにかく、こいつら・・・
+JP 　同期の%ss21、
+JP 　%ss42には負けられない！！
+EN Anyway, these guys... %ss21 and %ss42 joined with me, and I won't lose to them!!
+
+@ 3.469.02
+# speaker: 旗本 (%ss88)
+JP 　死ぬ気になって
+JP 　やるぞ俺は！！
+EN I'm gonna give it everything I've got!!
+
+@ 3.471.00
+# speaker: 河野 (%ss21)
+JP 「おい、おまえ！！
+JP 　ちょっと来い！！」
+EN "Hey, you!! Come here a sec!!"
+
+@ 3.471.01
+# speaker: 旗本 (%ss88)
+JP 「えっ、何ですか？」
+EN "Huh? What is it?"
+
+@ 3.471.02
+# speaker: 河野 (%ss21)
+JP 「何ですか、じゃねえ！！
+JP 　次に洗濯機使うのは俺だろ！！
+JP 　おまえ、ちゃんと順番守れよ！！」
+EN "Don't 'what is it' me!! I'm next on the washing machine!! Wait your turn!!"
+
+@ 3.471.03
+# speaker: 旗本 (%ss88)
+JP 「キミ・・・の洗濯機ってわけじゃ
+JP 　ないだろ？
+JP 　その場にいなかったキミが悪いよ。」
+EN "It's hardly... your washing machine, is it? It's your own fault you weren't there, my good man."
+
+@ 3.471.04
+# speaker: 河野 (%ss21)
+JP 「洗濯物を置いてただろ！！
+JP 　分かんねえのか、おまえ！？」
+EN "I left my laundry there!! Don't you get it?!"
+
+@ 3.471.05
+# speaker: 旗本 (%ss88)
+JP 「キミねえ・・・
+JP 　キミ・・・」
+EN "Now see here... my good man..."
+
+@ 3.471.06
+# speaker: 旗本 (%ss88)
+JP 「あーーーっ！！
+JP 　やめたやめた！！こんな言葉使い！！」
+EN "Aaargh!! Forget it, forget it!! I'm done talking all proper!!"
+
+@ 3.471.07
+# speaker: 旗本 (%ss88)
+JP 「何だ、てめえ！！
+JP 　やんのか、こらあっ！！」
+EN "What the hell?! You wanna go, huh?!"
+
+@ 3.471.08
+# speaker: 河野 (%ss21)
+JP 「上等だ、この野郎！！」
+EN "Bring it on, you jerk!!"
+
+@ 3.472.00
+# speaker: 若元 (%ss36)
+JP 「おい！！
+JP 　何やってんだ！！
+JP 　やめろ、おまえら！！」
+EN "Hey!! What are you doing?! Knock it off, you two!!"
+
+@ 3.473.00
+# speaker: 旗本 (%ss88)
+JP 　俺の名は
+JP 　%sf88。
+EN My name is %sf88.
+
+@ 3.473.01
+# speaker: 旗本 (%ss88)
+JP 　ついこの間、
+JP 　ＶＩＥＷ　ＪＡＰＡＮ　プロレスに
+JP 　入門したばかりのレスラーの卵だ。
+EN I just joined <VIEW JAPAN> Pro Wrestling - a wrestler in the making.
+
+@ 3.473.02
+# speaker: 旗本 (%ss88)
+JP 　これから東京で生活するにあたって、
+JP 　言葉使いくらいは東京人らしくしようと
+JP 　考えていたが・・・、
+EN Since I'd be living in Tokyo now, I figured I'd at least talk like a Tokyo guy, but...
+
+@ 3.473.03
+# speaker: 旗本 (%ss88)
+JP 　俺にはやっぱり無理のようだ。
+EN I guess that's just not me.
+
+@ 3.473.04
+# speaker: 旗本 (%ss88)
+JP 　とにかく俺は
+JP 　昔から強さに憧れていた。
+EN Anyway, I'd always dreamed of being strong.
+
+@ 3.473.05
+# speaker: 旗本 (%ss88)
+JP 　小学生の時から空手の真似事を
+JP 　やっていたし、中学、高校時代は
+JP 　柔道をやっていた。
+EN As a kid in grade school I dabbled in karate, and in junior high and high school I did judo.
+
+@ 3.473.06
+# speaker: 旗本 (%ss88)
+JP 　高校を卒業してプロレスラーに
+JP 　なろうと考えたのは、俺にしてみれば
+JP 　当然の成り行きだったと思うよ。
+EN So becoming a pro wrestler after high school was only natural for me, I'd say.
+
+@ 3.473.07
+# speaker: 旗本 (%ss88)
+JP 　何せ、俺は自分のことを『武人』だと
+JP 　思っているからな。
+EN After all, I think of myself as a "warrior."
+
+@ 3.474.00
+# speaker: 若元 (%ss36)
+JP 「まったく・・・」
+EN "Honestly..."
+
+@ 3.474.01
+# speaker: 若元 (%ss36)
+JP 「おまえら、いい度胸してるじゃないか。
+JP 　入門早々
+JP 　こんな騒ぎを起こしやがって。」
+EN "You've got some nerve, kicking up a ruckus like this right after you join."
+
+@ C3.476
+# choice or chapter title
+JP １）すみませんでした・・・。
+EN 1) I'm sorry...
+
+@ C3.478
+# choice or chapter title
+JP ２）何もかも%ss21が悪いんです。
+EN 2) It's all %ss21's fault.
+
+@ C3.480
+# choice or chapter title
+JP ３１４（天龍→川田）２
+EN 314 (Tenryu -> Kawada) 2
+
+@ C3.482
+# choice or chapter title
+JP ３１５（天龍→川田）３
+EN 315 (Tenryu -> Kawada) 3
+
+@ C3.484
+# choice or chapter title
+JP ４０８　%ss42戦
+EN 408 vs. %ss42
+
+@ C3.486
+# choice or chapter title
+JP ５０８　%ss21戦
+EN 508 vs. %ss21
+
+@ C3.488
+# choice or chapter title
+JP ６１０　佐々木戦
+EN 610 vs. Sasaki
+
+@ C3.490
+# choice or chapter title
+JP ７０９　%ss33戦
+EN 709 vs. %ss33
+
+@ C3.492
+# choice or chapter title
+JP 最初のページへ
+EN To First Page
+
+@ C3.494
+# choice or chapter title
+JP ０１３第１３章　大森戦
+EN 013 Chapter 13: vs. Omori
+
+@ C3.496
+# choice or chapter title
+JP ０１４第１４章　三沢・秋山戦
+EN 014 Chapter 14: vs. Misawa & Akiyama
+
+@ C3.498
+# choice or chapter title
+JP ０１５第１５章　
+EN 015 Chapter 15
+
+@ C3.500
+# choice or chapter title
+JP ０１６第１６章　
+EN 016 Chapter 16
+
+@ C3.502
+# choice or chapter title
+JP １１２　（藤波→蝶野）１
+EN 112 (Fujinami -> Chono) 1
+
+@ C3.504
+# choice or chapter title
+JP １１３　（藤波→蝶野）２
+EN 113 (Fujinami -> Chono) 2
+
+@ C3.506
+# choice or chapter title
+JP １１４　（藤波→蝶野）３
+EN 114 (Fujinami -> Chono) 3
+
+@ C3.508
+# choice or chapter title
+JP ２１３（佐竹・高田）
+EN 213 (Satake, Takada)
+
+@ C3.510
+# choice or chapter title
+JP ２１４（バンナ）
+EN 214 (Le Banner)
+
+@ C3.512
+# choice or chapter title
+JP ２１５（藤田）
+EN 215 (Fujita)
+
+@ C3.514
+# choice or chapter title
+JP ２１６（エンディング）
+EN 216 (Ending)
+
+@ C3.516
+# choice or chapter title
+JP ３１３（天龍→川田）
+EN 313 (Tenryu -> Kawada)
+
+@ C3.518
+# choice or chapter title
+JP 次へ
+EN Next
+
+@ C3.520
+# choice or chapter title
+JP ００１第１章　ＶＪＰ道場入門
+EN 001 Chapter 1: Joining the <VJP> Dojo
+
+@ C3.522
+# choice or chapter title
+JP ００２第２章　デビュー戦
+EN 002 Chapter 2: Debut Match
+
+@ C3.524
+# choice or chapter title
+JP ００３第３章　%ss21戦
+EN 003 Chapter 3: vs. %ss21
+
+@ C3.526
+# choice or chapter title
+JP ００４第４章　三銃士戦
+EN 004 Chapter 4: vs. the Musketeers
+
+@ C3.528
+# choice or chapter title
+JP ００５第５章　ホーク戦
+EN 005 Chapter 5: vs. <Hawk>
+
+@ C3.530
+# choice or chapter title
+JP ００６第６章　%ss41戦
+EN 006 Chapter 6: vs. %ss41
+
+@ C3.532
+# choice or chapter title
+JP ００７第７章　グレート・ムタ戦
+EN 007 Chapter 7: vs. Great Muta
+
+@ C3.534
+# choice or chapter title
+JP ００８第８章　%ss99戦
+EN 008 Chapter 8: vs. %ss99
+
+@ C3.536
+# choice or chapter title
+JP ００９第９章　%ss1戦
+EN 009 Chapter 9: vs. %ss1
+
+@ C3.538
+# choice or chapter title
+JP ０１０第１０章　小川（格闘）戦
+EN 010 Chapter 10: vs. Ogawa (MMA)
+
+@ C3.540
+# choice or chapter title
+JP ０１１第１１章　小川戦
+EN 011 Chapter 11: vs. Ogawa
+
+@ C3.542
+# choice or chapter title
+JP ０１２第１２章　苦悩
+EN 012 Chapter 12: Anguish
+
+@ C3.544
+# choice or chapter title
+JP 次へ
+EN Next

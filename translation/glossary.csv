@@ -1,0 +1,63 @@
+japanese,english,notes
+ＶＪＰ,<VJP>,"promotion token: NJPW in the real build, VJP in the parody build. Always write the token."
+ＯＪＰ,<OJP>,promotion token: AJPW / OJP
+Ｓ－ＮＯＶＡ,<S-NOVA>,promotion token: NOAH / S-NOVA
+ＩＷ,<IW> | IWGP | <IGP>,promotion token: FMW / IW (新生ＩＷ = <New IW>)
+ＩＧＰ,<IGP>,title token: IWGP / IGP
+ＵＷＨ,<UWH> | <UWH Integral> | <U-Inte>,promotion token: UWF / UWH
+ＦＷＯ,<FWO>,faction token: nWo / FWO
+ＮＥＯ－ＯＮＥ,<NEO-ONE>,promotion token: ZERO-ONE / NEO-ONE
+団体,promotion,a wrestling company; 新団体 = new promotion
+旗揚げ,launch | first show | found | founding,starting a promotion / its first show
+興行,show | event | card,
+社長,President | boss,the promotion's president; as a form of address: Mr. President / Boss (keep each scene consistent)
+道場,dojo,
+練習生,trainee,
+若手,young boy | young boys | young wrestler | young guys | rookie,puroresu young boys (rookies who do the chores)
+前座,opening match | undercard,
+ヘビー級,heavyweight,
+ジュニア,junior | Junior,junior heavyweight
+王座,title | champion,
+ベルト,belt | title,
+タイトルマッチ,title match,
+防衛,defend | defense,title defense
+挑戦者,challenger,
+マスクマン,masked wrestler | masked man,
+引退,retire,
+フリー,freelance | freelancer,a wrestler with no promotion
+バックドロップ,backdrop,move names follow translation/text/moves.csv
+シュート,shoot,
+プロレス,pro wrestling | wrestling | pro wrestler | wrestler | puroresu,also 'puroresu' where the Japanese style itself is the point
+アマレス,amateur wrestling,
+試合,match | bout | fight,
+記者会見,press conference,
+ＵＷＨインテグラル,<UWH Integral>,token (real: UWF International)
+Ｕインテ,<U-Inte>,token (real: U-Inter)
+ＮＡＷ,<NAW>,token (real: NWA)
+Ｖ１クライマックス,<V1 Climax>,token (real: G1 Climax)
+遊楽園,<Yurakuen Hall> | <Yurakuen>,token (real: Korakuen Hall)
+武闘館,<Butokan>,token (real: Budokan)
+三戦鬼,Three War Demons,闘争三戦鬼 too: 'the Three War Demons' (provisional)
+倒幕軍,Rebel Army,the Rebel Army (provisional)
+邪道,Outlaw,Okita's creed: 'the Outlaw' / 'outlaw style' (provisional)
+ヤングタイガー杯,Young Tiger Cup,
+誠義軍,Seigi Army,the Seigi Army
+王道,King's Road,王道プロレス = King's Road wrestling
+Ｔ・ＢＬＡＣＫ,T-BLACK,"faction, no token yet (owner question)"
+ＮＵＣＬＥＡＲ,NUCLEAR,"tag team, no token yet (owner question)"
+邪道流,outlaw style,
+Ｖ１,<V1 Climax> | V1,Ｖ１ naming the tournament
+関西記者,Kansai,"""the Kansai reporter"" in narration; Mr. Kansai (Kashiwada)"
+対抗戦,interpromotional,
+交流戦,interpromotional,
+デスマッチ,deathmatch,
+電流爆破,exploding barbed wire | exploding-wire,
+三冠,Triple Crown,
+四天王,Four Heavenly Kings,
+毒霧,poison mist,
+刺客,assassin,
+野武士軍団,Nobushi Army,
+ＺＥＴＴ,ZETT,no token yet (owner question)
+ＢＬＡＤＥ,BLADE,no token yet (owner question)
+紙の格闘技,Paper Fighting,the magazine (provisional)
+ロイヤルリップス,Royal Lips,

@@ -1,0 +1,252 @@
+# The roster: 244 wrestlers (STRHUMAN.BIN, 0x23C-byte records). Fields: name1 13 bytes (the short
+# name the game shows alone, and in the story for %ssN), name2 19 bytes, nick 25 bytes. flags: bit 7
+# = name2 comes first in the full name, bits 0-1 = the separator (0 a space, 1 "・", 2 "=", 3 none).
+# Two English versions of every name: en_* the real wrestler (default build), parody_* the game's
+# own name romanized (build.py --names parody). *_order: 1-2 (name1 name2) or 2-1 (name2 name1),
+# joined with a space; empty = 1-2. jp_full: the name as the game shows it. Nicknames: en_nick in
+# the real build, parody_nick in the parody build (empty = en_nick). Printable ASCII only.
+idx,flags,name1,name2,nick,jp_full,en_name1,en_name2,en_order,parody_name1,parody_name2,parody_order,en_nick,parody_nick,notes
+0,0x83,大和,ファイター,不屈の飛龍,ファイター大和,Fujinami,Tatsumi,2-1,Yamato,Fighter,2-1,The Dragon,Unyielding Dragon,[from FPD] [from FPG] real: Tatsumi Fujinami; parody: Fighter Yamato [owner list 2026-10-28]
+1,0x83,力丸,ハリケーン,最後の志士,ハリケーン力丸,Choshu,Riki,2-1,Rikimaru,Hurricane,2-1,Last Patriot,Last Patriot,[from FPD] [from FPG] real: Riki Choshu; parody: Hurricane Rikimaru; short name too wide for the select list (Rikimaru 113px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]
+2,0x83,慶介,ストーム,爆走重戦車,ストーム慶介,Sasaki,Kensuke,2-1,Keisuke,Storm,2-1,Rampaging Tank,Rampaging Tank,[from FPD] [from FPG] real: Kensuke Sasaki; parody: Storm Keisuke [owner list 2026-10-28]
+3,0x81,ジロー,サムライ,維新の頭目,サムライ・ジロー,Koshinaka,Shiro,2-1,Jiroh,Samurai,2-1,Ishin Ringleader,Ishin Ringleader,"[from FPD] [from FPG] real: Shiro Koshinaka; parody: Samurai Jiroh [owner list 2026-10-28] [short name = family name, review 2026-10-29]"
+4,0x03,宏田,純一,キラーマシーン,宏田純一,Hirata,Junji,2-1,Hirota,Junichi,2-1,Killer Machine,Killer Machine,[from FPD] [from FPG] real: Junji Hirata; parody: Junichi Hirota [owner list 2026-10-28]
+5,0x83,拳悟,イナズマ,甦る鉄拳,イナズマ拳悟,Kimura,Kengo,2-1,Kengo,Inazuma,2-1,Revived Iron Fist,Revived Iron Fist,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Kengo Kimura; parody Kengo Inazuma [owner list 2026-10-28]
+6,0x03,稲塚,貴幸,北海のジャッカル,稲塚貴幸,Iizuka,Takashi,2-1,Inezuka,Takayuki,2-1,Jackal of the North,Jackal of the North,[from FPD]  [owner list 2026-10-28]
+7,0x03,高橋,衛,ファイティングヘラクレス,高橋衛,Nakanishi,Manabu,2-1,Takahashi,Mamoru,2-1,Fighting Hercules,Fighting Hercules,"[from FPD]  [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+8,0x03,阪田,祐次郎,マスキュリンシューター,阪田祐次郎,Nagata,Yuji,2-1,Sakata,Yujiro,2-1,Masculine Shooter,Masculine Shooter,[from FPD] [from FPG] real: Yuji Nagata; parody: Yujiro Sakata [owner list 2026-10-28]
+9,0x03,草村,徹,飛龍の遺伝子,草村徹,Nishimura,Osamu,2-1,Kusamura,Tetsu,2-1,Dragon's Genes,Dragon's Genes,"[from FPD]  [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story] [owner list 2026-10-29]"
+10,0x03,泰江,真,パワフルモンスター,泰江真,Yoshie,Yutaka,2-1,Yasue,Makoto,2-1,G-Mets Spearhead,G-Mets Spearhead,[from FPD]  [owner list 2026-10-28] [owner list 2026-10-29]
+11,0x03,観月,慶三,ゴールデンルーキー,観月慶三,Suzuki,Kenzo,2-1,Mizuki,Keizo,2-1,Golden Rookie,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Kenzo Suzuki; parody: Keizo Mizuki (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+12,0x03,名良橋,正士,フェロモンボディ,名良橋正士,Tanahashi,Hiroshi,2-1,Narahashi,Masashi,2-1,Pheromone Body,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Hiroshi Tanahashi; parody: Masashi Narahashi (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+13,0x81,クライ,ボーン,マッドファイター,ボーン・クライ,Frye,Don,2-1,Cry,Bone,2-1,The Predator,Mad Fighter,[from FPD]  [owner list 2026-10-28]
+14,0x83,ＪＯＥ,ナスティ,豪腕野郎,ナスティＪＯＥ,Super J,,,JOE,Nasty,2-1,Strong-Arm Bruiser,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Super J; parody: Nasty JOE (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+15,0x83,カイザー,超帝スーパー,時の皇帝,超帝スーパーカイザー,Liger,Jushin Thunder,2-1,Kaiser,Chotei Super,2-1,Emperor of the Age,Emperor of the Age,[from FPD] [from FPG] real: Jushin Thunder Liger; parody: Chotei Super Kaiser [owner list 2026-10-28]
+16,0x81,カミカゼ,Ｅ,士魂の隼,Ｅ・カミカゼ,Samurai,El,2-1,Kamikaze,E.,2-1,Samurai Falcon,Samurai Falcon,[from FPD] [from FPG] real: El Samurai; parody: E. Kamikaze; short name too wide for the select list (Kamikaze 120px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]
+17,0x03,ジェット,,伝説のヒーロー,ジェット,HEAT,,,JET,,,Legendary Hero,, [owner list 2026-10-29]
+18,0x03,渡瀬,貴幸,ウルトラソウル,渡瀬貴幸,Naruse,Masayuki,2-1,Watase,Takayuki,2-1,Ultra Soul,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Masayuki Naruse; parody: Takayuki Watase (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+19,0x03,牧原,武彦,熱風児,牧原武彦,Kakihara,Masahito,2-1,Makihara,Takehiko,2-1,Hot Wind Kid,Hot Wind Kid,"[from FPD] [from FPG] real: Masahito Kakihara; parody: Takehiko Makihara; short name too wide for the select list (Kakihara 115px, Makihara 118px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]"
+20,0x03,中瀬,慎哉,雑草ファイター,中瀬慎哉,Makabe,Shinya,2-1,Nakase,Shinya,2-1,Grassroots Fighter,Grassroots Fighter,[from FPD]  [owner list 2026-10-28]
+21,0x83,河野,バイオレンス,暗黒街の首領,バイオレンス河野,Chono,Masahiro,2-1,Kono,Violence,2-1,Mad Lion King,Mad Lion King,[from FPD] [from FPG] real: Masahiro Chono; parody: Violence Kono [owner list 2026-10-28]
+22,0x83,天本,バッファロー,突撃暴れ牛,バッファロー天本,Tenzan,Hiroyoshi,2-1,Amamoto,Buffalo,2-1,Charging Bull,Charging Bull,"[from FPD] [from FPG] real: Hiroyoshi Tenzan; parody: Buffalo Amamoto [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+23,0x83,護東,トシ,地獄坊主,トシ護東,Goto,Tatsutoshi,2-1,Goto,Toshi,2-1,Hell Monk,Hell Monk,[from FPD] [from FPG] real: Tatsutoshi Goto; parody: Toshi Goto [owner list 2026-10-28]
+24,0x03,野原,道憲,アニマルＪｒ．,野原道憲,Ohara,Michiyoshi,2-1,Nohara,Michinori,2-1,Animal Jr.,Animal Jr.,[from FPD] [from FPG] real: Michiyoshi Ohara; parody: Michinori Nohara [owner list 2026-10-28] [owner list 2026-10-29]
+25,0x81,ヒロ,レイジング,リングアウトの帝王,レイジング・ヒロ,Saito,Hiro,2-1,Hiro,Raging,2-1,Lonely Resistance,Lonely Resistance,[from FPD] [from FPG] real: Hiro Saito; parody: Raging Hiro [owner list 2026-10-28]
+26,0x81,ガバ,ギガント,ジャイアントビースト,ギガント・ガバ,Silva,Giant,2-1,Gaba,Giganto,2-1,Giant Beast,, [owner list 2026-10-29]
+27,0x81,シバ,ギガント,人間チョモランマ,ギガント・シバ,Singh,Giant,2-1,Shiva,Giganto,2-1,Human Everest,, [owner list 2026-10-29]
+28,0x81,バートン,フラッシュ,吼える閃光,フラッシュ・バートン,Norton,Scott,2-1,Burton,Flash,2-1,Flash,Roaring Flash,[from FPD] [from FPG] real: Scott Norton; parody: Flash Burton [owner list 2026-10-28]
+29,0x03,ASUKA,,リングのムササビ,ASUKA,AKIRA,,1-2,ASUKA,,1-2,Flying Squirrel,Flying Squirrel,[from FPD]  [owner list 2026-10-28]
+30,0x03,鎌本,鋭司,ジュニアの喧嘩番長,鎌本鋭司,Kanemoto,Koji,2-1,Kamamoto,Eiji,2-1,Junior Brawl Boss,Junior Brawl Boss,"[from FPD] [from FPG] real: Koji Kanemoto; parody: Eiji Kamamoto [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+31,0x03,魔童,,狂える猛犬,魔童,Jado,,1-2,Mado,,1-2,Mad Dog,Mad Dog,[from FPD] [from FPG] real: Jado; parody: Mado [owner list 2026-10-28]
+32,0x03,鬼童,,空飛ぶ悪鬼,鬼童,Gedo,,1-2,Kido,,1-2,Flying Demon,Flying Demon,[from FPD] [from FPG] real: Gedo; parody: Kido [owner list 2026-10-28]
+33,0x03,山本,和輝,熱き蹴撃手,山本和輝,Yamazaki,Kazuo,2-1,Yamamoto,Kazuki,2-1,Fiery Kicker,Fiery Kicker,"[from FPD] [from FPG] real: Kazuo Yamazaki; parody: Kazuki Yamamoto [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+34,0x83,溝口,シャウト,アニマルパワー,シャウト溝口,Hamaguchi,Animal,2-1,Mizoguchi,Shout,2-1,Animal Power,Animal Power,"[from FPD] [from FPG] real: Animal Hamaguchi; parody: Shout Mizoguchi [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+35,0x03,水戸,勇,技巧の仕事師,水戸勇,Kido,Osamu,2-1,Mito,Isamu,2-1,Master Craftsman,Master Craftsman,[from FPD] [from FPG] real: Osamu Kido; parody: Isamu Mito [owner list 2026-10-28]
+36,0x03,若元,一徹,鬼軍曹,若元一徹,Yamamoto,Kotetsu,2-1,Wakamoto,Ittetsu,2-1,Demon Drill Sergeant,Demon Drill Sergeant,"[from FPD]  [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+37,0x81,パンサー,マスク・ド,夢幻のヒーロー,マスク・ド・パンサー,Tiger Mask,,,Panther,Mask de,2-1,Dream Hero,Dream Hero,"[from FPD] [from FPG] real: Tiger Mask; parody: Mask de Panther [owner list 2026-10-28] [short name <= 10 letters, play-test 2026-10-29]"
+38,0x81,キッド,ダイナミック,猛爆野郎,ダイナミック・キッド,Kid,Dynamite,2-1,Kid,Dynamic,2-1,Mad Bomber,Mad Bomber,[from FPD] [from FPG] real: Dynamite Kid; parody: Dynamic Kid [owner list 2026-10-28]
+39,0x03,五十嵐,利明,闇狩人,五十嵐利明,Kobayashi,Kuniaki,2-1,Igarashi,Toshiaki,2-1,Dark Hunter,Dark Hunter,"[from FPD] [from FPG] real: Kuniaki Kobayashi; parody: Toshiaki Igarashi [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+40,0x81,パンサー,ブラック,夢幻ハンター,ブラック・パンサー,Tiger,Black,2-1,Panther,Black,2-1,Phantom Hunter,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Black Tiger; parody: Black Panther (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+41,0x83,龍,サンダー,雷鳴戦士,サンダー龍,Tenryu,Genichiro,2-1,Ryu,Thunder,2-1,Thunder Warrior,Thunder Warrior,[from FPD] [from FPG] real: Genichiro Tenryu; parody: Thunder Ryu [owner list 2026-10-28]
+42,0x03,俊藤,剣,天才魔術師,俊藤剣,Mutoh,Keiji,2-1,Shundo,Ken,2-1,Stormy Swordsman,Stormy Swordsman,[from FPD] [from FPG] real: Keiji Mutoh; parody: Ken Shundo [owner list 2026-10-28]
+43,0x81,武道,ザ・グレイテスト,妖忍者,ザ・グレイテスト・武道,Muta,The Great,2-1,Budo,The Greatest,2-1,Ninja Sorcerer,Ninja Sorcerer,[from FPD] [from FPG] real: The Great Muta; parody: The Greatest Budo [owner list 2026-10-28] [owner list 2026-10-29]
+44,0x03,風間,利家,燃える闘志,風間利家,Kawada,Toshiaki,2-1,Kazama,Toshiie,2-1,Dangerous K,Burning Spirit,[from FPD] [from FPG] real: Toshiaki Kawada; parody: Toshiie Kazama [owner list 2026-10-28]
+45,0x03,伊達,弘,華麗な流星,伊達弘,Hase,Hiroshi,2-1,Date,Hiroshi,2-1,Graceful Meteor,Graceful Meteor,[from FPD] [from FPG] real: Hiroshi Hase; parody: Hiroshi Date [owner list 2026-10-28]
+46,0x03,木嶋,悟,放たれた猛獣,木嶋悟,Kojima,Satoshi,2-1,Kijima,Satoru,2-1,Unleashed Beast,Unleashed Beast,[from FPD] [from FPG] real: Satoshi Kojima; parody: Satoru Kijima [owner list 2026-10-28]
+47,0x03,朱井,勝也,再起の剛勇,朱井勝也,Nagai,Mitsuya,2-1,Akai,Katsuya,2-1,Comeback Hero,Comeback Hero,[from FPD] [from FPG] real: Mitsuya Nagai; parody: Katsuya Akai [owner list 2026-10-28]
+48,0x03,淡谷,伸久,ブランニューサンダー,淡谷伸久,Araya,Nobutaka,2-1,Awaya,Nobuhisa,2-1,New Thunder,,"[from FPS] real: Nobutaka Araya; parody: Nobuhisa Awaya - short name = last word, check"
+49,0x03,相馬,智明,デスマッチの若武者,相馬智明,Honma,Tomoaki,2-1,Soma,Tomoaki,2-1,Deathmatch Young Gun,Deathmatch Young Gun,[from FPD]  [owner list 2026-10-28]
+50,0x81,ジェイムス,スティル,冷酷医師,スティル・ジェイムス,Williams,Steve,2-1,James,Still,2-1,Dr. Death,Cold Doctor,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Steve Williams; parody Steel James [owner list 2026-10-28]
+51,0x81,ゴードン,マーク,戦慄の拳,マーク・ゴードン,Barton,Mike,2-1,Gordon,Mark,2-1,Fist of Terror,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Mike Barton; parody: Mark Gordon (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+52,0x83,クア,熱風,ハワイの熱き風,熱風クア,Kea,Taiyo,2-1,Kua,Neppu,2-1,Hot Wind of Hawaii,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Taiyo Kea; parody: Neppu Kua (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+53,0x81,ストーム,ジン,獣の雄叫び,ジン・ストーム,Steele,Jim,2-1,Storm,Gin,2-1,Roar of the Beast,, [owner list 2026-10-29]
+54,0x81,ルイス,トニー,腕殺しテクニシャン,トニー・ルイス,Smith,Johnny,2-1,Lewis,Tony,2-1,Arm-Breaking Technician,Arm-Breaking Technician,"[from FPD] alt. Mike Rotunda, other AJPW gaijin technician [owner list 2026-10-28]"
+55,0x03,小淵沢,昌紀,ジュニアの猛者,小淵沢昌紀,Fuchi,Masanobu,2-1,Masanobu,Kobuchizawa,1-2,Junior Veteran,Junior Veteran,"[from FPD] [from Fire Pro S] owner list 2026-10-26: real Masanobu Fuchi; parody Masaki Kobuchizawa [owner list 2026-10-28] [parody short name <= 10 letters, play-test 2026-10-29]"
+56,0x81,ヤ・シン,ブシドー,仮面の関節鬼,ブシドー・ヤ・シン,Kashin,Kendo,2-1,Ya Shin,Bushido,2-1,Masked Submission Demon,Masked Submission Demon,[from FPD] 
+57,0x81,オオハシ,ヤス,飛龍戦士,ヤス・オオハシ,Hayashi,Kaz,2-1,Ohashi,Yas,2-1,Dragon Warrior,Dragon Warrior,[from FPD]  [owner list 2026-10-28]
+58,0x83,司馬,グレート,世界を征する巨人,グレート司馬,Baba,Giant,2-1,Shiba,Great,2-1,World Conqueror,World Conqueror,[from FPD] [from FPG] real: Giant Baba; parody: Great Shiba [owner list 2026-10-28]
+59,0x01,トミー,ボンバー,パワフル爆弾,トミー・ボンバー,Jumbo,Tsuruta,1-2,Tommy,Bomber,1-2,Powerful Bomb,Powerful Bomb,[from FPD] [from FPG] real: Jumbo Tsuruta; parody: Tommy Bomber [owner list 2026-10-28]
+60,0x01,ハリー,テキサンＪｒ．,グレートアメリカ,ハリー・テキサンＪｒ．,Dory,Funk Jr.,1-2,Harry,Texan Jr.,1-2,Great America,Great America,[from FPD] [from FPG] real: Dory Funk Jr.; parody: Harry Texan Jr.
+61,0x81,バイソン,スター,リングの猛牛,スター・バイソン,Hansen,Stan,2-1,Bison,Star,2-1,The Lariat,Ring Bull,[from FPD] [from FPG] real: Stan Hansen; parody: Star Bison [owner list 2026-10-28]
+62,0x81,Ｇ・ブル,ビッグ・ザ,哲学獣,ビッグ・ザ・Ｇ・ブル,Brody,Bruiser,2-1,G Bull,Big the,2-1,Philosopher Beast,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Bruiser Brody; parody: Big the G Bull (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+63,0x81,ボギー,ケリー,人間核弾頭,ケリー・ボギー,Gordy,Terry,2-1,Bogey,Kerry,2-1,Bam Bam,Human Warhead,[from FPD] [from FPG] real: Terry Gordy; parody: Kerry Bogey [owner list 2026-10-28]
+64,0x81,Ｏ＝ブライト,Ｇ,スープレックスモンスター,Ｇ・Ｏ＝ブライト,Albright,Gary,2-1,O'Bright,G,2-1,Suplex Monster,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Gary Albright; parody: G O'Bright (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+65,0x81,ピース,ジョン,金髪の餓狼,ジョン・ピース,Ace,Johnny,2-1,Peace,John,2-1,Blond Wolf,Blond Wolf,[from FPD] [from FPG] real: Johnny Ace; parody: John Peace [owner list 2026-10-28]
+66,0x03,氷川,光秀,ハイパーエルボー,氷川光秀,Misawa,Mitsuharu,2-1,Hikawa,Mitsuhide,2-1,Hyper Elbow,Hyper Elbow,[from FPD] [from FPG] real: Mitsuharu Misawa; parody: Mitsuhide Hikawa [owner list 2026-10-28]
+67,0x03,富樫,慶次,ライトニング,富樫慶次,Kobashi,Kenta,2-1,Togashi,Keiji,2-1,Lightning,Lightning,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Kenta Kobashi; parody Kenji Togashi [owner list 2026-10-28]
+68,0x03,相模,朗,ダイナミズムＳ,相模朗,Taue,Akira,2-1,Sagami,Akira,2-1,Dynamic T,Unfinished Prince,[from FPD] [from FPG] real: Akira Taue; parody: Akira Sagami [owner list 2026-10-28]
+69,0x03,秋沢,瞬,白銀の騎士,秋沢瞬,Akiyama,Jun,2-1,Akisawa,Shun,2-1,Supernova,Supernova,[from FPD] [from FPG] real: Jun Akiyama; parody: Shun Akisawa [owner list 2026-10-28]
+70,0x03,大林,剛雄,突撃斧爆弾,大林剛雄,Omori,Takao,2-1,Obayashi,Takeo,2-1,Jungle Prince,Jungle Prince,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Takao Omori; parody Takao Obayashi [owner list 2026-10-28]
+71,0x03,本間,羅魂,吠える原人,本間羅魂,Honda,Tamon,2-1,Honma,Rakon,2-1,Howling Caveman,Howling Caveman,[from FPD] [from FPG] real: Tamon Honda; parody: Rakon Honma [owner list 2026-10-28]
+72,0x03,内藤,秋吉,突撃喧嘩拳,内藤秋吉,Saito,Akitoshi,2-1,Naito,Akiyoshi,2-1,Charging Brawler,,"[from FPS] real: Akitoshi Saito; parody: Akiyoshi Naito - short name = last word, check"
+73,0x03,泉谷,牛角,平成頭突き王,泉谷牛角,Izumida,Jun,2-1,Izumitani,Gyukaku,2-1,Headbutt King,Headbutt King,[from FPD] [from FPG] real: Jun Izumida; parody: Ushisumi Izumitani; short name too wide for the select list (Izumitani 116px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]
+74,0x03,木下,孝雄,突貫ファイター,木下孝雄,Inoue,Masao,2-1,Kinoshita,Takao,2-1,Charging Fighter,Charging Fighter,"[from FPD] alt. Masao Inoue, Akitoshi Saito (NOAH block) [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+75,0x03,引田,大作,バチバチファイター,引田大作,Ikeda,Daisuke,2-1,Hikita,Daisaku,2-1,Slugfest Fighter,Slugfest Fighter,[from FPD]  [owner list 2026-10-28]
+76,0x03,伊賀,仁太郎,燃える特攻戦士,伊賀仁太郎,Shiga,Kentaro,2-1,Iga,Jintaro,2-1,Burning Kamikaze,Burning Kamikaze,[from FPD]  [owner list 2026-10-28]
+77,0x03,力士王,崇,鋼力男児,力士王崇,Rikio,Takeshi,2-1,Rikishio,Takashi,2-1,Reckless Charge,Reckless Charge,[from FPD]  [owner list 2026-10-28]
+78,0x03,大島,崇,荒ぶるビッグバディ,大島崇,Morishima,Takeshi,2-1,Oshima,Takashi,2-1,Raging Big Body,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Takeshi Morishima; parody: Takashi Oshima (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+79,0x81,トネ,ムハンマド,激情ファイター,ムハンマド・トネ,Yone,Mohammed,2-1,Tone,Muhammad,2-1,Passion Fighter,Passion Fighter,[from FPD]  [owner list 2026-10-28] [owner list 2026-10-29]
+80,0x03,セイバー,,魔王の刺客,セイバー,Vader,,,Saber,,,Demon King's Assassin,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Vader; parody: Saber (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+81,0x03,野河,芳直,静寂の昇竜,野河芳直,Ogawa,Yoshinari,2-1,Nogawa,Yoshinao,2-1,Silent Dragon,Silent Dragon,[from FPD] [from FPG] real: Yoshinari Ogawa; parody: Yoshinao Nogawa [owner list 2026-10-28] [owner list 2026-10-29]
+82,0x03,矢野,尚樹,フライングパンサー,矢野尚樹,Sano,Naoki,2-1,Yano,Naoki,2-1,Flying Panther,Flying Panther,[from FPD] [from FPG] real: Naoki Sano; parody: Naoki Yano [owner list 2026-10-28]
+83,0x03,明智,清志,特攻魂,明智清志,Kikuchi,Tsuyoshi,2-1,Akechi,Kiyoshi,2-1,Kamikaze Spirit,Kamikaze Spirit,[from FPD] [from FPG] real: Tsuyoshi Kikuchi; parody: Kiyoshi Akechi [owner list 2026-10-28]
+84,0x03,益子,聡,リングの小型爆弾,益子聡,Asako,Satoru,2-1,Mashiko,Satoshi,2-1,Pint-Sized Ring Bomb,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Satoru Asako; parody: Satoshi Mashiko (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+85,0x03,羽丸,敏則,旋風ファイター,羽丸敏則,Kanemaru,Yoshinobu,2-1,Hanemaru,Toshinori,2-1,Whirlwind Fighter,Whirlwind Fighter,[from FPD] alt. Naomichi Marufuji; short name too wide for the select list (Kanemaru 130px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]
+86,0x03,角辻,尚道,ヒューマン・トルネード,角辻尚道,Marufuji,Naomichi,2-1,Kadotsuji,Naomichi,2-1,Human Tornado,, [owner list 2026-10-29]
+87,0x03,タランチュラ,,リングのＤＪ,タランチュラ,Scorpio,,,Tarantula,,,DJ of the Ring,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Scorpio; parody: Tarantula (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+88,0x83,旗本,クラッシャー,爆殺クラッシャー,クラッシャー旗本,Hashimoto,Shinya,2-1,Hatamoto,Crusher,2-1,Explosive Crusher,Explosive Crusher,"[from FPD] [from FPG] real: Shinya Hashimoto; parody: Crusher Hatamoto [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+89,0x03,大刈,真一郎,挑発戦士,大刈真一郎,Otani,Shinjiro,2-1,Ogari,Shinichiro,2-1,Taunting Warrior,Taunting Warrior,[from FPD] [from FPG] real: Shinjiro Otani; parody: Shinichiro Ogari [owner list 2026-10-28] [owner list 2026-10-29]
+90,0x03,畑中,雅彦,グレネードボンバー,畑中雅彦,Tanaka,Masato,2-1,Hatanaka,Masahiko,2-1,Grenade Bomber,Grenade Bomber,"[from FPD] short name too wide for the select list (Masahiko 119px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+91,0x03,鷹龍,岩人,タフネスボーイ,鷹龍岩人,Takaiwa,Tatsuhito,2-1,Takatatsu,Iwahito,2-1,Toughness Boy,Toughness Boy,[from FPD] unsure: Takaiwa (kanji 鷹龍岩人 ~ 高岩竜人) vs another NJPW junior [owner list 2026-10-29]
+92,0x03,橋澤,直弘,ＮＥＯ－ＯＮＥの流れ星,橋澤直弘,Hoshikawa,Naohiro,2-1,Hashizawa,Naohiro,2-1,Shooting Star of NEO-ONE,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Naohiro Hoshikawa; parody: Naohiro Hashizawa (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+93,0x81,パワーズ,ボム,ＳＷＡＴからの刺客,ボム・パワーズ,Howard,Tom,2-1,Powers,Bomb,2-1,Assassin from SWAT,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Tom Howard; parody: Bomb Powers (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+94,0x03,野川,裕也,狂乱の柔道王,野川裕也,Ogawa,Naoya,2-1,Nogawa,Hiroya,2-1,Judo Fighter,Judo Fighter,[from FPD]  [owner list 2026-10-28]
+95,0x03,梶田,政之,ファイティングビースト,梶田政之,Fujita,Kazuyuki,2-1,Kajita,Masayuki,2-1,Fighting Beast,Fighting Beast,[from FPD]  [owner list 2026-10-28] [owner list 2026-10-29]
+96,0x03,益田,高男,そびえ立つ巨壁,益田高男,Yasuda,Tadao,2-1,Masuda,Takao,2-1,Towering Wall,Towering Wall,[from FPD]  [owner list 2026-10-28]
+97,0x03,犬神,一義,新世代テロリスト,犬神一義,Murakami,Kazunari,2-1,Inugami,Kazuki,2-1,New-Gen Terrorist,New-Gen Terrorist,"[from FPD] short name too wide for the select list (Kazunari 114px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+98,0x83,武蔵,ビクトリー,闘いの伝説,ビクトリー武蔵,Inoki,Antonio,2-1,Musashi,Victory,2-1,Legend of Fighting,Legend of Fighting,[from FPD] [from FPG] real: Antonio Inoki; parody: Victory Musashi [owner list 2026-10-28]
+99,0x03,真田,伸久,戦乱の荒武者,真田伸久,Takada,Nobuhiko,2-1,Sanada,Nobuhisa,2-1,Wild Warrior,Wild Warrior,[from FPD] [from FPG] real: Nobuhiko Takada; parody: Nobuhisa Sanada [owner list 2026-10-28]
+100,0x03,柏田,一樹,驚異頭脳ファイター,柏田一樹,Sakuraba,Kazushi,2-1,Kashiwada,Kazuki,2-1,The Gracie Hunter,Vale Tudo New Star,"[from FPD]  [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+101,0x03,河本,信宏,リングの勝負師,河本信宏,Yamamoto,Nobuhisa,2-1,Kawamoto,Nobuhiro,2-1,Comet of GONGS,Comet of GONGS,"[from FPD] [from FPG] real: Yoshihisa Yamamoto; parody: Nobuhiro Kawamoto; short name too wide for the select list (Yoshihisa 121px, Nobuhiro 115px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+102,0x03,サクソン,春樹,ビッグバディ,サクソン春樹,Fuyuki,Hiromichi,2-1,Haruki,Saxon,2-1,Big Body,, [owner list 2026-10-29]
+103,0x03,室田,鉄彦,魂の豪腕,室田鉄彦,Kuroda,Tetsuhiro,2-1,Murota,Tetsuhiko,2-1,Mighty Arm of Soul,Mighty Arm of Soul,[from FPD]  [owner list 2026-10-28]
+104,0x83,亀村,ウィニング,ヒューマン・トーチ,ウィニング亀村,Kanemura,Kintaro,2-1,Kamemura,Winning,2-1,Human Torch,Human Torch,"[from FPD]  [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+105,0x03,神崎,仁水,さすらいの荒法師,神崎仁水,Shinzaki,Jinsei,2-1,Kanzaki,Jinsui,2-1,Wandering Monk,Wandering Monk,[from FPD] [from FPG] real: Jinsei Shinzaki [owner list 2026-10-28]
+106,0x81,ハヤテ,ブレード,東北の疾風,ブレード・ハヤテ,Sasuke,The Great,2-1,Hayate,Blade,2-1,Gale of Tohoku,Gale of Tohoku,[from FPD] [from FPG] real: The Great Sasuke; parody: Blade Hayate [owner list 2026-10-28]
+107,0x81,マリポーサ,グラン,ルチャの小さな偉人,グラン・マリポーサ,Hamada,Gran,2-1,Gran,Mariposa,1-2,Little Giant,Little Giant,[from FPD] [from FPG] real: Gran Hamada; parody: Gran Mariposa [owner list 2026-10-28]
+108,0x81,ツジ,ロッキー,ハードロックエクスプレス,ロッキー・ツジ,Fuji,Ricky,2-1,Tsuji,Rocky,2-1,Hard Rock Express,,"[from FPS] real: Ricky Fuji; parody: Rocky Tsuji - short name = last word, check"
+109,0x83,西城,リック,東北の喧嘩番長,リック西城,Togo,Dick,2-1,Saijo,Rick,2-1,Ryoma of Heisei,Ryoma of Heisei,[from FPD] alt. SATO (Fire Pro S gave SATO this nickname) [owner list 2026-10-28]
+110,0x81,パンサーⅣ,マスク・ド,夢幻の疾風,マスク・ド・パンサーⅣ,Tiger Mask,IV,1-2,Panther 4,Mask de,2-1,Dream Gale,Dream Gale,"[from FPD]  [owner list 2026-10-28] [owner list 2026-10-29] [short name <= 10 letters, play-test 2026-10-29]"
+111,0x01,カリー,マスク,超激辛スパイス,カリー・マスク,Curry,Man,1-2,Kali Mask,,,Super-Hot Spice,Super-Hot Spice,"[from FPD]  [owner list 2026-10-28] [parody short name <= 10 letters, play-test 2026-10-29]"
+112,0x83,ＫＹＯＴＯ,ワルサー,ダンシングビート,ワルサーＫＹＯＴＯ,Magnum,TOKYO,1-2,KYOTO,Walther,2-1,Dancing Beat,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Magnum TOKYO; parody: Walther KYOTO (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+113,0x03,ＺＹＭＡ,,怒れる悪の華,ＺＹＭＡ,CIMA,,1-2,ZYMA,,1-2,Angry Flower of Evil,Angry Flower of Evil,[from FPD]  [owner list 2026-10-28]
+114,0x03,後月,正成,蹴撃武将,後月正成,Mochizuki,Masaaki,2-1,Gozuki,Masanari,2-1,Kicking Warlord,Kicking Warlord,"[from FPD] alt. Kazunari Murakami, Yuki Ishikawa [owner list 2026-10-28]"
+115,0x03,ＫＵＧＡ,,怒れる悪童,ＫＵＧＡ,SUWA,,1-2,KUGA,,1-2,Angry Beast,Angry Beast,"[from FPD] alt. TARU, Don Fujii [owner list 2026-10-28]"
+116,0x81,ツジ,ディック,パワフルテクニシャン,ディック・ツジ,Big Fuji,,,Tsuji,Dick,2-1,Powerful Technician,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Big Fuji; parody: Dick Tsuji (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+117,0x01,アステカ,ジュニア,若き新竜,アステカ・ジュニア,Dragon Kid,,,Azteca,Junior,1-2,Young New Dragon,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Dragon Kid; parody: Azteca Junior (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+118,0x03,満田,靖志,人生下剋上,満田靖志,Kanda,Yasushi,2-1,Manda,Yasushi,2-1,Underdog for Life,, [owner list 2026-10-29]
+119,0x03,後月,亨,Ｎ２Ｍの突撃兵,後月亨,Yokosuka,Susumu,2-1,Gozuki,Susumu,2-1,N2M Shock Trooper,, [owner list 2026-10-29]
+120,0x81,ドラゴン,アステカ,太陽の真竜,アステカ・ドラゴン,Ultimo,Dragon,1-2,Dragon,Azteca,2-1,True Dragon of the Sun,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Ultimo Dragon; parody: Azteca Dragon (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+121,0x83,ＸＸＸ,ダークネス,火炎戦士,ダークネスＸＸＸ,WX,Shadow,2-1,XXX,Darkness,2-1,Flame Warrior,Flame Warrior,[from FPD] alt. another Toryumon wrestler [owner list 2026-10-28]
+122,0x03,河山,龍次,ミスター・ハードコア,河山龍次,Yamakawa,Ryuji,2-1,Kawayama,Ryuji,2-1,Mr. Hardcore,Mr. Hardcore,"[from FPD]  [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+123,0x81,ボーイ,ケリー,東北の荒馬,ケリー・ボーイ,Boy,Terry,2-1,Boy,Kerry,2-1,Tohoku Stallion,Tohoku Stallion,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Terry Boy; parody Kerry Boy [owner list 2026-10-28]
+124,0x81,デンジャー,アブドル・ザ,褐色の悪魔,アブドル・ザ・デンジャー,Abdullah,the Butcher,1-2,Danger,Abdul the,2-1,The Madman from Sudan,Brown Devil,[from FPD] [from FPG] real: Abdullah the Butcher; parody: Abdul the Danger [owner list 2026-10-28]
+125,0x81,ドルフィン,Ｓ,浪花の彗星,Ｓ・ドルフィン,Delfin,Super,2-1,Dolphin,S.,2-1,Comet of Naniwa,Comet of Naniwa,[from FPD] [from FPG] real: Super Delfin; parody: S. Dolphin [owner list 2026-10-28]
+126,0x03,倉仲,武博,浪花の打撃王,倉仲武博,Murahama,Takehiro,2-1,Kuranaka,Takehiro,2-1,Striking King of Naniwa,Striking King of Naniwa,"[from FPD] short name too wide for the select list (Takehiro 116px, Takehiro 116px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+127,0x03,デルタ,,ブルーサイボーグ,デルタ,Gamma,,,Delta,,,Blue Cyborg,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Gamma; parody: Delta (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+128,0x03,ＷＡＫＡ,ゆきぐに,荒くれ一番星,ＷＡＫＡゆきぐに,TAKA,Michinoku,1-2,WAKA,Yukiguni,1-2,Wild First Star,Wild First Star,[from FPD] [from Fire Pro S] owner list 2026-10-26: real TAKA Michinoku; parody WAKA Yukiguni [owner list 2026-10-28]
+129,0x03,梶田,ミツル,東北の新星,梶田ミツル,Fujita,Minoru,2-1,Kajita,Mitsuru,2-1,New Star of Tohoku,New Star of Tohoku,[from FPD]  [owner list 2026-10-28]
+130,0x81,カグラ,ザ・ミステリアス,東洋の怪奇,ザ・ミステリアス・カグラ,Kabuki,The Great,2-1,Kagura,The Mysterious,2-1,Oriental Mystery,Oriental Mystery,[from FPD] [from FPG] real: The Great Kabuki; parody: The Mysterious Kagura [owner list 2026-10-28]
+131,0x03,梶原,丈,サブミッションマスター,梶原丈,Fujiwara,Yoshiaki,2-1,Kajiwara,Jo,2-1,Submission Master,Submission Master,"[from FPD] [from FPG] real: Yoshiaki Fujiwara; parody: Jo Kajiwara; short name too wide for the select list (Fujiwara 113px, Kajiwara 114px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]"
+132,0x03,沖田,勝志,炎のカリスマ,沖田勝志,Onita,Atsushi,2-1,Okita,Katsushi,2-1,Charisma of Flame,Charisma of Flame,[from FPD] [from FPG] real: Atsushi Onita; parody: Katsushi Okita [owner list 2026-10-28]
+133,0x03,甲山,良宏,人間バズーカ砲,甲山良宏,Takayama,Yoshihiro,2-1,Koyama,Yoshihiro,2-1,Jungle Fighter,Jungle Fighter,[from FPD] [from FPG] real: Yoshihiro Takayama; parody: Yoshihiro Koyama; short name too wide for the select list (Takayama 131px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]
+134,0x03,ランマル,,羽ばたく不死鳥,ランマル,Hayabusa,,1-2,Ranmaru,,1-2,Soaring Phoenix,Soaring Phoenix,"[from FPD] [from FPG] real: Hayabusa; parody: Ranmaru; short name too wide for the select list (Hayabusa 123px, Ranmaru 115px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]"
+135,0x83,五条,ハンター,怒れる鬼神,ハンター五条,Goto,Tarzan,2-1,Gojo,Hunter,2-1,Raging Demon God,Raging Demon God,[from FPD] [from FPG] real: Tarzan Goto; parody: Hunter Gojo [owner list 2026-10-28]
+136,0x81,トーゴー,マスター,暗黒大王,マスター・トーゴー,Pogo,Mister,2-1,Togo,Master,2-1,King of Darkness,King of Darkness,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Mister Pogo; parody Master Togo [owner list 2026-10-28]
+137,0x03,安藤,障二,ビッグマウス,安藤障二,Anjo,Yoji,2-1,Ando,Shoji,2-1,Big Mouth,Big Mouth,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Yoji Anjo; parody Shoji Ando [owner list 2026-10-28]
+138,0x83,松原,デンジャー,鮮血の牙,デンジャー松原,Matsunaga,Mitsuhiro,2-1,Matsubara,Danger,2-1,Bloody Fangs,Bloody Fangs,"[from FPD] [from Fire Pro S] owner list 2026-10-26: real Mitsuhiro Matsunaga; parody Danger Matsubara; short name too wide for the select list (Mitsuhiro 122px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+139,0x83,芦屋,Ｍｒ．,荒れ狂う業師,Ｍｒ．芦屋,Gannosuke,Mister,2-1,Ashiya,Mr.,2-1,Black Monk,Black Monk,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Mister Gannosuke; parody Mr. Ashiya; short name too wide for the select list (Gannosuke 142px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]
+140,0x03,高矢,久勝,血に飢えた狼,高矢久勝,Oya,Hisakatsu,2-1,Koya,Hisakatsu,2-1,Bloodthirsty Wolf,Bloodthirsty Wolf,[from FPD] [S: Hisakatsu Oya] [owner list 2026-10-28]
+141,0x03,石原,冬威,剛勇戦士,石原冬威,Ishikawa,Yuki,2-1,Ishihara,Toui,2-1,Mighty Warrior,Mighty Warrior,"[from FPD] alt. Kiuma Kunioku, Hiromitsu Kanehara [owner list 2026-10-28] [owner list 2026-10-29]"
+142,0x83,大月,ヘラクレス,スープレックスマスター,ヘラクレス大月,Otsuka,Alexander,2-1,Ozuki,Hercules,2-1,Suplex Master,Suplex Master,[from FPD]  [owner list 2026-10-28]
+143,0x03,榊,四五朗,インディのカリスマ,榊四五朗,Takagi,Sanshiro,2-1,Sakaki,Shigoro,2-1,Indie Charisma,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Sanshiro Takagi; parody: Shigoro Sakaki (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+144,0x03,ＨＡＮＺＯ,,漆黒の忍者,ＨＡＮＺＯ,GOEMON,,1-2,HANZO,,1-2,Jet-Black Ninja,Jet-Black Ninja,[from FPD]  [owner list 2026-10-28]
+145,0x83,高木,ダイナソー,マンモスファイター,ダイナソー高木,Sasaki,Mammoth,2-1,Takagi,Dinosaur,2-1,Mammoth Fighter,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Mammoth Sasaki; parody: Dinosaur Takagi (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+146,0x03,亡霊,,闘うお化け屋敷,亡霊,Onryo,,,Borei,,,Fighting Haunted House,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Onryo; parody: Borei (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+147,0x03,三鷹,竜斗,飛翔ハンター,三鷹竜斗,Hidaka,Ikuto,2-1,Mitaka,Ryuto,2-1,Soaring Hunter,Soaring Hunter,[from FPD] alt. another Battlarts junior [owner list 2026-10-28]
+148,0x03,折倉,雅夫,ミスター・トンパチ,折倉雅夫,Orihara,Masao,2-1,Orikura,Masao,2-1,Mr. Tonpachi,Mr. Tonpachi,[from FPD]  [owner list 2026-10-28]
+149,0x81,音羽,怒乱,浪花のエトワール,怒乱・音羽,Naniwa,Gran,2-1,Otowa,Doran,2-1,Star of Naniwa,Star of Naniwa,[from FPD] [from FPG] real: Gran Naniwa; parody: Doran Otowa [owner list 2026-10-28]
+150,0x81,ロシュモフ,ジャイアント,人間山脈,ジャイアント・ロシュモフ,Andre,the Giant,1-2,Giant,Roussimoff,1-2,8th Wonder of the World,Human Mountain,[from FPD] [from FPG] real: Andre the Giant; parody: Giant Roussimoff [owner list 2026-10-28]
+151,0x81,タイガー,マッド,血に飢えた虎,マッド・タイガー,Singh,Tiger Jeet,2-1,Tiger,Mad,2-1,Bloodthirsty Tiger,Bloodthirsty Tiger,[from FPD] [from FPG] real: Tiger Jeet Singh; parody: Mad Tiger [owner list 2026-10-28]
+152,0x03,ゴールデン,ハンマー,新・人類,ゴールデンハンマー,Goldberg,,,Golden,Hammer,1-2,The New Breed,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Goldberg; parody: Golden Hammer (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+153,0x81,エディ,マイティボウイ,肉弾小僧,マイティボウイ・エディ,Davey Boy,Smith,1-2,Eddie,Mighty Bowie,2-1,Battering Ram Kid,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Davey Boy Smith; parody: Mighty Bowie Eddie (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+154,0x03,タトゥー,,クレイジーアラビアン,タトゥー,Sabu,,1-2,Tattoo,,1-2,Crazy Arabian,Crazy Arabian,[from FPD] [from FPG] real: Sabu; parody: Tattoo [owner list 2026-10-28]
+155,0x03,レジーナ,,アジアの女傑,レジーナ,Chyna,,,Regina,,,Heroine of Asia,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Chyna; parody: Regina (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+156,0x01,ケリー,テキサン,ワイルドブロンコ,ケリー・テキサン,Terry,Funk,1-2,Kerry,Texan,1-2,The Funker,Wild Bronco,[from FPD] [from FPG] real: Terry Funk; parody: Kerry Texan [owner list 2026-10-28]
+157,0x01,ナイト,ブラスター,殺刃超特急,ナイト・ブラスター,Hawk,Warrior,1-2,Night,Blaster,1-2,Killer Express,Killer Express,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Hawk Warrior; parody Night Blaster [owner list 2026-10-28]
+158,0x01,アイアン,ブラスター,暴走機関車,アイアン・ブラスター,Animal,Warrior,1-2,Iron,Blaster,1-2,Runaway Train,Runaway Train,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Animal Warrior; parody Iron Blaster [owner list 2026-10-28]
+159,0x81,マックス,ファンクマスター,スーパーマッスル,ファンクマスター・マックス,Savage,Randy,2-1,Max,Funkmaster,2-1,Super Muscle,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Randy Savage; parody: Funkmaster Max (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+160,0x81,ラブ,ブラッド,ブラッドスコーピオン,ブラッド・ラブ,Bret Hart,,,Love,Brad,2-1,Blood Scorpion,, [owner list 2026-10-29]
+161,0x81,スミス,サージェント,豪腕ブルドッグ,サージェント・スミス,Steiner,Rick,2-1,Smith,Sergeant,2-1,Strong-Arm Bulldog,," [owner list 2026-10-29] [spelling fixed, owner 2026-10-29]"
+162,0x01,マスカラ,イーグルＪｒ．,ルチャ最強の遺伝子,マスカラ・イーグルＪｒ．,Caras Jr.,Dos,2-1,Mascara,Eagle Jr.,1-2,Lucha's Strongest Genes,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Dos Caras Jr.; parody: Mascara Eagle Jr. (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+163,0x81,ローズ,クレイジー,酔いどれジゴロ,クレイジー・ローズ,Hall,Scott,2-1,Rose,Crazy,2-1,Drunken Gigolo,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Scott Hall; parody: Crazy Rose (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+164,0x81,スパイク,ザ,シルバースコーピオン,ザ・スパイク,Sting,,1-2,Spike,The,2-1,Silver Scorpion,Silver Scorpion,[from FPD] [from FPG] real: Sting; parody: The Spike [owner list 2026-10-28]
+165,0x81,ディカス,セット,リングの殺戮者,セット・ディカス,Sid,Vicious,1-2,Dickas,Set,2-1,Slaughterer of the Ring,, [owner list 2026-10-29]
+166,0x81,バレット,ビル,絶対者,ビル・バレット,Jarrett,Jeff,2-1,Barrett,Bill,2-1,The Chosen One,The Absolute,[from FPD] alt. Booker T [owner list 2026-10-28]
+167,0x81,ＧＧ・ギガス,スマッシャー,フライングビースト,スマッシャー・ＧＧ・ギガス,Bigelow,Bam Bam,2-1,GG Gigas,Smasher,2-1,Flying Beast,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Bam Bam Bigelow; parody: Smasher GG Gigas (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+168,0x81,サントス,Ｅ,仮面の聖者,Ｅ・サントス,Santo,El Hijo Del,2-1,Santos,E.,2-1,Masked Saint,Masked Saint,[from FPD] [from FPG] real: Hijo del Santo; parody: E. Santos [owner list 2026-10-28]
+169,0x81,カオス,ネブラ,メヒコの魔豹,ネブラ・カオス,Casas,Negro,2-1,Chaos,Niebla,2-1,Demon Panther of Mexico,, [owner list 2026-10-29]
+170,0x81,シルバーＪｒ,Ｄ,白い魔人,Ｄ・シルバーＪｒ,Wagner Jr.,Doctor,2-1,Silver Jr.,D.,2-1,White Demon,," [owner list 2026-10-29] [parody short name <= 10 letters, play-test 2026-10-29]"
+171,0x01,ブラック,パンサー３,三代目暗黒虎仮面,ブラック・パンサー３,Tiger III,Black,2-1,Black,Panther 3,1-2,Third Dark Tiger Mask,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Black Tiger III; parody: Black Panther 3 (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+172,0x81,イーグル,マスカラ,荒鷲仮面,マスカラ・イーグル,Caras,Dos,2-1,Eagle,Mascara,2-1,Masked Eagle,Masked Eagle,[from FPD] [from FPG] real: Dos Caras; parody: Mascara Eagle [owner list 2026-10-28]
+173,0x81,コンドル,マスカラ,仮面大帝,マスカラ・コンドル,Mascaras,Mil,2-1,Condor,Mascara,2-1,Man of 1000 Masks,Masked Emperor,[from FPD] [from FPG] real: Mil Mascaras; parody: Mascara Condor; short name too wide for the select list (Mascaras 122px; ~112px fits) - no shorter form keeps the full name intact [owner list 2026-10-28]
+174,0x03,千堂,勇気,ハイクラスの新星,千堂勇気,Kondo,Yuki,2-1,Sendo,Yuki,2-1,New Star of High Class,New Star of High Class,[from FPD]  [owner list 2026-10-28]
+175,0x03,高石,俊樹,ドデカゴンの星,高石俊樹,Takahashi,Yoshiki,2-1,Takaishi,Toshiki,2-1,Star of the Octagon,Star of the Octagon,"[from FPD]  [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+176,0x03,菊間,要,グラップリングクレイジー,菊間要,Kikuta,Sanae,2-1,Kikuma,Kaname,2-1,Grappling Crazy,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Sanae Kikuta; parody: Kaname Kikuma (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+177,0x03,火野輪,伸人,バーニングハート,火野輪伸人,Minowa,Ikuhisa,2-1,Hinowa,Nobuhito,2-1,Burning Heart,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Ikuhisa Minowa; parody: Nobuhito Hinowa (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+178,0x03,桧垣,誠,ハイブリッドレスラー,桧垣誠,Funaki,Masakatsu,2-1,Higaki,Makoto,2-1,Hybrid Wrestler,Hybrid Wrestler,[from FPD] [from FPG] real: Masakatsu Funaki; parody: Makoto Higaki [owner list 2026-10-28]
+179,0x03,佐岳,雅之,怪獣殿下,佐岳雅之,Satake,Masaaki,2-1,Sadake,Masayuki,2-1,Prince of Monsters,Prince of Monsters,[from FPD]  [owner list 2026-10-28]
+180,0x03,峰村,崇,Ｕの落とし子,峰村崇,Tamura,Kiyoshi,2-1,Nemura,Takashi,2-1,Child of the U,Child of the U,"[from FPD] [from FPG] real: Kiyoshi Tamura; parody: Takashi Minemura [owner list 2026-10-28] [Z: short name = family name, as %ssN prints it in the story]"
+181,0x03,宝坂,大志,バイオニクスソルジャー,宝坂大志,Kosaka,Tsuyoshi,2-1,Hosaka,Taishi,2-1,Bionics Soldier,Bionics Soldier,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Tsuyoshi Kosaka; parody Taishi Hosaka [owner list 2026-10-28]
+182,0x03,金城,久志,若き仕事師,金城久志,Kanehara,Hiromitsu,2-1,Kaneshiro,Hisashi,2-1,Young Craftsman,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Hiromitsu Kanehara; parody: Hisashi Kaneshiro (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+183,0x03,加藤,フミヤ,格闘王子,加藤フミヤ,Sato,Rumina,2-1,Kato,Fumiya,2-1,Fighting Prince,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Rumina Sato; parody: Fumiya Kato (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+184,0x03,冴刃,明,世界の格闘王,冴刃明,Maeda,Akira,2-1,Saeba,Akira,2-1,World Fighting King,World Fighting King,[from FPD] [from FPG] real: Akira Maeda; parody: Akira Saeba [owner list 2026-10-28]
+185,0x01,ニクソン,ステイシー,５００戦無敗の男,ニクソン・ステイシー,Rickson,Gracie,1-2,Stacie,Nickson,2-1,Vale Tudo Bloodline,Vale Tudo Bloodline,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Rickson Gracie; parody Nixon Stacie [owner list 2026-10-28]
+186,0x01,ヴォイス,ステイシー,バーリトゥードの起源,ヴォイス・ステイシー,Gracie,Royce,2-1,Stacie,Voice,2-1,Origin of Vale Tudo,Origin of Vale Tudo,[from FPD]  [owner list 2026-10-28]
+187,0x81,ボヘミア,ケンタウロス,死角なき柔術王子,ケンタウロス・ボヘミア,Nogueira,Antonio Rodrigo,2-1,Bohemia,Centaurus,2-1,Flawless Jiu-Jitsu Prince,, [owner list 2026-10-29]
+188,0x81,チャックマン,トム,孤高の王者,トム・チャックマン,Coleman,Mark,2-1,Chuckman,Tom,2-1,Lone Champion,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Mark Coleman; parody: Tom Chuckman (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+189,0x81,シュトゥルム,ベーム,闘う高層ビル,ベーム・シュトゥルム,Schilt,Semmy,2-1,Sturm,Bem,2-1,Fighting Skyscraper,Fighting Skyscraper,[from FPD]  [owner list 2026-10-28]
+190,0x81,ロブハンキン,セルゲイ,ロシアの切り札,セルゲイ・ロブハンキン,Igor,Vovchanchyn,1-2,Robhankin,Sergei,2-1,Russia's Trump Card,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Igor Vovchanchyn; parody: Sergei Robhankin (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+191,0x83,バッドエッジ,Ｂ．Ｂ．,ビッグブラザー,Ｂ．Ｂ．バッドエッジ,Goodridge,Gary,2-1,Badedge,B.B.,2-1,Big Brother,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Gary Goodridge; parody: B.B. Badedge (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+192,0x81,ベアー,マイク,ユーラシア最強の男,マイク・ベアー,Kerr,Mark,2-1,Bear,Mike,2-1,The Smashing Machine,Strongest Man Ever,[from FPD] alt. Mark Coleman [owner list 2026-10-28] [owner list 2026-10-29]
+193,0x81,ハーロック,ケイン,シューティングヘラクレス,ケイン・ハーロック,Ken,Shamrock,1-2,Harlock,Kain,2-1,Most Dangerous Man,Shooting Hercules,[from FPD]  [owner list 2026-10-28]
+194,0x81,ジルバ,アンドレイ,最終人間兵器,アンドレイ・ジルバ,Silva,Wanderlei,2-1,Silva,Andrei,2-1,Ultimate Human Weapon,, [owner list 2026-10-29]
+195,0x81,ガブリエル,リカード,魔獣の剛拳,リカード・ガブリエル,Bitsadze,Tariel,2-1,Gabriel,Ricardo,2-1,Beast's Iron Fist,Beast's Iron Fist,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Tariel Bitsadze; parody Ricardo Gabriel [owner list 2026-10-28]
+196,0x81,バーン,ウォルフ,コマンドウルフ,ウォルフ・バーン,Han,Volk,2-1,Burn,Wolf,2-1,Commando Wolf,Commando Wolf,[from FPD] [from FPG] real: Volk Han; parody: Wolf Burn [owner list 2026-10-28]
+197,0x81,ハイマン,ランス,ブルドッグファイター,ランス・ハイマン,Nijman,Hans,2-1,Hyman,Lance,2-1,Bulldog Fighter,Bulldog Fighter,[from FPD] [from Fire Pro S] owner list 2026-10-26: real Hans Nijman; parody Lance Hyman [owner list 2026-10-28]
+198,0x81,カール,チーター,Ｓ－１の覇者,チーター・カール,Aerts,Peter,2-1,Karl,Cheetah,2-1,The Dutch Lumberjack,S-1 Champion,"[from FPD] alt. Ernesto Hoost, Branko Cikatic [owner list 2026-10-28]"
+199,0x81,ゴースト,ホーネット,黒き稲妻,ホーネット・ゴースト,Hoost,Ernesto,2-1,Ghost,Hornet,2-1,Mr. Perfect,Black Lightning,"[from FPD] alt. Maurice Smith (Fire Pro S: ""Black Lightning"") [owner list 2026-10-28]"
+200,0x81,ゲルハルト,ベイク,荒ぶる豪腕,ベイク・ゲルハルト,Mike,Bernardo,1-2,Gerhart,Bake,2-1,Raging Power Arm,Raging Power Arm,"[from FPD] alt. Jerome Le Banner, Sam Greco [owner list 2026-10-28] [owner list 2026-10-29]"
+201,0x81,プロポリス,ミクロ,ザ・ポリスマン,ミクロ・プロポリス,CroCop,Mirko,2-1,Pro-Police,Micro,2-1,The Policeman,, [owner list 2026-10-29]
+202,0x81,サバンナ,ポール,暴走タイフーン,ポール・サバンナ,Le Banner,Jerome,2-1,Savannah,Paul,2-1,Runaway Typhoon,, [owner list 2026-10-29]
+203,0x81,ロッシュ,ネバーランド,地下プロレスの覇者,ネバーランド・ロッシュ,Bock,Roland,2-1,Roche,Neverland,2-1,Underground King,Underground King,[from FPD] [from FPG] real: Roland Bock; parody: Neverland Roche [owner list 2026-10-28]
+204,0x81,アレビン,ヘラクレス,最強の人類,ヘラクレス・アレビン,Karelin,Aliksandr,2-1,Alevin,Hercules,2-1,Strongest Human,Strongest Human,[from FPD]  [owner list 2026-10-28]
+205,0x81,ファグ,アンドレ,鉄腕,アンドレ・ファグ,Hug,Andy,2-1,Hag,Andre,2-1,The Blue-Eyed Samurai,Iron Arm,[from FPD] parody ファグ spelled Fague to avoid a slur [owner list 2026-10-28]
+206,0x83,木下,センネン,武士道,センネン木下,Inoue,Ensen,2-1,Kinoshita,Sennen,2-1,Bushido,, [owner list 2026-10-29]
+207,0x83,那須香,ティグレス,スマッシュハーツ・天,ティグレス那須香,Asuka,Lioness,2-1,Nasuka,Tigress,2-1,Smash Hearts: Heaven,Smash Hearts: Heaven,[from FPD] Smash Hearts = Crush Gals [owner list 2026-10-28]
+208,0x03,中世,静香,スマッシュハーツ・地,中世静香,Nagayo,Chigusa,2-1,Nakayo,Shizuka,2-1,Smash Hearts: Earth,Smash Hearts: Earth,[from FPD]  [owner list 2026-10-28]
+209,0x03,木下,涼子,マッドブルパワー,木下涼子,Kyoko,Inoue,1-2,Kinoshita,Ryoko,2-1,Mad Bull Power,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Kyoko Inoue; parody: Ryoko Kinoshita (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+210,0x03,神咲,しおり,女梶原,神咲しおり,Kandori,Shinobu,2-1,Kanzaki,Shiori,2-1,Female Kajiwara,Female Kajiwara,"[from FPD] nick: Kajiwara = the game's Fujiwara [owner list 2026-10-28] [owner list 2026-10-29] [spelling fixed, owner 2026-10-29]"
+211,0x01,ラジャ,ダンク,密林の覇者,ラジャ・ダンク,Kong,Aja,2-1,Raja,Dunk,1-2,Jungle Ruler,Jungle Ruler,[from FPD]  [owner list 2026-10-28]
+212,0x83,西京,グレネード,浪花の爆弾女,グレネード西京,Kansai,Dynamite,2-1,Saikyo,Grenade,2-1,Bomb Girl of Naniwa,Bomb Girl of Naniwa,[from FPD]  [owner list 2026-10-28]
+213,0x03,福生,有紀子,ハードキッカー,福生有紀子,Hotta,Yumiko,2-1,Fussa,Akiko,2-1,Hard Kicker,Hard Kicker,[from FPD]  [owner list 2026-10-28]
+214,0x03,横田,奈々美,飛翔女神,横田奈々美,Toyota,Manami,2-1,Yokota,Nanami,2-1,Soaring Goddess,Soaring Goddess,[from FPD]  [owner list 2026-10-28]
+215,0x03,南斗,光,ヴァイオレントクィーン,南斗光,Hokuto,Akira,2-1,Nanto,Hikaru,2-1,Violent Queen,Violent Queen,[from FPD]  [owner list 2026-10-28]
+216,0x03,木下,香奈子,元祖ビジュアル女王,木下香奈子,Takako,Inoue,1-2,Kinoshita,Kanako,2-1,Original Visual Queen,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Takako Inoue; parody: Kanako Kinoshita (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+217,0x03,坂田,綾乃,ミス・マリポーサ,坂田綾乃,Hamada,Ayako,2-1,Sakata,Ayano,2-1,Miss Mariposa,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Ayako Hamada; parody: Ayano Sakata (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+218,0x83,高尾,ブルドーザ,最強の女子レスラー,ブルドーザ高尾,Bull,Nakano,1-2,Takao,Bulldozer,2-1,Strongest Woman Wrestler,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Bull Nakano; parody: Bulldozer Takao (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html) [short name <= 10 letters, play-test 2026-10-29]"
+219,0x81,クラウザー,カルロス,孤高の神様,カルロス・クラウザー,Gotch,Karl,2-1,Krauser,Karlos,2-1,Lone God,Lone God,[from FPD] [from FPG] real: Karl Gotch [owner list 2026-10-28]
+220,0x81,フェイズ,Ｒ・Ｊ,不敗の鉄人,Ｒ・Ｊ・フェイズ,Thesz,Lou,2-1,Phase,R.J.,2-1,Iron Man,Iron Man,[from FPD] [from FPG] real: Lou Thesz; parody: R.J. Phase [owner list 2026-10-28]
+221,0x03,力皇,斬,マットの創世主,力皇斬,Rikidozan,,,Rikio,Zan,1-2,Creator of the Mat,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Rikidozan; parody: Rikio Zan (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+222,0x03,蔵野,金太郎,怪物倶楽部の首領,蔵野金太郎,Hoshino,Kantaro,2-1,Kurano,Kintaro,2-1,Monster Club Boss,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Kantaro Hoshino; parody: Kintaro Kurano (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+223,0x03,中山,俊吾,スーパールーキー,中山俊吾,Nakamura,Shinsuke,2-1,Nakayama,Shungo,2-1,Super Rookie,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Shinsuke Nakamura; parody: Shungo Nakayama (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+224,0x03,榊原,竜二,怪物シューター,榊原竜二,Yanagisawa,Ryushi,2-1,Sakakibara,Ryuji,2-1,Monster Shooter,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Ryushi Yanagisawa; parody: Ryuji Sakakibara (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+225,0x81,ジャッカル,ブルー,モンゴルの星,ブルー・ジャッカル,Blue Wolf,,,Jackal,Blue,2-1,Star of Mongolia,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Blue Wolf; parody: Blue Jackal (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+226,0x03,雷,,スモウタンク,雷,Arashi,,,Ikazuchi,,,Sumo Tank,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Arashi; parody: Ikazuchi (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+227,0x03,源,武志,王道特攻隊長,源武志,Miyamoto,Kazushi,2-1,Minamoto,Takeshi,2-1,King's Road Vanguard,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Kazushi Miyamoto; parody: Takeshi Minamoto (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+228,0x81,ジェノサイド,ザ,リーサルウェポン,ザ・ジェノサイド,Gladiator,The,2-1,Genocide,The,2-1,Lethal Weapon,,"[from FPS] real: The Gladiator; parody: The Genocide - short name = last word, check"
+229,0x81,チャン,カンフー,ヤングタイガー,カンフー・チャン,Yang,Jimmy,2-1,Chang,Kungfu,2-1,Young Tiger,, [owner list 2026-10-29]
+230,0x03,松浦,剛,人間建設重機,松浦剛,Sugiura,Takashi,2-1,Matsuura,Tsuyoshi,2-1,Human Heavy Machinery,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Takashi Sugiura; parody: Tsuyoshi Matsuura (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+231,0x03,滝,勝,激突ゴリラ,滝勝,Hashi,Makoto,2-1,Taki,Masaru,2-1,Crashing Gorilla,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Makoto Hashi; parody: Masaru Taki (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+232,0x03,ＫＡＺＵＹＡ,,シューティングスター,ＫＡＺＵＹＡ,KENTA,,,KAZUYA,,,Shooting Star,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: KENTA; parody: KAZUYA (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+233,0x81,サファリ,バッド,肉弾太鼓腹魔人,バッド・サファリ,Ghaffari,Mat,2-1,Safari,Bad,2-1,Pot-Bellied Bruiser,, [owner list 2026-10-29]
+234,0x81,べムスター,ザ,蘇った超獣,ザ・べムスター,Predator,The,2-1,Bemster,The,2-1,Resurrected Beast,, [owner list 2026-10-29]
+235,0x81,モレノ,スティール,策略伯爵,スティール・モレノ,Corino,Steve,2-1,Moreno,Steel,2-1,Scheming Count,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Steve Corino; parody: Steel Moreno (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+236,0x03,大河原,達人,蹴撃魔術師,大河原達人,Ogasawara,Kazuhiko,2-1,Okawara,Tatsuhito,2-1,Kicking Magician,, [owner list 2026-10-29]
+237,0x81,リー,ボウ,天駆ける牙,ボウ・リー,Low-Ki,,,Bow-Li,,,Sky-Racing Fang,, [owner list 2026-10-29]
+238,0x03,会津,義幸,ワンダーパワー,会津義幸,Yatsu,Yoshiaki,2-1,Aizu,Yoshiyuki,2-1,Wonder Power,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Yoshiaki Yatsu; parody: Yoshiyuki Aizu (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+239,0x03,阪谷,悟,若き蹴撃手,阪谷悟,Sakata,Wataru,2-1,Sakaya,Satoru,2-1,Young Striker,, [owner list 2026-10-29]
+240,0x03,観月,みつる,カミソリファイター,観月みつる,Suzuki,Minoru,2-1,Mizuki,Mitsuru,2-1,Razor Fighter,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Minoru Suzuki; parody: Mitsuru Mizuki (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+241,0x03,梨田,秀吉,最強柔道王,梨田秀吉,Yoshida,Hidehiko,2-1,Nashida,Hideyoshi,2-1,Strongest Judo King,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Hidehiko Yoshida; parody: Hideyoshi Nashida (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"
+242,0x81,ポップ,サム,漆黒の肉弾野獣,サム・ポップ,Sapp,Bob,2-1,Popp,Sam,2-1,Jet-Black Beast,, [owner list 2026-10-29]
+243,0x03,高橋,萌,モエ☆ラッチ,高橋萌,Nakanishi,Momoe,2-1,Takahashi,Moe,2-1,Moe-Latch,,"[research 2026-10-29, owner list 2026-10-29 agrees] real: Momoe Nakanishi; parody: Moe Takahashi (https://prowrestlernickname.blogspot.com/2019/03/fireprowrestlingz.html)"

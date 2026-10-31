@@ -1,0 +1,68 @@
+# Speaker labels in the story that are words, not a wrestler code (記者： Reporter). The build
+# adds the colon. Real people the story names (猪木, 長州...) stay their real names in both builds.
+japanese,uses,english,notes
+記者,898,Reporter,
+ライガー,739,Liger,
+アナウンサー,604,Announcer,
+山田,383,Yamada,
+関西記者,221,Kansai Reporter,
+湊,140,Minato,
+前田,65,Maeda,
+後輩,59,Junior,provisional reading
+解説者,54,Commentator,
+船木,46,Funaki,
+練習生,32,Trainee,
+猪木,32,Inoki,
+真崎,27,Masaki,
+中内,25,<Nakauchi>,
+関西記者の記事,24,Kansai Reporter's Article,
+田辺,19,Tanabe,
+リングアナウンサー,16,Ring Announcer,
+佐野,16,Sano,
+藤原,16,Fujiwara,
+リングアナ,14,Ring Announcer,
+高田,14,Takada,
+坂口：,13,Sakaguchi,the original has a doubled colon here
+街行く人,9,Passerby,
+ロード,9,<Road>,provisional reading
+石井,9,Ishii,
+スレンダー,8,<Slender>,provisional reading
+パイオニア豪,7,Pioneer Go,provisional reading
+田中,7,Tanaka,
+馳,7,Hase,
+小鉄,7,Kotetsu,
+観客,6,Fan,
+大谷,6,Otani,
+外人記者,6,Foreign Reporter,
+若手,5,Young Boy,provisional reading
+八薙,5,Yanagi,provisional reading
+若手Ａ,5,Young Boy A,
+？？,5,??,
+蝶野,5,Chono,
+先輩Ａ,4,Senior A,
+先輩Ｂ,4,Senior B,
+ホーク,4,<Hawk>,
+キラー・%ss37,4,Killer %ss37,
+解説の関西記者,4,Kansai Reporter (Commentary),
+長州,4,Choshu,
+日雇い労働者,3,Day Laborer,
+ドゥガン,3,<Doogan>,
+暗黒坊,3,<Ankokubo>,provisional reading
+白陽坊,3,<Hakuyobo>,provisional reading
+%sl161,3,%sl161,
+ムタ,3,Muta,
+２人,2,Both,
+観客Ａ,2,Fan A,
+観客Ｂ,2,Fan B,
+客Ａ,2,Fan A,
+客Ｂ,2,Fan B,
+大橋,2,Ohashi,
+ティグレ,2,Tigre,
+坂口,2,Sakaguchi,
+高田：,2,Takada,the original has a doubled colon here
+観衆,1,Crowd,
+解説者（%ss42）,1,Commentator (%ss42),
+若手Ｂ,1,Young Boy B,
+レフェリー,1,Referee,
+アレックス,1,<Alex>,
+石井館長,1,Director Ishii,

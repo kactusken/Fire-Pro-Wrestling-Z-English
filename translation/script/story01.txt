@@ -1,0 +1,8231 @@
+# Story mode, scenario 1 (STORY.OAH SCENA\STORY01.STO). One block per page; ids are
+# story.message.page. Only the text lines are here: the build keeps each page's speaker and codes,
+# puts in the English, word-wraps it and encodes it for the story window.
+# Room: 20 cells a line, 4 lines a page counting the speaker line (so 3 text lines with a speaker,
+# 4 without). English is drawn two letters a cell: about 40 characters a line, 120 a page with a
+# speaker. %ssN is wrestler N's short name (roster), drawn one cell a letter. Write plain lines;
+# your line breaks are kept where they fit, and long lines are wrapped.
+# Codes: %ssN name (keep), %c0 / %c1 colour (keep where they are), %sw/%st/%sk match results.
+# Speaker labels that are words (記者 Reporter) are in translation/text/speakers.csv.
+# Choices and chapter titles (ids C...) are one line each: 40 characters at most.
+
+@ 1.000.00
+# speaker: 氷川 (%ss66)
+JP 　正直、不安はあった。
+EN Honestly, I had my doubts.
+
+@ 1.000.01
+# speaker: 氷川 (%ss66)
+JP 　%ss58さん、
+JP 　%ss59さん亡き後、
+EN With %ss58 and %ss59 gone,
+
+@ 1.000.02
+# speaker: 氷川 (%ss66)
+JP 　果たして俺が
+JP 　皆を引っ張って行けるかどうか・・・
+EN could I really lead everyone...?
+
+@ 1.000.03
+JP 　ファンが新生ＯＪＰを
+JP 　支持してくれるかどうか・・・
+EN Would the fans stand behind the new <OJP>...?
+
+@ 1.000.04
+# speaker: 氷川 (%ss66)
+JP 　障害は
+JP 　これからも数多くあるだろう。
+EN There will be plenty more obstacles ahead.
+
+@ 1.000.05
+# speaker: 氷川 (%ss66)
+JP 　だが、結局
+JP 　前に進むしかないんだ。
+JP 　考えたってしょうがない。
+EN But in the end, all I can do is keep moving forward. No use worrying about it.
+
+@ 1.000.06
+# speaker: 氷川 (%ss66)
+JP 　俺は、俺の信じるプロレスをやり続け、
+JP 　この道を極める・・・！
+EN I'll keep doing the pro wrestling I believe in, and master this path...!
+
+@ 1.000.07
+# speaker: 氷川 (%ss66)
+JP 　更なる新しさを目指して
+JP 　俺は邁進する・・・！
+EN I'll push on, always reaching for something new...!
+
+@ 1.000.08
+# speaker: 氷川 (%ss66)
+JP 　それが、プロレスラー
+JP 　%ss66の生き方だからな。
+JP 　%sf66
+EN Because that's how %ss66 lives as a pro wrestler.
+EN %sf66
+
+@ 1.004.00
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰ対ＶＪＰの交流戦は、俺の予想を
+JP 　はるかに上回る盛り上がりをみせた。
+EN The <OJP> vs. <VJP> interpromotional series was a far bigger hit than I ever expected.
+
+@ 1.004.01
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰのレスラーと
+JP 　ＶＪＰのレスラーが闘うことを、
+EN <OJP> wrestlers fighting <VJP> wrestlers...
+
+@ 1.004.02
+# speaker: 氷川 (%ss66)
+JP 　ファンが
+JP 　いかに期待していたかがよく分かる。
+EN It showed just how badly the fans had been waiting for it.
+
+@ 1.004.03
+# speaker: 氷川 (%ss66)
+JP 　俺は、これからもファンを
+JP 　魅了するために邁進する。
+EN I'll keep pushing on to thrill the fans,
+
+@ 1.004.04
+# speaker: 氷川 (%ss66)
+JP 　自分の目指す、理想のプロレスを
+JP 　実現するためにも・・・！
+EN and to make my ideal of pro wrestling a reality...!
+
+@ 1.005.00
+# speaker: 記者
+JP 「%ss1さん・・・！！
+JP 　%ss1さん！！
+JP 　一言いいですか！？」
+EN "%ss1...!! %ss1!! Can we get a word?!"
+
+@ 1.005.01
+# speaker: 記者
+JP 「いよいよ今日のメインイベントで
+JP 　%ss66選手と
+JP 　闘うことになりましたが、」
+EN "Tonight's main event will finally see you face %ss66,"
+
+@ 1.005.02
+# speaker: 記者
+JP 「今の心境をお聞かせ下さい！！」
+EN "How are you feeling right now?!"
+
+@ 1.006.00
+# speaker: 力丸 (%ss1)
+JP 「俺は今まで、
+JP 　他人なんか滅多にほめたことないけど、
+JP 　%ss66は本当に強い。」
+EN "I hardly ever praise anybody, but %ss66 is the real deal."
+
+@ 1.006.01
+# speaker: 力丸 (%ss1)
+JP 「何が強いって、精神力がな。」
+EN "And what makes him strong is his mind."
+
+@ 1.006.02
+# speaker: 力丸 (%ss1)
+JP 「あいつは
+JP 　過去のしがらみを断ち切って、
+JP 　２つの団体に接点を作った。」
+EN "He cut ties with the past and built a bridge between two promotions."
+
+@ 1.006.03
+# speaker: 力丸 (%ss1)
+JP 「俺が奴の立場だったら
+JP 　こうは出来ない。
+JP 　結構な策士だよ。」
+EN "If I were in his shoes, I couldn't have pulled that off. He's quite the schemer."
+
+@ 1.006.04
+# speaker: 力丸 (%ss1)
+JP 「ただ、試合となれば別だけどな。」
+EN "But a match is a different story."
+
+@ 1.006.05
+# speaker: 力丸 (%ss1)
+JP 「交流戦とは銘打っているが、
+JP 　結局は潰し合いだ。」
+EN "They call it an interpromotional series, but in the end it's a war."
+
+@ 1.006.06
+# speaker: 力丸 (%ss1)
+JP 「リングに上がれば
+JP 　俺は絶対容赦しねえぞ・・・！」
+EN "Once I'm in that ring, I'm showing no mercy...!"
+
+@ 1.007.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　ついに%ss1選手との
+JP 　闘いの日がやって来ました！！」
+EN "%ss66!! The day of your fight with %ss1 has finally come!!"
+
+@ 1.007.01
+# speaker: 記者
+JP 「プロレスの歴史に
+JP 　新たな足跡を残す当事者として、
+JP 　何か語るべきことはありますか！？」
+EN "As a man about to make pro wrestling history, is there anything you'd like to say?!"
+
+@ 1.007.02
+# speaker: 氷川 (%ss66)
+JP 「%ss1さんには
+JP 　本当に感謝しています。」
+EN "I'm truly grateful to %ss1."
+
+@ 1.007.03
+# speaker: 氷川 (%ss66)
+JP 「あの人の仲介がなかったら、
+JP 　今回の交流戦は
+JP 　実現しませんでしたからね。」
+EN "Without him stepping in as go-between, this series would never have happened."
+
+@ 1.007.04
+# speaker: 氷川 (%ss66)
+JP 「レスラーとしても尊敬してますよ。
+JP 　ただし、『サソリ』は
+JP 　絶対に喰らいたくないけどね。」
+EN "I respect him as a wrestler, too. But I'd really rather not eat the Scorpion."
+
+@ 1.007.05
+# speaker: 氷川 (%ss66)
+JP 「とにかく全力で行きます。」
+EN "Anyway, I'm going all out."
+
+@ 1.007.06
+# speaker: 記者
+JP 「ＶＪＰとの完全対決を考えると、
+JP 　%ss0派との交流戦も
+JP 　浮かんでくるんですが・・・」
+EN "An all-out war with <VJP> makes people think of a series with %ss0's faction too..."
+
+@ 1.007.07
+# speaker: 記者
+JP 「その辺はどうなんでしょうか？」
+EN "What can you tell us about that?"
+
+@ 1.007.08
+# speaker: 氷川 (%ss66)
+JP 「さあ、それについては
+JP 　今の時点では伏せておきます。」
+EN "Well, I'll keep that under wraps for now."
+
+@ 1.007.09
+# speaker: 記者
+JP 「ありえるんですか・・・！？
+JP 　%ss0選手との試合・・・
+JP 　ありえるんですか！？」
+EN "Is it possible...?! A match with %ss0... is it possible?!"
+
+@ 1.007.10
+# speaker: 氷川 (%ss66)
+JP 「物事、不可能だと思ったら
+JP 　それ以上、何も進展しないですよ。
+JP 　そこで終わっちゃう。」
+EN "If you decide something is impossible, it never goes any further. That's where it ends."
+
+@ 1.007.11
+# speaker: 氷川 (%ss66)
+JP 「最後は結局、
+JP 　自分の意志力だと思うんです。」
+EN "In the end, I think it all comes down to willpower."
+
+@ 1.007.12
+# speaker: 氷川 (%ss66)
+JP 「ファンが本当にそれを望むなら、
+JP 　それを実現させようと努力するのが
+JP 　本当のプロですからね。」
+EN "If the fans truly want something, a real pro works hard to make it happen."
+
+@ 1.007.13
+# speaker: 記者
+JP 「%ss66さん・・・
+JP 　これからのＯＬＩＶＥ　ＪＡＰＡＮに
+JP 　期待します！！」
+EN "%ss66... We're expecting big things from <OLIVE JAPAN>!!"
+
+@ 1.007.14
+# speaker: 記者
+JP 「メインイベント、
+JP 　頑張って下さい！！」
+EN "Good luck in the main event!!"
+
+@ 1.008.00
+# speaker: 氷川 (%ss66)
+JP 　不可能を可能にする力・・・
+JP 　それは、誰しもが持ちえる意志の力だ。
+EN The power to make the impossible possible... It's willpower, and anyone can have it.
+
+@ 1.008.01
+# speaker: 氷川 (%ss66)
+JP 　諦めれば、そこで
+JP 　全てが終わってしまう・・・
+EN Give up, and it all ends right there...
+
+@ 1.008.02
+# speaker: 氷川 (%ss66)
+JP 　俺は諦めるわけには
+JP 　いかないんだ・・・！
+EN I can't afford to give up...!
+
+@ 1.008.03
+# speaker: 氷川 (%ss66)
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮという
+JP 　巨大な船を引っ張って行くためにも、
+EN If I'm going to steer a ship as huge as <OLIVE JAPAN>,
+
+@ 1.008.04
+# speaker: 氷川 (%ss66)
+JP 　俺は闘い続ける！！
+EN I have to keep fighting!!
+
+@ 1.010.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　すごいですよ！！
+JP 　すばらしい試合でした！！」
+EN "%ss66!! Incredible!! What a fantastic match!!"
+
+@ 1.010.01
+# speaker: 記者
+JP 「初めてのＶＪＰマットは
+JP 　どうでしたか！？」
+EN "How was your first time in a <VJP> ring?!"
+
+@ 1.010.02
+# speaker: 氷川 (%ss66)
+JP 「ハッキリ言って、やりづらかったよ。」
+EN "Frankly, it was tough to work in."
+
+@ 1.010.03
+JP 「どの辺がって言われると、
+JP 　正確には答えられないけどね。」
+EN "If you ask me why, I can't really pin it down."
+
+@ 1.010.04
+JP 「リズムと言うか・・・
+JP 　その団体特有の流れみたいなのが
+JP 　あるでしょう？」
+EN "The rhythm, I guess... Every promotion has its own flow, you know?"
+
+@ 1.010.05
+JP 「今日は、そういうのに上手く対応できた。
+JP 　まあ、一度覚えちゃうと
+JP 　後はこっちのペースでやれるから。」
+EN "Today I adapted to it well. Once you learn it, you can fight at your own pace."
+
+@ 1.012.00
+# speaker: 記者
+JP 「%ss7選手！！
+JP 　本当にすごい試合でした！！」
+EN "%ss7!! That was an amazing match!!"
+
+@ 1.012.01
+# speaker: 記者
+JP 「歴史的一戦に勝利した、
+JP 　今のご気分を聞かせて下さい！！」
+EN "You won a historic bout! Tell us how you feel right now!!"
+
+@ 1.013.00
+# speaker: 高橋 (%ss7)
+JP 「やばかったわ、マジで。」
+EN "Man, that was close. Seriously."
+
+@ 1.013.01
+# speaker: 高橋 (%ss7)
+JP 「最後なんて、よう覚えとらん。
+JP 　本能や。」
+EN "I hardly remember the end. Pure instinct."
+
+@ 1.013.02
+# speaker: 高橋 (%ss7)
+JP 「俺の脳のシナプスが
+JP 　勝手に反応したいうか・・・」
+EN "Like the synapses in my brain just fired on their own..."
+
+@ 1.013.03
+# speaker: 高橋 (%ss7)
+JP 「とにかく、しんどかったわ。」
+EN "Anyhow, that was rough."
+
+@ 1.014.00
+# speaker: 氷川 (%ss66)
+JP 　負けたことに
+JP 　言い訳はできない・・・
+EN There are no excuses for losing...
+
+@ 1.014.01
+# speaker: 氷川 (%ss66)
+JP 　だが、
+JP 　ＶＪＰプロレスの流れのようなものは
+JP 　つかめたと思っている。
+EN But I think I got a feel for the flow of <VJP>-style wrestling.
+
+@ 1.014.02
+# speaker: 氷川 (%ss66)
+JP 　本当の闘いはこれからだ・・・！
+EN The real fight starts now...!
+
+@ 1.020.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん、
+JP 　役員会どうでした・・・？」
+EN "%ss66, how did the board meeting go...?"
+
+@ 1.020.01
+# speaker: 氷川 (%ss66)
+JP 「だめだなこりゃって感じだよ。」
+EN "Hopeless, if you ask me."
+
+@ 1.020.02
+# speaker: 氷川 (%ss66)
+JP 「ハッキリ言って、ＯＪＰの首脳陣は
+JP 　新しいプロレスを模索しようなんて考えは
+JP 　まったく無い。」
+EN "Frankly, the <OJP> brass have no interest at all in looking for a new kind of pro wrestling."
+
+@ 1.020.03
+# speaker: 氷川 (%ss66)
+JP 「今のままで充分だと
+JP 　思っているんだ。」
+EN "They think things are fine the way they are."
+
+@ 1.020.04
+# speaker: 富樫 (%ss67)
+JP 「現状のプロレス界に
+JP 　危機感を持っているのは、」
+EN So the only ones who sense a crisis in the wrestling world
+
+@ 1.020.05
+# speaker: 富樫 (%ss67)
+JP 「実際にリングで闘っている
+JP 　俺達だけってわけですか・・・。」
+EN "are us, the guys actually fighting in the ring...?"
+
+@ 1.020.06
+# speaker: 氷川 (%ss66)
+JP 「選手の中にも保守派はいるぞ。」
+EN "There are conservatives among the wrestlers too."
+
+@ 1.020.07
+# speaker: 氷川 (%ss66)
+JP 「%ss44なんか、
+JP 　自分の考えなんて
+JP 　これっぽっちも持ってないだろう。」
+EN "Take %ss44. He hasn't got an idea of his own in his head."
+
+@ 1.020.08
+# speaker: 氷川 (%ss66)
+JP 「あいつは昔からそうだ。
+JP 　自分から何かしようという気が
+JP 　まったく無い。」
+EN "He's always been like that. Never the type to do anything on his own."
+
+@ 1.020.09
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん・・・なんとか
+JP 　そういう選手達との結束力を
+JP 　高められませんかね？」
+EN "%ss66... Isn't there some way we can unite with guys like that?"
+
+@ 1.020.10
+# speaker: 富樫 (%ss67)
+JP 「俺達、実際にリングに
+JP 　上がっている者が団結しなければ、
+JP 　何も変わって行かないと思うんですよ。」
+EN "If those of us who actually step into the ring don't band together, nothing will ever change."
+
+@ 1.020.11
+# speaker: 氷川 (%ss66)
+JP 「%ss67、逆だよそれは。」
+EN "%ss67, you've got it backwards."
+
+@ 1.020.12
+# speaker: 氷川 (%ss66)
+JP 「意見の合わない者同士が徹底的に闘う。
+JP 　それこそが
+JP 　プロレスの醍醐味じゃないか。」
+EN "People who disagree fighting it out all the way. That's the real thrill of pro wrestling."
+
+@ 1.020.13
+# speaker: 氷川 (%ss66)
+JP 「ファンはな、
+JP 　個々のレスラーの主張に共鳴して
+JP 　声援を送ってくれるんだ。」
+EN "The fans connect with what each wrestler stands for, and that's why they cheer."
+
+@ 1.020.14
+# speaker: 氷川 (%ss66)
+JP 「プロレスラーは
+JP 　ファンの夢の塊なんだよ。」
+EN "Pro wrestlers are the fans' dreams made flesh."
+
+@ 1.020.15
+# speaker: 氷川 (%ss66)
+JP 「信念をもって闘うこと、
+JP 　それが俺達の仕事だ。」
+EN "Fighting for what you believe in, that's our job."
+
+@ 1.020.16
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん・・・。」
+EN "%ss66..."
+
+@ 1.020.17
+# speaker: 氷川 (%ss66)
+JP 「%ss44とは徹底的にやる。」
+EN "I'm going all the way with %ss44."
+
+@ 1.020.18
+# speaker: 氷川 (%ss66)
+JP 「その抗争の中から、俺は
+JP 　新しいアイディアを見つけ出し
+JP 　先へ進む。」
+EN "Out of that feud, I'll find new ideas and move forward."
+
+@ 1.020.19
+# speaker: 氷川 (%ss66)
+JP 「この闘いは今までとは違うぞ。
+JP 　ＯＪＰの全てを巻き込んだ大変革だ。」
+EN "This fight won't be like before. It's a revolution that'll drag in all of <OJP>."
+
+@ 1.020.20
+# speaker: 氷川 (%ss66)
+JP 「俺は必ず、ＯＬＩＶＥ　ＪＡＰＡＮに
+JP 　新しい流れを作ってやる・・・！」
+EN "I'm going to bring a new current to <OLIVE JAPAN>, no matter what...!"
+
+@ 1.020.21
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん、
+JP 　俺もついて行きますよ！」
+EN "%ss66, I'm with you!"
+
+@ 1.020.22
+# speaker: 富樫 (%ss67)
+JP 「いっしょに新しい
+JP 　ＯＪＰを築きましょう！！」
+EN "Let's build a new <OJP> together!!"
+
+@ 1.021.00
+# speaker: 氷川 (%ss66)
+JP 　俺と%ss67とで始めた
+JP 『ＯＪＰ大変革戦争』は、
+EN The "<OJP> Revolution War" that %ss67 and I began
+
+@ 1.021.01
+# speaker: 氷川 (%ss66)
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮという団体を、
+JP 　内部的なものまで含めて
+JP 　完全に２つに分断した。
+EN split the <OLIVE JAPAN> promotion completely in two, right down to the front office.
+
+@ 1.021.02
+# speaker: 氷川 (%ss66)
+JP 　俺はＯＪＰの社長でありながら
+JP 　反逆者という
+JP 　複雑な立場をコントロールしつつ、
+EN I was <OJP>'s president and a rebel at the same time. Juggling that tricky position,
+
+@ 1.021.03
+# speaker: 氷川 (%ss66)
+JP 　%ss44達
+JP 　保守派と闘い続けた。
+EN I kept fighting %ss44 and the rest of the conservatives.
+
+@ 1.021.04
+# speaker: 氷川 (%ss66)
+JP 　あからさまに変革を掲げて
+JP 　暴走し始めた俺に、
+JP 　ＯＪＰ首脳陣はある意味サジを投げたが、
+EN When I openly ran wild under the banner of revolution, the <OJP> brass more or less gave up on me,
+
+@ 1.021.05
+# speaker: 氷川 (%ss66)
+JP 　社長退陣という事態までは
+JP 　至らなかった。
+EN but it never came to forcing me out as president.
+
+@ 1.021.06
+# speaker: 氷川 (%ss66)
+JP 　なぜなら、変革を始めてからの
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮの興行収益は
+JP 　記録的に伸びていたからだ！
+EN Because since the revolution began, <OLIVE JAPAN>'s show revenue had hit record highs!
+
+@ 1.021.07
+# speaker: 氷川 (%ss66)
+JP 　社長としての
+JP 　会社への貢献として、
+JP 　これ以上のものは無いだろう。
+EN As a president, I couldn't have done more for the company.
+
+@ 1.021.08
+# speaker: 氷川 (%ss66)
+JP 　ここがチャンスだと思ったよ。
+EN I knew this was my chance.
+
+@ 1.021.09
+# speaker: 氷川 (%ss66)
+JP 　俺は、この勢いを利用して
+JP 　過去のＯＪＰでは成し得なかった
+JP 　ある大勝負に出た・・・！
+EN Riding that momentum, I made a big gamble the old <OJP> could never have pulled off...!
+
+@ 1.022.00
+# speaker: 記者
+JP 「%ss66さんに
+JP 　お聞きします。」
+EN "%ss66, a question for you."
+
+@ 1.022.01
+# speaker: 記者
+JP 「%ss67、%ss69、
+JP 　%ss71、%ss81の
+JP 　%ss66派と、」
+EN "The %ss66 faction of %ss67, %ss69, %ss71 and %ss81,"
+
+@ 1.022.02
+# speaker: 記者
+JP 「%ss68、ＮＵＣＬＥＡＲの
+JP 　%ss44派の争いが、」
+EN "and the %ss44 faction of %ss68 and <NUCLEAR>,"
+
+@ 1.022.03
+# speaker: 記者
+JP 「団体を２つにしかねない程の
+JP 　大抗争に発展していますが、
+JP 　この闘いに和解はあるんでしょうか？」
+EN "their war threatens to split the promotion in two. Is there any chance of peace?"
+
+@ 1.022.04
+# speaker: 氷川 (%ss66)
+JP 「ハッキリ言ってあるわけない。」
+EN "Frankly, no way."
+
+@ 1.022.05
+# speaker: 記者
+JP 「一部では%ss66派の独立、
+JP 　新団体設立といった怪情報が
+JP 　飛び交っています。」
+EN "There are wild rumors going around that the %ss66 faction will break away and start a new promotion."
+
+@ 1.022.06
+# speaker: 記者
+JP 「本当のところはどうなんですか？」
+EN "What's the truth?"
+
+@ 1.022.07
+# speaker: 氷川 (%ss66)
+JP 「怪情報ですからね。
+JP 　怪情報のままでしょう。
+JP 　俺は一応、ＯＪＰの社長ですからね。」
+EN "They're wild rumors. They'll stay wild rumors. I am <OJP>'s president, after all."
+
+@ 1.022.08
+# speaker: 氷川 (%ss66)
+JP 「%ss44達は
+JP 　認めてないと思うけど。」
+EN "Though I doubt %ss44 and his crew see it that way."
+
+@ 1.022.09
+# speaker: 記者
+JP 「今後の大変革軍の動向を
+JP 　教えていただけますか？」
+EN "Can you tell us what's next for the Revolution Army?"
+
+@ 1.022.10
+# speaker: 氷川 (%ss66)
+JP 「少し、外の空気を吸って来ようと
+JP 　思っています。」
+EN "I'm thinking of going out for a little fresh air."
+
+@ 1.022.11
+# speaker: 氷川 (%ss66)
+JP 「%ss1さんとは
+JP 　話がついてますから。」
+EN "I've already worked things out with %ss1."
+
+@ 1.022.12
+# speaker: 記者
+JP 「%ss1って・・・
+JP 　ＶＪＰの%ss1ですか！？
+JP 　移籍するつもりなんですか！？」
+EN "%ss1...? %ss1 of <VJP>?! You're planning to jump ship?!"
+
+@ 1.022.13
+# speaker: 氷川 (%ss66)
+JP 「だから、
+JP 　俺はＯＪＰの社長だって
+JP 　言ってるでしょう。」
+EN "Like I said, I'm <OJP>'s president."
+
+@ 1.022.14
+# speaker: 氷川 (%ss66)
+JP 「移籍じゃなく、
+JP 　ＯＪＰの遠征部隊として
+JP 　ＶＪＰマットに参戦するんですよ。」
+EN "It's not a jump. We're going into the <VJP> ring as an <OJP> invasion squad."
+
+@ 1.022.15
+# speaker: 記者
+JP 「ＯＪＰのトップレスラーが
+JP 　ＶＪＰで試合・・・
+JP 　考えられないことですよ・・・！！」
+EN "<OJP>'s top wrestlers fighting in <VJP>... It's unthinkable...!!"
+
+@ 1.022.16
+# speaker: 記者
+JP 「凄いですよ、それは！！」
+EN "That's incredible!!"
+
+@ 1.022.17
+# speaker: 氷川 (%ss66)
+JP 「とにかく、我々の参戦は
+JP 　ＶＪＰサイドでは
+JP 　すでに承諾されています。」
+EN "Anyway, <VJP>'s side has already agreed to have us."
+
+@ 1.022.18
+# speaker: 氷川 (%ss66)
+JP 「色々問題はあるでしょうが、
+JP 　俺達は新しいことをやる。」
+EN "I'm sure there'll be all sorts of problems, but we're doing something new."
+
+@ 1.022.19
+# speaker: 氷川 (%ss66)
+JP 「そうでなければ
+JP 　大変革には
+JP 　ならないですからね。」
+EN "Otherwise, it wouldn't be a revolution."
+
+@ 1.022.20
+# speaker: 記者
+JP 「期待してますよ、%ss66さん！！
+JP 　ＯＪＰ対ＶＪＰの交流戦、
+JP 　頑張って下さい！！」
+EN "We're counting on you, %ss66!! Good luck in the <OJP> vs. <VJP> series!!"
+
+@ 1.023.00
+# speaker: 氷川 (%ss66)
+JP 　%ss66派の
+JP 　ＶＩＥＷ　ＪＡＰＡＮ参戦のニュースは、
+JP 　プロレス界全体を震撼させた。
+EN The news that the %ss66 faction would fight in <VIEW JAPAN> shook the whole wrestling world.
+
+@ 1.023.01
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰとＶＪＰの
+JP 　過去の確執を思えば当然だろう。
+EN Considering the old bad blood between <OJP> and <VJP>, that's no surprise.
+
+@ 1.023.02
+# speaker: 氷川 (%ss66)
+JP 　俺にしても、ＶＪＰ参戦の決断は
+JP 　自身の退団を賭けての大勝負だった。
+EN For me, too, going into <VJP> was a huge gamble - I'd bet my place in the company on it.
+
+@ 1.023.03
+# speaker: 氷川 (%ss66)
+JP 　だが、俺は勝った・・・！
+EN But I won...!
+
+@ 1.023.04
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰの首脳陣は社長退陣を要請せず、
+JP 　俺の独断を放任した。
+EN The <OJP> brass didn't ask me to step down as president, and let me do as I pleased.
+
+@ 1.023.05
+# speaker: 氷川 (%ss66)
+JP 　最終的にはＯＪＰにとって
+JP 　プラスになると考えたんだろう。
+EN They must have figured it would pay off for <OJP> in the end.
+
+@ 1.023.06
+# speaker: 氷川 (%ss66)
+JP 　とにかく、変革戦争のドタバタに
+JP 　便乗した形ではあったが、
+JP 　新しいプロレスへの道は開かれた。
+EN I'd ridden on the chaos of the revolution war, sure, but the road to a new pro wrestling was open.
+
+@ 1.023.07
+# speaker: 氷川 (%ss66)
+JP 　後はやるしかない・・・！
+EN Now all I can do is go for it...!
+
+@ 1.023.08
+# speaker: 氷川 (%ss66)
+JP 　この交流戦を成功させて、
+JP 　プロレス界全てを巻き込む
+JP 　新たな流れを作り出してやる！！
+EN I'll make this series a success and start a new current that sweeps up the whole wrestling world!!
+
+@ 1.024.00
+# speaker: 記者
+JP 「%ss7選手！！
+JP 　ＶＪＰのトップバッターとして、」
+EN "%ss7!! As <VJP>'s leadoff man,"
+
+@ 1.024.01
+# speaker: 記者
+JP 「%ss66選手との対戦が
+JP 　決定したことについて、
+JP 　今のお気持ちをお聞かせ下さい！！」
+EN "how do you feel about being matched up against %ss66?!"
+
+@ 1.025.00
+# speaker: 高橋 (%ss7)
+JP 「%ss1さんに、
+JP 『おまえ、行け。』って
+JP 　言われたから行くんですわ。」
+EN "%ss1 told me, 'You go.' So I'm goin'."
+
+@ 1.025.01
+# speaker: 高橋 (%ss7)
+JP 「周りじゃ、
+JP 　俺が格下のように見られてるやろ。
+JP 　冗談やない。」
+EN "Folks around here think I'm the lesser man. Gimme a break."
+
+@ 1.025.02
+# speaker: 高橋 (%ss7)
+JP 「まあ、目にもの見したるわ。」
+EN "Well, I'll show 'em what's what."
+
+@ 1.026.00
+# speaker: 氷川 (%ss66)
+JP 　%ss7・・・！
+EN %ss7...!
+
+@ 1.026.01
+# speaker: 氷川 (%ss66)
+JP 　その言葉、
+JP 　そのまま返すぞ！！
+EN I'll throw those words right back at you!!
+
+@ 1.027.00
+# speaker: リングアナ
+JP 「赤ーコーナーー！！
+JP 　ＶＩＥＷ　ＪＡＰＡＮ所属！！」
+EN "In the red corner!! Representing <VIEW JAPAN>!!"
+
+@ 1.028.00
+# speaker: リングアナ
+JP 「%ss7ーー！！
+JP 　%sl7ーーー！！！」
+EN "%sl7!! %ss7!!!"
+
+@ 1.029.00
+# speaker: リングアナ
+JP 「青ーコーナーー！！
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮ所属！！」
+EN "In the blue corner!! Representing <OLIVE JAPAN>!!"
+
+@ 1.030.00
+# speaker: リングアナ
+JP 「%ss66ーー！！
+JP 　%sl66ーーー！！！」
+EN "%sl66!! %ss66!!!"
+
+@ 1.031.00
+# speaker: 氷川 (%ss66)
+JP 　すごい歓声じゃないか。
+JP 　これでこそ、
+JP 　レスラー冥利に尽きるというものだ。
+EN Listen to that crowd. This is what makes it all worth it for a wrestler.
+
+@ 1.031.01
+JP 　さあ！！
+JP 　ＶＪＰのマットで、
+JP 　思い切り暴れるとするか！！
+EN Now!! Time to cut loose in the <VJP> ring!!
+
+@ 1.033.00
+# speaker: 氷川 (%ss66)
+JP 　俺が今までして来たこと、
+JP 　これから俺がしようとしていること、
+JP 　全ては一つにつながっている。
+EN Everything I've done so far and everything I'm about to do is all connected.
+
+@ 1.033.01
+# speaker: 氷川 (%ss66)
+JP 　それは、ファンを魅了するプロレスを
+JP 　体現するということ・・・。
+EN It's about embodying pro wrestling that thrills the fans...
+
+@ 1.033.02
+# speaker: 氷川 (%ss66)
+JP 　大切なのは、どこでするかじゃない。
+JP 　何をするかだ。
+EN What matters isn't where you do it. It's what you do.
+
+@ 1.033.03
+# speaker: 氷川 (%ss66)
+JP 　これからＯＪＰが
+JP 　どうなるかは分からない。
+EN I don't know what will become of <OJP>.
+
+@ 1.033.04
+# speaker: 氷川 (%ss66)
+JP 　だが俺は、自分の信じる道を
+JP 　悔いなく生きる。
+EN But I'll live by the path I believe in, with no regrets.
+
+@ 1.033.05
+# speaker: 氷川 (%ss66)
+JP 　そんな俺の試合を見て、
+JP 　ファンが感動してくれれば、
+EN If the fans watch my matches and are moved,
+
+@ 1.033.06
+# speaker: 氷川 (%ss66)
+JP 　それ以上の喜びはないよ。
+JP 
+JP 　%sf66
+EN there's no greater joy for me.
+EN 
+EN %sf66
+
+@ 1.037.00
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰとＶＪＰの交流戦初日は、
+JP 　大成功で幕を閉じた。
+EN The first day of the <OJP>-<VJP> series closed as a huge success.
+
+@ 1.037.01
+# speaker: 氷川 (%ss66)
+JP 　%sf2との
+JP 　メインイベントを終えた俺は、
+EN After my main event with %sf2,
+
+@ 1.037.02
+# speaker: 氷川 (%ss66)
+JP 　しばしリング上で
+JP 　万感の思いに浸っていた。
+EN I stood in the ring for a while, overwhelmed.
+
+@ 1.037.03
+# speaker: 氷川 (%ss66)
+JP 　ここは、始まりだ・・・
+EN This is a beginning...
+
+@ 1.037.04
+# speaker: 氷川 (%ss66)
+JP 　これまでも、これからも、
+JP 　俺はプロレスで生きて行く。
+EN Now and always, I live for pro wrestling.
+
+@ 1.037.05
+# speaker: 氷川 (%ss66)
+JP 　俺の求める・・・
+EN So that the pro wrestling I seek...
+
+@ 1.037.06
+# speaker: 氷川 (%ss66)
+JP 　理想のプロレスを
+JP 　実現するために・・・！
+EN my ideal pro wrestling, can become real...!
+
+@ 1.038.00
+# speaker: 氷川 (%ss66)
+JP 　その後、新生ＯＪＰは、
+JP 　ＶＪＰとの提携を継続しつつ
+JP 　独自での興行も展開していった。
+EN After that, the new <OJP> kept up its alliance with <VJP> while running its own shows.
+
+@ 1.038.01
+# speaker: 氷川 (%ss66)
+JP 　もちろん、
+JP 　俺と%ss55の２人だけでは
+JP 　どうにもならない。
+EN Of course, %ss55 and I couldn't do it on our own.
+
+@ 1.038.02
+# speaker: 氷川 (%ss66)
+JP 　選手の数は、
+JP 　フリーのレスラーなどと
+JP 　短期の契約をして補った。
+EN We filled out the roster with short-term contracts for freelancers and others.
+
+@ 1.038.03
+# speaker: 氷川 (%ss66)
+JP 　その中には
+JP 　%ss61や%ss132など、
+EN Among them were %ss61, %ss132,
+
+@ 1.038.04
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰの危機を知り、
+JP 　参戦を表明してくれた
+JP 　有名レスラー達もいた。
+EN and other big-name wrestlers who heard of <OJP>'s crisis and offered to fight for us.
+
+@ 1.038.05
+# speaker: 氷川 (%ss66)
+JP 　中でも%ss41の参戦は
+JP 　話題性充分で、
+EN %ss41's arrival in particular made big news,
+
+@ 1.038.06
+# speaker: 氷川 (%ss66)
+JP 　新生ＯＪＰの
+JP 　新たなスタートの大きな原動力となった。
+EN and became a huge driving force for the new <OJP>'s fresh start.
+
+@ 1.039.00
+# speaker: 氷川 (%ss66)
+JP 「%ss41さん、お久しぶりです。」
+EN "%ss41, it's been a long time."
+
+@ 1.039.01
+# speaker: 龍 (%ss41)
+JP 「%ss66・・・」
+EN "%ss66..."
+
+@ 1.039.02
+# speaker: 龍 (%ss41)
+JP 「一度ＯＪＰから出て行った俺を、
+JP 　暖かく迎え入れてくれたことには
+JP 　本当に感謝している。」
+EN "I walked out on <OJP> once, and you welcomed me back with open arms. I'm truly grateful."
+
+@ 1.039.03
+# speaker: 氷川 (%ss66)
+JP 「%ss41さん。
+JP 　俺としては、%ss41さんに」
+EN %ss41... All I want, %ss41,
+
+@ 1.039.04
+# speaker: 氷川 (%ss66)
+JP 「ＯＪＰマットでおおいに
+JP 　暴れてもらって、」
+EN is for you to run wild in the <OJP> ring,
+
+@ 1.039.05
+# speaker: 氷川 (%ss66)
+JP 「ファンに支持されるような試合を
+JP 　してもらえれば
+JP 　それでいい。」
+EN "and give the fans matches they'll get behind. That's enough."
+
+@ 1.039.06
+# speaker: 龍 (%ss41)
+JP 「%ss66。
+JP 　俺はＯＪＰのマットに
+JP 　骨をうずめるつもりで来た。」
+EN "%ss66. I came here ready to end my career in the <OJP> ring."
+
+@ 1.039.07
+# speaker: 龍 (%ss41)
+JP 「俺のファイトが、
+JP 　新しいＯＪＰを活性化させられるよう
+JP 　全力でやってみるよ。」
+EN "I'll give it everything I've got so my fighting can breathe life into the new <OJP>."
+
+@ 1.039.08
+# speaker: 氷川 (%ss66)
+JP 「よろしくお願いします。
+JP 　%ss41さん。」
+EN "I'm counting on you, %ss41."
+
+@ 1.040.00
+# speaker: 記者
+JP 「%ss66さん。」
+EN "%ss66."
+
+@ 1.040.01
+# speaker: 記者
+JP 「%ss41選手の復帰で
+JP 　いよいよ新生ＯＪＰも
+JP 　活気づいて来ましたが、」
+EN "With %ss41's return, the new <OJP> is finally heating up,"
+
+@ 1.040.02
+# speaker: 記者
+JP 「今後の展開などについて
+JP 　お聞かせ願えませんか？」
+EN "Can you tell us what's coming next?"
+
+@ 1.040.03
+# speaker: 氷川 (%ss66)
+JP 「今後、ＯＪＰがどう進んで行くかは、
+JP 　俺自身よく分かってないんですよ。
+JP 　ハッキリ言って今が大事。」
+EN "Honestly, I don't really know myself where <OJP> is headed. Frankly, now is what counts."
+
+@ 1.040.04
+# speaker: 氷川 (%ss66)
+JP 「ただ、瞬間瞬間を大切に生きることが
+JP 　先につながると考えていますね。」
+EN "But I believe living each moment to the fullest leads to the future."
+
+@ 1.040.05
+# speaker: 記者
+JP 「一部のマスコミが、ＯＪＰは難破寸前だと
+JP 　辛辣な批評をしていますが、
+JP 　それについては何か意見はありますか？」
+EN "Some in the press have harshly said <OJP> is on the verge of sinking. Any comment?"
+
+@ 1.040.06
+# speaker: 氷川 (%ss66)
+JP 「じゃあ、見に来い。」
+EN "Then come and see."
+
+@ 1.040.07
+# speaker: 記者
+JP 「は・・・？」
+EN "Huh...?"
+
+@ 1.040.08
+# speaker: 氷川 (%ss66)
+JP 「うちの試合を、
+JP 　じかに見に来いと言ってるんですよ。」
+EN "I'm saying come and see our matches for yourself."
+
+@ 1.040.09
+# speaker: 氷川 (%ss66)
+JP 「そういう批評は、
+JP 　ちゃんとした取材をしないで
+JP 　書いている場合が多い。」
+EN "Criticism like that is usually written without any proper reporting."
+
+@ 1.040.10
+# speaker: 氷川 (%ss66)
+JP 「これが難破寸前の団体の試合かどうか、
+JP 　じかに見て判断してほしいですね。 」
+EN "I want them to see firsthand and judge whether these are the matches of a sinking promotion."
+
+@ 1.040.11
+# speaker: 氷川 (%ss66)
+JP 「感動させてやりますよ。」
+EN "We'll move them, I promise you."
+
+@ 1.040.12
+# speaker: 記者
+JP 「%ss66さん・・・」
+EN "%ss66..."
+
+@ 1.040.13
+# speaker: 記者
+JP 「頑張って下さい・・・！
+JP 　今日の%ss41選手との
+JP 　メインイベント、期待しています！！」
+EN "Good luck...! We're looking forward to tonight's main event with %ss41!!"
+
+@ 1.041.00
+# speaker: 氷川 (%ss66)
+JP 　現状での自分の力を
+JP 　最大限に引き出す試合を
+JP 　すること・・・
+EN To fight matches that bring out everything I have right now...
+
+@ 1.041.01
+# speaker: 氷川 (%ss66)
+JP 　それが、今の俺に課せられた使命だ。
+EN That's the mission I've been given.
+
+@ 1.041.02
+# speaker: 氷川 (%ss66)
+JP 　それを継続することが、
+JP 　ＯＪＰを存続させる鍵になる。
+EN Keeping that up is the key to keeping <OJP> alive.
+
+@ 1.041.03
+# speaker: 氷川 (%ss66)
+JP 　一つたりとも手は抜かない。
+EN I won't slack off in a single one.
+
+@ 1.041.04
+# speaker: 氷川 (%ss66)
+JP 　それが・・・
+EN That...
+
+@ 1.041.05
+# speaker: 氷川 (%ss66)
+JP 　それこそが、
+JP 　俺の求めるプロレスだ・・・！！
+EN That is the pro wrestling I seek...!!
+
+@ 1.043.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　すばらしい試合でした！！」
+EN "%ss66!! What a fantastic match!!"
+
+@ 1.043.01
+# speaker: 記者
+JP 「ＶＪＰマットの刺客、
+JP 　%ss2選手を撃破しました！！」
+EN "You've beaten <VJP>'s assassin, %ss2!!"
+
+@ 1.043.02
+# speaker: 記者
+JP 「歴史的な試合を闘って
+JP 　今どうですか！？」
+EN "How do you feel after fighting a historic match?!"
+
+@ 1.043.03
+# speaker: 氷川 (%ss66)
+JP 「ハッキリ言って、気持ちいいね。」
+EN "Frankly, it feels great."
+
+@ 1.043.04
+# speaker: 氷川 (%ss66)
+JP 「別に変な意識はしていなかったけど、
+JP 　敵地って言うのかな？
+JP 　やっぱりそういうのってあるでしょう。」
+EN "I wasn't overthinking it, but it's enemy territory, you know? You can't help feeling it."
+
+@ 1.043.05
+# speaker: 氷川 (%ss66)
+JP 「そこで自分のペースを作れたことが、
+JP 　勝ちにつながった要因だと思うよ。」
+EN "Setting my own pace in there is what won it for me, I think."
+
+@ 1.043.06
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　これからの活躍に期待しています！！」
+EN "%ss66!! We're expecting great things from you!!"
+
+@ 1.045.00
+# speaker: 記者
+JP 「%ss2選手！！
+JP 　すさまじい試合でした！！
+JP 　%ss66選手を撃破しましたよ！！」
+EN "%ss2!! What a ferocious match!! You've beaten %ss66!!"
+
+@ 1.045.01
+# speaker: 記者
+JP 「歴史的な闘いを制した、
+JP 　今の感想をお願いします！！」
+EN "You won a historic battle! Tell us how you feel!!"
+
+@ 1.046.00
+# speaker: 慶介 (%ss2)
+JP 「大金星ってことになるんですかね？」
+EN "I guess you'd call it a huge upset?"
+
+@ 1.046.01
+# speaker: 慶介 (%ss2)
+JP 「とにかく、ＶＪＰのレスラーとして
+JP 　絶対に負けられないってのが
+JP 　あったからね。」
+EN "Anyway, as a <VJP> wrestler, there was no way I could lose."
+
+@ 1.046.02
+# speaker: 慶介 (%ss2)
+JP 「でも正直
+JP 　やばいってところもあった。」
+EN "But honestly, there were some scary moments."
+
+@ 1.046.03
+# speaker: 慶介 (%ss2)
+JP 「%ss66は
+JP 　さすがに強かったよ・・・！」
+EN "%ss66 was as tough as they say...!"
+
+@ 1.052.00
+# speaker: 氷川 (%ss66)
+JP 　俺の狙いは的中した。
+JP 　過去の確執はあったが、ＶＪＰの首脳陣は
+JP 　この提携を快く受け入れてくれた。
+EN My plan hit the mark. Despite the old bad blood, the <VJP> brass gladly accepted the alliance.
+
+@ 1.052.01
+# speaker: 氷川 (%ss66)
+JP 　完全な形ではなかったが
+JP 　ＯＪＰ対ＶＪＰの歴史的交流戦は実現し、
+JP 　観客動員数は記録的なものとなった。
+EN It wasn't perfect, but the historic <OJP>-<VJP> series happened, and attendance set records.
+
+@ 1.053.00
+# speaker: 記者
+JP 「%ss2選手！！」
+EN "%ss2!!"
+
+@ 1.053.01
+# speaker: 記者
+JP 「歴史的交流戦の尖兵として
+JP 　%ss66選手と
+JP 　闘うことになりましたが、」
+EN "You'll be facing %ss66 as the spearhead of this historic series,"
+
+@ 1.053.02
+# speaker: 記者
+JP 「今の心境をお願いします！！」
+EN "How are you feeling right now?!"
+
+@ 1.054.00
+# speaker: 慶介 (%ss2)
+JP 「正直、身震いするよ。
+JP 　楽しみって意味で。」
+EN "Honestly, I'm shaking. With excitement, I mean."
+
+@ 1.054.01
+# speaker: 慶介 (%ss2)
+JP 「相手は何と言っても
+JP 　ＯＪＰのトップレスラーだからね。
+JP 　下手な試合は出来ない。」
+EN "After all, he's <OJP>'s top wrestler. I can't put on a sloppy match."
+
+@ 1.054.02
+# speaker: 慶介 (%ss2)
+JP 「とにかく、
+JP 　これがＶＪＰだってところを
+JP 　見せてやるよ・・・！！」
+EN "Anyway, I'll show him what <VJP> is all about...!!"
+
+@ 1.055.00
+# speaker: 氷川 (%ss66)
+JP 　ＶＪＰは
+JP 　初戦の相手として
+EN <VJP> sent
+
+@ 1.055.01
+# speaker: 氷川 (%ss66)
+JP 　%sf2を
+JP 　ぶつけて来た。
+EN %sf2 at me for the first match.
+
+@ 1.055.02
+# speaker: 氷川 (%ss66)
+JP 　おそらく、観客の中には
+JP 　今後のＯＬＩＶＥ　ＪＡＰＡＮが
+JP 　どうなるか、
+EN I'm sure some in the crowd were just curious about what would become of <OLIVE JAPAN>,
+
+@ 1.055.03
+# speaker: 氷川 (%ss66)
+JP 　興味本位で見ていたファンも
+JP 　いただろう。
+EN watching only out of morbid interest.
+
+@ 1.055.04
+# speaker: 氷川 (%ss66)
+JP 　悪いがＯＪＰは潰れない・・・
+EN Sorry, but <OJP> isn't going under...
+
+@ 1.055.05
+# speaker: 氷川 (%ss66)
+JP 　俺は、ＯＪＰというブランドを
+JP 　守ると決めた。
+EN I've made up my mind to protect the <OJP> brand.
+
+@ 1.055.06
+# speaker: 氷川 (%ss66)
+JP 　俺がいる限り、
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮは
+JP 　絶対に潰さない！！
+EN As long as I'm here, <OLIVE JAPAN> will never go under!!
+
+@ 1.057.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん、こんな状況、
+JP 　もうおしまいにしませんか？」
+EN "%ss66, can't we put an end to this situation?"
+
+@ 1.057.01
+# speaker: 氷川 (%ss66)
+JP 「何の話だ、%ss67？」
+EN "What are you talking about, %ss67?"
+
+@ 1.057.02
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんが、
+JP 　今までのＯＬＩＶＥ　ＪＡＰＡＮを
+JP 　大切にしたい気持ちは分かります。」
+EN "%ss66, I understand you want to cherish <OLIVE JAPAN> as it's always been."
+
+@ 1.057.03
+# speaker: 富樫 (%ss67)
+JP 「でも、本心では
+JP 　新しいタイプのプロレスを
+JP 　やってみたいと考えているんでしょう？」
+EN "But deep down, you want to try a new kind of pro wrestling, don't you?"
+
+@ 1.057.04
+# speaker: 富樫 (%ss67)
+JP 「このまま
+JP 　古いスタイルのプロレスを続けて行けば、
+JP 　いずれＯＪＰはダメになる・・・」
+EN "If we keep doing old-style wrestling like this, sooner or later <OJP> is finished..."
+
+@ 1.057.05
+# speaker: 富樫 (%ss67)
+JP 「それは一番、%ss66さんが
+JP 　よく分かっているはずじゃないですか。」
+EN "You of all people should know that, %ss66."
+
+@ 1.057.06
+# speaker: 氷川 (%ss66)
+JP 「・・・。」
+EN "..."
+
+@ 1.057.07
+# speaker: 氷川 (%ss66)
+JP 「俺は確かに
+JP 　このＯＬＩＶＥ　ＪＡＰＡＮを
+JP 　根底から変革したいと考えている。」
+EN "It's true, I want to change <OLIVE JAPAN> from the ground up."
+
+@ 1.057.08
+# speaker: 氷川 (%ss66)
+JP 「だがな、それには時間が必要なんだ。
+JP 　急激な変化は
+JP 　ファンを失望させるだけだ。」
+EN "But that takes time. Sudden change will only let the fans down."
+
+@ 1.057.09
+# speaker: 富樫 (%ss67)
+JP 「そんなセリフ、
+JP 　%ss66さんらしくない。」
+EN "That doesn't sound like you, %ss66."
+
+@ 1.057.10
+# speaker: 富樫 (%ss67)
+JP 「やりたいことがあるなら
+JP 　思い切ってやればいいじゃないですか。
+JP 　ファンは失望なんてしませんよ。」
+EN "If there's something you want to do, just go for it. The fans won't be let down."
+
+@ 1.057.11
+# speaker: 富樫 (%ss67)
+JP 「ＯＪＰにいて変革が難しいと言うなら、
+JP 　やめるなり、他を探すなり、
+JP 　道は色々ある。」
+EN "If change is too hard inside <OJP>, there are other roads. Quit, find somewhere else..."
+
+@ 1.057.12
+# speaker: 富樫 (%ss67)
+JP 「もし、%ss66さんが
+JP 　新天地を探すというなら、」
+EN "If you go looking for a new home, %ss66,"
+
+@ 1.057.13
+# speaker: 富樫 (%ss67)
+JP 「俺は%ss66さんを信じて
+JP 　どこまでもついて行きますよ。」
+EN "I believe in you, %ss66, and I'll follow you anywhere."
+
+@ 1.057.14
+# speaker: 氷川 (%ss66)
+JP 「%ss67。
+JP 　悪いが俺はやめるつもりはない。」
+EN "%ss67. Sorry, but I have no intention of quitting."
+
+@ 1.057.15
+# speaker: 氷川 (%ss66)
+JP 「ここでの変革が出来ない者が、
+JP 　外に出て新しいプロレスを
+JP 　作れるわけがない。」
+EN "If a man can't bring change here, there's no way he can go out and create a new pro wrestling."
+
+@ 1.057.16
+# speaker: 氷川 (%ss66)
+JP 「今やめれば、
+JP 　全てが中途半端に終わってしまう。」
+EN "If I quit now, everything will be left half-done."
+
+@ 1.057.17
+# speaker: 氷川 (%ss66)
+JP 「俺には、
+JP 　ＯＪＰという巨大船を
+JP 　守って行く義務があるんだ。」
+EN "It's my duty to protect this great ship called <OJP>."
+
+@ 1.057.18
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん・・・」
+EN "%ss66..."
+
+@ 1.057.19
+# speaker: 富樫 (%ss67)
+JP 「分かりました。
+JP 　だったら俺が出て行きます。」
+EN "I see. Then I'll be the one who leaves."
+
+@ 1.057.20
+# speaker: 富樫 (%ss67)
+JP 「俺は、どっちつかずの
+JP 　%ss66さんなんて見たくない。」
+EN "I don't want to see a %ss66 who can't make up his mind."
+
+@ 1.057.21
+# speaker: 富樫 (%ss67)
+JP 「どうやら、俺の尊敬する
+JP 　%sf66という
+JP 　レスラーは、」
+EN "It seems the wrestler I respected, %sf66,"
+
+@ 1.057.22
+# speaker: 富樫 (%ss67)
+JP 「俺の中からいなくなって
+JP 　しまったようですから・・・。」
+EN "is gone from my heart..."
+
+@ 1.058.00
+# speaker: 氷川 (%ss66)
+JP 　%ss67の言うことは
+JP 　もっともだ・・・
+EN What %ss67 said made sense...
+
+@ 1.058.01
+# speaker: 富樫 (%ss67)
+JP 　もし俺が
+JP 　%ss67の立場だったら、多分
+JP 　同じことを言っただろう・・・。
+EN If I'd been in %ss67's shoes, I'd probably have said the same thing...
+
+@ 1.059.00
+# speaker: 氷川 (%ss66)
+JP 　%ss67のＯＪＰ脱退騒動は、
+JP 　その後、
+JP 　全てのＯＪＰのレスラーを巻き込み
+EN %ss67's departure from <OJP> soon swept up every wrestler in <OJP>,
+
+@ 1.059.01
+# speaker: 氷川 (%ss66)
+JP 　かつてない大量離脱を引き起こした。
+EN and set off a mass exodus like never before.
+
+@ 1.059.02
+# speaker: 氷川 (%ss66)
+JP 　最終的にＯＪＰに残ったレスラーは
+JP 　俺と%ss55だけだったが、
+JP 　俺は後悔はしていなかった。
+EN In the end, only %ss55 and I were left in <OJP>, but I had no regrets.
+
+@ 1.059.03
+# speaker: 氷川 (%ss66)
+JP 　なぜなら俺は、
+JP 　自分の信念を貫き通したからだ。
+EN Because I had stayed true to what I believed in.
+
+@ 1.059.04
+# speaker: 氷川 (%ss66)
+JP 　一つの物事を真剣に突き詰めれば、
+JP 　意見が反り合うのは仕方がない。
+EN When you take something seriously all the way, it's natural that opinions clash.
+
+@ 1.059.05
+# speaker: 氷川 (%ss66)
+JP 　進む道は違っても、
+JP 　俺達はレスラーとして
+JP 　プロレスの行く末を真剣に考えている。
+EN We may walk different roads, but as wrestlers, we all care deeply about the future of pro wrestling.
+
+@ 1.059.06
+# speaker: 氷川 (%ss66)
+JP 　こうなってしまったのは、
+JP 　自然の成り行きだったんだ。
+EN The way things turned out was only natural.
+
+@ 1.060.00
+# speaker: 小淵沢 (%ss55)
+JP 「%ss66社長、
+JP 　どうする、これから？」
+EN "President %ss66, what now?"
+
+@ 1.060.01
+# speaker: 氷川 (%ss66)
+JP 「%ss55さん。
+JP 　何だかんだあったが、かえって
+JP 　これでやりやすくなったよ。」
+EN "%ss55. For all that's happened, this actually makes things easier."
+
+@ 1.060.02
+# speaker: 氷川 (%ss66)
+JP 「こういう状況になったんだから、
+JP 　俺は、今まで出来なかったことを
+JP 　やろうと思ってる。」
+EN "Now that it's come to this, I'm going to do what I never could before."
+
+@ 1.060.03
+# speaker: 氷川 (%ss66)
+JP 「ＶＩＥＷ　ＪＡＰＡＮと
+JP 　提携するんだ。」
+EN "We're going to team up with <VIEW JAPAN>."
+
+@ 1.060.04
+# speaker: 小淵沢 (%ss55)
+JP 「ＶＪＰと・・・！
+JP 　本気か！？」
+EN "With <VJP>...! Are you serious?!"
+
+@ 1.060.05
+# speaker: 氷川 (%ss66)
+JP 「本気だよ。
+JP 　日本人は民族的に判官びいきだからな。」
+EN "I'm serious. We Japanese always root for the underdog."
+
+@ 1.060.06
+# speaker: 氷川 (%ss66)
+JP 「落ちぶれた者や、
+JP 　弱い者を助けてやりたい
+JP 　気持ちが強いんだ。」
+EN "People have a strong urge to help the fallen and the weak."
+
+@ 1.060.07
+# speaker: 氷川 (%ss66)
+JP 「この提携は絶対に上手く行く。
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮは潰さない。」
+EN "This alliance is going to work, no doubt about it. <OLIVE JAPAN> won't go under."
+
+@ 1.060.08
+# speaker: 氷川 (%ss66)
+JP 「ここからが本当の、
+JP 　新生%ss66ＯＪＰの
+JP 　スタートだ・・・！」
+EN "From here on is the real start of %ss66's new <OJP>...!"
+
+@ 1.062.00
+# speaker: 氷川 (%ss66)
+JP 　俺はＯＪＰをやめるわけには
+JP 　いかない・・・
+EN I can't quit <OJP>...
+
+@ 1.062.01
+# speaker: 氷川 (%ss66)
+JP 　今、俺がやめたら
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮはどうなる？
+EN If I quit now, what will happen to <OLIVE JAPAN>?
+
+@ 1.062.02
+# speaker: 氷川 (%ss66)
+JP 　俺をここまで育ててくれたのは、
+JP 　誰が何を言おうと
+JP 　ＯＪＰのリングなんだ。
+EN Whatever anyone says, it was the <OJP> ring that made me who I am.
+
+@ 1.062.03
+# speaker: 氷川 (%ss66)
+JP 　俺には、
+JP 　%ss58さんや
+JP 　%ss59さんが築き上げた、
+EN It's my duty to protect what %ss58 and %ss59 built,
+
+@ 1.062.04
+# speaker: 氷川 (%ss66)
+JP 　このＯＬＩＶＥ　ＪＡＰＡＮを
+JP 　守っていく義務がある。
+EN this <OLIVE JAPAN>.
+
+@ 1.062.05
+# speaker: 氷川 (%ss66)
+JP 　それが正しいことかどうかは
+JP 　分からない。
+EN I don't know if it's the right thing.
+
+@ 1.062.06
+# speaker: 氷川 (%ss66)
+JP 　だが、
+JP 　俺の求めるプロレスを実現できる場所は、
+JP 　やはりここにしかないんだ・・・！
+EN But the only place I can make the pro wrestling I seek a reality is here...!
+
+@ 1.063.00
+# speaker: 氷川 (%ss66)
+JP 　俺は『ＯＪＰ』というブランドを守りつつ
+JP 　新しいプロレスを生み出すために
+JP 　必死になった。
+EN I worked desperately to protect the "<OJP>" brand while creating a new pro wrestling.
+
+@ 1.063.01
+# speaker: 氷川 (%ss66)
+JP 　だがそれは、
+JP 　曖昧な興行を展開する結果となり、
+EN But it ended up with shows that were neither one thing nor the other,
+
+@ 1.063.02
+# speaker: 氷川 (%ss66)
+JP 　内部から
+JP 　思わぬ反発を受けることになる・・・。
+EN and I ran into unexpected resistance from within...
+
+@ 1.066.00
+# speaker: 氷川 (%ss66)
+JP 　俺はフリーのレスラーとして
+JP 　生きて行くことに、
+JP 　不思議なほど違和感を感じていなかった。
+EN Strangely enough, living as a freelance wrestler didn't feel wrong to me at all.
+
+@ 1.066.01
+# speaker: 氷川 (%ss66)
+JP 　こういう自由なスタンスこそ、
+JP 　本来の俺の生き方に近いのかもしれない。
+EN Maybe this kind of freedom is closer to who I really am.
+
+@ 1.066.02
+# speaker: 氷川 (%ss66)
+JP 　立ち止まるわけにはいかない。
+EN I can't stand still.
+
+@ 1.066.03
+# speaker: 氷川 (%ss66)
+JP 　妥協するわけにはいかないんだ。
+EN I can't compromise.
+
+@ 1.066.04
+# speaker: 氷川 (%ss66)
+JP 　俺は、俺の信じるプロレスを
+JP 　成就させるため、
+JP 　さらなるメジャーを目指して突き進む。
+EN To fulfill the pro wrestling I believe in, I'll charge ahead toward an even bigger stage.
+
+@ 1.066.05
+# speaker: 氷川 (%ss66)
+JP 　プロレスには夢がある。
+JP 　信じて賭けるだけの価値がある。
+EN Pro wrestling is full of dreams. It's worth believing in and betting on.
+
+@ 1.066.06
+# speaker: 氷川 (%ss66)
+JP 　俺を応援してくれるファンの人達と
+JP 　その気持ちを共有できれば、
+EN If I can share that feeling with the fans who cheer me on,
+
+@ 1.066.07
+# speaker: 氷川 (%ss66)
+JP 　それ以上の幸せはないよ。
+EN there's no greater happiness for me.
+
+@ 1.070.00
+# speaker: 氷川 (%ss66)
+JP 　%ss88との試合は
+JP 　壮絶を極めた。
+EN My match with %ss88 was absolutely brutal.
+
+@ 1.070.01
+# speaker: 氷川 (%ss66)
+JP 　この一戦はテレビ中継もされ、
+JP 　マスコミもおおいに賑わった。
+EN It was broadcast on TV, and the press went wild over it.
+
+@ 1.070.02
+# speaker: 氷川 (%ss66)
+JP 「%ss66は次に誰とやるのか？」
+EN "Who will %ss66 face next?"
+
+@ 1.070.03
+# speaker: 氷川 (%ss66)
+JP 　マスコミの焦点は必然的に
+JP 　そこへ集中したが、
+EN Naturally, that's what the press focused on,
+
+@ 1.070.04
+# speaker: 氷川 (%ss66)
+JP 　俺自身は誰が来ても問題はない。
+JP 　誰とでもやってやる。
+EN but it doesn't matter to me who comes. I'll take on anyone.
+
+@ 1.070.05
+# speaker: 氷川 (%ss66)
+JP 　向かってくる奴は・・・
+EN Whoever comes at me...
+
+@ 1.070.06
+# speaker: 氷川 (%ss66)
+JP 　全て倒す！！
+EN I'll take them all down!!
+
+@ 1.071.00
+# speaker: 記者
+JP 「%ss66さん。
+JP 　巷では%ss66さんと、」
+EN "%ss66. Word on the street is that a match between %ss66 and"
+
+@ 1.071.01
+# speaker: 記者
+JP 「%ss94選手との試合が
+JP 　実現するのではないかと
+JP 　噂されていますが、」
+EN "%ss94 may finally happen,"
+
+@ 1.071.02
+# speaker: 記者
+JP 「それについて
+JP 　どうお考えですか？」
+EN "What are your thoughts on that?"
+
+@ 1.071.03
+# speaker: 氷川 (%ss66)
+JP 「それはそれでいいんじゃない？
+JP 　と考えてますね。」
+EN "I figure that'd be just fine."
+
+@ 1.071.04
+# speaker: 氷川 (%ss66)
+JP 「%ss94は、
+JP 　俺と%ss88が試合したことを
+JP 　気に入らなかったみたいだが、」
+EN "%ss94 didn't seem to like that %ss88 and I had a match,"
+
+@ 1.071.05
+# speaker: 氷川 (%ss66)
+JP 「奴が俺と闘いたいと言うなら、
+JP 　俺としては断る理由はないよ。」
+EN "but if he wants to fight me, I've got no reason to say no."
+
+@ 1.071.06
+# speaker: 記者
+JP 「%ss94選手は、
+JP 　かなり格闘よりの選手だと思うのですが、
+JP 　その点についてはどうですか？」
+EN "%ss94 leans heavily toward real fighting. What do you think about that?"
+
+@ 1.071.07
+# speaker: 氷川 (%ss66)
+JP 「俺はプロレスラーだからね。
+JP 　相手がどういうタイプの選手であっても
+JP 　それに対応しなくちゃいけない。」
+EN "I'm a pro wrestler. Whatever type of opponent I face, I have to adapt to him."
+
+@ 1.071.08
+# speaker: 氷川 (%ss66)
+JP 「相手の覚悟を
+JP 　上回る覚悟で試合にのぞめば、
+JP 　別に問題なんてないよ。」
+EN "If I go into the match more ready to lay it all on the line than he is, there's no problem."
+
+@ 1.071.09
+# speaker: 記者
+JP 「ありがとうございました。
+JP 　%ss94選手との試合、
+JP 　実現することを楽しみにしています。」
+EN "Thank you very much. We hope the match with %ss94 happens."
+
+@ 1.072.00
+# speaker: 記者
+JP 「%ss94さん！！」
+EN "%ss94!!"
+
+@ 1.072.01
+# speaker: 記者
+JP 「%ss66選手が、
+JP 　週刊マットのインタビューで
+JP 　%ss94さんを挑発していますが、」
+EN "%ss66 has been taunting you, %ss94, in an interview in Weekly Mat,"
+
+@ 1.072.02
+# speaker: 記者
+JP 「それに対して
+JP 　何かコメントはありますか！？」
+EN "Do you have anything to say to that?!"
+
+@ 1.073.00
+# speaker: 野川 (%ss94)
+JP 「マットのインタビューは
+JP 　まだ見てないけど、」
+EN "I haven't read the Mat interview yet, but"
+
+@ 1.073.01
+# speaker: 野川 (%ss94)
+JP 「%ss66選手とは
+JP 　いずれやることになるだろうね。
+JP 　あっちもやる気みたいだし。」
+EN "I'm sure I'll fight %ss66 sooner or later. Seems he's up for it, too."
+
+@ 1.073.02
+# speaker: 記者
+JP 「対戦が実現したら、
+JP 　どのような試合になるか
+JP 　予測出来ますか？」
+EN "If the match happens, can you predict what kind of fight it'll be?"
+
+@ 1.073.03
+# speaker: 野川 (%ss94)
+JP 「予測も何も、
+JP 　試合なんてやってみなけりゃ
+JP 　分からないよ。」
+EN "Predict? You never know how a match will go until you fight it."
+
+@ 1.073.04
+# speaker: 野川 (%ss94)
+JP 「まあ、俺は俺流の闘い方で
+JP 　ベストをつくすだけだけどね。」
+EN "Well, I'll just do my best, fighting my own way."
+
+@ 1.074.00
+# speaker: 氷川 (%ss66)
+JP 　%ss94との試合が
+JP 　正式に決定したのは、
+JP 　それから２週間後のことだった。
+EN Two weeks later, the match with %ss94 was made official.
+
+@ 1.074.01
+# speaker: 氷川 (%ss66)
+JP 　ある意味
+JP 　マスコミに踊らされる形となったが、
+EN In a way, I'd let the press lead me by the nose,
+
+@ 1.074.02
+# speaker: 氷川 (%ss66)
+JP 　ファンがそれを望むなら、
+JP 　それに応えるのが
+JP 　プロのレスラーだろう。
+EN but if the fans want it, a pro wrestler gives it to them.
+
+@ 1.075.00
+# speaker: 氷川 (%ss66)
+JP 　フリーで生き抜くためには、
+JP 　どんな相手、どんなスタイルとの闘いにも
+JP 　対応しなければならない。
+EN To survive as a freelancer, you have to handle any opponent, any style.
+
+@ 1.075.01
+# speaker: 氷川 (%ss66)
+JP 　その覚悟がなければ
+JP 　リングには上がれない。
+EN Without that resolve, you can't step into the ring.
+
+@ 1.075.02
+# speaker: 氷川 (%ss66)
+JP 　俺は、俺の求める理想のプロレスを
+JP 　実現するために、
+EN To make the ideal pro wrestling I seek a reality,
+
+@ 1.075.03
+# speaker: 氷川 (%ss66)
+JP 　今も、これからも
+JP 　ただ全力で闘うだけだ！！
+EN now and always, I'll just fight with everything I have!!
+
+@ 1.080.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん、
+JP 　本当にやめてしまうんですか・・？」
+EN "%ss66, are you really quitting...?"
+
+@ 1.080.01
+# speaker: 氷川 (%ss66)
+JP 「%ss67・・・
+JP 　悪いがもう決断してしまったことだ。」
+EN "%ss67... Sorry, but my mind's made up."
+
+@ 1.080.02
+# speaker: 氷川 (%ss66)
+JP 「今のＯＪＰじゃ、
+JP 　俺の考えているプロレスは出来ない。」
+EN "I can't do the pro wrestling I have in mind in the <OJP> of today."
+
+@ 1.080.03
+# speaker: 氷川 (%ss66)
+JP 「俺が無理やりそれをやったら、」
+EN "If I forced it,"
+
+@ 1.080.04
+# speaker: 氷川 (%ss66)
+JP 「ＯＬＩＶＥ　ＪＡＰＡＮは、
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮで
+JP 　なくなってしまう。」
+EN "<OLIVE JAPAN> wouldn't be <OLIVE JAPAN> anymore."
+
+@ 1.080.05
+# speaker: 氷川 (%ss66)
+JP 「%ss58さんや
+JP 　%ss59さんのことを考えたら、
+JP 　それはできないだろう。」
+EN "Thinking of %ss58 and %ss59, I couldn't do that."
+
+@ 1.080.06
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん・・・
+JP 　だったら俺もＯＪＰをやめます！」
+EN "%ss66... Then I'm quitting <OJP> too!"
+
+@ 1.080.07
+# speaker: 富樫 (%ss67)
+JP 「俺だけじゃない。」
+EN "And not just me."
+
+@ 1.080.08
+# speaker: 富樫 (%ss67)
+JP 「%ss81や%ss69、
+JP 　選手の大半は%ss66さんに
+JP 　ついて来るはずです。」
+EN "%ss81, %ss69... most of the roster will follow you, %ss66."
+
+@ 1.080.09
+# speaker: 富樫 (%ss67)
+JP 「いっしょに
+JP 　新団体を旗揚げしましょう・・・！」
+EN "Let's launch a new promotion together...!"
+
+@ 1.080.10
+# speaker: 氷川 (%ss66)
+JP 「%ss67・・・
+JP 　気持ちだけは
+JP 　ありがたく受け取っておく。」
+EN "%ss67... I appreciate the thought."
+
+@ 1.080.11
+# speaker: 氷川 (%ss66)
+JP 「だが、俺が抜けた後、
+JP 　おまえまでやめたらＯＪＰはどうなる？」
+EN "But if you quit too after I leave, what happens to <OJP>?"
+
+@ 1.080.12
+# speaker: 氷川 (%ss66)
+JP 「おまえは残って
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮを守るんだ。」
+EN "You stay and protect <OLIVE JAPAN>."
+
+@ 1.080.13
+# speaker: 氷川 (%ss66)
+JP 「おまえには、
+JP 　まだここでやるべきプロレスが
+JP 　あるじゃないか。」
+EN "There's still pro wrestling you need to do here, isn't there?"
+
+@ 1.080.14
+# speaker: 富樫 (%ss67)
+JP 「でも、%ss66さん・・・。」
+EN "But, %ss66..."
+
+@ 1.081.00
+# speaker: 氷川 (%ss66)
+JP 　%ss67の気持ちはうれしかった。
+EN I was glad %ss67 felt that way.
+
+@ 1.081.01
+# speaker: 氷川 (%ss66)
+JP 　だが、結局
+JP 　これは俺一人の問題だ。
+JP 　他の者を巻き添えには出来ない・・・。
+EN But in the end, this is my problem alone. I can't drag anyone else into it...
+
+@ 1.082.00
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰを完全に脱退した後、
+JP 　俺はしばらくフリーのレスラーとして
+JP 　活動することになった。
+EN After leaving <OJP> for good, I worked as a freelance wrestler for a while.
+
+@ 1.082.01
+# speaker: 氷川 (%ss66)
+JP 　そのうち、
+JP 　%ss81や%ss86といった
+JP 　若手レスラーもＯＪＰをやめ、
+EN Before long, young wrestlers like %ss81 and %ss86 quit <OJP> too,
+
+@ 1.082.02
+# speaker: 氷川 (%ss66)
+JP 　俺を慕って集まって来た。
+EN and came to join me.
+
+@ 1.083.00
+# speaker: 野河 (%ss81)
+JP 「%ss66さん、
+JP 　ＶＪＰマットに乗り込みませんか？」
+EN "%ss66, why don't we storm the <VJP> ring?"
+
+@ 1.083.01
+# speaker: 氷川 (%ss66)
+JP 「%ss81・・・。
+JP 　多分、ＶＪＰのマットには
+JP 　俺達の求めるプロレスはないぞ。」
+EN "%ss81... I doubt the pro wrestling we're after is in the <VJP> ring."
+
+@ 1.083.02
+# speaker: 野河 (%ss81)
+JP 「でも、%ss66さん・・・。」
+EN "But, %ss66..."
+
+@ 1.083.03
+# speaker: 氷川 (%ss66)
+JP 「心配するな。
+JP 　近いうち、俺はある男と会う。」
+EN "Don't worry. I'm meeting a certain man soon."
+
+@ 1.083.04
+# speaker: 氷川 (%ss66)
+JP 「そこでの話が折り合えば、
+JP 　すぐにでも試合はできるさ。」
+EN "If we can come to terms, we'll be fighting right away."
+
+@ 1.083.05
+# speaker: 野河 (%ss81)
+JP 「ある男って・・・誰ですか？」
+EN "A certain man... Who?"
+
+@ 1.083.06
+# speaker: 氷川 (%ss66)
+JP 「『ＮＥＯ－ＯＮＥ』の
+JP 　%ss88だ。」
+EN "%ss88 of <NEO-ONE>."
+
+@ 1.083.07
+# speaker: 野河 (%ss81)
+JP 「%ss88・・・！」
+EN "%ss88...!"
+
+@ 1.084.00
+# speaker: 氷川 (%ss66)
+JP 　元ＶＪＰの%ss88は、
+JP 『Ｕ．Ｎ．Ｏ』の
+JP 　%ss94との死闘に敗れ、
+EN %ss88, formerly of <VJP>, lost a war with %ss94 of <U.N.O>,
+
+@ 1.084.01
+# speaker: 氷川 (%ss66)
+JP 　一年の時を経て、
+JP 　新団体ＮＥＯ－ＯＮＥを
+JP 　旗揚げしていた。
+EN and a year later, he launched a new promotion, <NEO-ONE>.
+
+@ 1.084.02
+# speaker: 氷川 (%ss66)
+JP 　%ss88は
+JP 　格闘よりの%ss94に対して、
+EN %ss88 stood against %ss94, who leaned toward real combat,
+
+@ 1.084.03
+# speaker: 氷川 (%ss66)
+JP 　あくまでもプロレスで闘い
+JP 　敗れてしまった・・・。
+EN fighting pro wrestling to the end... and lost.
+
+@ 1.084.04
+# speaker: 氷川 (%ss66)
+JP 　魅せるプロレスを追及する
+JP 　%ss88の姿勢に、
+JP 　俺は以前から興味を持っていた。
+EN I'd long been interested in %ss88's devotion to pro wrestling that captivates.
+
+@ 1.084.05
+# speaker: 氷川 (%ss66)
+JP 　ＮＥＯ－ＯＮＥには、
+JP 　俺の求めるプロレスが
+JP 　あるかもしれない・・・！
+EN Maybe <NEO-ONE> has the pro wrestling I'm looking for...!
+
+@ 1.085.00
+# speaker: 旗本 (%ss88)
+JP 「%ss66さん。」
+EN "%ss66."
+
+@ 1.085.01
+# speaker: 旗本 (%ss88)
+JP 「俺達ＮＥＯ－ＯＮＥは、
+JP 　%ss66さん達の参戦を
+JP 　心から歓迎しますよ。」
+EN "We at <NEO-ONE> wholeheartedly welcome you and your guys, %ss66."
+
+@ 1.085.02
+# speaker: 氷川 (%ss66)
+JP 「%ss88君、ありがとう。」
+EN "Thank you, %ss88."
+
+@ 1.085.03
+# speaker: 氷川 (%ss66)
+JP 「俺達は必ず
+JP 　新生ＮＥＯ－ＯＮＥに
+JP 　ふさわしいファイトをして見せるよ。」
+EN "We'll put on fights worthy of the new <NEO-ONE>, I promise."
+
+@ 1.086.00
+# speaker: 記者
+JP 「%ss66さん、どういった経緯で
+JP 　ＮＥＯ－ＯＮＥに参戦することを
+JP 　決められたんですか。」
+EN "%ss66, how did you come to decide to fight in <NEO-ONE>?"
+
+@ 1.086.01
+# speaker: 氷川 (%ss66)
+JP 「俺は、以前から
+JP 　%ss88選手の闘い方には
+JP 　注目していたんだよ。」
+EN "I'd been keeping an eye on how %ss88 fights for a long time."
+
+@ 1.086.02
+# speaker: 氷川 (%ss66)
+JP 「彼とは、ＯＪＰ時代から
+JP 　一度闘って見たいと
+JP 　思っていたからね。」
+EN "Even back in my <OJP> days, I wanted to face him at least once."
+
+@ 1.086.03
+# speaker: 氷川 (%ss66)
+JP 「今回、
+JP 　俺と%ss81、%ss86の
+JP 　参戦を打診したところ、」
+EN "This time, when I asked about %ss81, %ss86 and me joining in,"
+
+@ 1.086.04
+# speaker: 氷川 (%ss66)
+JP 「%ss88君は
+JP 　快く承諾してくれた。」
+EN "%ss88 gladly agreed."
+
+@ 1.086.05
+# speaker: 氷川 (%ss66)
+JP 「後は、ファンが
+JP 　納得してくれるような試合になるよう
+JP 　全力で闘うだけだよ。」
+EN "Now all I can do is fight all out so the fans are satisfied with the matches."
+
+@ 1.086.06
+# speaker: 記者
+JP 「事実上、ＯＪＰとＶＪＰの
+JP 　トップレスラー同士の対決と
+JP 　言えると思うのですが、」
+EN "It's effectively a showdown between the top wrestlers of <OJP> and <VJP>,"
+
+@ 1.086.07
+# speaker: 記者
+JP 「その点については
+JP 　どうお考えですか？」
+EN "What are your thoughts on that?"
+
+@ 1.086.08
+# speaker: 氷川 (%ss66)
+JP 「組織の確執とか、
+JP 　難しいことは考えないようにしてるよ。」
+EN "I try not to think about tricky stuff like feuds between companies."
+
+@ 1.086.09
+# speaker: 氷川 (%ss66)
+JP 「今の俺はＯＪＰの選手じゃない。
+JP 　完全にフリーだからね。」
+EN "I'm not an <OJP> wrestler now. I'm completely freelance."
+
+@ 1.086.10
+# speaker: 氷川 (%ss66)
+JP 「ファンにとっては
+JP 　夢の対決ということに
+JP 　なるんだろうけど、」
+EN "For the fans, I guess it's a dream match,"
+
+@ 1.086.11
+# speaker: 氷川 (%ss66)
+JP 「今後のプロレス界のことを考えると、
+JP 　こういう試合は
+JP 　どんどん増えて欲しいね。」
+EN "but for the future of the wrestling world, I'd like to see a lot more matches like this."
+
+@ 1.086.12
+# speaker: 記者
+JP 「%ss66さん、
+JP 　%ss88選手との試合
+JP 　期待しています。」
+EN "%ss66, we're looking forward to your match with %ss88."
+
+@ 1.087.00
+# speaker: 氷川 (%ss66)
+JP 　夢の対決か・・・
+JP 　何にしてもファンが喜んでくれれば
+JP 　それでいい。
+EN A dream match, huh... Either way, as long as the fans are happy, that's enough.
+
+@ 1.087.01
+# speaker: 氷川 (%ss66)
+JP 　とにかく、俺にとっては
+JP 　今後のレスラー人生を左右する
+JP 　大事な一戦だ。
+EN In any case, this is a crucial match that will shape the rest of my career.
+
+@ 1.087.02
+# speaker: 氷川 (%ss66)
+JP 　下手な試合はできない。
+EN I can't put on a sloppy match.
+
+@ 1.087.03
+# speaker: 氷川 (%ss66)
+JP 　始めから全力で行くぞ！！
+EN I'm going all out from the start!!
+
+@ 1.089.00
+# speaker: 氷川 (%ss66)
+JP 　その後、%ss42は
+JP 　俺の古巣であるＯＪＰと
+JP 　正式に契約し、
+EN Later, %ss42 signed with my old home, <OJP>,
+
+@ 1.089.01
+# speaker: 氷川 (%ss66)
+JP 　今はＯＪＰ所属のレスラーとして
+JP 　活躍している。
+EN and now he's making his mark as an <OJP> wrestler.
+
+@ 1.089.02
+# speaker: 氷川 (%ss66)
+JP 　Ｓ－ＮＯＶＡとＯＪＰの確執を考えれば、
+JP 　もはや%ss42と闘うのは
+JP 　不可能かもしれないが、
+EN Given the bad blood between <S-NOVA> and <OJP>, fighting %ss42 again may be impossible now,
+
+@ 1.089.03
+# speaker: 氷川 (%ss66)
+JP 　チャンスがあれば
+JP 　また再戦したい。
+EN but if I get the chance, I want a rematch.
+
+@ 1.090.00
+# speaker: 氷川 (%ss66)
+JP 　Ｓ－ＮＯＶＡの歴史は
+JP 　今まさに始まったばかりだ。
+EN The history of <S-NOVA> has only just begun.
+
+@ 1.090.01
+# speaker: 氷川 (%ss66)
+JP 　今後のＳ－ＮＯＶＡの盛衰は、
+JP 　やはり俺の舵取りいかんに
+JP 　かかっているだろう。
+EN Whether <S-NOVA> rises or falls from here will depend on how I steer it.
+
+@ 1.090.02
+# speaker: 氷川 (%ss66)
+JP 　立ち止まるわけにはいかない。
+EN I can't stand still.
+
+@ 1.090.03
+# speaker: 氷川 (%ss66)
+JP 　俺を信じて
+JP 　ついて来てくれる者達のためにも、
+JP 　妥協するわけにはいかないんだ。
+EN For the sake of those who believe in me and follow me, I can't compromise.
+
+@ 1.090.04
+# speaker: 氷川 (%ss66)
+JP 　俺は、俺の信じるプロレスを
+JP 　成就させるため、
+JP 　さらなるメジャーを目指して突き進む。
+EN To fulfill the pro wrestling I believe in, I'll charge ahead toward an even bigger stage.
+
+@ 1.090.05
+# speaker: 氷川 (%ss66)
+JP 　プロレスには夢がある。
+JP 　信じて賭けるだけの価値がある。
+EN Pro wrestling is full of dreams. It's worth believing in and betting on.
+
+@ 1.090.06
+# speaker: 氷川 (%ss66)
+JP 　Ｓ－ＮＯＶＡという団体の
+JP 　魅せるプロレスを通じて、
+EN Through the captivating pro wrestling of a promotion called <S-NOVA>,
+
+@ 1.090.07
+# speaker: 氷川 (%ss66)
+JP 　応援してくれるファン達と
+JP 　その気持ちを共有できれば、
+EN if I can share that feeling with the fans who cheer us on,
+
+@ 1.090.08
+# speaker: 氷川 (%ss66)
+JP 　それ以上の幸せはないよ。
+JP 
+JP 　%sf66
+EN there's no greater happiness for me.
+EN 
+EN %sf66
+
+@ 1.091.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　すばらしい・・・
+JP 　本当にすばらしい試合でした！！」
+EN "%ss66!! Fantastic... A truly fantastic match!!"
+
+@ 1.091.01
+# speaker: 記者
+JP 「感動しました！！」
+EN "I was so moved!!"
+
+@ 1.091.02
+# speaker: 氷川 (%ss66)
+JP 「勝てたね、どうにか。」
+EN "I won, somehow."
+
+@ 1.091.03
+# speaker: 氷川 (%ss66)
+JP 「正直言うと、途中で何度か
+JP 　記憶がぶっ飛んでてね。」
+EN "To be honest, I blanked out a few times in there."
+
+@ 1.091.04
+# speaker: 氷川 (%ss66)
+JP 「%ss42は本当に強かったよ。
+JP 　これで、ＧＭＣのベルトに
+JP 　ハクがついた。」
+EN "%ss42 was really strong. This adds real prestige to the <GMC> belt."
+
+@ 1.091.05
+# speaker: 記者
+JP 「%ss42選手が
+JP 　再戦を望んでいるようですが、
+JP 　%ss66さん、どうしますか！？」
+EN "%ss42 seems to want a rematch. %ss66, what will you do?!"
+
+@ 1.091.06
+# speaker: 氷川 (%ss66)
+JP 「逃げるわけにはいかんでしょう？
+JP 　来るなら来いだな。」
+EN "I can't run away, can I? If he wants it, bring it on."
+
+@ 1.093.00
+# speaker: 記者
+JP 「すさまじい・・・
+JP 　本当にすさまじい試合でした！！
+JP 　%ss42さん！！」
+EN "Ferocious... A truly ferocious match!! %ss42!!"
+
+@ 1.093.01
+# speaker: 記者
+JP 「%ss66選手との試合は
+JP 　どうでしたか！？」
+EN "How was the match with %ss66?!"
+
+@ 1.094.00
+# speaker: 俊藤 (%ss42)
+JP 「相手が相手だったからね。
+JP 　とにかく、
+JP 　出せるものは全部出した。」
+EN "Look who I was up against. Anyway, I gave it everything I had."
+
+@ 1.094.01
+# speaker: 俊藤 (%ss42)
+JP 「結果的に俺が勝ったけど・・・
+JP 　まったく先が読めない試合っていうのは、
+JP 　これが初めてだったな。」
+EN "I won in the end, but... it's the first match I've had where I couldn't read anything ahead."
+
+@ 1.094.02
+# speaker: 記者
+JP 「%ss66選手について
+JP 　何かコメントはありますか！？」
+EN "Any comment on %ss66?!"
+
+@ 1.094.03
+# speaker: 俊藤 (%ss42)
+JP 「プロだね、本物の。
+JP 　それ以上は言う必要はない。
+JP 　俺流の敬意の表し方だよ。」
+EN "He's a pro. The real deal. No need to say more. That's my way of showing respect."
+
+@ 1.094.04
+# speaker: 記者
+JP 「すばらしい試合
+JP 　ありがとうございました！！」
+EN "Thank you for a fantastic match!!"
+
+@ 1.094.05
+# speaker: 記者
+JP 「今後の%ss42選手の活動に
+JP 　期待してます！！」
+EN "We're looking forward to what you do next, %ss42!!"
+
+@ 1.100.00
+# speaker: 記者
+JP 「%ss42選手！！
+JP 　ＶＪＰを脱退するという話なんですが、
+JP 　本当なんですか！？」
+EN "%ss42!! Is it true you're leaving <VJP>?!"
+
+@ 1.101.00
+# speaker: 俊藤 (%ss42)
+JP 「ああ。
+JP 　ＶＪＰのプロレススタイルが、
+JP 　俺の求める物とは違ってきたからな。」
+EN "Yeah. <VJP>'s style of wrestling has drifted away from what I'm after."
+
+@ 1.101.01
+# speaker: 俊藤 (%ss42)
+JP 「近いうち、
+JP 　俺はＶＩＥＷ　ＪＡＰＡＮをやめるよ。」
+EN "I'll be leaving <VIEW JAPAN> soon."
+
+@ 1.101.02
+# speaker: 記者
+JP 「%ss42さん！！
+JP 　ＶＪＰをやめられた後、どのようにするか
+JP 　もう決められてるんですか！？」
+EN "%ss42!! Have you already decided what you'll do after leaving <VJP>?!"
+
+@ 1.101.03
+# speaker: 俊藤 (%ss42)
+JP 「それは、今ここでは言えない。
+JP 　ただ、多少フリーになる期間が
+JP 　あると思うから・・・」
+EN "I can't say that here. But I figure I'll be freelance for a little while..."
+
+@ 1.101.04
+# speaker: 俊藤 (%ss42)
+JP 「その間に一試合やってみようと
+JP 　思っているよ。」
+EN "and I'm thinking of having one match in that time."
+
+@ 1.101.05
+# speaker: 俊藤 (%ss42)
+JP 「Ｓ－ＮＯＶＡの長と一戦な。」
+EN "Against the head of <S-NOVA>."
+
+@ 1.101.06
+# speaker: 記者
+JP 「え、ええっ！？
+JP 　お、長って・・・
+JP 　%ss66とですか！？」
+EN "Wh-whaaat?! Th-the head... You mean %ss66?!"
+
+@ 1.101.07
+# speaker: 俊藤 (%ss42)
+JP 「そう。
+JP 　たまには自分の感じるまま、
+JP 　素直にやってみたいと思うんだ。」
+EN "That's right. Just for once, I want to go with my gut."
+
+@ 1.101.08
+# speaker: 俊藤 (%ss42)
+JP 「もっとも、向こうが嫌だと言ったら
+JP 　それまでだがな。」
+EN "Of course, if he says no, that's the end of it."
+
+@ 1.102.00
+# speaker: 氷川 (%ss66)
+JP 　嫌なんて言うわけないじゃないか。
+JP 　こんなおいしい話。
+EN As if I'd say no to a juicy offer like this.
+
+@ 1.103.00
+# speaker: 氷川 (%ss66)
+JP 　%ss42の
+JP 　突然のＶＪＰ脱退宣言によって、
+EN Thanks to %ss42's sudden announcement that he was leaving <VJP>,
+
+@ 1.103.01
+# speaker: 氷川 (%ss66)
+JP 　ファンが夢にまで見たという、
+JP 　待望の一戦は実現した。
+EN the long-awaited match the fans had dreamed of came true.
+
+@ 1.103.02
+# speaker: 氷川 (%ss66)
+JP 　この試合を
+JP 　Ｓ－ＮＯＶＡのリングで行える事は、
+JP 　本当に幸運だったと言える・・・。
+EN I was truly lucky to hold this match in the <S-NOVA> ring...
+
+@ 1.103.03
+# speaker: 氷川 (%ss66)
+JP 　俺は・・・
+EN I...
+
+@ 1.103.04
+# speaker: 氷川 (%ss66)
+JP 　いや、Ｓ－ＮＯＶＡは、これからも
+JP 　ファンを魅了していく試合を
+JP 　していかなければならない。
+EN No, <S-NOVA> has to keep putting on matches that captivate the fans.
+
+@ 1.103.05
+# speaker: 氷川 (%ss66)
+JP 　そうすることが、
+JP 　プロとしての責任だと
+JP 　俺は考えている。
+EN I believe that's our responsibility as professionals.
+
+@ 1.104.00
+# speaker: リングアナ
+JP 「赤ーコーナーー！！」
+EN "In the red corner!!"
+
+@ 1.105.00
+# speaker: リングアナ
+JP 「%ss42ーー！！
+JP 　%sl42ーーー！！！」
+EN "%sl42!! %ss42!!!"
+
+@ 1.106.00
+# speaker: リングアナ
+JP 「青ーコーナーー！！
+JP  ＧＭＣチャンピオン！！」
+EN "In the blue corner!! The <GMC> Champion!!"
+
+@ 1.107.00
+# speaker: リングアナ
+JP 「%ss66ーー！！
+JP 　%sl66ーーー！！！」
+EN "%sl66!! %ss66!!!"
+
+@ 1.108.00
+# speaker: 氷川 (%ss66)
+JP 　夢の対決・・・
+EN A dream match...
+
+@ 1.108.01
+JP %ss66：　
+JP 　俺にとっても、この試合は
+JP 　プロレス人生の集大成に
+JP 　なるべき試合だ。
+EN %ss66:
+EN For me, too, this match should be the culmination of my pro wrestling life.
+
+@ 1.108.02
+# speaker: 氷川 (%ss66)
+JP 　これ以上の相手はいない・・・！！
+EN There's no greater opponent...!!
+
+@ 1.108.03
+# speaker: 氷川 (%ss66)
+JP 　持てる力の全てを出し切って闘う！！
+JP 　行くぞ、%ss42！！
+EN I'll fight with everything I have!! Here I come, %ss42!!
+
+@ 1.110.00
+# speaker: 氷川 (%ss66)
+JP 　Ｓ－ＮＯＶＡを旗揚げした後の一年は、
+JP 　間違いなく俺の人生の中で
+JP 　最も忙しい時期だったよ。
+EN The year after launching <S-NOVA> was without a doubt the busiest time of my life.
+
+@ 1.110.01
+# speaker: 氷川 (%ss66)
+JP 　それでも俺は
+JP 　後悔などしていなかった。
+EN Even so, I had no regrets.
+
+@ 1.110.02
+# speaker: 氷川 (%ss66)
+JP 　後悔なんてするわけない。
+EN How could I regret it?
+
+@ 1.110.03
+# speaker: 氷川 (%ss66)
+JP 　なぜなら俺は、自分が真に
+JP 　歩みたい道を進んでいるからな。
+EN Because I'm walking the road I truly want to walk.
+
+@ 1.110.04
+# speaker: 氷川 (%ss66)
+JP 　やりたいようにやれる充実感は、
+JP 　何物にも代え難いじゃないか。
+EN Nothing beats the satisfaction of doing things your own way.
+
+@ 1.111.00
+# speaker: 記者
+JP 「%ss66さん。
+JP 　旗揚げ以来、Ｓ－ＮＯＶＡは順調に
+JP 　ファンの支持を得ているようですが、」
+EN "%ss66. Since its launch, <S-NOVA> seems to be winning steady support from the fans,"
+
+@ 1.111.01
+# speaker: 記者
+JP 「今後の方針などを
+JP 　お聞かせ願えますか？」
+EN "Could you tell us about your plans going forward?"
+
+@ 1.111.02
+# speaker: 氷川 (%ss66)
+JP 「Ｓ－ＮＯＶＡを
+JP 　応援してくれるファンの方々には、
+JP 　本当に感謝していますよ。」
+EN "I'm truly grateful to all the fans who support <S-NOVA>."
+
+@ 1.111.03
+# speaker: 氷川 (%ss66)
+JP 「これからもＳ－ＮＯＶＡは、
+JP 　ファンの期待に応えられるよう、」
+EN So that <S-NOVA> keeps living up to the fans' expectations,
+
+@ 1.111.04
+# speaker: 氷川 (%ss66)
+JP 「中身のあるプロレスを
+JP 　展開して行きたいですね。」
+EN I want us to put on pro wrestling with real substance.
+
+@ 1.111.05
+# speaker: 氷川 (%ss66)
+JP 「それと、今までだったら
+JP 　実現不可能だったカードなども、」
+EN Also, I want to think about cards that would have been impossible before,
+
+@ 1.111.06
+# speaker: 氷川 (%ss66)
+JP 「出来る限り
+JP 　考えて行こうと思っています。」
+EN as many as we possibly can.
+
+@ 1.111.07
+# speaker: 記者
+JP 「実現不可能・・・
+JP 　と言うと、具体的には
+JP 　どういったものですか？」
+EN "Impossible... What do you mean, specifically?"
+
+@ 1.111.08
+# speaker: 氷川 (%ss66)
+JP 「今のプロレス界は、
+JP 　団体間の隔たりが
+JP 　無くなりつつありますよね。」
+EN "In today's wrestling world, the walls between promotions are coming down."
+
+@ 1.111.09
+# speaker: 氷川 (%ss66)
+JP 「今後、更に
+JP 　そういう流れが進んで行けば、」
+EN "If that keeps going even further,"
+
+@ 1.111.10
+# speaker: 氷川 (%ss66)
+JP 「その内
+JP 　ファンが望んでいたような
+JP 　夢の対決が実現するかもしれない。」
+EN "sooner or later, the dream matches the fans have wanted might come true."
+
+@ 1.111.11
+# speaker: 氷川 (%ss66)
+JP 「そういった試合を、
+JP 　Ｓ－ＮＯＶＡのマットで
+JP 　ぜひ実現してみたいですね。」
+EN "I'd love to make matches like that happen in the <S-NOVA> ring."
+
+@ 1.111.12
+# speaker: 記者
+JP 「夢の対決ですか・・・！」
+EN "Dream matches...!"
+
+@ 1.111.13
+# speaker: 記者
+JP 「%ss66さんと
+JP 　ＶＪＰの%ss42選手との試合などは
+JP 　その筆頭でしょうが、」
+EN "A match between %ss66 and %ss42 of <VJP> must top the list,"
+
+@ 1.111.14
+# speaker: 記者
+JP 「%ss66さんとしては、
+JP 　%ss42選手のことを
+JP 　どう思われますか？」
+EN "%ss66, what do you think of %ss42?"
+
+@ 1.111.15
+# speaker: 氷川 (%ss66)
+JP 「%ss42選手は三冠王者ですからね。
+JP 　興味ありますよ。」
+EN "%ss42 is the Triple Crown Champion. I'm interested, of course."
+
+@ 1.111.16
+# speaker: 氷川 (%ss66)
+JP 「状況がそろえば
+JP 　やってみたいですね。」
+EN "If the circumstances line up, I'd like to fight him."
+
+@ 1.111.17
+# speaker: 記者
+JP 「本当ですか！？」
+EN "Really?!"
+
+@ 1.111.18
+# speaker: 記者
+JP 「実現したら、これはもう
+JP 　大変なことですよ！！」
+EN "If that happens, it'll be huge!!"
+
+@ 1.111.19
+# speaker: 記者
+JP 「日本マット界の歴史に残ることは
+JP 　間違いありません！！」
+EN "It'll go down in Japanese wrestling history for sure!!"
+
+@ 1.111.20
+# speaker: 氷川 (%ss66)
+JP 「まあ、そうなるように
+JP 　祈っていて下さい。」
+EN "Well, pray that it happens."
+
+@ 1.111.21
+# speaker: 氷川 (%ss66)
+JP 「今の状況なら、
+JP 　まったく不可能というわけでも
+JP 　ないでしょうからね。」
+EN "The way things are now, it's not completely impossible."
+
+@ 1.112.00
+# speaker: 氷川 (%ss66)
+JP 　後日、ある記者から聞いた話では、
+JP 　俺の記者会見での話を知った
+JP 　%ss42が、
+EN Later, a reporter told me that when %ss42 heard what I'd said at the press conference,
+
+@ 1.112.01
+# speaker: 氷川 (%ss66)
+JP 「対戦を要望されてうれしい」と
+JP 　語っていたと言う。
+EN he said he was "happy to be asked for a match."
+
+@ 1.112.02
+# speaker: 氷川 (%ss66)
+JP 　だが、現実の壁はやはり厚く、
+EN But reality was a thick wall,
+
+@ 1.112.03
+# speaker: 氷川 (%ss66)
+JP 　団体所属のトップレスラーが、
+JP 　他団体のレスラーと試合するのは
+JP 　難しいことだった。
+EN and it was hard for a promotion's top wrestler to fight a wrestler from another promotion.
+
+@ 1.112.04
+# speaker: 氷川 (%ss66)
+JP 　仮に、俺と%ss42の試合が
+JP 　実現したとして、
+EN Say a match between %ss42 and me actually happened.
+
+@ 1.112.05
+# speaker: 氷川 (%ss66)
+JP 　もし%ss42が敗れれば
+JP 　ＶＪＰはメンツを失う。
+JP 　そんなことを上が許すはずはない。
+EN If %ss42 lost, <VJP> would lose face. The higher-ups would never allow that.
+
+@ 1.112.06
+# speaker: 氷川 (%ss66)
+JP 　本人同士にやる気があったとしても、
+JP 　上がそれを許さなければ
+JP 　試合は出来ない・・・。
+EN Even if the two of us wanted it, without the higher-ups' okay, there'd be no match...
+
+@ 1.112.07
+# speaker: 氷川 (%ss66)
+JP 　この試合は無理だな・・・
+EN This match just isn't going to happen...
+
+@ 1.112.08
+# speaker: 氷川 (%ss66)
+JP 　そう思っていた矢先だった。
+EN That's what I was thinking, right when it happened.
+
+@ 1.114.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　タイトル防衛
+JP 　おめでとうございます！！」
+EN "%ss66!! Congratulations on defending your title!!"
+
+@ 1.114.01
+# speaker: 氷川 (%ss66)
+JP 「強いね、%ss69は。
+JP 　今回はとりあえず勝てたけど、
+JP 　次はどうなるか分からない。」
+EN "%ss69 is strong. I managed to win this time, but there's no telling about next time."
+
+@ 1.114.02
+# speaker: 記者
+JP 「%ss66、%ss69の闘いは
+JP 　今後も続いて行くと思いますが、」
+EN "The battle of %ss66 vs. %ss69 looks set to continue,"
+
+@ 1.114.03
+# speaker: 記者
+JP 「%ss66さんとしては、
+JP 　どのような展開をのぞまれますか？」
+EN "%ss66, how would you like to see it develop?"
+
+@ 1.114.04
+# speaker: 氷川 (%ss66)
+JP 「行き着くところまで
+JP 　行くしかないでしょう。」
+EN "We'll just have to take it all the way."
+
+@ 1.114.05
+# speaker: 氷川 (%ss66)
+JP 「ハッキリ言って、
+JP 　%ss69との試合は
+JP 　やり甲斐がありますよ・・・！」
+EN "Frankly, matches with %ss69 are really worth fighting...!"
+
+@ 1.116.00
+# speaker: 記者
+JP 「おめでとうございます！！
+JP 　%ss69さん！！」
+EN "Congratulations!! %ss69!!"
+
+@ 1.116.01
+# speaker: 記者
+JP 「これまでやって来たことが
+JP 　形になりました！！
+JP 　念願のベルトの感触はいかがですか！？」
+EN "All your hard work has paid off!! How does that long-awaited belt feel?!"
+
+@ 1.117.00
+# speaker: 秋沢 (%ss69)
+JP 「まだちょっと、
+JP 　ピンとこないんですけど・・・」
+EN "It hasn't quite sunk in yet..."
+
+@ 1.117.01
+# speaker: 秋沢 (%ss69)
+JP 「まあ、後から
+JP 　ジワジワと来るんじゃないですか。」	
+EN "Well, I guess it'll hit me little by little."
+
+@ 1.117.02
+# speaker: 秋沢 (%ss69)
+JP 「とにかく、%ss66さんを倒しての
+JP 　ベルトには大きな意味があるでしょう。」
+EN "Anyway, winning the belt by beating %ss66 has to mean a lot."
+
+@ 1.117.03
+# speaker: 秋沢 (%ss69)
+JP 「ただ、%ss66さんとの闘いは
+JP 　これで終わりというわけじゃ
+JP 　ないですからね。」
+EN "But this isn't the end of my fight with %ss66."
+
+@ 1.117.04
+# speaker: 秋沢 (%ss69)
+JP 「何にしても、これからですよ・・・！」
+EN "Either way, this is only the beginning...!"
+
+@ 1.123.00
+# speaker: 氷川 (%ss66)
+JP 　ＮＥＯ－ＯＮＥとの闘いは、
+JP 　マスコミ的にも話題性があり
+JP 　一応の成功をおさめた。
+EN The war with <NEO-ONE> made headlines and was a success, more or less.
+
+@ 1.123.01
+# speaker: 氷川 (%ss66)
+JP 　だが、この盛り上がりが
+JP 　一時的なものでは意味がない。
+EN But it's meaningless if the excitement is only temporary.
+
+@ 1.123.02
+# speaker: 氷川 (%ss66)
+JP 　やはり、長期的な目で見て、
+JP 　Ｓ－ＮＯＶＡ本来の若手の育成というのが
+JP 　今後の重要な課題になって来るだろう。
+EN In the long run, developing young wrestlers, as <S-NOVA> was meant to, will be the key challenge ahead.
+
+@ 1.123.03
+# speaker: 氷川 (%ss66)
+JP 　団体の長として、俺は
+JP 　次世代のレスラーを
+JP 　育成しなければならない・・・！
+EN As the head of the promotion, I have to develop the next generation of wrestlers...!
+
+@ 1.124.00
+# speaker: 記者
+JP 「%ss66社長。
+JP 　今後のＳ－ＮＯＶＡの展開について、
+JP 　今現在どのようにお考えでしょうか？」
+EN "President %ss66. What are your current thoughts on where <S-NOVA> goes from here?"
+
+@ 1.124.01
+# speaker: 氷川 (%ss66)
+JP 「一言で言えば、
+JP 　頑張るしかないよ。」
+EN "In a word, we just have to work hard."
+
+@ 1.124.02
+# speaker: 氷川 (%ss66)
+JP 「Ｓ－ＮＯＶＡという団体は、決して
+JP 　俺一人で作り上げたものじゃ
+JP 　ないからね。」
+EN "<S-NOVA> is by no means a promotion I built on my own."
+
+@ 1.124.03
+# speaker: 氷川 (%ss66)
+JP 「多くの人に助けられて
+JP 　ここまで来れたのだし、」
+EN "A lot of people helped us get this far,"
+
+@ 1.124.04
+# speaker: 氷川 (%ss66)
+JP 「これからも
+JP 　一人一人のやる気が原動力となって、」
+EN "and from here on, too, with each person's drive pushing us forward,"
+
+@ 1.124.05
+# speaker: 氷川 (%ss66)
+JP 「ファンに
+JP 　満足してもらえる試合が出来るよう、
+JP 　頑張って行くしかないんだ。」
+EN "we just have to keep working hard to give the fans matches they're happy with."
+
+@ 1.124.06
+# speaker: 記者
+JP 「若手では、%ss69選手の力が
+JP 　飛びぬけていますが、
+JP 　それについてはどう思いますか？」
+EN "Among the young wrestlers, %ss69 stands head and shoulders above the rest. Your thoughts?"
+
+@ 1.124.07
+# speaker: 氷川 (%ss66)
+JP 「うれしいことだね、社長としては。」
+EN "As the president, I'm glad."
+
+@ 1.124.08
+# speaker: 氷川 (%ss66)
+JP 「やっぱり、下が奮起してくれないと
+JP 　試合も面白くないでしょう。」
+EN "If the guys below don't rise up, the matches won't be any fun."
+
+@ 1.124.09
+# speaker: 氷川 (%ss66)
+JP 「ただ、
+JP 　同じレスラーとしてみると
+JP 　憎たらしいね。」
+EN "But as a fellow wrestler, he's a real pain."
+
+@ 1.124.10
+# speaker: 氷川 (%ss66)
+JP 「まだまだ若いもんに
+JP 　負けるわけにはいきませんよ。
+JP 　あ、俺も年とったな・・・」
+EN "I can't lose to the young guys yet. Ah, I'm getting old..."
+
+@ 1.124.11
+# speaker: 記者
+JP 「%ss66社長、
+JP 　思いっきり現役ですよ！！」
+EN "President %ss66, you're still very much active!!"
+
+@ 1.124.12
+# speaker: 記者
+JP 「今後のＳ－ＮＯＶＡの試合に
+JP 　期待しています！！」
+EN "We're looking forward to <S-NOVA>'s matches!!"
+
+@ 1.125.00
+# speaker: 秋沢 (%ss69)
+JP 「%ss66さん。
+JP 　今度の試合、俺は爆発しますよ。」
+EN "%ss66. I'm going to explode in our next match."
+
+@ 1.125.01
+# speaker: 秋沢 (%ss69)
+JP 「Ｓ－ＮＯＶＡのこれからを考えて、
+JP 　俺は俺なりに思うところが
+JP 　ありますからね。」
+EN "Thinking about <S-NOVA>'s future, I've got my own ideas."
+
+@ 1.125.02
+# speaker: 秋沢 (%ss69)
+JP 「俺達、新時代を担うレスラーと、
+JP 　%ss66さん達との闘いが、」
+EN "The fight between us, the wrestlers of the new era, and guys like you, %ss66,"
+
+@ 1.125.03
+# speaker: 秋沢 (%ss69)
+JP 「今後のＳ－ＮＯＶＡの未来を
+JP 　決めると言っても過言じゃない。
+JP 　俺はやりますよ・・・！」
+EN "it's no exaggeration to say it'll decide <S-NOVA>'s future. I'm going for it...!"
+
+@ 1.125.04
+# speaker: 氷川 (%ss66)
+JP 「%ss69、俺のプロレスが
+JP 　古いとでも言いたいのか？」
+EN "%ss69, are you saying my wrestling is outdated?"
+
+@ 1.125.05
+# speaker: 氷川 (%ss66)
+JP 「いいだろう・・・」
+EN "All right..."
+
+@ 1.125.06
+# speaker: 氷川 (%ss66)
+JP 「これがＳ－ＮＯＶＡの
+JP 　プロレスだというのを見せてやる！！
+JP 　覚悟しておけよ！！」
+EN "I'll show you what <S-NOVA> wrestling is!! Get ready!!"
+
+@ 1.125.07
+# speaker: 秋沢 (%ss69)
+JP 「俺はいつでも
+JP 　覚悟してますよ・・・！！」
+EN "I'm always ready...!!"
+
+@ 1.126.00
+# speaker: 氷川 (%ss66)
+JP 　若手の%ss69が、
+JP 　強烈な勢いで力をつけて来ていた。
+EN Our young wrestler %ss69 had been getting stronger at a ferocious pace.
+
+@ 1.126.01
+# speaker: 氷川 (%ss66)
+JP 　今までもそうだったが、
+JP 　これからの試合は、限界を超えた闘いを
+JP 　更に超えて行かなければならない。
+EN It's always been this way, but from now on I'll have to go beyond even fights that go beyond the limit.
+
+@ 1.126.02
+# speaker: 氷川 (%ss66)
+JP 　更なる限界への挑戦・・・
+EN Pushing past my limits yet again...
+
+@ 1.126.03
+# speaker: 氷川 (%ss66)
+JP 　だが、それを体現してこそ
+JP 　Ｓ－ＮＯＶＡという団体の真骨頂が
+JP 　見える。
+EN But only by embodying that can you see what the <S-NOVA> promotion is truly about.
+
+@ 1.126.04
+# speaker: 氷川 (%ss66)
+JP 　%ss69、俺はまだまだ
+JP 　おまえに越されるわけには行かないよ。
+JP 　真っ逆さまに落としてやる。
+EN %ss69, I can't let you pass me yet. I'll drop you right on your head.
+
+@ 1.126.05
+# speaker: 氷川 (%ss66)
+JP 　そして、俺があきれるくらい
+JP 　強くなってみろ・・・！！
+EN And then, get so strong it leaves me speechless...!!
+
+@ 1.127.00
+# speaker: 記者
+JP 「%ss69選手！！
+JP 　%ss66選手とタイトルをかけて
+JP 　闘うことになりました！！」
+EN "%ss69!! You'll be fighting %ss66 for the title!!"
+
+@ 1.127.01
+# speaker: 記者
+JP 「現状での、
+JP 　Ｓ－ＮＯＶＡの頂点対決だと
+JP 　思うのですが、」
+EN "It's a battle for the top of <S-NOVA> as it stands,"
+
+@ 1.127.02
+# speaker: 記者
+JP 「団体を引っ張るという立場も含めて、
+JP 　%ss66越えの
+JP 　覚悟を聞かせて下さい！！」
+EN "As someone who also has to lead the promotion, tell us how ready you are to surpass %ss66!!"
+
+@ 1.128.00
+# speaker: 秋沢 (%ss69)
+JP 「覚悟と言われても・・・」
+EN "How ready, huh..."
+
+@ 1.128.01
+# speaker: 秋沢 (%ss69)
+JP 「団体を引っ張って行く、
+JP 　良くしたいと言う意味では、」
+EN "When it comes to leading the promotion and wanting to make it better,"
+
+@ 1.128.02
+# speaker: 秋沢 (%ss69)
+JP 「やり方の違いはあっても、
+JP 　考えは%ss66さんと
+JP 　同じだと思うんですよね。」
+EN "we may go about it differently, but I think %ss66 and I see it the same way."
+
+@ 1.128.03
+# speaker: 秋沢 (%ss69)
+JP 「俺とか若いヤツらは、
+JP 　持てる力の全てを出して
+JP 　いい試合をするしかない。」
+EN "Guys like me and the other young ones just have to give it everything and put on good matches."
+
+@ 1.128.04
+# speaker: 秋沢 (%ss69)
+JP 「そうすることによって、
+JP 　Ｓ－ＮＯＶＡという団体は
+JP 　活性化して行くんです。」
+EN "That's how a promotion like <S-NOVA> stays alive and kicking."
+
+@ 1.128.05
+# speaker: 秋沢 (%ss69)
+JP 「ただ、その線上に
+JP 　%ss66さんがいる・・・」
+EN "But %ss66 is standing on that line..."
+
+@ 1.128.06
+# speaker: 秋沢 (%ss69)
+JP 「先に進むためには、
+JP 　%ss66さんを
+JP 　倒すしかないでしょう。」
+EN "To move forward, I have to beat %ss66."
+
+@ 1.128.07
+# speaker: 秋沢 (%ss69)
+JP 「とにかく、俺を見ていれば
+JP 　Ｓ－ＮＯＶＡという団体が分かります。
+JP 　楽しみにしていて下さい。」
+EN "Anyway, watch me and you'll understand what the <S-NOVA> promotion is. Look forward to it."
+
+@ 1.129.00
+# speaker: 氷川 (%ss66)
+JP 　上に立つ者として、
+JP 　俺は常に勝たなければならない。
+EN As the man at the top, I always have to win.
+
+@ 1.129.01
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰにいた頃は
+JP 　%ss59さんがいた、
+JP 　%ss61がいた、
+EN Back in <OJP>, there was %ss59, there was %ss61,
+
+@ 1.129.02
+# speaker: 氷川 (%ss66)
+JP 　そして%ss58さんがいた・・・。
+EN and there was %ss58...
+
+@ 1.129.03
+# speaker: 氷川 (%ss66)
+JP 　目の前の壁が
+JP 　巨大であればあるほど、
+JP 　俺は燃えた。
+EN The bigger the wall in front of me, the hotter I burned.
+
+@ 1.129.04
+# speaker: 氷川 (%ss66)
+JP 　これからは、俺が先人達の立場となって、
+JP 　立ちはだかる大きな壁に
+JP 　ならなければならない。
+EN From now on, I have to take my predecessors' place and become the great wall that stands in the way.
+
+@ 1.129.05
+# speaker: 氷川 (%ss66)
+JP 　俺を目指す若いレスラー達のため、
+EN For the young wrestlers who are aiming for me,
+
+@ 1.129.06
+# speaker: 氷川 (%ss66)
+JP 　そして・・・
+EN And then...
+
+@ 1.129.07
+# speaker: 氷川 (%ss66)
+JP 　自分自身のために。
+EN for myself.
+
+@ 1.131.00
+# speaker: 記者
+JP 「すばらしい試合でした！！
+JP 　%ss66さん！！」
+EN "A fantastic match!! %ss66!!"
+
+@ 1.131.01
+# speaker: 記者
+JP 「ファンにとっては夢の対決です！！」
+EN "It was a dream match for the fans!!"
+
+@ 1.131.02
+# speaker: 記者
+JP 「勝者としての、
+JP 　今の感想をお聞かせ下さい！！」
+EN "Tell us how it feels to be the winner!!"
+
+@ 1.131.03
+# speaker: 氷川 (%ss66)
+JP 「勝てて良かった、
+JP 　と言うのが正直な感想だね。」
+EN "Honestly, I'm just glad we won."
+
+@ 1.131.04
+# speaker: 氷川 (%ss66)
+JP 「タッグ戦とはいえ
+JP 　団体と団体の頂点の闘いだから、
+JP 　負けるわけにはいかない。」
+EN "It was a tag match, but it was a battle between the top men of two promotions. We couldn't lose."
+
+@ 1.131.05
+# speaker: 記者
+JP 「%ss69選手はどうでしたか？」
+EN "How did %ss69 do?"
+
+@ 1.132.00
+# speaker: 秋沢 (%ss69)
+JP 「いつもと変わりませんよ。」
+EN "Same as always."
+
+@ 1.132.01
+# speaker: 秋沢 (%ss69)
+JP 「俺は%ss66さんとは
+JP 　多少見方が違いますからね。」
+EN "I see it a bit differently from %ss66."
+
+@ 1.132.02
+# speaker: 秋沢 (%ss69)
+JP 「向こうは、旗揚げ直前まで
+JP 　レスラーを揃えられないような
+JP 　団体じゃないですか。」
+EN "They're a promotion that couldn't even put a roster together until right before their first show."
+
+@ 1.132.03
+# speaker: 秋沢 (%ss69)
+JP 「この闘いが
+JP 　夢の闘いだったかというと・・・」
+EN "Was this fight a dream match...?"
+
+@ 1.132.04
+# speaker: 秋沢 (%ss69)
+JP 「俺は、ちょっと
+JP 　違うような気がします。」
+EN "I don't really think so."
+
+@ 1.134.00
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　すごい内容の試合でした！！」
+EN "%ss88!! That was an incredible match!!"
+
+@ 1.134.01
+# speaker: 記者
+JP 「この一勝は、非常に意義のある
+JP 　一勝だと思うのですが、」
+EN "This win seems hugely significant,"
+
+@ 1.134.02
+# speaker: 記者
+JP 「勝者としての
+JP 　今の感想を聞かせて下さい！！」
+EN "Tell us how it feels to be the winner!!"
+
+@ 1.135.00
+# speaker: 旗本 (%ss88)
+JP 「予想以上だったよ。
+JP 　いや、いい意味で。」
+EN "Better than I expected. In a good way, I mean."
+
+@ 1.135.01
+# speaker: 旗本 (%ss88)
+JP 「勝てたのは、マジで運だと思った。」
+EN "Honestly, I think I won by pure luck."
+
+@ 1.135.02
+# speaker: 記者
+JP 「今後も
+JP 　Ｓ－ＮＯＶＡとの交流戦は
+JP 　続けられるんでしょうか？」
+EN "Will the series with <S-NOVA> continue?"
+
+@ 1.135.03
+# speaker: 旗本 (%ss88)
+JP 「俺も一家の長として、
+JP 　Ｓ－ＮＯＶＡから学ぶことが
+JP 　まだまだある。」
+EN As the boss of my own outfit, I've still got plenty to learn from <S-NOVA>.
+
+@ 1.135.04
+# speaker: 旗本 (%ss88)
+JP 「それに、%ss66には
+JP 　完全に勝ったってわけじゃない。」
+EN "Besides, I didn't completely beat %ss66."
+
+@ 1.135.05
+# speaker: 旗本 (%ss88)
+JP 「いずれシングルでケリをつける。」
+EN "One day we'll settle it one-on-one."
+
+@ 1.135.06
+# speaker: 旗本 (%ss88)
+JP 「いいか、%ss66！！
+JP 　覚悟していろよ！！」
+EN "You hear me, %ss66?! You'd better be ready!!"
+
+@ 1.141.00
+# speaker: 氷川 (%ss66)
+JP 　リング上で
+JP 　旗揚げのあいさつをした時、
+EN When I gave the opening speech in the ring at our first show,
+
+@ 1.141.01
+# speaker: 氷川 (%ss66)
+JP 　これまでのレスラー人生を振り返って、
+JP 　さすがにグッと
+JP 　込み上げるものがあったね。
+EN looking back over my career, I'll admit I got choked up.
+
+@ 1.141.02
+# speaker: 氷川 (%ss66)
+JP 　新団体設立という
+JP 　大勝負に出た俺に対して、
+JP 　ファンは暖かい声援を送ってくれた。
+EN I'd taken a big gamble starting a new promotion, and the fans gave me a warm welcome.
+
+@ 1.141.03
+# speaker: 氷川 (%ss66)
+JP 　そのファン達の声を追い風に、
+JP 　新生『Ｓ－ＮＯＶＡ』は
+JP 　その後も着実に前進して行った。
+EN With the fans' voices at our backs, the new "<S-NOVA>" kept moving steadily forward.
+
+@ 1.141.04
+# speaker: 氷川 (%ss66)
+JP 　だが、ここで満足していてはダメだ。
+JP 　更に新しい領域を目指さなくては・・・！
+EN But I can't be satisfied here. We have to aim for new territory...!
+
+@ 1.141.05
+# speaker: 氷川 (%ss66)
+JP 　俺は以前から、
+JP 　%ss88という男に
+JP 　注目していた。
+EN I'd had my eye on a man named %ss88 for a long time.
+
+@ 1.141.06
+# speaker: 氷川 (%ss66)
+JP 　この男は必ず
+JP 　Ｓ－ＮＯＶＡにとって
+JP 　プラスになるだろう・・・！
+EN He'd be a real asset to <S-NOVA>...!
+
+@ 1.142.00
+# speaker: 氷川 (%ss66)
+JP 「%ss88君、よく来てくれた。」
+EN "%ss88, thanks for coming."
+
+@ 1.143.00
+# speaker: 旗本 (%ss88)
+JP 「%ss66さん、俺の方こそ
+JP 　申し出を受けていただいて
+JP 　感謝してます。」
+EN "%ss66, I'm the one who should thank you for accepting my offer."
+
+@ 1.143.01
+# speaker: 旗本 (%ss88)
+JP 「『ＮＥＯ－ＯＮＥ』の旗揚げ戦に
+JP 　Ｓ－ＮＯＶＡが参戦してくれるなんて、
+JP 　これ以上うれしいことはないですよ。」
+EN "<S-NOVA> joining <NEO-ONE>'s first show... Nothing could make me happier."
+
+@ 1.143.02
+# speaker: 氷川 (%ss66)
+JP 「%ss88君。
+JP 　同じ新団体同士、力を合わせて
+JP 　新時代を築き上げて行こうじゃないか。」
+EN "%ss88. We're both new promotions, so let's join forces and build a new era."
+
+@ 1.143.03
+# speaker: 旗本 (%ss88)
+JP 「やりましょう。」
+EN "Let's do it."
+
+@ 1.143.04
+# speaker: 旗本 (%ss88)
+JP 「俺達ＮＥＯ－ＯＮＥは
+JP 　新世紀創造のため、」
+EN To create a new century, we at <NEO-ONE>
+
+@ 1.143.05
+# speaker: 旗本 (%ss88)
+JP 「最高のパフォーマンスを
+JP 　展開して見せますよ。」
+EN will put on the greatest show you've ever seen.
+
+@ 1.144.00
+# speaker: 氷川 (%ss66)
+JP 　俺は、新しい風を吹き入れるため、
+EN To bring in a fresh wind,
+
+@ 1.144.01
+# speaker: 氷川 (%ss66)
+JP 　ＶＩＥＷ　ＪＡＰＡＮの流れをくむ
+JP 　新団体ＮＥＯ－ＯＮＥの旗揚げ戦に
+JP 　参戦することを決定した。
+EN I decided to fight on the first show of <NEO-ONE>, a new promotion with roots in <VIEW JAPAN>.
+
+@ 1.144.02
+# speaker: 氷川 (%ss66)
+JP 　%ss88が
+JP 　ＮＥＯ－ＯＮＥを興した経緯は、
+JP 　俺とは異なる。
+EN How %ss88 came to start <NEO-ONE> was different from my story.
+
+@ 1.144.03
+# speaker: 氷川 (%ss66)
+JP 　だが、そのプロレスのスタイルと、
+JP 　新しいプロレスを模索するという姿勢には
+JP 　共通点を見出せる。
+EN But in his style of wrestling and his drive to find a new kind of pro wrestling, I saw common ground.
+
+@ 1.144.04
+# speaker: 氷川 (%ss66)
+JP 　何かを見出すために
+JP 　新境地にチャレンジする。
+EN Taking on new frontiers to find something.
+
+@ 1.144.05
+# speaker: 氷川 (%ss66)
+JP 　それこそが、
+JP 　これからのプロレス界を活性化させる
+JP 　唯一の方法なんだ・・・！
+EN That's the only way to breathe life into the wrestling world from here on...!
+
+@ 1.146.00
+# speaker: 氷川 (%ss66)
+JP 　俺は一つの決断をした。
+EN I made a decision.
+
+@ 1.146.01
+# speaker: 氷川 (%ss66)
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮを退団するという
+JP 　決断を・・・。
+EN The decision to leave <OLIVE JAPAN>...
+
+@ 1.147.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん・・・！」
+EN "%ss66...!"
+
+@ 1.147.01
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんがＯＪＰをやめるなら、
+JP 　俺も%ss66さんに
+JP 　ついて行きますよ！」
+EN "%ss66, if you're quitting <OJP>, then I'm going with you, %ss66!"
+
+@ 1.147.02
+# speaker: 野河 (%ss81)
+JP 「俺もです！！」
+EN "Me too!!"
+
+@ 1.147.03
+# speaker: 野河 (%ss81)
+JP 「俺は%ss66さんの
+JP 　タッグパートナーです・・・」
+EN "I'm your tag partner, %ss66..."
+
+@ 1.147.04
+# speaker: 野河 (%ss81)
+JP 「どこまでもついて行きます！！」
+EN "I'll follow you anywhere!!"
+
+@ 1.147.05
+# speaker: 氷川 (%ss66)
+JP 「おまえら・・・
+JP 　本当にそれでいいのか？」
+EN "You guys... Are you really sure about this?"
+
+@ 1.147.06
+# speaker: 野河 (%ss81)
+JP 「%ss66さんのいないＯＪＰで、
+JP 　いったい何をやれって言うんですか？」
+EN "What am I supposed to do in an <OJP> without you, %ss66?"
+
+@ 1.147.07
+# speaker: 野河 (%ss81)
+JP 「いっしょにやりましょう！！」
+EN "Let's do this together!!"
+
+@ 1.147.08
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんが求める、
+JP 　新しいプロレスを
+JP 　俺達も見てみたいんです・・・！」
+EN "We want to see the new pro wrestling you're after, %ss66...!"
+
+@ 1.147.09
+# speaker: 氷川 (%ss66)
+JP 「%ss67・・・
+JP 　%ss81・・・。」
+EN "%ss67... %ss81..."
+
+@ 1.148.00
+# speaker: 氷川 (%ss66)
+JP 　新団体の設立・・・！
+EN A new promotion...!
+
+@ 1.148.01
+# speaker: 氷川 (%ss66)
+JP 　出来るかどうかは分からない。
+JP 　だが、俺には
+JP 　ついて来てくれる奴らがいる。
+EN I don't know if I can pull it off. But I have guys who'll follow me.
+
+@ 1.148.02
+# speaker: 氷川 (%ss66)
+JP 　俺は必ず、新時代のプロレスを
+JP 　作り出してみせる。
+EN I'll create the pro wrestling of a new era, no matter what.
+
+@ 1.148.03
+# speaker: 氷川 (%ss66)
+JP 　勝負だ・・・！！
+EN This is it...!!
+
+@ 1.149.00
+# speaker: 氷川 (%ss66)
+JP 「今日、この場から
+JP 『Ｓ－ＮＯＶＡ』は新たな
+JP 　闘いに旅立ちます。」
+EN "Today, from this place, <S-NOVA> sets out on a new battle."
+
+@ 1.149.01
+# speaker: 氷川 (%ss66)
+JP 「レスラー、社員、スタッフ一同、
+JP 　夢と希望を胸に、力の限り頑張りますので
+JP 　どうかよろしくお願いします。」
+EN "All of us - wrestlers, staff and crew - will give it our all, with dreams and hope. Thank you!"
+
+@ 1.151.00
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰの社長となって
+JP 　一年あまり・・・
+EN A year or so after I became president of <OJP>...
+
+@ 1.151.01
+# speaker: 氷川 (%ss66)
+JP 　この頃の俺にとって、
+JP 　%ss58さんの築き上げた
+JP 　ＯＪＰというブランドは、
+EN For me back then, the <OJP> brand %ss58 had built
+
+@ 1.151.02
+# speaker: 氷川 (%ss66)
+JP 　巨大な重石となって
+JP 　俺の両肩に
+JP 　のしかかって来ていた・・・。
+EN was a crushing weight bearing down on my shoulders...
+
+@ 1.151.03
+# speaker: 氷川 (%ss66)
+JP 　俺の求める、新しいタイプの
+JP 　プロレス興行を行うことは、
+EN Putting on the new kind of wrestling shows I wanted
+
+@ 1.151.04
+# speaker: 氷川 (%ss66)
+JP 　同時に、古くからある
+JP 「ＯＪＰらしさ」を根底から
+JP 　消滅させかねない要因でもあった。
+EN could also wipe out the old "<OJP> spirit" from the ground up.
+
+@ 1.151.05
+# speaker: 氷川 (%ss66)
+JP 　俺には・・・
+EN I...
+
+@ 1.151.06
+# speaker: 氷川 (%ss66)
+JP 　%ss58さんや%ss59さん、
+JP 　先人達が築き上げてきた、
+EN couldn't destroy what %ss58, %ss59, and those before us had built,
+
+@ 1.151.07
+# speaker: 氷川 (%ss66)
+JP 「ＯＪＰらしさ」を
+JP 　壊してしまうことは出来ない。
+EN that "<OJP> spirit."
+
+@ 1.151.08
+# speaker: 氷川 (%ss66)
+JP 　２つの興行スタイルを両立させることは、
+JP 　もはや不可能だったよ・・・。
+EN Running both styles of show side by side was no longer possible...
+
+@ 1.155.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　最強外国人%ss80を倒した
+JP 　今の感想を聞かせて下さい！！」
+EN "%ss66!! You've beaten the strongest foreigner, %ss80! How do you feel?!"
+
+@ 1.155.01
+# speaker: 氷川 (%ss66)
+JP 「今日の試合は・・・
+JP 　%ss58さんのことを考えると
+JP 　どうしても負けられなかった。」
+EN "Today's match... Thinking of %ss58, I just couldn't lose."
+
+@ 1.155.02
+# speaker: 氷川 (%ss66)
+JP 「俺は、ＯＪＰを引っ張って行かなくちゃ
+JP 　いけない立場になったからね。」
+EN "I'm the one who has to lead <OJP> now."
+
+@ 1.155.03
+# speaker: 氷川 (%ss66)
+JP 「%ss80は、
+JP 　とにかく重かったよ。」
+EN "%ss80 was just so heavy."
+
+@ 1.155.04
+# speaker: 氷川 (%ss66)
+JP 「作戦なんて通用しないから、
+JP 　気持ちだけは負けないようにした。」
+EN "Strategy doesn't work on him, so I made sure I didn't lose in spirit."
+
+@ 1.155.05
+# speaker: 氷川 (%ss66)
+JP 「とにかく、これで%ss80を
+JP 　止めることが出来た。」
+EN "Anyway, I've managed to stop %ss80."
+
+@ 1.155.06
+# speaker: 氷川 (%ss66)
+JP 「勝てたことは本当にうれしいよ。」
+EN "I'm really glad I won."
+
+@ 1.157.00
+# speaker: 記者
+JP 「すごい試合でした！！」
+EN "That was an amazing match!!"
+
+@ 1.157.01
+# speaker: 記者
+JP 「%ss80選手は、これで
+JP 　ＯＪＰの四天王全てに勝ったわけですが、
+JP 　今の心境を聞かせていただけますか？」
+EN "%ss80, you've now beaten all of <OJP>'s Four Heavenly Kings. How do you feel?"
+
+@ 1.158.00
+# speaker: セイバー (%ss80)
+JP 「最高の気分だよ。
+JP 　%ss66はすごい選手だった。」
+EN "I feel great. %ss66 was an amazing wrestler."
+
+@ 1.158.01
+# speaker: セイバー (%ss80)
+JP 「ＯＪＰには最高のレスリングがあり、
+JP 　最高のレスラーがいる。」
+EN "<OJP> has the best wrestling, and the best wrestlers."
+
+@ 1.158.02
+# speaker: セイバー (%ss80)
+JP 「今日勝てたことは
+JP 　本当にラッキーだった。」
+EN "I was really lucky to win today."
+
+@ 1.158.03
+# speaker: セイバー (%ss80)
+JP 「ガンバッテクダサーイ！！！」
+EN "Gambatte kudasaaai!!! Do your best!!!"
+
+@ 1.164.00
+# speaker: 氷川 (%ss66)
+JP 　一度リングに登れば、
+JP 　社長なんて肩書きは全然意味がない。
+EN Once I'm in the ring, a title like "president" means nothing at all.
+
+@ 1.164.01
+# speaker: 氷川 (%ss66)
+JP 　だが、下の者を引っ張って行く
+JP 　牽引者である以上、
+JP 　俺は最強外国人を倒さなければならない。
+EN But as the one who leads everyone below me, I have to beat the strongest foreigner.
+
+@ 1.164.02
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰの四天王が
+JP 　全員倒されるわけには
+JP 　いかねえだろう・・・
+EN I can't let every one of <OJP>'s Four Heavenly Kings go down...
+
+@ 1.164.03
+# speaker: 氷川 (%ss66)
+JP 　%sf66を
+JP 　なめるなよ！！
+EN Don't you underestimate %sf66!!
+
+@ 1.166.00
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰの社長という肩書きは、
+JP 　俺に信じられない程のプレッシャーを
+JP 　与えている・・・。
+EN Being <OJP>'s president puts unbelievable pressure on me...
+
+@ 1.166.01
+# speaker: 氷川 (%ss66)
+JP 　下の者がついてくるかどうかは、
+JP 　今後の俺の闘い方しだいなんだ。
+EN Whether the others follow me depends on how I fight from here on.
+
+@ 1.166.02
+# speaker: 氷川 (%ss66)
+JP 　今の俺は、絶対に
+JP 　誰にも負けるわけにはいかない・・・！
+EN Right now, I absolutely can't lose to anyone...!
+
+@ 1.166.03
+# speaker: 氷川 (%ss66)
+JP 　例え相手が、
+JP 　最強のレスラーであってもな・・・！！
+EN Even if my opponent is the strongest wrestler there is...!!
+
+@ 1.168.00
+# speaker: 氷川 (%ss66)
+JP 　%ss58さんが死んだ・・・
+EN %ss58 was dead...
+
+@ 1.169.00
+# speaker: 氷川 (%ss66)
+JP 　そして、
+JP 　後を追うように
+JP 　%ss59さんも・・・
+EN And then, as if following him, %ss59 too...
+
+@ 1.170.00
+# speaker: 氷川 (%ss66)
+JP 　病による２人の死は、
+JP 　あまりにも唐突だった。
+EN Their deaths from illness came all too suddenly.
+
+@ 1.170.01
+# speaker: 氷川 (%ss66)
+JP 　この悲しみは
+JP 　筆舌に尽くし難い・・・
+EN Words can't describe this grief...
+
+@ 1.170.02
+# speaker: 氷川 (%ss66)
+JP 　%ss59さんは
+JP 　敵がいないくらい
+JP 　強く怖い人だったが、
+EN %ss59 was so strong and fearsome that no one could touch him,
+
+@ 1.170.03
+# speaker: 氷川 (%ss66)
+JP 　リングを降りれば
+JP 　やさしい兄のような人だった。
+EN but outside the ring, he was like a kind older brother.
+
+@ 1.170.04
+# speaker: 氷川 (%ss66)
+JP 　これまで無数に試合をして来たけれど、
+JP 　%ss59さんに勝った試合ほど
+JP 　うれしい試合はなかったよ。
+EN I've fought countless matches, but none made me happier than the one where I beat %ss59.
+
+@ 1.170.05
+# speaker: 氷川 (%ss66)
+JP 　常にレスラーとしての俺の目標だった。
+EN He was always my goal as a wrestler.
+
+@ 1.170.06
+# speaker: 氷川 (%ss66)
+JP 　%ss58さんに至っては・・・
+EN And %ss58...
+
+@ 1.170.07
+# speaker: 氷川 (%ss66)
+JP 　本当に偉大な、
+JP 　もう２度と現れることのない
+JP 　不世出のプロレスラーだった・・・。
+EN He was a truly great pro wrestler, one of a kind. We'll never see his like again...
+
+@ 1.170.08
+# speaker: 氷川 (%ss66)
+JP 　偉大すぎる
+JP 　２人のレスラーの死・・・
+EN The deaths of two wrestlers who were simply too great...
+
+@ 1.170.09
+# speaker: 氷川 (%ss66)
+JP 　俺にとって、
+JP 　かけがえのない師匠と先輩の死は
+JP 　耐え難い悲しみだったが、
+EN Losing my irreplaceable master and senior was an unbearable grief,
+
+@ 1.170.10
+# speaker: 氷川 (%ss66)
+JP 　いつまでもそれを
+JP 　引きずっているわけにはいかなかった。
+EN but I couldn't let it drag me down forever.
+
+@ 1.170.11
+# speaker: 氷川 (%ss66)
+JP 　２人の死によって、
+JP 　俺にはあらたな苦悩が生じていた・・・！
+EN Their deaths had brought me a whole new torment...!
+
+@ 1.171.00
+# speaker: 氷川 (%ss66)
+JP 「私、
+JP 　%sf66は、
+JP 　本日付けで」
+EN "I, %sf66, as of today,"
+
+@ 1.171.01
+# speaker: 氷川 (%ss66)
+JP 「ＯＬＩＶＥ　ＪＡＰＡＮ
+JP 　プロレスリングの
+JP 　社長に任命されました。」
+EN "have been appointed president of <OLIVE JAPAN> Pro Wrestling."
+
+@ 1.171.02
+# speaker: 氷川 (%ss66)
+JP 「よろしくお願いします。」
+EN "I look forward to working with you all."
+
+@ 1.171.03
+# speaker: 氷川 (%ss66)
+JP 「今後のＯＬＩＶＥ　ＪＡＰＡＮ
+JP 　プロレスリングの
+JP 　運営にあたっては、」
+EN "In running <OLIVE JAPAN> Pro Wrestling from here on,"
+
+@ 1.171.04
+# speaker: 氷川 (%ss66)
+JP 「先人達が築き上げた
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮらしさ
+JP 　というものを大切にし、」
+EN "I'll treasure the <OLIVE JAPAN> spirit built by those before us,"
+
+@ 1.171.05
+# speaker: 氷川 (%ss66)
+JP 「ファンから支持されるような、
+JP 　新しいプロレスを展開して行きたいと
+JP 　考えています。」
+EN "and I intend to bring a new kind of pro wrestling the fans will support."
+
+@ 1.172.00
+# speaker: 氷川 (%ss66)
+JP 　俺が社長？
+JP 　柄じゃないだろう。
+EN Me, president? That's not my style.
+
+@ 1.172.01
+# speaker: 氷川 (%ss66)
+JP 　会社側から社長就任を要請された時、
+JP 　ハッキリ言ってためらったよ。
+EN When the company asked me to take over as president, frankly, I hesitated.
+
+@ 1.172.02
+# speaker: 氷川 (%ss66)
+JP 　会社の経営的な部分なんて
+JP 　まったく分からなかったからな、
+JP 　俺は。
+EN I didn't know the first thing about running a business.
+
+@ 1.172.03
+# speaker: 氷川 (%ss66)
+JP 　ただ、いっしょに頑張って来た選手、
+JP 　社員、スタッフのことを考えると
+JP 　逃げるわけにはいかなかった。
+EN But thinking of the wrestlers, employees and staff I'd worked so hard alongside, I couldn't run away.
+
+@ 1.172.04
+# speaker: 氷川 (%ss66)
+JP 　こうなったらやるしかない。
+EN Now that it's come to this, I just have to do it.
+
+@ 1.173.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん、
+JP 　大丈夫ですか・・・？」
+EN "%ss66, are you all right...?"
+
+@ 1.173.01
+# speaker: 富樫 (%ss67)
+JP 「ここのところ、
+JP 　全然休んでないじゃないですか。」
+EN "You haven't had a single break lately."
+
+@ 1.173.02
+# speaker: 野河 (%ss81)
+JP 「そうですよ、%ss66さん！
+JP 　いくらなんでも無茶しすぎだ・・・！」
+EN "That's right, %ss66! You're pushing yourself way too hard...!"
+
+@ 1.173.03
+# speaker: 氷川 (%ss66)
+JP 「%ss67、%ss81。
+JP 　じゃあ、おまえらが
+JP 　俺の立場だったらどうする？」
+EN "%ss67, %ss81. Then what would you do in my shoes?"
+
+@ 1.173.04
+# speaker: 野河 (%ss81)
+JP 「そ、それは・・・」
+EN "W-well..."
+
+@ 1.173.05
+# speaker: 氷川 (%ss66)
+JP 「とにかく今はやるしかない。」
+EN "Anyway, right now I just have to do it."
+
+@ 1.173.06
+# speaker: 氷川 (%ss66)
+JP 「やるしかないじゃないか。」
+EN "What choice do I have?"
+
+@ 1.174.00
+# speaker: 氷川 (%ss66)
+JP 　社長としての毎日は
+JP 　超多忙だったが、
+EN Every day as president was hectic,
+
+@ 1.174.01
+# speaker: 氷川 (%ss66)
+JP 　だからと言って、
+JP 　レスラーとしての%ss66を
+JP 　おろそかにするわけにはいかない。
+EN but that didn't mean I could neglect %ss66 the wrestler.
+
+@ 1.174.02
+# speaker: 氷川 (%ss66)
+JP 　俺は、これまで以上に
+JP 　気合を入れなければならない
+JP 　立場だからな。
+EN In my position, I have to be more fired up than ever.
+
+@ 1.174.03
+# speaker: 氷川 (%ss66)
+JP 　今、リング上では
+JP 　他団体から移籍して来た外国人レスラーが
+JP 　いいように暴れまくっている。
+EN Right now, foreign wrestlers who jumped from other promotions are running wild in the ring.
+
+@ 1.174.04
+# speaker: 氷川 (%ss66)
+JP 　これ以上
+JP 　好き勝手にやらせるわけには
+JP 　いかない・・・！
+EN I can't let them do as they please any longer...!
+
+@ 1.175.00
+# speaker: 記者
+JP 「%ss80選手にお聞きします。」
+EN "A question for %ss80."
+
+@ 1.175.01
+# speaker: 記者
+JP 「ＯＪＰの四天王のうち、」
+EN "Of <OJP>'s Four Heavenly Kings,"
+
+@ 1.175.02
+# speaker: 記者
+JP 「すでに、%ss44、%ss68、
+JP 　%ss67選手の３人を
+JP 　破っていますが、」
+EN "you've already beaten three: %ss44, %ss68 and %ss67,"
+
+@ 1.175.03
+# speaker: 記者
+JP 「残された%ss66選手に対して、
+JP 　何かメッセージはありますか？」
+EN "Do you have a message for the last one, %ss66?"
+
+@ 1.176.00
+# speaker: セイバー (%ss80)
+JP 「%ss66は、大きいレスラーでも
+JP 　力強いタイプでもない。」
+EN "%ss66 is not a big wrestler, or a powerful type."
+
+@ 1.176.01
+# speaker: セイバー (%ss80)
+JP 「だが、勝ち方を知っている
+JP 　クレバーな選手だ。」
+EN "But he's a clever wrestler who knows how to win."
+
+@ 1.176.02
+# speaker: セイバー (%ss80)
+JP 「%ss66のエルボーは
+JP 　非常に危険だが、
+JP 　思い通りにはやらせない。」
+EN "%ss66's elbows are very dangerous, but I won't let him have his way."
+
+@ 1.176.03
+# speaker: セイバー (%ss80)
+JP 「どんな試合になろうとも
+JP 　最後に勝つのは俺だ。」
+EN "Whatever kind of match it is, I'll be the one who wins in the end."
+
+@ 1.176.04
+# speaker: セイバー (%ss80)
+JP 「%ss66、覚悟していてくれ。」
+EN "%ss66, be ready."
+
+@ C1.178
+# choice or chapter title
+JP １）%ss80戦は攻撃的に行く
+EN 1) Go all-out on offense vs. %ss80
+
+@ C1.180
+# choice or chapter title
+JP ２）負けない試合をする
+EN 2) Fight a match I won't lose
+
+@ 1.181.00
+# speaker: 氷川 (%ss66)
+JP 　確かにぎこちない部分はあった。
+EN Sure, it was awkward at times.
+
+@ 1.181.01
+# speaker: 氷川 (%ss66)
+JP 　だが、%ss81とのタッグは
+JP 　時とともに熟成し、
+JP 　一応の成功をおさめ始める。
+EN But my team with %ss81 matured over time, and started to find some success.
+
+@ 1.181.02
+# speaker: 氷川 (%ss66)
+JP 　俺は間違ってはいなかった・・・！
+EN I wasn't wrong...!
+
+@ 1.181.03
+# speaker: 氷川 (%ss66)
+JP 　そんな時だった・・・
+EN That's when it happened...
+
+@ 1.181.04
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰを・・・
+JP 　いや、日本のプロレス界全体を
+JP 　震撼させる大事件が起きたのは・・・
+EN An incident that shook <OJP>... no, the whole Japanese wrestling world...
+
+@ 1.183.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　ＮＵＣＬＥＡＲを撃破しました！！」
+EN "%ss66!! You've beaten <NUCLEAR>!!"
+
+@ 1.183.01
+# speaker: 記者
+JP 「意外性のあるタッグ戦に
+JP 　我々も驚かされましたが、」
+EN "Your surprise tag team caught us all off guard,"
+
+@ 1.183.02
+# speaker: 記者
+JP 「%ss66さんは
+JP 　今日の試合を振り返って、
+JP 　どう思われましたか？」
+EN "%ss66, looking back on today's match, what are your thoughts?"
+
+@ 1.183.03
+# speaker: 氷川 (%ss66)
+JP 「%ss81が
+JP 　本当によくやってくれた。」
+EN "%ss81 did a really great job."
+
+@ 1.183.04
+# speaker: 氷川 (%ss66)
+JP 「とにかく頑張ってくれたよ。」
+EN "He really gave it his all."
+
+@ 1.183.05
+# speaker: 氷川 (%ss66)
+JP 「ＮＵＣＬＥＡＲが
+JP 　あれだけ粘ったからね。」
+EN "<NUCLEAR> hung in there so long, after all."
+
+@ 1.183.06
+# speaker: 氷川 (%ss66)
+JP 「キツい試合だったけど、
+JP 　価値のある一勝だな。」
+EN "It was a tough match, but a win that was worth it."
+
+@ 1.183.07
+# speaker: 記者
+JP 「%ss81さんはどうでしょうか？」
+EN "What about you, %ss81?"
+
+@ 1.184.00
+# speaker: 野河 (%ss81)
+JP 「とにかく、
+JP 　俺が%ss66さんの足を
+JP 　引っ張らないようにと必死でしたよ。
+EN "Anyway, I was desperate not to drag %ss66 down."
+
+@ 1.184.01
+# speaker: 野河 (%ss81)
+JP 「何にしても、パートナーが
+JP 　%ss66さんというのは強力ですね。
+JP 　信頼感や安定感が全然違う。」
+EN "Either way, having %ss66 as a partner is huge. The trust, the stability... it's on another level."
+
+@ 1.184.02
+# speaker: 野河 (%ss81)
+JP 「体格差を気にせず、
+JP 　思い切って行けました。」
+EN "I could go all out without worrying about the size difference."
+
+@ 1.186.00
+# speaker: 記者
+JP 「タイトル防衛
+JP 　おめでとうございます！！」
+EN "Congratulations on defending the titles!!"
+
+@ 1.186.01
+# speaker: 記者
+JP 「すごい試合でした！！
+JP 　今日の試合を振り返って・・・」
+EN "What an amazing match!! Looking back on today's match..."
+
+@ 1.187.00
+# speaker: 大林 (%ss70)
+JP 「おおっ！！
+JP 　こんなもんだろ！！」
+EN "Ohh!! That's how it's done!!"
+
+@ 1.187.01
+# speaker: 大林 (%ss70)
+JP 「そんなに大騒ぎすることか！！
+JP 　今日勝ったことが！！」
+EN "What's the big fuss about?! Us winning today?!"
+
+@ 1.187.02
+# speaker: 甲山 (%ss133)
+JP 「勝って当たり前なんだよ！！」
+EN "Of course we won!!"
+
+@ 1.187.03
+# speaker: 甲山 (%ss133)
+JP 「俺らを潰したけりゃあな！！
+JP 　もっと強いヤツつれて来い！！」
+EN "If you wanna crush us, bring somebody stronger!!"
+
+@ 1.187.04
+# speaker: 大林 (%ss70)
+JP 「%ss66！！
+JP 　顔洗って出直して来い！！」
+EN "%ss66!! Go wash your face and try again!!"
+
+@ 1.187.05
+# speaker: ２人
+JP 「ＮＵＣＬＥＡＲ！！！」
+EN "<NUCLEAR>!!!"
+
+@ 1.193.00
+# speaker: 氷川 (%ss66)
+JP 　マッチメイクを組み始めて
+JP 　最初に手がけたのが
+JP 　タッグチーム編成だった。
+EN When I started doing the matchmaking, the first thing I tackled was the tag teams.
+
+@ 1.193.01
+# speaker: 氷川 (%ss66)
+JP 　%ss67とのタッグは最強だったが、
+JP 　団体を活性化させる為に
+EN My team with %ss67 was the best there was, but to shake up the promotion,
+
+@ 1.193.02
+# speaker: 氷川 (%ss66)
+JP 　新しいタッグパートナーを
+JP 　見つけることにした。
+EN I decided to find a new tag partner.
+
+@ 1.194.00
+# speaker: 氷川 (%ss66)
+JP 「%ss81、俺と組まないか？」
+EN "%ss81, how about teaming with me?"
+
+@ 1.194.01
+# speaker: 野河 (%ss81)
+JP 「えっ、組むって？
+JP 　何の話ですか・・・？」
+EN "Huh, teaming? What do you mean...?"
+
+@ 1.194.02
+# speaker: 氷川 (%ss66)
+JP 「おい、
+JP 　プロレスラーが組むって言ったら
+JP 　タッグしかないだろ。」
+EN "Hey, when a pro wrestler says 'team up,' it can only mean tag team."
+
+@ 1.194.03
+# speaker: 野河 (%ss81)
+JP 「いや・・・でも、
+JP 　俺ジュニアじゃないですか。」
+EN "No... but I'm a junior heavyweight."
+
+@ 1.194.04
+# speaker: 野河 (%ss81)
+JP 「そんな話、
+JP 　聞いたことないですよ。」
+EN "I've never heard of such a thing."
+
+@ 1.194.05
+# speaker: 氷川 (%ss66)
+JP 「誰も聞いたことないから、
+JP 　いいんだよ。」
+EN "Nobody's ever heard of it. That's the point."
+
+@ 1.194.06
+# speaker: 野河 (%ss81)
+JP 「・・・。」
+EN "..."
+
+@ 1.194.07
+# speaker: 野河 (%ss81)
+JP 「%ss66さんから
+JP 　タッグの話を持ちかけられるなんて
+JP 　ハンパじゃなくうれしいですけど、」
+EN "I'm insanely happy you'd offer to team with me, %ss66, but"
+
+@ 1.194.08
+# speaker: 野河 (%ss81)
+JP 「俺、自信ないですよ・・・」
+EN "I'm not sure I can do it..."
+
+@ 1.194.09
+# speaker: 氷川 (%ss66)
+JP 「%ss81、俺はな、
+JP 　ＯＪＰに新しい波を生み出そうと
+JP 　考えているんだ。」
+EN "%ss81, listen. I'm thinking of starting a new wave in <OJP>."
+
+@ 1.194.10
+# speaker: 氷川 (%ss66)
+JP 「このままじゃダメだと
+JP 　真剣に思ってる。」
+EN "I truly believe things can't go on like this."
+
+@ 1.194.11
+# speaker: 氷川 (%ss66)
+JP 「理屈じゃない。」
+EN "It's not about logic."
+
+@ 1.194.12
+# speaker: 氷川 (%ss66)
+JP 「おまえなら
+JP 　俺の志に必ず答えてくれる。
+JP 　そう感じてるんだ。」
+EN "I just have this feeling that you'll live up to what I'm aiming for."
+
+@ 1.194.13
+# speaker: 氷川 (%ss66)
+JP 「大丈夫だから。
+JP 　おまえなら出来る。」
+EN "It'll be fine. You can do it."
+
+@ 1.194.14
+# speaker: 野河 (%ss81)
+JP 「%ss66さん・・・。」
+EN "%ss66..."
+
+@ 1.194.15
+# speaker: 野河 (%ss81)
+JP 「俺・・・
+JP 　%ss66さんのプロレスを見て
+JP 　この世界に入ったんです。」
+EN "I... I got into this business after watching your wrestling, %ss66."
+
+@ 1.194.16
+# speaker: 野河 (%ss81)
+JP 「その人にそこまで言われたら、
+JP 　もう死ぬつもりで
+JP 　ついて行くしかないですよ。」
+EN "When that man tells me all that, I've got no choice but to follow him to the death."
+
+@ 1.194.17
+# speaker: 野河 (%ss81)
+JP 「全力でやってみます・・・！！」
+EN "I'll give it everything I've got...!!"
+
+@ 1.195.00
+# speaker: 氷川 (%ss66)
+JP 　復帰後、
+JP 　俺はジュニアの%ss81と
+JP 　タッグを組んだ。
+EN After my comeback, I teamed up with the junior heavyweight %ss81.
+
+@ 1.195.01
+# speaker: 氷川 (%ss66)
+JP 　まったく新しいタイプの
+JP 　タッグチーム・・・
+EN A whole new kind of tag team...
+
+@ 1.195.02
+# speaker: 氷川 (%ss66)
+JP 　必ず成功させて見せる・・・！！　　　　　　
+EN I'll make it work, no matter what...!!
+
+@ 1.196.00
+# speaker: 記者
+JP 「史上初の
+JP 　三冠タッグチャンピオン、
+JP 　おめでとうございます！！」
+EN "Congratulations on becoming the first-ever Triple Crown tag champions!!"
+
+@ 1.196.01
+# speaker: 記者
+JP 「お２人の
+JP 　今後の抱負をお聞かせ下さい！！」
+EN "Tell us your plans for the future!!"
+
+@ 1.197.00
+# speaker: 甲山 (%ss133)
+JP 「抱負だと！？
+JP 　次は%ss66だ！！」
+EN "Plans?! Next up is %ss66!!"
+
+@ 1.197.01
+# speaker: 大林 (%ss70)
+JP 「決まってるだろ！！
+JP 　こっちは史上初の三冠タッグチャンピオン
+JP 　なんだからな！！」
+EN "Ain't it obvious?! We're the first-ever Triple Crown tag champs!!"
+
+@ 1.197.02
+# speaker: 甲山 (%ss133)
+JP 「俺達より上はいねえって教えてやるよ！！
+JP 　覚悟してろよ！！」
+EN "We'll show you there's nobody above us!! You'd better be ready!!"
+
+@ 1.197.03
+# speaker: ２人
+JP 「ＮＵＣＬＥＡＲ！！！」
+EN "<NUCLEAR>!!!"
+
+@ 1.198.00
+# speaker: 氷川 (%ss66)
+JP 　%ss70は地味なレスラーだったが、
+EN %ss70 was a plain, low-key wrestler,
+
+@ 1.198.01
+# speaker: 氷川 (%ss66)
+JP 　ＵＷＨインテグラルから移籍して来た
+JP 　%ss133と組むことによって、
+JP 　一気に頭角を表して来た実力者だ。
+EN but teaming with %ss133, who'd come over from <UWH Integral>, he quickly rose to the top. He's the real deal.
+
+@ 1.198.02
+# speaker: 氷川 (%ss66)
+JP 　タッグで三冠を達成して
+JP 　勢いに乗っているようだが、
+EN They seem to be on a roll after taking the tag Triple Crown,
+
+@ 1.198.03
+# speaker: 氷川 (%ss66)
+JP 　口だけで終わらせてやる・・・！
+EN but I'll make sure that's all talk...!
+
+@ 1.199.00
+# speaker: 氷川 (%ss66)
+JP 　ヘビー級の試合に、
+JP 　ジュニアの%ss81を
+JP 　引き入れたことが、
+EN Bringing the junior %ss81 into heavyweight matches...
+
+@ 1.199.01
+# speaker: 氷川 (%ss66)
+JP 「失敗だった」と
+JP 　言われるわけにはいかない。
+EN I can't let anyone call it "a failure."
+
+@ 1.199.02
+# speaker: 氷川 (%ss66)
+JP 　俺がバッシングを受けるのはいいが、
+JP 　ヘタをすれば
+JP 　%ss81をも潰しかねない。
+EN I don't mind taking the heat, but if things go wrong, it could crush %ss81 too.
+
+@ 1.199.03
+# speaker: 氷川 (%ss66)
+JP 　%ss81は
+JP 　俺を信じてタッグを組むことを
+JP 　承諾してくれたんだ。
+EN %ss81 trusted me and agreed to team with me.
+
+@ 1.199.04
+# speaker: 氷川 (%ss66)
+JP 　この試合は
+JP 　負けるわけにはいかない・・・！
+EN I can't lose this match...!
+
+@ 1.199.05
+# speaker: 氷川 (%ss66)
+JP 　今後のＯＪＰの流れを変えるためにも、
+JP 　絶対に勝つんだ！！
+EN To change the course of <OJP>, I have to win, no matter what!!
+
+@ 1.201.00
+# speaker: 氷川 (%ss66)
+JP 　プロの団体として興行をするならば、
+JP 　常にファンに刺激を与えられる試合を
+JP 　見せなければならない・・・。
+EN As a pro promotion putting on shows, we always have to give the fans matches that excite them...
+
+@ 1.201.01
+# speaker: 氷川 (%ss66)
+JP 　俺がＯＪＰに対して、
+JP 　常日頃から抱いていた
+JP 　懸念の原因とはそれだった。
+EN That was at the root of the worries I always had about <OJP>.
+
+@ 1.201.02
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰの欠点・・・
+JP 　それは話題性の欠落だ。
+EN <OJP>'s weakness... It never made headlines.
+
+@ 1.201.03
+# speaker: 氷川 (%ss66)
+JP 　%ss58社長から
+JP 　マッチメイクをするよう言われた時、
+EN When President %ss58 told me to do the matchmaking,
+
+@ 1.201.04
+# speaker: 氷川 (%ss66)
+JP 「これは、
+JP 　ＯＪＰのマンネリ化を打破する
+JP 　チャンスだ！！」と思ったね。
+EN I thought, "This is my chance to break <OJP> out of its rut!!"
+
+@ 1.201.05
+# speaker: 氷川 (%ss66)
+JP 　とにかく、
+JP 　出来るだけ意外性のある
+JP 　カードを組むようにして、
+EN Anyway, I made the most surprising cards I could,
+
+@ 1.201.06
+# speaker: 氷川 (%ss66)
+JP 　今までにない新鮮味を出そうと
+JP 　やっきになったよ。
+EN and worked like mad to bring a freshness we'd never had before.
+
+@ 1.201.07
+# speaker: 氷川 (%ss66)
+JP 　他にもタッグで斬新さを出そうとか、
+JP 　色々やった。
+EN I tried other things too, like new tag teams.
+
+@ 1.203.00
+# speaker: 氷川 (%ss66)
+JP 「すみません・・・
+JP 　ちょっと
+JP 　考えさせて下さい・・・。」
+EN "I'm sorry... Please let me think about it..."
+
+@ 1.203.01
+# speaker: 司馬 (%ss58)
+JP 「そうか・・・。」
+EN "I see..."
+
+@ 1.203.02
+# speaker: 司馬 (%ss58)
+JP 「何をためらっているのか知らんが、
+JP 　その気になったら連絡しろ。」
+EN "I don't know what's holding you back, but let me know when you're ready."
+
+@ 1.203.03
+# speaker: 司馬 (%ss58)
+JP 「待ってるからな。」
+EN "I'll be waiting."
+
+@ 1.204.00
+# speaker: 氷川 (%ss66)
+JP 　日頃から俺は、
+JP 　ＯＪＰの弱点は
+JP 　話題性の欠落だと思っていた。
+EN I'd always thought <OJP>'s weak point was that it never made headlines.
+
+@ 1.204.01
+# speaker: 氷川 (%ss66)
+JP 　%ss58社長から
+JP 　マッチメイクの話を持ちかけられた時、
+EN When President %ss58 offered me the matchmaking job,
+
+@ 1.204.02
+# speaker: 氷川 (%ss66)
+JP 　これは、ＯＪＰを活性化させる
+JP 　チャンスだと思ったよ。
+EN I saw a chance to breathe life into <OJP>.
+
+@ 1.204.03
+# speaker: 氷川 (%ss66)
+JP 　だが、果たして俺に
+JP 　その大役がこなせるか・・・
+EN But could I really handle such a big job...?
+
+@ 1.204.04
+# speaker: 氷川 (%ss66)
+JP 　ファンを常に飽きさせない、
+JP 　斬新な組み合わせが
+JP 　出来るのかどうか・・・。
+EN Could I come up with fresh matchups that never let the fans get bored...?
+
+@ 1.204.05
+# speaker: 氷川 (%ss66)
+JP 　まあ、考えてたって
+JP 　しょうがない。
+EN Well, no use worrying about it.
+
+@ 1.204.06
+# speaker: 氷川 (%ss66)
+JP 　結局は、
+JP 　やってみなければ分からないんだ。
+EN In the end, you never know until you try.
+
+@ 1.204.07
+# speaker: 氷川 (%ss66)
+JP 　俺はＯＪＰの
+JP 　マッチメイクをやる。
+EN I'll do <OJP>'s matchmaking.
+
+@ 1.204.08
+# speaker: 氷川 (%ss66)
+JP 　俺の考える
+JP 　新しいＯＪＰのプロレスを、
+EN The new <OJP> wrestling I have in mind...
+
+@ 1.204.09
+# speaker: 氷川 (%ss66)
+JP 　俺は必ず
+JP 　作り出して見せる・・・！
+EN I'll create it, no matter what...!
+
+@ 1.205.00
+# speaker: 氷川 (%ss66)
+JP 　%ss58さんに
+JP 　マッチメイクをやることを
+JP 　報告した後、
+EN After telling %ss58 I'd do the matchmaking,
+
+@ 1.205.01
+# speaker: 氷川 (%ss66)
+JP 　俺はとにかく
+JP 　やっきになったね。
+EN I threw myself into it.
+
+@ 1.205.02
+# speaker: 氷川 (%ss66)
+JP 　何でもいいから
+JP 　新しさを出したかった。
+EN I wanted something new, anything at all.
+
+@ 1.205.03
+# speaker: 氷川 (%ss66)
+JP 　ジュニアの%ss81に
+JP 　声をかけたのも、
+JP 　そういう試みの一つだったんだ。
+EN Asking the junior %ss81 to team with me was one of those experiments.
+
+@ 1.207.00
+# speaker: 記者
+JP 「今回の%ss66選手の
+JP 　欠場についてですが・・・」
+EN "About %ss66 being out of action..."
+
+@ 1.207.01
+# speaker: 記者
+JP 「ＯＪＰにとっては
+JP 　相当の痛手だと思います。」
+EN "It must be quite a blow for <OJP>."
+
+@ 1.207.02
+# speaker: 記者
+JP 「その事について、
+JP 　%ss67さんはどう思われますか？」
+EN "%ss67, what are your thoughts on that?"
+
+@ 1.208.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんは、
+JP 　もはや押しも押されもせぬ
+JP 　ＯＪＰのエースだから、」
+EN "%ss66 is <OJP>'s undisputed ace now,"
+
+@ 1.208.01
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんのいないシリーズは、
+JP 　目標を失った状態で
+JP 　キツイですね・・・。」
+EN "so a tour without %ss66 is tough. It's like we've lost our goal..."
+
+@ 1.208.02
+# speaker: 富樫 (%ss67)
+JP 「ただ、こういう時こそ
+JP 　下の世代である俺達が
+JP 　頑張らなければいけないし、」
+EN "But it's times like this that we, the next generation, have to step up,"
+
+@ 1.208.03
+# speaker: 富樫 (%ss67)
+JP 「自分をアピールする
+JP 　チャンスかもしれない。」
+EN "and it might be a chance to show what we can do."
+
+@ 1.209.00
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰに入門して以来・・・
+EN Ever since I joined <OJP>...
+
+@ 1.209.01
+# speaker: 氷川 (%ss66)
+JP 　俺は幾度となく
+JP 　肉体の限界を超えるような試合を経験し、
+JP 　潰し合いを繰り返してきた。
+EN I'd fought match after match past my body's limits, again and again, in wars of attrition.
+
+@ 1.209.02
+# speaker: 氷川 (%ss66)
+JP 　そのツケというか、
+JP 　もう、俺の体は
+JP 　本当にボロボロだったよ。
+EN I was paying the price, I guess. My body was really falling apart.
+
+@ 1.209.03
+# speaker: 氷川 (%ss66)
+JP 　ハッキリ言って、
+JP 　前に手術した左膝は最悪でね。
+EN Frankly, the left knee I'd had surgery on before was in terrible shape.
+
+@ 1.209.04
+# speaker: 氷川 (%ss66)
+JP 　俺としては「膝が壊れても・・・」
+JP 　っていうのはあったけど、
+EN Part of me was thinking, "Even if my knee gives out..."
+
+@ 1.209.05
+# speaker: 氷川 (%ss66)
+JP 　最終的には、
+JP 　%ss58社長の意思に従って
+JP 　欠場することを決めた。
+EN but in the end, I followed President %ss58's wishes and decided to sit out.
+
+@ 1.209.06
+# speaker: 氷川 (%ss66)
+JP 　%ss58社長は
+JP 　一度、こうと言った事は
+JP 　絶対に曲げない人だからな。
+EN Once President %ss58 says something, he never backs down.
+
+@ 1.209.07
+# speaker: 氷川 (%ss66)
+JP 　入院中、
+JP 　見舞いにきた%ss58社長から、
+JP 　俺は意外な命令を言い渡される。
+EN While I was in the hospital, President %ss58 came to visit and gave me an unexpected order.
+
+@ 1.209.08
+# speaker: 氷川 (%ss66)
+JP 　それは、常日頃から
+JP 　俺が懸念していた事と
+JP 　直接関係したことだった・・・。
+EN It had to do with the very thing I'd always been worried about...
+
+@ 1.210.00
+# speaker: 司馬 (%ss58)
+JP 「%ss66、おまえ、
+JP 　休んでる間マッチメイクやれ。」
+EN "%ss66, while you're resting, you do the matchmaking."
+
+@ 1.210.01
+# speaker: 氷川 (%ss66)
+JP 「えっ・・・！
+JP 　俺が試合を組むんですか？」
+EN "What...! You want me to make the matches?"
+
+@ 1.210.02
+# speaker: 司馬 (%ss58)
+JP 「そうだ。」
+EN "That's right."
+
+@ 1.210.03
+# speaker: 司馬 (%ss58)
+JP 「たまには
+JP 　外からプロレスを見ることも
+JP 　勉強だぞ。」
+EN "Watching wrestling from the outside now and then is a good lesson too."
+
+@ C1.212
+# choice or chapter title
+JP １）マッチメイクを引き受ける
+EN 1) Take on the matchmaking
+
+@ C1.214
+# choice or chapter title
+JP ２）考えさせて下さいと言う
+EN 2) Ask for time to think it over
+
+@ 1.215.00
+# speaker: 氷川 (%ss66)
+JP 　きつい試合になることは、
+JP 　初めから予測していた。
+EN I knew from the start it would be a tough match.
+
+@ 1.215.01
+# speaker: 氷川 (%ss66)
+JP 　本当に
+JP 　%ss67の成長ぶりには
+JP 　驚かされたよ。
+EN %ss67 had grown so much, it really caught me by surprise.
+
+@ 1.215.02
+# speaker: 氷川 (%ss66)
+JP 　若手の成長は、
+JP 　それはそれでうれしいことだが、
+EN It's good to see the young guys grow, sure,
+
+@ 1.215.03
+# speaker: 氷川 (%ss66)
+JP 　あそこまできついと
+JP 　シャレにならないな。
+EN but when it's that tough, it's no joke.
+
+@ 1.215.04
+# speaker: 氷川 (%ss66)
+JP 　出せるものを全部出し切らないと
+JP 　勝つことが出来ない。
+EN I couldn't win without giving everything I had.
+
+@ 1.215.05
+# speaker: 氷川 (%ss66)
+JP 　ヘビー級の中でも小柄な俺は、
+JP 　もはや精神力で勝るしかないんだ。
+EN I'm small for a heavyweight. All I can do now is win on willpower.
+
+@ 1.215.06
+# speaker: 氷川 (%ss66)
+JP 　だが・・・
+EN But...
+
+@ 1.215.07
+# speaker: 氷川 (%ss66)
+JP 　過酷な試合の連続の中で、
+JP 　精神だけではどうにもならない
+JP 　体の限界がとうとう来てしまった・・・。
+EN After match after brutal match, my body finally hit a limit that willpower alone couldn't overcome...
+
+@ 1.217.00
+# speaker: 記者
+JP 「タイトル防衛
+JP 　おめでとうございます！！」
+EN "Congratulations on defending the titles!!"
+
+@ 1.217.01
+# speaker: 記者
+JP 「%ss66さん、
+JP 　すばらしい試合でした！！」
+EN "%ss66, a fantastic match!!"
+
+@ 1.217.02
+# speaker: 記者
+JP 「今日の試合を振り返って、
+JP 　一言コメントをお願いします！！」
+EN "Looking back on today's match, could we get a comment?!"
+
+@ 1.217.03
+# speaker: 氷川 (%ss66)
+JP 「よく覚えてないんだよ。
+JP 　試合中、何度もぶっ飛んだから。」
+EN "I don't remember much. I blanked out a bunch of times during the match."
+
+@ 1.217.04
+# speaker: 氷川 (%ss66)
+JP 「この勝利は重い・・・
+JP 　重すぎる。」
+EN "This win weighs on me... way too much."
+
+@ 1.217.05
+# speaker: 氷川 (%ss66)
+JP 「ハッキリ言って、%ss67は
+JP 　俺が考えていたよりはるかに強かった。」
+EN "Frankly, %ss67 was far stronger than I thought."
+
+@ 1.217.06
+# speaker: 氷川 (%ss66)
+JP 「これからのことを考えると、
+JP 　ただ喜んでばかりはいられないな。」
+EN "Thinking about what's ahead, I can't just celebrate."
+
+@ 1.219.00
+# speaker: 記者
+JP 「やりましたよ！！
+JP 　%ss67さん！！」
+EN "You did it!! %ss67!!"
+
+@ 1.219.01
+# speaker: 記者
+JP 「本当に凄まじい試合でした！！
+JP 　三冠奪取、おめでとうございます！！」
+EN "A truly incredible match!! Congratulations on winning the Triple Crown!!"
+
+@ 1.220.00
+# speaker: 富樫 (%ss67)
+JP 「この喜びは・・・
+JP 　ちょっと言葉では
+JP 　表現できません・・・。」
+EN "This joy is... I can't put it into words..."
+
+@ 1.220.01
+# speaker: 富樫 (%ss67)
+JP 「俺がここまで来れたのは、
+JP 　間違いなく
+JP 　%ss66さんのおかげですし・・・」
+EN "There's no doubt I owe getting this far to %ss66..."
+
+@ 1.220.02
+# speaker: 富樫 (%ss67)
+JP 「とにかく
+JP 　%ss66さんには感謝してます。」
+EN "Anyway, I'm grateful to %ss66."
+
+@ 1.220.03
+# speaker: 富樫 (%ss67)
+JP 「本当に勝ったのかどうか、
+JP 　まだ信じられない気持ちです・・・。」
+EN "I still can't believe I really won..."
+
+@ 1.226.00
+# speaker: 氷川 (%ss66)
+JP 　この時期、
+JP 　%ss59さんが急性の肝炎のため
+JP 　長期入院を余儀なくされ、
+EN Around that time, acute hepatitis forced %ss59 into the hospital for a long stay,
+
+@ 1.226.01
+# speaker: 氷川 (%ss66)
+JP 　戦線を離脱した・・・。
+EN and he left the front lines...
+
+@ 1.227.00
+# speaker: 氷川 (%ss66)
+JP 　ハッキリ言ってアレだよ。
+JP 　%ss59さんの代わりが出来る
+JP 　奴なんていなかったから、
+EN Frankly, it was rough. Nobody could fill %ss59's shoes,
+
+@ 1.227.01
+# speaker: 氷川 (%ss66)
+JP 　次の世代のレスラーは、
+JP 　みんな必死になったね。
+EN so the next generation of wrestlers were all desperate.
+
+@ 1.227.02
+# speaker: 氷川 (%ss66)
+JP 　もちろん俺もだ。
+EN Me included, of course.
+
+@ 1.227.03
+# speaker: 氷川 (%ss66)
+JP 　特に%ss58社長は
+JP 　俺に対して、
+EN President %ss58 in particular
+
+@ 1.227.04
+# speaker: 氷川 (%ss66)
+JP 　%ss59さんにはない、
+JP 　新しいリーダーシップを
+JP 　期待しているようだったから、
+EN seemed to expect from me a new kind of leadership that %ss59 didn't have,
+
+@ 1.227.05
+# speaker: 氷川 (%ss66)
+JP 　なおさら気合が入ったよ。
+EN so I was all the more fired up.
+
+@ 1.228.00
+# speaker: 司馬 (%ss58)
+JP 「%ss66・・・」
+EN "%ss66..."
+
+@ 1.228.01
+# speaker: 司馬 (%ss58)
+JP 「%ss41が抜けて・・・
+JP 　今は%ss59もいない。」
+EN "%ss41 has left... and now %ss59 is gone."
+
+@ 1.228.02
+# speaker: 司馬 (%ss58)
+JP 「だがな、ＯＪＰは
+JP 　ＯＪＰらしさを失うわけには
+JP 　いかないんだ。」
+EN "But <OJP> can't lose what makes it <OJP>."
+
+@ 1.228.03
+# speaker: 司馬 (%ss58)
+JP 「この意味が分かるか・・・？」
+EN "Do you understand what I mean...?"
+
+@ 1.228.04
+# speaker: 氷川 (%ss66)
+JP 「分かります。」
+EN "I understand."
+
+@ 1.228.05
+# speaker: 氷川 (%ss66)
+JP 「見ていて下さい、社長。」
+EN "Just watch, Boss."
+
+@ 1.228.06
+# speaker: 氷川 (%ss66)
+JP 「今の苦しい状況は、
+JP 　残された俺達が奮起して
+JP 　必ず乗り切って見せます・・・！！」
+EN "We who are left will rise up and get through these hard times, I promise...!!"
+
+@ 1.229.00
+# speaker: 氷川 (%ss66)
+JP 　%ss67との
+JP 　シングルマッチが組まれたのは
+JP 　そんな時だった。
+EN That was when my singles match with %ss67 was made.
+
+@ 1.229.01
+# speaker: 氷川 (%ss66)
+JP 　%ss67は力をつけていた。
+JP 　もう若手のイメージはない。
+EN %ss67 had grown strong. He wasn't a young boy anymore.
+
+@ 1.229.02
+# speaker: 氷川 (%ss66)
+JP 　しかし、あいつとの試合では、
+JP 　お互いに信じ合っているから、
+EN But when I fight him, we trust each other completely,
+
+@ 1.229.03
+# speaker: 氷川 (%ss66)
+JP 　２人とも
+JP 　まったく力を制御しない、常に
+JP 　限界ギリギリの闘いができる。
+EN so neither of us holds anything back. We can always fight right at the very limit.
+
+@ 1.229.04
+# speaker: 氷川 (%ss66)
+JP 　だが、俺は負けるわけには
+JP 　いかない・・・！
+EN But I can't afford to lose...!
+
+@ 1.229.05
+# speaker: 氷川 (%ss66)
+JP 　%ss58社長のため・・・
+JP 　ＯＪＰのために、
+EN For President %ss58... For <OJP>...
+
+@ 1.229.06
+# speaker: 氷川 (%ss66)
+JP 　俺は勝ち続け、
+JP 　この団体を引っ張って行かなければ
+JP 　ならないんだ・・・！！
+EN I have to keep winning and carry this promotion on my back...!
+
+@ 1.230.00
+# speaker: 記者
+JP 「%ss67さん、
+JP 　今度の%ss66選手との三冠戦は、」
+EN "%ss67, your coming Triple Crown match with %ss66..."
+
+@ 1.230.01
+# speaker: 記者
+JP 「現状のＯＪＰの
+JP 　頂点対決と言えると思いますが、」
+EN "...could be called a battle for the top spot in <OJP> today."
+
+@ 1.230.02
+# speaker: 記者
+JP 「試合前に何を思いますか？」
+EN "What's on your mind before the match?"
+
+@ 1.231.00
+# speaker: 富樫 (%ss67)
+JP 「今の%ss66さんは
+JP 　紛れもなくＯＪＰのエースです。」
+EN "%ss66 is without a doubt the ace of <OJP> right now."
+
+@ 1.231.01
+# speaker: 富樫 (%ss67)
+JP 「あの人の精神力はハンパじゃない。
+JP 　あれは、ただごとじゃないですよ。」
+EN "His mental strength is unreal. That man is something else."
+
+@ 1.231.02
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんに勝つには、
+JP 　それこそ命を賭けるぐらいの
+JP 　覚悟がないとダメでしょうね。」
+EN "To beat %ss66, you'd have to be ready to put your life on the line."
+
+@ 1.231.03
+# speaker: 富樫 (%ss67)
+JP 「けっして大袈裟じゃなく、
+JP 　怖いですよ・・・。」
+EN "I'm not exaggerating. He scares me..."
+
+@ 1.231.04
+# speaker: 富樫 (%ss67)
+JP 「でも、俺にとっては
+JP 　どうしても越えなくちゃいけない
+JP 　壁なんです。」
+EN "But for me, he's a wall I absolutely have to get over."
+
+@ 1.231.05
+# speaker: 富樫 (%ss67)
+JP 「これが%ss67だという存在を
+JP 　強烈にアピールするためにも、」
+EN "I need to show everyone loud and clear who %ss67 is."
+
+@ 1.231.06
+# speaker: 富樫 (%ss67)
+JP 「この試合は絶対に勝ちます・・・！！」
+EN "So I'm going to win this match, no matter what...!"
+
+@ 1.231.07
+# speaker: 富樫 (%ss67)
+JP 「勝たなきゃ
+JP 　時代は先に進まないんですよ。」
+EN "If I don't win, the times will never move on."
+
+@ 1.232.00
+# speaker: 氷川 (%ss66)
+JP 　%ss67はインタビューで、
+JP 　俺との試合は「怖い」と
+JP 　言っていたな・・・。
+EN In his interview, %ss67 said fighting me was "scary"...
+
+@ 1.232.01
+# speaker: 氷川 (%ss66)
+JP 　俺達レスラーは、
+JP 　殺し合うために闘うんじゃない。
+EN We wrestlers don't fight to kill each other.
+
+@ 1.232.02
+# speaker: 氷川 (%ss66)
+JP 　だが、それに匹敵するほどの
+JP 　覚悟を持ってリングに登らなければ
+JP 　勝つことはできない。
+EN But unless you climb into the ring ready for something close to that, you can't win.
+
+@ 1.232.03
+# speaker: 氷川 (%ss66)
+JP 　お互い
+JP 　行けるとこまで行ってみようぜ、
+JP 　%ss67。
+EN Let's both go as far as we can, %ss67.
+
+@ 1.232.04
+# speaker: 氷川 (%ss66)
+JP 　ぶっ倒れるまで
+JP 　やるしかないんだ・・・！！
+EN All we can do is fight until we drop...!
+
+@ 1.234.00
+# speaker: 氷川 (%ss66)
+JP 　%ss68と誠義軍を結成した
+JP 　%ss44は、
+JP 　その後も執拗に俺に絡んで来た。
+EN %ss44, who had formed the Seigi Army with %ss68, kept coming after me relentlessly.
+
+@ 1.234.01
+# speaker: 氷川 (%ss66)
+JP 　まあ、ここまでやられたら、
+JP 　俺もあいつとシングルで
+JP 　決着をつけなきゃならないだろう。
+EN Well, after all that, I'd have to settle things with him one-on-one.
+
+@ 1.235.00
+# speaker: 記者
+JP 「ついに%ss66選手との
+JP 　シングルマッチが実現しました。」
+EN "Your singles match with %ss66 is finally happening."
+
+@ 1.235.01
+# speaker: 記者
+JP 「今、%ss44選手は
+JP 　何を思いますか？」
+EN "%ss44, what's on your mind right now?"
+
+@ 1.236.00
+# speaker: 風間 (%ss44)
+JP 「ここまで来たら、
+JP 　絶対に%ss66さんに
+JP 　勝ちたい・・・！」
+EN "Now that it's come this far, I want to beat %ss66 no matter what...!"
+
+@ 1.236.01
+# speaker: 風間 (%ss44)
+JP 「これほど特定の人に
+JP 　勝ちたいと思ったことは、
+JP 　今までなかった。」
+EN "I've never wanted to beat one particular man this badly before."
+
+@ 1.236.02
+# speaker: 風間 (%ss44)
+JP 「やることはやって来てます。」
+EN "I've done everything I need to do."
+
+@ 1.236.03
+# speaker: 風間 (%ss44)
+JP 「後はただ、
+JP 　気持ちで負けないだけです・・・！！」
+EN "All that's left is to not lose in spirit...!"
+
+@ 1.237.00
+# speaker: 氷川 (%ss66)
+JP 　この試合は、%ss44と俺の
+JP 　意地のぶつかり合いだ・・・！
+EN This match is a clash of pride between %ss44 and me...!
+
+@ 1.237.01
+# speaker: 氷川 (%ss66)
+JP 　俺は先を行く者として、
+JP 　%ss44には絶対負けられない。
+EN As the man out in front, I can't lose to %ss44.
+
+@ 1.237.02
+# speaker: 氷川 (%ss66)
+JP 　やるからには徹底的にやる。
+JP 　死ぬ気で来い！！
+JP 　%ss44！！
+EN If I'm going to do this, I'll do it all the way. Come at me like your life depends on it, %ss44!
+
+@ 1.239.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　見事な返り討ちでした！！」
+EN %ss66! You sent them packing in style!
+
+@ 1.239.01
+# speaker: 記者
+JP 「%ss44、%ss68の
+JP 　誠義軍を撃破しましたが、
+JP 　今の心境をお聞かせ下さい！！」
+EN "You've beaten the Seigi Army of %ss44 and %ss68! How do you feel?"
+
+@ 1.239.02
+# speaker: 氷川 (%ss66)
+JP 「とりあえずホッとしたね。」
+EN "For now, I'm just relieved."
+
+@ 1.239.03
+# speaker: 氷川 (%ss66)
+JP 「あいつらと試合をする時は、
+JP 　意地と意地のぶつかり合いだから、」
+EN "When we fight those two, it's pride against pride,"
+
+@ 1.239.04
+# speaker: 氷川 (%ss66)
+JP 「どうしても
+JP 　無茶なところまで行ってしまう。」
+EN "so it always ends up going too far."
+
+@ 1.239.05
+# speaker: 氷川 (%ss66)
+JP 「%ss67が上手く
+JP 　カバーしてくれたから助かったよ。」
+EN "%ss67 covered for me well. He saved me."
+
+@ 1.239.06
+# speaker: 記者
+JP 「%ss67さんはどうでした？」
+EN "%ss67, what about you?"
+
+@ 1.240.00
+# speaker: 富樫 (%ss67)
+JP 「さすがに苦しい試合でしたね。」
+EN "That was a tough match, as you'd expect."
+
+@ 1.240.01
+# speaker: 富樫 (%ss67)
+JP 「途中、かなりヤバイところが
+JP 　あったんですが、」
+EN "There were some really dangerous moments in there,"
+
+@ 1.240.02
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんが
+JP 　カツを入れてくれたんで助かりました。」
+EN "but %ss66 fired me up and pulled me through."
+
+@ 1.240.03
+# speaker: 富樫 (%ss67)
+JP 「%ss67！！
+JP 　思い切って行け！！ってね。」
+EN "'%ss67! Go all out!' he said."
+
+@ 1.240.04
+# speaker: 富樫 (%ss67)
+JP 「とにかく、
+JP 　勝ちたいという気持ちが強かったんで
+JP 　こういう結果になって満足しています。」
+EN "Anyway, I wanted to win so badly, and I'm happy with how it turned out."
+
+@ 1.242.00
+# speaker: 記者
+JP 「%ss44さん！！
+JP 　%ss68さん！！
+JP 　すごい試合でした！！」
+EN "%ss44! %ss68! What an amazing match!"
+
+@ 1.242.01
+# speaker: 記者
+JP 「タッグ戦を制した、
+JP 　今の心境を聞かせて下さい！！」
+EN "Tell us how it feels to win the tag match!"
+
+@ 1.243.00
+# speaker: 風間 (%ss44)
+JP 「%ss68には感謝してますよ。
+JP 　とにかく、勝てたことは
+JP 　本当にうれしい。」
+EN "I'm grateful to %ss68. And winning makes me really happy."
+
+@ 1.243.01
+# speaker: 風間 (%ss44)
+JP 「ただ、こんな試合をしてたら、
+JP 　４人とも寿命が縮まるね。」
+EN "But matches like that will take years off all four of our lives."
+
+@ 1.244.00
+# speaker: 相模 (%ss68)
+JP 「強いねえ、相棒は。
+JP 　スペシャルパワーだね。」
+EN "My partner's strong, huh? That's some special power."
+
+@ 1.244.01
+# speaker: 相模 (%ss68)
+JP 「試合は、かなりきつかったよ。
+JP 　深追いすると捕まるしね。」
+EN "The match was really rough. Chase them too far and they catch you."
+
+@ 1.244.02
+# speaker: 相模 (%ss68)
+JP 「そうならないように気をつけた。
+JP 　結果的にそれが良かったんじゃないか。」
+EN "I was careful not to let that happen. I think that's what made the difference."
+
+@ 1.245.00
+JP 　たとえタッグ戦でも、
+JP 　%ss44に負けたことは
+JP 　ショックだったよ。
+EN Even if it was a tag match, losing to %ss44 was a shock.
+
+@ 1.245.01
+# speaker: 氷川 (%ss66)
+JP 　だが、これはもうしょうがない。
+EN But there's nothing I can do about it now.
+
+@ 1.245.02
+# speaker: 氷川 (%ss66)
+JP 　負けは負けとして、
+JP 　次の試合で十倍にも百倍にもして
+JP 　返してやればいいんだから。
+EN A loss is a loss. I'll just pay it back ten times over, a hundred times over, in the next match.
+
+@ 1.251.00
+# speaker: 氷川 (%ss66)
+JP 「%ss44、俺はおまえと
+JP 　試合をするつもりはない。」
+EN "%ss44, I have no intention of fighting you."
+
+@ 1.251.01
+# speaker: 氷川 (%ss66)
+JP 「どうしても俺とシングルでやりたいなら、
+JP 　それなりの段階を踏んで来い。」
+EN "If you want me one-on-one that badly, earn it step by step."
+
+@ 1.251.02
+# speaker: 氷川 (%ss66)
+JP 「俺がおまえを
+JP 　無視できなくなる程の段階をな。」
+EN "Climb high enough that I can't ignore you anymore."
+
+@ 1.251.03
+# speaker: 風間 (%ss44)
+JP 「分かりました・・・。」
+EN "I understand..."
+
+@ 1.252.00
+# speaker: 氷川 (%ss66)
+JP 　%ss44は高校時代からの後輩だが、
+JP 　一言多いヤツだから
+JP 　何かにつけて、よくいじめてたな。
+EN %ss44 was my junior back in high school. He talks too much, so I picked on him a lot.
+
+@ 1.252.01
+# speaker: 氷川 (%ss66)
+JP 　こういう下積みをしてきたヤツは
+JP 　最終的に強くなる・・・。
+EN Guys who come up the hard way like that get strong in the end...
+
+@ 1.252.02
+# speaker: 氷川 (%ss66)
+JP 　最近の%ss44が、
+JP 　メキメキと実力をつけてきていたことは
+JP 　俺も気が付いていた。
+EN I'd noticed that %ss44 had been getting a lot better lately.
+
+@ 1.252.03
+# speaker: 氷川 (%ss66)
+JP 　%ss44との試合を断ったのは、
+JP 　別に出し惜しみってわけでも
+JP 　なかったが、
+EN I didn't turn down the match with %ss44 to keep myself in reserve or anything,
+
+@ 1.252.04
+# speaker: 氷川 (%ss66)
+JP 　奴には少し
+JP 　試練を与えてやらないとな。
+EN but I need to put him through a little trial.
+
+@ 1.252.05
+# speaker: 氷川 (%ss66)
+JP 　あいつはすぐ、
+JP 　楽して上に登ろうとするから。
+EN He's always trying to climb to the top the easy way.
+
+@ 1.252.06
+# speaker: 氷川 (%ss66)
+JP 　どういう手で
+JP 　俺に興味を引かせるのか、
+JP 　楽しみではあるよ。
+EN I'm looking forward to seeing how he tries to get my attention.
+
+@ 1.253.00
+# speaker: アナウンサー
+JP 「%ss66のエルボーが決まった！！」
+EN "%ss66's elbow connects!"
+
+@ 1.254.00
+# speaker: アナウンサー
+JP 「おーっと、
+JP 　%ss68は倒れないぞ！！」
+EN "Whoa, %ss68 won't go down!"
+
+@ 1.254.01
+# speaker: アナウンサー
+JP 「今度は%ss68のハイキックが
+JP 　%ss66の顔面に決まった。」
+EN "Now %ss68's high kick lands square in %ss66's face!"
+
+@ 1.255.00
+# speaker: アナウンサー
+JP 「ここでゴングです。
+JP 　両者決着がつきません。」
+EN "And there's the bell. Neither man could finish it!"
+
+@ 1.256.00
+# speaker: 記者
+JP 「%ss68さん！！
+JP 　今日もすごい試合でした！！
+JP 　本当に凄まじいの一言です！！」
+EN "%ss68! Another amazing match today! It was truly incredible!"
+
+@ 1.256.01
+# speaker: 記者
+JP 「今後の抱負を聞かせて下さい！！」
+EN "Tell us your plans for the future!"
+
+@ 1.257.00
+# speaker: 相模 (%ss68)
+JP 「俺は%ss44と組んで
+JP 『誠義軍』を結成するよ。
+JP 　打倒%ss66軍団だな。」
+EN "I'm teaming up with %ss44 to form the Seigi Army. We're out to crush the %ss66 crew."
+
+@ 1.257.01
+# speaker: 相模 (%ss68)
+JP 「%ss44はどうしても
+JP 　%ss66を倒したいらしいんだ。」
+EN "%ss44 wants to beat %ss66 more than anything."
+
+@ 1.257.02
+# speaker: 相模 (%ss68)
+JP 「もちろん、俺もだ。」
+EN "So do I, of course."
+
+@ 1.258.00
+# speaker: 記者
+JP 「%ss66選手にお聞きします。」
+EN "A question for %ss66."
+
+@ 1.258.01
+# speaker: 記者
+JP 「%ss44選手と%ss68選手が、
+JP 　打倒%ss66を旗印に
+JP 『誠義軍』を結成しましたが、」
+EN "%ss44 and %ss68 have formed the Seigi Army with the goal of beating %ss66."
+
+@ 1.258.02
+# speaker: 記者
+JP 「それについて、
+JP 　何かコメントはありますか？」
+EN "Any comment on that?"
+
+@ 1.258.03
+# speaker: 氷川 (%ss66)
+JP 「コメントって・・・
+JP 　ああ、そういう風に来たかって
+JP 　感じですかね。」
+EN "A comment... I guess it's like, 'Oh, so that's how they're coming at me.'"
+
+@ 1.258.04
+# speaker: 氷川 (%ss66)
+JP 「誠義軍か何か知らないけど、
+JP 　やるからには勝つしかないでしょう。」
+EN "Seigi Army or whatever, once the match is on, all I can do is win."
+
+@ 1.258.05
+# speaker: 氷川 (%ss66)
+JP 「タッグ戦は
+JP 　パートナーとの呼吸が大切だから、
+JP 　全然不安はないですよ。」
+EN "In a tag match, the timing with your partner is what matters, so I'm not worried at all."
+
+@ 1.258.06
+# speaker: 氷川 (%ss66)
+JP 「俺は%ss67のことを
+JP 　信頼してるからね。」
+EN "I trust %ss67."
+
+@ 1.258.07
+# speaker: 氷川 (%ss66)
+JP 「%ss67も
+JP 　それに答えられるだけの
+JP 　力を持ってる。」
+EN "And %ss67 has the strength to live up to it."
+
+@ 1.258.08
+# speaker: 記者
+JP 「%ss67さんはどうですか？」
+EN "%ss67, how about you?"
+
+@ 1.259.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さんが俺を
+JP 　信用してくれるように、」
+EN "Just like %ss66 trusts me,"
+
+@ 1.259.01
+# speaker: 富樫 (%ss67)
+JP 「俺も%ss66さんに
+JP 　全幅の信頼をよせています。」
+EN "I trust %ss66 completely."
+
+@ 1.259.02
+# speaker: 富樫 (%ss67)
+JP 「後はただ、
+JP 　やるべきことをやるだけですよ。」
+EN "All that's left is to do what we have to do."
+
+@ 1.259.03
+# speaker: 富樫 (%ss67)
+JP 「ただ、この４人で試合するとなると
+JP 　これはもう、どんなことになるのか
+JP 　見当もつかない・・・！」
+EN "But with the four of us in one match... I can't even imagine what's going to happen...!"
+
+@ 1.260.00
+# speaker: 氷川 (%ss66)
+JP 　とにかく、やるからには絶対に勝つ。
+EN Anyway, if I'm doing this, I'm going to win.
+
+@ 1.260.01
+# speaker: 氷川 (%ss66)
+JP 　肝心なのは気持ちで負けないことだ。
+EN The key is not to lose in spirit.
+
+@ 1.260.02
+# speaker: 氷川 (%ss66)
+JP 　覚悟の決め方、腹の括り方が
+JP 　最後は勝負の分かれ目になる。
+EN In the end, how ready you are, how hard you've set your resolve, decides the match.
+
+@ 1.260.03
+# speaker: 氷川 (%ss66)
+JP 　%ss44のような
+JP 　イジけた奴には負けられない。
+EN I can't lose to a sulking brat like %ss44.
+
+@ 1.260.04
+# speaker: 氷川 (%ss66)
+JP 　奴らを気力で圧倒するんだ・・・！！
+EN I'll crush them with sheer willpower...!
+
+@ 1.262.00
+# speaker: 氷川 (%ss66)
+JP 　今までの俺がそうだったように、
+JP 　下の者は皆、上に這い上がろうとして
+JP 　必死なんだ。
+EN Just like I used to be, everyone below is desperate to claw their way to the top.
+
+@ 1.262.01
+# speaker: 氷川 (%ss66)
+JP 　俺も追われる者の立場として、
+JP 　これから一試合一試合を死ぬ気で
+JP 　闘っていかなければならない。
+EN Now that I'm the one being chased, I have to fight every single match like my life depends on it.
+
+@ 1.262.02
+# speaker: 氷川 (%ss66)
+JP 　集中力を切らしたら、やられる。
+EN The moment I lose focus, I'm done.
+
+@ 1.264.00
+# speaker: 記者
+JP 「すごい試合でした！！
+JP 　%ss66さん！！」
+EN "What an amazing match, %ss66!"
+
+@ 1.264.01
+# speaker: 記者
+JP 「今日の試合は
+JP 　鬼気迫るものがありましたけど、
+JP 　ご自分ではどうですか？」
+EN "There was something frightening about you out there today. How did it feel to you?"
+
+@ 1.264.02
+# speaker: 氷川 (%ss66)
+JP 「どうしても、
+JP 　%ss44には負けられないという
+JP 　意地があったからね。」
+EN "I had my pride. I just couldn't lose to %ss44."
+
+@ 1.264.03
+# speaker: 氷川 (%ss66)
+JP 「ちょっと
+JP 　非情になりすぎた気もするけど、
+JP 　あいつには、あのくらいやらないと。」
+EN "Maybe I was a little too ruthless, but with him, you have to go that far."
+
+@ 1.264.04
+# speaker: 記者
+JP 「%ss44選手は、
+JP 　とりあえずケジメがついたと
+JP 　言ってました。」
+EN "%ss44 said this at least settles things."
+
+@ 1.264.05
+# speaker: 氷川 (%ss66)
+JP 「どういうケジメですか？」
+EN "Settles what?"
+
+@ 1.264.06
+# speaker: 記者
+JP 「今の自分では
+JP 　%ss66越えが果たせない、
+JP 　ということだと思いますが・・・」
+EN "I think he means he can't get past %ss66 as he is now..."
+
+@ 1.264.07
+# speaker: 氷川 (%ss66)
+JP 「そんな根性じゃ、
+JP 　いつまで経っても同じですよ。」
+EN "With that attitude, he'll never change."
+
+@ 1.264.08
+# speaker: 氷川 (%ss66)
+JP 「また挑戦して来れば
+JP 　いいじゃないですか。
+JP 　俺はここにいますからね。」
+EN "He can just challenge me again. I'm not going anywhere."
+
+@ 1.264.09
+# speaker: 氷川 (%ss66)
+JP 「挑戦したい気持ちになったら
+JP 　また来ればいい。
+JP 　気持ちが一番重要ですよ。」
+EN "When he feels like challenging me, he can come back. The heart is what matters most."
+
+@ 1.266.00
+# speaker: 記者
+JP 「%ss44さん！！
+JP 　ついに%ss66選手を
+JP 　倒しましたよ！！」
+EN "%ss44! You've finally beaten %ss66!"
+
+@ 1.266.01
+# speaker: 記者
+JP 「どんなお気持ちですか！？」
+EN "How do you feel?!"
+
+@ 1.267.00
+# speaker: 風間 (%ss44)
+JP 「ただもう、
+JP 　うれしいの一言です・・・！」
+EN "I'm just... so happy...!"
+
+@ 1.267.01
+# speaker: 風間 (%ss44)
+JP 「%ss66さんは、
+JP 　ずっと追い続けて来た
+JP 　目標ですからね・・・」
+EN "%ss66 is the goal I've been chasing all this time..."
+
+@ 1.267.02
+# speaker: 風間 (%ss44)
+JP 「今日の試合は
+JP 　運に助けられた部分も多かったけど、」
+EN "Luck helped me a lot in today's match,"
+
+@ 1.267.03
+# speaker: 風間 (%ss44)
+JP 「これからは
+JP 　毎回互角以上の闘いができるように
+JP 　頑張ります。」
+EN "but from now on, I'll work to fight him as an equal or better every time."
+
+@ 1.273.00
+# speaker: 氷川 (%ss66)
+JP 「お礼参りってわけか・・・
+JP 　面白いこと言うじゃないか、
+JP 　%ss44。」
+EN "Paying me back, huh... That's a funny thing to say, %ss44."
+
+@ 1.273.01
+# speaker: 氷川 (%ss66)
+JP 「やれるもんならやってみろ。」
+EN "Go ahead and try it."
+
+@ 1.273.02
+# speaker: 氷川 (%ss66)
+JP 「返り討ちにしてやるから、
+JP 　覚悟しておけよ！！」
+EN I'll send you packing, so be ready!
+
+@ 1.274.00
+# speaker: 氷川 (%ss66)
+JP 　%ss44は高校時代からの後輩だが、
+JP 　一言多いヤツだから
+JP 　何かにつけて、よくいじめてたな。
+EN %ss44 was my junior back in high school. He talks too much, so I picked on him a lot.
+
+@ 1.274.01
+# speaker: 氷川 (%ss66)
+JP 　こういう下積みをしてきたヤツは
+JP 　最終的に強くなる・・・。
+EN Guys who come up the hard way like that get strong in the end...
+
+@ 1.274.02
+# speaker: 氷川 (%ss66)
+JP 　最近の%ss44が、
+JP 　メキメキと実力をつけて来ていたことは
+JP 　俺も気が付いていた。
+EN I'd noticed that %ss44 had been getting a lot better lately.
+
+@ 1.275.00
+# speaker: 氷川 (%ss66)
+JP 　負けはありえないというプレッシャーで、
+JP 　この試合は今まで体験した中でも
+JP 　特に厳しいかもしれない・・・。
+EN With the pressure of knowing I can't lose, this might be one of the toughest matches I've ever had...
+
+@ 1.275.01
+# speaker: 氷川 (%ss66)
+JP 　だが、先輩として
+JP 　%ss44には
+JP 　絶対に負けられない・・・！
+EN But as his senior, I can never lose to %ss44...!
+
+@ 1.275.02
+# speaker: 氷川 (%ss66)
+JP 　先を行く者の意地を見せてやるぞ！！
+EN I'll show him the pride of the man out in front!
+
+@ 1.277.00
+# speaker: 氷川 (%ss66)
+JP 　%ss59さんや%ss61、
+JP 　そういう強力な敵との闘いの中で、
+EN Fighting strong opponents like %ss59 and %ss61,
+
+@ 1.277.01
+# speaker: 氷川 (%ss66)
+JP 　俺は徐々にヘビー級としての実力をつけ、
+JP 　ＯＪＰでメインを張れるまでの
+JP 　レスラーになっていった。
+EN I slowly built up my strength as a heavyweight, until I was main-eventing in <OJP>.
+
+@ 1.277.02
+# speaker: 氷川 (%ss66)
+JP 　気が付けば、いつの間にか
+JP 　後輩達から目標とされるレスラーに
+JP 　なっていたな・・・。
+EN Before I knew it, I'd become the wrestler my juniors were aiming for...
+
+@ 1.278.00
+# speaker: 風間 (%ss44)
+JP 「%ss66さん・・・
+JP 　トレーニング中すみません。
+JP 　ちょっと話してもいいですか？」
+EN "%ss66... Sorry to interrupt your training. Can I talk to you?"
+
+@ 1.278.01
+# speaker: 氷川 (%ss66)
+JP 「%ss44か・・・」
+EN "%ss44..."
+
+@ 1.278.02
+# speaker: 氷川 (%ss66)
+JP 「なんだ？
+JP 　言ってみろ。」
+EN "What is it? Spit it out."
+
+@ 1.278.03
+# speaker: 風間 (%ss44)
+JP 「今度の試合で、
+JP 　俺は必ず%ss66さんを倒します。」
+EN "In our next match, I'm going to beat you, %ss66."
+
+@ 1.278.04
+# speaker: 風間 (%ss44)
+JP 「%ss66さんには学生時代から
+JP 　色々面倒見てもらっていますけど、
+JP 　そのお礼の意味でも絶対に勝ちます。」
+EN "%ss66, you've looked out for me since school, so I'll win to pay you back."
+
+@ C1.280
+# choice or chapter title
+JP １）おまえと試合するつもりはない
+EN 1) I won't fight you
+
+@ C1.282
+# choice or chapter title
+JP ２）試合を受ける
+EN 2) Accept the match
+
+@ 1.283.00
+# speaker: 氷川 (%ss66)
+JP 　%ss61の技は、
+JP 　一つ一つが異様に重かった。
+EN Every single one of %ss61's moves hit unbelievably hard.
+
+@ 1.283.01
+# speaker: 氷川 (%ss66)
+JP 　それをカバーするには、もはや
+JP 　体力を超えた精神力しかないだろう。
+EN To make up for that, all I had left was willpower beyond my stamina.
+
+@ 1.283.02
+# speaker: 氷川 (%ss66)
+JP 　俺は更なる精神と肉体の強化のため、
+JP 　以前よりハードなトレーニングを
+JP 　こなすようになった・・・！
+EN To strengthen my mind and body even more, I started training harder than ever...!
+
+@ 1.285.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　ついに%ss61を倒しました！！」
+EN "%ss66! You've finally beaten %ss61!"
+
+@ 1.285.01
+# speaker: 記者
+JP 「今、どんなお気持ちですか！？」
+EN "How do you feel right now?!"
+
+@ 1.285.02
+# speaker: 氷川 (%ss66)
+JP 「ホッとした・・・
+JP 　というのが正直な気持ちだね。」
+EN "Honestly... I'm relieved."
+
+@ 1.285.03
+# speaker: 氷川 (%ss66)
+JP 「%ss61との闘いを、
+JP 　一年封印すると宣言していたから、」
+EN "I said I'd stay away from %ss61 for a year if I lost,"
+
+@ 1.285.04
+# speaker: 氷川 (%ss66)
+JP 「どうしても負けるわけには
+JP 　いかなかった・・・！」
+EN "so I just couldn't lose...!"
+
+@ 1.285.05
+# speaker: 記者
+JP 「%ss61選手は
+JP 　再戦を望んでいるようですが、
+JP 　その点についてはどうですか！？」
+EN "%ss61 seems to want a rematch. What do you say to that?!"
+
+@ 1.285.06
+# speaker: 氷川 (%ss66)
+JP 「俺は逃げるなんて
+JP 　できない性分だから。」
+EN "Running away isn't in my nature."
+
+@ 1.285.07
+# speaker: 氷川 (%ss66)
+JP 「向こうがやる気なら、
+JP 　もちろん受けますよ・・・！！」
+EN "If he wants it, of course I'll take him on...!"
+
+@ 1.287.00
+# speaker: 記者
+JP 「%ss61さん！！
+JP 　すばらしい試合でした！！」
+EN "%ss61! A fantastic match!"
+
+@ 1.287.01
+# speaker: 記者
+JP 「敗れた%ss66選手に、
+JP 　何か一言ありますか！？」
+EN "Do you have anything to say to %ss66, who you just beat?!"
+
+@ 1.288.00
+# speaker: バイソン (%ss61)
+JP 「%ss66は小柄だが、
+JP 　タフなファイターだ。」
+EN "%ss66 is small, but he's a tough fighter."
+
+@ 1.288.01
+# speaker: バイソン (%ss61)
+JP 「次の対戦を楽しみにしている。」
+EN "I look forward to our next fight."
+
+@ 1.288.02
+# speaker: バイソン (%ss61)
+JP 「俺のファイトを見て、
+JP 　挑戦する気になった奴がいれば、
+JP 　いつでも闘いを仕掛けて来い。」
+EN "Anyone who watches me fight and wants a piece of me, come and get it, anytime."
+
+@ 1.288.03
+# speaker: バイソン (%ss61)
+JP 「自分がどれほどマヌケなのか、
+JP 　教えてやる。」
+EN "I'll teach you what fools you are."
+
+@ 1.288.04
+# speaker: バイソン (%ss61)
+JP 「ウィーーーッ！！！」
+EN "Whoooooo!"
+
+@ 1.294.00
+# speaker: 氷川 (%ss66)
+JP 　ヘビー級に転向して
+JP 　すぐの頃は、とにかく大変だったよ。
+EN Right after I moved up to heavyweight, things were rough.
+
+@ 1.294.01
+# speaker: 氷川 (%ss66)
+JP 　本当に毎試合、
+JP 　苦しい闘いの連続だった。
+EN Every single match was one hard fight after another.
+
+@ 1.294.02
+# speaker: 氷川 (%ss66)
+JP 　その中でも特に、外国人レスラーで
+JP 　どうしても勝てない奴が
+JP 　一人だけいたんだ。
+EN Most of all, there was one foreign wrestler I just couldn't beat.
+
+@ 1.294.03
+# speaker: 氷川 (%ss66)
+JP 　これはもう、
+JP 　とことん自分を追い込むしかないって
+JP 　思ったね・・・。
+EN I figured I had no choice but to push myself to the absolute limit...
+
+@ 1.295.00
+# speaker: 記者
+JP 「%ss61選手！」
+EN "%ss61!"
+
+@ 1.295.01
+# speaker: 記者
+JP 「今度の%ss66選手との
+JP 　三冠戦について、
+JP 　一言コメントをお願いします！」
+EN "A word on your upcoming Triple Crown match with %ss66, please!"
+
+@ 1.296.00
+# speaker: バイソン (%ss61)
+JP 「俺は常に１００％のパワーで
+JP 　試合に臨んでいる。」
+EN "I always go into a match with 100% power."
+
+@ 1.296.01
+# speaker: バイソン (%ss61)
+JP 「俺を倒す自信がある奴は、
+JP 　いつでも挑戦して来ればいい。」
+EN "Anyone who thinks he can beat me can challenge me anytime."
+
+@ 1.296.02
+# speaker: バイソン (%ss61)
+JP 「俺は絶対に負けないがな。」
+EN "But I'll never lose."
+
+@ 1.296.03
+# speaker: バイソン (%ss61)
+JP 「勝つのは常に俺だ！！」
+EN "I'm the one who always wins!"
+
+@ 1.296.04
+# speaker: バイソン (%ss61)
+JP 「ウィーーーッ！！！」
+EN "Whoooooo!"
+
+@ 1.297.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん！！
+JP 　%ss61のインタビュー
+JP 　見ましたか？」
+EN "%ss66! Did you see %ss61's interview?"
+
+@ 1.297.01
+# speaker: 富樫 (%ss67)
+JP 「今度の三冠防衛戦、
+JP 　アノ野郎なめてますよ！！」
+EN "That bastard isn't taking this Triple Crown defense seriously!"
+
+@ 1.297.02
+# speaker: 氷川 (%ss66)
+JP 「%ss67・・・」
+EN "%ss67..."
+
+@ 1.297.03
+# speaker: 氷川 (%ss66)
+JP 「俺は今度の試合で
+JP 　%ss61に負けたら、
+JP 　今後一年間、あいつには挑戦しない。」
+EN "If I lose to %ss61 in this match, I won't challenge him again for a whole year."
+
+@ 1.297.04
+# speaker: 富樫 (%ss67)
+JP 「はあ！？
+JP 　何言ってるんですか、
+JP 　%ss66さん！？」
+EN "Huh?! What are you saying, %ss66?!"
+
+@ 1.297.05
+# speaker: 富樫 (%ss67)
+JP 「この前の試合では、
+JP 　あと一歩だったじゃないですか！！」
+EN "You were one step away in the last match!"
+
+@ 1.297.06
+# speaker: 富樫 (%ss67)
+JP 「弱気になるなんて
+JP 　%ss66さんらしくないですよ！！」
+EN "Getting cold feet isn't like you, %ss66!"
+
+@ 1.297.07
+# speaker: 氷川 (%ss66)
+JP 「おまえな、
+JP 　俺が弱気になるってたまか？」
+EN "Come on, do I look like the type to get cold feet?"
+
+@ 1.297.08
+# speaker: 氷川 (%ss66)
+JP 「勝つために言ってるんだよ。」
+EN "I'm saying it so I'll win."
+
+@ 1.297.09
+# speaker: 氷川 (%ss66)
+JP 「一年も%ss61に
+JP 　挑戦しないなんて、考えられないだろ。」
+EN "Not challenging %ss61 for a whole year? That's unthinkable, right?"
+
+@ 1.297.10
+# speaker: 氷川 (%ss66)
+JP 「こう言ってしまったからには、
+JP 　後はもう勝つしかないからな・・・！！」
+EN "Now that I've said it, all I can do is win...!"
+
+@ 1.297.11
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん・・・」
+EN "%ss66..."
+
+@ 1.298.00
+# speaker: 氷川 (%ss66)
+JP 　%ss67には冗談混じりだったが、
+JP 　負けたら一年間挑戦しないっていうのは
+JP 　うそじゃない。
+EN I said it to %ss67 half-jokingly, but I meant it: if I lose, no challenge for a year.
+
+@ 1.298.01
+# speaker: 氷川 (%ss66)
+JP 　%ss61とは、
+JP 　今まで５回やって
+JP 　一度も勝ったことがない・・・。
+EN I've fought %ss61 five times and never beaten him once...
+
+@ 1.298.02
+# speaker: 氷川 (%ss66)
+JP 　一度もだぞ・・・！！
+EN Not once...!
+
+@ 1.298.03
+# speaker: 氷川 (%ss66)
+JP 　相手が強いのは分かってる。
+JP 　もう、勝つためには
+JP 　とことん自分を追い込むしかないんだ！！
+EN I know he's strong. The only way to win is to push myself to the absolute limit!
+
+@ 1.298.04
+# speaker: 氷川 (%ss66)
+JP 　精神力で勝つしかない！！
+EN I have to win on willpower!
+
+@ 1.300.00
+# speaker: 記者
+JP 「%ss66さん・・・！！
+JP 　本当に見事な・・・
+JP 　すばらしい試合でした・・・！！」
+EN "%ss66...! That was truly a magnificent, wonderful match...!"
+
+@ 1.300.01
+# speaker: 記者
+JP 「今のお気持ちを
+JP 　聞かせていただけますか！？」
+EN "Could you tell us how you feel right now?!"
+
+@ 1.300.02
+# speaker: 氷川 (%ss66)
+JP 「最後は・・・」
+EN "At the end..."
+
+@ 1.300.03
+# speaker: 氷川 (%ss66)
+JP 「最後は意地しかなかったですよ・・・」
+EN "At the end, all I had left was pride..."
+
+@ 1.300.04
+# speaker: 氷川 (%ss66)
+JP 「あそこで決められなかったら、
+JP 　多分力尽きてた・・・」
+EN "If I hadn't finished it there, I'd probably have run out of gas..."
+
+@ 1.300.05
+# speaker: 氷川 (%ss66)
+JP 「無心の境地って言うか・・・
+JP 　頭の中が真っ白で、
+JP 　とにかくうれしいの一言です・・・」
+EN "It was like my mind went empty... totally blank. All I can say is I'm happy..."
+
+@ 1.301.00
+# speaker: 氷川 (%ss66)
+JP 　俺はやった・・・
+EN I did it...
+
+@ 1.301.01
+# speaker: 氷川 (%ss66)
+JP 　俺は本当に%ss59さんを
+JP 　倒したんだ・・・！！
+EN I really beat %ss59...!
+
+@ 1.301.02
+# speaker: 氷川 (%ss66)
+JP 　今までプロレスをやってきて、
+JP 　これほどうれしかったことはない！！
+EN In all my years in pro wrestling, I've never been this happy!
+
+@ 1.301.03
+# speaker: 氷川 (%ss66)
+JP 　だが、ここで満足していてはダメだ。
+EN But I can't be satisfied here.
+
+@ 1.301.04
+# speaker: 氷川 (%ss66)
+JP 　ここを通過点と考えて、
+EN I have to treat this as just one step along the way,
+
+@ 1.301.05
+# speaker: 氷川 (%ss66)
+JP 　今までより更に気を引き締めて、
+JP 　これからの闘いに
+JP 　のぞまなければ・・・！！
+EN tighten my focus even more than before, and face the fights to come...!
+
+@ 1.303.00
+# speaker: 記者
+JP 「%ss59さん！！」
+EN "%ss59!"
+
+@ 1.303.01
+# speaker: 記者
+JP 「実に重い・・・
+JP 　力の入った試合でした・・・！！」
+EN "That was a truly heavy... powerful match...!"
+
+@ 1.303.02
+# speaker: 記者
+JP 「%ss66選手との試合を終えて、
+JP 　今、思うことは何でしょうか！？」
+EN "Now that your match with %ss66 is over, what's on your mind?!"
+
+@ 1.304.00
+# speaker: トミー (%ss59)
+JP 「まだ、%ss66に負けるわけには
+JP 　いかないからね・・・。」
+EN "I can't lose to %ss66 just yet..."
+
+@ 1.304.01
+# speaker: トミー (%ss59)
+JP 「俺にはメインを１０年張って来た
+JP 　意地ってものがある。」
+EN "I've got the pride of ten years in the main event."
+
+@ 1.304.02
+# speaker: トミー (%ss59)
+JP 「%ss66については・・・
+JP 　技術や体力的なものもあるだろうけど、」
+EN "As for %ss66... there's technique and stamina, sure,"
+
+@ 1.304.03
+# speaker: トミー (%ss59)
+JP 「ここ一番で必ず勝つという、
+JP 　エースとしての絶対条件が
+JP 　まだ備わっていない。」
+EN "but he still lacks the one thing an ace must have: always winning when it counts."
+
+@ 1.304.04
+# speaker: トミー (%ss59)
+JP 「今の%ss66ではダメなんだよ。」
+EN "%ss66 as he is now just isn't good enough."
+
+@ 1.305.00
+# speaker: 氷川 (%ss66)
+JP 　完敗だった・・・
+EN It was a total loss...
+
+@ 1.305.01
+# speaker: 氷川 (%ss66)
+JP 　ただ・・・
+JP 　負けることによって得るものもある。
+EN But... there are things you gain by losing.
+
+@ 1.305.02
+# speaker: 氷川 (%ss66)
+JP 　これを糧として、
+JP 　これからの闘いを考えるんだ・・・！！
+EN I'll use this as fuel and think about the fights ahead...!
+
+@ 1.311.00
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん！！」
+EN "%ss66!"
+
+@ 1.311.01
+# speaker: 富樫 (%ss67)
+JP 「%ss59さんを倒すって、
+JP 　マスコミに宣言したんですって！？」
+EN "Did you really tell the press you'd beat %ss59?!"
+
+@ 1.311.02
+# speaker: 氷川 (%ss66)
+JP 「ああ。」
+EN "Yeah."
+
+@ 1.311.03
+# speaker: 氷川 (%ss66)
+JP 「『自信ありますか？』って聞かれたら、
+JP 『ええ、ありません』とは言えないだろ。
+JP 　俺はプロなんだから。」
+EN "When they ask 'Are you confident?', I can't say 'Nope.' I'm a pro."
+
+@ 1.311.04
+# speaker: 氷川 (%ss66)
+JP 「ただな、
+JP 　適当に言ったわけじゃないぞ。」
+EN "But I didn't just say it for the heck of it."
+
+@ 1.311.05
+# speaker: 氷川 (%ss66)
+JP 「そうやって、
+JP 　自分をギリギリまで追い込まなきゃ、
+JP 　あの人には絶対勝てない。」
+EN "Unless I push myself right to the edge like that, I'll never beat that man."
+
+@ 1.311.06
+# speaker: 氷川 (%ss66)
+JP 「覚悟を決めなきゃダメなんだ。」
+EN "I have to be ready for anything."
+
+@ 1.311.07
+# speaker: 富樫 (%ss67)
+JP 「%ss59さんは
+JP 　すごいですからねえ・・・」
+EN "%ss59 is amazing, though..."
+
+@ 1.311.08
+# speaker: 富樫 (%ss67)
+JP 「こっちの技が効いてんのか
+JP 　効いてないのか、
+JP 　試合中、本気で悩む時ありますよ。」
+EN "Sometimes in a match I seriously can't tell if my moves are hurting him or not."
+
+@ 1.311.09
+# speaker: 富樫 (%ss67)
+JP 「顔が全然痛がってないから。」
+EN "His face never shows any pain."
+
+@ 1.311.10
+# speaker: 氷川 (%ss66)
+JP 「あの人は、プロレスラーとして
+JP 　天才を通り越した怪物だからな。」
+EN "As a pro wrestler, that man is beyond a genius. He's a monster."
+
+@ 1.311.11
+# speaker: 氷川 (%ss66)
+JP 「それだけに、俺には絶対
+JP 　乗り越えなくちゃいけない壁なんだ。」
+EN "That's exactly why he's a wall I absolutely have to get over."
+
+@ 1.311.12
+# speaker: 氷川 (%ss66)
+JP 「もし、俺が負けたら、
+JP 　今までやってきたことが
+JP 　全て無駄になってしまう。」
+EN "If I lose, everything I've done until now will be for nothing."
+
+@ 1.311.13
+# speaker: 氷川 (%ss66)
+JP 「そうなってたまるか・・・！！」
+EN "I won't let that happen...!"
+
+@ 1.311.14
+# speaker: 氷川 (%ss66)
+JP 「お前や、俺に続く
+JP 　後輩達のためにも・・・」
+EN "For you, and for all the young guys coming up after me..."
+
+@ 1.311.15
+# speaker: 氷川 (%ss66)
+JP 「いや、ＯＪＰという団体を
+JP 　盛り返すためにも、
+JP 　今度の試合は必ず勝つ！！」
+EN "No, to bring <OJP> back as a promotion, I'm going to win this match!"
+
+@ 1.311.16
+# speaker: 氷川 (%ss66)
+JP 「見てろよ%ss67、
+JP 　俺はやると言ったことは
+JP 　絶対にやりとげるぞ。」
+EN "Watch me, %ss67. When I say I'll do something, I get it done."
+
+@ 1.311.17
+# speaker: 富樫 (%ss67)
+JP 「%ss66さん・・・
+JP 　俺は%ss66さんのこと
+JP 　信じてます！！」
+EN %ss66... I believe in you, %ss66!!
+
+@ 1.312.00
+# speaker: 氷川 (%ss66)
+JP 　怪物と渡り合うための研究は
+JP 　し尽くした・・・
+EN I've studied everything there is to know about fighting a monster...
+
+@ 1.312.01
+# speaker: 氷川 (%ss66)
+JP 　俺は必ず%ss59越えを達成する！！
+EN I'm going to get past %ss59!
+
+@ 1.312.02
+# speaker: 氷川 (%ss66)
+JP 　どんなことをしても、ＯＪＰに
+JP 　%ss66がいるということを
+JP 　証明してみせるぞ！！
+EN Whatever it takes, I'll show the world there's a %ss66 in <OJP>!
+
+@ 1.314.00
+# speaker: 氷川 (%ss66)
+JP 　必ず越えてみせますよ、
+JP 　%ss59さん・・・！！
+EN I'll get past you, %ss59...!
+
+@ 1.314.01
+# speaker: 氷川 (%ss66)
+JP 　俺は、後輩の%ss67といっしょに
+JP 　対ヘビー級の研究に没頭した。
+EN I threw myself into studying how to fight heavyweights with my junior, %ss67.
+
+@ 1.314.02
+# speaker: 氷川 (%ss66)
+JP 　%ss67とは気が合うから、
+JP 　公私共に付き合いがあったんだ。
+EN %ss67 and I got along well, so we spent time together in and out of the ring.
+
+@ 1.314.03
+# speaker: 氷川 (%ss66)
+JP 　この時は本当に助けてもらったな。
+EN He really helped me out back then.
+
+@ 1.316.00
+# speaker: 氷川 (%ss66)
+JP 　この挑発に、カッカきちまったら
+JP 　負けると思ったね。
+EN I figured if I got hot under the collar over this provocation, I'd lose.
+
+@ 1.316.01
+# speaker: 氷川 (%ss66)
+JP 　%ss59さんとの闘いは
+JP 　もう始まっている。
+EN The fight with %ss59 had already begun.
+
+@ 1.316.02
+# speaker: 氷川 (%ss66)
+JP 　俺は、後輩の%ss67といっしょに
+JP 　対ヘビー級の研究に没頭した。
+EN I threw myself into studying how to fight heavyweights with my junior, %ss67.
+
+@ 1.316.03
+# speaker: 氷川 (%ss66)
+JP 　%ss67とは気が合うから、
+JP 　公私共に付き合いがあったんだ。
+EN %ss67 and I got along well, so we spent time together in and out of the ring.
+
+@ 1.316.04
+# speaker: 氷川 (%ss66)
+JP 　この時は本当に助けてもらったな。
+EN He really helped me out back then.
+
+@ 1.318.00
+# speaker: 氷川 (%ss66)
+JP 　この時期、
+JP 　トップレスラーだった%ss41さんが
+JP 　脱退したこともあって、
+EN Around this time, top wrestler %ss41 had left the promotion,
+
+@ 1.318.01
+# speaker: 氷川 (%ss66)
+JP 　ＯＪＰ全体がバタバタしていた。
+EN and all of <OJP> was in turmoil.
+
+@ 1.318.02
+# speaker: 氷川 (%ss66)
+JP 　いや・・・
+JP 　ハッキリ言って危機だった・・・！
+EN No... frankly, we were in crisis...!
+
+@ 1.319.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　%ss41選手の脱退について、
+JP 　何かコメントはありますか！？」
+EN "%ss66! Any comment on %ss41's departure?!"
+
+@ 1.319.01
+# speaker: 氷川 (%ss66)
+JP 「・・・。」
+EN "..."
+
+@ 1.319.02
+# speaker: 記者
+JP 「ＯＪＰには、もはや
+JP 　%ss59対%ss41に匹敵する
+JP 　カードは組めないと言われていますが、」
+EN "People are saying <OJP> can no longer put on a match to rival %ss59 vs. %ss41,"
+
+@ 1.319.03
+# speaker: 記者
+JP 「それについてはどうです！？」
+EN "What do you say to that?!"
+
+@ 1.319.04
+# speaker: 氷川 (%ss66)
+JP 「%ss41さんが抜けた穴は
+JP 　確かにでかい・・・」
+EN "%ss41 leaving does leave a big hole..."
+
+@ 1.319.05
+# speaker: 氷川 (%ss66)
+JP 「でも、それに匹敵する選手がいれば、
+JP 　別に問題ないわけでしょう。」
+EN "But if there's a wrestler who can match him, then there's no problem, right?"
+
+@ 1.319.06
+# speaker: 氷川 (%ss66)
+JP 「次の試合、俺は
+JP 　%ss59さんと対戦します。」
+EN "In my next match, I'm facing %ss59."
+
+@ 1.319.07
+# speaker: 氷川 (%ss66)
+JP 「その試合は、
+JP 　%ss59対%ss41戦以上の
+JP 　試合になることを約束しますよ。」
+EN "I promise you that match will be better than %ss59 vs. %ss41."
+
+@ 1.319.08
+# speaker: 記者
+JP 「%ss66さん・・・！
+JP 　%ss59越えの自信が
+JP 　あるということですね？」
+EN "%ss66...! So you're confident you can get past %ss59?"
+
+@ 1.319.09
+# speaker: 氷川 (%ss66)
+JP 「自信はあります。
+JP 　俺は、絶対負けません・・・！！」
+EN "I'm confident. I will not lose...!"
+
+@ 1.320.00
+# speaker: 氷川 (%ss66)
+JP 　やらなければいけなかった。
+EN I had to do it.
+
+@ 1.320.01
+# speaker: 氷川 (%ss66)
+JP 　今のＯＪＰを立て直すためにも、
+JP 　ヘビー級の証明をするためにも、
+EN To rebuild <OJP>, and to prove myself as a heavyweight,
+
+@ 1.320.02
+# speaker: 氷川 (%ss66)
+JP 　俺はどうしても
+JP 　%ss59さんを倒さなければ
+JP 　ならない・・・！
+EN I had to beat %ss59, no matter what...!
+
+@ 1.320.03
+# speaker: 氷川 (%ss66)
+JP 　ちょうどその頃、%ss59さんは
+JP 　雑誌のインタビューで
+JP 　俺のことをこんな風に語っていた。
+EN Right around then, %ss59 talked about me like this in a magazine interview.
+
+@ 1.320.04
+# speaker: 記者
+JP 「%ss66選手の
+JP 　%ss59越え宣言について、
+JP 　%ss59さんはどう思われますか？」
+EN %ss59, what do you make of %ss66's "I'll get past %ss59" vow?
+
+@ 1.321.00
+# speaker: トミー (%ss59)
+JP 「%ss66は色々
+JP 　言っているみたいだが、」
+EN "%ss66 seems to be saying a lot of things,"
+
+@ 1.321.01
+# speaker: トミー (%ss59)
+JP 「俺から言わせれば
+JP 　あいつはまだまだだよ。」
+EN "but if you ask me, he's still got a long way to go."
+
+@ 1.321.02
+# speaker: トミー (%ss59)
+JP 「ＯＪＰのメインを張るってことが、
+JP 　どれほどのことか
+JP 　教えてやらないといけないな。」
+EN "I'll have to teach him what it really means to main-event in <OJP>."
+
+@ 1.321.03
+# speaker: トミー (%ss59)
+JP 「そうやすやすとは越えさせない。」
+EN "I won't let him get past me that easily."
+
+@ C1.323
+# choice or chapter title
+JP １）挑発に対して強気で行く
+EN 1) Answer the taunt head-on
+
+@ C1.325
+# choice or chapter title
+JP ２）慎重に対処する
+EN 2) Handle it carefully
+
+@ 1.326.00
+# speaker: 氷川 (%ss66)
+JP 　元々、俺はヘビー級志向だった。
+EN I'd always wanted to be a heavyweight.
+
+@ 1.326.01
+# speaker: 氷川 (%ss66)
+JP 　俺は%ss39との抗争の後、
+JP 　本格的にヘビー級に転向する
+JP 　意思を固め、
+EN After my feud with %ss39, I made up my mind to move up to heavyweight for real,
+
+@ 1.326.02
+# speaker: 氷川 (%ss66)
+JP 　前にも増して
+JP 　過剰なトレーニングを自分に課した。
+EN and I put myself through even more brutal training than before.
+
+@ 1.326.03
+# speaker: 氷川 (%ss66)
+JP 　だが、急激なウエイトの増加は、
+JP 　俺の体に相当な負担を
+JP 　かけてしまったらしい・・・。
+EN But putting on weight so fast seems to have put a heavy strain on my body...
+
+@ 1.326.04
+# speaker: 氷川 (%ss66)
+JP 　体が出来ていなかったせいもあるが、
+JP 　元から悪かった膝が限界にきて、
+EN My body wasn't ready, and my knee, bad from the start, finally gave out.
+
+@ 1.326.05
+# speaker: 氷川 (%ss66)
+JP 　ついに手術と、長期の入院を
+JP 　余儀なくされてしまう・・・。
+EN In the end I had no choice but surgery and a long stay in the hospital...
+
+@ 1.327.00
+# speaker: 氷川 (%ss66)
+JP 　入院中は、
+JP 　とにかく時間があったんで
+JP 　色々考えたよ。
+EN I had nothing but time in the hospital, so I thought about a lot of things.
+
+@ 1.327.01
+# speaker: 氷川 (%ss66)
+JP 　俺が%ss37である意味って
+JP 　何だろう？
+EN What does it even mean for me to be %ss37?
+
+@ 1.327.02
+# speaker: 氷川 (%ss66)
+JP 　もう、本当の自分・・・
+JP 　%sf66として
+JP 　闘ってもいいんじゃないだろうか・・・？
+EN Maybe it's time I fought as my real self... as %sf66...?
+
+@ 1.327.03
+# speaker: 氷川 (%ss66)
+JP 　で、復帰後ああいう形になった。
+EN So after my comeback, that's how it went.
+
+@ 1.328.00
+# speaker: 観客Ａ
+JP 「何してんだ！？おい！？」
+EN "What's he doing?! Hey?!"
+
+@ 1.329.00
+# speaker: 観客Ｂ
+JP 「あれ、何してんだあれ！？」
+EN "What's that? What's he doing?!"
+
+@ 1.330.00
+# speaker: 氷川 (%ss66)
+JP 　試合中に自分から
+JP 　マスクを脱ぐっていうのは、
+EN Taking off my own mask in the middle of a match...
+
+@ 1.330.01
+# speaker: 氷川 (%ss66)
+JP 　我ながらセンセーショナルなこと
+JP 　したなって思うよ。
+EN Even I think that was pretty sensational.
+
+@ 1.330.02
+# speaker: 氷川 (%ss66)
+JP 　正真正銘、
+JP 　%ss66に戻って
+JP 　うれしいってのもあったけど、
+EN I was glad to be the one and only %ss66 again, but
+
+@ 1.330.03
+# speaker: 氷川 (%ss66)
+JP 　同時に、これからは今まで以上に
+JP 　適当な試合は出来ないって思ったね。
+EN at the same time, I knew I could never phone in a match from then on.
+
+@ 1.332.00
+# speaker: 記者
+JP 「%ss66さん！！
+JP 　%ss41選手に勝ちましたよ！！」
+EN "%ss66! You beat %ss41!"
+
+@ 1.332.01
+# speaker: 記者
+JP 「すばらしい試合でした！！」
+EN "What a fantastic match!"
+
+@ 1.332.02
+# speaker: 氷川 (%ss66)
+JP 「９割方の人は、俺が負けると
+JP 　思っていたでしょうね。」
+EN "I bet 90% of people thought I'd lose."
+
+@ 1.332.03
+# speaker: 氷川 (%ss66)
+JP 「そうはいくか・・・って、
+JP 　最後は、そういう意地ですよ。」
+EN 'No way I'm losing'... In the end, it came down to pride.
+
+@ 1.332.04
+# speaker: 記者
+JP 「これからは、
+JP 　ヘビー級%ss66として
+JP 　闘って行くことになるわけですが、」
+EN "From now on you'll be fighting as %ss66 the heavyweight,"
+
+@ 1.332.05
+# speaker: 記者
+JP 「今後の意気込みなどを
+JP 　聞かせていただけませんか！？」
+EN "Could you tell us how you're feeling about that?!"
+
+@ 1.332.06
+# speaker: 氷川 (%ss66)
+JP 「%ss41さんと対等に闘えたことで、
+JP 　俺なりにヘビー級でやっていけるという
+JP 　手ごたえみたいなものはつかめました。」
+EN "Fighting %ss41 on even terms gave me a feel that I can make it as a heavyweight in my own way."
+
+@ 1.332.07
+# speaker: 氷川 (%ss66)
+JP 「まあ、とにかくこれからです。」
+EN "Anyway, this is just the beginning."
+
+@ 1.332.08
+# speaker: 記者
+JP 「今後の%ss66選手に
+JP 　期待しています！
+JP 　がんばって下さい！」
+EN "We're expecting great things from you, %ss66! Good luck!"
+
+@ 1.334.00
+# speaker: 記者
+JP 「%ss41選手！！
+JP 　すごい試合でした。」
+EN "%ss41! What a match!"
+
+@ 1.335.00
+# speaker: 龍 (%ss41)
+JP 「昨日今日、ヘビーに転向した奴に
+JP 　負けるわけにはいかないだろ？」
+EN "I can't lose to a guy who just moved up to heavyweight yesterday, can I?"
+
+@ 1.335.01
+# speaker: 龍 (%ss41)
+JP 「俺は%ss41なんだから。」
+EN "I'm %ss41, after all."
+
+@ 1.335.02
+# speaker: 龍 (%ss41)
+JP 「まあ、%ss66は
+JP 　よくやったとは思うけどな。」
+EN "Still, I'll give %ss66 credit. He did well."
+
+@ 1.336.00
+# speaker: 氷川 (%ss66)
+JP 　負けはしたが・・・
+EN I lost, but...
+
+@ 1.336.01
+# speaker: 氷川 (%ss66)
+JP 　俺なりに、
+JP 　ヘビー級と渡り合うための
+JP 　感覚みたいな物はつかめたよ。
+EN I got a feel, in my own way, for how to go toe-to-toe with heavyweights.
+
+@ 1.336.02
+# speaker: 氷川 (%ss66)
+JP 　ヘビー級レスラーとの体格差は
+JP 　確かに大きい・・・
+EN The size difference with heavyweights really is huge...
+
+@ 1.336.03
+# speaker: 氷川 (%ss66)
+JP 　だが、最終的には覚悟の差、
+JP 　精神力の強さが試合の流れを左右する。
+EN But in the end, it's resolve and mental strength that decide the flow of a match.
+
+@ 1.336.04
+# speaker: 氷川 (%ss66)
+JP 　心身共に鍛えなければ
+JP 　だめなんだ・・・！
+EN I have to train both body and mind...!
+
+@ 1.342.00
+# speaker: 氷川 (%ss66)
+JP 「少し・・・
+JP 　考えさせて下さい。」
+EN "Please... let me think about it a little."
+
+@ 1.342.01
+# speaker: 司馬 (%ss58)
+JP 「そうか・・・。」
+EN "I see..."
+
+@ 1.342.02
+# speaker: 司馬 (%ss58)
+JP 「帰国してすぐだからな。
+JP 　まあ、少し時間をおいて考えてみろ。」
+EN "You just got back, after all. Take some time and think it over."
+
+@ 1.343.00
+# speaker: 氷川 (%ss66)
+JP 　俺は悩んだ・・・。
+EN I agonized over it...
+
+@ 1.343.01
+# speaker: 氷川 (%ss66)
+JP 　状況を受け入れることは、
+JP 　そう難しいことじゃない。
+EN Accepting the situation wasn't that hard.
+
+@ 1.343.02
+# speaker: 氷川 (%ss66)
+JP 　けれど、今まで%ss66として
+JP 　やってきたことは何だったんだ？
+EN But then what had everything I'd done as %ss66 been for?
+
+@ 1.343.03
+# speaker: 氷川 (%ss66)
+JP 　マスクマンとして
+JP 　正体を隠してリングに上がることは、
+EN Hiding who I am and stepping into the ring as a masked man...
+
+@ 1.343.04
+# speaker: 氷川 (%ss66)
+JP 　今までの生き方を
+JP 　完全に否定することにならないか？
+EN Wouldn't that be denying everything I'd lived for until now?
+
+@ 1.343.05
+# speaker: 氷川 (%ss66)
+JP 　マスクマンになることを拒むことは、
+JP 　今後の俺のレスラー人生にとって
+JP 　大きなマイナスになるかもしれない。
+EN Refusing to be a masked man might be a big setback for the rest of my career.
+
+@ 1.343.06
+# speaker: 氷川 (%ss66)
+JP 　だが俺は・・・
+JP 　自分の信じた道を突き進みたい・・・！
+EN But I... I want to follow the path I believe in...!
+
+@ 1.343.07
+# speaker: 氷川 (%ss66)
+JP 　プロレスラー
+JP 　%sf66として
+JP 　勝負したい！！
+EN I want to make my stand as pro wrestler %sf66!
+
+@ 1.343.08
+# speaker: 氷川 (%ss66)
+JP 　男なら自分の名前にプライドを持って
+JP 　生きたいじゃないか！！
+EN A man should live with pride in his own name!
+
+@ 1.344.00
+# speaker: 氷川 (%ss66)
+JP 　数日後、俺は%ss58社長に
+JP 「%ss37にはならない」と
+JP 　断りを入れた。
+EN A few days later, I told President %ss58, "I won't become %ss37."
+
+@ 1.344.01
+# speaker: 氷川 (%ss66)
+JP 　社命に逆らったのだから、
+JP 　下手をすれば退団も辞さない
+JP 　はずだった・・・。
+EN I'd defied a company order. At worst, I could have been forced out...
+
+@ 1.344.02
+# speaker: 氷川 (%ss66)
+JP 　だが、%ss58社長は何も言わずに
+JP 　マスクを受け取ってくれた。
+EN But President %ss58 took back the mask without a word.
+
+@ 1.344.03
+# speaker: 氷川 (%ss66)
+JP 　ただ一言、
+JP 「好きにしろ」と言ってくれた・・・
+EN All he said was, "Do as you like..."
+
+@ 1.344.04
+# speaker: 氷川 (%ss66)
+JP 　この時の%ss58社長には
+JP 　感謝の言葉もない。
+EN I can't thank President %ss58 enough for that.
+
+@ 1.344.05
+# speaker: 氷川 (%ss66)
+JP 　そう言えば・・・
+JP 　%sf37辞退の
+JP 　話し合いの後、
+EN Come to think of it... after the talk where I turned down becoming %sf37,
+
+@ 1.344.06
+# speaker: 氷川 (%ss66)
+JP 　%ss59さんが
+JP 　こんなことを言っていたな。
+EN %ss59 said something like this to me.
+
+@ 1.345.00
+# speaker: トミー (%ss59)
+JP 「%ss66。
+JP 　社長はどんな形にしろ、
+JP 　おまえの成長に期待しているぞ。」
+EN "%ss66. One way or another, the boss is counting on you to grow."
+
+@ 1.345.01
+# speaker: トミー (%ss59)
+JP 「何たって、社命に逆らって
+JP 　退団させられないなんて、
+JP 　おまえぐらいのものだからな。」
+EN "Defy the company and not get thrown out? You're about the only one."
+
+@ 1.345.02
+# speaker: トミー (%ss59)
+JP 「社長が一度決めたことを
+JP 　とりやめるなんて、
+JP 　今まであったためしがない。」
+EN "I've never seen the boss take back something he'd decided. Not once."
+
+@ 1.345.03
+# speaker: トミー (%ss59)
+JP 「それだけ社長は、
+JP 　おまえに期待してるってことだ。」
+EN "That's how much the boss expects from you."
+
+@ 1.345.04
+# speaker: 氷川 (%ss66)
+JP 「%ss59さん・・・
+JP 　俺は死に物狂いでやりますよ。」
+EN "%ss59... I'll give it everything I've got."
+
+@ 1.345.05
+# speaker: 氷川 (%ss66)
+JP 「社長の期待に応えるためにも、
+JP 　必ずＯＪＰを引っ張って行ける
+JP 　レスラーになってみせます・・・！」
+EN "To live up to the boss's expectations, I'll become a wrestler who can carry <OJP>...!"
+
+@ 1.346.00
+# speaker: 氷川 (%ss66)
+JP 　%ss59さんはＯＪＰの
+JP 　トップレスラーだったが、
+JP 　何かと俺のことを気にかけてくれた。
+EN %ss59 was <OJP>'s top wrestler, but he always looked out for me.
+
+@ 1.346.01
+# speaker: 氷川 (%ss66)
+JP 　俺にとっては尊敬できる
+JP 　先輩レスラーであり、
+JP 　兄のような存在だったよ。
+EN To me, he was a senior I respected, almost like a big brother.
+
+@ 1.346.02
+# speaker: 氷川 (%ss66)
+JP 　ヘビー級に転向する時、
+EN When I moved up to heavyweight,
+
+@ 1.346.03
+# speaker: 氷川 (%ss66)
+JP 　方向性に迷っていた俺に
+JP 　アドバイスをくれたのも
+JP 　%ss59さんだった。
+EN it was %ss59 who gave me advice when I didn't know which way to go.
+
+@ 1.347.00
+# speaker: 氷川 (%ss66)
+JP 「俺、ヘビー級に転向しようと
+JP 　考えているんです。」
+EN "I'm thinking of moving up to heavyweight."
+
+@ 1.347.01
+# speaker: トミー (%ss59)
+JP 「そうか。
+JP 　最近のおまえは
+JP 　オーバーワーク気味だったからな。」
+EN "I see. You've been overdoing it lately."
+
+@ 1.347.02
+# speaker: トミー (%ss59)
+JP 「何かあると思ったよ。
+JP 　体を作りたいのか？」
+EN "I figured something was up. You want to build up your body?"
+
+@ 1.347.03
+# speaker: 氷川 (%ss66)
+JP 「はい。」
+EN "Yes."
+
+@ 1.347.04
+# speaker: 氷川 (%ss66)
+JP 「俺の目指すプロレスは、
+JP 　ヘビー級と対等に闘える
+JP 　プロレスなんです。」
+EN "The wrestling I'm aiming for is wrestling where I can fight heavyweights as an equal."
+
+@ 1.347.05
+# speaker: 氷川 (%ss66)
+JP 「今のままじゃパワーが足りない。」
+EN "Right now I don't have enough power."
+
+@ 1.347.06
+# speaker: 氷川 (%ss66)
+JP 「このウェイトじゃ、
+JP 　どうにもならないんです。」
+EN "At this weight, there's nothing I can do."
+
+@ 1.347.07
+# speaker: トミー (%ss59)
+JP 「%ss66・・・おまえ、
+JP 　%ss41とやってみたらどうだ？」
+EN "%ss66... Why don't you try fighting %ss41?"
+
+@ 1.347.08
+# speaker: 氷川 (%ss66)
+JP 「%ss41さんですか・・・！？」
+EN "%ss41...?!"
+
+@ 1.347.09
+# speaker: トミー (%ss59)
+JP 「おまえのパワーは、
+JP 　おまえが考えているよりも
+JP 　はるかに強力だぞ。」
+EN "Your power is far greater than you think."
+
+@ 1.347.10
+# speaker: トミー (%ss59)
+JP 「おまえが今後、ヘビー級として
+JP 　やっていけるかどうかを試すためにも、」
+EN "To test whether you can make it as a heavyweight,"
+
+@ 1.347.11
+# speaker: トミー (%ss59)
+JP 「ここらで一度、
+JP 　でかい壁に当たってみろ。」
+EN "it's time you ran into a big wall."
+
+@ 1.347.12
+# speaker: トミー (%ss59)
+JP 「勝っても負けても
+JP 　得る物はあるはずだぞ。」
+EN "Win or lose, you'll get something out of it."
+
+@ 1.347.13
+# speaker: 氷川 (%ss66)
+JP 「%ss59さん・・・。」
+EN "%ss59..."
+
+@ 1.348.00
+# speaker: 氷川 (%ss66)
+JP 　この時、俺は
+JP 　ジュニアでトップまで上り詰め、
+JP 　タイトルを保持していた。
+EN At the time, I'd climbed to the top of the junior division and was holding the title.
+
+@ 1.348.01
+# speaker: 氷川 (%ss66)
+JP 　ヘビー級に転向するためには、
+JP 　タイトルを返上しなければ
+JP 　ならなかったが、
+EN To move up to heavyweight, I'd have to give up the title,
+
+@ 1.348.02
+# speaker: 氷川 (%ss66)
+JP 　周囲はどういう訳か乗り気だった。
+EN but for some reason, everyone around me was all for it.
+
+@ 1.348.03
+# speaker: 氷川 (%ss66)
+JP 　後から知ったことだが、
+EN I found out later,
+
+@ 1.348.04
+# speaker: 氷川 (%ss66)
+JP 　%ss41さんが、
+JP 　会社側にＯＪＰを脱退することを
+JP 　打診していたらしく、
+EN %ss41 had apparently told the company he was thinking of leaving <OJP>,
+
+@ 1.348.05
+# speaker: 氷川 (%ss66)
+JP 　会社側としては、
+JP 　俺のヘビー級転向は、
+JP 　願ってもいないことだったらしい。
+EN so for the company, my move to heavyweight was a godsend.
+
+@ 1.348.06
+# speaker: 氷川 (%ss66)
+JP 　そんな流れの中で、
+JP 　俺と%ss41さんとの試合は
+JP 　決定した。
+EN That's how my match with %ss41 came about.
+
+@ 1.349.00
+# speaker: 氷川 (%ss66)
+JP 　%ss41・・・
+JP 　ＯＪＰでは%ss59さんと並ぶほどの
+JP 　大物ヘビー級レスラーだ。
+EN %ss41... a big-name heavyweight, on a par with %ss59 in <OJP>.
+
+@ 1.349.01
+# speaker: 氷川 (%ss66)
+JP 　%ss59、%ss41の闘いは
+JP 　ＯＪＰ最高のドル箱カードだった。
+EN %ss59 vs. %ss41 was <OJP>'s biggest money-making match.
+
+@ 1.349.02
+# speaker: 氷川 (%ss66)
+JP 　その%ss41さんと俺は闘う・・・。
+EN And I was going to fight that man, %ss41...
+
+@ 1.349.03
+# speaker: 氷川 (%ss66)
+JP 　これは、ヘビー級%ss66として
+JP 　名を上げる大きなチャンスだ。
+EN This was a big chance to make a name as %ss66 the heavyweight.
+
+@ 1.349.04
+# speaker: 氷川 (%ss66)
+JP 　俺は、このチャンスを
+JP 　生かしてみせる・・・！！
+EN I'm going to make the most of this chance...!
+
+@ 1.350.00
+# speaker: 氷川 (%ss66)
+JP 　俺のヘビー級としての第一歩・・・
+EN My first step as a heavyweight...
+
+@ 1.350.01
+# speaker: 氷川 (%ss66)
+JP 　俺のわがままを聞いてくれた
+JP 　%ss58社長のためにも、
+JP 　ここで結果を出さなければいけない。
+EN For President %ss58, who went along with my selfishness, I have to get results here.
+
+@ 1.350.02
+# speaker: 氷川 (%ss66)
+JP 　体格差は精神力で補う！！
+JP 　絶対に負けるわけにはいかない！！
+EN I'll make up for the size difference with willpower! I can't lose this!
+
+@ 1.352.00
+# speaker: 記者
+JP 「%ss37さん！！
+JP 　タイトル獲得
+JP 　おめでとうございます！！」
+EN "%ss37! Congratulations on winning the title!"
+
+@ 1.352.01
+# speaker: 記者
+JP 「死力を尽くした
+JP 　すばらしい試合でしたが、
+JP 　今のご感想を一言お願いします！！」
+EN A great match - you gave it everything! Could we get a word on how you feel?
+
+@ 1.352.02
+# speaker: 氷川 (%ss66)
+JP 「きつい試合でした。」
+EN "It was a tough match."
+
+@ 1.352.03
+# speaker: 氷川 (%ss66)
+JP 「でも、勝てて本当によかった。
+JP 　今はとにかくうれしいですよ。」
+EN "But I'm really glad I won. Right now I'm just happy."
+
+@ 1.352.04
+# speaker: 記者
+JP 「%ss39選手について、
+JP 　何かありますか？」
+EN "Anything to say about %ss39?"
+
+@ 1.352.05
+# speaker: 氷川 (%ss66)
+JP 「彼について、
+JP 　俺が言えることは何もないな。
+JP 　強いですから。」
+EN "There's nothing I can say about him. He's strong."
+
+@ 1.352.06
+# speaker: 氷川 (%ss66)
+JP 「次は、もっと
+JP 　イメージ通りに勝ちたいですね。」
+EN "Next time, I want to win more the way I picture it."
+
+@ 1.354.00
+# speaker: 記者
+JP 「%ss39さん、
+JP 　タイトル防衛
+JP 　おめでとうございます！！」
+EN "%ss39, congratulations on defending your title!"
+
+@ 1.354.01
+# speaker: 記者
+JP 「今日の試合を振り返って、ズバリ、
+JP 　勝因は何だったのでしょうか？」
+EN "Looking back on today's match, what exactly was the key to your win?"
+
+@ 1.355.00
+# speaker: 五十嵐 (%ss39)
+JP 「勝因？
+JP 　奴が%ss37だったと
+JP 　言うことだろ。」
+EN "The key? The fact that he was %ss37."
+
+@ 1.355.01
+# speaker: 五十嵐 (%ss39)
+JP 「豹にはベルトを渡さない。
+JP 　豹ハンターの異名は
+JP 　伊達じゃないんだ。」
+EN "No <Panther*> gets my belt. They don't call me the <Panther*> Hunter for nothing."
+
+@ 1.356.00
+# speaker: 氷川 (%ss66)
+JP 　%ss39との死闘は、
+JP 　その後も幾度となく繰り返された。
+EN My brutal fights with %ss39 went on again and again after that.
+
+@ 1.356.01
+# speaker: 氷川 (%ss66)
+JP 　コンディションは最悪だったが、
+JP 　この時の苦しい闘いが、
+EN My condition was terrible, but those painful fights back then
+
+@ 1.356.02
+# speaker: 氷川 (%ss66)
+JP 　その後の俺の成長の
+JP 　大きな糧となって行く。
+EN became a big part of what helped me grow later on.
+
+@ 1.362.00
+# speaker: 氷川 (%ss66)
+JP 　ハッキリ言って、抵抗はあったよ。
+EN Frankly, I didn't like it at first.
+
+@ 1.362.01
+# speaker: 氷川 (%ss66)
+JP 　中２でレスラーになると決意した時、
+JP 　プロレスが好きという気持ちと同時に、
+EN When I decided to become a wrestler in eighth grade, along with loving pro wrestling,
+
+@ 1.362.02
+# speaker: 氷川 (%ss66)
+JP 「男だったら
+JP 　何かで自分の名を残したい」という
+JP 　気持ちも強烈にあったからね。
+EN I had this burning feeling: "A man should make a name for himself in something."
+
+@ 1.362.03
+# speaker: 氷川 (%ss66)
+JP 　それなりに実力もついて来たと
+JP 　思っていたし、
+EN I thought I'd gotten pretty good by then,
+
+@ 1.362.04
+# speaker: 氷川 (%ss66)
+JP 　正真正銘、素顔の%ss66で
+JP 　勝負できないというのは
+JP 　確かにつらかった。
+EN and not being able to fight as the real %ss66, face and all, was hard.
+
+@ 1.362.05
+# speaker: 氷川 (%ss66)
+JP 　それに・・・
+EN And besides...
+
+@ 1.362.06
+# speaker: 氷川 (%ss66)
+JP 　あの%sf37に
+JP 　なるんだ。
+JP 　プレッシャーにならないはずがない。
+EN I was going to be THE %sf37. No way that wasn't pressure.
+
+@ 1.362.07
+# speaker: 氷川 (%ss66)
+JP 　初代%ss37の
+JP 　四次元殺法は
+JP 　日本中を熱狂させた。
+EN The first %ss37's four-dimensional style had driven all of Japan wild.
+
+@ 1.362.08
+# speaker: 氷川 (%ss66)
+JP 　その%ss37の２代目だ・・・
+EN And I was going to be the second %ss37...
+
+@ 1.362.09
+# speaker: 氷川 (%ss66)
+JP 　だが、決まったことはしょうがない。
+EN But it was decided, so there was nothing I could do.
+
+@ 1.362.10
+# speaker: 氷川 (%ss66)
+JP 　考え方を変えれば、これは俺にとって
+JP 　またとない大きなチャンスだ。
+EN If I looked at it another way, this was the chance of a lifetime for me.
+
+@ 1.362.11
+# speaker: 氷川 (%ss66)
+JP 　このチャンスを活かせないことの方が、
+JP 　今の俺には屈辱的だからな。
+EN Not making the most of it would be the real humiliation.
+
+@ 1.363.00
+# speaker: 氷川 (%ss66)
+JP 　そんな複雑な心境の中、
+JP 　選択したマスクマンの道だったが、
+EN I chose the masked man's path with mixed feelings, but
+
+@ 1.363.01
+# speaker: 氷川 (%ss66)
+JP 　%ss37でのデビュー戦当日、
+JP 　その後の俺を燃えさせる
+JP 　ちょっとした事件があった。
+EN on the day of my debut as %ss37, something happened that lit a fire under me.
+
+@ 1.364.00
+# speaker: 氷川 (%ss66)
+JP （まいったな・・・）
+EN (Oh, man...)
+
+@ 1.364.01
+# speaker: 氷川 (%ss66)
+JP （トイレがどこか分かんなくて
+JP 　迷っちゃったよ・・・。
+JP 　早く戻らねえと。）
+EN (I couldn't find the bathroom and got lost... I need to get back, fast.)
+
+@ 1.364.02
+# speaker: 先輩Ａ
+JP 「おい！！
+JP 　%ss66はどこへ行ったんだ！？」
+EN "Hey! Where'd %ss66 go?!"
+
+@ 1.364.03
+# speaker: 氷川 (%ss66)
+JP （やばい・・・！
+JP 　俺のこと捜してるな・・・）
+EN (Uh-oh...! They're looking for me...)
+
+@ 1.364.04
+# speaker: 先輩Ｂ
+JP 「%ss66なら、
+JP 　どうしても我慢できないって
+JP 　トイレに行ったぞ。」
+EN "%ss66 said he couldn't hold it anymore and went to the bathroom."
+
+@ 1.364.05
+# speaker: 先輩Ｂ
+JP 「正体バレるとまずいからって、
+JP 　止めたんだけどな。」
+EN "I told him not to, in case someone found out who he is."
+
+@ 1.364.06
+# speaker: 先輩Ａ
+JP 「まったく、何やってんだ・・・！
+JP 　まあ、落ち着かない気持ちも
+JP 　分からなくないが・・・。」
+EN "Geez, what's he doing...! Well, I can see why he's restless..."
+
+@ 1.364.07
+# speaker: 先輩Ｂ
+JP 「あいつ、びびってんじゃねーか？」
+EN "Isn't he just scared?"
+
+@ 1.364.08
+# speaker: 先輩Ｂ
+JP 「%sf37の
+JP 　襲名なんて大役だからな。
+JP 　俺だったら受けねえよ。」
+EN "Taking on the %sf37 name is a huge job. I'd have said no."
+
+@ 1.364.09
+# speaker: 先輩Ａ
+JP 「ああ、確かにな。」
+EN "Yeah, you've got a point."
+
+@ 1.364.10
+# speaker: 先輩Ａ
+JP 「実力がともなわない豹ほど、
+JP 　格好悪いもんはないだろう。」
+EN "Nothing looks worse than a <Panther*> who doesn't have the skills."
+
+@ 1.364.11
+# speaker: 氷川 (%ss66)
+JP （誰が・・・）
+EN (Who...)
+
+@ 1.364.12
+# speaker: 氷川 (%ss66)
+JP （実力がともなわねえって！？
+JP 　俺は、おまえらとは違うんだよ！！）
+EN (Who doesn't have the skills?! I'm not like you guys!)
+
+@ 1.364.13
+# speaker: 氷川 (%ss66)
+JP （必ず成功してやる・・・！！）
+EN (I'm going to make it...!)
+
+@ 1.364.14
+# speaker: 氷川 (%ss66)
+JP （おまえら見てろよ！！
+JP 　俺はマスクマンとして
+JP 　必ず成功してみせる！！）
+EN (You just watch! I'm going to make it as a masked man!)
+
+@ 1.365.00
+# speaker: 氷川 (%ss66)
+JP 　%sf37
+JP 　になった俺は、
+JP 　とにかく必死だった。
+EN Once I became %sf37, I gave it everything.
+
+@ 1.365.01
+# speaker: 氷川 (%ss66)
+JP 　ヘタなファイトをしていたら、
+JP 　ファンはすぐに見向きもしなくなる。
+EN If I put on a sloppy fight, the fans would turn away in no time.
+
+@ 1.365.02
+# speaker: 氷川 (%ss66)
+JP 　一試合一試合、
+JP 　全精力を込めて闘ったよ。
+EN I fought every single match with everything I had.
+
+@ 1.365.03
+# speaker: 氷川 (%ss66)
+JP 　そのうち、そういう必死さが
+JP 　観客にも伝わって、徐々に
+JP 　会場を沸かせられるようになっていった。
+EN Eventually, that desperation reached the fans, and little by little I started getting the crowd going.
+
+@ 1.366.00
+# speaker: 氷川 (%ss66)
+JP 　%ss37時代は、ジュニアヘビーが
+JP 　ちょっとしたブームになっていて、
+JP 　ジュニアでも強いレスラーが大勢いた。
+EN Back in my %ss37 days, junior heavyweights were all the rage, and there were plenty of strong juniors.
+
+@ 1.367.00
+# speaker: 氷川 (%ss66)
+JP 　当時のジュニアヘビーのチャンピオンは
+JP 　%ss39だったが、
+JP 　この男は強かった。
+EN The junior heavyweight champion back then was %ss39, and he was strong.
+
+@ 1.367.01
+# speaker: 氷川 (%ss66)
+JP 　初代%sf37の
+JP 　ライバルだった男である。
+EN He'd been the rival of the original %sf37.
+
+@ 1.367.02
+# speaker: 氷川 (%ss66)
+JP 　ジュニアの代名詞でもある
+JP 　%ss39とは
+JP 　タイトルをかけて何度も闘ったな。
+EN I fought %ss39, Mr. Junior himself, for the title many times.
+
+@ 1.368.00
+# speaker: トミー (%ss59)
+JP 「聞いたか、%ss37？」
+EN "Did you hear, %ss37?"
+
+@ 1.368.01
+# speaker: トミー (%ss59)
+JP 「チャンピオンの%ss39は、
+JP 　今度のタイトルマッチ
+JP 　相当自信があるみたいだぞ。」
+EN "The champ, %ss39, seems pretty confident about your title match."
+
+@ 1.368.02
+# speaker: トミー (%ss59)
+JP 「どこかの取材で、だいぶ
+JP 　いきまいてたらしいからな。」
+EN "I hear he was really mouthing off in some interview."
+
+@ 1.368.03
+# speaker: 氷川 (%ss66)
+JP 「そうですか。
+JP 　でも、俺は自分のベストの試合を
+JP 　するだけですよ。」
+EN "Is that so? Well, I'm just going to have my best match."
+
+@ 1.368.04
+# speaker: 氷川 (%ss66)
+JP 「%ss39は豹ハンターとか
+JP 　言われてるらしいけど、」
+EN "I hear they call %ss39 the <Panther*> Hunter,"
+
+@ 1.368.05
+# speaker: 氷川 (%ss66)
+JP 「本物の豹の恐ろしさを、
+JP 　イヤと言うほど教えてやる。」
+EN "but I'll teach him just how scary a real <Panther*> is."
+
+@ 1.368.06
+# speaker: 氷川 (%ss66)
+JP 「タイトルは、必ず奪って見せます。」
+EN "I'll take that title, you watch."
+
+@ 1.368.07
+# speaker: トミー (%ss59)
+JP 「そうか。」
+EN "I see."
+
+@ 1.368.08
+# speaker: トミー (%ss59)
+JP 「膝の調子はどうなんだ？
+JP 　水が溜まったとか言っていたが・・・」
+EN "How's your knee? You said there was fluid building up..."
+
+@ 1.368.09
+# speaker: 氷川 (%ss66)
+JP 「大丈夫です。」
+EN "I'm fine."
+
+@ 1.368.10
+# speaker: 氷川 (%ss66)
+JP 「試合になれば、
+JP 　そんなことは言ってられない。
+JP 　最後は気力ですよ・・・！」
+EN "Once the match starts, I can't worry about that. In the end it's all willpower...!"
+
+@ 1.369.00
+# speaker: 氷川 (%ss66)
+JP 　%ss59さんは
+JP 　ＯＪＰのスーパースターだったが、
+EN %ss59 was <OJP>'s superstar,
+
+@ 1.369.01
+# speaker: 氷川 (%ss66)
+JP 　先輩として、何かと俺のことを
+JP 　気遣ってくれたな。
+EN but as my senior, he always looked out for me.
+
+@ 1.369.02
+# speaker: 氷川 (%ss66)
+JP 　とにかく、
+JP 　%ss39との対戦は
+JP 　俺にとっては初めてのタイトル戦だ。
+EN Anyway, the match with %ss39 was my first title match.
+
+@ 1.369.03
+# speaker: 氷川 (%ss66)
+JP 　日頃の無理がたたって
+JP 　体は限界だったが、
+EN Pushing myself every day had taken its toll, and my body was at its limit,
+
+@ 1.369.04
+# speaker: 氷川 (%ss66)
+JP 　絶対に負けないという気持ちで
+JP 　のぞんだよ。
+EN but I went in determined not to lose.
+
+@ 1.370.00
+# speaker: 氷川 (%ss66)
+JP 　ここは、通過点でしかない・・・
+EN This is just one step along the way...
+
+@ 1.370.01
+# speaker: 氷川 (%ss66)
+JP 　俺の求めるプロレスは、
+JP 　ジュニアの体格でも
+EN The wrestling I'm after lets me, even with a junior's build,
+
+@ 1.370.02
+# speaker: 氷川 (%ss66)
+JP 　ヘビー級のレスラーと
+JP 　互角以上に渡りあえるプロレスなんだ。
+EN take on heavyweight wrestlers as an equal or better.
+
+@ 1.370.03
+# speaker: 氷川 (%ss66)
+JP 　ジュニアと訣別するためにも、
+JP 　この試合は必ず勝つ！！
+EN To leave the juniors behind for good, I'm going to win this match!
+
+@ 1.372.00
+# speaker: 氷川 (%ss66)
+JP 　俺が、マスクマンになる・・・
+EN Me, a masked man...
+
+@ 1.372.01
+# speaker: 氷川 (%ss66)
+JP 　はたして、これを承諾して
+JP 　いいんだろうか？
+EN Should I really say yes to this?
+
+@ C1.374
+# choice or chapter title
+JP １）マスクマンになる
+EN 1) Become a masked man
+
+@ C1.376
+# choice or chapter title
+JP ２）「考えさせて下さい。」と言う
+EN 2) "Let me think about it."
+
+@ 1.377.00
+# speaker: 氷川 (%ss66)
+JP 　%ss3さんの、
+JP 『金がないのに米が食いたい病』には
+JP 　まいったけど・・・
+EN %ss3's "broke but craving rice" disease drove me nuts, but...
+
+@ 1.377.01
+# speaker: 氷川 (%ss66)
+JP 　メキシコでの生活は
+JP 　それなりに充実していた。
+EN life in Mexico was pretty fulfilling.
+
+@ 1.377.02
+# speaker: 氷川 (%ss66)
+JP 　俺は高校時代から
+JP 　アマレスしかやっていなかったから、
+EN All I'd done since high school was amateur wrestling,
+
+@ 1.377.03
+# speaker: 氷川 (%ss66)
+JP 　飛び技重視のメキシコのプロレスは
+JP 　本当に勉強になったよ。
+EN so Mexico's high-flying style of pro wrestling really taught me a lot.
+
+@ 1.377.04
+# speaker: 氷川 (%ss66)
+JP 　それだけじゃなく、
+JP 　海外遠征中はプライベートな時間も
+JP 　かなりとれた。
+EN On top of that, I had a lot of free time on the tour abroad.
+
+@ 1.377.05
+# speaker: 氷川 (%ss66)
+JP 　日本にいた時は、先輩達の世話なんかで
+JP 　自分の時間なんて
+JP 　ほとんどとれなかったからな。
+EN Back in Japan, looking after the senior guys left me with hardly any time to myself.
+
+@ 1.377.06
+# speaker: 氷川 (%ss66)
+JP 　よく%ss3さんと二人で、
+EN %ss3 and I would often sit together
+
+@ 1.377.07
+# speaker: 氷川 (%ss66)
+JP 　これから自分達が
+JP 　どうなって行くのかなんて、
+JP 　真剣に話し合ったよ。
+EN and seriously talk about what would become of us.
+
+@ 1.378.00
+# speaker: ジロー (%ss3)
+JP 「なあ%ss66・・・」
+EN "Hey, %ss66..."
+
+@ 1.378.01
+# speaker: ジロー (%ss3)
+JP 「日本に帰るためには、やっぱり
+JP 　タイトルをとらなくちゃ
+JP 　ダメなんだろうな・・・。」
+EN "I guess we really do need to win a title if we want to go back to Japan..."
+
+@ 1.378.02
+# speaker: 氷川 (%ss66)
+JP 「%ss3さん、
+JP 　なに弱気になってるんですか。」
+EN "%ss3, why are you getting so down?"
+
+@ 1.378.03
+# speaker: 氷川 (%ss66)
+JP 「俺は絶対チャンピオンになって
+JP 　日本に凱旋しますよ！」
+EN "I'm going to become champion and come home to Japan in triumph!"
+
+@ 1.378.04
+# speaker: 氷川 (%ss66)
+JP 「とにかく俺は、目立ちたくて
+JP 　この世界に入りましたからね。」
+EN "I got into this business because I wanted to stand out, after all."
+
+@ 1.378.05
+# speaker: 氷川 (%ss66)
+JP 「男に生まれたからには、やっぱり
+JP 　でかい夢を達成しなくちゃ
+JP 　面白くないでしょう。」
+EN "If you're born a man, life's no fun unless you make your big dreams come true."
+
+@ 1.378.06
+# speaker: 氷川 (%ss66)
+JP 「２人でチャンピオンになって、
+JP 　胸を張って帰国しましょうよ！」
+EN "Let's both become champions and go home with our heads held high!"
+
+@ 1.378.07
+# speaker: ジロー (%ss3)
+JP 「%ss66・・・
+JP 　おまえはいい奴だよ。」
+EN "%ss66... You're a good guy."
+
+@ 1.378.08
+# speaker: ジロー (%ss3)
+JP 「俺、なんだかやる気が湧いて来たな。」
+EN "Somehow I'm all fired up now."
+
+@ 1.378.09
+# speaker: ジロー (%ss3)
+JP 「とりあえずメシでも食いに行くか！
+JP 　米がいいな、米が！」
+EN "For now, let's go get something to eat! Rice would be good, rice!"
+
+@ 1.378.10
+# speaker: 氷川 (%ss66)
+JP 「%ss3さん、
+JP 　米はいいです・・・。」
+EN "%ss3, forget the rice..."
+
+@ 1.379.00
+# speaker: 氷川 (%ss66)
+JP 　俺はとにかく楽天家だから、
+JP 　どんな状況でも物事を前向きに
+JP 　考えていた。
+EN I'm an optimist through and through, so I always looked on the bright side, whatever happened.
+
+@ 1.379.01
+# speaker: 氷川 (%ss66)
+JP 　まあ、そのくらいでないと、
+JP 　この世界じゃ
+JP 　生き抜いていけないからな。
+EN Well, you have to be like that to survive in this business.
+
+@ 1.380.00
+# speaker: 氷川 (%ss66)
+JP 　%ss58さんから
+JP 　帰国しろとの連絡が来たのは、
+JP 　丁度そんな頃だった。
+EN That was right around when %ss58 contacted me and told me to come home.
+
+@ 1.380.01
+# speaker: 氷川 (%ss66)
+JP 　俺一人に突然の帰国命令・・・
+EN A sudden order to return, for me alone...
+
+@ 1.380.02
+# speaker: 氷川 (%ss66)
+JP 　空港に見送りに来ていた、
+JP 　%ss3さんの寂しげな顔が
+JP 　印象的だったな・・・。
+EN I'll never forget the lonely look on %ss3's face when he saw me off at the airport...
+
+@ 1.381.00
+# speaker: 氷川 (%ss66)
+JP 　日本に帰ってから、
+JP 　%ss58さんと最初に交わした会話が
+JP 　例の話だったんだ。
+EN After I got back to Japan, the first thing %ss58 and I talked about was that.
+
+@ 1.382.00
+# speaker: 司馬 (%ss58)
+JP 「おまえは今日から
+JP 　%sf37に
+JP 　なるんだ。」
+EN "From today on, you're %sf37."
+
+@ 1.384.00
+# speaker: 氷川 (%ss66)
+JP 「まあ、確かに
+JP 　腹は減ってますけど・・・」
+EN "Well, I am hungry, sure, but..."
+
+@ 1.384.01
+# speaker: ジロー (%ss3)
+JP 「よし！
+JP 　じゃあ、まずは腹ごしらえだ！」
+EN "All right! Then let's fill our stomachs first!"
+
+@ 1.384.02
+# speaker: ジロー (%ss3)
+JP 「うおっ！！
+JP 　あの店で日本料理が
+JP 　食えそうだぞ！！」
+EN "Whoa! Looks like we can get Japanese food at that place!"
+
+@ 1.384.03
+# speaker: ジロー (%ss3)
+JP 「行くぞ、%ss66！！」
+EN "Let's go, %ss66!"
+
+@ 1.384.04
+# speaker: 氷川 (%ss66)
+JP 「%ss3さん・・・！」
+EN "%ss3...!"
+
+@ 1.385.00
+# speaker: 氷川 (%ss66)
+JP 「高そうなんだけど、
+JP 　大丈夫かよ・・・。」
+EN "It looks expensive... Are we gonna be okay...?"
+
+@ 1.387.00
+# speaker: 氷川 (%ss66)
+JP 「俺は別に・・・」
+EN "I'm not really..."
+
+@ 1.387.01
+# speaker: ジロー (%ss3)
+JP 「ああ、米が食いてえ。」
+EN "Man, I want some rice."
+
+@ 1.387.02
+# speaker: ジロー (%ss3)
+JP 「なあ、とりあえず先のことは
+JP 　腹を満たしてから考えないか？」
+EN "Hey, why don't we fill our stomachs first, then think about what's next?"
+
+@ 1.387.03
+# speaker: 氷川 (%ss66)
+JP 「いや・・・
+JP 　でも金が・・・」
+EN "No... but the money..."
+
+@ 1.387.04
+# speaker: ジロー (%ss3)
+JP 「うおっ！！
+JP 　あそこに日本料理が
+JP 　ありそうな店があるぞ！！」
+EN "Whoa! That place over there looks like it might have Japanese food!"
+
+@ 1.387.05
+# speaker: ジロー (%ss3)
+JP 「行くぞ、%ss66！！」
+EN "Let's go, %ss66!"
+
+@ 1.387.06
+# speaker: 氷川 (%ss66)
+JP 「%ss3さん・・・！」
+EN "%ss3...!"
+
+@ 1.388.00
+# speaker: 氷川 (%ss66)
+JP 「さ、先が思いやられる・・・。」
+EN "Th-this doesn't bode well..."
+
+@ 1.390.00
+# speaker: ジロー (%ss3)
+JP 「なあ、%ss66。
+JP 　海外遠征って言っても
+JP 　給料なんて出ねえから、」
+EN "Listen, %ss66. Touring abroad or not, they don't pay us a salary,"
+
+@ 1.390.01
+# speaker: ジロー (%ss3)
+JP 「自分の食いぶちは、
+JP 　自分のファイトマネーで
+JP 　稼ぐしかねえんだぞ。」　
+EN "so the only way to feed ourselves is with our own fight money."
+
+@ 1.390.02
+# speaker: ジロー (%ss3)
+JP 「とにかく、目立つようなことして
+JP 　ガンガン試合に出まくろうぜ！！」
+EN "So let's do something flashy and get in as many matches as we can!"
+
+@ 1.390.03
+# speaker: 氷川 (%ss66)
+JP 「はい、頑張りましょう！！」
+EN "Right, let's do our best!"
+
+@ 1.390.04
+# speaker: ジロー (%ss3)
+JP 「ところでおまえ、
+JP 　米食いたくないか・・・？」
+EN "By the way, don't you want some rice...?"
+
+@ 1.390.05
+# speaker: 氷川 (%ss66)
+JP 「へっ？米ですか？」
+EN "Huh? Rice?"
+
+@ C1.392
+# choice or chapter title
+JP １）食事に行く
+EN 1) Go eat
+
+@ C1.394
+# choice or chapter title
+JP ２）行かない
+EN 2) Don't go
+
+@ 1.395.00
+# speaker: 氷川 (%ss66)
+JP 　とにかく・・・
+EN Anyway...
+
+@ 1.395.01
+# speaker: 氷川 (%ss66)
+JP 　あっという間に
+JP 　終わってしまったと言うのが、
+JP 　デビュー戦の印象だったな。
+EN My impression of my debut was that it was over in a flash.
+
+@ 1.395.02
+# speaker: 氷川 (%ss66)
+JP 　試合の中身が
+JP 　どんなだったかなんて、
+JP 　本当に何も覚えてないしね。
+EN I honestly don't remember a thing about what happened in the match.
+
+@ 1.395.03
+# speaker: 氷川 (%ss66)
+JP 　まあ、何にしても、
+JP 　デビュー戦の相手が
+JP 　先輩の%ss3さんで良かったよ。
+EN Whatever the case, I was glad my first opponent was my senior, %ss3.
+
+@ 1.395.04
+# speaker: 氷川 (%ss66)
+JP 　気心が知れていたから、
+JP 　必要以上に不安になることが
+JP 　なかったし。
+EN We knew each other well, so I didn't get more nervous than I had to.
+
+@ 1.395.05
+# speaker: 氷川 (%ss66)
+JP 　もっとも、こんなに唐突なデビューじゃ、
+JP 　なんだかんだ考えてる
+JP 　余裕なんてないけどな。
+EN Then again, with a debut that sudden, there was no time to think about anything anyway.
+
+@ 1.395.06
+# speaker: 氷川 (%ss66)
+JP 　その後、２年ほど前座で試合した後、
+JP 　俺は海外遠征で
+JP 　メキシコに行くことになる。
+EN After about two years of undercard matches, I was sent on a tour abroad to Mexico.
+
+@ 1.395.07
+# speaker: 氷川 (%ss66)
+JP 　メキシコ行きは
+JP 　%ss3さんもいっしょだったんで、
+JP 　かなり心強かったよ。
+EN %ss3 went to Mexico with me, so that was a big comfort.
+
+@ 1.401.00
+# speaker: 司馬 (%ss58)
+JP 「おう、%ss66、
+JP 　帰ったか。」
+EN "Oh, %ss66, you're back."
+
+@ 1.401.01
+# speaker: 司馬 (%ss58)
+JP 「メキシコはどうだった？」
+EN "How was Mexico?"
+
+@ 1.401.02
+# speaker: 氷川 (%ss66)
+JP 「はい、本場の飛び技は
+JP 　色々と勉強になりました。」
+EN Yes, sir. I learned a lot from the real high-flyers down there.
+
+@ 1.401.03
+# speaker: 氷川 (%ss66)
+JP 「ただ・・・この短期間で、
+JP 　それをどこまで吸収できたのかは
+JP 　分かりませんが・・・。」
+EN "But... I don't know how much of it I could take in in such a short time..."
+
+@ 1.401.04
+JP 「そうか。」
+EN "I see."
+
+@ 1.401.05
+# speaker: 氷川 (%ss66)
+JP 「ところで、社長・・・」
+EN "By the way, Boss..."
+
+@ 1.401.06
+# speaker: 氷川 (%ss66)
+JP 「俺を急に呼び戻した理由って、
+JP 　いったい何なんですか？」
+EN "Why did you suddenly call me back?"
+
+@ 1.401.07
+# speaker: 氷川 (%ss66)
+JP 「電話では、コーナーポストに
+JP 　飛び乗れるかどうかって、
+JP 　聞いてましたけど・・・？」
+EN "On the phone, you asked if I could jump up onto a corner post..."
+
+@ 1.401.08
+# speaker: 司馬 (%ss58)
+JP 「ああ、それだがな。」
+EN "Ah, about that."
+
+@ 1.401.09
+# speaker: 司馬 (%ss58)
+JP 「%ss66、今日からおまえ、
+JP 　これ被れや。」
+EN "%ss66, from today on, you wear this."
+
+@ 1.401.10
+# speaker: 氷川 (%ss66)
+JP 「はっ・・・？」
+EN "Huh...?"
+
+@ 1.401.11
+# speaker: 氷川 (%ss66)
+JP 「これって・・・
+JP 　%ss37のマスクですよね？」
+EN "This is... %ss37's mask, isn't it?"
+
+@ 1.401.12
+# speaker: 司馬 (%ss58)
+JP 「おう、おまえは今日から
+JP 　%sf37に
+JP 　なるんだ。」
+EN "Yep. From today on, you're %sf37."
+
+@ 1.401.13
+# speaker: 氷川 (%ss66)
+JP 「はあっ！？」
+EN "Whaaat?!"
+
+@ 1.402.00
+# speaker: 氷川 (%ss66)
+JP 　俺の名は
+JP 　%sf66。
+EN My name is %sf66.
+
+@ 1.402.01
+# speaker: 氷川 (%ss66)
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮ、
+JP 　入門４年目の
+JP 　バリバリのニューフェイスだ。
+EN A fresh new face in my fourth year at <OLIVE JAPAN>.
+
+@ 1.402.02
+# speaker: 氷川 (%ss66)
+JP 　海外遠征中だった俺は、
+JP 　%ss58社長の急な呼び出しで
+JP 　日本に帰って来たんだが・・・
+EN I was on a tour abroad when President %ss58 suddenly called me back to Japan, but...
+
+@ 1.402.03
+# speaker: 氷川 (%ss66)
+JP 　まさかこんな話が待っているとは
+JP 　思いもしなかった。
+EN I never dreamed something like this would be waiting for me.
+
+@ 1.402.04
+# speaker: 氷川 (%ss66)
+JP 　ハッキリ言ってアレだな。
+JP 　驚いたよ。
+EN Frankly... what can I say? I was floored.
+
+@ 1.402.05
+# speaker: 氷川 (%ss66)
+JP 　まあ、うちは入門当時から
+JP 　全部こんな感じだったから、
+JP 　このころはもう慣れてたけどな。
+EN Then again, things had been like this ever since I joined, so by then I was used to it.
+
+@ 1.402.06
+# speaker: 氷川 (%ss66)
+JP 　デビュー戦の時なんかは、
+JP 　もっと唐突だったよ。
+EN My debut was even more sudden.
+
+@ 1.403.00
+# speaker: ジロー (%ss3)
+JP 「%ss66、おまえ
+JP 　やったじゃねえか。」
+EN "%ss66, you did it!"
+
+@ 1.403.01
+# speaker: 氷川 (%ss66)
+JP 「はあ？
+JP 　何がです？」
+EN "Huh? Did what?"
+
+@ 1.403.02
+# speaker: ジロー (%ss3)
+JP 「何がって・・・
+JP 　おまえ、今日の試合のパンフレット
+JP 　見てねえのか？」
+EN "What do you mean, 'what'... Haven't you seen the program for today's matches?"
+
+@ 1.403.03
+# speaker: ジロー (%ss3)
+JP 「おまえの名前があるだろ！
+JP 　デビュー戦だよ。」
+EN "Your name's in it! It's your debut match."
+
+@ 1.403.04
+# speaker: 氷川 (%ss66)
+JP 「ええっ！？
+JP 　うそでしょ！？」
+EN "What?! You're kidding, right?!"
+
+@ 1.403.05
+# speaker: ジロー (%ss3)
+JP 「うそついてどうすんだ？
+JP 　おまえ、何も聞いてないのか？」
+EN "Why would I lie? Nobody told you anything?"
+
+@ 1.403.06
+# speaker: 氷川 (%ss66)
+JP 「いや・・・その・・・
+JP 　全然・・・。」
+EN "Well... um... nothing at all..."
+
+@ 1.403.07
+# speaker: ジロー (%ss3)
+JP 「まったく
+JP 　しょうがねえな・・・。」
+EN "Geez, you're hopeless..."
+
+@ 1.403.08
+# speaker: 氷川 (%ss66)
+JP 「す、すみません・・・。」
+EN "S-sorry..."
+
+@ 1.403.09
+# speaker: 氷川 (%ss66)
+JP 「あの、%ss3さん・・・
+JP 　それで、対戦相手って
+JP 　誰なんですか？」
+EN "Um, %ss3... So who's my opponent?"
+
+@ 1.403.10
+# speaker: ジロー (%ss3)
+JP 「俺だよ。」
+EN "Me."
+
+@ 1.403.11
+# speaker: 氷川 (%ss66)
+JP （うわっ！！）
+JP 「そ、そうなんですか・・・
+JP 　とりあえず、よろしくお願いします！！」
+EN (Yikes!) "Oh, r-really... W-well, I look forward to our match, sir!"
+
+@ 1.403.12
+# speaker: ジロー (%ss3)
+JP 「おう。
+JP 　まあ、あんまり固くなるな。」
+EN "Yeah. Just don't get too tense."
+
+@ 1.403.13
+# speaker: ジロー (%ss3)
+JP 「デビュー戦なんて、
+JP 　たいてい訳の分からないうちに
+JP 　終わっちまうんだから。」
+EN "Debut matches are usually over before you know what's happening."
+
+@ 1.403.14
+# speaker: ジロー (%ss3)
+JP 「俺が上手くさばいてやるから、
+JP 　おまえは何も考えずに
+JP 　思いっきりぶつかって来い！」
+EN "I'll handle things, so don't think, just hit me with everything you've got!"
+
+@ 1.403.15
+# speaker: 氷川 (%ss66)
+JP 「はい！！」
+EN "Yes, sir!"
+
+@ 1.404.00
+# speaker: 氷川 (%ss66)
+JP 　本当に突然だったよ。
+EN It was really sudden.
+
+@ 1.404.01
+# speaker: 氷川 (%ss66)
+JP 　%ss3さんが言った通り、
+JP 　俺は訳も分からないまま
+JP 　デビュー戦にのぞんでいた。
+EN Just like %ss3 said, I went into my debut without a clue what was going on.
+
+@ 1.404.02
+# speaker: 氷川 (%ss66)
+JP 　まあ、でも、もともと
+JP 　深く悩まないタチだからな、
+JP 　俺は。
+EN Well, I'm not the type to worry too much anyway.
+
+@ 1.404.03
+# speaker: 氷川 (%ss66)
+JP 　花道からリングに向かう時は、
+JP 　もう、完全に開き直っていたよ。
+EN By the time I walked down the aisle to the ring, I'd stopped caring completely.
+
+@ 1.405.00
+# speaker: 氷川 (%ss66)
+JP 　大丈夫、思いっきりやれば
+JP 　%ss3さんが受けてくれる・・・
+EN It's okay. If I go all out, %ss3 will take it...
+
+@ 1.405.01
+# speaker: 氷川 (%ss66)
+JP 　ここまで来たら
+JP 　腹を括ってやるしかない！
+EN Now that I'm here, all I can do is steel myself and go for it!
+
+@ 1.405.02
+# speaker: 氷川 (%ss66)
+JP 　全力でぶつかるんだ！！
+EN I'll hit him with everything I've got!
+
+@ C1.408
+# choice or chapter title
+JP ０１３第１３章　秋山
+EN 013 Ch.13 Akiyama
+
+@ C1.410
+# choice or chapter title
+JP ０１４第１４章　新たなる闘い
+EN 014 Ch.14 A New Fight
+
+@ C1.412
+# choice or chapter title
+JP ０２０第１５章　退団、フリー
+EN 020 Ch.15 Quit, Freelance
+
+@ C1.414
+# choice or chapter title
+JP ０３０第１６章　残留　大量離脱
+EN 030 Ch.16 Stay: Mass Exodus
+
+@ C1.416
+# choice or chapter title
+JP ０３１第１７章　起死回生
+EN 031 Ch.17 Comeback
+
+@ C1.418
+# choice or chapter title
+JP ０４０第１８章　ＯＪＰ内部分裂
+EN 040 Ch.18 <OJP> Splits
+
+@ C1.420
+# choice or chapter title
+JP ０４１第１９章　ＶＪＰと対抗戦
+EN 041 Ch.19 War with <VJP>
+
+@ C1.422
+# choice or chapter title
+JP 前のページへ
+EN Previous Page
+
+@ C1.424
+# choice or chapter title
+JP ００１第１章　デビュー戦
+EN 001 Ch.1 Debut Match
+
+@ C1.426
+# choice or chapter title
+JP ００２第２章　メキシコ遠征
+EN 002 Ch.2 Mexico Tour
+
+@ C1.428
+# choice or chapter title
+JP ００３第３章　タイガー（分岐）
+EN 003 Ch.3 Tiger (Branch)
+
+@ C1.430
+# choice or chapter title
+JP ００４第４章　%ss66
+EN 004 Ch.4: %ss66
+
+@ C1.432
+# choice or chapter title
+JP ００５第５章　%ss59
+EN 005 Ch.5: %ss59
+
+@ C1.434
+# choice or chapter title
+JP ００６第６章　%ss61
+EN 006 Ch.6: %ss61
+
+@ C1.436
+# choice or chapter title
+JP ００７第７章　川田（分岐）
+EN 007 Ch.7 Kawada (Branch)
+
+@ C1.438
+# choice or chapter title
+JP ００８第８章　健太
+EN 008 Ch.8 Kenta
+
+@ C1.440
+# choice or chapter title
+JP ００９第９章　マッチメイク
+EN 009 Ch.9 Matchmaking
+
+@ C1.442
+# choice or chapter title
+JP ０１０第１０章　社長交代
+EN 010 Ch.10 New President
+
+@ C1.444
+# choice or chapter title
+JP ０１１第１１章　ノア（分岐）
+EN 011 Ch.11 NOAH (Branch)
+
+@ C1.446
+# choice or chapter title
+JP ０１２第１２章　ＺＥＲＯ－ＯＮＥ
+EN 012 Ch.12 ZERO-ONE
+
+@ C1.448
+# choice or chapter title
+JP 次のページ
+EN Next Page

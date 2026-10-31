@@ -1,0 +1,15 @@
+# Text on the story's match cards and result screens (positioned, drawn large): 試合結果, the
+# match type and time. Keep it about as short as the Japanese.
+japanese,uses,english,notes
+試合結果,145,Results,
+分,141,Min.,
+１本勝負,141,One Fall,
+キラー,6,Killer,
+ティグレ,6,Tigre,
+時間無制限,4,No Time Limit,
+バトルロイヤル,4,Battle Royal,
+スレンダー,2,<Slender>,
+中内,2,<Nakauchi>,
+暗黒坊,2,<Ankokubo>,
+白陽坊,2,<Hakuyobo>,
+アレックス,2,<Alex>,

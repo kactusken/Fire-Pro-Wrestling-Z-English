@@ -1,0 +1,791 @@
+# Story mode scenes: a title and a one-line summary for every scene label of the seven scenarios
+# (real names; written from the English script). tools/storymap.py reads it.
+scenario,label,title,summary
+1,misawa001,Tiger Mask Prologue and Debut,"Back from Mexico, Misawa is handed Tiger Mask's mask by Baba, then recalls his sudden debut against his senior Koshinaka."
+1,misawa_gm01,Debut vs. Koshinaka,"Misawa's debut match against Koshinaka; a win adds 1 to the story score, but either result continues the story."
+1,misawa0011,Over in a Flash,"Misawa barely remembers his debut; two years of undercard matches later, he and Koshinaka head off to tour Mexico."
+1,misawa002,Broke in Mexico,"Living on fight money in Mexico, Koshinaka asks whether Misawa wants to go and eat some rice."
+1,misawa0021,Let's Go Eat,Misawa admits he's hungry and Koshinaka drags him to a pricey Japanese restaurant (+1 score).
+1,misawa0022,Watching the Money,"Misawa tries to save money, but Koshinaka drags him to a Japanese restaurant anyway (no score)."
+1,misawa0023,Dreams of a Title,"Misawa and Koshinaka vow to come home as champions, until Baba suddenly recalls Misawa alone and tells him he is Tiger Mask."
+1,misawa003,Wear the Mask?,Misawa must decide whether to accept becoming the second Tiger Mask.
+1,misawa00310,The Second Tiger Mask,"Misawa accepts the mask (+3 score), proves his doubters wrong and challenges junior champion Kobayashi, the Tiger Hunter, for his title."
+1,misawa00311,Turning Down the Mask,"Misawa refuses the mask, Baba lets it go, and Jumbo sets up a heavyweight test match against Tenryu."
+1,misawa_gm02,Title Shot vs. Kobayashi,"As Tiger Mask, Misawa challenges Kobayashi for the junior heavyweight title; a win adds 1 to the score."
+1,misawa_gm03,Heavyweight Test vs. Tenryu,"Misawa's first big heavyweight match, against Tenryu; a win adds 1 to the score."
+1,misawa0034,The Tiger Hunter Retains,Kobayashi keeps his title and boasts no Tiger gets his belt; Misawa vows to grow from the loss.
+1,misawa0033,New Junior Champion,Tiger Mask wins the junior heavyweight title from Kobayashi and praises his strength.
+1,misawa00313,Lesson from Tenryu,"Tenryu wins but gives Misawa credit, and Misawa learns how to fight heavyweights."
+1,misawa00312,Upset over Tenryu,Misawa beats Tenryu and announces himself as a heavyweight.
+1,misawa004,Unmasking,"After knee surgery, Misawa moves up to heavyweight and tears off the Tiger Mask in the middle of a match."
+1,misawa005,Answering Jumbo,"With Tenryu gone and AJPW in crisis, Misawa vows to beat Jumbo, who taunts him in a magazine interview."
+1,misawa0053,Rise to the Taunt,Misawa takes Jumbo's taunt head-on and trains with Kobashi (no score).
+1,misawa0054,Stay Calm,Misawa refuses to be provoked by Jumbo and trains with Kobashi (+2 score).
+1,misawa0055,Promise to Kobashi,"Misawa tells Kobashi he must get past Jumbo, for the young wrestlers and for AJPW."
+1,misawa_gm04,Getting Past Jumbo,"Misawa's singles match against Jumbo, the wall he must get over; a win adds 2 to the score."
+1,misawa0052,Jumbo Holds the Line,Jumbo wins and says Misawa still lacks an ace's knack for winning when it counts.
+1,misawa0051,Beating Jumbo,"Misawa beats Jumbo, the happiest moment of his career."
+1,misawa006,Hansen's Challenge,"Winless in five tries against Hansen, Misawa vows not to challenge him for a year if he loses their Triple Crown match."
+1,misawa_gm05,Triple Crown vs. Hansen,Misawa challenges Hansen for the Triple Crown; a win adds 2 to the score.
+1,misawa0062,Hansen Prevails,Hansen keeps the Triple Crown and invites anyone to come and get it.
+1,misawa0061,Hansen Finally Falls,Misawa finally beats Hansen and says he will accept a rematch.
+1,misawa0063,Training Harder,Hansen's power drives Misawa to train harder than ever.
+1,misawa007,Kawada's Challenge,Misawa's junior Kawada vows to beat him in their next match; Misawa must accept or refuse.
+1,misawa0072,Earn It First,"Misawa refuses Kawada, who forms the Seigi Army with Taue; Misawa and Kobashi prepare to face them in a tag match."
+1,misawa0071,Challenge Accepted,Misawa accepts Kawada's challenge and goes straight into their singles match.
+1,misawa_gm06,Tag War vs. Seigi Army,Misawa and Kobashi face Kawada and Taue's Seigi Army in a tag match; a win adds 2 to the score.
+1,misawa00710,Singles vs. Kawada,"Misawa's singles match against Kawada, a clash of pride; a win adds 1 to the score."
+1,misawa00722,Seigi Army Wins,"Kawada and Taue win the tag match, and Misawa vows to pay Kawada back."
+1,misawa00721,Seigi Army Beaten,Misawa and Kobashi beat Kawada and Taue and credit each other.
+1,misawa0074,Kawada's Breakthrough,"Kawada finally beats Misawa, the man he has chased all along."
+1,misawa0073,Kawada Turned Back,Misawa beats Kawada and tells him to come back when he has the heart.
+1,misawa00723,Settling It One-on-One,"After the tag war, Misawa and Kawada head into a singles match to settle things."
+1,misawa0075,Being Chased,"Now the man everyone chases, Misawa resolves to fight every match like his life depends on it."
+1,misawa008,Triple Crown vs. Kobashi,"With Jumbo ill and Tenryu gone, Misawa promises Baba to carry AJPW and faces Kobashi in a Triple Crown match."
+1,misawa_gm07,Defending Against Kobashi,Misawa defends the Triple Crown against Kobashi; a win adds 2 to the score.
+1,misawa0082,Kobashi Takes the Crown,Kobashi wins the Triple Crown and thanks Misawa for getting him there.
+1,misawa0081,A Heavy Defense,Misawa keeps his titles but admits Kobashi was far stronger than he thought.
+1,misawa0083,Body at Its Limit,"After match after brutal match, Misawa's body finally gives out."
+1,misawa009,Baba's Offer,"While Misawa is sidelined, Baba asks him to take over the matchmaking."
+1,misawa0094,Taking the Book,Misawa takes on the matchmaking at once to shake AJPW out of its rut (no score).
+1,misawa0095,Time to Think,"Misawa asks for time, then takes on the matchmaking and recruits Ogawa (no score)."
+1,misawa0096,A New Tag Team,"Misawa teams with junior heavyweight Ogawa to challenge No Fear (Takayama and Omori), the first Triple Crown tag champions."
+1,misawa_gm08,Tag Titles vs. No Fear,Misawa and Ogawa challenge Takayama and Omori for the tag titles; a win adds 1 to the score.
+1,misawa0092,No Fear Retains,Takayama and Omori keep their titles and mock Misawa.
+1,misawa0091,No Fear Beaten,"Misawa and Ogawa beat No Fear, and Misawa praises his new partner."
+1,misawa0093,The Partnership Pays Off,"The Ogawa team matures and succeeds, just before an incident that shakes the wrestling world."
+1,misawa010,President Misawa,"After the deaths of Baba and Jumbo, Misawa becomes AJPW president, and Vader, who has beaten the other Four Heavenly Kings, targets him."
+1,misawa0104,All-Out Offense,Misawa vows to go all out on offense against Vader (+1 score).
+1,misawa0105,A Match I Won't Lose,Misawa decides to fight a careful match he cannot lose (no score).
+1,misawa0106,Stopping Vader,"Misawa faces Vader, the strongest foreigner; a win adds 2 to the score."
+1,misawa0102,Vader Sweeps the Kings,"Vader beats Misawa, completing his sweep of the Four Heavenly Kings."
+1,misawa0101,Vader Stopped,Misawa beats Vader and dedicates the win to Baba.
+1,misawa011,The Weight of AJPW,"A year into his presidency, Misawa must choose between AJPW's old spirit and his new wrestling; the story score decides which way he goes."
+1,misawa030,Staying in AJPW,"Misawa stays to protect AJPW, but his half-and-half shows meet resistance from within; the score decides what follows."
+1,misawa020,Going Freelance,"Misawa leaves AJPW alone, joins up with Ogawa and Marufuji, and accepts Hashimoto's invitation to fight in ZERO-ONE."
+1,misawa0111,NOAH Sets Sail,Misawa leaves AJPW with Kobashi and Ogawa and launches the new promotion NOAH.
+1,misawa0301,The Mass Exodus,"Kobashi leaves and nearly the whole roster follows; left with only Fuchi, Misawa allies AJPW with NJPW."
+1,misawa040,The AJPW Revolution,Misawa and Kobashi wage a revolution against Kawada's conservative faction and lead an AJPW invasion squad into NJPW.
+1,misawa_gm12,Dream Match vs. Hashimoto,Freelance Misawa faces Hashimoto in ZERO-ONE; the result does not change the story.
+1,misawa012,NOAH Meets ZERO-ONE,Misawa agrees to bring NOAH to ZERO-ONE's first show alongside Hashimoto.
+1,misawa031,Series Opener vs. Sasaki,The historic AJPW-NJPW series opens with Misawa facing NJPW's Kensuke Sasaki.
+1,misawa041,Invasion vs. Nakanishi,"Misawa's first match in the NJPW ring, against Nakanishi; the result does not change the story."
+1,misawa0201,The Ogawa Match,"After his brutal fight with Hashimoto, Misawa accepts a match against the shoot-style fighter Ogawa."
+1,misawa_gm09,NOAH vs. ZERO-ONE Tag,Misawa and Akiyama take on Hashimoto's side in a tag match on ZERO-ONE's first show; the result does not change the story.
+1,misawa_gm15,Main Event vs. Sasaki,Misawa faces Kensuke Sasaki in the series opener; the result does not change the story.
+1,misawa0411,Nakanishi's Upset,"Nakanishi wins on instinct, and Misawa learns the flow of NJPW-style wrestling."
+1,misawa0410,Conquering the NJPW Ring,Misawa beats Nakanishi and adapts to NJPW's rhythm.
+1,misawa_gm13,Freelance Fight vs. Ogawa,Misawa faces the shoot-style Ogawa; the result does not change the story.
+1,misawa0122,Hashimoto's Win,"Hashimoto's side wins, and he vows to settle things with Misawa one-on-one."
+1,misawa0121,Win on ZERO-ONE's Show,"Misawa and Akiyama win, though Akiyama doubts it was a dream match."
+1,misawa0311,Sasaki's Upset,Sasaki beats Misawa in the historic series opener.
+1,misawa0310,Beating the Assassin,Misawa beats Sasaki in enemy territory.
+1,misawa0412,Choshu Awaits,"With the series a hit, Misawa faces Choshu, the series' go-between, in the main event."
+1,misawa0202,Freelance Ending,Ending: Misawa finds his freedom as a freelancer and charges toward a bigger stage.
+1,misawa013,Akiyama Rising,"As NOAH's president, Misawa must raise the next generation, and rising star Akiyama challenges him for the title."
+1,misawa0312,Tenryu Returns,"After the series opener, Tenryu returns to the new AJPW and faces Misawa in the main event."
+1,misawa_gm16,Main Event vs. Choshu,Misawa faces Choshu in the AJPW-NJPW series main event; the result does not change the story.
+1,misawa_gm10,Title Defense vs. Akiyama,Misawa defends his title against Akiyama in a fight for the top of NOAH; the result does not change the story.
+1,misawa_gm14,Main Event vs. Tenryu,Misawa faces the returning Tenryu in the new AJPW's main event; the result does not change the story.
+1,misawa0420,Revolution Ending,"Ending: after the AJPW revolution and the NJPW invasion, Misawa vows to keep leading AJPW toward something new."
+1,misawa0132,Akiyama Takes the Belt,Akiyama beats Misawa for the belt and says their fight is only beginning.
+1,misawa0131,Holding Off Akiyama,Misawa keeps his title and looks forward to more matches with Akiyama.
+1,misawa0313,New AJPW Ending,"Ending: left with a rebuilt AJPW, Misawa vows to live by the path he believes in."
+1,misawa014,Dreaming of Mutoh,"A year into NOAH, Misawa talks of breaking down the walls between promotions and of a dream match with Mutoh."
+1,misawa015,Dream Match vs. Mutoh,"Mutoh leaves NJPW and challenges the head of NOAH, and Misawa defends his GHC title against him."
+1,misawa_gm11,GHC Title vs. Mutoh,Misawa defends the GHC title against Mutoh in the dream match; the result does not change the story.
+1,misawa0152,Mutoh Wins,Mutoh wins the dream match and calls Misawa the real deal.
+1,misawa0151,Mutoh Turned Back,Misawa beats Mutoh and accepts a future rematch.
+1,misawa0153,NOAH Ending,"Ending: NOAH's history has only just begun, and Misawa vows to steer it to an even bigger stage."
+1,misawa000a,Chapter Menu (Page 2),"Unused developer chapter menu, page 2: jumps to chapters 13-19."
+1,misawa000,Chapter Menu (Page 1),"Unused developer chapter menu, page 1: jumps to chapters 1-12."
+2,oonita001,Joining All Japan,"Fifteen-year-old Atsushi Onita joins ALL JAPAN, meets Giant Baba and vows to become a huge wrestler like him."
+2,oonita002,The Road to a Title,"Nine years in, on tour in America, Terry gets Onita an NWA Junior Heavyweight title shot against champion Guerrero."
+2,oonita0021,Title Match vs. Guerrero,"Match: Onita challenges Chavo Guerrero for the NWA Junior Heavyweight title; a win adds a point, a loss means a later rematch."
+2,oonita0022,Win It in the Rematch,"Onita lost, but two months later he beats Chavo Guerrero in a rematch and takes the junior title anyway."
+2,oonita003,Champion Comes Home,"Onita returns to Japan as champion, but everyone only wants to talk about NJPW's Tiger Mask; do you go and see him?"
+2,oonita403,A Ticket to New Japan,"Onita buys a ticket to an NJPW show to watch Tiger Mask, causes a ringside scuffle and is suspended for a month."
+2,oonita0030,Brooding Over Tiger Mask,"Onita stays away; Jumbo tells him to just wrestle like a champion, but a strange bad feeling lingers."
+2,oonita0031,The Knee Gives Out,"During a title defense Onita's left knee shatters; you choose whether he retires, waits for the doctor, or fights on."
+2,oonita0032,Forced to Retire,Onita accepts that his shattered knee has ended his career and quits pro wrestling.
+2,oonita0033,Not Finished Yet,"The diagnosis is a shattered left knee, but Onita refuses to let it end there."
+2,oonita0034,One Last Chance,"Against Goto's protests Onita begs Baba for a comeback match, but his knee locks up and he has to retire anyway."
+2,oonita004,Four Lost Years,"Four years on, Onita is a day laborer wondering if there is anything for him besides wrestling; you choose his next step."
+2,oonita0041,Won't Lose to Himself,"Onita almost gives up, then decides it is all up to him and swears to return to wrestling."
+2,oonita0042,Declaring War on UWF,Onita decides to make a splash by challenging the shoot-style UWF on his own.
+2,oonita0043,Never Give Up,Onita swears he will get back into the wrestling world.
+2,oonita0044,Pioneer Warriors Comeback,"Onita joins Pioneer Go's indie group, buries karate man Takashi Ohashi in his comeback and sets his sights on UWF."
+2,oonita0045,Turned Away at UWF,Maeda turns Onita and his challenge away at the door; storm the UWF ring or find another way?
+2,oonita504,Two Super Tigers,"Onita crashes the UWF ring disguised as Super Tiger, provokes the real one and gets a singles match made."
+2,oonita0046,A Ring of His Own,"Snubbed by UWF, Onita decides to build his own ring and promotion."
+2,oonita5040,Onita vs. Super Tiger,"Match: retired, bad-kneed Onita against UWF's Super Tiger; a win adds a point."
+2,oonita005,FMW Is Born,"At the press conference for his new promotion FMW, Ohashi storms in demanding a rematch, setting up the first show's main event."
+2,oonita5042,Lesson from Defeat,"After losing to Super Tiger, Onita decides to start his own promotion to make his kind of wrestling real."
+2,oonita5041,Beating Super Tiger,"Onita's win over Super Tiger wows the press, and he announces on the spot that he is launching a new promotion."
+2,oonita0051,FMW's First Show,Match: Onita against his grudge rival Takashi Ohashi in FMW's first main event; a win adds a point.
+2,oonita005a,FMW Is Born,"At the press conference for his new promotion FMW, old grudge Ohashi storms in demanding a match, setting up the first show's main event."
+2,oonita0052,A Huge Success,"FMW's crude first show is a hit, and Onita thanks the crowd from the ring."
+2,oonita006,Betting on Deathmatches,"To keep FMW alive Onita turns to deathmatches, and his loyal partner Goto vows to make the coming cage deathmatch a success."
+2,oonita0060,The Cage Deathmatch,Match: the cage deathmatch Goto vowed to make a success (the text does not name the opponent); a win adds a point.
+2,oonita0061,Outlaw or Orthodox,"Onita defends FMW's deathmatch path to the press, then Mister Pogo challenges him to a fight to the death."
+2,oonita0062,Deathmatch vs. Pogo,Match: Onita against Mister Pogo in a deathmatch; a win adds a point.
+2,oonita0063,Why He Does It,"Battered, Onita tells the press he does it because he loves pro wrestling."
+2,oonita007,The Time Bomb Match,"FMW rivals the majors, but Onita is wearing out; he insists on facing Matsunaga in a Barbed Wire Time Bomb Deathmatch anyway."
+2,oonita0070,Onita vs. Matsunaga,Match: Barbed Wire Time Bomb Deathmatch against Matsunaga; a win adds a point.
+2,oonita0071,A Brush with Death,"Onita collapses after the match and nearly dies, then prepares for FMW's biggest event, a tag match against Tenryu's Gen-gumi."
+2,oonita0072,Tag Match vs. Tenryu,"Match: Onita's team against Tenryu and his Gen-gumi; winning (+1) keeps him in FMW, losing sends him toward retirement against Choshu."
+2,oonita208,"After Tenryu, Choshu","Worn out after Tenryu, Onita plans to retire and talks Choshu into a straight farewell match."
+2,oonita0073,Never Let FMW Die,"Onita vows to fight deathmatches as long as his body lasts, but later loses a singles deathmatch to Tenryu."
+2,oonita2080,Retirement Match vs. Choshu,"Match: a normal singles match against Choshu, on condition that Onita retires afterwards; a win adds a point."
+2,oonita008,Second Retirement,"His body falling apart, Onita decides to retire for real; the story score now decides how his farewell goes."
+2,oonita2082,Choshu Was Strong,Choshu wins and tells Onita to keep his word; Onita bids farewell to FMW.
+2,oonita2081,Farewell After Victory,"Onita beats Choshu and announces his retirement to the crowd, satisfied with the greatest match of his life."
+2,oonita308s,One Last Explosion,"FMW sets up an exploding retirement match against Goto, but something unexpected happens."
+2,oonita0088,Passing the Torch,Onita entrusts FMW to Hayabusa and decides to leave after one final deathmatch with him.
+2,oonita2083,After Choshu,The story score decides what Onita does after his retirement.
+2,oonita3088,Goto Says No,"Goto refuses to be in Onita's retirement match, and Sasuke rushes in from Sendai to take his place."
+2,oonita0080,Farewell vs. Hayabusa,Match: Onita's retirement deathmatch against Hayabusa; the result doesn't change the story.
+2,oonita308,One Last Explosion,"Having lost to Choshu as promised, Onita still wants an exploding farewell match against Goto, but something unexpected happens."
+2,oonita209,Calling Out Inoki,"Three years retired and now a lawmaker, Onita announces a comeback and names Antonio Inoki as the man to finish him."
+2,oonita3080,Farewell vs. Sasuke,Match: Onita's retirement deathmatch against Sasuke of Michinoku Pro; the result doesn't change the story.
+2,oonita0081,"So Long, FMW",Onita says goodbye to FMW and the fans after six years of deathmatches.
+2,oonita210,Storming ZERO-ONE,"Ignored by Inoki, Onita attacks Shinya Hashimoto in the ZERO-ONE ring and gets a match at 'Ichigeki'."
+2,oonita3081,Farewell with Sasuke,Onita thanks the fans and the indies and says farewell to pro wrestling.
+2,oonita009,Third Comeback,"A year retired, Onita returns for Mister Pogo's retirement match, but FMW's new fans boo him out."
+2,oonita2100,Onita vs. Hashimoto,"Match: Onita against ZERO-ONE's Shinya Hashimoto as a stepping stone to Inoki; win or lose, the story goes on to Hase."
+2,oonita309,Return in the NJPW Ring,"Three years retired, Onita storms the NJPW ring, headbutts Sasaki and challenges Liger."
+2,oonita010,Taking On the Majors,"Unwelcome in FMW, Onita leaves and declares war on NJPW, naming Choshu as his target."
+2,oonita2102,Survived Hashimoto,"Hashimoto won, but Onita survived and keeps stalking Inoki, who ignores him completely."
+2,oonita2101,Beating Hashimoto,Onita beats Hashimoto and tells the press the Outlaw puts his life on the line.
+2,oonita310,Challenging Liger,Liger accepts Onita's challenge and an exploding barbed wire match is booked in NJPW.
+2,oonita011,Invading New Japan,"Onita invades the NJPW mat, provokes Chono and wins a No-Rope Exploding Barbed Wire Deathmatch at the Dome."
+2,oonita211,Battle of the Lawmakers,An exhibition between lawmakers Onita and Hase becomes an AJPW 'Dead Serious Showdown' on Onita's old home mat.
+2,oonita3100,Onita vs. Liger,"Match: exploding barbed wire match against Liger in NJPW; win or lose, AJPW is next."
+2,oonita0110,Onita vs. Chono,Match: No-Rope Exploding Barbed Wire Deathmatch against Chono at the Dome; the result doesn't change the story.
+2,oonita2110,Onita vs. Hase,Match: the 'Dead Serious Showdown' against Hase in AJPW; the result doesn't change the story.
+2,oonita3102,Lost to Liger,Liger wins but praises Onita's guts; Onita sets his sights on AJPW.
+2,oonita3101,Beat Liger,"Onita beats Liger, declares there are no borders in wrestling and names AJPW as his next target."
+2,oonita0111,Next Target: Mutoh,"Having survived Chono, Onita targets IWGP champion Mutoh to force Choshu's hand."
+2,oonita2111,A Plan to Trick Inoki,"After the Hase match, Onita decides to trick Inoki into a match."
+2,oonita311,Sasaki Gets in the Way,Sasaki vows to kill Onita; Onita breathes fire in his face and an exploding barbed wire match is made.
+2,oonita012,Akkija Returns,"Onita revives his alter ego Bureido Akkija, sprays mist in Mutoh's face and sets up Akkija vs. Muta."
+2,oonita212,Inoki in Afghanistan,"Onita's secret 'charity exhibition' lures Antonio Inoki to Afghanistan, where Onita is revealed as his opponent."
+2,oonita3110,Onita vs. Sasaki,Match: exploding barbed wire match against Sasaki; the result doesn't change the story.
+2,oonita0120,Akkija vs. Muta,Match: Onita as Bureido Akkija against Muta in a deathmatch; the result doesn't change the story.
+2,oonita2120,Onita vs. Inoki,"Match: Onita's final match, against Antonio Inoki in Afghanistan; only the post-match scene changes with the result."
+2,oonita3111,Heading for AJPW,"Battered after Sasaki, Onita presses on toward the AJPW mat."
+2,oonita0121,Akkija's Last Stand,"Akkija vanishes for good, but Onita survived the IWGP champion and NJPW has no cards left before Choshu."
+2,oonita2122,A Beautiful Death,"Inoki wins, and Onita declares the Outlaw died a beautiful death at his hands."
+2,oonita2121,Inoki Wants a Rematch,"Onita beats Inoki, who demands one more match."
+2,oonita312,Fuchi's Challenge,"Old friend Fuchi challenges Onita to a plain AJPW-style match with no cage or explosions, and Onita accepts."
+2,oonita013,Choshu at Last,Onita shreds Choshu's sweat-soaked T-shirt in the NJPW ring until Choshu agrees to a No-Rope Exploding Barbed Wire Deathmatch.
+2,oonita213,Ending: Inoki Route,Ending after the Inoki match: Onita's closing message that a dream is something you grab with your own hands.
+2,oonita3120,Onita vs. Fuchi,Match: a straight AJPW-style match against Fuchi on the ALL JAPAN mat; only the post-match scene changes with the result.
+2,oonita0130,Onita vs. Choshu,"Match: the No-Rope Exploding Barbed Wire Deathmatch against Choshu, the goal of Onita's long road; the result doesn't change the story."
+2,oonita3122,The Outlaw Never Dies,Onita loses to Fuchi in a bout of the year contender and vows to keep charging ahead.
+2,oonita3121,Fuchi Beaten,Fuchi admits defeat and concedes Onita is more than an exploding-barbed-wire gimmick.
+2,oonita0131,Choshu's Respect,Choshu calls Onita an idiot but the real deal and takes his hat off to his persistence.
+2,oonita313,Ending: Outlaw Lives On,Ending after the Fuchi match: Onita keeps wrestling and urges fans to believe in themselves.
+2,oonita014,Ending: End of Heresy,Ending after the Choshu deathmatch: Onita looks back on his unlikely life and says a dream is never out of reach.
+2,oonita000b,"Chapter Menu, Page 3","Developer chapter-select menu (page 3): jumps to scenes 310-313, 403 and 504; not reached in normal play."
+2,oonita000a,"Chapter Menu, Page 2",Developer chapter-select menu (page 2): jumps to chapters 12-14 and the 208-213 and 308-309 scenes; not reached in normal play.
+2,oonita000,"Chapter Menu, Page 1",Developer chapter-select menu (page 1): jumps to chapters 1-11; not reached in normal play.
+3,hashimoto001,Laundry Room Brawl,"Rookie Hashimoto's third day at the NJPW dojo starts with a fight with Chono over the washing machine; asked by Yamamoto to explain, you apologize or blame Chono."
+3,hashimoto0011,"Apologize: 3,000 Squats","Hashimoto apologizes, but the punishment squats spark another scuffle that pulls in Mutoh, and all three get 3,000 squats (+2 score)."
+3,hashimoto0010,"Blame Chono: 2,000 Squats","Hashimoto blames Chono, Mutoh gets dragged in, and all three are ordered to do 2,000 squats (no score)."
+3,hashimoto002,"Friends, Debut and Walkout","The three rookies become close friends, Hashimoto loses his debut match, and Choshu's Rebel Army walks out; Mutoh calls it a lucky break - do you agree?"
+3,hashimoto0020,Agree: A Chance to Shine,"Hashimoto agrees it is a chance to make a name, and Mutoh teases him about breaking Sakaguchi's expensive athlete's foot medicine (+1 score)."
+3,hashimoto0021,Disagree: More Responsibility,"Hashimoto says the walkout means more responsibility for the young boys, and Mutoh teases him about the broken athlete's foot medicine (+1 score)."
+3,hashimoto0023,The Young Boys Step Up,"With so many seniors gone, Hashimoto admits the young boys came out ahead."
+3,hashimoto003,Young Lion Cup,"The renamed Young Lion Cup puts Hashimoto, Mutoh and Chono in one league, and Hashimoto names his first opponent Chono as his rival."
+3,hasi_gm00,Young Lion Cup vs. Chono,Hashimoto's league match against Masahiro Chono; the result changes neither the score nor the story.
+3,hashimoto0030,Stuck in Limbo,"Mutoh rises fast while Hashimoto stalls for two years, loses the Young Lion Cup final to Chono and leaves on an overseas tour labeled a demotion."
+3,hashimoto004,The Three War Demons,"Called home from Canada by Inoki, Hashimoto is teamed with Mutoh and Chono as the Three War Demons for a one-off six-man tag."
+3,hasi_gm01,Three War Demons Six-Man Tag,"Hashimoto, Chono and Mutoh face Fujinami, Kimura and Koshinaka; the result changes neither the score nor the story."
+3,hashimoto0040,The Time Has Come,"The Three War Demons' outburst frees Hashimoto's fighting, and two years later he returns home for good as 'the Explosive Crusher.'"
+3,hashimoto005,Revenge on Halme,"After two TKO losses to boxer Tony Halme on a bad knee, Hashimoto trains in China, learns the Leg Sweep and demands a third fight."
+3,hasi_gm02,Third Fight vs. Halme,"Hashimoto's grudge rematch with former boxer Tony Halme; a win adds 2 to the story score, but either result continues the story."
+3,hashimoto0054,Halme Rematch Lost,Hashimoto loses again but finally chokes Halme out in a fourth fight to get his revenge.
+3,hashimoto0053,Halme Finally Beaten,Hashimoto beats Halme after four long months and feels he has settled the score.
+3,hashimoto006,Slump After the War,"Martial-arts fights have dulled Hashimoto's wrestling, and he must choose: look for a strong opponent or throw himself into training."
+3,hashimoto0062,Enter Tenryu,"Tenryu's WAR invades NJPW, a six-man tag ends in Hashimoto's disqualification, and he stalks Tenryu until he gets a one-on-one match."
+3,hashimoto0061,Training Isn't Enough,"Training alone doesn't break the slump, and Hashimoto decides what he really needs is an enemy (+2 score)."
+3,hasi_gm03,Singles vs. Tenryu,"Hashimoto faces Genichiro Tenryu for his true comeback; a win adds 2 to the story score, but either result continues the story."
+3,hashimoto0064,Lost to Tenryu,Tenryu praises the bout and says it snapped Hashimoto out of his slump; the two will be rivals.
+3,hashimoto0063,Beat Tenryu,Hashimoto calls Tenryu amazing and declares himself back and refreshed.
+3,hashimoto0065,Who Stands in the Way?,"Score check after the Tenryu match: 8 or more leads to an IWGP shot at Mutoh, 4-7 to a Chono feud, under 4 to a title match with the Great Muta."
+3,hashimoto007,IWGP Challenge: The Great Muta,"Hashimoto challenges IWGP champion The Great Muta, and Mutoh's small talk at the dojo calms his nerves before the title match."
+3,hashimoto508,Chono Gets in the Way,"Chono angrily interrupts Hashimoto's IWGP plans with a challenge of his own, and Hashimoto accepts the fight."
+3,hashimoto408,IWGP Challenge: Mutoh,"Hashimoto challenges IWGP champion Keiji Mutoh, whose casual chat about a girl the day before infuriates him."
+3,hasi_gm04,IWGP Title vs. The Great Muta,"Hashimoto challenges The Great Muta for the IWGP title; a win (+1) makes him champion, a loss sends him back to the pack."
+3,hasi_gm20,Grudge Match vs. Chono,"Hashimoto fights Masahiro Chono to settle who is stronger; a win adds 1 to the story score, but either result continues the story."
+3,hasi_gm19,IWGP Title vs. Mutoh,"Hashimoto challenges Keiji Mutoh for the IWGP title; a win (+1) makes him champion, a loss sends him back to the pack."
+3,hashimoto0074,Title Shot Lost,Hashimoto refuses to talk after losing the title match and vows to make it to the top.
+3,hashimoto0073,IWGP Champion,"Hashimoto wins the IWGP belt, though Mutoh takes it back in his fifth defense."
+3,hashimoto5081,After the Chono War,"After a brutal fight with Chono, Liger tells Hashimoto that Choshu has agreed to an interpromotional series with UWF International."
+3,hashimoto008,War With UWF International,Chono tells Hashimoto that Choshu has agreed to an interpromotional series with UWF International.
+3,hashimoto0080,Takada Takes the Belt,"When UWF International's Nobuhiko Takada beats Mutoh for the IWGP title, NJPW sends Hashimoto to win it back for the promotion's pride."
+3,hasi_gm05,IWGP Title vs. Takada,Hashimoto challenges Nobuhiko Takada to bring the IWGP belt back to NJPW; a win adds 1 to the story score.
+3,hashimoto0084,Belt Back at the Second Try,"Hashimoto loses, then wins the belt from Takada three months later with a Triangle Choke; a score check (10 or more) decides whether Choshu or Yamazaki challenges next."
+3,hashimoto0083,Takada Beaten Fair and Square,"Takada admits Hashimoto's hunger for the win was stronger, and the IWGP belt is back in NJPW."
+3,hashimoto709,Yamazaki Wants the Belt,"Freelancer Kazuo Yamazaki, inspired by the Takada match, challenges IWGP champion Hashimoto, and Liger warns him to fight it like a shoot."
+3,hashimoto009,Choshu's Last Stand?,"Rumors call Riki Choshu's IWGP challenge his retirement match; Choshu denies it, and Hashimoto vows to send him off for good."
+3,hasi_gm22,IWGP Defense vs. Yamazaki,"Hashimoto defends the IWGP title against Kazuo Yamazaki; a win adds 1 to the story score, but either result continues the story."
+3,hasi_gm06,IWGP Defense vs. Choshu,"Hashimoto defends the IWGP title against Riki Choshu; a win adds 1 to the story score, but either result continues the story."
+3,hashimoto0094,Top of NJPW,Hashimoto is now NJPW's undisputed top star - until one man's arrival changes his career.
+3,hashimoto0093,An Honor From Choshu,Hashimoto suspects Choshu meant it as a farewell and feels honored; a score of 10 or more brings a challenge from Sasaki first.
+3,hashimoto010,Ogawa's Debut,"The company orders IWGP champion Hashimoto to face Olympic judoka Naoya Ogawa in his debut, and Ogawa's dismissive comments enrage him."
+3,hashimoto610,Sasaki's Challenge,"Kensuke Sasaki, angry at how Hashimoto cornered Choshu, attacks him in a tag match and demands a one-on-one fight."
+3,hasi_gm07,Ogawa's Debut Match,Hashimoto faces debuting Naoya Ogawa in a shoot-style fight; a win adds 2 to the story score.
+3,hasi_gm21,Grudge Match vs. Sasaki,"Hashimoto fights Kensuke Sasaki one-on-one; a win adds 1 to the story score, but either result continues the story."
+3,hashimoto0102,Upset by Ogawa,"Hashimoto is beaten by Ogawa, snaps after the match and demands a rematch with the belt on the line."
+3,hashimoto011,Retirement on the Line,"After two more losses to Ogawa, Hashimoto is ordered to team with him and instead puts his career on the line in a singles match."
+3,hasi_gm08,Retirement Match vs. Ogawa,"Hashimoto faces Naoya Ogawa with his career at stake: a loss means retirement, a win (+2) keeps him in NJPW - the scenario's main fork."
+3,hashimoto012,Promise Kept: Retirement,"Hashimoto loses and keeps his promise to retire; a score of 15 or more leads to the Tenryu-Kawada route, otherwise the Misawa route."
+3,hashimoto112,Ogawa Finally Beaten,"Hashimoto beats Ogawa, and Inoki enters the ring to tell him the real fight starts now; a score of 15 or more leads to the K-1 war route."
+3,hashimoto0121,Misawa's Call,"A phone call from NOAH's Misawa and 10,000 fan signatures bring the retired Hashimoto back, determined to go outside NJPW."
+3,hashimoto313,Birth of ZERO-ONE,"Hashimoto turns down Inoki's offer to join UFO, founds ZERO-ONE and, with Tenryu's backing, starts a three-way war with NJPW and AJPW."
+3,hashimoto1121,Break With Inoki,"Hashimoto brawls with Inoki, Chono threatens to crush him, and his demand that NJPW cut ties with Inoki turns into a fight with President Fujinami."
+3,hashimoto213,The Inoki Army vs. K-1,"Le Banner's boasts start a war between K-1 and the Inoki Army, led by Hashimoto, who is ordered to team with Ogawa against Satake and Takada."
+3,hashimoto013,Fired From NJPW,"Hashimoto's ZERO-ONE announcement and talk of NOAH get him fired from NJPW, and he enters NOAH against Takao Omori."
+3,hasi_gm17,Three-Way War vs. Tenryu,Hashimoto of ZERO-ONE faces AJPW's Genichiro Tenryu in the three-promotion war; the result changes neither the score nor the story.
+3,hasi_gm12,Showdown vs. Fujinami,Hashimoto fights NJPW president Tatsumi Fujinami to force his demands through; the result changes neither the score nor the story.
+3,hasi_gm14,Tag vs. Satake and Takada,Hashimoto and Naoya Ogawa team against Masaaki Satake and Nobuhiko Takada; the result changes neither the score nor the story.
+3,hasi_gm09,NOAH Debut vs. Omori,"Hashimoto's first NOAH match, against Takao Omori; the result changes neither the score nor the story."
+3,hashimoto314,Next: Kawada,"Tenryu praises Hashimoto after their match, and Hashimoto prepares to face AJPW's quiet ace Toshiaki Kawada for ZERO-ONE."
+3,hashimoto113,Release and Reprieve,"Hashimoto demands Fujinami's presidency, NJPW releases him, and Chono's call-out gets the release put on hold - if Hashimoto fights him."
+3,hashimoto214,Truce With Ogawa,"Hashimoto and Ogawa click as a team, and Le Banner's insults about pro wrestling build up the Inoki Festival main event."
+3,hashimoto0131,Warm-Up Done,"The Omori match gets Hashimoto moving, and ZERO-ONE's launch begins in earnest."
+3,hasi_gm18,Main Event vs. Kawada,Hashimoto faces AJPW's Toshiaki Kawada in the three-way war main event; the result changes neither the score nor the story.
+3,hasi_gm13,Singles vs. Chono,Hashimoto fights Masahiro Chono to stay in NJPW; the result only changes the post-match scene.
+3,hasi_gm15,Inoki Festival vs. Le Banner,Hashimoto faces K-1's Jerome Le Banner in a mixed-style main event; the result only changes the post-match scene.
+3,hashimoto014,ZERO-ONE's First Show,"For ZERO-ONE's first show against NOAH's Misawa and Akiyama, Yuji Nagata of NJPW volunteers as Hashimoto's mystery partner X."
+3,hashimoto3141,It Starts Now,"After the Kawada match, Hashimoto says ZERO-ONE has only just been born."
+3,hashimoto1132,Lost to Chono,Hashimoto tells Chono this is only the beginning and vows to take NJPW's top spot.
+3,hashimoto1131,Beat Chono,Hashimoto beats Chono and claims the top spot in NJPW.
+3,hashimoto2142,Lost to Le Banner,Hashimoto has nothing to say and vows to start over from scratch.
+3,hashimoto2141,Le Banner Beaten,A beaten Le Banner has no comment.
+3,hasi_gm10,Tag vs. Misawa and Akiyama,Hashimoto and Yuji Nagata face Mitsuharu Misawa and Jun Akiyama at ZERO-ONE's first show; the result changes neither the score nor the story.
+3,hashimoto315,Ending: Rule the Land,"Ending of the ZERO-ONE three-way war route: Hashimoto vows, like Nobunaga, to rule the land through pro wrestling."
+3,hashimoto114,Ending: Chasing the Dream,Ending of the NJPW reform route: Hashimoto vows never to give up chasing his ideal his own way.
+3,hashimoto215,Calling Out Fujita,"Kazuyuki Fujita beats Le Banner, his 'stole my lunch' remark goes to press, and Hashimoto calls out the double IWGP champion."
+3,hashimoto015,Two Years to Misawa,"Ogawa wrecks ZERO-ONE's first show, Misawa cuts ties, and after two years building ZERO-ONE Hashimoto finally gets Misawa one-on-one."
+3,hasi_gm16,Showdown vs. Fujita,Hashimoto fights Kazuyuki Fujita to settle who is stronger; the result changes neither the score nor the story.
+3,hasi_gm11,Main Event vs. Misawa,Hashimoto faces Mitsuharu Misawa one-on-one in the ZERO-ONE vs. NOAH war; the result only changes the post-match scene.
+3,hashimoto216,Ending: Fight Till I Drop,Ending of the Inoki Army vs. K-1 route: Hashimoto says fighting is the only way he can express himself.
+3,hashimoto0152,Lost to Misawa,Hashimoto refuses to accept the loss and demands another match with Misawa.
+3,hashimoto0151,Misawa Beaten,Misawa admits a clean loss to Hashimoto's finish.
+3,hashimoto016,Ending: Live as a Warrior,Ending of the ZERO-ONE vs. NOAH route: Hashimoto resolves to keep charging ahead and live as a warrior.
+3,hashimoto000b,Chapter Menu (Page 3),Unused developer chapter-select page listing the route chapters 314-709; not reachable in normal play.
+3,hashimoto000a,Chapter Menu (Page 2),Unused developer chapter-select page listing chapters 013-016 and the route chapters 112-313; not reachable in normal play.
+3,hashimoto000,Chapter Menu (Page 1),Unused developer chapter-select menu listing chapters 1-12; not reachable in normal play.
+4,chono001,Rookie Days,"Chono recalls brutal NJPW dojo training, Mutoh's fake escape plan, Hashimoto's antics, and his vow to out-train the two rivals who joined with him."
+4,chono002,Young Lion Cup,"Choshu's walkout opens debut spots, and three years later Chono reaches the Young Lion Cup final against Hashimoto."
+4,chono0025,Final vs. Hashimoto,Match 0: Chono faces Shinya Hashimoto in the Young Lion Cup final; a win adds 1 to the story score.
+4,chono0021,Loss to Hashimoto,"Chono loses the final, curses Hashimoto's kicks, but is satisfied he gave everything."
+4,chono0020,Beating Hashimoto,Chono wins the Young Lion Cup; a furious Hashimoto swears revenge.
+4,chono003,Choosing an Excursion,"Sakaguchi sends Chono on an overseas excursion and lets him pick where to go: Austria, Germany or Canada."
+4,chono0030,"Europe, Then Canada","Chono suffers in gloomy European rings, is crushed by the giant Vader, then finds his feet in Canada with friends nearby."
+4,chono0032,"Canada, Then Europe","Chono trains in Canada with Mutoh and Hashimoto close by, then moves to Europe and is crushed by the giant Vader."
+4,chono0033,Dome Debut Looms,"Now one of the Three War Demons, Chono learns his first Tokyo Dome opponent is Vader, before 50,000 fans."
+4,chono0035,Dome vs. Vader,"Match 1: Chono faces Vader at the Dome; a win adds 1 to the score, but the story continues the same either way."
+4,chono0034,Aftermath of Vader,Chono barely remembers the frantic Vader fight but now has the guts for the big stage.
+4,chono004,Challenging Inoki,"Back in Japan, Chono and Hashimoto both challenge Inoki, and Sakaguchi books them as a team against Inoki and himself."
+4,chono0040,Accepting Hashimoto,Chono swallows his pride and agrees to team with Hashimoto.
+4,chono0041,Refusing Hashimoto,"Chono asks for Inoki one-on-one, Sakaguchi refuses, and Chono accepts any partner out of spite."
+4,chono0042,Inoki's Defiance,Inoki slaps a reporter and vows to win; Chono vows to make the generational change official.
+4,chono0043,Tag vs. Inoki,Match 2: Chono and Hashimoto face Antonio Inoki and Sakaguchi; a win adds 2 to the score.
+4,chono0045,Inoki Survives,Inoki wins a close call and leads his 1-2-3 Daa; Chono vows to beat him one day.
+4,chono0044,Toppling Inoki,Chono and Hashimoto beat their master Inoki for the first time and dare anyone to stop them.
+4,chono005,G1 Climax Run,"Overlooked by the press, Chono upsets Choshu and Hashimoto with the STF to reach the first G1 Climax final against Mutoh."
+4,chono0051,G1 Final vs. Mutoh,Match 3: Chono faces Keiji Mutoh in the G1 Climax final; a win adds 1 to the score.
+4,chono0053,Mutoh Wins the G1,Mutoh takes the G1 Climax; Chono draws confidence from reaching the final.
+4,chono0052,G1 Climax Champion,Chono wins NJPW's toughest league but says his climb to the top has only begun.
+4,chono006,Neck Injury,"An old neck injury flares up after the G1, and Chono must decide whether to rest or keep fighting."
+4,chono0060,Taking Time Off,"Chono rests, but the pain lingers into his second G1 Climax and his match with Tony Halme."
+4,chono0061,Refusing to Rest,Chono ignores the pain and forces his way into his second G1 Climax and his match with Tony Halme.
+4,chono0062,Wrestling Carefully,Chono nurses his neck for a year until his second G1 Climax and his match with Tony Halme.
+4,chono0063,Second G1 Final,"Chono beats Halme but collapses with cervicobrachial syndrome, fights on to the final, and takes painkillers to face Rick Rude for the NWA title."
+4,chono0065,G1 Final vs. Rude,Match 4: Chono faces Rick Rude in the G1 Climax final with the NWA Heavyweight title at stake; a win adds 2 to the score.
+4,chono0067,Rude Takes the Belt,"Rude wins the final and the NWA belt, and Chono swears it won't happen again."
+4,chono0066,NWA Champion,Chono wins the G1 Climax and the NWA title through the neck pain and thanks the fans.
+4,chono007,Takada Branch Check,Hidden check: a story score under 7 brings a match with Takada; otherwise the story moves on.
+4,chono0070,Back to Plain Chono,"The praise fades, and Chono is again seen as just a plain wrestler who takes bumps well."
+4,chono208,Takada's Challenge,"Unsatisfied, Chono learns UWF International thinks he is beatable, overrules Choshu and demands the match with Nobuhiko Takada."
+4,chono0071,Birth of a Heel,"Chono reinvents himself as a heel, wins the G1 as 'Mr. V1', attacks Choshu and forms the Nobushi Army with Tenzan."
+4,chono2081,Interpromotional vs. Takada,Match 5: Chono faces Nobuhiko Takada in the NJPW vs. UWF International war; a win adds 1 to the score.
+4,chono0072,Choshu Branch Check,Hidden check: a story score of 10 or more leads to a singles match with Choshu; otherwise to a tag match against Choshu and Hirata.
+4,chono2083,Loss to Takada,Chono loses to Takada and gives no comment; the buzz fades and he is seen as plain again.
+4,chono2082,Beating Takada,"Chono wins the NJPW vs. UWF International showdown, but the buzz soon fades."
+4,chono0073,Choshu Dodges Singles,"Choshu turns Chono's challenge into a tag match with Hirata, so Chono teams with Tenzan."
+4,chono308,Singles Showdown Set,Chono vows to finish Choshu and the old guard in a one-on-one match.
+4,chono0074,Tag vs. Choshu & Hirata,Match 7: Chono and Tenzan face Riki Choshu and Junji Hirata; a win adds 1 to the score.
+4,chono3080,Singles vs. Choshu,Match 6: Chono faces Riki Choshu one-on-one; a win adds 2 to the score.
+4,chono0075,Choshu Prevails,Choshu's team wins and he mocks the Nobushi Army; Chono vows to settle it one-on-one.
+4,chono0076,Nobushi Army Wins,"Chono and Tenzan beat Choshu and Hirata, and Chono dares Choshu to come again."
+4,chono3082,Loss to Choshu,Choshu beats Chono and taunts him; Chono insists the gap between them is gone.
+4,chono3081,Changing of the Guard,Chono beats Choshu one-on-one and declares the times have already changed.
+4,chono008,Wanting Something New,"After the tag match, the Nobushi Army grows, but Chono finds NJPW boring and plans a new entertainment-first current."
+4,chono3083,Wanting Something New,"After the singles match, the Nobushi Army grows, but Chono finds NJPW boring and plans a new entertainment-first current."
+4,chono0081,nWo Japan,"Chono shocks the crowd in an nWo T-shirt, launches nWo Japan and brings in Mutoh as The Great Muta."
+4,chono0082,Flair Branch Check,Hidden check: a story score of 12 or more sends Chono to America to face Ric Flair first; otherwise straight to the IWGP title shot.
+4,chono0083,Eyeing the IWGP Title,Chono has earned an IWGP title shot and taunts champion Fujinami.
+4,chono409,Invading America,"Chono and Mutoh tour America with the nWo, and Hulk Hogan books Chono against Ric Flair."
+4,chono0084,Fujinami's Warning,Fujinami says Chono takes the IWGP belt too lightly; Chono calls the belt an ornament for his power.
+4,chono4091,vs. Ric Flair,"Match 10: Chono faces Ric Flair in an American main event; a win adds 1 to the score, and both results continue the same way."
+4,chono0085,IWGP vs. Fujinami,Match 8: Chono challenges Tatsumi Fujinami for the IWGP title; a win adds 2 to the score.
+4,chono4092,Home for the IWGP,"The nWo tour is a huge success, and Chono returns with an IWGP title shot against Fujinami."
+4,chono0087,Loss to Fujinami,"Fujinami keeps the IWGP title, but Chono feels he controlled the match."
+4,chono0086,IWGP Champion,"Chono takes the IWGP belt, and a shaken Fujinami says it's only the beginning."
+4,chono009,Mutoh's Betrayal,"A back injury sidelines Chono, Mutoh seizes the nWo, and Chono forms Team 2000 and demands a leader-versus-leader match."
+4,chono0091,Black Unification Match,"Match 9: Chono faces The Great Muta for leadership; a win adds 2, and a loss sends the story to the NOAH route."
+4,chono510,Invading NOAH,"After losing to Mutoh, Chono crushes a rebellious Tenzan, then invades NOAH to start an NJPW vs. NOAH war."
+4,chono0092,Leader of Team 2000,Chono wins the black unification match and launches Team 2000 to take over the NJPW mat.
+4,chono5101,NOAH Six-Man Tag,"Match 15: Chono, Tenzan and Saito face Akiyama, Takayama and Omori in NOAH; the result only changes the post-match scene."
+4,chono010,Team 2000's Plans,"After a dominant win, the press asks Chono what Team 2000 will do next: take every title or absorb every faction."
+4,chono5103,NOAH Wins the Tag,"Akiyama, Takayama and Omori win and call Chono and Tenzan all show."
+4,chono5102,NJPW Wins the Tag,"Chono's team wins, and Omori and Takayama vow revenge."
+4,chono0100,Take Every Title,"Chono vows Team 2000 will take every title, and Kensuke Sasaki of the main force snaps back."
+4,chono0101,Absorb Every Faction,"Chono vows to crush and absorb every NJPW faction, and Kensuke Sasaki snaps back; this answer adds 2 to the score."
+4,chono511,Calling Out Kobashi,Chono wins over NOAH fans and goads Kenta Kobashi into choosing him for his comeback match.
+4,chono0102,War with the Main Force,"Sasaki's main force demands a 3-on-3 tag, and Chono vows to crush them all."
+4,chono5111,vs. Kobashi,Match 16: Chono faces Kenta Kobashi in his comeback match in NOAH; the result only changes the post-match scene.
+4,chono0103,Team 2000 vs. Main Force,"Match 11: Chono, Tenzan and Kojima face Nakanishi, Nagata and Sasaki; the story continues the same either way."
+4,chono5113,Kobashi's Comeback Win,Kobashi beats Chono and respects his pride; Chono vows payback.
+4,chono5112,Beating Kobashi,Chono beats Kobashi and declares this only the beginning.
+4,chono011,AJPW Comes Calling,"Now leading NJPW, Chono storms the ring when Fuchi shakes hands with Choshu, setting up an AJPW vs. NJPW tag match."
+4,chono512,Recruiting No Fear,"Chono beats NOAH mavericks Takayama and Omori into his army, provoking Misawa into a 4-on-4 war."
+4,chono0112,Tag vs. Kawada & Fuchi,Match 12: Chono and Tenzan face Toshiaki Kawada and Masanobu Fuchi; a win adds 1 and triggers the final route check.
+4,chono5121,NOAH 4-on-4 War,"Match 17: Chono, Tenzan, Omori and Takayama face Misawa, Taue, Akiyama and Yoshinari Ogawa; either result leads to the ending."
+4,chono0114,Loss to AJPW,Kawada and Fuchi win; Chono decides Kawada is worth facing one-on-one.
+4,chono0113,Beating AJPW,"Chono wins the historic match; the story score then picks the next route (under 20, 20-29, or 30+)."
+4,chono513,Ending 3: NOAH War,Ending 3 (NOAH route): Chono reflects on pleasing the crowd and keeping his eyes on the top.
+4,chono012,Team 2000 Splits,"After a long absence, Chono brings in Giant Silva and Giant Singh, and Tenzan and Kojima turn on him."
+4,chono112,War with BATT,"Mutoh forms the cross-promotion unit BATT and wins AJPW's Triple Crown, and Chono declares war on him."
+4,chono712,Invading ZERO-ONE,"Hashimoto's ZERO-ONE goads Chono, who invades with Team 2000 and splits Hashimoto open with a chair."
+4,chono0121,Team 2000 Civil War,"Match 13: Chono, Giant Silva and Giant Singh face Tenzan, Kojima and Saito; the story continues the same either way."
+4,chono1121,Tag vs. Mutoh & Kea,Match 18: Chono and Tenzan face Keiji Mutoh and Taiyo Kea of BATT; a win adds 1 to the score.
+4,chono7121,Tag vs. Hashimoto & Otani,Match 22: Chono and Scott Norton face Shinya Hashimoto and Shinjiro Otani; the result only changes the post-match scene.
+4,chono013,Mutoh Leaves NJPW,"Team 2000 splits, Mutoh, Kojima and Kashin leave for AJPW, and an angry Inoki asks Chono if he is angry too."
+4,chono1123,Loss to BATT,Chono loses the tag but insists he was on the attack 99% of the time.
+4,chono1122,Beating BATT,"Chono's team wins, and Mutoh admits they were better."
+4,chono7124,Loss to ZERO-ONE,"Chono loses the tag, dismisses it as a crap match and demands a bigger one."
+4,chono7123,Beating ZERO-ONE,"Chono's team wins, and Hashimoto and Otani swear revenge."
+4,chono0130,President Branch Check,Hidden check: a story score under 15 sends Chono to defy Inoki (president route); 15 or more leads to the Misawa dream match.
+4,chono113,Tenryu's Triple Crown,"Chono draws with Genichiro Tenryu, who then takes the Triple Crown from Mutoh and sets up a title match with Chono."
+4,chono713,Ogawa of ZERO-ONE,"Chono draws a brawl with Hashimoto, who then books Chono against Naoya Ogawa in singles."
+4,chono01305,Dream Match with Misawa,Chono vows to Inoki to save NJPW and arranges the dream match with NOAH's Mitsuharu Misawa.
+4,chono614,Defying Inoki,"Chono tells Inoki to stay out of the ring, boycotts NJPW, and is offered the presidency if he wins 90% of a series."
+4,chono1131,Triple Crown vs. Tenryu,Match 19: Chono challenges Genichiro Tenryu for the Triple Crown; the result only changes the post-match scene.
+4,chono7131,vs. Naoya Ogawa,Match 21: Chono faces Naoya Ogawa with ZERO-ONE's fate at stake; the result only changes the post-match scene.
+4,chono0131,Dream Match vs. Misawa,Match 14: Chono faces Mitsuharu Misawa in the dream match; the result only changes the post-match scene.
+4,chono6141,Presidential Series Opener,"Match 20: Chono, Tenzan and Saito face Fujinami, Nakanishi and Nagata to open the series; the story continues the same either way."
+4,chono1133,Loss to Tenryu,"Tenryu keeps the Triple Crown, and Chono vows to hunt him down."
+4,chono1132,Beating Tenryu,"Chono takes the Triple Crown, and Tenryu praises him."
+4,chono7134,Loss to Ogawa,"Ogawa wins, and Chono insists he was the better man."
+4,chono7133,Conquering ZERO-ONE,"Chono beats Ogawa, completing his conquest of ZERO-ONE."
+4,chono0133,Loss to Misawa,"Misawa wins, and Chono calls it a loss to himself and a new beginning."
+4,chono0132,Beating Misawa,"Chono beats Misawa, who promises to pay him back many times over."
+4,chono6142,President Chono,"Chono wins 95% of the series and becomes president of NJPW, vowing to change Japanese wrestling."
+4,chono114,Ending 2: BATT and Tenryu,Ending 2 (AJPW route): Chono declares himself the champion and vows to lead the business.
+4,chono714,Ending 5: ZERO-ONE,Ending 5 (ZERO-ONE route): Chono vows to make his ideal of pro wrestling real.
+4,chono014,Ending 1: Dream Match,Ending 1 (Misawa route): Chono vows to keep the fans dreaming and make wrestling true entertainment.
+4,chono615,Ending 4: President Chono,Ending 4 (president route): President Chono vows to charge down the path he believes in for the fans.
+4,chono000b,"Chapter Menu, Page 3",Unused developer chapter menu: jumps to the president and ZERO-ONE scenes and Endings 4 and 5.
+4,chono000a,"Chapter Menu, Page 2","Unused developer chapter menu: jumps to chapter 13, the BATT, Takada, Choshu, Flair and NOAH scenes and Endings 1-3."
+4,chono000,"Chapter Menu, Page 1",Unused developer chapter menu: jumps to chapters 1-12.
+5,mutou001,Joining NJPW,"Mutoh drifts into NJPW on a whim, is terrified by Sakaguchi and Yamamoto, and survives trainee life alongside Chono and Hashimoto."
+5,mutou002,First Florida Tour,"Eight months after his debut Mutoh tours Florida, discovers the fun of self-produced wrestling, idolizes Flair, and is reluctantly called home."
+5,mutou003,Homecoming vs. Fujinami,"Back in Japan with an Inoki-designed gimmick, Mutoh prepares for his first homecoming match against Fujinami, who vows to crush him from the start."
+5,mutou0030,Match: vs. Fujinami,Singles match against Tatsumi Fujinami; a win adds a point to the story score.
+5,mutou0032,Lost to Fujinami,Mutoh lost but is happy with the match and says Fujinami is within range next time.
+5,mutou0031,Beat Fujinami,"Mutoh won, and a surprised Fujinami admits he has grown but still has soft spots."
+5,mutou004,Fighting the UWF,"Angered by the UWF shoot style, Mutoh teams with Koshinaka against Maeda and Takada for the vacant IWGP tag titles to prove what wrestling should be."
+5,mutou0040,Match: vs. Maeda & Takada,Mutoh and Koshinaka face Maeda and Takada for the vacant IWGP tag titles; a win adds a point.
+5,mutou0042,Lost to Maeda & Takada,"Mutoh lost and is frustrated, vowing it won't end like this after Maeda calls him pretty good."
+5,mutou0041,Beat Maeda & Takada,"Mutoh and Koshinaka won against predictions, and Maeda promises payback one on one."
+5,mutou005,The Great Muta vs. Flair,"On his second US tour Mutoh becomes The Great Muta, a star heel, and finally challenges Ric Flair for the NWA title."
+5,mutou0050,Match: Muta vs. Flair,"The Great Muta challenges Ric Flair for the NWA title; a win adds a point, but the story continues the same either way."
+5,mutou006,Tag Champions with Chono,"Back home Mutoh and Chono win the IWGP tag titles from Hashimoto and Saito, and must defend them against Hase and Sasaki."
+5,mutou0060,Match: vs. Hase & Sasaki,Mutoh and Chono defend the IWGP tag titles against Hase and Sasaki; a win adds a point.
+5,mutou0062,Lost the Tag Titles,"Hase and Sasaki take the IWGP tag belts, and Mutoh vows the loss is just a new start."
+5,mutou0061,Tag Titles Defended,Mutoh and Chono keep the IWGP tag belts after an incredible match.
+5,mutou007,Teaming with Hase,"Riding a hot streak after beating Choshu, Mutoh teams with former enemy Hase to challenge the Steiner Brothers for the IWGP tag titles."
+5,mutou0070,Match: vs. The Steiners,Mutoh and Hase challenge Rick and Scott Steiner for the IWGP tag titles; a win adds a point.
+5,mutou0072,Lost to the Steiners,Mutoh and Hase fall short of the titles but find great chemistry as a team.
+5,mutou0071,Beat the Steiners,"Mutoh and Hase win the IWGP tag titles, and Mutoh says he won't hand the spot back to Sasaki."
+5,mutou008,Muta Mists Inoki,"Taunted by Choshu, Mutoh turns into Muta mid-match, runs wild and sprays poison mist on Inoki; the story score decides what follows."
+5,mutou0088,Drawing the Line,"With the Muta incident behind him, Mutoh rides his good form toward an IWGP title shot (score under 10)."
+5,mutou309,Inoki Wants Muta,"The furious Inoki demands a match with Muta during his retirement countdown, setting up the dream match Inoki vs. The Great Muta (score 10 or more)."
+5,mutou0089,Norton for a Title Shot,"Mutoh, confident and in form, faces Scott Norton with a shot at the IWGP heavyweight title at stake."
+5,mutou3090,Match: Muta vs. Inoki,Bonus match: The Great Muta against Antonio Inoki; the result changes nothing and adds no points.
+5,mutou0080,Match: vs. Norton,"Singles match against Scott Norton for an IWGP title shot; a win adds a point and leads to the title match against Hashimoto, a loss to a slump."
+5,mutou3091,After the Inoki Match,"An unsatisfied Inoki offers a rematch anytime, and Mutoh, having learned a lot, moves on toward the IWGP title."
+5,mutou0082,Lost to Norton,Norton crushed Mutoh and says he will face him next as champion after beating Hashimoto.
+5,mutou0081,Beat Norton,Mutoh earned his title shot and declares Hashimoto's IWGP belt is his.
+5,mutou009,Slump and Comeback,"Shattered by the Norton loss, Mutoh slumps, takes leave, returns for the fans and gets a surprise IWGP title match against Hashimoto."
+5,mutou409,Hashimoto Grudge Match,"On a roll after beating Norton, Mutoh bloodies Hashimoto in a non-title warm-up, then challenges him for the IWGP title."
+5,mutou0090,Match: Comeback vs. Hashimoto,Mutoh challenges Shinya Hashimoto for the IWGP heavyweight title on his comeback; a win adds a point.
+5,mutou4090,Match: IWGP vs. Hashimoto,Mutoh challenges Shinya Hashimoto for the IWGP heavyweight title after their grudge warm-up; a win adds a point.
+5,mutou0092,Hashimoto Retains,Hashimoto keeps the IWGP title and tells Mutoh they are not done.
+5,mutou0091,IWGP Champion,"Mutoh ends Hashimoto's record defense streak, apologizes to the fans for worrying them, and promises a new Keiji Mutoh."
+5,mutou4092,Hashimoto Retains Again,"Hashimoto keeps the title, but Mutoh feels he had the upper hand and that the belt will be his sooner or later."
+5,mutou4091,Champion at Full Speed,Mutoh takes the IWGP title from Hashimoto in the middle of his record streak.
+5,mutou010,Eight Broken Teeth,"Mutoh reflects that the war with Hashimoto, which cost him eight teeth, brought him fully back to himself."
+5,mutou0108,NJPW vs. UWF International,"After winning the G1, Mutoh must face UWF International's Nobuhiko Takada in an interpromotional summit match where only winning counts."
+5,mutou0100,Match: vs. Takada,Mutoh faces Nobuhiko Takada with NJPW's pride against UWF International on the line; a win adds a point.
+5,mutou0102,Lost to Takada,Takada beats the top man of NJPW and says what matters is to keep winning.
+5,mutou0101,Beat Takada,Mutoh wins the crucial interpromotional match and is simply relieved after the pressure.
+5,mutou011,Muta vs. Liger,"After a later loss to Takada leaves him adrift, Mutoh rediscovers fun as Muta and gets the long-cancelled dream match with Jushin Thunder Liger."
+5,mutou0110,Match: Muta vs. Liger,The Great Muta faces Jushin Thunder Liger in a dream match two years in the making; a win adds a point.
+5,mutou0112,Muta Loses to Liger,The beaten Muta rampages through the backstage area with poison mist.
+5,mutou0111,Muta Beats Liger,"The victorious Muta still runs wild backstage, while Liger is praised for shining."
+5,mutou012,Boss of nWo,"Chono brings Muta into nWo, then is injured, leaving Mutoh as boss; he plans to rebuild the group, and the story score decides his first fight."
+5,mutou0128,nWo vs. Sasaki,"Facing pushback, Mutoh targets Kensuke Sasaki, leader of the NJPW regulars, in a title match to prove his strength as boss (score under 15)."
+5,mutou513,Recruiting Kojima,"Mutoh names Satoshi Kojima as an nWo recruit, and Kojima demands Mutoh prove himself in the ring first (score 15 or more)."
+5,mutou0120,Match: vs. Sasaki,"Singles title match against Kensuke Sasaki to unite nWo behind its boss; a win adds a point, and the story continues the same either way."
+5,mutou5130,Match: vs. Kojima,"Singles match against Satoshi Kojima to win him over to nWo; a win adds a point, and the story continues the same either way."
+5,mutou013,Chono Glares Back,"After the brutal Sasaki match, the returning Chono stares Mutoh down from the crowd."
+5,mutou5131,"Kojima Joins, Chono Returns","Mutoh brings Kojima into the fold, and the returning Chono stares him down from the crowd."
+5,mutou0138,Team 2000 vs. nWo,"Chono forms Team 2000, Mutoh humiliates him in his comeback match, and the two meet to decide the leader of NJPW's black army."
+5,mutou0130,Match: vs. Chono,Black army unification match against Masahiro Chono; this result decides which of the three final arcs you play.
+5,mutou0132,Lost to Chono,Chono wins the black war and Mutoh accepts total defeat; the story score then picks the BATT or the AJPW route.
+5,mutou0131,Beat Chono,"Mutoh wins the unification match but has pushed his bad knee past its limit, leading to the farewell route."
+5,mutou014,BATT vs. Kawada,"A year later Mutoh returns with a shaved head and his unit BATT, feuds with Team 2000 and is sent to AJPW to face Toshiaki Kawada."
+5,mutou114,Joining All Japan,"After a disillusioning WCW run, Mutoh leaves NJPW for AJPW and debuts against Taiyo Kea to show his Pro Wrestling LOVE."
+5,mutou214,Farewell to New Japan,"His knees ruined, Mutoh resigns from NJPW, says goodbye to Chono, and challenges Genichiro Tenryu for the title of Mr. Pro Wrestling."
+5,mutou0140,Match: vs. Kawada,Singles match against Toshiaki Kawada at AJPW's Budokan show; a win adds a point.
+5,mutou1140,Match: vs. Kea,"Mutoh's AJPW debut, a singles match against Taiyo Kea; the result only changes the next scene."
+5,mutou2140,Match: vs. Tenryu,Singles match against Genichiro Tenryu for the name Mr. Pro Wrestling; the result only changes the next scene.
+5,mutou0142,Lost to Kawada,"Kawada wins in a daze, and Mutoh decides he wants him in BATT and vows to change NJPW."
+5,mutou0141,Beat Kawada,"Mutoh praises King's Road wrestling and jokes about bringing Kawada, Tenryu and President Tomoko into BATT."
+5,mutou1142,Lost to Kea,"Kea credits luck, and Mutoh vows to carry on and enlarge Baba's King's Road wrestling."
+5,mutou1141,Beat Kea,Mutoh wins his AJPW debut but says he has yet to earn the King's Road.
+5,mutou2142,Lost to Tenryu,"Tenryu keeps his name, Mutoh's knees are numb, and he heads off to ask Antonio Inoki for his next match."
+5,mutou2141,Beat Tenryu,Mutoh wins but gives the name Mr. Pro Wrestling back to Tenryu and keeps his next plan secret.
+5,mutou015,vs. Nagata & Akiyama,"Yuji Nagata calls Mutoh a bald old eyesore and brings in NOAH's Jun Akiyama, so Mutoh and Hase take them on at the 50th anniversary show."
+5,mutou115,Kokushi Muso Is Born,"Mutoh recruits Jinsei Shinzaki to reform AJPW and debuts his third persona, Kokushi Muso, against Hakushi at the Sendai show."
+5,mutou215,Inoki's Farewell Gift,"Inoki books Mutoh and Hase against Hashimoto and Shinya Ogawa at the Osaka Dome, while Mutoh's painkillers stop working."
+5,mutou0150,Match: vs. Nagata & Akiyama,Mutoh and Hase face Yuji Nagata and Jun Akiyama; the result only changes the next scene.
+5,mutou1150,Match: Kokushi Muso vs. Hakushi,Kokushi Muso takes on Hakushi (Jinsei Shinzaki); the result only changes the next scene.
+5,mutou2150,Match: vs. Hashimoto & Ogawa,Mutoh and Hase face Shinya Hashimoto and Naoya Ogawa in the Dome main event; the result only changes the next scene.
+5,mutou0152,Lost to Nagata & Akiyama,"The young pair win, and Mutoh confides to Hase that he may need a stage beyond NJPW."
+5,mutou0151,Beat Nagata & Akiyama,"Mutoh and Hase teach the youngsters a lesson, and Mutoh says he'll take on anyone from NOAH."
+5,mutou1152,Kokushi Muso Loses,"Hakushi stays silent after winning, and Mutoh calls the first step of his AJPW reform a success."
+5,mutou1151,Kokushi Muso Wins,The victorious Kokushi Muso says nothing to the reporters.
+5,mutou2152,Lost to Hashimoto & Ogawa,"Hashimoto and Ogawa praise Mutoh, who asks Hase to set up one last match while his knees still work."
+5,mutou2151,Beat Hashimoto & Ogawa,"Mutoh and Hase win, and Mutoh announces their team ends today."
+5,mutou016,Leaving New Japan,"Mutoh leaves NJPW, and Tenryu demands an entrance exam: a Triple Crown match against Mutoh before AJPW will accept him."
+5,mutou116,Kojima Chases Mutoh,"Satoshi Kojima quits NJPW to hunt Mutoh in AJPW and demands Muta, who comes back stronger with King's Road wrestling."
+5,mutou216,The Last Match,"Mutoh announces a one-match self-produced show at Korakuen Hall against a mystery opponent, with Chono and Hashimoto in his corner."
+5,mutou0160,Match: vs. Tenryu,Triple Crown entrance exam against Genichiro Tenryu; the result only changes the next scene.
+5,mutou1160,Match: Muta vs. Kojima,The Great Muta faces Satoshi Kojima; the result only changes the next scene.
+5,mutou2160,Match: vs. Misawa,"Mutoh's final match, a dream match against Mitsuharu Misawa; the result only changes the next scene."
+5,mutou0162,Passed by Tenryu,"Tenryu wins but passes Mutoh anyway, and Mutoh joins AJPW, followed by Kojima, Kashin and others from NJPW."
+5,mutou0161,Exam Passed,"Mutoh beats Tenryu, falls for AJPW and declares war on NOAH, ZERO-ONE and NJPW."
+5,mutou1162,Kojima Wins,"Kojima vows to finish Mutoh off, joins AJPW, and Mutoh accepts him as his heir."
+5,mutou1161,Muta Beats Kojima,Muta tells Kojima to come back when he's ready.
+5,mutou2162,"Misawa Wins, Mutoh Retires","Misawa wins the dream match, Chono, Hashimoto and Hase carry Mutoh around the ring, and he retires by fax."
+5,mutou2161,Mutoh Beats Misawa,"Mutoh wins the dream match and thanks Misawa and the fans, saying the result doesn't matter."
+5,mutou017,Ending: President Mutoh,"BATT route ending: three days into his job as president of All Japan, Mutoh vows to spread Pro Wrestling LOVE."
+5,mutou117,Ending: King's Road Reformer,"AJPW route ending: two years on, Mutoh becomes AJPW president, brings it back to TV and keeps running as president and wrestler."
+5,mutou217,Ending: The Mutoh Dojo,"Farewell route ending: retired with artificial knees, Mutoh runs a wrestling school with Hase as principal."
+5,mutou000b,"Chapter Menu, Page 3",Developer chapter-select menu (page 3): jumps to the late branch chapters; not reached in normal play.
+5,mutou000a,"Chapter Menu, Page 2",Developer chapter-select menu (page 2): jumps to chapters 13-17 and the AJPW branch; not reached in normal play.
+5,mutou000,"Chapter Menu, Page 1",Developer chapter-select menu (page 1): jumps to chapters 1-12; not reached in normal play.
+6,sakuraba001,The King's Last Day,"July 14, 2029: on his sixtieth birthday, the man who proved pro wrestlers are strong is called to the ring for his retirement match."
+6,sakuraba002,Quitting College,"Summer 1992, 37 years earlier: Sakuraba tells a shocked junior he has quit the amateur wrestling club and college to become a pro wrestler."
+6,sakuraba003,First Spar at U-Inter,"At the U-Inter dojo Sakuraba is beaten in his first spar by Minato, then Anjo takes a liking to him and asks for a spar of his own."
+6,sakuraba004,Who Will Raise Him?,Minato and Anjo stayed up all night arguing over who would train the rookie and ask Sakuraba who he thinks won; his answer is only flavour.
+6,sakuraba0040,Guessing Minato,Minato is pleased Sakuraba guessed him; the real decision comes next.
+6,sakuraba0041,Guessing Anjo,Anjo grumbles about the half-hearted 'I guess?'; the real decision comes next.
+6,sakuraba0042,Choose a Mentor,"The two couldn't settle it, so Sakuraba must choose: Minato or Anjo as his mentor decides the whole first half of the story."
+6,sakuraba00420,Quick Finish or Sobat,"Asked to explain, Minato and Anjo demonstrate their styles (a quick takedown finish versus a crowd-pleasing rolling sobat), and Sakuraba chooses again."
+6,sakuraba00421,Minato's Student,"Sakuraba chooses Minato, who hands him a training menu at once; this starts the Minato route."
+6,sakuraba00422,Anjo's Student,"Sakuraba chooses Anjo, who promises to go all out raising him; this starts the Anjo route."
+6,sakuraba105,Weekly Matches Begin,"Two weeks into Minato's training, Anjo shows off his own pupil Takayama, and the mentors set weekly matches between their students, starting now."
+6,sakuraba605,Wrestle Master's Match,"Two weeks into Anjo's training, Sakuraba learns Minato took Kanehara as his pupil, and the students' weekly matches start right away."
+6,sakuraba_gm02,Dojo Match vs. Takayama,15-minute dojo match against Anjo's pupil Takayama; the result changes the aftermath scene and a win adds 1 to the story score.
+6,sakuraba_gm600,Dojo Match vs. Kanehara,15-minute dojo match against Minato's pupil Kanehara; the result changes the aftermath scene and a win adds 1 to the story score.
+6,sakuraba1051,Lost to Takayama,Minato scolds Sakuraba for a half-baked loss and tells him to replay every step of the match and store it in his 'drawer'.
+6,sakuraba1050,Beat Takayama,"Sakuraba wins, but Minato promptly teaches Takayama his weak spots and tells Sakuraba to memorise every step in his 'drawers'."
+6,sakuraba6051,Lost to Kanehara,Anjo scolds Sakuraba for a half-baked loss and tells him to replay every step of the match and store it in his 'drawer'.
+6,sakuraba6050,Beat Kanehara,After the win Anjo asks why Sakuraba got punched so much and whether he dislikes punching people in the face; the answer is only flavour.
+6,sakuraba106,Takada Returns,"Three months on, U-Inter ace Takada returns from injury, notices Sakuraba's guard-position triangle choke, and orders a match against Minato on the spot."
+6,sakuraba606,Takada Returns,"Three months on, U-Inter ace Takada returns from injury, notices Sakuraba's guard-position triangle choke, and orders a match against Anjo on the spot."
+6,sakuraba60500,Can He Punch?,Anjo calls it a fork in the road for Sakuraba as a wrestler and leaves him wondering whether he can punch Kanehara in the face.
+6,sakuraba_gm04,Test Match vs. Minato,"15-minute test match against Minato for Takada; the story continues the same either way, a win adds 1 to the score."
+6,sakuraba_gm601,Test Match vs. Anjo,"15-minute test match against Anjo for Takada; the story continues the same either way, a win adds 1 to the score."
+6,sakuraba1060,Debut at the Budokan,"Takada muses about a mask for Sakuraba's face, then announces his debut at the Nippon Budokan with Minato preparing him."
+6,sakuraba6010,Debut at the Budokan,"Takada muses about a mask for Sakuraba's face, then announces his debut at the Nippon Budokan with Anjo preparing him."
+6,sakuraba107,Debut Day,"August 13, debut day against Orto at the Budokan, with Anjo and Takayama in his corner; how Sakuraba answers the call is only flavour."
+6,sakuraba607,Debut Day,"August 13, debut day against Orto at the Budokan, with Minato and Kanehara in his corner; how Sakuraba answers the call is only flavour."
+6,sakuraba1070,Minato's Send-Off,"Minato, who can't be in his corner, tells him to just have a good match."
+6,sakuraba6070,Anjo's Send-Off,"Anjo, who can't be in his corner, tells him to win or carve his fight into the fans' hearts."
+6,sakuraba_gm05,Debut vs. Orto,Debut match against Still Orto at the Budokan; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba_gm602,Debut vs. Orto,Debut match against Still Orto at the Budokan; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba10701,Debut Defeat,"Sakuraba loses his debut and cries; Minato's message says to put it in the drawer for losses, but he vows to carry the feeling."
+6,sakuraba10700,First Win,Sakuraba wins his debut and hears Minato skipped his own warm-up to watch and roared when the opponent tapped.
+6,sakuraba60701,Debut Defeat,"Sakuraba loses his debut and cries; Anjo's message says to put it in the drawer for losses, but he vows to carry the feeling."
+6,sakuraba60700,First Win,Sakuraba wins his debut and hears Anjo skipped his own warm-up to watch and crossed himself when the opponent tapped.
+6,sakuraba108,Facing a Junior,"October 1994, 14 months after his debut: his next opponent is Yamamori, a junior Minato has been training with all of Sakuraba's weak spots."
+6,sakuraba608,Facing a Junior,"October 1994, 14 months after his debut: his next opponent is Yamamori, a junior Anjo has been training with all of Sakuraba's weak spots."
+6,sakuraba_gm07,Match vs. Yamamori,Match against dojo junior Yamamori; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba_gm604,Match vs. Yamamori,Match against dojo junior Yamamori; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba1081,Minato Wants a Match,"After losing to his junior, Takada announces Minato will face Sakuraba at next month's Budokan; accepting or refusing ends the same way."
+6,sakuraba1080,Graduation Present,"After beating Yamamori, Takada declares Sakuraba a full-fledged wrestler and books Minato vs. Sakuraba at the Budokan; either answer leads on."
+6,sakuraba6081,Anjo Wants a Match,"After losing to his junior, Takada announces Anjo will face Sakuraba at next month's Budokan; accepting or refusing ends the same way."
+6,sakuraba6080,Graduation Present,"After beating Yamamori, Takada declares Sakuraba a full-fledged wrestler and books Anjo vs. Sakuraba at the Budokan; either answer leads on."
+6,sakuraba10810,Must Beat Minato,Sakuraba realises Minato asked for the match out of kindness and resolves to beat him.
+6,sakuraba10811,Takada's Rebuke,Takada calls him an idiot for refusing and tells him to repay Minato by fighting like his life depends on it.
+6,sakuraba10800,A High Hurdle,Sakuraba's joy at graduating fades: he must surpass Minato at the Budokan.
+6,sakuraba10801,Takada's Rebuke,Takada says he decides what is too soon and tells Sakuraba to go for broke.
+6,sakuraba60810,Must Beat Anjo,Sakuraba realises Anjo asked for the match out of kindness and resolves to beat him.
+6,sakuraba60811,Takada's Rebuke,Takada calls him an idiot for refusing and tells him to repay Anjo by fighting ready to die.
+6,sakuraba60800,A High Hurdle,Sakuraba's joy at graduating fades: he must surpass Anjo at the Budokan.
+6,sakuraba60801,Takada's Rebuke,Takada says he decides what is too soon and tells Sakuraba to give it everything.
+6,sakuraba109,One Month Later,"One month later, at the Nippon Budokan."
+6,sakuraba609,One Month Later,"One month later, at the Nippon Budokan."
+6,sakuraba_gm08,Budokan vs. Minato,Singles match against his mentor Minato; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba_gm605,Budokan vs. Anjo,Singles match against his mentor Anjo; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba1091,Beaten by Minato,"Sakuraba leaves on a stretcher, but Anjo says Minato is thrilled to have found a successor, and a big announcement is coming."
+6,sakuraba1090,Beat Minato,Sakuraba wins and fighting-magazine reporter Kansai asks if he leans toward real fighting; the answer is only flavour.
+6,sakuraba6091,Beaten by Anjo,"Sakuraba leaves on a stretcher, but Minato says Anjo is thrilled to have found a successor, and a big announcement is coming."
+6,sakuraba6090,Beat Anjo,Sakuraba wins and fighting-magazine reporter Kansai asks if he leans toward real fighting; the answer is only flavour.
+6,sakuraba110,U-Inter Goes Ultimate,"U-Inter takes on the Ultimate fighters: Anjo storms a jiu-jitsu dojo and loses, Minato steps back to coach, and Sakuraba is matched with the 'Phantom'."
+6,sakuraba10900,A Reporter's Hunch,"Kansai hints Minato is about to make a big announcement; Minato won't see Sakuraba, and the next day's paper is a shock."
+6,sakuraba610,War with NJPW,NJPW's Choshu declares war on U-Inter; Sakuraba and Kanehara are booked against Takizawa and Nagata in the first interpromotional tag.
+6,sakuraba60900,A Reporter's Hunch,"Kansai hints Anjo and Takada are about to make a big announcement; Anjo won't see Sakuraba, and the next day's paper is a shock."
+6,sakuraba111,The Phantom Appears,"July 14, 1996: Sakuraba carries pro wrestling's banner into an anything-goes fight against Kama, the phantom of the Ultimate."
+6,sakuraba611,First Shots of the War,"October 1995: Sakuraba and Kanehara, heavy underdogs, lead U-Inter's charge against NJPW's Takizawa and Nagata."
+6,sakuraba_gm09,Ultimate vs. Kama,"Fight against Kama: a win leads straight to the retirement-match ending, a loss continues the story with Orihara; a win adds 1 to the score."
+6,sakuraba_gm606,Tag vs. Nagata & Takizawa,"Sakuraba and Kanehara against NJPW's Yuji Nagata and Takizawa; the result only changes one short scene, a win adds 1 to the score."
+6,sakuraba1110,Lost to Kama,Sakuraba sinks into despair after losing to Kama; Kansai urges him to learn from it and reveals his next opponent.
+6,sakuraba112,Born That Day,"Beating Kama made him a true pro wrestler; back in 2029, Sakuraba recalls his career and heads out to face the son of 'that man'."
+6,sakuraba6061,Lost to NJPW,"Sakuraba, Kanehara, Anjo and even Takada all lose to NJPW."
+6,sakuraba6060,"Won, but U-Inter Lost","Sakuraba and Kanehara win, but Anjo and Takada lose to NJPW."
+6,sakuraba212,Orihara's Taunts,Heel Masao Orihara barges into the locker room before their match and tells Sakuraba to quit the business; the reply is only flavour.
+6,sakuraba_gm10,Retirement vs. Rickson Jr.,Retirement match against Rickson Gracie Jr.; the ending follows whatever the result.
+6,sakuraba612,Facing Kama,"Kansai reveals the next opponent, then on July 14, 1996 Sakuraba carries U-Inter's name into an anything-goes fight against the phantom Kama."
+6,sakuraba2120,Called a Showman,Orihara laughs off the insult and says Sakuraba can't even put on a show.
+6,sakuraba2121,Sorry I Lost,Orihara says losing is a pro wrestler's job and Sakuraba doesn't even know how to lose well.
+6,sakuraba1120,"Ending: Thank You, Wrestling","Ending (Minato route): Sakuraba's career closes with his retirement match against Rickson Gracie Jr. 'Thank you, pro wrestling.'"
+6,sakuraba_gm607,Ultimate vs. Kama,"Fight against Kama: a win leads straight to the retirement-match ending, a loss continues the story with Orihara; a win adds 1 to the score."
+6,sakuraba2122,Takada's Permission,"Orihara reveals Takada himself told him to crush Sakuraba, and promises to show how a pro wrestler crushes a pro wrestler."
+6,sakuraba713,Orihara's Taunts,"After losing to Kama, Takada books heel Masao Orihara, who barges into the locker room and tells Sakuraba to quit; the reply is only flavour."
+6,sakuraba613,Born That Day,"Beating Kama made him a true pro wrestler; back in 2029, Sakuraba recalls his career and heads out to face the son of 'that man'."
+6,sakuraba_gm11,Match vs. Orihara,"Singles match against Masao Orihara; the result only changes one scene, a win adds 1 to the score."
+6,sakuraba7130,Called a Showman,Orihara laughs off the insult and says Sakuraba can't even put on a show.
+6,sakuraba7131,Sorry I Lost,Orihara says losing is a pro wrestler's job and Sakuraba doesn't even know how to lose well.
+6,sakuraba_gm608,Retirement vs. Rickson Jr.,Retirement match against Rickson Gracie Jr.; the ending follows whatever the result.
+6,sakuraba21221,"Lost, but Something Felt","Sakuraba loses, but Orihara shows him that pro wrestling, win or lose, is a blast for wrestlers and fans."
+6,sakuraba21220,"Won, but Something Felt","Sakuraba wins, and Orihara shows him that pro wrestling done right is a blast for wrestlers and fans."
+6,sakuraba7132,Takada's Permission,Orihara reveals Takada himself told him to crush Sakuraba.
+6,sakuraba6130,"Ending: Thank You, Wrestling","Ending (Anjo route): Sakuraba's career closes with his retirement match against Rickson Gracie Jr. 'Thank you, pro wrestling.'"
+6,sakuraba213,Takada or Orihara?,"Takada announces U-Inter is folding; he invites Sakuraba to hunt fighters in vale tudo, Orihara to master pro wrestling with him. Sakuraba must choose."
+6,sakuraba_gm713,Match vs. Orihara,"Singles match against Masao Orihara; the result only changes one scene, a win adds 1 to the score."
+6,sakuraba2130,Following Takada,Takada takes charge of Sakuraba's life.
+6,sakuraba2131,Going with Orihara,Orihara is thrilled and wants a team name.
+6,sakuraba71321,"Lost, but Something Felt","Sakuraba loses, but Orihara shows him that pro wrestling, win or lose, is a blast for wrestlers and fans."
+6,sakuraba71320,"Won, but Something Felt","Sakuraba wins, and Orihara shows him that pro wrestling done right is a blast for wrestlers and fans."
+6,sakuraba2132,"Goodbye, U-Inter",U-Inter folds and everyone goes their own way; the story then follows Takada or Orihara depending on the earlier choice.
+6,sakuraba714,Takada or Orihara?,"Takada announces U-Inter is folding; he invites Sakuraba to hunt fighters in vale tudo, Orihara to master pro wrestling with him. Sakuraba must choose."
+6,sakuraba414,Tag Team with Orihara,"A month later, training with Orihara, Sakuraba's first tag match is set against Royal Lips: Anjo and Takayama."
+6,sakuraba314,Takada Dojo's First Fight,"A month after opening a dojo with Takada, Sakuraba is entered in the all-styles PRIDE event against ex-Pancrase fighter Venom Lion."
+6,sakuraba7140,Following Takada,Takada takes charge of Sakuraba's life.
+6,sakuraba7141,Going with Orihara,Orihara is thrilled and wants a team name.
+6,sakuraba_gm414,Tag vs. Royal Lips,"Sakuraba and Orihara against Anjo and Takayama; the result only changes one short scene, a win adds 1 to the score."
+6,sakuraba_gm300,PRIDE vs. Venom Lion,"Fight against Venom Lion at PRIDE; the result only changes one short scene, a win adds 1 to the score."
+6,sakuraba7142,"Goodbye, U-Inter",U-Inter folds and everyone goes their own way; the story then follows Takada or Orihara depending on the earlier choice.
+6,sakuraba4141,Tag Team Loss,Sakuraba and Orihara lose; Sakuraba wonders if he moved the crowd.
+6,sakuraba4140,Tag Team Win,Sakuraba and Orihara win their first tag match before a crowd unlike U-Inter's.
+6,sakuraba3141,Knocked Out,"Sakuraba loses, knocked out while trying to play to the crowd."
+6,sakuraba3140,The Fight I Wanted,Sakuraba wins the real fight he wanted.
+6,sakuraba715,Takada Dojo's First Fight,"A month after opening a dojo with Takada, Sakuraba is entered in the all-styles PRIDE event against ex-Pancrase fighter Venom Lion."
+6,sakuraba415,Touring the Indies,"Anjo and Takayama call the match a letdown; after touring the indies with Orihara, Onita phones a major promotion for Sakuraba. Where he goes is decided here."
+6,sakuraba315,PRIDE Main Event: Silva,"Years on, the Gracie-beating star of PRIDE wants to be a pro wrestler who can wrestle even a broom, and headlines against Wanderlei Silva."
+6,sakuraba_gm715,PRIDE vs. Venom Lion,"Fight against Venom Lion at PRIDE; the result only changes one short scene, a win adds 1 to the score."
+6,sakuraba556,Joining NJPW,Chono grudgingly takes in the U-Inter rebel on Onita's word; Sakuraba asks to face Chono and must first beat Kendo Kashin.
+6,sakuraba536,Joining NJPW,Chono takes in the newcomer on Onita's word; Sakuraba asks to face Chono and must first beat Kendo Kashin.
+6,sakuraba_gm301,PRIDE vs. Silva,Main event against Wanderlei Silva; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba7151,Knocked Out,"Sakuraba loses, knocked out while trying to play to the crowd."
+6,sakuraba7150,The Fight I Wanted,Sakuraba wins the real fight he wanted.
+6,sakuraba_gm556,NJPW vs. Kendo Kashin,Match against Kendo Kashin; the story continues the same whatever the result.
+6,sakuraba_gm536,NJPW vs. Kendo Kashin,Match against Kendo Kashin; the story continues the same whatever the result.
+6,sakuraba3151,Lost to Silva,Kansai worries about the toll of wrestling for the crowd in real fights; Sakuraba refuses to balance his dreams.
+6,sakuraba3150,Beat Silva,Kansai understands Sakuraba's aim but worries about the toll; Sakuraba refuses to balance his dreams.
+6,sakuraba716,PRIDE Main Event: Silva,"Years on, the Gracie-beating star of PRIDE wants to be a pro wrestler who can wrestle even a broom, and headlines against Wanderlei Silva."
+6,sakuraba5560,Chono Runs In,"After the Kashin match, Chono charges out of the locker room into the ring."
+6,sakuraba5360,Chono Runs In,"After the Kashin match, Chono charges out of the locker room into the ring."
+6,sakuraba316,Beat Pro Wrestling,Kansai's magazine cover story urges Sakuraba to fight pro wrestling itself and give birth to it anew.
+6,sakuraba_gm716,PRIDE vs. Silva,Main event against Wanderlei Silva; the result changes the next scene and a win adds 1 to the score.
+6,sakuraba_gm5560,NJPW vs. Chono,Impromptu match against Masahiro Chono: win or lose decides which NJPW ending you see.
+6,sakuraba_gm5360,NJPW vs. Chono,Impromptu match against Masahiro Chono: win or lose decides which NJPW ending you see.
+6,sakuraba_gm302,PRIDE vs. Mirko CroCop,Fight against Mirko CroCop; the story continues the same whatever the result.
+6,sakuraba7161,Lost to Silva,Kansai worries about the toll of wrestling for the crowd in real fights; Sakuraba refuses to balance his dreams.
+6,sakuraba7160,Beat Silva,Kansai understands Sakuraba's aim but worries about the toll; Sakuraba refuses to balance his dreams.
+6,sakuraba558,"Ending: NJPW, Lost to Chono","Ending (NJPW, Anjo version): Chono signs Sakuraba after a loss that still won the crowd, and he retires in 2029 thinking pro wrestling was fun."
+6,sakuraba557,"Ending: NJPW, Beat Chono","Ending (NJPW, Anjo version): having beaten Chono, Sakuraba vows to climb NJPW from the bottom, and retires in 2029 thinking pro wrestling was fun."
+6,sakuraba538,"Ending: NJPW, Lost to Chono","Ending (NJPW, Minato version): Chono signs Sakuraba after a loss that still won the crowd, and he retires in 2029 thinking pro wrestling was fun."
+6,sakuraba537,"Ending: NJPW, Beat Chono","Ending (NJPW, Minato version): having beaten Chono, Sakuraba vows to climb NJPW from the bottom, and retires in 2029 thinking pro wrestling was fun."
+6,sakuraba317,Retirement: Rickson Tag,His junior asks to join the Takada Dojo; in 2029 Sakuraba's retirement match pits him and his son against Rickson Gracie and son.
+6,sakuraba717,Beat Pro Wrestling,Kansai's magazine cover story urges Sakuraba to fight pro wrestling itself and give birth to it anew.
+6,sakuraba_gm303,Retirement Tag Match,Sakuraba & Sakuraba Jr. against Rickson Gracie & Rickson Gracie Jr.; the ending follows whatever the result.
+6,sakuraba_gm717,PRIDE vs. Mirko CroCop,Fight against Mirko CroCop; the story continues the same whatever the result.
+6,sakuraba3170,Ending: Wrestling Was Fun,"Ending (Takada route from Minato): after the father-and-son tag against the Gracies, 'Pro wrestling sure was fun.'"
+6,sakuraba718,Retirement: Rickson Tag,His junior asks to join the Takada Dojo; in 2029 Sakuraba's retirement match pits him and his son against Rickson Gracie and son.
+6,sakuraba_gm718,Retirement Tag Match,Sakuraba & Sakuraba Jr. against Rickson Gracie & Rickson Gracie Jr.; the ending follows whatever the result.
+6,sakuraba7180,Ending: Wrestling Was Fun,"Ending (Takada route from Anjo): after the father-and-son tag against the Gracies, 'Pro wrestling sure was fun.'"
+6,sakuraba548,Killer Tiger Mask Is Born,"NOAH route: after losing to Akiyama, Misawa makes Sakuraba the fifth Tiger Mask and plans a flashy succession match."
+6,sakuraba_gm548,Tiger Mask Battle Royal,No-time-limit battle royal of Killer Tiger Mask and Tiger Masks I-IV; the ending follows whatever the result.
+6,sakuraba5480,Ending: Killer Tiger Mask,"Ending (NOAH, lost to Akiyama): Killer Tiger Mask retires in 2029 thinking pro wrestling was fun."
+6,sakuraba547,Killer Tiger Mask Is Born,"NOAH route: after beating Akiyama, Misawa signs Killer Tiger Mask, and Sakuraba first wants to settle a score with the Tiger Masks."
+6,sakuraba_gm547,Tiger Mask Battle Royal,No-time-limit battle royal of Killer Tiger Mask and Tiger Masks I-IV; the ending follows whatever the result.
+6,sakuraba5470,Ending: Killer Tiger Mask,"Ending (NOAH, beat Akiyama): Killer Tiger Mask retires in 2029 thinking pro wrestling was fun."
+6,sakuraba546,NOAH Debut vs. Akiyama,"NOAH route: Misawa signs Sakuraba, Jun Akiyama scorns his style, and Sakuraba debuts against him in a mask."
+6,sakuraba_gm546,Masked vs. Akiyama,Killer Tiger Mask against Jun Akiyama; the result picks between two NOAH endings.
+6,sakuraba528,Tigre Is Born,"All Japan route: the masked newcomer loses but wins the crowd, and Mutoh calls for one more match to celebrate."
+6,sakuraba_gm528,Tigre Battle Royal,"Battle royal of Tigre, Mutoh, Orihara, Anjo, Takayama and Onita; the ending follows whatever the result."
+6,sakuraba5280,Ending: Tigre,"Ending (All Japan, lost to Kea): years later, the 'Boss' retires thinking pro wrestling was fun."
+6,sakuraba527,Tigre Is Born,"All Japan route: the masked newcomer thrills the crowd, and Mutoh calls for one more match to celebrate."
+6,sakuraba_gm527,Tigre Battle Royal,"Battle royal of Tigre, Mutoh, Orihara, Anjo, Takayama and Onita; the ending follows whatever the result."
+6,sakuraba5270,Ending: Tigre,"Ending (All Japan, beat Kea): years later, the 'Boss' retires thinking pro wrestling was fun."
+6,sakuraba526,Joining All Japan,All Japan route: Mutoh takes Sakuraba on Onita's word and hands him a mask.
+6,sakuraba_gm526,Tigre vs. Taiyo Kea,"Masked Tigre against Taiyo Kea; the result picks between two All Japan endings, a win adds 1 to the score."
+6,sakuraba518,Lost to Royce,"vale tudo route: everyone praises his loss to Royce Gracie, and in 2029 his retirement match is a tag against Rickson Gracie and son."
+6,sakuraba_gm518,Retirement Tag Match,Sakuraba & Sakuraba Jr. against Rickson Gracie & Rickson Gracie Jr.; the ending follows whatever the result.
+6,sakuraba5180,Ending: Wrestling Was Fun,"Ending (vale tudo route, lost to Royce): after the father-and-son tag, 'Pro wrestling sure was fun.'"
+6,sakuraba517,Ending: Beat the Gracies,"Ending (vale tudo route, beat Royce): the Gracies make Sakuraba their target, and he retires thinking pro wrestling was fun."
+6,sakuraba516,Back with Takada,vale tudo route: Takada welcomes Sakuraba back on Onita's word and books him against Royce Gracie at PRIDE.
+6,sakuraba_gm516,PRIDE vs. Royce Gracie,Fight against Royce Gracie; the result picks between two vale tudo endings.
+6,sakuraba000e,"Chapter Menu, Page 6",Developer chapter menu: jumps to the Anjo-Takada chapters (716-718) and the Anjo-version NJPW chapters (556-558).
+6,sakuraba000d,"Chapter Menu, Page 5",Developer chapter menu: jumps to Anjo-route chapters 609-613 and 713-715.
+6,sakuraba000c,"Chapter Menu, Page 4","Developer chapter menu: jumps to 538, the NOAH chapters 546-548 and Anjo-route chapters 605-608."
+6,sakuraba000b,"Chapter Menu, Page 3","Developer chapter menu: jumps to the vale tudo (516-518), All Japan (526-528) and Minato-version NJPW (536-537) chapters."
+6,sakuraba000a,"Chapter Menu, Page 2","Developer chapter menu: jumps to Minato-route chapters 212-213, the Takada chapters 314-317 and the Orihara chapters 414-415."
+6,sakuraba000,"Chapter Menu, Page 1",Developer chapter menu (not reachable in normal play): jumps to the prologue and Minato-route chapters 001-112.
+7,lyger001,Joining the New Japan Dojo,"Undersized young boy Keiichi Yamada describes his fight to join New Japan, his dojo rivals Sano and Takada, and asks his trainer Fujiwara for a sparring bout."
+7,lyger_gm001,Sparring vs. Fujiwara,"Match: Yamada spars with his trainer Yoshiaki Fujiwara, who promises him a drink if he can take a fall; pick Win or Lose."
+7,lyger0011,A Fall Off Fujiwara,"Yamada takes his first-ever fall off Fujiwara, who calls it a fluke but keeps his promise to take him drinking."
+7,lyger0012,Crushed by Fujiwara,"Fujiwara ties Yamada up with ease, and Yamada vows to keep training with him until he can make his master give up."
+7,lyger002,Fujiwara Leaves for the UWF,Fujiwara leaves for the new UWF and only Takada follows him; Yamada stays loyal to New Japan and faces his senior rival Sano in a 15-minute undercard match.
+7,lyger_gm002,Undercard vs. Sano,"Match: Yamada faces Naoki Sano, a year his senior whom he has never beaten, with Inoki watching from the locker room; pick Win or Lose."
+7,lyger0021,First Win Over Sano,Yamada beats Sano for the first time and Inoki awards both of them a President's Prize for the match.
+7,lyger0022,Another Loss to Sano,"Yamada loses to Sano again, yet Inoki still awards both a President's Prize, and Yamada vows to earn the next one with a win."
+7,lyger003,Kuroneko and the Ishingun Exodus,"Yamada finally beats gatekeeper Black Cat, Choshu's Ishingun walks out on New Japan, and a late-night Inoki tells him the young boys may be the raindrops of a new chance."
+7,lyger004,Young Lion Cup Final,"Inoki launches the Young Lion Cup for the young boys, with prize money and an overseas excursion at stake, and Yamada reaches the final against Keiji Muto."
+7,lyger_gm004,Young Lion Cup Final vs. Muto,"Match: the Young Lion Cup final against rookie heavyweight Keiji Muto, with a million yen at stake; pick Win or Lose."
+7,lyger0041,Young Lion Cup Winner,"Yamada wins the Young Lion Cup and the prize money, but the overseas excursion goes to Muto, and Yamada vows to grow in the New Japan ring."
+7,lyger0042,Muto Takes the Cup,"Yamada loses the final to Muto, who takes the prize and the overseas trip, and accepts that he was simply weaker that day."
+7,lyger005,"Koppo, Funaki and Britain","Yamada trains Koppo with his friend Funaki, rejoins Fujiwara's classroom, goes on excursion to Britain, and Funaki invites him to follow Fujiwara and Maeda to the new UWF."
+7,lyger_gm005,Liverpool vs. Mark Rocco,"Match: Yamada's last match in Britain, in Liverpool, against Commonwealth champion Mark Rocco, the former Black Tiger; pick Win or Lose."
+7,lyger0051,British Middleweight Champion,Yamada beats Rocco for the Middleweight title but gives up the belt at once because he is going home to Japan next week.
+7,lyger0052,No Rematch with Rocco,Yamada loses narrowly to Rocco and leaves Britain regretting he never beat him once.
+7,lyger006,New Japan or the UWF?,"In Liverpool Funaki asks for Yamada's answer: stay with New Japan, or join him and Maeda in the UWF - the scenario's main route choice."
+7,lyger0061,Liger Debuts at the Dome,"New Japan route: Yamada returns at the first Tokyo Dome show as the masked Jushin Thunder Liger, facing veteran Kuniaki Kobayashi."
+7,lyger206,A Mask in the UWF,UWF route: Yamada joins the UWF and asks to wrestle masked as Jushin Thunder Liger; an angry Maeda demands a real-rules sparring match to prove he means it.
+7,lyger_gm006,Return Match vs. Kobayashi,Match: Liger's homecoming debut at the Tokyo Dome against veteran Kuniaki Kobayashi; pick Win or Lose.
+7,lyger_gm206,Sparring vs. Maeda,"Match: a real-rules sparring match against Akira Maeda, who will allow the mask if Yamada beats him; pick Win or Lose."
+7,lyger0062,Liger Wins His Debut,Liger wins his return match and insists to reporters that Keiichi Yamada became the wind of Liverpool.
+7,lyger0063,Liger Loses His Debut,"Liger loses his homecoming match to Kobayashi, apologises to the fans and insists Yamada became the wind of Liverpool."
+7,lyger2060,Maeda Approves the Mask,"Yamada beats Maeda, who keeps his word and names him the UWF's masked man, Jushin Thunder Liger."
+7,lyger2061,Maeda Approves Anyway,"Yamada loses, but Maeda, impressed by his resolve, tells him to make spare masks and names him Jushin Thunder Liger anyway."
+7,lyger007,Title Shot vs. Hase,"Liger gets his first title match, for the IWGP Junior title, against Olympian Hiroshi Hase, who mocks the mask and his amateur skills."
+7,lyger207,First Senior Match vs. Fujiwara,Liger piles up UWF wins and earns his first match against a senior wrestler: his old master Yoshiaki Fujiwara.
+7,lyger_gm007,IWGP Junior Title vs. Hase,Match: Liger challenges champion Hiroshi Hase for the IWGP Junior Heavyweight title; pick Win or Lose.
+7,lyger_gm207,Master vs. Pupil: Fujiwara,Match: Liger faces his master Yoshiaki Fujiwara in the UWF; pick Win or Lose.
+7,lyger0071,First IWGP Junior Title,"Liger's Fujiwara submissions and Koppo beat Hase, winning his first New Japan belt, the IWGP Junior Heavyweight title."
+7,lyger0072,Hase Keeps the Belt,"Hase's technique shuts down Liger's hidden weapons, and Liger vows to win the IWGP Junior belt soon."
+7,lyger2070,Beating the Master,"Liger beats Fujiwara, who scolds him for thanking an enemy and promises revenge."
+7,lyger2071,Fujiwara Still Rules,"Fujiwara beats Liger and calls his work soft, but Liger notices his master drenched in sweat and breathing hard."
+7,lyger008,IWGP Junior League Final,"Sano returns from Mexico, a league decides the IWGP Junior title, and Liger reaches the final, where Wild Pegasus has upset Sano."
+7,lyger208,"RINGS, U-Inter or Pancrase?","The UWF breaks up and Maeda (RINGS), Takada (UWF International) and Funaki (Pancrase) each ask Liger to join their new promotion."
+7,lyger_gm008,League Final vs. Wild Pegasus,"Match: the IWGP Junior league final against Wild Pegasus; either result leads to the same scene, in which Liger wins the title."
+7,lyger209,RINGS: vs. Satake,RINGS route: Liger joins Maeda's worldwide fighting promotion and faces Seidokaikan karate star Masaaki Satake.
+7,lyger309,U-Inter: Main Event vs. Takada,"UWF International route: Liger headlines the year's last big show against U-Inter's ace, his old senior Nobuhiko Takada."
+7,lyger409,Pancrase: vs. Suzuki,"Pancrase route: Liger faces Minoru Suzuki, who beat Funaki the month before, to earn a shot at Funaki."
+7,lyger0081,IWGP Junior Champion,Liger wins the IWGP Junior league and resolves to win juniors the same respect as heavyweights.
+7,lyger_gm209,RINGS Match vs. Satake,Match: Liger vs. karateka Masaaki Satake in RINGS; pick Win or Lose.
+7,lyger_gm309,U-Inter Main Event vs. Takada,Match: Liger vs. Nobuhiko Takada in the U-Inter main event; pick Win or Lose.
+7,lyger_gm409,Pancrase Match vs. Suzuki,Match: Liger vs. Minoru Suzuki in Pancrase; pick Win or Lose.
+7,lyger009,SWS Offer and Otani,"Liger tears up SWS's huge contract offer, and later faces rising star Shinjiro Otani on the night of Tenryu's first New Japan appearance."
+7,lyger2090,Wrestler Beats Karateka,Liger shuts down Satake's strikes and wins as a professional wrestler.
+7,lyger2091,Beaten by Satake,"Satake's heavyweight strikes beat Liger, who refuses to let it end there."
+7,lyger3090,Over the Wall: Takada,"Liger beats his old senior Takada, who promises to win the next one."
+7,lyger3091,Takada Wins Cleanly,"Takada beats Liger but tells him he got goosebumps and now sees him as a rival, not a junior."
+7,lyger4090,Surviving the Mad Fist,"Liger survives Suzuki's palm strikes and ground game to win, savouring Pancrase's pure meritocracy."
+7,lyger4091,Cut Down by Suzuki,"Suzuki beats Liger, who vows not to stand still until he faces Funaki in a big-arena main event."
+7,lyger_gm009,Singles Match vs. Otani,"Match: champion Liger vs. young Shinjiro Otani, just before Tenryu's match; pick Win or Lose."
+7,lyger210,Maeda's Retirement Challenge,"Maeda names Alexander Karelin as his retirement opponent; Liger demands the spot, and Maeda says he gets it only if he beats Karelin."
+7,lyger310,U-Inter vs. New Japan War,"U-Inter, short of money, declares war on New Japan, and Liger, the ungrateful son, faces Shinya Hashimoto, 40 kilos heavier."
+7,lyger410,King of Pancrase Final,"Liger and Funaki meet in the final of the first King of Pancrase tournament, finally keeping their old big-arena promise."
+7,lyger0091,Otani Put Down,"Liger beats Otani, who roars that he will knock Liger flat this year, and Liger welcomes his fire."
+7,lyger0092,Otani's Upset,"Otani beats a fully serious Liger and demands a title match, and Liger vows never to lose to him again."
+7,lyger_gm210,RINGS Match vs. Karelin,"Match: Liger vs. Alexander Karelin; winning earns Liger Maeda's retirement match, losing skips it; pick Win or Lose."
+7,lyger_gm310,Interpromotional War vs. Hashimoto,Match: Liger for U-Inter vs. New Japan's Shinya Hashimoto; pick Win or Lose.
+7,lyger_gm410,King of Pancrase Final vs. Funaki,Match: the King of Pancrase final against Masakatsu Funaki; pick Win or Lose.
+7,lyger010,Dome War: New Japan vs. U-Inter,"New Japan and U-Inter go to all-out war at the Dome, and Liger faces Sano, who now sneers at junior wrestling."
+7,lyger2100,Beating the Strongest Man,Liger beats Karelin and earns the right to face Maeda in his retirement match.
+7,lyger2101,Karelin Too Strong,"Liger loses to Karelin, misses Maeda's retirement match and goes back to square one."
+7,lyger3100,Upset of Hashimoto,"Liger beats Hashimoto, hoping the win gets U-Inter's momentum back."
+7,lyger3101,Hashimoto Wins,"Hashimoto beats Liger, who refuses to blame the weight difference."
+7,lyger4100,First King of Pancrase,"Liger beats Funaki for the first King of Pancrase title, and Funaki promises to come for the belt."
+7,lyger4101,Funaki Takes the Crown,"Funaki beats Liger to become the first King of Pancrase, and the two friends promise a rematch."
+7,lyger_gm010,Dome War vs. Sano,Match: Liger vs. Naoki Sano in the New Japan vs. U-Inter Dome show; pick Win or Lose.
+7,lyger211,Maeda's Retirement Match,"Having beaten Karelin, Liger faces Akira Maeda in Maeda's retirement main event."
+7,lyger212,RINGS Goes Under,"RINGS route: after Maeda retires, RINGS' crowds collapse and the promotion goes bankrupt, leaving Liger wondering what to do next."
+7,lyger3102,U-Inter Collapses,"U-Inter route: the war with New Japan was only a quick shot in the arm, and UWF International collapses."
+7,lyger4102,Leaving Pancrase,Pancrase route: Liger grows to feel Pancrase is too narrow a world and leaves it for a wider stage.
+7,lyger0100,Beating Sano at the Dome,"Liger beats the stronger, U-style Sano with his own brand of pro wrestling."
+7,lyger0101,Lost to Sano at the Dome,"Sano beats Liger completely, and Liger vows their paths will cross again."
+7,lyger_gm211,Retirement Match vs. Maeda,Match: Akira Maeda's retirement match against Liger; either result leads to the end of RINGS; pick Win or Lose.
+7,lyger2120,New Japan or MMA?,"With his promotion gone, Liger chooses between returning to New Japan or going into mixed martial arts."
+7,lyger011,Interpromotional Wars and Muta,"Liger sweeps WAR's juniors, snaps when Aoyagi rips his mask in a mixed-style fight, then gets a singles match with The Great Muta."
+7,lyger2110,Sending Maeda Off,"Liger beats Maeda, who thanks him for the perfect final match and leaves the future of RINGS to him."
+7,lyger2111,Maeda's Last Win,"Liger loses Maeda's retirement match; Maeda says he was barely hanging on, tells Liger he'll be the strongest masked man, and leaves the future of RINGS to him."
+7,lyger2121,Return to New Japan,"Liger returns to a welcoming New Japan, wins the IWGP Junior title again, and the company prepares a big gamble."
+7,lyger213,MMA Challenge: Mirko First,"Liger goes freelance to take Rickson Gracie's head, but Director Ishii demands he first beat K-1's Mirko Cro Cop."
+7,lyger_gm011,Singles Match vs. The Great Muta,"Match: Liger vs. The Great Muta, Muto's painted alter ego; pick Win or Lose."
+7,lyger0140,Unification on the NOAH Mat,Liger enters NOAH's ring as IWGP Junior champion to face GHC Junior champion Marufuji in a title unification match.
+7,lyger_gm213,MMA Fight vs. Mirko Cro Cop,Match: Liger vs. Mirko Cro Cop in MMA - losing means Game Over; pick Win or Lose.
+7,lyger0110,Beating Muta,"Liger beats The Great Muta, who screams threats in broken English, in a real pro-to-pro match."
+7,lyger0111,Muta Wins,"Muta beats Liger and crows that he is No.1, but Liger feels the match was great."
+7,lyger_gm014,IWGP vs. GHC Junior Unification,Match: the junior title unification match against NOAH's champion (the match screen lists Yoshinobu Kanemaru; the story says Marufuji); pick Win or Lose.
+7,lyger2130,Hunter Hunted,Liger beats the pro-wrestler hunter Mirko Cro Cop and earns his fight with Rickson Gracie.
+7,lyger2131,Game Over: Mirko,Losing to Mirko Cro Cop ends the MMA route in a Game Over.
+7,lyger012,Inoki Retires,"Inoki announces his retirement and a tournament to pick his last opponent, and Liger reaches the final against Naoya Ogawa."
+7,lyger0141,Junior Titles Unified,Liger beats Marufuji to unify the IWGP and GHC junior titles and feels it is time to aim higher.
+7,lyger0142,Marufuji Wins,"Marufuji beats Liger, who admits his carelessness, yet still feels it is time for a new step."
+7,lyger214,The Final Fight: Rickson,"Before facing undefeated Rickson Gracie, Liger reflects on his career and hopes to paint the art of fighting on the mat."
+7,lyger2132,Retry Mirko?,"Game Over prompt after losing to Mirko: Retry goes back to the fight, Quit asks for confirmation."
+7,lyger_gm012,Tournament Final vs. Ogawa,Match: the final of Inoki's retirement-opponent tournament against Naoya Ogawa (the packet shows no opponent name); the winner faces Inoki.
+7,lyger015,Japan Openweight Final,"Liger reaches the final of the tournament for the first Japan Openweight title, against GHC Heavyweight Champion Mitsuharu Misawa."
+7,lyger_gm214,MMA Fight vs. Rickson Gracie,"Match: Liger vs. Rickson Gracie, the final fight of the MMA route - losing means Game Over; pick Win or Lose."
+7,lyger2133,Retry vs. Mirko,Retry: the Mirko Cro Cop fight starts again.
+7,lyger2134,Quit After Mirko?,"Asks whether to really quit: No returns to the retry prompt, Yes ends the scenario."
+7,lyger0120,Waiting for Inoki,"Having beaten Ogawa, Liger waits alone to face Inoki in his retirement match, wondering if he became a good raindrop."
+7,lyger0121,Watching from Afar,"Having lost to Ogawa, Liger can only watch Inoki's final match from afar."
+7,lyger_gm015,Openweight Final vs. Misawa,Match: the final for the first Japan Openweight title against Mitsuharu Misawa - losing means Game Over; pick Win or Lose.
+7,lyger2140,Ending: Art Against Rickson,"MMA ending: Liger beats Rickson Gracie, and in the crowd's roar he feels like the happiest man alive."
+7,lyger2141,Game Over: Rickson,Losing to Rickson Gracie ends the MMA route in a Game Over.
+7,lyger2135,Quit (After Mirko),"Empty scene: the player chose to quit after losing to Mirko, ending the scenario without an ending."
+7,lyger_gm013,Inoki's Retirement Match,Match: Antonio Inoki's retirement match against Liger; either result leads to the same scene.
+7,lyger014,All Japan Splits,"All Japan splits as Misawa founds NOAH, New Japan fights a short war with All Japan, and Muto and others are poached away."
+7,lyger0150,Ending: The Ultimate Fighting Art,New Japan ending: Liger beats Misawa to become the first Japan Openweight Champion and asks Inoki if he was a good raindrop.
+7,lyger0151,Game Over: Misawa,Losing to Misawa ends the scenario in a Game Over.
+7,lyger2142,Retry Rickson?,"Game Over prompt after losing to Rickson: Retry goes back to the fight, Quit asks for confirmation."
+7,lyger013,After Inoki's Last Match,Inoki's career ends with Liger as his last opponent; a hidden score check (over 8) would add the G1 Climax final with Chono, but nothing in this scenario raises the score.
+7,lyger0152,Retry Misawa?,"Game Over prompt after losing to Misawa: Retry goes back to the match, Quit asks for confirmation."
+7,lyger2143,Retry vs. Rickson,Retry: the Rickson Gracie fight starts again.
+7,lyger2144,Quit After Rickson?,"Asks whether to really quit: No returns to the retry prompt, Yes ends the scenario."
+7,lyger113,G1 Climax Final,"Liger reaches the G1 Climax final among the heavyweights, against Masahiro Chono, who scoffs at a junior in his tournament."
+7,lyger0153,Retry vs. Misawa,Retry: the Misawa match starts again.
+7,lyger0154,Quit After Misawa?,"Asks whether to really quit: No returns to the retry prompt, Yes ends the scenario."
+7,lyger2145,Quit (After Rickson),"Empty scene: the player chose to quit after losing to Rickson, ending the scenario without an ending."
+7,lyger_gm113,G1 Climax Final vs. Chono,Match: the G1 Climax final against Masahiro Chono; pick Win or Lose.
+7,lyger0155,Quit (After Misawa),"Empty scene: the player chose to quit after losing to Misawa, ending the scenario without an ending."
+7,lyger1130,G1 Climax Winner,"Liger wins the G1 Climax, and the boy once rejected as too small reaches the top of New Japan."
+7,lyger1131,Chono Holds the Wall,"Chono beats Liger, who vows to remember the frustration of the heavyweight wall."
+7,lyger000b,"Chapter Menu, Page 3","Developer chapter menu, page 3: jumps to the late U-Inter and Pancrase chapters."
+7,lyger000a,"Chapter Menu, Page 2","Developer chapter menu, page 2: jumps to the late New Japan chapters and the RINGS and MMA chapters."
+7,lyger000,"Chapter Menu, Page 1","Developer chapter menu, page 1: jumps to chapters 1-13 of the New Japan route."

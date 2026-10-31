@@ -1,0 +1,1850 @@
+# Move names (WAZA.BIN: u16 offsets by move id, then the names). The build rebuilds the file; its
+# size can't grow past the original (34048 bytes - repeated names are stored once). Move lists on
+# screen are narrow: keep about the Japanese width (a kana or kanji = 2 letters). Printable ASCII.
+# (予約) = reserved, unused slots: no translation needed.
+index,japanese,english,notes
+0,使わない,None,[from FPD]
+1,パンチ,Punch,[from FPD]
+2,アメリカンジャブ,American Jab,[from FPD]
+3,ジャブ,Jab,[from FPD]
+4,ストレート,Straight,[from FPD]
+5,顔張り手,Face Slap,[from FPD]
+6,胸張り手,Chest Slap,[from FPD]
+7,逆水平チョップ,Knife-Edge Chop,[from FPD]
+8,掌底,Palm Strike,[from FPD]
+9,ストレート掌底,Straight Palm,[from FPD]
+10,キック,Kick,[from FPD]
+11,トーキック,Toe Kick,[from FPD]
+12,サイキック,Side Kick,[from FPD]
+13,前蹴り,Front Kick,[from FPD]
+14,ローキック,Low Kick,[from FPD]
+15,下段蹴り,Karate Low Kick,[from FPD]
+16,ムエタイローキック,Muay Thai Low Kick,[from FPD]
+17,ミドルキック,Middle Kick,[from FPD]
+18,中段蹴り,Karate Mid Kick,[from FPD]
+19,ムエタイミドルキック,Muay Thai Mid Kick,[from FPD]
+20,(予約),,
+21,(予約),,
+22,(予約),,
+23,(予約),,
+24,(予約),,
+25,ノータッチヘッドバット,No-Touch Headbutt,[from FPD]
+26,アメリカンフック,American Hook,[from FPD]
+27,フック,Hook,[from FPD]
+28,裏拳,Backfist,[from FPD]
+29,袈裟斬りチョップ,Kesagiri Chop,[from FPD]
+30,フック掌底,Hook Palm,[from FPD]
+31,フロントハイキック,Front High Kick,[from FPD]
+32,ジャイアントキック,Giant Kick,[from FPD]
+33,ハイキック,High Kick,[from FPD]
+34,ムエタイハイキック,Muay Thai High Kick,[from FPD]
+35,上段蹴り,Karate High Kick,[from FPD]
+36,ハイマン蹴り,<Hyman> Kick,[from FPD]
+37,トラースキック,Thrust Kick,[from FPD]
+38,ソバット,Sobat,[from FPD]
+39,ローリングソバット,Rolling Sobat,[from FPD]
+40,コンビネーション１,Combination 1,[from FPD]
+41,コンビネーション２,Combination 2,[from FPD]
+42,コンビネーション３,Combination 3,[from FPD]
+43,(予約),,
+44,(予約),,
+45,(予約),,
+46,(予約),,
+47,(予約),,
+48,(予約),,
+49,(予約),,
+50,ロシアンフック,Russian Hook,[from FPD]
+51,アッパー,Uppercut,[from FPD]
+52,アッパー掌底,Uppercut Palm,[from FPD]
+53,踏み込み掌底,Step-In Palm,[from FPD]
+54,ローリングエルボー,Rolling Elbow,[from FPD]
+55,セイバーハンマー,<Saber> Hammer,[from FPD]
+56,ラリアットアタック,Lariat Attack,[from FPD]
+57,叩きつけラリアットアタック,Slamming Lariat Atk,[from FPD]
+58,両足タックル,Double-Leg Tackle,[from FPD]
+59,スピアー,Spear,[from FPD]
+60,フットボールタックル,Football Tackle,[from FPD]
+61,上段後ろ回し蹴り,Spinning Heel Kick,[from FPD]
+62,逆回し蹴り,Spinning Back Kick,[from FPD]
+63,踵落とし,Axe Kick,[from FPD]
+64,ドロップキック,Dropkick,[from FPD]
+65,正面飛びドロップキック,Front Dropkick,[from FPD]
+66,一回転ドロップキック,Spinning Dropkick,[from FPD]
+67,低空ドロップキック,Low Dropkick,[from FPD]
+68,ジャンピングハイキック,Jumping High Kick,[from FPD]
+69,延髄斬り,Enzuigiri,[from FPD]
+70,ニールキック,Kneel Kick,[from FPD]
+71,フライングニールキック,Flying Kneel Kick,[from FPD]
+72,スクリューハイキック,Screw High Kick,[from FPD]
+73,浴びせ蹴り,Abise-geri,[from FPD]
+74,大車輪キック,Big Wheel Kick,[from FPD]
+75,毒霧,Poison Mist,[from FPD]
+76,ビッグファイヤー,Big Fire,[from FPS]
+77,飛びつき腕ひしぎ逆十字固め,Flying Cross Armbar,[from FPD]
+78,トラップ式腕ひしぎ逆十字固め,Trap Cross Armbar,[from FPD]
+79,飛びつき前方回転裏膝十字固め,Flying Rolling Kneebar,[from FPD]
+80,飛びつき前方回転エビ固め,Flying Ebi Roll-Up,[from FPD]
+81,二段蹴り,Double Kick,[from FPD]
+82,(予約),,
+83,(予約),,
+84,(予約),,
+85,(予約),,
+86,(予約),,
+87,(予約),,
+88,(予約),,
+89,(予約),,
+90,(予約),,
+91,ノータッチヘッドバット,No-Touch Headbutt,[from FPD]
+92,胸張り手,Chest Slap,[from FPD]
+93,踏み込み掌底,Step-In Palm,[from FPD]
+94,フライングクロスチョップ,Flying Cross Chop,[from FPD]
+95,エルボーバット,Elbow Butt,[from FPD]
+96,ジャンピングエルボー,Jumping Elbow,[from FPD]
+97,ラリアット,Lariat,[from FPD]
+98,クローズライン,Clothesline,[from FPD]
+99,叩きつけラリアット,Slamming Lariat,[from FPD]
+100,引き倒しラリアット,Pull-Down Lariat,[from FPD]
+101,浴びせ倒しラリアット,Crushing Lariat,[from FPD]
+102,ウェスタンラリアット,Western Lariat 2,[from FPD]
+103,元祖ドゥガンハンマー,Orig Dugan Hammer,
+104,フライングラリアット,Flying Lariat,[from FPD]
+105,ランニングネックブリーカードロップ,Running Neckbreaker,[from FPD]
+106,ジャンピングネックブリーカードロップ,Leaping Neckbreaker,[from FPD]
+107,ショルダータックル,Shoulder Tackle,[from FPD]
+108,両足タックル,Double-Leg Tackle,[from FPD]
+109,スピアー,Spear,[from FPD]
+110,フットボールタックル,Football Tackle,[from FPD]
+111,フライングショルダーアタック,Flying Shoulder,[from FPD]
+112,ボディスプラッシュ,Body Splash,[from FPD]
+113,セイバーアタック,<Saber> Attack,[from FPD]
+114,フライングボディアタック,Flying Body Attack,[from FPD]
+115,フライングボディシザースドロップ,Flying Body Scissors,[from FPD]
+116,ジャンピングヒップアタック,Jumping Hip Attack,[from FPD]
+117,キチンシンク,Kitchen Sink,[from FPD]
+118,ジャンピングニーパット,Jumping Knee Pat,[from FPD]
+119,トーキック,Toe Kick,[from FPD]
+120,ケンカキック,Kenka Kick,
+121,フロントハイキック,Front High Kick,[from FPD]
+122,ジャンピングフロントハイキック,Jump Front High Kick,[from FPD]
+123,ドロップキック,Dropkick,[from FPD]
+124,正面飛びドロップキック,Front Dropkick,[from FPD]
+125,一回転ドロップキック,Spinning Dropkick,[from FPD]
+126,スーパードロップキック,Super Dropkick,[from FPD]
+127,低空ドロップキック,Low Dropkick,[from FPD]
+128,ゼロ戦キック,Zero-Sen Kick,[from FPD]
+129,稲妻レッグラリアート,Inazuma Leg Lariat,[from FPD]
+130,ニールキック,Kneel Kick,[from FPD]
+131,フライングニールキック,Flying Kneel Kick,[from FPD]
+132,スクリューハイキック,Screw High Kick,[from FPD]
+133,人工衛星ヘッドシザースホイップ,Satellite Headscissors,[from FPD]
+134,フェイスクラッシャー,Face Crusher,[from FPD]
+135,飛びつきＤＤＴ,Flying DDT,[from FPD]
+136,回り込みＤＤＴ,Tornado DDT,[from FPD]
+137,飛びつき腕ひしぎ逆十字固め,Flying Cross Armbar,[from FPD]
+138,飛びつき前方回転裏膝十字固め,Flying Rolling Kneebar,[from FPD]
+139,飛びつき前方回転エビ固め,Flying Ebi Roll-Up,[from FPD]
+140,ウラカン・ラナ,Huracanrana,[from FPD]
+141,フランケンシュタイナー,Frankensteiner,[from FPD]
+142,バックに回る,Go Behind,[from FPD]
+143,二段蹴り,Double Kick,[from FPD]
+144,(予約),,
+145,(予約),,
+146,(予約),,
+147,(予約),,
+148,(予約),,
+149,(予約),,
+150,(予約),,
+151,(予約),,
+152,(予約),,
+153,ノータッチヘッドバット,No-Touch Headbutt,[from FPD]
+154,パンチ,Punch,[from FPD]
+155,ナックルパート,Knuckle Part,[from FPD]
+156,ストレート,Straight,[from FPD]
+157,フック,Hook,[from FPD]
+158,ロシアンフック,Russian Hook,[from FPD]
+159,アッパー,Uppercut,[from FPD]
+160,裏拳,Backfist,[from FPD]
+161,顔張り手,Face Slap,[from FPD]
+162,胸張り手,Chest Slap,[from FPD]
+163,逆水平チョップ,Knife-Edge Chop,[from FPD]
+164,袈裟斬りチョップ,Kesagiri Chop,[from FPD]
+165,掌底,Palm Strike,[from FPD]
+166,ストレート掌底,Straight Palm,[from FPD]
+167,フック掌底,Hook Palm,[from FPD]
+168,アッパー掌底,Uppercut Palm,[from FPD]
+169,踏み込み掌底,Step-In Palm,[from FPD]
+170,エルボーバット,Elbow Butt,[from FPD]
+171,ローリングエルボー,Rolling Elbow,[from FPD]
+172,背面エルボー,Back Elbow,[from FPD]
+173,ラリアット,Lariat,[from FPD]
+174,叩きつけラリアット,Slamming Lariat,[from FPD]
+175,ウェスタンラリアット,Western Lariat 2,[from FPD]
+176,,,
+177,ジャンピングヒップアタック,Jumping Hip Attack,[from FPD]
+178,キチンシンク,Kitchen Sink,[from FPD]
+179,キック,Kick,[from FPD]
+180,サイキック,Side Kick,[from FPD]
+181,トーキック,Toe Kick,[from FPD]
+182,前蹴り,Front Kick,[from FPD]
+183,フロントハイキック,Front High Kick,[from FPD]
+184,ジャイアントキック,Giant Kick,[from FPD]
+185,ジャンピングフロントハイキック,Jump Front High Kick,[from FPD]
+186,トラースキック,Thrust Kick,[from FPD]
+187,ソバット,Sobat,[from FPD]
+188,ローリングソバット,Rolling Sobat,[from FPD]
+189,下段蹴り,Karate Low Kick,[from FPD]
+190,ローキック,Low Kick,[from FPD]
+191,ムエタイローキック,Muay Thai Low Kick,[from FPD]
+192,中段蹴り,Karate Mid Kick,[from FPD]
+193,ミドルキック,Middle Kick,[from FPD]
+194,ムエタイミドルキック,Muay Thai Mid Kick,[from FPD]
+195,スピンキック,Spin Kick,[from FPD]
+196,上段後ろ回し蹴り,Spinning Heel Kick,[from FPD]
+197,逆廻し蹴り,Back Spin Kick,[from FPD]
+198,ドロップキック,Dropkick,[from FPD]
+199,正面飛びドロップキック,Front Dropkick,[from FPD]
+200,一回転ドロップキック,Spinning Dropkick,[from FPD]
+201,低空ドロップキック,Low Dropkick,[from FPD]
+202,コブラクロー,Cobra Claw,[from FPD]
+203,スリーパーホールド,Sleeper Hold,[from FPD]
+204,ドラゴンスリーパー,Dragon Sleeper,[from FPD]
+205,脇固め,Fujiwara Armbar,[from FPD]
+206,飛びつき腕ひしぎ逆十字固め,Flying Cross Armbar,[from FPD]
+207,ウラカン・ラナ,Huracanrana,[from FPD]
+208,フランケンシュタイナー,Frankensteiner,[from FPD]
+209,元祖フランケンシュタイナー,Orig Frankensteiner,[from FPD]
+210,ショルダースルー,Shoulder Throw,[from FPD]
+211,カニ挟み,Kani Basami,[from FPD]
+212,人工衛星ヘッドシザースホイップ,Satellite Headscissors,[from FPD]
+213,サイクロンホイップ,Cyclone Whip,[from FPD]
+214,リフトアップスラム,Lift-Up Slam,[from FPD]
+215,リフトホイップ,Lift Whip,[from FPD]
+216,メキシカンピースクラッシャー,Mexican <Peace> Crusher,[from FPD]
+217,スクラップバスター,Scrap Buster,[from FPD]
+218,サイドバスター,Side Buster,[from FPD]
+219,ティルトスラム,Tilt Slam,[from FPD]
+220,風車式バックブリーカー,Windmill Backbreaker,[from FPD]
+221,ドルフィンバックブリーカー,<Dolphin> Backbreaker,[from FPD]
+222,パワースラム,Powerslam,[from FPD]
+223,スパインドロップ,Spine Drop,[from FPD]
+224,スパインバスター,Spinebuster,[from FPD]
+225,捻り式スパインバスター,Twisting Spinebuster,[from FPD]
+226,スパインボム,Spine Bomb,[from FPD]
+227,水車落とし,Waterwheel Drop,[from FPD]
+228,マウンテンボム,Mountain Bomb,[from FPD]
+229,フロントスープレックス,Front Suplex,[from FPD]
+230,裏投げ,Ura-nage,[from FPD]
+231,喉輪落とし,Chokeslam,[from FPD]
+232,逆一本背負い,Reverse Ippon-seoi,[from FPD]
+233,飛びつきジャンピングＤＤＴ,Flying Jumping DDT,[from FPD]
+234,マンハッタンドロップ,Manhattan Drop,[from FPD]
+235,バックに回る,Go Behind,[from FPD]
+236,二段蹴り,Double Kick,[from FPD]
+237,(予約),,
+238,(予約),,
+239,(予約),,
+240,(予約),,
+241,(予約),,
+242,(予約),,
+243,(予約),,
+244,(予約),,
+245,(予約),,
+246,ヘッドドロップ,Head Drop,[from FPD]
+247,フライングボディプレス,Flying Body Press,[from FPD]
+248,超肉弾プレス,Super Body Press,[from FPD]
+249,ヒップドロップ,Hip Drop,[from FPD]
+250,セントーン,Senton,[from FPD]
+251,サンセットフリップ,Sunset Flip,[from FPD]
+252,ジャンピングフィストドロップ,Jumping Fist Drop,[from FPD]
+253,エルボードロップ,Elbow Drop,[from FPD]
+254,ジャンピングエルボードロップ,Jumping Elbow Drop,[from FPD]
+255,フラッシングエルボー,Flashing Elbow,[from FPD]
+256,インパクトエルボードロップ,Impact Elbow Drop,
+257,エルボードロップホールド,Elbow Drop Hold,[from FPD]
+258,ニードロップ,Knee Drop,[from FPD]
+259,ジャンピングニードロップ,Jumping Knee Drop,[from FPD]
+260,ダブルニードロップ,Double Knee Drop,[from FPD]
+261,キングコングニードロップ,King Kong Knee Drop,[from FPD]
+262,ギロチンドロップ,Guillotine Drop,[from FPD]
+263,ストンピング,Stomping,[from FPD]
+264,フットスタンプ,Foot Stamp,[from FPD]
+265,(予約),,
+266,(予約),,
+267,(予約),,
+268,(予約),,
+269,(予約),,
+270,踏み込み掌底,Step-In Palm,[from FPD]
+271,エルボーバット,Elbow Butt,[from FPD]
+272,ジャンピングエルボー,Jumping Elbow,[from FPD]
+273,背面エルボー,Back Elbow,[from FPD]
+274,側転エルボー,Cartwheel Elbow,[from FPD]
+275,ラリアット,Lariat,[from FPD]
+276,ボディプレス,Body Press,[from FPD]
+277,ボディスプラッシュ,Body Splash,[from FPD]
+278,セイバーアタック,<Saber> Attack,[from FPD]
+279,ヒッププレス,Hip Press,[from FPD]
+280,ジャンピングヒップアタック,Jumping Hip Attack,[from FPD]
+281,ジャンピングニーパット,Jumping Knee Pat,[from FPD]
+282,ジャイアントキック,Giant Kick,[from FPD]
+283,ケンカキック,Kenka Kick,
+284,サマーソルトキック,Somersault Kick,[from FPD]
+285,フェニックスキック,Phoenix Kick,
+286,ドロップキック,Dropkick,[from FPD]
+287,正面飛びドロップキック,Front Dropkick,[from FPD]
+288,一回転ドロップキック,Spinning Dropkick,[from FPD]
+289,低空ドロップキック,Low Dropkick,[from FPD]
+290,ゼロ戦キック,Zero-Sen Kick,[from FPD]
+291,ニールキック,Kneel Kick,[from FPD]
+292,フライングニールキック,Flying Kneel Kick,[from FPD]
+293,浴びせ蹴り,Abise-geri,[from FPD]
+294,ドラゴンズ・レイ,Dragon's Ray,[from FPD]
+295,モンキーフリップ,Monkey Flip,[from FPD]
+296,(予約),,
+297,(予約),,
+298,(予約),,
+299,(予約),,
+300,(予約),,
+301,エルボースイシーダ,Elbow Suicida,[from FPD]
+302,スワンダイブミサイルキック,Swan Dive Missile Kick,[from FPD]
+303,トペ・スイシーダ,Tope Suicida,[from FPD]
+304,トペ・コン・ヒーロ,Tope con Hilo,[from FPD]
+305,プランチャ・スイシーダ,Plancha Suicida,[from FPD]
+306,トルニージョ,Tornillo,[from FPD]
+307,スワンダイブプランチャ,Swan Dive Plancha,[from FPD]
+308,宇宙人プランチャ,Space Plancha,[from FPD]
+309,宇宙人ケブラーダ,Space Quebrada,[from FPD]
+310,ブエロ・デ・アギラ,Vuelo de Aguila,[from FPD]
+311,スペースフライングタイガーアタック,Space Flying Tiger,[from FPD]
+312,ハヤテスペシャル１号,<Hayate> Special 1,[from FPD]
+313,ハヤテスペシャル２号,<Hayate> Special 2,[from FPD]
+314,(予約),,
+315,(予約),,
+316,(予約),,
+317,スレッジハンマー,Sledgehammer,[from FPD]
+318,スワンダイブミサイルキック,Swan Dive Missile Kick,[from FPD]
+319,プランチャ・スイシーダ,Plancha Suicida,[from FPD]
+320,スワンダイブプランチャ,Swan Dive Plancha,[from FPD]
+321,ラ・ケブラーダ,La Quebrada,[from FPD]
+322,(予約),,
+323,(予約),,
+324,(予約),,
+325,スワンダイブミサイルキック,Swan Dive Missile Kick,[from FPD]
+326,(予約),,
+327,スワンダイブニールキック,Swan Dive Kneel Kick,[from FPD]
+328,フライングボディアタック,Flying Body Attack,[from FPD]
+329,スワンダイブボディアタック,Swan Dive Body Press,[from FPD]
+330,ウルトラ・ウラカン・ラナ,Ultra Huracanrana,[from FPD]
+331,スワンダイブ高速ウラカン・ラナ,Swan Dive Fast Rana,[from FPD]
+332,(予約),,
+333,(予約),,
+334,(予約),,
+335,ダイビングフィストドロップ,Diving Fist Drop,[from FPD]
+336,ダイビングエルボードロップ,Diving Elbow Drop,[from FPD]
+337,ダイビング背面エルボードロップ,Diving Back Elbow,[from FPD]
+338,ドルフィンＤエルボードロップ,<Dolphin> Elbow Drop,[from FPD]
+339,ダイビングニードロップ,Diving Knee Drop,[from FPD]
+340,ダイビングダブルニードロップ,Diving Double Knee,[from FPD]
+341,ダイビングギロチンドロップ,Diving Guillotine Drop,[from FPD]
+342,ダイビングローリングギロチンドロップ,Diving Rolling Guillotine,[from FPD]
+343,ダイビングフットスタンプ,Diving Foot Stamp,[from FPD]
+344,ダイビングヘッドバット,Diving Headbutt,[from FPD]
+345,拝みダイビングヘッドバット,Praying Headbutt,[from FPD]
+346,スーパーダイビングヘッドバット,Super Diving Headbutt,[from FPD]
+347,トペ・アトミコ,Tope Atomico,[from FPD]
+348,ダイビングセントーン,Diving Senton,[from FPD]
+349,サマーソルトドロップ,Somersault Drop,[from FPD]
+350,ローリングセントーン,Rolling Senton,[from FPD]
+351,セントーン・アトミコ,Senton Atomico,[from FPD]
+352,ダイビングボディプレス,Diving Body Press,[from FPD]
+353,スーパーヘビー・ダイビングボディプレス,Heavy Diving Press,[from FPD]
+354,屈伸式ダイビングボディプレス,Tucked Diving Press,
+355,マッドスプラッシュ,Mad Splash,[from FPD]
+356,ムーンサルトプレス,Moonsault Press,[from FPD]
+357,旋回式ボディプレス,Corkscrew Press,[from FPD]
+358,ラウンディングボディプレス,Rounding Body Press,[from FPD]
+359,ファイヤーバードスプラッシュ,Firebird Splash,[from FPD]
+360,カンクーントルネード,Cancun Tornado,[from FPD]
+361,シューティングスタープレス,Shooting Star Press,[from FPD]
+362,フェニックススプラッシュ,Phoenix Splash,[from FPD]
+363,スレッジハンマー,Sledgehammer,[from FPD]
+364,ダイビングエルボーバット,Diving Elbow Butt,[from FPD]
+365,ダイビングラリアット,Diving Lariat,[from FPD]
+366,ダイビングネックブリーカードロップ,Diving Neckbreaker,[from FPD]
+367,ダイビングショルダーアタック,Diving Shoulder Attack,[from FPD]
+368,ダイビングボディアタック,Diving Body Attack,[from FPD]
+369,ムーンサルトアタック,Moonsault Attack,[from FPD]
+370,ダイビングヒップアタック,Diving Hip Attack,[from FPD]
+371,トぺ・コン・ヒーロ,Tope con Hilo 2,[from FPD]
+372,ダイビングフロントハイキック,Diving Front High Kick,[from FPD]
+373,ミサイルキック,Missile Kick,[from FPD]
+374,(予約),,
+375,前方回転ミサイルキック,Front Flip Missile Kick,[from FPD]
+376,ダイビングニールキック,Diving Kneel Kick,[from FPD]
+377,ダイビング延髄斬り,Diving Enzuigiri,[from FPD]
+378,ダイビングニーアタック,Diving Knee Attack,[from FPD]
+379,ダイビング延髄ニードロップ,Dive Enzui Knee Drop,[from FPD]
+380,スーパーウラカン・ラナ,Super Huracanrana,[from FPD]
+381,高速ウラカン・ラナ,Fast Huracanrana,[from FPD]
+382,スイングフランケンシュタイナー,Swing Frankensteiner,[from FPD]
+383,飛びつきスイングＤＤＴ,Flying Swing DDT,[from FPD]
+384,ドラゴン・ラナ,Dragon Rana,[from FPD]
+385,(予約),,
+386,(予約),,
+387,(予約),,
+388,(予約),,
+389,(予約),,
+390,(予約),,
+391,(予約),,
+392,ナックルアロー,Knuckle Arrow,[from FPD]
+393,手首パンチ,Wrist Punch,[from FPD]
+394,顔面ストレート,Straight to Face,[from FPD]
+395,アッパーブロー,Uppercut Blow,[from FPD]
+396,ハンマーパンチ,Hammer Punch,[from FPD]
+397,正拳突き,Seiken-zuki,[from FPD]
+398,ボディパンチ,Body Punch,[from FPD]
+399,顔面張り手,Slap to Face,[from FPD]
+400,胸張り手,Chest Slap,[from FPD]
+401,逆水平チョップ,Knife-Edge Chop,[from FPD]
+402,喉笛チョップ,Throat Chop,[from FPD]
+403,地獄突き,Hell Thrust,[from FPD]
+404,掌底,Palm Strike,[from FPD]
+405,スレッジハンマー,Sledgehammer,[from FPD]
+406,ハンマーブロー,Hammer Blow,[from FPD]
+407,脳天エルボー,Brain Elbow,[from FPD]
+408,エルボースタンプ,Elbow Stamp,[from FPD]
+409,エルボースタンプ（首）,Elbow Stamp (Neck),[from FPD]
+410,エルボースタンプ（腕）,Elbow Stamp (Arm),[from FPD]
+411,エルボースタンプ（脚）,Elbow Stamp (Leg),[from FPD]
+412,エルボーバット,Elbow Butt,[from FPD]
+413,エルボースマッシュ,Elbow Smash,[from FPD]
+414,かち上げエルボースマッシュ,Rising Elbow Smash,[from FPD]
+415,ローキック,Low Kick,[from FPD]
+416,下段蹴り,Karate Low Kick,[from FPD]
+417,前蹴り,Front Kick,[from FPD]
+418,トーキック,Toe Kick,[from FPD]
+419,延髄踵落とし,Enzui Axe Kick,[from FPD]
+420,顔面ニーリフト,Face Knee Lift,[from FPD]
+421,ボディニーリフト,Body Knee Lift,[from FPD]
+422,膝突き蹴り,Knee Thrust,[from FPD]
+423,腿キック,Thigh Kick,[from FPD]
+424,片足取り顔張り手,Leg Grab Face Slap,[from FPD]
+425,片足取り脚払い,Leg Grab Leg Sweep,[from FPD]
+426,ショルダーバット（腕）,Shoulder Butt (Arm),[from FPD]
+427,アームブリーカー,Armbreaker,[from FPD]
+428,サミング,Eye Poke,[from FPD]
+429,顔面掻きむしり,Face Rake,[from FPD]
+430,ボディスラム,Body Slam,[from FPD]
+431,女子式ボディスラム,Joshi Body Slam,[from FPD]
+432,ハイアングルボディスラム,Hi-Angle Body Slam,[from FPD]
+433,ゴリラスラム,Gorilla Slam,[from FPD]
+434,アームホイップ,Arm Whip,[from FPD]
+435,サイクロンホイップ,Cyclone Whip,[from FPD]
+436,フライングメイヤー,Flying Mare,[from FPD]
+437,ファイヤーマンズキャリー,Fireman's Carry,[from FPD]
+438,カニ挟み,Kani Basami,[from FPD]
+439,レッグスピン,Leg Spin,[from FPD]
+440,ドラゴンスクリュー,Dragon Screw,[from FPD]
+441,片足タックル,Single-Leg Tackle,[from FPD]
+442,首投げ,Neck Throw,[from FPD]
+443,払い腰,Harai-goshi,[from FPD]
+444,大外刈り,O-soto-gari,[from FPD]
+445,バックに回る,Go Behind,[from FPD]
+446,(予約),,
+447,(予約),,
+448,(予約),,
+449,(予約),,
+450,(予約),,
+451,ヘッドバット,Headbutt,[from FPD]
+452,一本足頭突き,One-Leg Headbutt,[from FPD]
+453,ジャンピングヘッドバット,Jumping Headbutt,[from FPD]
+454,脳天チョップ,Brain Chop,[from FPD]
+455,脳天唐竹割り,Karatake-wari,[from FPD]
+456,マシンガン逆水平チョップ,Machine Gun Chops,[from FPD]
+457,マシンガン袈裟斬りチョップ,MG Kesagiri Chops,[from FPD]
+458,喉笛チョップ連打,Throat Chop Rush,[from FPD]
+459,モンゴリアンチョップ,Mongolian Chop,[from FPD]
+460,踏み込み地獄突き,Step-In Hell Thrust,[from FPD]
+461,ヘッドロックパンチ,Headlock Punch,[from FPD]
+462,正拳突き連打,Seiken-zuki Rush,[from FPD]
+463,ボディパンチ連打,Body Punch Rush,[from FPD]
+464,骨法流掌打,Koppo Palm Strike,[from FPD]
+465,ショートエルボー,Short Elbow,[from FPD]
+466,ショートレンジラリアット,Short-Range Lariat,[from FPD]
+467,ミドルキック,Middle Kick,[from FPD]
+468,ムエタイミドルキック,Muay Thai Mid Kick,[from FPD]
+469,中段蹴り,Karate Mid Kick,[from FPD]
+470,ソバット,Sobat,[from FPD]
+471,ステップキック,Step Kick,[from FPD]
+472,肩掴み延髄斬り,Shoulder Grab Enzuigiri,[from FPD]
+473,足掛け延髄斬り,Step-Up Enzuigiri,[from FPD]
+474,スピンキック,Spin Kick,[from FPD]
+475,爆殺ミドルキック,Bakusatsu Middle Kick,[from FPD]
+476,関節蹴り,Joint Kick,[from FPD]
+477,水面蹴り,Leg Sweep,[from FPD]
+478,マシンガン顔面ニーリフト,MG Face Knees,[from FPD]
+479,マシンガンストマックニーリフト,MG Stomach Knees,[from FPD]
+480,低空ドロップキック,Low Dropkick,[from FPD]
+481,急所パンチ,Low Blow,[from FPD]
+482,ヘッドロック,Headlock,[from FPD]
+483,首投げヘッドロック,Headlock Takeover,[from FPD]
+484,タイガースピン,Tiger Spin,[from FPD]
+485,ネックハンギングツリー,Neck Hanging Tree,[from FPD]
+486,閂絞め,Kannuki Lock,[from FPD]
+487,ブレーンバスター,Brainbuster,[from FPD]
+488,ジャンピングブレーンバスター,Jumping Brainbuster,[from FPD]
+489,長滞空ブレーンバスター,Delayed Brainbuster,[from FPD]
+490,叩きつけブレーンバスター,Slamming Brainbuster,[from FPD]
+491,ぶっこ抜きブレーンバスター,Lift-Up Brainbuster,[from FPD]
+492,高速ブレーンバスター,Fast Brainbuster,[from FPD]
+493,剃刀ブレーンバスター,Razor Brainbuster,[from FPD]
+494,ブレーンバスタースラム,Brainbuster Slam,[from FPD]
+495,前方落としリフトアップスラム,Front Lift-Up Slam,[from FPD]
+496,叩きつけリフトアップスラム,Slamming Lift-Up Slam,[from FPD]
+497,ダブルリストアームソルト,Double Wrist Armsault,[from FPD]
+498,フロントスープレックス,Front Suplex,[from FPD]
+499,フロントスープレックスホイップ,Front Suplex Whip,[from FPD]
+500,ベリー・トゥ・ベリー,Belly to Belly,
+501,(予約),,
+502,閂スープレックス,Kannuki Suplex,[from FPD]
+503,ダブルアームスープレックス,Double Arm Suplex,[from FPD]
+504,テキサススープレックス,Texas Suplex,[from FPD]
+505,サイドスープレックス,Side Suplex,[from FPD]
+506,バックドロップ,Backdrop,[from FPD]
+507,抱え式バックドロップ,Cradle Backdrop,[from FPD]
+508,ジャンピングバックドロップ,Jumping Backdrop,[from FPD]
+509,ローリングバックドロップ,Rolling Backdrop,[from FPD]
+510,捻り式バックドロップ,Twisting Backdrop,[from FPD]
+511,急降下バックドロップ,Plunging Backdrop,[from FPD]
+512,ネックブリーカードロップ,Neckbreaker Drop,[from FPD]
+513,スイングネックブリーカードロップ,Swinging Neckbreaker,[from FPD]
+514,ショルダーネックブリーカードロップ,Shoulder Neckbreaker,[from FPD]
+515,チンクラッシャー,Chin Crusher,[from FPD]
+516,ショルダーアームブリーカー,Shoulder Armbreaker,[from FPD]
+517,ジャンピングアームブリーカー,Jumping Armbreaker,[from FPD]
+518,腕殺しコンビネーション,Arm Destroyer Combo,[from FPD]
+519,ココナッツクラッシュ,Coconut Crush,[from FPD]
+520,ショルダーバスター,Shoulder Buster,[from FPD]
+521,ブロックバスター,Blockbuster,[from FPD]
+522,サイドバスター,Side Buster,[from FPD]
+523,ペンデュラムバックブリーカー,Pendulum Backbreaker,[from FPD]
+524,シュミット式バックブリーカー,Schmidt Backbreaker,[from FPD]
+525,バックブリーカースラム,Backbreaker Slam,[from FPD]
+526,マンハッタンドロップ,Manhattan Drop,[from FPD]
+527,一本背負い,Ippon-seoi,[from FPD]
+528,水車落とし,Waterwheel Drop,[from FPD]
+529,ＤＤＴ,DDT,[from FPD]
+530,ジャイアントＤＤＴ,Giant DDT,[from FPD]
+531,パイルドライバー,Piledriver,[from FPD]
+532,ツームストンパイルドライバー,Tombstone Piledriver,[from FPD]
+533,リバースツームストンパイルドライバー,Reverse Tombstone PD,[from FPD]
+534,フェイスバスター,Facebuster,[from FPD]
+535,ストマッククラッシャー,Stomach Crusher,[from FPD]
+536,(予約),,
+537,(予約),,
+538,(予約),,
+539,(予約),,
+540,(予約),,
+541,(予約),,
+542,頭突き連打,Headbutt Rush,[from FPD]
+543,一本足頭突き連打,One-Leg Headbutts,[from FPD]
+544,テキサスジャブ,Texas Jab,[from FPD]
+545,ディスカッションパンチ,Discus Punch,[from FPD]
+546,振り抜きストレート,Full-Swing Straight,[from FPD]
+547,マッハパンチラッシュ,Mach Punch Rush,[from FPD]
+548,ダイナマイトパンチラッシュ,Dynamite Punch Rush,[from FPD]
+549,ロシアンフックラッシュ,Russian Hook Rush,[from FPD]
+550,起き上がり小法師チョップ,Okiagari Chops,[from FPD]
+551,ローリング袈裟斬りチョップ,Rolling Kesagiri Chop,[from FPD]
+552,袈裟斬りチョップラッシュ,Kesagiri Chop Rush,[from FPD]
+553,掌底アッパー,Palm Uppercut,[from FPD]
+554,ローリングエルボー,Rolling Elbow,[from FPD]
+555,ファイナルローリングエルボー,Final Rolling Elbow,[from FPD]
+556,頭掴みラリアット,Head Grab Lariat,[from FPD]
+557,ステップ延髄ニールキック,Step Enzui Kneel Kick,[from FPD]
+558,スクリューハイキック,Screw High Kick,[from FPD]
+559,回転地獄蹴り,Spinning Hell Kick,[from FPD]
+560,アメリカンパンチラッシュ,American Punch Rush,[from FPD]
+561,サイバーブロー,Cyber Blow,[from FPD]
+562,サイバーニーリフト,Cyber Knee Lift,[from FPD]
+563,サイバーマシンガンキック,Cyber MG Kick,[from FPD]
+564,高速マシンガンキック,Fast MG Kick,[from FPD]
+565,正拳突きラッシュ,Seiken Rush,[from FPD]
+566,ハイキックラッシュ,High Kick Rush,[from FPD]
+567,バックスピンキックラッシュ,Back Spin Kick Rush,[from FPD]
+568,ローリングソバットラッシュ,Rolling Sobat Rush,[from FPD]
+569,喧嘩屋ラッシュ,Brawler Rush,[from FPD]
+570,掌底コンビネーション,Palm Strike Combo,[from FPD]
+571,ハイキックコンビネーション,High Kick Combo,[from FPD]
+572,Ｗハイキックコンビネーション,Dbl High Kick Combo,[from FPD]
+573,ソバットコンビネーション,Sobat Combo,[from FPD]
+574,バックスピンコンビネーション,Back Spin Combo,[from FPD]
+575,踵落としコンビネーション,Axe Kick Combo,[from FPD]
+576,ライトニングコンビネーション,Lightning Combo,[from FPD]
+577,突き放しハイキック,Shove High Kick,[from FPD]
+578,飛び膝蹴りラッシュ,Flying Knee Rush,[from FPD]
+579,ダイナマイトニーリフト,Dynamite Knee,[from FPD]
+580,噛みつき,Bite,[from FPD]
+581,凶器攻撃,Weapon Attack,[from FPD]
+582,コブラクロー,Cobra Claw,[from FPD]
+583,マンディブルクロー,Mandible Claw,[from FPD]
+584,スリーパーホールド,Sleeper Hold,[from FPD]
+585,胴絞めスリーパーホールド,Scissor Sleeper,[from FPD]
+586,フロントネックロック,Front Necklock,[from FPD]
+587,後転ネックロック,Rolling Necklock,[from FPD]
+588,ベアハッグ,Bear Hug,[from FPD]
+589,コブラツイスト,Cobra Twist,[from FPD]
+590,拷問コブラツイスト,Torture Cobra Twist,[from FPD]
+591,ストレッチプラム,Stretch Plum,[from FPD]
+592,春樹スペシャル,<Haruki> Special,[from FPD]
+593,卍固め,Octopus Hold,[from FPD]
+594,グラウンド卍固め,Ground Octopus,[from FPD]
+595,メキシカンストレッチ,Mexican Stretch,[from FPD]
+596,カナディアンバックブリーカー,Torture Rack,[from FPD]
+597,アルゼンチンバックブリーカー,Argentine Rack,[from FPD]
+598,アルゼンチンバックブリーカードロップ,Argentine Rack Drop,[from FPD]
+599,首極め腕卍,Necklock Armbar,[from FPD]
+600,飛びつき腕ひしぎ逆十字固め,Flying Cross Armbar,[from FPD]
+601,前転式飛びつき腕ひしぎ逆十字,Rolling Flying Armbar,[from FPD]
+602,脇固め,Fujiwara Armbar,[from FPD]
+603,ビクトル膝十字固め,Victor Kneebar,[from FPD]
+604,飛びつきクロスヒールホールド,Flying Cross Heel Hold,[from FPD]
+605,ウラカン・ラナ,Huracanrana,[from FPD]
+606,フランケンシュタイナー,Frankensteiner,[from FPD]
+607,高角度前方回転エビ固め,Hi-Angle Ebi Roll-Up,[from FPD]
+608,スモールパッケージホールド,Small Package Hold,[from FPD]
+609,逆さ押さえ込み,Reverse Pin,[from FPD]
+610,グラウンドコブラツイスト,Ground Cobra Twist,[from FPD]
+611,ミトクラッチ,<Mito> Clutch,[from FPD]
+612,ローリングクレイドル,Rolling Cradle,[from FPD]
+613,エッフェル・ド・パラシュート,Eiffel de Parachute,
+614,超長滞空ブレーンバスター,Super Delayed Buster,[from FPD]
+615,垂直落下式ブレーンバスター,Vertical Brainbuster,[from FPD]
+616,長滞空垂直落下式ブレーンバスター,Delayed Vert Buster,[from FPD]
+617,ブレイジングトルネード,Blazing Tornado,
+618,捻り式ベリー・トゥ・ベリー,Twisting Belly to Belly,[from FPD]
+619,ピースクラッシャー,<Peace> Crusher,[from FPD]
+620,メキシカンピースクラッシャー,Mexican <Peace> Crusher,[from FPD]
+621,ハワイアンクラッシャー,Hawaiian Crusher,[from FPD]
+622,ハイジャンプフェイスバスター,High-Jump Facebuster,[from FPD]
+623,ダイヤモンドカッター,Diamond Cutter,[from FPD]
+624,スタナー,Stunner,
+625,バックフリップ,Back Flip,[from FPD]
+626,カナディアンロッキーバスター,Canadian Buster,[from FPD]
+627,デスバレーボム,Death Valley Bomb,[from FPD]
+628,スパイシードロップ,Spicy Drop,[from FPD]
+629,若元スペシャル’７８,<Wakamoto*> Special '78,[from FPD]
+630,チョークスラム,Chokeslam,[from FPD]
+631,ワンハンドチョークスラム,1-Hand Chokeslam,[from FPD]
+632,ハイアングルチョークスラム,Hi-Angle Chokeslam,[from FPD]
+633,ジャイアントチョークスラム,Giant Chokeslam,[from FPD]
+634,高角度喉輪落とし,Hi-Angle Chokeslam,[from FPD]
+635,フィッシャーマンバスター,Fisherman Buster,[from FPD]
+636,フィッシャーマンＤＤＴ,Fisherman DDT,[from FPD]
+637,デンジャラスＤＤＴ,Dangerous DDT,[from FPD]
+638,ノーザンライトボム,N Lights Bomb,[from FPD]
+639,オレンジクラッシュ,Orange Crush,[from FPD]
+640,シュタイナースクリュードライバー,Steiner Screwdriver,[from FPD]
+641,ブルドッキングヘッドロック,Bulldogging Headlock,[from FPD]
+642,ギロチンピースクラッシャー,Guillotine Crusher,[from FPD]
+643,ジャンピングネックブリーカー,Jumping Neckbreaker,[from FPD]
+644,河津落とし,Kawazu Otoshi,[from FPD]
+645,河津掛けフェイスバスター,Kawazu Facebuster,[from FPD]
+646,オクラホマスタンピート,Oklahoma Stampede,[from FPD]
+647,アバランシュホールド,Avalanche Hold,[from FPD]
+648,アバランシュプレス,Avalanche Press,[from FPD]
+649,ジャックハマー,Jackhammer,[from FPD]
+650,カナディアンバックブリーカードロップ,Torture Rack Drop,[from FPD]
+651,ストレッチバスター,Stretch Buster,[from FPD]
+652,串刺しＤＤＴ,Corner DDT,[from FPD]
+653,ジャンピングＤＤＴ,Jumping DDT,[from FPD]
+654,ダブルアームＤＤＴ,Double Arm DDT,[from FPD]
+655,ジョンスパイク,John Spike,[from FPD]
+656,ブリティッシュ・フォール,British Fall,[from FPD]
+657,ダブルアームフェイスバスター,Double Arm Facebuster,
+658,リバースタイガードライバー,Reverse Tiger Driver,[from FPD]
+659,筋肉バスター,Muscle Buster,[from FPD]
+660,マッスル・バスター,Super Muscle Buster,"owner 2026-10-30: 659 is Muscle Buster"
+661,元祖バックドロップ,Original Backdrop,[from FPD]
+662,アレビンズ・リフト,Arevin's Lift,[from FPD]
+663,ダブルリストアームソルトホールド,Dbl Wrist Armsault,[from FPD]
+664,裏投げ,Ura-nage,[from FPD]
+665,エクスプロイダー,Exploder,[from FPD]
+666,ＳＴＯ,STO,[from FPD]
+667,元祖ＳＴＯ,Original STO,[from FPD]
+668,ボトムドロップ,Bottom Drop,
+669,Rエッジ,R Edge,[from FPD]
+670,フロントネックチャンスリー,Front Chancery,[from FPD]
+671,タイガーネックチャンスリー,Tiger Neck Chancery,[from FPD]
+672,魔神風車固め,Demon Windmill,[from FPD]
+673,フィッシャーマンズスープレックス,Fisherman Suplex,[from FPD]
+674,ブリザードスープレックス,Blizzard Suplex,[from FPD]
+675,キャプチュード,Captured,[from FPD]
+676,ノーザンライトスープレックス,Northern Lights,[from FPD]
+677,リストクラッチエクスプロイダー,Wristclutch Exploder,[from FPD]
+678,ダブルアームスープレックスホールド,Dbl Arm Suplex Hold,[from FPD]
+679,高速ダブルアームスープレックス,Fast Dbl Arm Suplex,[from FPD]
+680,ジャーマンスープレックス,German Suplex,[from FPD]
+681,大回転ジャーマンスープレックス,Spin German Suplex,[from FPD]
+682,高角度ジャーマンスープレックス,Hi-Angle German,[from FPD]
+683,元祖ジャーマンスープレックス,Original German Suplex,[from FPD]
+684,ジャンピングパイルドライバー,Jumping Piledriver,[from FPD]
+685,ゴッチ式パイルドライバー,Gotch Piledriver,[from FPD]
+686,ジャンピングツームストンパイルドライバー,Jump Tombstone PD,[from FPD]
+687,変形ツームストンパイルドライバー,Mod Tombstone PD,[from FPD]
+688,リバースパイルドライバー,Reverse Piledriver,[from FPD]
+689,エメラルド・フロウジョン,Emerald Flowsion,[from FPD]
+690,タイガードライバー,Tiger Driver,[from FPD]
+691,タイガードライバー’９１,Tiger Driver '91,[from FPD]
+692,ダブルアームホイップ,Double Arm Whip,[from FPD]
+693,ピラミッドドライバー,Pyramid Driver,[from FPD]
+694,ゆきぐにドライバーＩＩ,<Yukiguni> Driver II,
+695,バイアグラドライバー,Viagra Driver,[from FPD]
+696,ファイヤーサンダー,Fire Thunder,[from FPD]
+697,スモウドライバー,Sumo Driver,[from FPD]
+698,ハリケーンドライバー,Hurricane Driver,[from FPD]
+699,ブルズ・ポセイドン,Bull's Poseidon,[from FPD]
+700,ファルコンアロー,Falcon Arrow,[from FPD]
+701,垂直落下式ファルコンアロー,Vertical Falcon Arrow,[from FPD]
+702,パワーボム,Powerbomb,[from FPD]
+703,高角度パワーボム,Hi-Angle Powerbomb,[from FPD]
+704,入魂パワーボム,Soul Powerbomb,[from FPD]
+705,パワーボムホイップ,Powerbomb Whip,[from FPD]
+706,ジャンピングパワーボム,Jumping Powerbomb,[from FPD]
+707,ワイルドボム,Wild Bomb,[from FPD]
+708,ワイルドボムホイップ,Wild Bomb Whip,[from FPD]
+709,侍パワーボム,Samurai Powerbomb,[from FPD]
+710,念仏パワーボム,Nenbutsu Powerbomb,[from FPD]
+711,念仏パワーボムホイップ,Nenbutsu PB Whip,[from FPD]
+712,ジャックナイフパワーボム,Jackknife Powerbomb,[from FPD]
+713,デッドリー・ゴーラウンド,Deadly Go-Round,
+714,元祖パワーボム,Original Powerbomb,[from FPD]
+715,餅つきパワーボム,Mochitsuki PB,[from FPD]
+716,餅つきパワーボムホイップ,Mochitsuki PB Whip,[from FPD]
+717,餅つきパワーボムＩＩ,Mochitsuki PB II,[from FPD]
+718,ビッグバディボム,Big Body Bomb,[from FPS]
+719,ミラクルエクスタシー,Miracle Ecstasy,[from FPD]
+720,スーパーボム,Super Bomb,[from FPD]
+721,火の玉ボム,Fireball Bomb,[from FPD]
+722,スクリューボム,Screw Bomb,[from FPD]
+723,ストレッチボム,Stretch Bomb,[from FPD]
+724,ドクターボム,Doctor Bomb,[from FPD]
+725,旋回式ドクターボム,Spinning Dr Bomb,[from FPD]
+726,スーパーフリーク,Super Freak,[from FPD]
+727,ジャンピングボム,Jumping Bomb,[from FPD]
+728,カイザーボム,<Kaiser*> Bomb,[from FPD]
+729,高角度カイザーボム,Hi-Angle <Kaiser*> Bomb,[from FPD]
+730,スパイラルボム,Spiral Bomb,[from FPD]
+731,サンダーファイヤーパワーボム,Thunder Fire Bomb,[from FPD]
+732,ハヤテ式サンダーファイヤーパワーボム,<Hayate> Thunder Fire,[from FPD]
+733,サンダーファイヤーパワーボムホイップ,Thunder Fire PB Whip,[from FPD]
+734,アウトローズ・エッジ,Outlaw's Edge,[from FPD]
+735,サンダーファイヤージャンピングボム,Jumping Thunder Fire,[from FPD]
+736,クロスアームサンダーファイヤーパワーボム,X-Arm Thunder Fire,[from FPD]
+737,カミカゼボム,<Kamikaze> Bomb,[from FPD]
+738,ランニングパワーボム,Running Powerbomb,[from FPD]
+739,ブラックカイザーボム,Black <Kaiser*> Bomb,[from FPD]
+740,スクリュースラム,Screw Slam,
+741,旋回式垂直落下ブレーンバスター,Spin Vert Brainbuster,[from FPD]
+742,スナイパー・クロス・フェイス,Sniper Crossface,[from FPD]
+743,ブロックバスターホールド,Blockbuster Hold,[from FPD]
+744,ネックハンギングボム,Neck Hanging Bomb,[from FPD]
+745,マンモスバスター,Mammoth Buster,[from FPD]
+746,(予約),,
+747,(予約),,
+748,(予約),,
+749,(予約),,
+750,延髄ヘッドバット,Enzui Headbutt,[from FPD]
+751,ネックスマッシュ,Neck Smash,[from FPD]
+752,スレッジハンマー,Sledgehammer,[from FPD]
+753,バックレバーブロー,Back Lever Blow,[from FPD]
+754,コマンドエルボー,Commando Elbow,[from FPD]
+755,裏関節蹴り,Back Knee Kick,[from FPD]
+756,ミドルキック,Middle Kick,[from FPD]
+757,バックソバット,Back Sobat,[from FPD]
+758,延髄ハイキック,Enzui High Kick,[from FPD]
+759,延髄ニールキック,Enzui Kneel Kick,[from FPD]
+760,レッグトリップ,Leg Trip,[from FPD]
+761,急所パンチ,Low Blow,[from FPD]
+762,(予約),,
+763,(予約),,
+764,(予約),,
+765,延髄ジャンピングヘッドバット,Enzui Jump Headbutt,[from FPD]
+766,延髄踏み込み掌底,Enzui Step-In Palm,[from FPD]
+767,延髄袈裟斬りチョップ,Enzui Kesagiri Chop,[from FPD]
+768,延髄ラリアット,Enzui Lariat,[from FPD]
+769,マシンガンニーリフト,Machine Gun Knees,[from FPD]
+770,バックタックル,Back Tackle,[from FPD]
+771,フェイスクラッシャー,Face Crusher,[from FPD]
+772,リバースＤＤＴ,Reverse DDT,[from FPD]
+773,リバースブレーンバスター,Reverse Brainbuster,[from FPD]
+774,バックドロップ,Backdrop,[from FPD]
+775,抱え式バックドロップ,Cradle Backdrop,[from FPD]
+776,低空抱え式バックドロップ,Low Cradle Backdrop,[from FPD]
+777,ジャンピングバックドロップ,Jumping Backdrop,[from FPD]
+778,ローリングバックドロップ,Rolling Backdrop,[from FPD]
+779,捻り式バックドロップ,Twisting Backdrop,[from FPD]
+780,急降下バックドロップ,Plunging Backdrop,[from FPD]
+781,ワンハンドバックブリーカー,1-Hand Backbreaker,[from FPD]
+782,ペンデュラムバックブリーカー,Pendulum Backbreaker,[from FPD]
+783,サイドバスター,Side Buster,[from FPD]
+784,ニークラッシャー,Knee Crusher,[from FPD]
+785,アトミックドロップ,Atomic Drop,[from FPD]
+786,ハイアングルアトミックドロップ,Hi-Angle Atomic Drop,[from FPD]
+787,アトミックホイップ,Atomic Whip,[from FPD]
+788,(予約),,
+789,(予約),,
+790,(予約),,
+791,(予約),,
+792,(予約),,
+793,凶器攻撃,Weapon Attack,[from FPD]
+794,スリーパーホールド,Sleeper Hold,[from FPD]
+795,胴絞めスリーパーホールド,Scissor Sleeper,[from FPD]
+796,胴絞めチョークスリーパーホールド,Scissor Choke Sleeper,[from FPD]
+797,コブラクラッチ,Cobra Clutch,[from FPD]
+798,ドラゴンスリーパー,Dragon Sleeper,[from FPD]
+799,ショルダークロー,Shoulder Claw,[from FPD]
+800,コブラツイスト,Cobra Twist,[from FPD]
+801,拷問コブラツイスト,Torture Cobra Twist,[from FPD]
+802,ストレッチプラム,Stretch Plum,[from FPD]
+803,春樹スペシャル,<Haruki> Special,[from FPD]
+804,卍固め,Octopus Hold,[from FPD]
+805,ジャイアントバックブリーカー,Giant Backbreaker,[from FPD]
+806,サーフボードストレッチ,Surfboard Stretch,[from FPD]
+807,足掛け腕固め,Leg-Hook Armlock,[from FPD]
+808,チョークスリーパー,Choke Sleeper,[from FPD]
+809,チキンウィングフェイスロック,Chickenwing Facelock,[from FPD]
+810,ビクトル腕十字固め,Victor Armbar,[from FPD]
+811,逆さ押さえ込み,Reverse Pin,[from FPD]
+812,スクールボーイ,School Boy,[from FPD]
+813,高角度前方回転エビ固め,Hi-Angle Ebi Roll-Up,[from FPD]
+814,飛びつき後方回転エビ固め,Flying Back Ebi Roll,[from FPD]
+815,ミステリオ・ラナ,Mysterio Rana,[from FPD]
+816,(予約),,
+817,垂直落下式リバースＤＤＴ,Vertical Reverse DDT,[from FPD]
+818,大阪御堂筋スタナー,Midosuji Stunner,[from FPD]
+819,フルネルソンバスター,Full Nelson Buster,[from FPD]
+820,ミリオンダラーバスター,Million Dollar Buster,[from FPD]
+821,リバースフランケンシュタイナー,Rev Frankensteiner,[from FPD]
+822,リバースフェイスバスター,Reverse Facebuster,[from FPD]
+823,リバースパワーボム,Reverse Powerbomb,[from FPD]
+824,リバースダブルリストアームソルトホールド,Rev Dbl Wrist Salto,[from FPD]
+825,裏投げ,Ura-nage,[from FPD]
+826,高速バックドロップ,Fast Backdrop,[from FPD]
+827,高角度抱え式バックドロップ,Hi-Angle Cradle Drop,[from FPD]
+828,ぶっこ抜きバックドロップ,Lift-Up Backdrop,[from FPD]
+829,地獄バックドロップ,Hell Backdrop,[from FPD]
+830,垂直落下式バックドロップ,Vertical Backdrop,[from FPD]
+831,殺人バックドロップ,Killer Backdrop,[from FPD]
+832,元祖バックドロップ,Original Backdrop,[from FPD]
+833,バックドロップホールド,Backdrop Hold,[from FPD]
+834,抱え式バックドロップホールド,Cradle Backdrop Hold,[from FPD]
+835,ジャーマンスープレックス,German Suplex,[from FPD]
+836,ジャーマンスープレックスホイップ,German Suplex Whip,[from FPD]
+837,投げっ放しジャーマンスープレックス,Release German Suplex,[from FPD]
+838,ハイブリッジジャーマンスープレックス,High-Bridge German,[from FPD]
+839,ダブルジャーマンスープレックス,Double German Suplex,[from FPD]
+840,トリプルジャーマンスープレックス,Triple German Suplex,[from FPD]
+841,ローリングジャーマンスープレックス,Rolling German Suplex,[from FPD]
+842,マヤ式スープレックス,Maya Suplex,[from FPD]
+843,ドルフィンスペシャル１号,<Dolphin> Special 1,[from FPD]
+844,ドルフィンスペシャル３号,<Dolphin> Special 3,[from FPD]
+845,高速ジャーマンスープレックス,Fast German Suplex,[from FPD]
+846,大回転ジャーマンスープレックス,Spin German Suplex,[from FPD]
+847,高角度ジャーマンスープレックス,Hi-Angle German,[from FPD]
+848,元祖ジャーマンスープレックス,Original German Suplex,[from FPD]
+849,ベリー・トゥ・バック,Belly to Back 2,[from FPD]
+850,連続ベリー・トゥ・バック,Repeat Belly to Back,
+851,クロスアームスープレックス,Cross-Arm Suplex,[from FPD]
+852,タイガースープレックス,Tiger Suplex,[from FPD]
+853,タイガースープレックス’８５,Tiger Suplex '85,[from FPD]
+854,タイガースープレックスホイップ,Tiger Suplex Whip,[from FPD]
+855,高角度タイガースープレックス,Hi-Angle Tiger Suplex,[from FPD]
+856,ハーフネルソンスープレックス,Half Nelson Suplex,[from FPD]
+857,ドラゴンスープレックス,Dragon Suplex,[from FPD]
+858,ドラゴンスープレックスホイップ,Dragon Suplex Whip,[from FPD]
+859,高速フルネルソンスープレックス,Fast Full Nelson,[from FPD]
+860,スリーパースープレックス,Sleeper Suplex,[from FPD]
+861,コブラクラッチスープレックス,Cobra Clutch Suplex,[from FPD]
+862,Ｊ．Ｏ．サイクロンスープレックス,JO Cyclone Suplex,[from FPD]
+863,ゆきぐにドライバーβ,<Yukiguni> Driver Beta,[from FPD]
+864,タワーハッカーボム,Tower Hacker Bomb,[from FPD]
+865,チキンウィングスープレックス,Chickenwing Suplex,[from FPD]
+866,(予約),,
+867,(予約),,
+868,(予約),,
+869,(予約),,
+870,(予約),,
+871,(予約),,
+872,(予約),,
+873,(予約),,
+874,(予約),,
+875,エルボーバット,Elbow Butt,[from FPD]
+876,暴れる,Struggle,[from FPD]
+877,カンガルーキック,Kangaroo Kick,[from FPD]
+878,オーバーヘッドキック,Overhead Kick,[from FPD]
+879,後ろ急所蹴り,Back Low Blow,[from FPD]
+880,脇固め,Fujiwara Armbar,[from FPD]
+881,アームロック,Armlock,[from FPD]
+882,前転裏膝十字固め,Rolling Rev Kneebar,[from FPD]
+883,前方回転エビ固め,Ebi Roll-Up,[from FPD]
+884,ミトクラッチ,<Mito> Clutch,[from FPD]
+885,ピースクラッシャー,<Peace> Crusher,[from FPD]
+886,フライングメイヤー,Flying Mare,[from FPD]
+887,一本背負い,Ippon-seoi,[from FPD]
+888,アームホイップ,Arm Whip,[from FPD]
+889,バックプレス,Back Press,[from FPD]
+890,河津落とし,Kawazu Otoshi,[from FPD]
+891,ココナッツクラッシュ,Coconut Crush,[from FPD]
+892,ブルドッキングヘッドロック,Bulldogging Headlock,[from FPD]
+893,レッグスピン,Leg Spin,[from FPD]
+894,バックに回る,Go Behind,[from FPD]
+895,捻り上げアームロック,Twisting Armlock,[from FPD]
+896,(予約),,
+897,(予約),,
+898,ヘッドドロップ（顔面）,Head Drop (Face),[from FPD]
+899,ヘッドドロップ（腹）,Head Drop (Gut),[from FPD]
+900,馬乗りヘッドバット,Straddle Headbutt,[from FPD]
+901,ジャンピングフィストドロップ,Jumping Fist Drop,[from FPD]
+902,馬乗りパンチ,Straddle Punch,[from FPD]
+903,馬乗りナックルアロー,Straddle Knuckle,[from FPD]
+904,馬乗り掌底,Straddle Palm Strike,[from FPD]
+905,エルボードロップ,Elbow Drop,[from FPD]
+906,ジャンピングエルボードロップ,Jumping Elbow Drop,[from FPD]
+907,フラッシングエルボー,Flashing Elbow,[from FPD]
+908,顔面肘グリ,Elbow Grind (Face),[from FPD]
+909,セントーン,Senton,[from FPD]
+910,サンセットフリップ,Sunset Flip,[from FPD]
+911,ニードロップ（顔面）,Knee Drop (Face),[from FPD]
+912,ニードロップ（腹）,Knee Drop (Gut),[from FPD]
+913,ジャンピングニードロップ（顔面）,Jumping Knee (Face),[from FPD]
+914,ジャンピングニードロップ（腹）,Jumping Knee (Gut),[from FPD]
+915,ダブルニープレス（顔面）,Double Knee (Face),[from FPD]
+916,ダブルニープレス（腹）,Double Knee (Gut),[from FPD]
+917,ニースタンプ（腕）,Knee Stamp (Arm),[from FPD]
+918,キングコングニードロップ,King Kong Knee Drop,[from FPD]
+919,ギロチンドロップ,Guillotine Drop,[from FPD]
+920,ストンピング（顔面）,Stomping (Face),[from FPD]
+921,ストンピング（腹）,Stomping (Gut),[from FPD]
+922,ストンピング（腕）,Stomping (Arm),[from FPD]
+923,フェイスカット,Face Cut,[from FPD]
+924,フットスタンプ,Foot Stamp,[from FPD]
+925,サッカーボールキック,Soccer Ball Kick,[from FPD]
+926,後頭部に低空ドロップキック,Low Dropkick (Head),[from FPD]
+927,大鎌攻撃,Sickle Attack,[from FPD]
+928,コブラクロー,Cobra Claw,[from FPD]
+929,チョーク攻撃,Choke Attack,[from FPD]
+930,ギロチンチョーク,Guillotine Choke,[from FPD]
+931,アイアンクロー,Iron Claw,[from FPD]
+932,ステップオーバーフェイスロック,Step-Over Facelock,[from FPD]
+933,チンロック,Chinlock,[from FPD]
+934,ネックロック,Necklock,[from FPD]
+935,スリーパーホールド,Sleeper Hold,[from FPD]
+936,ドラゴンスリーパー,Dragon Sleeper,[from FPD]
+937,ストレッチプラム,Stretch Plum,[from FPD]
+938,スタンディングクラッチ,Standing Clutch,[from FPD]
+939,Ｒ・Ｙ・Ｕスペシャル,RYU Special,[from FPD]
+940,極楽固め,Gokuraku Hold,[from FPD]
+941,涅槃,Nirvana,[from FPD]
+942,三角絞め,Triangle Choke,[from FPD]
+943,腕極め首固め,Arm-Trap Necklock,[from FPD]
+944,ストラングルホールドγ,Stranglehold Gamma,[from FPD]
+945,クルックヘッドシザース,Crook Headscissors,[from FPD]
+946,チキンウィングフェイスロック,Chickenwing Facelock,[from FPD]
+947,キーロック,Keylock,[from FPD]
+948,ストレートアームバー,Straight Armbar,[from FPD]
+949,チキンウィングアームロック,Chickenwing Armlock,[from FPD]
+950,腕ひしぎ逆十字固め,Cross Armbreaker,[from FPD]
+951,肩固め,Arm Triangle,[from FPD]
+952,体固め,Body Pin,[from FPD]
+953,両手押さえフォール,Two-Hand Pin,[from FPD]
+954,片エビ固め,Half Ebi Pin,[from FPD]
+955,エビ固め,Ebi Pin,[from FPD]
+956,ジャックナイフ固め,Jackknife Pin,[from FPD]
+957,ドルフィンクラッチ,<Dolphin> Clutch,[from FPD]
+958,鬼童クラッチ,<Kido> Clutch,[from FPD]
+959,エルボードロップホールド,Elbow Drop Hold,[from FPD]
+960,フライングボディプレス,Flying Body Press,[from FPD]
+961,超肉弾プレス,Super Body Press,[from FPD]
+962,ムーンサルトフォール,Moonsault Fall,[from FPD]
+963,バーミヤンスタンプ,Bamiyan Stamp,[from FPD]
+964,ヒップドロップ,Hip Drop,[from FPD]
+965,ガードポジション,Guard Position,
+966,(予約),,
+967,(予約),,
+968,(予約),,
+969,(予約),,
+970,ヘッドドロップ（腹）,Head Drop (Gut),[from FPD]
+971,ニードロップ（腹）,Knee Drop (Gut),[from FPD]
+972,ニースタンプ（脚）,Knee Stamp (Leg),[from FPD]
+973,ストンピング（腹）,Stomping (Gut),[from FPD]
+974,ストンピング（脚）,Stomping (Leg),[from FPD]
+975,スピニングレッグロック,Spinning Leglock,[from FPD]
+976,サイキック,Side Kick,[from FPD]
+977,釣り鐘ヘッドドロップ,Hanging Head Drop,[from FPD]
+978,釣り鐘ニースタンプ,Hanging Knee Stamp,[from FPD]
+979,釣り鐘ストンピング,Hanging Stomping,[from FPD]
+980,ジャイアントスイング,Giant Swing,[from FPD]
+981,ストマッククロー,Stomach Claw,[from FPD]
+982,弓矢固め,Bow & Arrow Hold,[from FPD]
+983,ＳＴＦ,STF,[from FPD]
+984,逆エビ固め,Boston Crab,[from FPD]
+985,逆エビ反り固め,Arched Boston Crab,[from FPD]
+986,逆片エビ固め,Half Crab,[from FPD]
+987,拷問逆片エビ固め,Torture Half Crab,[from FPD]
+988,サソリ固め,Sharpshooter,[from FPD]
+989,スコーピオンデスロック,Scorpion Deathlock,[from FPD]
+990,トライアングルスコーピオン,Triangle Scorpion,[from FPD]
+991,アレハンドロックＩＩＩ,Alejandro Lock III,[from FPD]
+992,テキサスクローバーホールド,Texas Cloverleaf,[from FPD]
+993,スピニングトーホールド,Spinning Toe Hold,[from FPD]
+994,監獄固め,Prison Lock,[from FPD]
+995,足四の字固め,Figure-Four Leglock,[from FPD]
+996,変形四の字固め,Mod Figure-Four,[from FPD]
+997,膝固め,Kneelock,[from FPD]
+998,膝十字固め,Kneebar,[from FPD]
+999,アキレス腱固め,Ankle Lock,[from FPD]
+1000,アンクルホールド,Ankle Hold,[from FPD]
+1001,ヒールホールド,Heel Hold,[from FPD]
+1002,片エビ固め,Half Ebi Pin,[from FPD]
+1003,背面式片エビ固め,Rev Half Ebi Pin,[from FPD]
+1004,エビ固め,Ebi Pin,[from FPD]
+1005,ジャックナイフ固め,Jackknife Pin,[from FPD]
+1006,ムーンサルトフォール,Moonsault Fall,[from FPD]
+1007,四の字ジャックナイフ固め,Figure-Four Jackknife,[from FPD]
+1008,ガードポジション,Guard Position,
+1009,ローキック,Low Kick,[from FPD]
+1010,(予約),,
+1011,(予約),,
+1012,(予約),,
+1013,ヘッドドロップ（首）,Head Drop (Neck),[from FPD]
+1014,ヘッドドロップ（腰）,Head Drop (Back),[from FPD]
+1015,ジャンピングフィストドロップ,Jumping Fist Drop,[from FPD]
+1016,馬乗り後頭部パンチ,Straddle Punch (Head),[from FPD]
+1017,エルボードロップ,Elbow Drop,[from FPD]
+1018,ジャンピングエルボードロップ,Jumping Elbow Drop,[from FPD]
+1019,フラッシングエルボー,Flashing Elbow,[from FPD]
+1020,顔面肘グリ,Elbow Grind (Face),[from FPD]
+1021,セントーン,Senton,[from FPD]
+1022,サンセットフリップ,Sunset Flip,[from FPD]
+1023,ニードロップ（首）,Knee Drop (Neck),[from FPD]
+1024,ニードロップ（腰）,Knee Drop (Back),[from FPD]
+1025,ジャンピングニードロップ（首）,Jumping Knee (Neck),[from FPD]
+1026,ジャンピングニードロップ（腰）,Jumping Knee (Back),[from FPD]
+1027,ダブルニープレス（首）,Double Knee (Neck),[from FPD]
+1028,ダブルニープレス（腰）,Double Knee (Back),[from FPD]
+1029,ニースタンプ（腕）,Knee Stamp (Arm),[from FPD]
+1030,ギロチンドロップ,Guillotine Drop,[from FPD]
+1031,キングコングニードロップ,King Kong Knee Drop,[from FPD]
+1032,ストンピング（首）,Stomping (Neck),[from FPD]
+1033,ストンピング（腰）,Stomping (Back),[from FPD]
+1034,ストンピング（腕）,Stomping (Arm),[from FPD]
+1035,チョン蹴り,Light Kick,[from FPD]
+1036,フットスタンプ,Foot Stamp,[from FPD]
+1037,胴絞めスリーパーホールド,Scissor Sleeper,[from FPD]
+1038,片羽絞め,Single Wing Choke,[from FPS]
+1039,チョークスリーパー,Choke Sleeper,[from FPD]
+1040,キャメルクラッチ,Camel Clutch,[from FPD]
+1041,拷問キャメルクラッチ,Torture Camel Clutch,[from FPD]
+1042,極楽固め,Gokuraku Hold,[from FPD]
+1043,ステップオーバーアームブリーカー,Step-Over Armbar,[from FPD]
+1044,羽根折り固め,Wing Lock,[from FPD]
+1045,ストラングルホールドα,Stranglehold Alpha,[from FPD]
+1046,脇固め,Fujiwara Armbar,[from FPD]
+1047,腕ひしぎ逆十字固め,Cross Armbreaker,[from FPD]
+1048,腹固め,Stomach Armlock,[from FPD]
+1049,体固め,Body Pin,[from FPD]
+1050,両手押さえフォール,Two-Hand Pin,[from FPD]
+1051,超肉弾プレス,Super Body Press,[from FPD]
+1052,ラ・マヒストラル,La Magistral,[from FPD]
+1053,ジャパニーズレッグロールクラッチ,Japanese Leg Clutch,[from FPD]
+1054,鬼童クラッチ,<Kido> Clutch,[from FPD]
+1055,アレビンズ・リフト,Arevin's Lift,[from FPD]
+1056,腕極めフェイスロック,Arm-Trap Facelock,[from FPD]
+1057,バックマウントポジション,Back Mount Position,[from FPD]
+1058,亡霊クラッチ,Ghost Clutch,[from FPD]
+1059,(予約),Jumping Splash,"no name in the game; owner 2026-10-30"
+1060,(予約),,
+1061,(予約),,
+1062,ヘッドドロップ（腰）,Head Drop (Back),[from FPD]
+1063,エルボードロップ,Elbow Drop,[from FPD]
+1064,ジャンピングエルボードロップ,Jumping Elbow Drop,[from FPD]
+1065,足掛け膝砕き,Leg-Hook Knee Crush,[from FPD]
+1066,ニードロップ（腰）,Knee Drop (Back),[from FPD]
+1067,ダブルニープレス（腰）,Double Knee (Back),[from FPD]
+1068,ニースタンプ（脚）,Knee Stamp (Leg),[from FPD]
+1069,ストンピング（腰）,Stomping (Back),[from FPD]
+1070,ストンピング（脚）,Stomping (Leg),[from FPD]
+1071,前転キャメルクラッチ,Rolling Camel Clutch,[from FPD]
+1072,ロメロスペシャル,Romero Special,[from FPD]
+1073,ロメロチンロック,Romero Chinlock,[from FPD]
+1074,拷問ロメロスペシャル,Torture Romero,[from FPD]
+1075,カベルナリア,La Cavernaria,[from FPD]
+1076,変形カベルナリア,Mod Cavernaria,[from FPD]
+1077,弓矢固め,Bow & Arrow Hold,[from FPD]
+1078,逆エビ固め,Boston Crab,[from FPD]
+1079,逆エビ反り固め,Arched Boston Crab,[from FPD]
+1080,逆片エビ固め,Half Crab,[from FPD]
+1081,拷問逆片エビ固め,Torture Half Crab,[from FPD]
+1082,リバースバイパーホールド,Reverse Viper Hold,[from FPD]
+1083,ＳＴＦ,STF,[from FPD]
+1084,クロス式STF,Cross STF,[from FPD]
+1085,裏ＳＴＦ,Reverse STF,[from FPD]
+1086,フィッシュストレッチスリーパー,Fish Stretch Sleeper,[from FPD]
+1087,リバースインディアンデスロック,Rev Indian Deathlock,[from FPD]
+1088,鎌固め,Sickle Hold,[from FPD]
+1089,裏膝十字固め,Reverse Kneebar,[from FPD]
+1090,裏アキレス腱固め,Reverse Ankle Lock,[from FPD]
+1091,片エビ固め,Half Ebi Pin,[from FPD]
+1092,エビ固め,Ebi Pin,[from FPD]
+1093,ジャックナイフ固め,Jackknife Pin,[from FPD]
+1094,ラ・マヒストラル,La Magistral,[from FPD]
+1095,ジャパニーズレッグロールクラッチ,Japanese Leg Clutch,[from FPD]
+1096,鬼童クラッチ,<Kido> Clutch,[from FPD]
+1097,ぶっこ抜きベリー・トゥ・バック,Lift-Up Belly to Back,[from FPD]
+1098,バックマウントポジション,Back Mount Position,[from FPD]
+1099,裏足四の字固め,Reverse Figure-Four,[from FPD]
+1100,(予約),,
+1101,(予約),,
+1102,(予約),,
+1103,串刺し頭突き連打,Corner Headbutt Rush,[from FPD]
+1104,串刺し喉笛チョップ,Corner Throat Chop,[from FPD]
+1105,串刺し胸張り手,Corner Chest Slap,[from FPD]
+1106,串刺しマシンガン逆水平チョップ,Corner MG Chops,[from FPD]
+1107,突っ張り電車道,Tsuppari Charge,[from FPD]
+1108,コーナー馬乗りナックルアロー,Corner Knuckle Arrow,[from FPD]
+1109,串刺しボディブロー,Corner Body Blow,[from FPD]
+1110,串刺しパンチラッシュ,Corner Punch Rush,[from FPD]
+1111,串刺しセイバーハンマーラッシュ,Corner <Saber> Hammer,[from FPD]
+1112,串刺しハンマーブロー,Corner Hammer Blow,[from FPD]
+1113,串刺しショルダー,Corner Shoulder,[from FPD]
+1114,串刺しニーリフト,Corner Knee Lift,[from FPD]
+1115,コーナー踏みつけ,Corner Trample,[from FPD]
+1116,串刺しストンピング,Corner Stomping,[from FPD]
+1117,顔面ウォッシュ,Face Wash,[from FPD]
+1118,串刺し低空ドロップキック,Corner Low Dropkick,[from FPD]
+1119,串刺し浴びせ蹴り,Corner Abise-geri,[from FPD]
+1120,カーフブランディング,Calf Branding,[from FPD]
+1121,ロープ渡り,Rope Walk,[from FPD]
+1122,拝みロープ渡り,Praying Rope Walk,[from FPD]
+1123,ギロチンホイップ,Guillotine Whip,[from FPD]
+1124,ダイヤモンドダスト,Diamond Dust,[from FPD]
+1125,バーニングハンマー,Burning Hammer,[from FPD]
+1126,ターンバックオクラホマスタンピート,Turnback Stampede,[from FPD]
+1127,串刺しカナディアンバックブリーカー,Corner Torture Rack,[from FPD]
+1128,リバーススプラッシュ,Reverse Splash,[from FPD]
+1129,ハリウッドスタープレス,Hollywood Press,[from FPD]
+1130,コーナーヒップドロップ,Corner Hip Drop,[from FPD]
+1131,スイングＤＤＴ,Swing DDT,[from FPD]
+1132,元祖スイングＤＤＴ,Original Swing DDT,[from FPD]
+1133,スイングリバースＤＤＴ,Swing Reverse DDT,[from FPD]
+1134,ブロンコバスター,Bronco Buster,[from FPD]
+1135,アイコノクラズム,Iconoclasm,[from FPD]
+1136,ゴリコノクラズム,Goriconoclasm,[from FPD]
+1137,奈落喉輪落とし,Naraku Chokeslam,[from FPD]
+1138,雪崩式腕ひしぎ逆十字固め,Super Cross Armbar,[from FPD]
+1139,雪崩式フランケンシュタイナー,Super Frankensteiner,[from FPD]
+1140,雪崩式腰振りフランケンシュタイナー,Super Hip-Swing Rana,[from FPD]
+1141,雪崩式場外フランケンシュタイナー,Super Outside Rana,[from FPD]
+1142,雪崩式リバースフランケンシュタイナー,Super Reverse Rana,[from FPD]
+1143,雪崩式後方回転エビ固め,Super Back Ebi Roll,[from FPD]
+1144,セカンド雪崩式ブレーンバスター,2nd Rope Brainbuster,[from FPD]
+1145,トップ雪崩式ブレーンバスター,Top Rope Brainbuster,[from FPD]
+1146,雪崩式垂直落下ブレーンバスター,Super Vertical Buster,[from FPD]
+1147,雪崩式リバースブレーンバスター,Super Reverse Buster,[from FPD]
+1148,雪崩式フィッシャーマンバスター,Super Fisherman,[from FPD]
+1149,雪崩式フロントスープレックス,Super Front Suplex,[from FPD]
+1150,雪崩式サイドスープレックス,Super Side Suplex,[from FPD]
+1151,雪崩式ダブルアームスープレックス,Super Double Arm,[from FPD]
+1152,雪崩式ダイヤモンドカッター,Super Diamond Cutter,[from FPD]
+1153,雪崩式バックフリップ,Super Back Flip,[from FPD]
+1154,雪崩式水車落とし,Super Waterwheel,[from FPD]
+1155,雪崩式パワースラム,Super Powerslam,[from FPD]
+1156,雪崩式ＤＤＴ,Super DDT,[from FPD]
+1157,雪崩式リバースＤＤＴ,Super Reverse DDT,[from FPD]
+1158,大車輪喉輪落とし,Big Wheel Chokeslam,[from FPD]
+1159,雪崩式ドラゴンスクリュー,Super Dragon Screw,[from FPD]
+1160,雪崩式裏投げ,Super Ura-nage,[from FPD]
+1161,雪崩式バックドロップ,Super Backdrop,[from FPD]
+1162,雪崩式ジャーマンスープレックス,Super German Suplex,[from FPD]
+1163,スパイダージャーマンスープレックス,Spider German Suplex,[from FPD]
+1164,雪崩式タイガースープレックス,Super Tiger Suplex,[from FPD]
+1165,雪崩式ドラゴンスープレックス,Super Dragon Suplex,[from FPD]
+1166,雪崩式ツームストンパイルドライバー,Super Tombstone PD,[from FPD]
+1167,雪崩式パワーボム,Super Powerbomb,[from FPD]
+1168,雪崩式ジャンピングボム,Super Jumping Bomb,[from FPD]
+1169,雪崩式ブラックカイザーボム,Super B <Kaiser*> Bomb,[from FPD]
+1170,ターンバックルボム,Turnbuckle Bomb,[from FPD]
+1171,アストロシザースホイップ,Astro Scissors Whip,[from FPD]
+1172,(予約),,
+1173,(予約),,
+1174,(予約),,
+1175,(予約),,
+1176,(予約),,
+1177,(予約),,
+1178,(予約),,
+1179,(予約),,
+1180,ガードポジションヘッドバット,Guard Headbutt,
+1181,ガードポジションパンチ,Guard Punch,
+1182,ガードポジションナックルアロー,Guard Knuckle Arrow,
+1183,ガードポジションモンゴリアンチョップ,Guard Mongolian Chop,
+1184,ガードポジション掌底,Guard Palm,
+1185,ガードポジションエルボーバット,Guard Elbow Butt,
+1186,ギロチンチョーク,Guillotine Choke,[from FPD]
+1187,袈裟固め,Scarf Hold,[from FPD]
+1188,肩固め,Arm Triangle,[from FPD]
+1189,腕ひしぎ逆十字固め,Cross Armbreaker,[from FPD]
+1190,ジャイアントスイング,Giant Swing,[from FPD]
+1191,逆エビ固め,Boston Crab,[from FPD]
+1192,サソリ固め,Sharpshooter,[from FPD]
+1193,足四の字固め,Figure-Four Leglock,[from FPD]
+1194,ヒールホールド,Heel Hold,[from FPD]
+1195,ジャックナイフ固め,Jackknife Pin,[from FPD]
+1196,リフトアッププレス,Lift-Up Press,[from FPD]
+1197,アンクルホールド,Ankle Hold,[from FPD]
+1198,逆さ吊りパンチ,Tree of Woe Punch,[from FPD]
+1199,(予約),,
+1200,(予約),,
+1201,(予約),,
+1202,(予約),,
+1203,(予約),,
+1204,三角絞め,Triangle Choke,[from FPD]
+1205,アームロック,Armlock,[from FPD]
+1206,腕ひしぎ逆十字固め,Cross Armbreaker,[from FPD]
+1207,小包固め,Small Package,[from FPD]
+1208,ウラカン・ラナ,Huracanrana,[from FPD]
+1209,弾き飛ばし,Push Away,[from FPD]
+1210,バックに回る,Go Behind,[from FPD]
+1211,フロントネックロック,Front Necklock,[from FPD]
+1212,(予約),,
+1213,(予約),,
+1214,(予約),,
+1215,(予約),,
+1216,顔面パンチ,Face Punch,[from FPD]
+1217,ボディパンチ,Body Punch,[from FPD]
+1218,顔面ニーリフト,Face Knee Lift,[from FPD]
+1219,サイドボディニーリフト,Side Body Knee Lift,[from FPD]
+1220,フロントネックロック,Front Necklock,[from FPD]
+1221,羽根折り固め,Wing Lock,[from FPD]
+1222,腹固め,Stomach Armlock,[from FPD]
+1223,ジャンピングＤＤＴ,Jumping DDT,[from FPD]
+1224,ダブルアームスープレックス,Double Arm Suplex,[from FPD]
+1225,アレビンズ・リフト,Arevin's Lift,[from FPD]
+1226,パイルドライバー,Piledriver,[from FPD]
+1227,パワーボムホイップ,Powerbomb Whip,[from FPD]
+1228,バックに回る,Go Behind,[from FPD]
+1229,(予約),,
+1230,(予約),,
+1231,(予約),,
+1232,(予約),,
+1233,(予約),,
+1234,(予約),,
+1235,(予約),,
+1236,ハンマーロック,Hammerlock,[from FPD]
+1237,カニ挟み,Kani Basami,[from FPD]
+1238,水車落とし,Waterwheel Drop,[from FPD]
+1239,持ち上げて落とす,Lift and Drop,[from FPD]
+1240,足を引いて転がす,Leg Pull Trip,[from FPD]
+1241,(予約),,
+1242,(予約),,
+1243,(予約),,
+1244,(予約),,
+1245,(予約),,
+1246,バックマウントヘッドバット,Back Mount Headbutt,[from FPD]
+1247,バックマウントパンチ,Back Mount Punch,[from FPD]
+1248,バックマウントナックルアロー,Back Mount Knuckle,[from FPD]
+1249,バックマウント掌底,Back Mount Palm,[from FPD]
+1250,バックマウントエルボー,Back Mount Elbow,[from FPD]
+1251,チョークスリーパー,Choke Sleeper,[from FPD]
+1252,胴絞めチョークスリーパー,Scissor Choke,[from FPD]
+1253,腕ひしぎ逆十字固め,Cross Armbreaker,[from FPD]
+1254,鬼童クラッチ,<Kido> Clutch,[from FPD]
+1255,アレビンズ・リフト,Arevin's Lift,[from FPD]
+1256,ベリー・トゥ・バック,Belly to Back 2,[from FPD]
+1257,リバースパワーボム,Reverse Powerbomb,[from FPD]
+1258,(予約),,
+1259,(予約),,
+1260,(予約),,
+1261,(予約),,
+1262,(予約),,
+1263,(予約),,
+1264,(予約),,
+1265,裏膝十字固め,Reverse Kneebar,[from FPD]
+1266,バックプレス,Back Press,[from FPD]
+1267,前方回転エビ固め,Ebi Roll-Up,[from FPD]
+1268,下から抜ける,Escape Underneath,[from FPD]
+1269,(予約),,
+1270,(予約),,
+1271,(予約),,
+1272,(予約),,
+1273,(予約),,
+1274,ヘッドバット,Headbutt,[from FPD]
+1275,フック,Hook,[from FPD]
+1276,フック掌底,Hook Palm,[from FPD]
+1277,胸板ハンマーブロー,Chest Hammer Blow,[from FPD]
+1278,エルボーバット,Elbow Butt,[from FPD]
+1279,リング内ブレーンバスター,Brainbuster to Ring,[from FPD]
+1280,奈落喉輪落とし,Naraku Chokeslam,[from FPD]
+1281,奈落ドラゴンスクリュー,Naraku Dragon Screw,[from FPD]
+1282,エプロンバックドロップ,Apron Backdrop,[from FPD]
+1283,エプロンエクスプロイダー,Apron Exploder,[from FPD]
+1284,エプロンジャーマンスープレックス,Apron German Suplex,[from FPD]
+1285,エプロンハーフネルソンスープレックス,Apron Half Nelson,[from FPD]
+1286,奈落タイガードライバー,Naraku Tiger Driver,[from FPD]
+1287,奈落パワーボム,Naraku Powerbomb,[from FPD]
+1288,場外投げ捨てパワーボム,Powerbomb Outside,[from FPD]
+1289,(予約),,
+1290,(予約),,
+1291,(予約),,
+1292,(予約),,
+1293,(予約),,
+1294,(予約),,
+1295,(予約),,
+1296,ヘッドバット,Headbutt,[from FPD]
+1297,フック,Hook,[from FPD]
+1298,フック掌底,Hook Palm,[from FPD]
+1299,エルボーバット,Elbow Butt,[from FPD]
+1300,足ひっぱり,Leg Pull,[from FPD]
+1301,足ひっぱり場外,Leg Pull Outside,[from FPD]
+1302,場外ブレーンバスター,Outside Brainbuster,[from FPD]
+1303,飛び降り式スタンガン,Leaping Stun Gun,[from FPD]
+1304,ショルダーアームブリーカー,Shoulder Armbreaker,[from FPD]
+1305,ブレーンバスター後方着地,Buster: Land Behind,[from FPD]
+1306,ショルダーバット,Shoulder Butt,[from FPD]
+1307,(予約),,
+1308,(予約),,
+1309,(予約),,
+1310,(予約),,
+1311,(予約),,
+1312,(予約),,
+1313,(予約),,
+1314,顔面掻きむしり,Face Rake,[from FPD]
+1315,ヘッドバット,Headbutt,[from FPD]
+1316,掌底,Palm Strike,[from FPD]
+1317,エルボーバット,Elbow Butt,[from FPD]
+1318,パワーボムホイップ,Powerbomb Whip,[from FPD]
+1319,雪崩式前方回転エビ固め,Super Ebi Roll-Up,[from FPD]
+1320,雪崩式後方回転エビ固め,Super Back Ebi Roll,[from FPD]
+1321,雪崩式顔面砕きブレーンバスター,Super Face Buster,[from FPD]
+1322,雪崩式スイングＤＤＴ,Super Swing DDT,[from FPD]
+1323,雪崩式喉輪落とし,Super Chokeslam,[from FPD]
+1324,雪崩式オクラホマスタンピート,Super Okla Stampede,[from FPD]
+1325,雪崩式パワーボム,Super Powerbomb,[from FPD]
+1326,雪崩式ジャンピングボム,Super Jumping Bomb,[from FPD]
+1327,雪崩式ツームストンパイルドライバー,Super Tombstone PD,[from FPD]
+1328,(予約),,
+1329,(予約),,
+1330,(予約),,
+1331,(予約),,
+1332,(予約),,
+1333,(予約),,
+1334,(予約),,
+1335,バックハンドエルボー,Backhand Elbow,[from FPD]
+1336,浴びせ倒し,Body Topple,[from FPD]
+1337,雪崩式前方回転エビ固め,Super Ebi Roll-Up,[from FPD]
+1338,スーパー雪崩式フランケンシュタイナー,Super Avalanche Rana,[from FPD]
+1339,(予約),,
+1340,(予約),,
+1341,(予約),,
+1342,(予約),,
+1343,(予約),,
+1344,振り向き式正面飛びミサイルキック,Turnaround Missile,[from FPD]
+1345,三角跳び延髄斬り,Springboard Enzuigiri,[from FPD]
+1346,三角跳びボディアタック,Springboard Body Atk,[from FPD]
+1347,ムーンサルトアタック,Moonsault Attack,[from FPD]
+1348,(予約),,
+1349,(予約),,
+1350,(予約),,
+1351,(予約),,
+1352,(予約),,
+1353,(予約),,
+1354,(予約),,
+1355,ダイビング背面エルボードロップ,Diving Back Elbow,[from FPD]
+1356,ローリングセントーン,Rolling Senton,[from FPD]
+1357,ダイビングボディプレス,Diving Body Press,[from FPD]
+1358,ムーンサルトプレス,Moonsault Press,[from FPD]
+1359,(予約),,
+1360,(予約),,
+1361,(予約),,
+1362,(予約),,
+1363,(予約),,
+1364,(予約),,
+1365,(予約),,
+1366,○ 片手上げ1,○ One Hand Up 1,
+1367,○ 片手上げ２,○ One Hand Up 2,
+1368,○ 片手半上げ,○ Half Hand Up,
+1369,○ 片腕上げ,○ One Arm Up,
+1370,○ 片腕回し,○ Arm Swing,[from FPD]
+1371,○ 拳突き上げ,○ Fist Thrust,[from FPD]
+1372,○ パンサーポーズ,○ <Panther*> Pose,[from FPD]
+1373,○ テキサスロングホーン,○ Texas Longhorn,[from FPD]
+1374,○ 指回し1,○ Finger Twirl 1,[from FPD]
+1375,○ 指回し2,○ Finger Twirl 2,[from FPD]
+1376,○ 指差し眺め,○ Point and Stare,[from FPD]
+1377,○ 手首チェック,○ Wrist Check,[from FPD]
+1378,○ 手首チェック片腕上げ,"○ Wrist Check, Arm Up",
+1379,○ 両腕交差片手上げ,"○ X-Arms, Hand Up",[from FPD]
+1380,○ 両手上げ,○ Both Hands Up,
+1381,○ 両手ガッツポーズ,○ Double Fist Pump,[from FPD]
+1382,○ 両手突き上げ,○ Arms Thrust Up,[from FPD]
+1383,○ 両手招き,○ Two-Hand Beckon,[from FPD]
+1384,○ 両手叩き,○ Hand Clap,[from FPD]
+1385,○ 両手拡げ挑発,○ Arms Wide Taunt,[from FPD]
+1386,○ 両手拡げ叫び,○ Arms Wide Shout,[from FPD]
+1387,○ 両手振り,○ Wave Both Hands,[from FPD]
+1388,○ 弓引きガッツポーズ,○ Bow-Draw Pump,[from FPD]
+1389,○ 首斬りポーズ,○ Throat Slash,[from FPD]
+1390,○ ドルフィンポーズ,○ <Dolphin> Pose,[from FPD]
+1391,○ バク転,○ Backflip,[from FPD]
+1392,○ 筋肉アピール,○ Muscle Appeal,[from FPD]
+1393,○ バク転筋肉アピール,○ Backflip + Flex,[from FPD]
+1394,○ 上空毒霧吹き,○ Poison Mist Up,[from FPD]
+1395,○ カニ歩き,○ Crab Walk,[from FPD]
+1396,ＯＨ！,OH!,[from FPD]
+1397,ピースサイン,Peace Sign,[from FPD]
+1398,サポーター直し,Adjust Pads,[from FPD]
+1399,闘魂アピール,Toukon Appeal,[from FPD]
+1400,拳溜め片腕突き上げ,Clenched Fist Raise,
+1401,指差し,Point,[from FPD]
+1402,ファイヤーポーズ,Fire Pose,[from FPD]
+1403,ＢＡＮＧ！ＢＡＮＧ！,BANG! BANG!,[from FPD]
+1404,両腕クロス,Cross Arms,[from FPD]
+1405,両腕交差,Arms Crossed,[from FPD]
+1406,開脚ジャンプ,Split Jump,[from FPD]
+1407,握り拳,Clenched Fist,[from FPD]
+1408,両手十字切り,Two-Hand Cross Sign,[from FPD]
+1409,指鳴らし,Finger Snap,[from FPD]
+1410,首振り,Head Shake,[from FPD]
+1411,Ｇ・Ｃアピール,GC Appeal,[from FPD]
+1412,スパイク雄叫び,<Spike*> Roar,[from FPD]
+1413,原人の雄叫び,Caveman Roar,[from FPD]
+1414,ＷＯＷ！ＷＯＷ！,WOW! WOW!,[from FPD]
+1415,胸張り,Chest Out,[from FPD]
+1416,アニマルポーズ,Animal Pose,[from FPD]
+1417,マッスルポージング,Muscle Posing,[from FPD]
+1418,雄叫びガッツポーズ,Roaring Fist Pump,[from FPD]
+1419,腹太鼓,Belly Drum,[from FPD]
+1420,腰クネ,Hip Wiggle,[from FPD]
+1421,地団駄踏み雄叫び,Stomp and Roar,[from FPD]
+1422,気合い入れ押忍,Osu! Psych-Up,[from FPD]
+1423,礼,Bow,[from FPD]
+1424,神への祈り,Prayer to God,[from FPD]
+1425,ドイツ式敬礼,German Salute,[from FPD]
+1426,念仏拝み,Buddhist Prayer,[from FPD]
+1427,振り向きアピール,Turnaround Appeal,[from FPD]
+1428,両膝つき上空指差し,"Kneel, Point Skyward",[from FPD]
+1429,カイザーポーズ,<Kaiser*> Pose,[from FPD]
+1430,忍者ポーズ,Ninja Pose,[from FPD]
+1431,ブルドッグポーズ,Bulldog Pose,[from FPD]
+1432,ブルドッグ跨ぎポーズ,Bulldog Straddle Pose,[from FPD]
+1433,側転,Cartwheel,[from FPD]
+1434,降参ポーズ,Surrender Pose,[from FPD]
+1435,河野ガッツポーズ,<Kono> Fist Pump,[from FPD]
+1436,○ トライアングルサイン,○ Triangle Sign,[from FPD]
+1437,四股踏み,Sumo Stomp,[from FPD]
+1438,○ マイクアピール,○ Mic Appeal,[from FPD]
+1439,ブリブラダンス,Buri-Bura Dance,[from FPD]
+1440,ボムアピール,Bomb Appeal,[from FPD]
+1441,左右指差しパフォーマンス,Point Left and Right,[from FPD]
+1442,○ ジャッカルパックポーズ,○ <Jackal Pack> Pose,[from FPD]
+1443,飛行機ポーズ,Airplane Pose,[from FPD]
+1444,○ アイテムゲットアピール,○ Item Get Appeal,[from FPD]
+1445,○ 両手中指立て,○ Two Middle Fingers,[from FPD]
+1446,○ 中指立て,○ Middle Finger,[from FPD]
+1447,○ Xポーズ,○ X Pose,[from FPD]
+1448,ゴーストダンス,Ghost Dance,[from FPD]
+1449,マグナムダンス,Magnum Dance,[from FPD]
+1450,クレイジーファッキン,Crazy Fuckin',[from FPD]
+1451,○ 片手上げ雄叫び,○ Hand Up Roar,[from FPD]
+1452,○ 尻叩き挑発,○ Butt Slap Taunt,[from FPD]
+1453,○ 両手斜め上げ,○ Diagonal Arms Up,[from FPD]
+1454,○ 両手指斜め上げ,○ Diagonal Fingers Up,[from FPD]
+1455,○ 片腕入魂アピール,○ Arm Spirit Appeal,[from FPD]
+1456,○ 一本指上げ,○ One Finger Up,[from FPD]
+1457,力一杯首斬り,Full-Force Throat Slash,
+1458,軽く礼,Slight Bow,[from FPD]
+1459,○ 両手握り拳,○ Both Fists,[from FPD]
+1460,○ 鶴の舞,○ Crane Dance,[from FPD]
+1461,アルゼンチンアピール,Argentine Appeal,[from FPD]
+1462,COOLダンス,COOL Dance,[from FPD]
+1463,○ 糸巻きアピール,○ Arm Roll Appeal,[from FPD]
+1464,○ 両手クロスガッツポーズ,○ X-Arm Fist Pump,[from FPD]
+1465,○ 首斬り自分指差し,"○ Slash, Point at Self",
+1466,○ 頭指差しアピール,○ Head Point Appeal,[from FPD]
+1467,○ 両手振り上げ招き,"○ Arms Up, Beckon",[from FPD]
+1468,○ 両手ピース,○ Double Peace,[from FPD]
+1469,ガンつけ,Glare,[from FPD]
+1470,両手合わせ礼,Prayer Bow,[from FPD]
+1471,○ 会場見回しパフォーマンス,○ Survey the Crowd,[from FPD]
+1472,○ 人差し指振り下ろし,○ Finger Swing Down,[from FPD]
+1473,○ 下方指差し,○ Point Down,[from FPD]
+1474,○ 敬礼,○ Salute,[from FPD]
+1475,(予約),,
+1476,(予約),,
+1477,(予約),,
+1478,(予約),,
+1479,(予約),,
+1480,(予約),,
+1481,(予約),,
+1482,(予約),,
+1483,(予約),,
+1484,(予約),,
+1485,(予約),,
+1486,(予約),,
+1487,サンドイッチラリアット,Sandwich Lariat,[from FPD]
+1488,Ｗ．ドロップキック,Double Dropkick,[from FPD]
+1489,サンドイッチ延髄斬り,Sandwich Enzuigiri,[from FPD]
+1490,Ｗ．ブレーンバスター,Double Brainbuster,[from FPD]
+1491,合体ダイヤモンドカッター,Double Diamond Cutter,[from FPD]
+1492,合体パワーボム,Double Powerbomb,[from FPD]
+1493,パワーボム＋ネックブリーカードロップ,PB+Neckbreaker,[from FPD]
+1494,(予約),,
+1495,(予約),,
+1496,(予約),,
+1497,(予約),,
+1498,(予約),,
+1499,(予約),,
+1500,サンドイッチラリアット,Sandwich Lariat,[from FPD]
+1501,サンドイッチ延髄斬り,Sandwich Enzuigiri,[from FPD]
+1502,Ｗ．バックドロップ,Double Backdrop,[from FPD]
+1503,岩石喉輪落とし,Rock Chokeslam,[from FPD]
+1504,Ｂ．ドロップ＋ネックブリーカードロップ,Backdrop+Neckbreaker,[from FPD]
+1505,眉山,Bizan,[from FPD]
+1506,(予約),,
+1507,(予約),,
+1508,(予約),,
+1509,(予約),,
+1510,(予約),,
+1511,裏摩周,Ura-Mashu,[from FPD]
+1512,合体ＤＤＴ,Double DDT,
+1513,ハイジャックパイルドライバー,Hijack Piledriver,[from FPD]
+1514,合体ブルドッキングヘッドロック,Double Bulldog,[from FPD]
+1515,Ｂ．ドロップ＋Ｄ．ネックブリーカー,BD+Dbl Neckbreaker,[from FPD]
+1516,雪崩式オクラホマスタンピート,Super Okla Stampede,[from FPD]
+1517,(予約),,
+1518,(予約),,
+1519,(予約),,
+1520,(予約),,
+1521,(予約),,
+1522,太鼓乱れ打ち,Taiko Drum Barrage,[from FPD]
+1523,(予約),,
+1524,(予約),,
+1525,(予約),,
+1526,太鼓乱れ打ち,Taiko Drum Barrage,[from FPD]
+1527,(予約),,
+1528,(予約),,
+1529,(予約),,
+1530,太鼓乱れ打ち,Taiko Drum Barrage,[from FPD]
+1531,トリプルインパクト,Triple Impact,[from FPD]
+1532,トリプルパワーボム,Triple Powerbomb,[from FPD]
+1533,(予約),,
+1534,(予約),,
+1535,(予約),,
+1536,(予約),,
+1537,(予約),,
+1538,(予約),,
+1539,(予約),,
+1540,(予約),,
+1541,(予約),,
+1542,(予約),,
+1543,エルボーバット,Elbow Butt,[from FPD]
+1544,(予約),,
+1545,(予約),,
+1546,(予約),,
+1547,ダッシュストレート,Dash Straight,
+1548,ローリング袈裟斬りチョップ,Rolling Kesagiri Chop,[from FPD]
+1549,飛び膝蹴り,Flying Knee,
+1550,(予約),,
+1551,(予約),,
+1552,(予約),,
+1553,(予約),,
+1554,(予約),,
+1555,(予約),,
+1556,ダッシュストレート,Dash Straight,
+1557,ブレイジングチョップ,Blazing Chop,
+1558,ドゥガンハンマー,Dugan Hammer,[from FPD]
+1559,飛び膝蹴り,Flying Knee,
+1560,デジャヴ,Deja Vu,
+1561,(予約),,
+1562,(予約),,
+1563,(予約),,
+1564,(予約),,
+1565,(予約),,
+1566,ダッシュストレート,Dash Straight,
+1567,ローリング袈裟斬りチョップ,Rolling Kesagiri Chop,[from FPD]
+1568,飛び膝蹴り,Flying Knee,
+1569,コブラツイスト,Cobra Twist,[from FPD]
+1570,バックフリップ,Back Flip,[from FPD]
+1571,エクスプロイダー,Exploder,[from FPD]
+1572,(予約),,
+1573,(予約),,
+1574,(予約),,
+1575,(予約),,
+1576,(予約),,
+1577,(予約),,
+1578,(予約),,
+1579,顔面低空ドロップキック,Low Dropkick (Face),
+1580,腹蹴り,Gut Kick,
+1581,(予約),,
+1582,(予約),,
+1583,(予約),,
+1584,(予約),,
+1585,串刺しスピアー,Corner Spear,
+1586,ロンダートカンガルーキック,Roundoff Kangaroo Kick,
+1587,串刺し式シャイニングウィザード,Corner Shining Wizard,
+1588,(予約),,
+1589,(予約),,
+1590,(予約),,
+1591,飛ぶ振り,Fake Dive,
+1592,(予約),,
+1593,(予約),,
+1594,飛ぶ振り,Fake Dive,
+1595,(予約),,
+1596,(予約),,
+1597,スワンダイブブレーンチョップ,Swan Dive Brain Chop,
+1598,ハイパーニー空牙,Hyper Knee Kuga,
+1599,飛ぶ振り,Fake Dive,
+1600,(予約),,
+1601,(予約),,
+1602,ムーンサルトフットスタンプ,Moonsault Foot Stamp,
+1603,エビ反り式ダイビングボディプレス,Arched Diving Press,
+1604,ダイビングブレーンチョップ,Diving Brain Chop,
+1605,低空ミサイルキック,Low Missile Kick,
+1606,スイング式ダイビングフランケンホイップ,Swing Dive Franken Whip,
+1607,(予約),,
+1608,(予約),,
+1609,(予約),,
+1610,(予約),,
+1611,(予約),,
+1612,投げ倒し,Throwdown,
+1613,外掛け,Outside Leg Trip,
+1614,がぶり,Front Facelock,
+1615,飛びつきガードポジション,Jumping Guard Pull,
+1616,(予約),,
+1617,(予約),,
+1618,(予約),,
+1619,(予約),,
+1620,(予約),,
+1621,突っ張り,Tsuppari,
+1622,ショートアッパー,Short Uppercut,
+1623,マッケンロー,McEnroe,
+1624,腕取り逆回し蹴り,Arm Grab Spin Kick,
+1625,フランケンシュタイナーホイップ,Frankensteiner Whip,
+1626,リバース水車落とし,Reverse Waterwheel,
+1627,高速ドラゴンスクリュー,Fast Dragon Screw,
+1628,(予約),,
+1629,(予約),,
+1630,(予約),,
+1631,(予約),,
+1632,(予約),,
+1633,組み付きパンチ連打,Clinch Punch Rush,
+1634,ゴールデンレフト,Golden Left,
+1635,クレイジーサイクロン,Crazy Cyclone,
+1636,鍵風車,Key Windmill,
+1637,ジャンピング延髄踵落とし,Jump Enzui Axe Kick,
+1638,シャイニングケンカキック,Shining Kenka Kick,
+1639,ブレードキック,Blade Kick,
+1640,スーパー・キック,Superkick,
+1641,クアラッシュ,<Kua> Rush,
+1642,鎌本乱舞,Kamamoto Frenzy,
+1643,ブラジリアンキックラッシュ,Brazilian Kick Rush,
+1644,膝突き蹴り連打,Knee Thrust Rush,
+1645,原型シャイニングウィザード,Proto Shining Wizard,
+1646,シャイニングウィザード,Shining Wizard,
+1647,ブレーンクロー,Brain Claw,
+1648,胴絞めフロントネックロック,Body Scissor Necklock,
+1649,トライアングルランサー,Triangle Lancer,
+1650,バナナスプレッド,Banana Spread,
+1651,ミツルスペシャルＩＩ,<Kajita> Special II,
+1652,足掛け前転裏膝十字固め,Step-Up Rolling Kneebar,
+1653,横須賀カッター,Yokosuka Cutter,
+1654,アメイズインパクト,Amaze Impact,
+1655,振り子式ダイヤモンドカッター,Pendulum Diamond Cutter,
+1656,コンプリートショット,Complete Shot,
+1657,コンプリートダスト,Complete Dust,
+1658,シュバイン,Schwein,
+1659,ターボ・ドロップＩＩ,Turbo Drop II,
+1660,大旋回式ＤＤＴ,Big Swing DDT,
+1661,ストライクスリー,Strike Three,
+1662,ファイナルパワーボム,Final Powerbomb,
+1663,リバースゴリースペシャルボム,Rev Gory Special Bomb,
+1664,アームスラム,Arm Slam,
+1665,(予約),,
+1666,(予約),,
+1667,(予約),,
+1668,(予約),,
+1669,(予約),,
+1670,(予約),,
+1671,(予約),,
+1672,(予約),,
+1673,(予約),,
+1674,顔面パンチ,Face Punch,[from FPD]
+1675,(予約),,
+1676,(予約),,
+1677,(予約),,
+1678,延髄ローリング逆水平,Enzui Rolling Chop,
+1679,膝裏タックル,Knee-Back Tackle,
+1680,背面ネックブリーカードロップ,Back Neckbreaker,
+1681,抱え倒し,Cradle Takedown,
+1682,(予約),,
+1683,(予約),,
+1684,(予約),,
+1685,(予約),,
+1686,(予約),,
+1687,(予約),,
+1688,顔面パンチ連打,Face Punch Rush,
+1689,コブラホールド,Cobra Hold,
+1690,アルゼンチンバックブリーカー,Argentine Rack,[from FPD]
+1691,足踏み腕固め,Foot-Pin Armlock,
+1692,肩車フェイスバスター,E-Chair Facebuster,
+1693,ファイナルアンサー？,Final Answer?,
+1694,フルネルソンアトミックボム,Full Nelson Atomic Bomb,
+1695,オレが相模,I'm <Sagami>,
+1696,アトミックドロップ＆バックドロップ,Atomic Drop & Backdrop,
+1697,デッドエンド,Dead End,
+1698,背面落下式フェイスバスター,Backfall Facebuster,
+1699,(予約),,
+1700,(予約),,
+1701,(予約),,
+1702,(予約),,
+1703,(予約),,
+1704,(予約),,
+1705,(予約),,
+1706,リバースチンクラッシャー,Reverse Chin Crusher,
+1707,(予約),,
+1708,(予約),,
+1709,(予約),,
+1710,馬乗りエルボー,Mount Elbow,
+1711,ワームチョップ,Worm Chop,
+1712,脳天膝蹴り,Crown Knee Strike,
+1713,首四の字固め,Neck Figure-Four,
+1714,バッファロースリーパー,Buffalo Sleeper,
+1715,キャトルミューティレイション,Cattle Mutilation,
+1716,首極めアームロック,Neck Crank Armlock,
+1717,踏みつけフォール,Foot-On Pin,
+1718,(予約),,
+1719,(予約),,
+1720,(予約),,
+1721,(予約),,
+1722,(予約),,
+1723,足取りエルボーレッグロック,Leg Grab Elbow Leglock,
+1724,ストレッチマフラーホールド,Stretch Muffler Hold,
+1725,(予約),,
+1726,(予約),,
+1727,(予約),,
+1728,(予約),,
+1729,(予約),,
+1730,後頭部膝蹴り,Knee to Back of Head,
+1731,脳天膝蹴り,Crown Knee Strike,
+1732,キジＭＡＸホールド,Kiji MAX Hold,
+1733,サイクリング・ヤッホー,Cycling Yahoo,
+1734,(予約),,
+1735,(予約),,
+1736,(予約),,
+1737,(予約),,
+1738,(予約),,
+1739,(予約),,
+1740,イングランドストレッチ,England Stretch,
+1741,アンクルホールド,Ankle Hold,[from FPD]
+1742,(予約),,
+1743,(予約),,
+1744,(予約),,
+1745,(予約),,
+1746,(予約),,
+1747,(予約),,
+1748,不知火,Shiranui,
+1749,スカイハイ・チョークスラム,Sky High Chokeslam,
+1750,筋肉バスター,Muscle Buster,[from FPD]
+1751,スパイダーネット,Spider Net,
+1752,ジャイアントプレス,Giant Press,
+1753,トリプルムーンサルトプレス,Triple Moonsault,
+1754,雪崩式タイガードライバー,Super Tiger Driver,
+1755,ロープ引きずり刑,Rope Drag Torture,
+1756,コーナー叩きつけ連打,Corner Smash Rush,
+1757,(予約),,
+1758,(予約),,
+1759,(予約),,
+1760,脳天膝蹴り,Crown Knee Strike,
+1761,抱え込みネックロック,Cradle Necklock,
+1762,チキンウィングアームロック,Chickenwing Armlock,[from FPD]
+1763,(予約),,
+1764,(予約),,
+1765,(予約),,
+1766,足挟みパンチ,Leg Trap Punch,
+1767,変化式腕ひしぎ逆十字固め,Switch Cross Armbar,
+1768,(予約),,
+1769,(予約),,
+1770,(予約),,
+1771,脳天膝蹴り,Crown Knee Strike,
+1772,胴絞めフロントネックロック,Body Scissor Necklock,
+1773,(予約),,
+1774,(予約),,
+1775,(予約),,
+1776,(予約),,
+1777,(予約),,
+1778,(予約),,
+1779,(予約),,
+1780,横抱え式ジャーマンスープレックス,Side Cradle German,
+1781,(予約),,
+1782,(予約),,
+1783,(予約),,
+1784,(予約),,
+1785,(予約),,
+1786,(予約),,
+1787,(予約),,
+1788,(予約),,
+1789,(予約),,
+1790,(予約),,
+1791,(予約),,
+1792,(予約),,
+1793,(予約),,
+1794,(予約),,
+1795,(予約),,
+1796,(予約),,
+1797,(予約),,
+1798,(予約),,
+1799,(予約),,
+1800,オットットで降りる,Wobbly Climb Down,
+1801,(予約),,
+1802,(予約),,
+1803,オットットで降りる,Wobbly Climb Down,
+1804,(予約),,
+1805,(予約),,
+1806,○ 自分指差しガッツポーズ,○ Point Self Fist Pump,
+1807,じっと手を見る,Stare at Hands,
+1808,○ 観客に手を振る,○ Wave to Crowd,
+1809,聞き耳パフォーマンス,Cup the Ear,
+1810,○ 指汗拭き,○ Finger Sweat Wipe,
+1811,○ ランマルアピール,○ <Ranmaru> Appeal,
+1812,タックルフェイント,Tackle Feint,
+1813,中腰構え,Half Crouch,
+1814,魔術師ポーズ,Magician Pose,
+1815,ターニングダンス,Turning Dance,
+1816,サムアップ,Thumbs Up,
+1817,○ 腕指差しアピール,○ Arm Point Appeal,
+1818,○ セクシーポーズ,○ Sexy Pose,
+1819,○ ハリキリガッツポーズ,○ Eager Fist Pump,
+1820,○ ネコマネポーズ,○ Cat Pose,
+1821,○ 教育的指導,○ Finger-Wag Lecture,
+1822,○ 高笑い,○ Haughty Laugh,
+1823,(予約),,
+1824,(予約),,
+1825,(予約),,
+1826,(予約),,
+1827,(予約),,
+1828,トータルイリミネーション,Total Elimination,
+1829,刈龍怒,Karyudo,
+1830,オレごと刈れ,Mow Through Me,
+1831,(予約),,
+1832,トータルイリミネーション,Total Elimination,
+1833,オレごと刈れ,Mow Through Me,
+1834,(予約),,
+1835,(予約),,
+1836,(予約),,
+1837,(予約),,
+1838,(予約),,
+1839,(予約),,
+1840,(予約),,
+1841,(予約),,
+1842,(予約),,
+1843,(予約),,
+1844,(予約),,

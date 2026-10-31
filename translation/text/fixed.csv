@@ -1,0 +1,74 @@
+# Fixed-size name fields in the program (SLPM_623.42): promotions (full and short) and referees.
+# Written in place: max_bytes is the room (ASCII letter = 1 byte). Players can rename these in
+# edit mode; these are the defaults.
+id,max_bytes,japanese,english,notes
+promo:0,25,ＶＩＥＷ　ＪＡＰＡＮ,<VIEW JAPAN>,"promotion, full name"
+promo:1,25,ＯＬＩＶＥ　ＪＡＰＡＮ,<OLIVE JAPAN>,"promotion, full name"
+promo:2,25,ＳＵＰＥＲ　ＮＯＶＡ,<SUPER NOVA>,"promotion, full name"
+promo:3,25,ＮＥＯ－ＯＮＥ,<NEO-ONE>,"promotion, full name"
+promo:4,25,Ｕ．Ｎ．Ｏ,<U.N.O>,"promotion, full name"
+promo:5,25,真田道場,<SANADA DOJO>,"promotion, full name"
+promo:6,25,ＥＷＦ,<EWF>,"promotion, full name"
+promo:7,25,ゆきぐにプロレス,<YUKIGUNI PRO>,"promotion, full name"
+promo:8,25,超竜館,<CHORYUKAN>,"promotion, full name"
+promo:9,25,ＺＩＰ　ＪＡＰＡＮ,<ZIP JAPAN>,"promotion, full name"
+promo:10,25,関西プロレス,<KANSAI PRO>,"promotion, full name"
+promo:11,25,Ｓ-ＤＯＪＹＯ,<S-DOJYO>,"promotion, full name"
+promo:12,25,ＦＲＥＥ,FREE,"promotion, full name"
+promo:13,25,ＡＷＧ,<AWG>,"promotion, full name"
+promo:14,25,ＴＨＲＥＥ－Ａ,<THREE-A>,"promotion, full name"
+promo:15,25,ハイクラス,<HIGH CLASS>,"promotion, full name"
+promo:16,25,格闘家,FIGHTERS,"promotion, full name"
+promo:17,25,ＷＰＡ,<WPA>,"promotion, full name"
+promo:18,25,Ｓ－１,<S-1>,"promotion, full name"
+promo:19,25,女子,WOMEN,"promotion, full name"
+promo:20,25,ＬＥＧＥＮＤ,LEGEND,"promotion, full name"
+promo:21,25,新生ＩＷ,<NEW IW>,"promotion, full name"
+promo:22,25,ＷＦＷプロレス,<WFW PRO>,"promotion, full name"
+promo:23,25,ＷＷＣプロレス,<WWC PRO>,"promotion, full name"
+promo:24,25,ゴングス,<GONGS>,"promotion, full name"
+promo:25,25,格闘探検隊バトレーション,<BATTRATION>,"promotion, full name"
+promo:26,25,グローバルジャパン,<GLOBAL JAPAN>,"promotion, full name"
+promo:27,25,怪物倶楽部,<MONSTER CLUB>,"promotion, full name"
+promo:28,25,ＭＵＳＣＬＥ－１,<MUSCLE-1>,"promotion, full name"
+promo_short:0,13,ＶＪＰ,<VJP>,"promotion, short name"
+promo_short:1,13,ＯＪＰ,<OJP>,"promotion, short name"
+promo_short:2,13,ＮＯＶＡ,<NOVA>,"promotion, short name"
+promo_short:3,13,ＮＥＯ,NEO,"promotion, short name"
+promo_short:4,13,ＵＮＯ,<UNO>,"promotion, short name"
+promo_short:5,13,真田,<SANADA>,"promotion, short name"
+promo_short:6,13,ＥＷＦ,<EWF>,"promotion, short name"
+promo_short:7,13,ゆきプロ,<YUKI>,"promotion, short name"
+promo_short:8,13,超竜館,<CHORYU>,"promotion, short name"
+promo_short:9,13,ＺＩＰ,<ZIP>,"promotion, short name"
+promo_short:10,13,関西,<KANSAI>,"promotion, short name"
+promo_short:11,13,Ｓ－Ｄ,<S-D>,"promotion, short name"
+promo_short:12,13,ＦＲＥＥ,FREE,"promotion, short name"
+promo_short:13,13,ＡＷＧ,<AWG>,"promotion, short name"
+promo_short:14,13,Ｔ－Ａ,<T-A>,"promotion, short name"
+promo_short:15,13,ハイクラス,<HCLASS>,"promotion, short name"
+promo_short:16,13,格闘家,FIGHTERS,"promotion, short name"
+promo_short:17,13,ＷＰＡ,<WPA>,"promotion, short name"
+promo_short:18,13,Ｓ－１,<S-1>,"promotion, short name"
+promo_short:19,13,女子,WOMEN,"promotion, short name"
+promo_short:20,13,ＬＥＧ,LEGEND,"promotion, short name"
+promo_short:21,13,新生ＩＷ,<NEW IW>,"promotion, short name"
+promo_short:22,13,ＷＦＷ,<WFW>,"promotion, short name"
+promo_short:23,13,ＷＷＣ,<WWC>,"promotion, short name"
+promo_short:24,13,ゴングス,<GONGS*>,"promotion, short name"
+promo_short:25,13,バトレ,<BATTRA>,"promotion, short name"
+promo_short:26,13,ＧＪ,<GJ>,"promotion, short name"
+promo_short:27,13,怪物,<MONSTER>,"promotion, short name"
+promo_short:28,13,Ｍ－１,<M-1>,"promotion, short name"
+referee:0,17,パンサー鳥取,<Tottori>,referee name
+referee:1,17,佐賀公平,<Saga>,referee name
+referee:2,17,バット若部,<Wakabe>,referee name
+referee:3,17,今田修司,<Imada>,referee name
+referee:4,17,ラーク・ケスラー,<Kessler>,referee name
+referee:5,17,久我山大気,<Kugayama>,referee name
+referee:6,17,Mr.水中,<Mizunaka>,referee name
+referee:7,17,ジョー弘,<Hiroshi>,referee name
+edit_name1:0,13,スパイク,Spike,new edit wrestler: short name (default)
+edit_name2:0,19,四郎,Shiro,new edit wrestler: other name part (default)
+edit_nick:0,25,不死鳥の如く,Like a Phoenix,new edit wrestler: nickname (default)
+edit_referee:0,17,スパイク五郎,Spike Goro,new edit referee: name (default)

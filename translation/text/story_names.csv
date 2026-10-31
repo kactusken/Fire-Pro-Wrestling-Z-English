@@ -1,0 +1,53 @@
+# Story-only wrestler names (the last section of each STORY0N.STO): 15 bytes each, printable
+# ASCII. id = story file : record.
+id,japanese,english,notes
+2:0,ネベロ,<Nevelo>,provisional
+2:1,スーパー,Super,
+2:2,大橋,Ohashi,
+2:3,源,Minamoto,
+3:0,ホーク,<Hawk>,
+4:0,ロード,<Road>,
+4:1,スレンダー,<Slender>,
+5:0,ロード,<Road>,
+5:1,スレンダー,<Slender>,
+5:2,白陽坊,<Hakuyobo>,
+6:0,湊,Minato,
+6:1,オルトー,Orto,provisional
+6:2,山杜,Yamamori,provisional
+6:3,カマ,Kama,
+6:4,Ｊｒ．,Jr.,
+6:5,ヴェノム,Venom,
+6:6,バトロイⅠ,Batroi I,provisional
+6:7,バトロイⅡ,Batroi II,provisional
+6:8,湊２,Minato 2,
+6:9,オルトー２,Orto 2,
+6:10,山杜２,Yamamori 2,
+6:11,カマ２,Kama 2,
+6:12,Ｊｒ．２,Jr. 2,
+6:13,ヴェノム２,Venom 2,
+6:14,バトロイⅠ２,Batroi I 2,
+6:15,バトロイⅡ２,Batroi II 2,
+6:16,初代パンサー,1st Panther,
+6:17,パンサー２,Panther 2,
+6:18,パンサー３,Panther 3,
+6:19,滝沢,Takizawa,
+7:0,湊,Minato,
+7:1,オルトー,Orto,provisional
+7:2,山杜,Yamamori,provisional
+7:3,カマ,Kama,
+7:4,Ｊｒ,Jr,
+7:5,ヴェノム,Venom,
+7:6,バトロイⅠ,Pegasus,Wild Pegasus in the Liger scenario's matches (tools/ligerstory.py); the name itself is unused
+7:7,バトロイⅡ,Yamada,Keiichi Yamada in the Liger scenario's matches (tools/ligerstory.py); the name itself is unused
+7:8,湊２,Minato 2,
+7:9,オルトー２,Orto 2,
+7:10,山杜２,Yamamori 2,
+7:11,カマ２,Kama 2,
+7:12,Ｊｒ２,Jr 2,
+7:13,ヴェノム２,Venom 2,
+7:14,バトロイⅠ２,Batroi I 2,
+7:15,バトロイⅡ２,Batroi II 2,
+7:16,初代パンサー,1st Panther,
+7:17,パンサー２,Panther 2,
+7:18,パンサー３,Panther 3,
+7:19,石沢,Ishizawa,

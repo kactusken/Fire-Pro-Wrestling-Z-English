@@ -1,0 +1,1771 @@
+# The program's own text (SLPM_623.42): menus, options, edit mode, costume parts, shouts, memory
+# card messages, credits. id = RAM address. refs = pointers to the string (data words + code); a
+# string with refs can grow (the build moves it); refs 0 = fixed in place: max_bytes is its room
+# (ASCII letter = 1 byte, Japanese character = 2). Menus draw ASCII half-width: English gets about
+# twice as many letters as the Japanese has characters, but menu boxes are narrow - stay near
+# that. \n is a line break, %s %d are filled in by the game, %c0 / %c1 change colour (keep them).
+# Odd-length labels are drawn half a letter right so centred menus line up; notes `[left]` = a
+# left-aligned list (no shift).
+id,refs,max_bytes,japanese,english,notes
+00383948,1,,0000　続ける\n　中　断\n,0000Continue\n　Quit\n,"[digits] [left] story START pause menu (story renderer: full-width space to indent; 0000 = layout, kept) (play-test 2026-10-29)"
+003940C0,1,,グﾙジｱ共和国,Georgia,near:  / ﾆｭｰジｰﾗﾝド [left]
+003940D0,1,,ﾆｭｰジｰﾗﾝド,New Zealand,near: グﾙジｱ共和国 / ブﾙガﾘｱ共和国 [left]
+003940E0,1,,ブﾙガﾘｱ共和国,Bulgaria,near: ﾆｭｰジｰﾗﾝド / ボﾂﾜﾅ共和国 [left]
+003940F0,1,,ボﾂﾜﾅ共和国,Botswana,near: ブﾙガﾘｱ共和国 / 南ｱﾌﾘｶ共和国 [left]
+00394100,1,,南ｱﾌﾘｶ共和国,South Africa,near: ボﾂﾜﾅ共和国 / 真田道場 [left]
+00394110,1,,VIEW JAPAN,<VIEW JAPAN>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+00394120,1,,OLIVE JAPAN,<OLIVE JAPAN>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+00394130,1,,SUPER NOVA,<SUPER NOVA>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+00394140,1,,真田道場,<Sanada> Dojo,near: 南ｱﾌﾘｶ共和国 / ゆきぐにプﾛﾚｽ
+00394150,1,,ゆきぐにプﾛﾚｽ,<Yukiguni> Pro,near: 真田道場 / 関西プﾛﾚｽ
+00394160,1,,ZIP JAPAN,<ZIP JAPAN>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+00394170,1,,関西プﾛﾚｽ,<Kansai Pro>,near: ゆきぐにプﾛﾚｽ / グﾛｰバﾙジｬパﾝ
+00394180,1,,グﾛｰバﾙジｬパﾝ,Global Japan,near: 関西プﾛﾚｽ / 武蔵 DynamicVer.
+00394190,1,,MUSCLE-1,<MUSCLE-1>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003941A0,1,,武蔵 DynamicVer.,<Musashi> Dynamic Ver.,near: グﾛｰバﾙジｬパﾝ / 壱富士、弐鷹、参茄子
+003941B8,1,,SpinningPancer,SpinningPancer,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+003941C8,1,,AnotherTornado,AnotherTornado,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+003941D8,1,,FightingRevolution,FightingRevolution,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+003941F0,1,,LonelyStage,LonelyStage,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+00394200,1,,壱富士、弐鷹、参茄子,"Fuji, Hawk, Eggplant",near: 武蔵 DynamicVer. / ｳﾗｶﾝ・ﾗﾅ
+00394218,1,,InTheWorldStrange,InTheWorldStrange,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+00394230,1,,WorstAngel,WorstAngel,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+00394240,1,,Shine”N”Knight,"Shine""N""Knight","ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+00394258,1,,GiveMeUp!,GiveMeUp!,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+00394268,1,,Power of soul,Power of soul,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+00394278,1,,Body! Body! Funky!,Body! Body! Funky!,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+00394290,1,,dance in the dark,dance in the dark,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+003942A8,1,,A RAY OF LIGHT,A RAY OF LIGHT,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+003942B8,1,,Crazy Shooter,Crazy Shooter,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+003942C8,1,,ｳﾗｶﾝ・ﾗﾅ,Huracanrana,near: 壱富士、弐鷹、参茄子 / ｽﾓーﾙパｯｹージﾎーﾙド
+003942D8,1,,ｽﾓーﾙパｯｹージﾎーﾙド,Small Package Hold,near: ｳﾗｶﾝ・ﾗﾅ / ブﾚーﾝバｽﾀー
+003942F0,1,,ブﾚーﾝバｽﾀー,Brainbuster,near: ｽﾓーﾙパｯｹージﾎーﾙド / パﾜーボﾑ
+00394300,2,,パﾜーボﾑ,Powerbomb,near: ブﾚーﾝバｽﾀー / ｻｲｸﾛﾝﾎｲｯプ
+00394310,1,,ｻｲｸﾛﾝﾎｲｯプ,Cyclone Whip,near: パﾜーボﾑ / 抱え式バｯｸドﾛｯプ
+00394320,1,,抱え式バｯｸドﾛｯプ,Cradle Backdrop,near: ｻｲｸﾛﾝﾎｲｯプ / バｯｸドﾛｯプ
+00394338,1,,バｯｸドﾛｯプ,Backdrop,near: 抱え式バｯｸドﾛｯプ / ﾌﾗﾝｹﾝｼｭﾀｲﾅー
+00394348,1,,ﾌﾗﾝｹﾝｼｭﾀｲﾅー,Frankensteiner,near: バｯｸドﾛｯプ / ブﾙドｯｷﾝグﾍｯドﾛｯｸ
+00394358,1,,ブﾙドｯｷﾝグﾍｯドﾛｯｸ,Bulldogging Headlock,near: ﾌﾗﾝｹﾝｼｭﾀｲﾅー / 水車落とし
+00394370,1,,水車落とし,Waterwheel Drop,near: ブﾙドｯｷﾝグﾍｯドﾛｯｸ / ドﾗゴﾝｽｸﾘｭー
+00394380,2,,ドﾗゴﾝｽｸﾘｭー,Dragon Screw,near: 水車落とし / ｼｮﾙダーｽﾙー
+00394390,3,,ｼｮﾙダーｽﾙー,Shoulder Throw,near: ドﾗゴﾝｽｸﾘｭー / ｱｷﾚｽ腱固め
+003943A0,2,,ｱｷﾚｽ腱固め,Ankle Lock,near: ｼｮﾙダーｽﾙー / 押し込みｴﾙボー
+003943B0,1,,押し込みｴﾙボー,Shoving Elbow,near: ｱｷﾚｽ腱固め / 後ろ体浴びせ
+003943C0,1,,後ろ体浴びせ,Back Splash,near: 押し込みｴﾙボー / プﾛﾚｽｷｯｸ
+003943D0,1,,プﾛﾚｽｷｯｸ,Pro Kick,near: 後ろ体浴びせ / ボデｨパﾝﾁ
+003943E0,1,,ボデｨパﾝﾁ,Body Punch,near: プﾛﾚｽｷｯｸ / ダｯｼｭﾆーﾘﾌﾄ
+003943F0,2,,ダｯｼｭﾆーﾘﾌﾄ,Running Knee Lift,near: ボデｨパﾝﾁ / バｯｸﾊﾝドｴﾙボー
+00394400,2,,バｯｸﾊﾝドｴﾙボー,Backhand Elbow,near: ダｯｼｭﾆーﾘﾌﾄ / ｽﾗｲデｨﾝグ
+00394410,2,,ｽﾗｲデｨﾝグ,Sliding,near: バｯｸﾊﾝドｴﾙボー / 叩き落とし
+00394420,1,,叩き落とし,Knockdown,near: ｽﾗｲデｨﾝグ / 飛びつき腕ひしぎ逆十字固め
+00394430,2,,飛びつき腕ひしぎ逆十字固め,Flying Cross Armbar,near: 叩き落とし / 逆ｴビ固め
+00394450,1,,逆ｴビ固め,Boston Crab,near: 飛びつき腕ひしぎ逆十字固め / 回転ｴビ固め
+00394460,2,,回転ｴビ固め,Sunset Flip,near: 逆ｴビ固め / 腕ひしぎ逆十字固め
+00394470,1,,腕ひしぎ逆十字固め,Cross Armbreaker,near: 回転ｴビ固め / 胴絞めｽﾘーパーﾎーﾙド
+00394488,1,,胴絞めｽﾘーパーﾎーﾙド,Scissor Sleeper,near: 腕ひしぎ逆十字固め / 逆さ押さえ込み
+003944A0,2,,逆さ押さえ込み,Reverse Pin,near: 胴絞めｽﾘーパーﾎーﾙド / 三角絞め
+003944B0,1,,三角絞め,Triangle Choke,near: 逆さ押さえ込み / 小包固め
+003944C0,1,,小包固め,Small Package,near: 三角絞め / ﾘバーｽｽープﾚｯｸｽﾎーﾙド
+003944D0,1,,ﾘバーｽｽープﾚｯｸｽﾎーﾙド,Reverse Suplex Hold,near: 小包固め / 前方回転ｴビ固め
+003944E8,1,,前方回転ｴビ固め,Ebi Roll-Up,near: ﾘバーｽｽープﾚｯｸｽﾎーﾙド / ＶＩＥＷ　Ａチーム
+003944F8,1,,ＶＩＥＷ　Ａチーム,<VIEW> Team A,near: 前方回転ｴビ固め / ＶＩＥＷ　Ｂチーム
+00394510,1,,ＶＩＥＷ　Ｂチーム,<VIEW> Team B,near: ＶＩＥＷ　Ａチーム / ＶＩＥＷジュニア
+00394528,1,,ＶＩＥＷジュニア,<VIEW> Junior,near: ＶＩＥＷ　Ｂチーム / ジェット軍
+00394540,1,,ジェット軍,Team <JET>,near: ＶＩＥＷジュニア / 怪物軍団
+00394550,1,,怪物軍団,Monster Corps,near: ジェット軍 / 闘魂五銃士
+00394560,1,,闘魂五銃士,Toukon Musketeers,near: 怪物軍団 / 新生ＯＬＩＶＥ軍
+00394570,1,,新生ＯＬＩＶＥ軍,New <OLIVE>,near: 闘魂五銃士 / ＯＬＩＶＥ軍
+00394588,1,,ＯＬＩＶＥ軍,Team <OLIVE>,near: 新生ＯＬＩＶＥ軍 / 旧ＯＬＩＶＥ五天王
+00394598,1,,旧ＯＬＩＶＥ五天王,Old <OLIVE> 5 Kings,near: ＯＬＩＶＥ軍 / ＢＲＡＶＥ
+003945B0,1,,ＢＲＡＶＥ,BRAVE,near: 旧ＯＬＩＶＥ五天王 / ＳＴＲＯＮＧＳ
+003945C0,1,,ＳＴＲＯＮＧＳ,STRONGS,near: ＢＲＡＶＥ / ＬＩＧＨＴＮＩＮＧ
+003945D0,1,,ＬＩＧＨＴＮＩＮＧ,LIGHTNING,near: ＳＴＲＯＮＧＳ / ＮＯＶＡジュニア
+003945E8,1,,ＮＯＶＡジュニア,<NOVA> Junior,near: ＬＩＧＨＴＮＩＮＧ / 新生IW軍
+00394600,1,,新生IW軍,<New IW>,near: ＮＯＶＡジュニア / ＮＥＯ-ＯＮＥ軍
+00394610,1,,ＮＥＯ-ＯＮＥ軍,Team <NEO-ONE>,near: 新生IW軍 / ＮＥＯ-１外国人軍
+00394620,1,,ＮＥＯ-１外国人軍,<NEO> Foreigners,near: ＮＥＯ-ＯＮＥ軍 / ゆきプロ軍
+00394638,1,,ゆきプロ軍,Team <YukiPro>,near: ＮＥＯ-１外国人軍 / Uインテル軍
+00394648,1,,Uインテル軍,Team U-Inter,near: ゆきプロ軍 / ハイクラス軍
+00394658,1,,ハイクラス軍,Team <High Class>,near: Uインテル軍 / バトレーション軍
+00394668,1,,バトレーション軍,Team <Battration>,near: ハイクラス軍 / ＢＬＡＤＥ軍
+00394680,1,,ＢＬＡＤＥ軍,Team <BLADE>,near: バトレーション軍 / ＢＬＡＤＥ外国人軍
+00394690,1,,ＢＬＡＤＥ外国人軍,<BLADE> Foreigners,near: ＢＬＡＤＥ軍 / グルーサムファイト
+003946A8,1,,グルーサムファイト,Gruesome Fight,near: ＢＬＡＤＥ外国人軍 / S-1ファイター
+003946C0,1,,S-1ファイター,S-1 Fighters,near: グルーサムファイト / 新最強外国人軍
+003946D0,1,,新最強外国人軍,New Top Foreigners,near: S-1ファイター / 旧ＶＩＥＷ軍
+003946E0,1,,旧ＶＩＥＷ軍,Old <VIEW>,near: 新最強外国人軍 / レジェンドジュニア
+003946F0,1,,レジェンドジュニア,Legend Juniors,near: 旧ＶＩＥＷ軍 / 歴代ＯＬＩＶＥ軍
+00394708,1,,歴代ＯＬＩＶＥ軍,All-Time <OLIVE>,near: レジェンドジュニア / ＯＬＩＶＥ伝説軍
+00394720,1,,ＯＬＩＶＥ伝説軍,<OLIVE> Legends,near: 歴代ＯＬＩＶＥ軍 / ビバ！メヒコ軍
+00394738,1,,ビバ！メヒコ軍,Viva! Mexico,near: ＯＬＩＶＥ伝説軍 / 旧最強外国人軍
+00394748,1,,旧最強外国人軍,Old Top Foreigners,near: ビバ！メヒコ軍 / 新生UWH軍
+00394758,1,,新生UWH軍,New <UWH>,near: 旧最強外国人軍 / ブラッディヒール
+00394768,1,,ブラッディヒール,Bloody Heels,near: 新生UWH軍 / スーパースターズ
+00394780,1,,スーパースターズ,Superstars,near: ブラッディヒール / 番号エラー
+00394820,0,15,番号エラー,Number Error,near: スーパースターズ / 未登録技
+00394830,0,15,未登録技,Unset Move,near: 番号エラー / 未初期化団体
+00398060,2,,未初期化団体,Unset Promotion,near: 未登録技 / 未初期化
+00398070,1,,未初期化,Unset,near: 未初期化団体 / K.O.勝ち
+00398098,1,,K.O.勝ち,KO Win,near: 未初期化 / K.O.負け
+003980A8,1,,K.O.負け,KO Loss,near: K.O.勝ち / リングアウト勝ち
+003980B8,1,,リングアウト勝ち,Ring Out Win,near: K.O.負け / リングアウト負け
+003980D0,1,,リングアウト負け,Ring Out Loss,near: リングアウト勝ち / 反則勝ち
+003980E8,1,,反則勝ち,DQ Win,near: リングアウト負け / 反則負け
+003980F8,1,,反則負け,DQ Loss,near: 反則勝ち / ｼｽﾃﾑデｰﾀ
+00399240,1,,ｼｽﾃﾑデｰﾀ,System Data,near: 反則負け / ﾘﾈｰﾑデｰﾀ [left]
+00399250,1,,ﾘﾈｰﾑデｰﾀ,Rename Data,near: ｼｽﾃﾑデｰﾀ / ﾘｺｽﾁｭｰﾑデｰﾀ [left]
+00399260,1,,ﾘｺｽﾁｭｰﾑデｰﾀ,Recostume Data,near: ﾘﾈｰﾑデｰﾀ / ｴデｨｯﾄ団体デｰﾀ1 [left]
+00399270,1,,ｴデｨｯﾄ団体デｰﾀ1,Edit Promotion 1,near: ﾘｺｽﾁｭｰﾑデｰﾀ / ｴデｨｯﾄ団体デｰﾀ2 [left]
+00399280,1,,ｴデｨｯﾄ団体デｰﾀ2,Edit Promotion 2,near: ｴデｨｯﾄ団体デｰﾀ1 / ｴデｨｯﾄ団体デｰﾀ3 [left]
+00399290,1,,ｴデｨｯﾄ団体デｰﾀ3,Edit Promotion 3,near: ｴデｨｯﾄ団体デｰﾀ2 / ｴデｨｯﾄ団体デｰﾀ4 [left]
+003992A0,1,,ｴデｨｯﾄ団体デｰﾀ4,Edit Promotion 4,near: ｴデｨｯﾄ団体デｰﾀ3 / ｴデｨｯﾄ団体デｰﾀ5 [left]
+003992B0,1,,ｴデｨｯﾄ団体デｰﾀ5,Edit Promotion 5,near: ｴデｨｯﾄ団体デｰﾀ4 / 拡張ｴデｨｯﾄデｰﾀ1 [left]
+003992C0,1,,拡張ｴデｨｯﾄデｰﾀ1,Extra Edit Data 1,near: ｴデｨｯﾄ団体デｰﾀ5 / 拡張ｴデｨｯﾄデｰﾀ2 [left]
+003992D0,1,,拡張ｴデｨｯﾄデｰﾀ2,Extra Edit Data 2,near: 拡張ｴデｨｯﾄデｰﾀ1 / 拡張ｴデｨｯﾄデｰﾀ3 [left]
+003992E0,1,,拡張ｴデｨｯﾄデｰﾀ3,Extra Edit Data 3,near: 拡張ｴデｨｯﾄデｰﾀ2 / 拡張ｴデｨｯﾄデｰﾀ4 [left]
+003992F0,1,,拡張ｴデｨｯﾄデｰﾀ4,Extra Edit Data 4,near: 拡張ｴデｨｯﾄデｰﾀ3 / MEMORY CARD差込口1 [left]
+00399300,1,,MEMORY CARD差込口1,MEMORY CARD slot 1,near: 拡張ｴデｨｯﾄデｰﾀ4 / MEMORY CARD差込口2
+00399318,2,,MEMORY CARD差込口2,MEMORY CARD slot 2,near: MEMORY CARD差込口1 / MEMORY CARD差込口1-
+00399330,1,,MEMORY CARD差込口1-A,MEMORY CARD slot 1-A,near: MEMORY CARD差込口2 / MEMORY CARD差込口1-
+00399348,1,,MEMORY CARD差込口1-B,MEMORY CARD slot 1-B,near: MEMORY CARD差込口1- / MEMORY CARD差込口1-
+00399360,1,,MEMORY CARD差込口1-C,MEMORY CARD slot 1-C,near: MEMORY CARD差込口1- / MEMORY CARD差込口1-
+00399378,1,,MEMORY CARD差込口1-D,MEMORY CARD slot 1-D,near: MEMORY CARD差込口1- / (MEMORY CARD差込口1
+00399390,1,,(MEMORY CARD差込口1),(MEMORY CARD slot 1),near: MEMORY CARD差込口1- / (MEMORY CARD差込口2
+003993A8,1,,(MEMORY CARD差込口2),(MEMORY CARD slot 2),near: (MEMORY CARD差込口1 / (MEMORY CARD差込口1
+003993C0,1,,(MEMORY CARD差込口1-A),(MEMORY CARD slot 1-A),near: (MEMORY CARD差込口2 / (MEMORY CARD差込口1
+003993D8,1,,(MEMORY CARD差込口1-B),(MEMORY CARD slot 1-B),near: (MEMORY CARD差込口1 / (MEMORY CARD差込口1
+003993F0,1,,(MEMORY CARD差込口1-C),(MEMORY CARD slot 1-C),near: (MEMORY CARD差込口1 / (MEMORY CARD差込口1
+00399408,1,,(MEMORY CARD差込口1-D),(MEMORY CARD slot 1-D),near: (MEMORY CARD差込口1 / ファイヤープロレスリングＺ
+003994F0,1,,ファイヤープロレスリングＺ,Fire Pro Wrestling Z,near: (MEMORY CARD差込口1 / すべて上書き保存する
+003995A0,1,,すべて上書き保存する,Overwrite All on Save,near: ファイヤープロレスリングＺ / すべてのデータを読み込む
+003995B8,1,,すべてのデータを読み込む,Load All Data,near: すべて上書き保存する / 以下のデータがセーブされています
+003995D8,1,,以下のデータがセーブされています,The following data is saved:,near: すべてのデータを読み込む / チェック中です………
+00399798,4,,チェック中です………,Checking...,near: 以下のデータがセーブされています / 全てのデータが「未使用」の為、セ
+003997B0,1,,全てのデータが「未使用」の為、セーブする内容が有りません,"All data is ""Unused"", so there is nothing to save.",near: チェック中です……… / するには%dKB以上の空き容量が
+003997F0,1,,するには%dKB以上の空き容量が必要です,%d KB or more of free space is needed.,near: 全てのデータが「未使用」の為、セ / 空き容量が不足しています。このメ
+00399818,1,,空き容量が不足しています。このメモリーカード(PS2)にセーブ,"Not enough free space. To save to this card (PS2),",near: するには%dKB以上の空き容量が / セーブデータがすでに存在していま
+00399858,1,,セーブデータがすでに存在しています,Save data already exists.,near: 空き容量が不足しています。このメ / 上書きすると、旧セーブデータが消
+00399880,1,,上書きすると、旧セーブデータが消えてしまいます,Overwriting will erase the old save data.,near: セーブデータがすでに存在していま / 上書きしますか？
+003998B0,1,,上書きしますか？,Overwrite?,near: 上書きすると、旧セーブデータが消 / セーブしてよろしいですか？
+003998C8,2,,セーブしてよろしいですか？,OK to save?,near: 上書きしますか？ / メモリーカード(PS2)が差され
+003998E8,6,,メモリーカード(PS2)が差されていません,No memory card (PS2) is inserted.,near: セーブしてよろしいですか？ / メモリーカード(PS2)がフォー
+00399910,3,,メモリーカード(PS2)がフォーマットされていません,The memory card (PS2) is not formatted.,near: メモリーカード(PS2)が差され / フォーマットしますか？
+00399940,1,,フォーマットしますか？,Format it?,near: メモリーカード(PS2)がフォー / 空き容量が不足しています
+00399958,1,,空き容量が不足しています,Not enough free space.,near: フォーマットしますか？ / セーブ前チェックに失敗しました
+00399978,2,,セーブ前チェックに失敗しました,The pre-save check failed.,near: 空き容量が不足しています / フォーマット中です。メモリーカー
+003999C8,1,,フォーマット中です。メモリーカード(PS2)を抜差ししないで下さい,Formatting. Do not remove the memory card (PS2).,near: セーブ前チェックに失敗しました / フォーマットに失敗しました
+00399A08,2,,フォーマットに失敗しました,Formatting failed.,near: フォーマット中です。メモリーカー / セーブ中のファイル : %s
+00399A58,2,,セーブ中のファイル : %s,Saving file: %s,near: フォーマットに失敗しました / セーブ中です。メモリーカード(P
+00399A70,2,,セーブ中です。メモリーカード(PS2)を抜差ししないで下さい,Saving. Do not remove the memory card (PS2).,near: セーブ中のファイル : %s / セーブに失敗しました
+00399AA8,4,,セーブに失敗しました,Save failed.,near: セーブ中です。メモリーカード(P / チェック後メモリーカード(PS2
+00399AC0,1,,チェック後メモリーカード(PS2)が差替えられたので、セーブを中止しました,Memory card changed after check. Save canceled.,near: セーブに失敗しました / ロードしてよろしいですか？
+00399B38,1,,ロードしてよろしいですか？,OK to load?,near: チェック後メモリーカード(PS2 / このメモリーカード(PS2)には
+00399B58,3,,このメモリーカード(PS2)にはセーブされていません,There is no save data on this memory card (PS2).,near: ロードしてよろしいですか？ / ロード前チェックに失敗しました
+00399B88,2,,ロード前チェックに失敗しました,The pre-load check failed.,near: このメモリーカード(PS2)には / ロード中のファイル : %s
+00399BD8,1,,ロード中のファイル : %s,Loading file: %s,near: ロード前チェックに失敗しました / ロード中です。メモリーカード(P
+00399BF0,1,,ロード中です。メモリーカード(PS2)を抜差ししないで下さい,Loading. Do not remove the memory card (PS2).,near: ロード中のファイル : %s / ロードに失敗しました
+00399C40,1,,ロードに失敗しました,Load failed.,near: ロード中です。メモリーカード(P / ロードファイル確認中にメモリーカ
+00399C88,2,,ロードファイル確認中にメモリーカード(PS2)が差替えられたので,"Memory card changed while checking the file,",near: ロードに失敗しました / ロードを中止します
+00399CC8,2,,ロードを中止します,so loading has been canceled.,near: ロードファイル確認中にメモリーカ / セーブファイル確認中にメモリーカ
+00399D08,2,,セーブファイル確認中にメモリーカード(PS2)が差替えられたので,"Memory card changed while checking the file,",near: ロードを中止します / セーブを中止します
+00399D48,2,,セーブを中止します,so saving has been canceled.,near: セーブファイル確認中にメモリーカ / ﾓｰドｾﾚｸﾄへ
+00399D88,1,,ﾓｰドｾﾚｸﾄへ,To Mode Select,near: セーブを中止します / ファイルが更新されています、メモ
+00399D98,1,,ファイルが更新されています、メモリーカード(PS2)にセーブしますか？,Data has changed. Save to the memory card (PS2)?,near: ﾓｰドｾﾚｸﾄへ / オートロード中です。メモリーカー
+00399DE0,1,,オートロード中です。メモリーカード(PS2)を抜差ししないで下さい,Auto-loading. Do not remove the memory card (PS2).,near: ファイルが更新されています、メモ / セーブ済みメモリーカード(PS2
+00399E20,1,,セーブ済みメモリーカード(PS2)が差されていない為ロードしませんでした,No memory card (PS2) with save data. Nothing loaded.,near: オートロード中です。メモリーカー / オートロード終了しました
+00399E68,0,31,オートロード終了しました,Auto-load complete.,near: セーブ済みメモリーカード(PS2 / 組みに行く
+00399E88,1,,組みに行く,Lock Up,near: オートロード終了しました / 間合いを取る [left]
+00399E98,1,,間合いを取る,Keep Away,"near: 組みに行く / 回り込む | was ""Keep Distance"": too wide (play-test 2026-10-29) [left]"
+00399EA8,1,,回り込む,Circle,near: 間合いを取る / 登らない [left]
+00399EB8,2,,登らない,No Climb,"near: 回り込む / 駆登り飛び | was ""Don't Climb"": too wide (play-test 2026-10-29) [left]"
+00399EC8,2,,駆登り飛び,Run-Up,"near: 登らない / エプロン場内 | was ""Run-Up Dive"": too wide (play-test 2026-10-29) [left]"
+00399ED8,1,,エプロン場内,Apron In,"near: 駆登り飛び / 走らない | was ""Apron to Ring"": too wide (play-test 2026-10-29) [left]"
+00399EE8,2,,走らない,No Run,"near: エプロン場内 / 走りダウン | was ""Don't Run"": too wide (play-test 2026-10-29) [left]"
+00399EF8,1,,走りダウン,Run Down,"near: 走らない / うつ伏せに | was ""Run at Downed"": too wide (play-test 2026-10-29) [left]"
+00399F08,1,,うつ伏せに,Flip Down,"near: 走りダウン / 仰向けに | was ""Turn Face-Down"": too wide (play-test 2026-10-29) [left]"
+00399F18,1,,仰向けに,Flip Up,"near: うつ伏せに / 正面から組む | was ""Turn Face-Up"": too wide (play-test 2026-10-29) [left]"
+00399F28,1,,正面から組む,Front Lock,"near: 仰向けに / バックを取る | was ""Lock Up Front"": too wide (play-test 2026-10-29) [left]"
+00399F38,1,,バックを取る,Take Back,"near: 正面から組む / 場外に降りる | was ""Take the Back"": too wide (play-test 2026-10-29) [left]"
+00399F48,1,,場外に降りる,Step Outside,near: バックを取る / エプロン場外 [left]
+00399F58,1,,エプロン場外,Apron Out,"near: 場外に降りる / 走って場外 | was ""Apron to Floor"": too wide (play-test 2026-10-29) [left]"
+00399F68,1,,走って場外,Run Out,"near: エプロン場外 / ｺｰﾅｰ登って | was ""Run Outside"": too wide (play-test 2026-10-29) [left]"
+00399F78,4,,ｺｰﾅｰ登って,Climb Up,"near: 走って場外 / 何もしない | was ""Climb Corner"": too wide (play-test 2026-10-29) [left]"
+00399F88,1,,何もしない,Do Nothing,near: ｺｰﾅｰ登って / パﾌｫｰﾏﾝｽ [left]
+00399F98,4,,パﾌｫｰﾏﾝｽ,Taunt,near: 何もしない / バｯｸﾏｳﾝﾄ [left]
+00399FA8,3,,バｯｸﾏｳﾝﾄ,Mount,"near: パﾌｫｰﾏﾝｽ / 拾わない | was ""Back Mount"": too wide (play-test 2026-10-29) [left]"
+00399FB8,1,,拾わない,No Pick Up,"near: バｯｸﾏｳﾝﾄ / 相手のダﾒージ小 | was ""Don't Pick Up"": too wide (play-test 2026-10-29) [left]"
+00399FC8,11,,相手のダﾒージ小,Foe Dmg Low,near: 拾わない / 相手のダﾒージ大
+00399FD8,15,,相手のダﾒージ大,Foe Dmg High,near: 相手のダﾒージ小 / 相手のダﾒージ中
+00399FE8,1,,相手のダﾒージ中,Foe Dmg Mid,near: 相手のダﾒージ大 / 相手が瀕死の時
+00399FF8,7,,相手が瀕死の時,Foe Nearly Out,near: 相手のダﾒージ中 / 相手がﾌﾗﾌﾗ状態
+0039A008,2,,相手がﾌﾗﾌﾗ状態,Foe Dazed,near: 相手が瀕死の時 / 相手がダｳﾝ中
+0039A018,1,,相手がダｳﾝ中,Foe Down,near: 相手がﾌﾗﾌﾗ状態 / 相手が場外にいる
+0039A028,2,,相手が場外にいる,Foe Outside,near: 相手がダｳﾝ中 / 自分がポｽﾄ上にいる
+0039A040,1,,自分がポｽﾄ上にいる,Me on Post,near: 相手が場外にいる / こだわり度
+0039A058,1,,こだわり度,Fixation,near: 自分がポｽﾄ上にいる / 場外復帰ｶｳﾝﾄ
+0039A068,1,,場外復帰ｶｳﾝﾄ,Ring Return Count,near: こだわり度 / 凶器を…
+0039A078,1,,凶器を…,Weapon,near: 場外復帰ｶｳﾝﾄ / 離れている
+0039A088,1,,離れている,Apart,near: 凶器を… / 組んでいる
+0039A098,1,,組んでいる,Locked Up,near: 離れている / バｯｸを取っている
+0039A0A8,1,,バｯｸを取っている,Behind Foe,near: 組んでいる / ﾛープに振って…
+0039A0C0,1,,ﾛープに振って…,Irish Whip,near: バｯｸを取っている / ｺーﾅーにもたれている
+0039A0D0,1,,ｺーﾅーにもたれている,Foe in Corner,near: ﾛープに振って… / ｺーﾅー付近でダｳﾝ
+0039A0E8,1,,ｺーﾅー付近でダｳﾝ,Down by Corner,near: ｺーﾅーにもたれている / 中央付近でダｳﾝ
+0039A100,1,,中央付近でダｳﾝ,Down Mid-Ring,near: ｺーﾅー付近でダｳﾝ / 仰向けダｳﾝ
+0039A110,1,,仰向けダｳﾝ,Down Face-Up,near: 中央付近でダｳﾝ / うつ伏せダｳﾝ
+0039A120,1,,うつ伏せダｳﾝ,Down Face-Down,near: 仰向けダｳﾝ / ｺーﾅー付近でﾌﾗﾌﾗ
+0039A130,1,,ｺーﾅー付近でﾌﾗﾌﾗ,Dazed by Corner,near: うつ伏せダｳﾝ / 中央付近でﾌﾗﾌﾗ
+0039A148,1,,中央付近でﾌﾗﾌﾗ,Dazed Mid-Ring,near: ｺーﾅー付近でﾌﾗﾌﾗ / 自分がバｯｸを取られて
+0039A158,1,,自分がバｯｸを取られて,Foe Behind Me,near: 中央付近でﾌﾗﾌﾗ / ガ-ドポジｼｮﾝを取っている
+0039A170,1,,ガ-ドポジｼｮﾝを取っている,In Guard Position,near: 自分がバｯｸを取られて / がぶっている
+0039A190,1,,がぶっている,Front Facelock,near: ガ-ドポジｼｮﾝを取っている / バｯｸﾏｳﾝﾄを取っている
+0039A1A0,1,,バｯｸﾏｳﾝﾄを取っている,In Back Mount,near: がぶっている / パﾌｫーﾏﾝｽ
+0039A1B8,1,,パﾌｫーﾏﾝｽ,Taunt,near: バｯｸﾏｳﾝﾄを取っている / ﾌﾛﾝﾄﾍｯドﾛｯｸ～ｴﾙボｰｽ
+0039A1C8,13,,ﾌﾛﾝﾄﾍｯドﾛｯｸ～ｴﾙボｰｽﾀﾝプ,Headlock & Elbow Stamp,near: パﾌｫーﾏﾝｽ / 伏せかわし
+0039A1E0,5,,伏せかわし,Duck,near: ﾌﾛﾝﾄﾍｯドﾛｯｸ～ｴﾙボｰｽ / ﾘｰプﾌﾛｯグ
+0039A1F0,3,,ﾘｰプﾌﾛｯグ,Leapfrog,near: 伏せかわし / 使わない
+0039A200,7,,使わない,None,near: ﾘｰプﾌﾛｯグ / ｽﾗｲデｨﾝグ
+0039A210,1,,ｽﾗｲデｨﾝグ,Sliding,near: 使わない / ﾌﾛﾝﾄﾍｯドﾛｯｸ～ボデｨﾆｰ
+0039A220,3,,ﾌﾛﾝﾄﾍｯドﾛｯｸ～ボデｨﾆｰﾘﾌﾄ,Headlock & Knee Lift,near: ｽﾗｲデｨﾝグ / 装備技名
+0039A238,1,,装備技名,Move Name,near: ﾌﾛﾝﾄﾍｯドﾛｯｸ～ボデｨﾆｰ / ﾚｽﾗｰｴデｨｯﾄ
+0039A248,1,,ﾚｽﾗｰｴデｨｯﾄ,Edit Wrestler,near: 装備技名 / 団体ｴデｨｯﾄ
+0039A258,1,,団体ｴデｨｯﾄ,Edit Promotion,near: ﾚｽﾗｰｴデｨｯﾄ / ﾚﾌｪﾘｰｴデｨｯﾄ
+0039A268,1,,ﾚﾌｪﾘｰｴデｨｯﾄ,Edit Referee,near: 団体ｴデｨｯﾄ / ﾚｽﾗｰﾘﾈｰﾑ
+0039A278,1,,ﾚｽﾗｰﾘﾈｰﾑ,Rename Wrestler,near: ﾚﾌｪﾘｰｴデｨｯﾄ / ﾚｽﾗｰ団体移籍
+0039A288,1,,ﾚｽﾗｰ団体移籍,Transfer Wrestler,near: ﾚｽﾗｰﾘﾈｰﾑ / ﾚｽﾗｰﾘｺｽﾁｭｰﾑ
+0039A298,1,,ﾚｽﾗｰﾘｺｽﾁｭｰﾑ,Recostume,near: ﾚｽﾗｰ団体移籍 / ﾓｰドｾﾚｸﾄへ
+0039A2A8,1,,ﾓｰドｾﾚｸﾄへ,To Mode Select,near: ﾚｽﾗｰﾘｺｽﾁｭｰﾑ / ﾓデﾙﾚｽﾗｰ選択
+0039A2B8,1,,ﾓデﾙﾚｽﾗｰ選択,Base Wrestler,near: ﾓｰドｾﾚｸﾄへ / ﾈｰﾑｴﾝﾄﾘｰ
+0039A2C8,3,,ﾈｰﾑｴﾝﾄﾘｰ,Name Entry,near: ﾓデﾙﾚｽﾗｰ選択 / ｽｷﾙｴデｨｯﾄ
+0039A2D8,2,,ｽｷﾙｴデｨｯﾄ,Skill Edit,near: ﾈｰﾑｴﾝﾄﾘｰ / パﾗﾒｰﾀｴデｨｯﾄ
+0039A2E8,1,,パﾗﾒｰﾀｴデｨｯﾄ,Parameter Edit,near: ｽｷﾙｴデｨｯﾄ / 技装備ｴデｨｯﾄ
+0039A2F8,1,,技装備ｴデｨｯﾄ,Move Edit,near: パﾗﾒｰﾀｴデｨｯﾄ / CPUﾛジｯｸ
+0039A308,1,,CPUﾛジｯｸ,CPU Logic,near: 技装備ｴデｨｯﾄ / 保存画面
+0039A318,3,,保存画面,Save Screen,near: CPUﾛジｯｸ / 団体ﾛゴデザｲﾝ
+0039A328,1,,団体ﾛゴデザｲﾝ,Logo Design,near: 保存画面 / リングカラー変更
+0039A338,1,,リングカラー変更,Ring Color,"near: 団体ﾛゴデザｲﾝ / ﾚﾌｪﾘｰﾒｲｸ | was ""Change Ring Color"": too wide (play-test 2026-10-29)"
+0039A350,1,,ﾚﾌｪﾘｰﾒｲｸ,Ref Appearance,near: リングカラー変更 / ＡＢｊＳＴ　ＴＢｉＳＴ
+0039A360,1,,ＡＢｊＳＴ　ＴＢｉＳＴ,,near: ﾚﾌｪﾘｰﾒｲｸ / ＡＢｊＳＴ
+0039A378,1,,ＡＢｊＳＴ,,near: ＡＢｊＳＴ　ＴＢｉＳＴ / リングカラー
+0039A3D0,1,,リングカラー,Color,"near: ＡＢｊＳＴ / ｸｲｯｸﾛｰド [left] Ring Color screen title: ""Ring Color"" ran into the swatch (play-test 2026-10-29)"
+0039A400,2,,ｸｲｯｸﾛｰド,Quick Load,near: リングカラー / ｸｲｯｸｾｰブ
+0039A410,2,,ｸｲｯｸｾｰブ,Quick Save,near: ｸｲｯｸﾛｰド / ｸｲｯｸデﾘｰﾄ
+0039A420,1,,ｸｲｯｸデﾘｰﾄ,Quick Delete,near: ｸｲｯｸｾｰブ / ｼｽﾃﾑデｰﾀ
+0039A430,1,,ｼｽﾃﾑデｰﾀ,System Data,near: ｸｲｯｸデﾘｰﾄ / 拡張ｴデｨｯﾄデｰﾀ1 [left]
+0039A440,1,,拡張ｴデｨｯﾄデｰﾀ1,Extra Edit Data 1,near: ｼｽﾃﾑデｰﾀ / 拡張ｴデｨｯﾄデｰﾀ2 [left]
+0039A450,1,,拡張ｴデｨｯﾄデｰﾀ2,Extra Edit Data 2,near: 拡張ｴデｨｯﾄデｰﾀ1 / 拡張ｴデｨｯﾄデｰﾀ3 [left]
+0039A460,1,,拡張ｴデｨｯﾄデｰﾀ3,Extra Edit Data 3,near: 拡張ｴデｨｯﾄデｰﾀ2 / 拡張ｴデｨｯﾄデｰﾀ4 [left]
+0039A470,1,,拡張ｴデｨｯﾄデｰﾀ4,Extra Edit Data 4,near: 拡張ｴデｨｯﾄデｰﾀ3 / 上書きしますか？ [left]
+0039A480,1,,上書きしますか？,Overwrite?,near: 拡張ｴデｨｯﾄデｰﾀ4 / 削除しますか？
+0039A498,1,,削除しますか？,Delete?,near: 上書きしますか？ / 以下の各モードの記録も消えます
+0039A4A8,1,,以下の各モードの記録も消えます,Records in these modes will also be erased:,near: 削除しますか？ / ヴｨｸﾄﾘｰﾛｰド
+0039A4C8,1,,ヴｨｸﾄﾘｰﾛｰド,Victory Road,near: 以下の各モードの記録も消えます / ｵｰプﾝﾘｰグ
+0039A4D8,1,,ｵｰプﾝﾘｰグ,Open League,near: ヴｨｸﾄﾘｰﾛｰド / ｲﾘﾐﾈｰｼｮﾝ・EDITﾁｰﾑ
+0039A4E8,1,,ｲﾘﾐﾈｰｼｮﾝ・EDITﾁｰﾑ,Elimination: Edit Teams,near: ｵｰプﾝﾘｰグ / ﾜﾝﾅｲﾄﾄｰﾅﾒﾝﾄ
+0039A500,1,,ﾜﾝﾅｲﾄﾄｰﾅﾒﾝﾄ,One Night Tournament,near: ｲﾘﾐﾈｰｼｮﾝ・EDITﾁｰﾑ / ｸｲｯｸｾｰブしました
+0039A528,1,,ｸｲｯｸｾｰブしました,Quick saved.,near: ﾜﾝﾅｲﾄﾄｰﾅﾒﾝﾄ / ｼｭｰﾃｨﾝグ
+0039A540,1,,ｼｭｰﾃｨﾝグ,Shooter,near: ｸｲｯｸｾｰブしました / ビルダー
+0039A550,7,,ビルダー,Bodybuilder,near: ｼｭｰﾃｨﾝグ / アマレス
+0039A560,1,,アマレス,Amateur,near: ビルダー / ワンショルダー
+0039A570,1,,ワンショルダー,One Shoulder,near: アマレス / Ｔシャツ
+0039A580,4,,Ｔシャツ,T-Shirt,near: ワンショルダー / 全身スーツ1
+0039A590,1,,全身スーツ1,Body Suit 1,near: Ｔシャツ / 全身スーツ2
+0039A5A0,1,,全身スーツ2,Body Suit 2,near: 全身スーツ1 / ベースボールシャツ
+0039A5B0,6,,ベースボールシャツ,Baseball Shirt,near: 全身スーツ2 / ﾌｧｲﾔｰ模様
+0039A5C8,1,,ﾌｧｲﾔｰ模様,Fire Pattern,near: ベースボールシャツ / ｶｲザｰ模様
+0039A5D8,1,,ｶｲザｰ模様,<Kaiser*> Pattern,near: ﾌｧｲﾔｰ模様 / ｻﾝダｰ模様
+0039A5E8,1,,ｻﾝダｰ模様,Thunder Pattern,near: ｶｲザｰ模様 / ｱｸｾｻﾘ(ボデｨペｲﾝﾄ)
+0039A5F8,1,,ｱｸｾｻﾘ(ボデｨペｲﾝﾄ),Acc. (Body Paint),near: ｻﾝダｰ模様 / ｱｸｾｻﾘ(肩模様)
+0039A610,1,,ｱｸｾｻﾘ(肩模様),Acc. (Shoulder),near: ｱｸｾｻﾘ(ボデｨペｲﾝﾄ) / ｱｸｾｻﾘ(背番号)
+0039A620,2,,ｱｸｾｻﾘ(背番号),Acc. (Back Number),near: ｱｸｾｻﾘ(肩模様) / ｱｸｾｻﾘ(ﾈｯｸﾚｽ)
+0039A630,1,,ｱｸｾｻﾘ(ﾈｯｸﾚｽ),Acc. (Necklace),near: ｱｸｾｻﾘ(背番号) / ｱｸｾｻﾘ(数珠)
+0039A640,1,,ｱｸｾｻﾘ(数珠),Acc. (Prayer Beads),near: ｱｸｾｻﾘ(ﾈｯｸﾚｽ) / ｱｸｾｻﾘ(蝶ﾈｸﾀｲ)
+0039A650,1,,ｱｸｾｻﾘ(蝶ﾈｸﾀｲ),Acc. (Bow Tie),near: ｱｸｾｻﾘ(数珠) / ワンピース
+0039A660,2,,ワンピース,One-Piece,near: ｱｸｾｻﾘ(蝶ﾈｸﾀｲ) / セパレート
+0039A670,2,,セパレート,Two-Piece,near: ワンピース / セーラー服
+0039A680,2,,セーラー服,Sailor Suit,near: セパレート / ｱｸｾｻﾘ(リボン)
+0039A690,1,,ｱｸｾｻﾘ(リボン),Acc. (Ribbon),near: セーラー服 / 全身スーツ
+0039A6A0,5,,全身スーツ,Body Suit,near: ｱｸｾｻﾘ(リボン) / ジーンズパンツ
+0039A6B0,2,,ジーンズパンツ,Jeans,near: 全身スーツ / トランクスパンツ
+0039A6C0,1,,トランクスパンツ,Trunks,near: ジーンズパンツ / ジャージパンツ
+0039A6D8,1,,ジャージパンツ,Track Pants,near: トランクスパンツ / 薄地パンツ
+0039A6E8,1,,薄地パンツ,Thin Pants,near: ジャージパンツ / まわし用タイツ
+0039A6F8,1,,まわし用タイツ,Mawashi Tights,near: 薄地パンツ / ファイヤースーツ
+0039A708,1,,ファイヤースーツ,Fire Suit,near: まわし用タイツ / アマレススーツ
+0039A720,1,,アマレススーツ,Singlet,near: ファイヤースーツ / はらまき
+0039A730,1,,はらまき,Belly Band,near: アマレススーツ / 迷彩模様
+0039A740,3,,迷彩模様,Camo Pattern,near: はらまき / サイドライン模様
+0039A750,2,,サイドライン模様,Side Stripe,near: 迷彩模様 / パンサー模様
+0039A768,1,,パンサー模様,<Panther*> Pattern,near: サイドライン模様 / 国旗風模様
+0039A778,1,,国旗風模様,Flag Pattern,near: パンサー模様 / ピース模様
+0039A788,1,,ピース模様,Peace Pattern,near: 国旗風模様 / ベルト１
+0039A798,2,,ベルト１,Belt 1,near: ピース模様 / ベルト２
+0039A7A8,2,,ベルト２,Belt 2,near: ベルト１ / ベルト３
+0039A7B8,1,,ベルト３,Belt 3,near: ベルト２ / ベルト４
+0039A7C8,1,,ベルト４,Belt 4,near: ベルト３ / ｱｸｾｻﾘ(ボディ)
+0039A7D8,1,,ｱｸｾｻﾘ(ボディ),Acc. (Body),near: ベルト４ / ｱｸｾｻﾘ(ﾄﾗﾝｸｽ）
+0039A7E8,1,,ｱｸｾｻﾘ(ﾄﾗﾝｸｽ）,Acc. (Trunks),near: ｱｸｾｻﾘ(ボディ) / ｱｸｾｻﾘ(ｶｲザｰ）
+0039A7F8,1,,ｱｸｾｻﾘ(ｶｲザｰ）,Acc. (<Kaiser*>),near: ｱｸｾｻﾘ(ﾄﾗﾝｸｽ） / ワンピース１
+0039A808,1,,ワンピース１,One-Piece 1,near: ｱｸｾｻﾘ(ｶｲザｰ） / ワンピース２
+0039A818,1,,ワンピース２,One-Piece 2,near: ワンピース１ / アクセサリ(尻尾)
+0039A828,1,,アクセサリ(尻尾),Acc. (Tail),near: ワンピース２ / 肘サポーター
+0039A840,4,,肘サポーター,Elbow Pad,near: アクセサリ(尻尾) / 肩パット
+0039A850,1,,肩パット,Shoulder Pads,near: 肘サポーター / ボロそで
+0039A860,1,,ボロそで,Torn Sleeves,near: 肩パット / ファイヤー模様
+0039A870,2,,ファイヤー模様,Fire Pattern,near: ボロそで / ｱｸｾｻﾘ(腕バンド)
+0039A880,1,,ｱｸｾｻﾘ(腕バンド),Acc. (Armband),near: ファイヤー模様 / ｱｸｾｻﾘ(刺青)
+0039A890,1,,ｱｸｾｻﾘ(刺青),Acc. (Tattoo),near: ｱｸｾｻﾘ(腕バンド) / ｱｸｾｻﾘ(カイザー)
+0039A8A0,1,,ｱｸｾｻﾘ(カイザー),Acc. (<Kaiser*>),near: ｱｸｾｻﾘ(刺青) / ｱｸｾｻﾘ(肩番号)
+0039A8B0,2,,ｱｸｾｻﾘ(肩番号),Acc. (Shoulder No.),near: ｱｸｾｻﾘ(カイザー) / 丸型半そで
+0039A8C0,1,,丸型半そで,Short Sleeves,near: ｱｸｾｻﾘ(肩番号) / 肩出しスーツ
+0039A8D0,1,,肩出しスーツ,Off-Shoulder Suit,near: 丸型半そで / ｱｸｾｻﾘ(腕輪)
+0039A8E0,1,,ｱｸｾｻﾘ(腕輪),Acc. (Bracelet),near: 肩出しスーツ / 篭手パーツ
+0039A8F0,1,,篭手パーツ,Gauntlets,near: ｱｸｾｻﾘ(腕輪) / 腕サポーター
+0039A900,2,,腕サポーター,Arm Brace,near: 篭手パーツ / リストバンド
+0039A910,2,,リストバンド,Wristband,near: 腕サポーター / ロングタイツ
+0039A920,3,,ロングタイツ,Long Tights,near: リストバンド / パンタロン
+0039A930,1,,パンタロン,Bell-Bottoms,near: ロングタイツ / ジーンズ
+0039A940,4,,ジーンズ,Jeans,near: パンタロン / ジャージ
+0039A950,2,,ジャージ,Sweats,near: ジーンズ / ショートズボン
+0039A960,1,,ショートズボン,Shorts,near: ジャージ / ショートジーンズ
+0039A970,1,,ショートジーンズ,Jean Shorts,near: ショートズボン / 膝模様１
+0039A988,1,,膝模様１,Knee Pattern 1,near: ショートジーンズ / 膝模様２
+0039A998,1,,膝模様２,Knee Pattern 2,near: 膝模様１ / ニーパット
+0039A9A8,2,,ニーパット,Kneepads,near: 膝模様２ / ニｰパｯト+膝サポｰタｰ
+0039A9B8,1,,ニｰパｯト+膝サポｰタｰ,Kneepad + Brace,near: ニーパット / シューズ
+0039A9D0,2,,シューズ,Shoes,near: ニｰパｯト+膝サポｰタｰ / ショートシューズ
+0039A9E0,1,,ショートシューズ,Low Shoes,near: シューズ / メキシカンブーツ
+0039A9F8,1,,メキシカンブーツ,Mexican Boots,near: ショートシューズ / ウェスタンブーツ
+0039AA10,2,,ウェスタンブーツ,Western Boots,near: メキシカンブーツ / レッグウォーマー
+0039AA28,1,,レッグウォーマー,Leg Warmers,near: ウェスタンブーツ / オープンシューズ
+0039AA40,1,,オープンシューズ,Open Shoes,near: レッグウォーマー / アマレスシューズ
+0039AA58,3,,アマレスシューズ,Wrestling Shoes,near: オープンシューズ / レガース
+0039AA70,3,,レガース,Kickpads,near: アマレスシューズ / ロングタイツ１
+0039AA80,1,,ロングタイツ１,Long Tights 1,near: レガース / ロングタイツ２
+0039AA90,1,,ロングタイツ２,Long Tights 2,near: ロングタイツ１ / ﾆｰパｯﾄ+膝ｻポｰﾀｰ
+0039AAA0,1,,ﾆｰパｯﾄ+膝ｻポｰﾀｰ,Kneepad + Brace,near: ロングタイツ２ / ソックス
+0039AAB0,1,,ソックス,Socks,near: ﾆｰパｯﾄ+膝ｻポｰﾀｰ / トランクス
+0039AAC0,1,,トランクス,Trunks,near: ソックス / スパッツ
+0039AAD0,2,,スパッツ,Spats,near: トランクス / ショートスパッツ
+0039AAE0,2,,ショートスパッツ,Short Spats,near: スパッツ / 膝サポーター
+0039AAF8,1,,膝サポーター,Knee Brace,near: ショートスパッツ / カイザー模様
+0039AB08,1,,カイザー模様,<Kaiser*> Pattern,near: 膝サポーター / 矢印模様１
+0039AB18,1,,矢印模様１,Arrow Pattern 1,near: カイザー模様 / 矢印模様２
+0039AB28,1,,矢印模様２,Arrow Pattern 2,near: 矢印模様１ / サンダー模様
+0039AB38,1,,サンダー模様,Thunder Pattern,near: 矢印模様２ / 氷川模様
+0039AB48,1,,氷川模様,<Hikawa> Pattern,near: サンダー模様 / 風間模様
+0039AB58,1,,風間模様,<Kazama> Pattern,near: 氷川模様 / スパッツ模様
+0039AB68,1,,スパッツ模様,Spats Pattern,near: 風間模様 / 傷付き模様
+0039AB78,1,,傷付き模様,Scar Pattern,near: スパッツ模様 / 膝サポーター１
+0039AB88,1,,膝サポーター１,Knee Brace 1,near: 傷付き模様 / 膝サポーター２
+0039AB98,1,,膝サポーター２,Knee Brace 2,near: 膝サポーター１ / ミドルサイドライン
+0039ABA8,1,,ミドルサイドライン,Mid Side Stripe,near: 膝サポーター２ / ショートサイドライン
+0039ABC0,1,,ショートサイドライン,Short Side Stripe,near: ミドルサイドライン / グローブ
+0039ABD8,1,,グローブ,Gloves,near: ショートサイドライン / グローブ２
+0039ABE8,1,,グローブ２,Gloves 2,near: グローブ / 指テーピング
+0039ABF8,1,,指テーピング,Finger Tape,near: グローブ２ / ボクシンググローブ
+0039AC08,1,,ボクシンググローブ,Boxing Gloves,near: 指テーピング / 女子布付き
+0039AC20,1,,女子布付き,Women's Wraps,near: ボクシンググローブ / 肉球手袋
+0039AC30,1,,肉球手袋,Paw Gloves,near: 女子布付き / 足首テーピング
+0039AC40,1,,足首テーピング,Ankle Tape,near: 肉球手袋 / シューズ１
+0039AC50,1,,シューズ１,Shoes 1,near: 足首テーピング / シューズ２
+0039AC60,1,,シューズ２,Shoes 2,near: シューズ１ / パンサーシューズ
+0039AC70,1,,パンサーシューズ,<Panther*> Shoes,near: シューズ２ / カンフーシューズ
+0039AC88,1,,カンフーシューズ,Kung Fu Shoes,near: パンサーシューズ / アラビアンブーツ
+0039ACA0,1,,アラビアンブーツ,Arabian Boots,near: カンフーシューズ / 肉球シューズ
+0039ACB8,1,,肉球シューズ,Paw Shoes,near: アラビアンブーツ / 胸#x46１
+0039ACC8,1,,胸#x46１,Chest#x06１,near: 肉球シューズ / 腹#x46１ | appearance screen part label (play-test 2026-10-29) # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+0039ACD8,1,,腹#x46１,Belly#x06１,near: 胸#x46１ / 上腕#x26１ | appearance screen part label (play-test 2026-10-29) # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+0039ACE8,1,,上腕#x26１,U.Arm#x06１,near: 腹#x46１ / 下腕#x26１ | appearance screen part label (play-test 2026-10-29) # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+0039ACF8,1,,下腕#x26１,L.Arm#x06１,near: 上腕#x26１ / 太腿#x26１ | appearance screen part label (play-test 2026-10-29) # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+0039AD08,1,,太腿#x26１,Thigh#x06１,near: 下腕#x26１ / すね#x36１ | appearance screen part label (play-test 2026-10-29) # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+0039AD18,1,,すね#x36１,Shin#x26１,near: 太腿#x26１ / ｽポｲﾄｶﾗｰ | appearance screen part label (play-test 2026-10-29) # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+0039AD28,1,,ｽポｲﾄｶﾗｰ,Eyedropper,near: すね#x36１ / ｻﾝプﾙグﾗデｰｼｮﾝ
+0039AD38,1,,ｻﾝプﾙグﾗデｰｼｮﾝ,Sample Gradient,near: ｽポｲﾄｶﾗｰ / 標準ﾚｽﾗｰｺｽﾁｭｰﾑではｶｽ
+0039AD48,1,,標準ﾚｽﾗｰｺｽﾁｭｰﾑではｶｽﾀﾑｶﾗｰは使用できません。,Default costumes can't use custom colors.,near: ｻﾝプﾙグﾗデｰｼｮﾝ / 各階級の選手を最低１人は登録して
+0039AD78,1,,各階級の選手を最低１人は登録してください。,Register at least one wrestler per class.,near: 標準ﾚｽﾗｰｺｽﾁｭｰﾑではｶｽ / 現役登録を抹消する
+0039ADA8,1,,現役登録を抹消する,Retire Wrestler,near: 各階級の選手を最低１人は登録して / - 未登録 -
+0039ADC0,1,,- 未登録 -,- Empty -,near: 現役登録を抹消する / 攻撃ﾃｸﾆｯｸ
+0039ADD0,1,,攻撃ﾃｸﾆｯｸ,Offense Tech,near: - 未登録 - / 総合系攻撃 [left]
+0039ADE0,1,,総合系攻撃,MMA Offense,near: 攻撃ﾃｸﾆｯｸ / 打撃防御 [left]
+0039ADF0,1,,打撃防御,Strike Def.,near: 総合系攻撃 / 蹴り防御 [left]
+0039AE00,1,,蹴り防御,Kick Def.,near: 打撃防御 / 投げ技防御 [left]
+0039AE10,1,,投げ技防御,Throw Def.,near: 蹴り防御 / 関節防御 [left]
+0039AE20,1,,関節防御,Lock Def.,near: 投げ技防御 / 絞め技防御 [left]
+0039AE30,1,,絞め技防御,Choke Def.,near: 関節防御 / 飛び技防御 [left]
+0039AE40,1,,飛び技防御,Aerial Def.,near: 絞め技防御 / 叩きつけ技防御 [left]
+0039AE50,1,,叩きつけ技防御,Slam Def.,near: 飛び技防御 / 防御ﾃｸﾆｯｸ [left]
+0039AE60,1,,防御ﾃｸﾆｯｸ,Defense Tech,near: 叩きつけ技防御 / 対ﾗﾌ攻撃 [left]
+0039AE70,1,,対ﾗﾌ攻撃,vs. Rough,near: 防御ﾃｸﾆｯｸ / 総合系防御 [left]
+0039AE80,1,,総合系防御,MMA Defense,near: 対ﾗﾌ攻撃 / やや長い [left]
+0039AEA0,1,,やや長い,Fairly Long,near: 総合系防御 / やや短い
+0039AEB0,1,,やや短い,Fairly Short,near: やや長い / やや遅い
+0039AEC0,1,,やや遅い,Fairly Slow,near: やや短い / やや速い
+0039AED0,1,,やや速い,Fairly Fast,near: やや遅い / 日本人１
+0039AEE0,1,,日本人１,Japanese 1,near: やや速い / 日本人２
+0039AEF0,1,,日本人２,Japanese 2,near: 日本人１ / 日本人３
+0039AF00,1,,日本人３,Japanese 3,near: 日本人２ / 日本人４
+0039AF10,1,,日本人４,Japanese 4,near: 日本人３ / 日本人５
+0039AF20,1,,日本人５,Japanese 5,near: 日本人４ / 外国人１
+0039AF30,1,,外国人１,Foreign 1,near: 日本人５ / 外国人２
+0039AF40,1,,外国人２,Foreign 2,near: 外国人１ / 外国人３
+0039AF50,1,,外国人３,Foreign 3,near: 外国人２ / ﾌｫｰﾙｶｳﾝﾄ
+0039AF60,1,,ﾌｫｰﾙｶｳﾝﾄ,Pin Count,near: 外国人３ / 反則ｶｳﾝﾄ [left]
+0039AF70,1,,反則ｶｳﾝﾄ,Foul Count,near: ﾌｫｰﾙｶｳﾝﾄ / 場外ｶｳﾝﾄ [left]
+0039AF80,1,,場外ｶｳﾝﾄ,Ring-Out Count,near: 反則ｶｳﾝﾄ / 移動速度 [left]
+0039AF90,1,,移動速度,Move Speed,near: 場外ｶｳﾝﾄ / 乱入時間ﾁｪｯｸ [left]
+0039AFA0,1,,乱入時間ﾁｪｯｸ,Run-In Time Check,near: 移動速度 / 激突ダｳﾝ時間 [left]
+0039AFB0,1,,激突ダｳﾝ時間,Crash Down Time,near: 乱入時間ﾁｪｯｸ / ヘビー級 [left]
+0039AFC0,1,,ヘビー級,Heavyweight,near: 激突ダｳﾝ時間 / ジュニアヘビー級
+0039AFD0,1,,ジュニアヘビー級,Junior Heavyweight,near: ヘビー級 / ｵｰｿドｯｸｽ
+0039AFE8,2,,ｵｰｿドｯｸｽ,Orthodox,near: ジュニアヘビー級 / グﾗｯプﾗｰ
+0039AFF8,2,,グﾗｯプﾗｰ,Grappler,near: ｵｰｿドｯｸｽ / ｵｰﾙﾗｳﾝド
+0039B008,1,,ｵｰﾙﾗｳﾝド,All-Round,near: グﾗｯプﾗｰ / ｽｰプﾚｯｸｽ
+0039B018,1,,ｽｰプﾚｯｸｽ,Suplex,near: ｵｰﾙﾗｳﾝド / ｻブﾐｯｼｮﾝ
+0039B028,1,,ｻブﾐｯｼｮﾝ,Submission,near: ｽｰプﾚｯｸｽ / ｸｲｯｸﾘﾀｰﾝ
+0039B038,1,,ｸｲｯｸﾘﾀｰﾝ,Quick Return,near: ｻブﾐｯｼｮﾝ / 一発逆転
+0039B048,1,,一発逆転,Comeback,near: ｸｲｯｸﾘﾀｰﾝ / ｽﾀｰﾄダｯｼｭ
+0039B058,1,,ｽﾀｰﾄダｯｼｭ,Fast Start,near: 一発逆転 / 一撃必殺
+0039B068,1,,一撃必殺,One-Hit KO,near: ｽﾀｰﾄダｯｼｭ / ﾊｰドボデｨ
+0039B078,1,,ﾊｰドボデｨ,Hard Body,near: 一撃必殺 / ｽｰパｰｽﾀｰ
+0039B088,1,,ｽｰパｰｽﾀｰ,Superstar,near: ﾊｰドボデｨ / 暴走戦士
+0039B098,1,,暴走戦士,Berserker,near: ｽｰパｰｽﾀｰ / 起死回生
+0039B0A8,1,,起死回生,Last Gasp,near: 暴走戦士 / 火事場のｸｿ力
+0039B0B8,1,,火事場のｸｿ力,Desperation,near: 起死回生 / ハァハッ
+0039B0C8,1,,ハァハッ,Haa-hah,near: 火事場のｸｿ力 / ハァッ！
+0039B0D8,1,,ハァッ！,Haah!,near: ハァハッ / フンッ！
+0039B0E8,2,,フンッ！,Hmph!,near: ハァッ！ / ォォシッ！
+0039B0F8,1,,ォォシッ！,Ooosh!,near: フンッ！ / ヤァア！
+0039B108,1,,ヤァア！,Yaaah!,near: ォォシッ！ / イヤァァァ！
+0039B118,1,,イヤァァァ！,Iyaaa!,near: ヤァア！ / ィイイヤァァ！
+0039B128,1,,ィイイヤァァ！,Eeeyaaa!,near: イヤァァァ！ / ェイヤッ！
+0039B138,1,,ェイヤッ！,Eiya!,near: ィイイヤァァ！ / ウアァァァァァ！
+0039B148,1,,ウアァァァァァ！,Uaaaaaah!,near: ェイヤッ！ / ウリャア！
+0039B160,1,,ウリャア！,Uryaa!,near: ウアァァァァァ！ / ウリャァァァ！
+0039B170,1,,ウリャァァァ！,Uryaaaa!,near: ウリャア！ / ウオオオ！
+0039B180,1,,ウオオオ！,Uooooh!,near: ウリャァァァ！ / ウォアアッ！
+0039B190,1,,ウォアアッ！,Woaaah!,near: ウオオオ！ / エャッ！
+0039B1A0,2,,エャッ！,Eyah!,near: ウォアアッ！ / エイィィィヤッ
+0039B1B0,1,,エイィィィヤッ,Eiiiiya,near: エャッ！ / セイッ！
+0039B1C0,1,,セイッ！,Sei!,near: エイィィィヤッ / セヤァ！
+0039B1D0,1,,セヤァ！,Seyaa!,near: セイッ！ / デェイッ
+0039B1E0,1,,デェイッ,Deeei,near: セヤァ！ / ディヤァ！
+0039B1F0,1,,ディヤァ！,Diyaa!,near: デェイッ / ディィィヤッ！
+0039B200,1,,ディィィヤッ！,Diiiya!,near: ディヤァ！ / テヤア～
+0039B210,1,,テヤア～,Teyaaa,near: ディィィヤッ！ / ドゥアァァァ！
+0039B220,1,,ドゥアァァァ！,Duaaaa!,near: テヤア～ / ッシャッ
+0039B230,1,,ッシャッ,Shah,near: ドゥアァァァ！ / ヨッシャーッ！
+0039B240,1,,ヨッシャーッ！,Yosshaa!,near: ッシャッ / ヨッシャエーッ！
+0039B250,1,,ヨッシャエーッ！,Yossha-eh!,near: ヨッシャーッ！ / ォォッシッ！
+0039B268,1,,ォォッシッ！,Oossh!,near: ヨッシャエーッ！ / イャアッシャッ！
+0039B278,1,,イャアッシャッ！,Iyaasha!,near: ォォッシッ！ / トァッ！
+0039B290,1,,トァッ！,Toah!,near: イャアッシャッ！ / オラッ！
+0039B2A0,1,,オラッ！,Ora!,near: トァッ！ / オ″ラ″ッ
+0039B2B0,1,,オ″ラ″ッ,ORA!,near: オラッ！ / オァー！
+0039B2C0,1,,オァー！,Oaah!,near: オ″ラ″ッ / オリャ！
+0039B2D0,1,,オリャ！,Orya!,near: オァー！ / そりゃあ！
+0039B2E0,1,,そりゃあ！,Soryaa!,near: オリャ！ / ドリャッ！
+0039B2F0,1,,ドリャッ！,Dorya!,near: そりゃあ！ / ヨィショッ！
+0039B300,2,,ヨィショッ！,Heave-ho!,near: ドリャッ！ / ハイッ！
+0039B310,3,,ハイッ！,Hai!,near: ヨィショッ！ / オリャアアア！
+0039B320,1,,オリャアアア！,Oryaaaa!,near: ハイッ！ / ッエェーッ
+0039B330,1,,ッエェーッ,Eeeh,near: オリャアアア！ / ダァ～ッ！
+0039B340,1,,ダァ～ッ！,Daaa!,near: ッエェーッ / ウォ～～ゥ！
+0039B350,1,,ウォ～～ゥ！,Woooou!,near: ダァ～ッ！ / ィアァァァァ…
+0039B360,1,,ィアァァァァ…,Iaaaaa...,near: ウォ～～ゥ！ / 来いオラッ！
+0039B370,1,,来いオラッ！,Come on! Ora!,near: ィアァァァァ… / テメェ！
+0039B380,1,,テメェ！,You bastard!,near: 来いオラッ！ / 野ぁ郎！
+0039B390,1,,野ぁ郎！,Bastaaard!,near: テメェ！ / オラァ！テメェ
+0039B3A0,1,,オラァ！テメェ,Ora! You punk,near: 野ぁ郎！ / 行くぞぉ！
+0039B3B0,1,,行くぞぉ！,Here I go!,near: オラァ！テメェ / イェ～イ
+0039B3C0,1,,イェ～イ,Yay,near: 行くぞぉ！ / ッシャ この野郎っ
+0039B3D0,1,,ッシャ この野郎っ,"Yeah, you bastard",near: イェ～イ / っ立てオラァ！
+0039B3E8,1,,っ立てオラァ！,Get up! Ora!,near: ッシャ この野郎っ / 立てぇっ
+0039B3F8,1,,立てぇっ,Get up,near: っ立てオラァ！ / いっちゃうぞコノヤロウ！
+0039B408,1,,いっちゃうぞコノヤロウ！,"Here goes, you bastard!",near: 立てぇっ / 死ねー！
+0039B428,2,,死ねー！,Die!,near: いっちゃうぞコノヤロウ！ / 死になさいっ！
+0039B438,1,,死になさいっ！,Kindly die!,near: 死ねー！ / フィニッシュ！
+0039B448,2,,フィニッシュ！,Finish!,near: 死になさいっ！ / 見とけよ！
+0039B458,1,,見とけよ！,Watch this!,near: フィニッシュ！ / ウイィィィィ！
+0039B468,1,,ウイィィィィ！,Weeeee!,near: 見とけよ！ / かかってこんかいボケ！
+0039B478,1,,かかってこんかいボケ！,"Bring it, idiot!",near: ウイィィィィ！ / 下克上じゃ！
+0039B490,1,,下克上じゃ！,Time for an upset!,near: かかってこんかいボケ！ / アスキィム！
+0039B4A0,1,,アスキィム！,Askiim!,near: 下克上じゃ！ / カマーン！
+0039B4B0,1,,カマーン！,C'mon!,near: アスキィム！ / 終わりだー！
+0039B4C0,2,,終わりだー！,It's over!,near: カマーン！ / 決めるぞー！
+0039B4D0,2,,決めるぞー！,Finishing it!,near: 終わりだー！ / 行くぞー！
+0039B4E0,2,,行くぞー！,Let's go!,near: 決めるぞー！ / 行くぞオラァー！
+0039B4F0,1,,行くぞオラァー！,"Let's go, ora!",near: 行くぞー！ / ヨッシャ行くぞー！
+0039B508,2,,ヨッシャ行くぞー！,"Alright, let's go!",near: 行くぞオラァー！ / ヨッシャ担ぐぞ！
+0039B520,1,,ヨッシャ担ぐぞ！,"Alright, up you go!",near: ヨッシャ行くぞー！ / 来い来い
+0039B538,1,,来い来い,"Come on, come on",near: ヨッシャ担ぐぞ！ / どーですかぁ！？
+0039B548,1,,どーですかぁ！？,How's that?!,near: 来い来い / 最っ高ー！
+0039B560,1,,最っ高ー！,The best!,near: どーですかぁ！？ / どうした、どうした！
+0039B570,2,,どうした、どうした！,"What's wrong, huh?!",near: 最っ高ー！ / オラオラ！
+0039B588,1,,オラオラ！,Ora ora!,near: どうした、どうした！ / 気合いだー！
+0039B598,1,,気合いだー！,Fighting spirit!,near: オラオラ！ / どすこいっ
+0039B5A8,1,,どすこいっ,Dosukoi!,near: 気合いだー！ / ダメだっ
+0039B5B8,1,,ダメだっ,No good,near: どすこいっ / ＤＤＴ！
+0039B5C8,2,,ＤＤＴ！,DDT!,near: ダメだっ / カミカゼ
+0039B5D8,1,,カミカゼ,Kamikaze,near: ＤＤＴ！ / サンダーファイヤー
+0039B5E8,1,,サンダーファイヤー,Thunder Fire,near: カミカゼ / ファイヤーサンダー
+0039B600,1,,ファイヤーサンダー,Fire Thunder,near: サンダーファイヤー / ダイヤモンドダスト
+0039B618,1,,ダイヤモンドダスト,Diamond Dust,near: ファイヤーサンダー / ファイヤーバード
+0039B630,1,,ファイヤーバード,Firebird,near: ダイヤモンドダスト / アックスボンバァ！
+0039B648,1,,アックスボンバァ！,Axe Bomber!,near: ファイヤーバード / スーパーフラァーイ！
+0039B660,1,,スーパーフラァーイ！,Super Flyyy!,near: アックスボンバァ！ / ロックンロール！
+0039B678,1,,ロックンロール！,Rock 'n' roll!,near: スーパーフラァーイ！ / オレを刈れぇ！
+0039B690,1,,オレを刈れぇ！,Mow me down!,near: ロックンロール！ / こんばんは
+0039B6A0,1,,こんばんは,Good evening,near: オレを刈れぇ！ / じゃあなっ
+0039B6B0,1,,じゃあなっ,See ya,near: こんばんは / ヘィ、らっしゃい！
+0039B6C0,1,,ヘィ、らっしゃい！,"Hey, welcome!",near: じゃあなっ / ありがとうございました
+0039B6D8,1,,ありがとうございました,Thank you very much,near: ヘィ、らっしゃい！ / ごっつあんです
+0039B6F0,1,,ごっつあんです,Much obliged,near: ありがとうございました / ホアァァァ！
+0039B700,2,,ホアァァァ！,Hoaaaa!,near: ごっつあんです / あたたたたたたた
+0039B710,2,,あたたたたたたた,Atatatatatata,near: ホアァァァ！ / フザケんな！
+0039B728,2,,フザケんな！,Screw you!,near: あたたたたたたた / しばくぞコラ！
+0039B738,2,,しばくぞコラ！,I'll smack ya!,near: フザケんな！ / ホンマかいな！
+0039B748,2,,ホンマかいな！,Seriously?!,near: しばくぞコラ！ / えーかげんにせぇ！
+0039B758,2,,えーかげんにせぇ！,Knock it off!,near: ホンマかいな！ / あぁ、疲れた
+0039B770,2,,あぁ、疲れた,"Ahh, I'm beat",near: えーかげんにせぇ！ / レディー・ゴー！
+0039B780,2,,レディー・ゴー！,"Ready, go!",near: あぁ、疲れた / ガッハッハッ
+0039B798,2,,ガッハッハッ,Gahahaha,near: レディー・ゴー！ / ガーッハッハッ
+0039B7A8,2,,ガーッハッハッ,Gwahahaha,near: ガッハッハッ / フンフンフーン・・・
+0039B7B8,3,,フンフンフーン・・・,Hmm hmm hmmm...,near: ガーッハッハッ / にゃーにゃー
+0039B7D0,3,,にゃーにゃー,Meow meow,near: フンフンフーン・・・ / ワン、ワン
+0039B7E0,3,,ワン、ワン,"Woof, woof",near: にゃーにゃー / ウォーー
+0039B7F0,3,,ウォーー,Woooo,near: ワン、ワン / オゥッオゥッ
+0039B800,3,,オゥッオゥッ,Ow-ow,near: ウォーー / パオーン
+0039B810,3,,パオーン,Pawooo,near: オゥッオゥッ / グオーッ
+0039B820,3,,グオーッ,Grooah,near: パオーン / ドカーン
+0039B830,3,,ドカーン,Kaboom,near: グオーッ / ムゥン！
+0039B840,1,,ムゥン！,Mmn!,near: ドカーン / アァァァァッ
+0039B850,1,,アァァァァッ,Aaaaah,near: ムゥン！ / ダアァァァッ
+0039B860,1,,ダアァァァッ,Daaaah,near: アァァァァッ / イヤァ！
+0039B870,1,,イヤァ！,Iyah!,near: ダアァァァッ / イィヤァ！
+0039B880,1,,イィヤァ！,Iiyah!,near: イヤァ！ / イヤァァァァ
+0039B890,1,,イヤァァァァ,Iyaaaa,near: イィヤァ！ / ディヤッ！
+0039B8A0,1,,ディヤッ！,Diyah!,near: イヤァァァァ / ディィィッ！
+0039B8B0,1,,ディィィッ！,Diii!,near: ディヤッ！ / ディィーヤッ
+0039B8C0,1,,ディィーヤッ,Diiyah,near: ディィィッ！ / ウォッ！
+0039B8D0,1,,ウォッ！,Woh!,near: ディィーヤッ / フゥオッ！
+0039B8E0,1,,フゥオッ！,Fuoh!,near: ウォッ！ / ウォア！
+0039B8F0,1,,ウォア！,Woah!,near: フゥオッ！ / ウァァァッ！
+0039B900,1,,ウァァァッ！,Waaah!,near: ウォア！ / エャアッ
+0039B910,1,,エャアッ,Eyaah,near: ウァァァッ！ / ウォァァ
+0039B920,1,,ウォァァ,Woaa,near: エャアッ / ウェアアア！
+0039B930,1,,ウェアアア！,Weaaah!,near: ウォァァ / ゥオ！ ゥオ！
+0039B940,1,,ゥオ！ ゥオ！,Uo! Uo!,near: ウェアアア！ / ハゥッ！
+0039B950,1,,ハゥッ！,Hau!,near: ゥオ！ ゥオ！ / ア″～～～
+0039B960,1,,ア″～～～,AAAGH,near: ハゥッ！ / ヒィィィィ
+0039B970,1,,ヒィィィィ,Hiiiii,near: ア″～～～ / ヤァッ！
+0039B980,1,,ヤァッ！,Yah!,near: ヒィィィィ / ファーッ
+0039B990,1,,ファーッ,Faaah,near: ヤァッ！ / ウシャーッ
+0039B9A0,1,,ウシャーッ,Ushaaa,near: ファーッ / エイィッ！
+0039B9B0,1,,エイィッ！,Eiih!,near: ウシャーッ / シュエイィ！
+0039B9C0,1,,シュエイィ！,Shueii!,near: エイィッ！ / ウガアアアア！
+0039B9D0,1,,ウガアアアア！,Ugaaaah!,near: シュエイィ！ / Ｂｏｗ！Ｂｏｗ！
+0039B9E0,1,,Ｂｏｗ！Ｂｏｗ！,Bow! Bow!,near: ウガアアアア！ / Ｗｏｏｏｗ！
+0039B9F8,1,,Ｗｏｏｏｗ！,Wooow!,near: Ｂｏｗ！Ｂｏｗ！ / ウ～～ゥ
+0039BA08,1,,ウ～～ゥ,Uuuu,near: Ｗｏｏｏｗ！ / Ｈａａａ．．．．．
+0039BA18,1,,Ｈａａａ．．．．．,Haaa.....,near: ウ～～ゥ / ゥイィーッ
+0039BA30,1,,ゥイィーッ,Wiiii!,near: Ｈａａａ．．．．． / ＹＥＳ！！
+0039BA40,1,,ＹＥＳ！！,YES!!,near: ゥイィーッ / ＹＥＡＨ！
+0039BA50,1,,ＹＥＡＨ！,YEAH!,near: ＹＥＳ！！ / Ｏｏｏｏｈ！ Ｙｅａａａａｈ！
+0039BA60,1,,Ｏｏｏｏｈ！ Ｙｅａａａａｈ！,Ooooh! Yeaaaaah!,near: ＹＥＡＨ！ / カマン！
+0039BA80,1,,カマン！,Come on!,near: Ｏｏｏｏｈ！ Ｙｅａａａａｈ！ / ドスコイ
+0039BA90,1,,ドスコイ,Dosukoi,near: カマン！ / テメエ　コノヤロ
+0039BAA0,1,,テメエ　コノヤロ,"You bastard, you",near: ドスコイ / Ｖｉｖａ！ Ｍｅｘｉｃｏ！
+0039BAB8,1,,Ｖｉｖａ！ Ｍｅｘｉｃｏ！,Viva! Mexico!,near: テメエ　コノヤロ / Are You Ready？
+0039BAD8,1,,Are You Ready？,Are You Ready?,near: Ｖｉｖａ！ Ｍｅｘｉｃｏ！ / ＯＫ Ｂａｂｙ！
+0039BAE8,1,,ＯＫ Ｂａｂｙ！,OK Baby!,near: Are You Ready？ / ウナラ！
+0039BAF8,1,,ウナラ！,Unara!,near: ＯＫ Ｂａｂｙ！ / Finish！
+0039BB08,1,,WowWowWow,WowWowWow,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+0039BB18,1,,Finish！,Finish!,near: ウナラ！ / Ｎｏ．１！
+0039BB28,1,,Ｎｏ．１！,No.1!,near: Finish！ / Ｉ・Ｃｈｉ・Ｂａａａｎ！
+0039BB38,1,,Ｉ・Ｃｈｉ・Ｂａａａｎ！,I-Chi-Baaan!,near: Ｎｏ．１！ / ＢＡＮＧ！ ＢＡＮＧ！
+0039BB58,1,,ＢＡＮＧ！ ＢＡＮＧ！,BANG! BANG!,near: Ｉ・Ｃｈｉ・Ｂａａａｎ！ / Ｏｈ Ｎｏ！
+0039BB70,1,,Ｏｈ Ｎｏ！,Oh No!,near: ＢＡＮＧ！ ＢＡＮＧ！ / Ｂｒａｉｎ Ｂｕｓｔｅｒ！
+0039BB80,1,,Feel the Power!,Feel the Power!,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
+0039BB90,1,,Ｂｒａｉｎ Ｂｕｓｔｅｒ！,Brain Buster!,near: Ｏｈ Ｎｏ！ / テェヤー！
+0039BBC0,1,,テェヤー！,Teeyaa!,near: Ｂｒａｉｎ Ｂｕｓｔｅｒ！ / イヤッ！
+0039BBD0,1,,イヤッ！,Iya!,near: テェヤー！ / イイヤッ！
+0039BBE0,1,,イイヤッ！,Iiya!,near: イヤッ！ / イヤーッ！
+0039BBF0,1,,イヤーッ！,Iyaa!,near: イイヤッ！ / イヤァァァァッ！
+0039BC00,1,,イヤァァァァッ！,Iyaaaa!,near: イヤーッ！ / うりゃ！
+0039BC18,1,,うりゃ！,Urya!,near: イヤァァァァッ！ / うりゃーっ！
+0039BC28,1,,うりゃーっ！,Uryaaa!,near: うりゃ！ / そりゃ！
+0039BC38,1,,そりゃ！,Sorya!,near: うりゃーっ！ / そりゃーっ！
+0039BC48,1,,そりゃーっ！,Soryaaa!,near: そりゃ！ / オラオラァ！
+0039BC58,1,,オラオラァ！,Ora oraaa!,near: そりゃーっ！ / この野郎ーっ！
+0039BC68,1,,この野郎ーっ！,You bastaaard!,near: オラオラァ！ / こンの野郎！
+0039BC78,1,,こンの野郎！,Why you...!,near: この野郎ーっ！ / コ・ノ・ヤ・ロ・ウ！
+0039BC88,1,,コ・ノ・ヤ・ロ・ウ！,You-bas-tard!,near: こンの野郎！ / バカ野郎ーっ！
+0039BCA0,1,,バカ野郎ーっ！,You idiot!,near: コ・ノ・ヤ・ロ・ウ！ / バ・カ・ヤ・ロ・ウ！
+0039BCB0,1,,バ・カ・ヤ・ロ・ウ！,I-di-ot!,near: バカ野郎ーっ！ / てめぇ！
+0039BCC8,1,,てめぇ！,You!,near: バ・カ・ヤ・ロ・ウ！ / てぇンめぇ！
+0039BCD8,1,,てぇンめぇ！,Yoouu!,near: てめぇ！ / てめぇコラ！
+0039BCE8,1,,てめぇコラ！,"Hey, you!",near: てぇンめぇ！ / 行くぞオラー！
+0039BCF8,1,,行くぞオラー！,"Here I come, ora!",near: てめぇコラ！ / オラ行くぞー！
+0039BD08,1,,オラ行くぞー！,"Ora, here I come!",near: 行くぞオラー！ / 終・わ・り・だー！
+0039BD18,1,,終・わ・り・だー！,It's o-ver!,near: オラ行くぞー！ / 終わり終わり。
+0039BD30,1,,終わり終わり。,"All over, all over.",near: 終・わ・り・だー！ / ココだよココ。
+0039BD40,1,,ココだよココ。,"Right here, here.",near: 終わり終わり。 / 立てー！
+0039BD50,1,,立てー！,Get uuup!,near: ココだよココ。 / ハッ・ハッ・ハッ・ハッ
+0039BD60,1,,ハッ・ハッ・ハッ・ハッ,Ha-ha-ha-ha,near: 立てー！ / いっくよー！
+0039BD78,1,,いっくよー！,Here I goo!,near: ハッ・ハッ・ハッ・ハッ / えいっ！
+0039BD88,1,,えいっ！,Hyah!,near: いっくよー！ / チョアー！
+0039BD98,1,,チョアー！,Choaa!,near: えいっ！ / さようなら
+0039BDA8,1,,さようなら,Goodbye,near: チョアー！ / おしおきです！
+0039BDB8,1,,おしおきです！,Time for punishment!,near: さようなら / おしおきよ！
+0039BDC8,1,,おしおきよ！,You'll be punished!,near: おしおきです！ / ニャハハハハ！
+0039BDD8,1,,ニャハハハハ！,Nyahahaha!,near: おしおきよ！ / オーッホッホッホ！
+0039BDE8,1,,オーッホッホッホ！,Ohohoho!,near: ニャハハハハ！ / アーッハッハッハッ！
+0039BE00,1,,アーッハッハッハッ！,Ahahahaha!,near: オーッホッホッホ！ / やや遅い
+0039BE18,1,,やや遅い,Fairly Slow,near: アーッハッハッハッ！ / やや速い
+0039BE28,1,,やや速い,Fairly Fast,near: やや遅い / 登れない
+0039BE38,1,,登れない,Can't Climb,near: やや速い / 駆け登り
+0039BE48,1,,駆け登り,Run Up,near: 登れない / 日本人１
+0039BE58,1,,日本人１,Japanese 1,near: 駆け登り / 日本人２
+0039BE68,1,,日本人２,Japanese 2,near: 日本人１ / 日本人３
+0039BE78,1,,日本人３,Japanese 3,near: 日本人２ / 日本人４
+0039BE88,1,,日本人４,Japanese 4,near: 日本人３ / 日本人５
+0039BE98,1,,日本人５,Japanese 5,near: 日本人４ / 外国人１
+0039BEA8,1,,外国人１,Foreign 1,near: 日本人５ / 外国人２
+0039BEB8,1,,外国人２,Foreign 2,near: 外国人１ / 外国人３+獣
+0039BEC8,1,,外国人３+獣,Foreign 3+Beast,near: 外国人２ / 所属団体
+0039BED8,1,,所属団体,Promotion,near: 外国人３+獣 / ﾌｧｲﾄｽﾀｲﾙ [left]
+0039BEE8,1,,ﾌｧｲﾄｽﾀｲﾙ,Fight Style,near: 所属団体 / 回復力（流血） [left]
+0039BEF8,1,,回復力（流血）,Recovery (Bleeding),near: ﾌｧｲﾄｽﾀｲﾙ / 呼吸法（流血） [left]
+0039BF08,1,,呼吸法（流血）,Breathing (Bleeding),near: 回復力（流血） / 精神力（流血） [left]
+0039BF18,1,,精神力（流血）,Spirit (Bleeding),near: 呼吸法（流血） / 首耐久度 [left]
+0039BF28,1,,首耐久度,Neck Durability,near: 精神力（流血） / 腕耐久度 [left]
+0039BF38,1,,腕耐久度,Arm Durability,near: 首耐久度 / 腰耐久度 [left]
+0039BF48,1,,腰耐久度,Back Durability,near: 腕耐久度 / 脚耐久度 [left]
+0039BF58,1,,脚耐久度,Leg Durability,near: 腰耐久度 / 移動速度 [left]
+0039BF68,1,,移動速度,Move Speed,near: 脚耐久度 / 昇降速度 [left]
+0039BF78,1,,昇降速度,Climb Speed,near: 移動速度 / 登り／駆け登り [left]
+0039BF88,1,,登り／駆け登り,Climb/Run Up,near: 昇降速度 / かけ声１ 声色 [left]
+0039BF98,1,,かけ声１ 声色,Voice 1 Tone,near: 登り／駆け登り / かけ声１ 種類 [left]
+0039BFA8,1,,かけ声１ 種類,Voice 1 Type,near: かけ声１ 声色 / かけ声２ 声色 [left]
+0039BFB8,1,,かけ声２ 声色,Voice 2 Tone,near: かけ声１ 種類 / かけ声２ 種類 [left]
+0039BFC8,1,,かけ声２ 種類,Voice 2 Type,near: かけ声２ 声色 / 次に必要なポイント %s [left]
+0039BFF8,1,,次に必要なポイント %s,Pts to Next %s,near: かけ声２ 種類 / カウンター
+0039C038,2,,カウンター,Counter,near: 次に必要なポイント %s / 対角線走り [left]
+0039C048,1,,対角線走り,Run Corner,near: カウンター / 走り場外
+0039C058,1,,走り場外,Run Out,"near: 対角線走り / ｴプﾛﾝから場外 | was ""Running Dive"": too wide (play-test 2026-10-29)"
+0039C068,1,,ｴプﾛﾝから場外,Apron Out,"near: 走り場外 / 場外ｴプﾛﾝから内 | was ""Apron to Outside"": too wide (play-test 2026-10-29)"
+0039C078,1,,場外ｴプﾛﾝから内,Apron In,"near: ｴプﾛﾝから場外 / バック返し | was ""Apron to Inside"": too wide (play-test 2026-10-29)"
+0039C088,2,,バック返し,Back Rev,"near: 場外ｴプﾛﾝから内 / 仰向け頭 | was ""Back Reversal"": too wide (play-test 2026-10-29) [left]"
+0039C098,2,,仰向け頭,Up Head,"near: バック返し / 仰向け足 | was ""Face-Up Head"": too wide (play-test 2026-10-29) [left]"
+0039C0A8,2,,仰向け足,Up Legs,"near: 仰向け頭 / うつ伏せ頭 | was ""Face-Up Legs"": too wide (play-test 2026-10-29) [left]"
+0039C0B8,2,,うつ伏せ頭,Down Head,"near: 仰向け足 / うつ伏せ足 | was ""Face-Down Head"": too wide (play-test 2026-10-29) [left]"
+0039C0C8,2,,うつ伏せ足,Down Legs,"near: うつ伏せ頭 / ダウン走り | was ""Face-Down Legs"": too wide (play-test 2026-10-29) [left]"
+0039C0D8,1,,ダウン走り,Run Down,"near: うつ伏せ足 / ｺｰﾅｰ組み | was ""Running (Down)"": too wide (play-test 2026-10-29) [left]"
+0039C0E8,3,,ｺｰﾅｰ組み,Corner,"near: ダウン走り / パﾌｫｰﾏﾝｽ | was ""Corner Grapple"": too wide (play-test 2026-10-29) [left]"
+0039C0F8,4,,パﾌｫｰﾏﾝｽ,Taunt,near: ｺｰﾅｰ組み / ﾌﾛﾝﾄﾂｰプﾗﾄﾝ [left]
+0039C108,1,,ﾌﾛﾝﾄﾂｰプﾗﾄﾝ,Front Duo,"near: パﾌｫｰﾏﾝｽ / ﾌﾛﾝﾄｽﾘｰプﾗﾄﾝ | was ""Front Double Team"": too wide (play-test 2026-10-29)"
+0039C118,1,,ﾌﾛﾝﾄｽﾘｰプﾗﾄﾝ,Front Trio,near: ﾌﾛﾝﾄﾂｰプﾗﾄﾝ / バｯｸﾂｰプﾗﾄﾝ
+0039C128,1,,バｯｸﾂｰプﾗﾄﾝ,Back Duo,near: ﾌﾛﾝﾄｽﾘｰプﾗﾄﾝ / バｯｸｽﾘｰプﾗﾄﾝ
+0039C138,1,,バｯｸｽﾘｰプﾗﾄﾝ,Back Trio,near: バｯｸﾂｰプﾗﾄﾝ / ｺｰﾅｰﾂｰプﾗﾄﾝ
+0039C148,1,,ｺｰﾅｰﾂｰプﾗﾄﾝ,Corner Duo,near: バｯｸｽﾘｰプﾗﾄﾝ / ｺｰﾅｰｽﾘｰプﾗﾄﾝ
+0039C158,1,,ｺｰﾅｰｽﾘｰプﾗﾄﾝ,Corner Trio,near: ｺｰﾅｰﾂｰプﾗﾄﾝ / ガｰド攻撃
+0039C168,3,,ガｰド攻撃,Guard Atk,near: ｺｰﾅｰｽﾘｰプﾗﾄﾝ / ガｰド返し [left]
+0039C178,1,,ガｰド返し,Guard Rev,near: ガｰド攻撃 / がぶり攻撃
+0039C188,3,,がぶり攻撃,FL Atk,"near: ガｰド返し / がぶり返し | was ""Headlock Atk"": too wide (play-test 2026-10-29) [left]"
+0039C198,1,,がぶり返し,FL Rev,"near: がぶり攻撃 / バｯｸﾏｳﾝﾄ攻撃 | was ""Headlock Rev"": too wide (play-test 2026-10-29)"
+0039C1A8,3,,バｯｸﾏｳﾝﾄ攻撃,Mount Atk,"near: がぶり返し / バｯｸﾏｳﾝﾄ返し | was ""Back Mt Atk"": too wide (play-test 2026-10-29) [left]"
+0039C1B8,1,,バｯｸﾏｳﾝﾄ返し,Mount Rev,"near: バｯｸﾏｳﾝﾄ攻撃 / 駆登り飛び | was ""Back Mt Rev"": too wide (play-test 2026-10-29)"
+0039C1C8,2,,駆登り飛び,Run-Up,"near: バｯｸﾏｳﾝﾄ返し / 場内ｴプﾛﾝ組 | was ""Run-Up Dive"": too wide (play-test 2026-10-29) [left]"
+0039C1D8,1,,場内ｴプﾛﾝ組,In-Apron,"near: 駆登り飛び / 場外ｴプﾛﾝ組 | was ""Apron (In)"": too wide (play-test 2026-10-29)"
+0039C1E8,1,,場外ｴプﾛﾝ組,Out-Apron,"near: 場内ｴプﾛﾝ組 / 雪崩前返し | was ""Apron (Out)"": too wide (play-test 2026-10-29)"
+0039C1F8,1,,雪崩前返し,Top Rev F,"near: 場外ｴプﾛﾝ組 / 雪崩後返し | was ""Top Rev Front"": too wide (play-test 2026-10-29)"
+0039C208,1,,雪崩後返し,Top Rev B,"near: 雪崩前返し / 攻撃ﾃｸﾆｯｸ | was ""Top Rev Back"": too wide (play-test 2026-10-29)"
+0039C218,1,,攻撃ﾃｸﾆｯｸ,Technique,"near: 雪崩後返し / 総合系攻撃 | was ""Offense Tech"": too wide (play-test 2026-10-29)"
+0039C228,1,,総合系攻撃,MMA Atk,"near: 攻撃ﾃｸﾆｯｸ / 初期化中… | was ""MMA Offense"": too wide (play-test 2026-10-29)"
+0039C260,1,,初期化中…,Loading...,"near: 総合系攻撃 / 再初期化中… | was ""Initializing..."": too wide (play-test 2026-10-29)"
+0039C270,1,,再初期化中…,Reloading...,"near: 初期化中… / セーブを行うには上書きする必要が | was ""Reinitializing..."": too wide (play-test 2026-10-29)"
+0039C290,1,,すべてのストーリー用セーブデータが使用中です。,All story save slots are in use.,found by reference (play-test 2026-10-29)
+0039C2C0,1,,セーブを行うには上書きする必要があります。,Saving requires overwriting the existing data.,near: 再初期化中… / よろしいですか？
+0039C2F0,1,,よろしいですか？,Is that OK?,near: セーブを行うには上書きする必要が / メモリーカード(PS2)の空き容
+0039C860,1,,メモリーカード(PS2)の空き容量が不足しています。,Not enough free space on the memory card (PS2).,near: よろしいですか？ / このゲームのシステムデータをセー
+0039C890,2,,このゲームのシステムデータをセーブするには 64KB 以上必要です。,Saving system data needs at least 64KB free.,near: メモリーカード(PS2)の空き容 / (MEMORY CARD差込口1
+0039C8D0,1,,(MEMORY CARD差込口1),(MEMORY CARD slot 1),near: このゲームのシステムデータをセー / (MEMORY CARD差込口2
+0039C8E8,1,,(MEMORY CARD差込口2),(MEMORY CARD slot 2),near: (MEMORY CARD差込口1 / (MEMORY CARD差込口1
+0039C900,1,,(MEMORY CARD差込口1-A),(MEMORY CARD slot 1-A),near: (MEMORY CARD差込口2 / (MEMORY CARD差込口1
+0039C918,1,,(MEMORY CARD差込口1-B),(MEMORY CARD slot 1-B),near: (MEMORY CARD差込口1 / (MEMORY CARD差込口1
+0039C930,1,,(MEMORY CARD差込口1-C),(MEMORY CARD slot 1-C),near: (MEMORY CARD差込口1 / (MEMORY CARD差込口1
+0039C948,1,,(MEMORY CARD差込口1-D),(MEMORY CARD slot 1-D),near: (MEMORY CARD差込口1 / メモリーカード(PS2)が差され
+0039CA08,1,,メモリーカード(PS2)が差されていません。,No memory card (PS2) is inserted.,near: (MEMORY CARD差込口1 / このまま開始しますか？
+0039CA30,1,,このまま開始しますか？,Start anyway?,near: メモリーカード(PS2)が差され / FileReadOpen 未サポ
+0039CA98,1,,FileReadOpen 未サポート\n,,near: このまま開始しますか？ / FileWriteOpen 未サ
+0039CAB8,1,,FileWriteOpen 未サポート\n,,near: FileReadOpen 未サポ / GetFileSize 未サポー
+0039CAD8,1,,GetFileSize 未サポート\n,,near: FileWriteOpen 未サ / ファイルサイズが異常またはファイ
+0039CB00,1,,ファイルサイズが異常またはファイルなし,"Bad file size, or file not found",near: GetFileSize 未サポー / ファイル読み込みエラー
+0039CB28,1,,ファイル読み込みエラー,File read error,near: ファイルサイズが異常またはファイ / メモリが確保出来ませんでした
+0039CB40,1,,メモリが確保出来ませんでした,Could not allocate memory,near: ファイル読み込みエラー / 対人、対コンピュータの
+0039CB80,1,,対人、対コンピュータの,Free matches against,near: メモリが確保出来ませんでした / フリー対戦です
+0039CB98,1,,フリー対戦です,people or the computer.,near: 対人、対コンピュータの / 最高１６組まで参加可能な
+0039CBA8,1,,最高１６組まで参加可能な,Up to 16 entries in a,near: フリー対戦です / 勝ち抜き戦です
+0039CBC8,1,,勝ち抜き戦です,knockout tournament.,near: 最高１６組まで参加可能な / 最高６４組まで参加可能な
+0039CBD8,1,,最高６４組まで参加可能な,Up to 64 entries in a,near: 勝ち抜き戦です / 総当たり戦です
+0039CBF8,1,,総当たり戦です,round-robin league.,near: 最高６４組まで参加可能な / ５対５での団体戦です
+0039CC08,1,,５対５での団体戦です,5-on-5 team battles.,near: 総当たり戦です / 最高８人まで参加可能な
+0039CC20,1,,最高８人まで参加可能な,Up to 8 wrestlers in a,near: ５対５での団体戦です / 大乱闘戦です
+0039CC38,1,,大乱闘戦です,big battle royal.,near: 最高８人まで参加可能な / 対コンピュータ勝ち抜きの
+0039CC48,1,,対コンピュータ勝ち抜きの,Beat CPU opponents in a,near: 大乱闘戦です / タイトル統一戦です
+0039CC68,1,,タイトル統一戦です,title unification series.,near: 対コンピュータ勝ち抜きの / ベルトを賭けた試合ができます
+0039CC80,1,,ベルトを賭けた試合ができます,Matches with a belt on the line.,near: タイトル統一戦です / オリジナルのレスラー、レフェリー
+0039CCA0,1,,オリジナルのレスラー、レフェリー、,"Create original wrestlers,",near: ベルトを賭けた試合ができます / 団体を作成できます
+0039CCC8,1,,団体を作成できます,referees and promotions.,near: オリジナルのレスラー、レフェリー / レスラー達の熱い生き様を
+0039CCE0,1,,レスラー達の熱い生き様を,Experience the fiery lives,near: 団体を作成できます / 体験できます
+0039CD00,1,,体験できます,of the wrestlers.,near: レスラー達の熱い生き様を / データのセーブ、ロードを
+0039CD10,1,,データのセーブ、ロードを,Save and load game data,near: 体験できます / 行います
+0039CD30,2,,行います,here.,near: データのセーブ、ロードを / 各種環境設定変更を
+0039CD40,1,,各種環境設定変更を,Change the game settings,near: 行います / ヴィクトリーロードを１コース
+0039CD58,1,,ヴィクトリーロードを１コース,Clear one Victory Road,near: 各種環境設定変更を / クリアしないと選べません
+0039CD78,1,,クリアしないと選べません,course to unlock this.,near: ヴィクトリーロードを１コース / シングル
+0039D140,1,,シングル,Singles,near: クリアしないと選べません / ６人タッグ
+0039D150,1,,６人タッグ,6-Man Tag,near: シングル / ８人タッグ
+0039D160,1,,８人タッグ,8-Man Tag,near: ６人タッグ / ヘビー級
+0039D170,1,,ヘビー級,Heavyweight,near: ８人タッグ / Ｊｒ．ヘビー級
+0039D180,1,,Ｊｒ．ヘビー級,Jr. Heavy,near: ヘビー級 / 制限なし
+0039D190,1,,制限なし,Open,near: Ｊｒ．ヘビー級 / ノーマルマッチ
+0039D1A0,1,,ノーマルマッチ,Normal Match,near: 制限なし / 金網爆破デスマッチ
+0039D1B0,1,,金網爆破デスマッチ,Exploding Cage DM,near: ノーマルマッチ / 有刺鉄線デスマッチ
+0039D1C8,1,,有刺鉄線デスマッチ,Barbed Wire DM,near: 金網爆破デスマッチ / グルーサムファイティング
+0039D1E0,1,,グルーサムファイティング,Gruesome Fighting,near: 有刺鉄線デスマッチ / ＳＷＡ公式ルールマッチ
+0039D200,1,,ＳＷＡ公式ルールマッチ,SWA Rules Match,near: グルーサムファイティング / タイトル
+0039D218,1,,タイトル,Title,near: ＳＷＡ公式ルールマッチ / 試合形式
+0039D228,1,,試合形式,Match Type,near: タイトル / キャンセル
+0039D238,1,,キャンセル,Cancel,near: 試合形式 / 試合形式を選択してください
+0039D248,1,,試合形式を選択してください,Select a match type.,near: キャンセル / プレート
+0039D2F0,1,,プレート,Plate,near: 試合形式を選択してください / サブプレート
+0039D300,1,,サブプレート,Sub Plate,near: プレート / ＣＯＬＯＲ１
+0039D310,1,,ＣＯＬＯＲ１,Color 1,near: サブプレート / ＣＯＬＯＲ２
+0039D320,1,,ＣＯＬＯＲ２,Color 2,near: ＣＯＬＯＲ１ / ＣＯＬＯＲ３
+0039D330,1,,ＣＯＬＯＲ３,Color 3,near: ＣＯＬＯＲ２ / ＜　　＞
+0039D340,1,,＜　　＞,<    >,near: ＣＯＬＯＲ３ / キャンセル
+0039D350,1,,キャンセル,Cancel,near: ＜　　＞ / 名前入力へ戻る
+0039D360,1,,名前入力へ戻る,Edit Name,"near: キャンセル / これでよろしいですか？ | was ""Back to Name Entry"": too wide (play-test 2026-10-29)"
+0039D370,1,,これでよろしいですか？,Is this OK?,near: 名前入力へ戻る / 既に変更済みのコスチュームがあり
+0039D3D0,1,,既に変更済みのコスチュームがあります,Some costumes have already been changed.,near: これでよろしいですか？ / 破棄されますがよろしいですか？
+0039D3F8,1,,破棄されますがよろしいですか？,They will be discarded. OK?,near: 既に変更済みのコスチュームがあり / ファイヤープロレスリングＺ
+0039D560,1,,ファイヤープロレスリングＺ,Fire Pro Wrestling Z,near: 破棄されますがよろしいですか？ / ■　ゲーム製作スタッフ　■
+0039D580,1,,■　ゲーム製作スタッフ　■,■　ゲーム製作スタッフ　■,# keep: staff credits (owner 2026-10-29)
+0039D5A0,1,,ディレクター,ディレクター,# keep: staff credits (owner 2026-10-29)
+0039D5B0,3,,小林 高志,小林 高志,# keep: staff credits (owner 2026-10-29)
+0039D5C0,2,,田村 季章（Ｓ－ＮＥＯ）,田村 季章（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D5D8,1,,メインプログラム,メインプログラム,# keep: staff credits (owner 2026-10-29)
+0039D5F0,1,,田中 芳秋,田中 芳秋,# keep: staff credits (owner 2026-10-29)
+0039D600,1,,ゲームロジックプログラム,ゲームロジックプログラム,# keep: staff credits (owner 2026-10-29)
+0039D620,1,,愛甲 剛（Ｓ－ＮＥＯ）,愛甲 剛（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D638,1,,ストーリーモードプログラム,ストーリーモードプログラム,# keep: staff credits (owner 2026-10-29)
+0039D658,1,,諏訪 明久,諏訪 明久,# keep: staff credits (owner 2026-10-29)
+0039D668,1,,インフォメーションプログラム,インフォメーションプログラム,# keep: staff credits (owner 2026-10-29)
+0039D688,1,,小笠原 悠一,小笠原 悠一,# keep: staff credits (owner 2026-10-29)
+0039D698,1,,田辺 哲也（Ｓ－ＮＥＯ）,田辺 哲也（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D6B0,1,,小澤 武彦（Ｓ－ＮＥＯ）,小澤 武彦（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D6C8,1,,中本 進一（Ｓ－ＮＥＯ）,中本 進一（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D6E0,1,,オーサリングプログラム,オーサリングプログラム,# keep: staff credits (owner 2026-10-29)
+0039D6F8,1,,米田 晃人（Ｓ－ＮＥＯ）,米田 晃人（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D710,1,,３Ｄグラフィック,３Ｄグラフィック,# keep: staff credits (owner 2026-10-29)
+0039D728,1,,真籠 洋一,真籠 洋一,# keep: staff credits (owner 2026-10-29)
+0039D738,1,,技アニメーション監修,技アニメーション監修,# keep: staff credits (owner 2026-10-29)
+0039D750,1,,技アニメーション,技アニメーション,# keep: staff credits (owner 2026-10-29)
+0039D768,1,,渡川 和久（Ｓ－ＮＥＯ）,渡川 和久（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D780,2,,大谷 篤志（Ｓ－ＮＥＯ）,大谷 篤志（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D798,2,,木村 一人（Ｓ－ＮＥＯ）,木村 一人（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D7B0,1,,レスラーグラフィック,レスラーグラフィック,# keep: staff credits (owner 2026-10-29)
+0039D7C8,1,,米澤 宏之（Ｓ－ＮＥＯ）,米澤 宏之（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D7E0,1,,太田 大吾（Ｓ－ＮＥＯ）,太田 大吾（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D7F8,2,,佐藤 一人,佐藤 一人,# keep: staff credits (owner 2026-10-29)
+0039D808,1,,駒ヶ峯 雄,駒ヶ峯 雄,# keep: staff credits (owner 2026-10-29)
+0039D818,1,,ストーリーモードグラフィック,ストーリーモードグラフィック,# keep: staff credits (owner 2026-10-29)
+0039D838,1,,米澤 宏之,米澤 宏之,# keep: staff credits (owner 2026-10-29)
+0039D848,1,,遠藤 浩昭,遠藤 浩昭,# keep: staff credits (owner 2026-10-29)
+0039D858,1,,佐東 里香,佐東 里香,# keep: staff credits (owner 2026-10-29)
+0039D868,1,,立崎 孝史,立崎 孝史,# keep: staff credits (owner 2026-10-29)
+0039D878,1,,飯島 章嘉,飯島 章嘉,# keep: staff credits (owner 2026-10-29)
+0039D888,1,,インフォメーションデザイン,インフォメーションデザイン,# keep: staff credits (owner 2026-10-29)
+0039D8A8,1,,渡部 久巳彦,渡部 久巳彦,# keep: staff credits (owner 2026-10-29)
+0039D8B8,1,,嶺井 暁（Ｓ－ＮＥＯ）,嶺井 暁（Ｓ－ＮＥＯ）,# keep: staff credits (owner 2026-10-29)
+0039D8D0,1,,ストーリーモードシナリオ,ストーリーモードシナリオ,# keep: staff credits (owner 2026-10-29)
+0039D8F0,1,,佐藤 正隆,佐藤 正隆,# keep: staff credits (owner 2026-10-29)
+0039D900,1,,沢村 光彦,沢村 光彦,# keep: staff credits (owner 2026-10-29)
+0039D920,1,,■　サウンドスタッフ　■,■　サウンドスタッフ　■,# keep: staff credits (owner 2026-10-29)
+0039D940,1,,高野 朋之,高野 朋之,# keep: staff credits (owner 2026-10-29)
+0039D950,1,,富樫 由起子,富樫 由起子,# keep: staff credits (owner 2026-10-29)
+0039D960,2,,水元 陽子,水元 陽子,# keep: staff credits (owner 2026-10-29)
+0039D970,1,,和田 貴史,和田 貴史,# keep: staff credits (owner 2026-10-29)
+0039D980,1,,南雲 北斗,南雲 北斗,# keep: staff credits (owner 2026-10-29)
+0039D990,1,,亀山 健志,亀山 健志,# keep: staff credits (owner 2026-10-29)
+0039D9A0,1,,ギタリスト,ギタリスト,# keep: staff credits (owner 2026-10-29)
+0039D9B0,1,,木村 友彰,木村 友彰,# keep: staff credits (owner 2026-10-29)
+0039D9C0,1,,声優コーディネイト,声優コーディネイト,# keep: staff credits (owner 2026-10-29)
+0039D9D8,1,,伊藤 公志,伊藤 公志,# keep: staff credits (owner 2026-10-29)
+0039D9E8,1,,レスラーボイス,レスラーボイス,# keep: staff credits (owner 2026-10-29)
+0039D9F8,1,,井上 忠大,井上 忠大,# keep: staff credits (owner 2026-10-29)
+0039DA08,1,,河本 邦弘,河本 邦弘,# keep: staff credits (owner 2026-10-29)
+0039DA18,1,,酒井 敬幸,酒井 敬幸,# keep: staff credits (owner 2026-10-29)
+0039DA28,1,,宮島 史年,宮島 史年,# keep: staff credits (owner 2026-10-29)
+0039DA38,1,,渡辺 恭介,渡辺 恭介,# keep: staff credits (owner 2026-10-29)
+0039DA48,1,,藤川 由紀子,藤川 由紀子,# keep: staff credits (owner 2026-10-29)
+0039DA58,1,,悠渚 佳代,悠渚 佳代,# keep: staff credits (owner 2026-10-29)
+0039DA68,1,,尼子 真理,尼子 真理,# keep: staff credits (owner 2026-10-29)
+0039DAB0,1,,■　プロモーションスタッフ　■,■　プロモーションスタッフ　■,# keep: staff credits (owner 2026-10-29)
+0039DAD0,1,,セールス＆プロモーション,セールス＆プロモーション,# keep: staff credits (owner 2026-10-29)
+0039DAF0,1,,配野　良太,配野　良太,# keep: staff credits (owner 2026-10-29)
+0039DB00,1,,原田　悟,原田　悟,# keep: staff credits (owner 2026-10-29)
+0039DB10,1,,梅村　美樹子,梅村　美樹子,# keep: staff credits (owner 2026-10-29)
+0039DB20,1,,成井　篤,成井　篤,# keep: staff credits (owner 2026-10-29)
+0039DB30,1,,ソニー・ミュージックコミュニケーションズ,ソニー・ミュージックコミュニケーションズ,# keep: staff credits (owner 2026-10-29)
+0039DB60,1,,■　スペシャルサンクス　■,■　スペシャルサンクス　■,# keep: staff credits (owner 2026-10-29)
+0039DB80,1,,デバッグ,デバッグ,# keep: staff credits (owner 2026-10-29)
+0039DB90,1,,ポールトゥウィン株式会社,ポールトゥウィン株式会社,# keep: staff credits (owner 2026-10-29)
+0039DBB0,1,,株式会社猿楽庁,株式会社猿楽庁,# keep: staff credits (owner 2026-10-29)
+0039DBC0,1,,■　マネージメントスタッフ　■,■　マネージメントスタッフ　■,# keep: staff credits (owner 2026-10-29)
+0039DBE0,1,,スーパーバイザー,スーパーバイザー,# keep: staff credits (owner 2026-10-29)
+0039DBF8,1,,田島　弘喜,田島　弘喜,# keep: staff credits (owner 2026-10-29)
+0039DC08,1,,露崎　尊幸,露崎　尊幸,# keep: staff credits (owner 2026-10-29)
+0039DC18,1,,マネージメントサポート,マネージメントサポート,# keep: staff credits (owner 2026-10-29)
+0039DC30,1,,金子　剛,金子　剛,# keep: staff credits (owner 2026-10-29)
+0039DC40,1,,飯塚　康弘,飯塚　康弘,# keep: staff credits (owner 2026-10-29)
+0039DC50,1,,プロデューサー,プロデューサー,# keep: staff credits (owner 2026-10-29)
+0039DC60,1,,木村　眞紀,木村　眞紀,# keep: staff credits (owner 2026-10-29)
+0039DC70,1,,藤田　政行,藤田　政行,# keep: staff credits (owner 2026-10-29)
+0039DC80,1,,ゼネラルプロデューサー,ゼネラルプロデューサー,# keep: staff credits (owner 2026-10-29)
+0039DC98,1,,櫻井　光俊,櫻井　光俊,# keep: staff credits (owner 2026-10-29)
+0039DCA8,1,,エグゼクティブプロデューサー,エグゼクティブプロデューサー,# keep: staff credits (owner 2026-10-29)
+0039DCC8,1,,Ｓ－ＮＥＯ,Ｓ－ＮＥＯ,# keep: staff credits (owner 2026-10-29)
+0039DCD8,1,,株式会社パオン,株式会社パオン,# keep: staff credits (owner 2026-10-29)
+0039DCE8,1,,２００３年　株式会社スパイク,２００３年　株式会社スパイク,# keep: staff credits (owner 2026-10-29)
+0039DD08,1,,ファイヤープロレスリングＺ,Fire Pro Wrestling Z,near: ２００３年　株式会社スパイク / ゲーム製作スタッフ
+0039DD28,1,,ゲーム製作スタッフ,ゲーム製作スタッフ,# keep: staff credits (owner 2026-10-29)
+0039DD40,1,,ディレクター,,near: ゲーム製作スタッフ / 小林 高志
+0039DD50,3,,小林 高志,,near: ディレクター / 田村 季章（Ｓ－ＮＥＯ）
+0039DD60,2,,田村 季章（Ｓ－ＮＥＯ）,,near: 小林 高志 / メインプログラム
+0039DD78,1,,メインプログラム,,near: 田村 季章（Ｓ－ＮＥＯ） / 田中 芳秋
+0039DD90,1,,田中 芳秋,,near: メインプログラム / ゲームロジックプログラム
+0039DDA0,1,,ゲームロジックプログラム,,near: 田中 芳秋 / 愛甲 剛（Ｓ－ＮＥＯ）
+0039DDC0,1,,愛甲 剛（Ｓ－ＮＥＯ）,,near: ゲームロジックプログラム / ストーリーモードプログラム
+0039DDD8,1,,ストーリーモードプログラム,,near: 愛甲 剛（Ｓ－ＮＥＯ） / 諏訪 明久
+0039DDF8,1,,諏訪 明久,,near: ストーリーモードプログラム / インフォメーションプログラム
+0039DE08,1,,インフォメーションプログラム,,near: 諏訪 明久 / 小笠原 悠一
+0039DE28,1,,小笠原 悠一,,near: インフォメーションプログラム / 田辺 哲也（Ｓ－ＮＥＯ）
+0039DE38,1,,田辺 哲也（Ｓ－ＮＥＯ）,,near: 小笠原 悠一 / 小澤 武彦（Ｓ－ＮＥＯ）
+0039DE50,1,,小澤 武彦（Ｓ－ＮＥＯ）,,near: 田辺 哲也（Ｓ－ＮＥＯ） / 中本 進一（Ｓ－ＮＥＯ）
+0039DE68,1,,中本 進一（Ｓ－ＮＥＯ）,,near: 小澤 武彦（Ｓ－ＮＥＯ） / オーサリングプログラム
+0039DE80,1,,オーサリングプログラム,,near: 中本 進一（Ｓ－ＮＥＯ） / 米田 晃人（Ｓ－ＮＥＯ）
+0039DE98,1,,米田 晃人（Ｓ－ＮＥＯ）,,near: オーサリングプログラム / ３Ｄグラフィック
+0039DEB0,1,,３Ｄグラフィック,,near: 米田 晃人（Ｓ－ＮＥＯ） / 真籠 洋一
+0039DEC8,1,,真籠 洋一,,near: ３Ｄグラフィック / 技アニメーション監修
+0039DED8,1,,技アニメーション監修,,near: 真籠 洋一 / 技アニメーション
+0039DEF0,1,,技アニメーション,,near: 技アニメーション監修 / 渡川 和久（Ｓ－ＮＥＯ）
+0039DF08,1,,渡川 和久（Ｓ－ＮＥＯ）,,near: 技アニメーション / 大谷 篤志（Ｓ－ＮＥＯ）
+0039DF20,2,,大谷 篤志（Ｓ－ＮＥＯ）,,near: 渡川 和久（Ｓ－ＮＥＯ） / 木村 一人（Ｓ－ＮＥＯ）
+0039DF38,2,,木村 一人（Ｓ－ＮＥＯ）,,near: 大谷 篤志（Ｓ－ＮＥＯ） / レスラーグラフィック
+0039DF50,1,,レスラーグラフィック,,near: 木村 一人（Ｓ－ＮＥＯ） / 米澤 宏之（Ｓ－ＮＥＯ）
+0039DF68,1,,米澤 宏之（Ｓ－ＮＥＯ）,,near: レスラーグラフィック / 太田 大吾（Ｓ－ＮＥＯ）
+0039DF80,1,,太田 大吾（Ｓ－ＮＥＯ）,,near: 米澤 宏之（Ｓ－ＮＥＯ） / 佐藤 一人
+0039DF98,2,,佐藤 一人,,near: 太田 大吾（Ｓ－ＮＥＯ） / 駒ヶ峯 雄
+0039DFA8,1,,駒ヶ峯 雄,,near: 佐藤 一人 / ストーリーモードグラフィック
+0039DFB8,1,,ストーリーモードグラフィック,,near: 駒ヶ峯 雄 / 米澤 宏之
+0039DFD8,1,,米澤 宏之,,near: ストーリーモードグラフィック / 遠藤 浩昭
+0039DFE8,1,,遠藤 浩昭,,near: 米澤 宏之 / 佐東 里香
+0039DFF8,1,,佐東 里香,,near: 遠藤 浩昭 / 立崎 孝史
+0039E008,1,,立崎 孝史,,near: 佐東 里香 / 飯島 章嘉
+0039E018,1,,飯島 章嘉,,near: 立崎 孝史 / インフォメーションデザイン
+0039E028,1,,インフォメーションデザイン,,near: 飯島 章嘉 / 渡部 久巳彦
+0039E048,1,,渡部 久巳彦,,near: インフォメーションデザイン / 嶺井 暁（Ｓ－ＮＥＯ）
+0039E058,1,,嶺井 暁（Ｓ－ＮＥＯ）,,near: 渡部 久巳彦 / ストーリーモードシナリオ
+0039E070,1,,ストーリーモードシナリオ,,near: 嶺井 暁（Ｓ－ＮＥＯ） / 佐藤 正隆
+0039E090,1,,佐藤 正隆,,near: ストーリーモードシナリオ / 沢村 光彦
+0039E0A0,1,,沢村 光彦,,near: 佐藤 正隆 / サウンドスタッフ
+0039E0C0,1,,サウンドスタッフ,サウンドスタッフ,# keep: staff credits (owner 2026-10-29)
+0039E0D8,1,,高野 朋之,,near: サウンドスタッフ / 富樫 由起子
+0039E0E8,1,,富樫 由起子,,near: 高野 朋之 / 水元 陽子
+0039E0F8,2,,水元 陽子,,near: 富樫 由起子 / 和田 貴史
+0039E108,1,,和田 貴史,,near: 水元 陽子 / 南雲 北斗
+0039E118,1,,南雲 北斗,,near: 和田 貴史 / 亀山 健志
+0039E128,1,,亀山 健志,,near: 南雲 北斗 / ギタリスト
+0039E138,1,,ギタリスト,,near: 亀山 健志 / 木村 友彰
+0039E148,1,,木村 友彰,,near: ギタリスト / 声優コーディネイト
+0039E158,1,,声優コーディネイト,,near: 木村 友彰 / 伊藤 公志
+0039E170,1,,伊藤 公志,,near: 声優コーディネイト / レスラーボイス
+0039E180,1,,レスラーボイス,,near: 伊藤 公志 / 井上 忠大
+0039E190,1,,井上 忠大,,near: レスラーボイス / 河本 邦弘
+0039E1A0,1,,河本 邦弘,,near: 井上 忠大 / 酒井 敬幸
+0039E1B0,1,,酒井 敬幸,,near: 河本 邦弘 / 宮島 史年
+0039E1C0,1,,宮島 史年,,near: 酒井 敬幸 / 渡辺 恭介
+0039E1D0,1,,渡辺 恭介,,near: 宮島 史年 / 藤川 由紀子
+0039E1E0,1,,藤川 由紀子,,near: 渡辺 恭介 / 悠渚 佳代
+0039E1F0,1,,悠渚 佳代,,near: 藤川 由紀子 / 尼子 真理
+0039E200,1,,尼子 真理,,near: 悠渚 佳代 / プロモーションスタッフ
+0039E248,1,,プロモーションスタッフ,プロモーションスタッフ,# keep: staff credits (owner 2026-10-29)
+0039E260,1,,セールス＆プロモーション,,near: プロモーションスタッフ / 配野　良太
+0039E280,1,,配野　良太,,near: セールス＆プロモーション / 原田　悟
+0039E290,1,,原田　悟,,near: 配野　良太 / 梅村　美樹子
+0039E2A0,1,,梅村　美樹子,,near: 原田　悟 / 成井　篤
+0039E2B0,1,,成井　篤,,near: 梅村　美樹子 / ソニー・ミュージックコミュニケー
+0039E2C0,1,,ソニー・ミュージックコミュニケーションズ,,near: 成井　篤 / スペシャルサンクス
+0039E2F0,1,,スペシャルサンクス,スペシャルサンクス,# keep: staff credits (owner 2026-10-29)
+0039E308,1,,デバッグ,,near: スペシャルサンクス / ポールトゥウィン株式会社
+0039E318,1,,ポールトゥウィン株式会社,,near: デバッグ / 株式会社猿楽庁
+0039E338,1,,株式会社猿楽庁,,near: ポールトゥウィン株式会社 / マネージメントスタッフ
+0039E348,1,,マネージメントスタッフ,マネージメントスタッフ,# keep: staff credits (owner 2026-10-29)
+0039E360,1,,スーパーバイザー,,near: マネージメントスタッフ / 田島　弘喜
+0039E378,1,,田島　弘喜,,near: スーパーバイザー / 露崎　尊幸
+0039E388,1,,露崎　尊幸,,near: 田島　弘喜 / マネージメントサポート
+0039E398,1,,マネージメントサポート,,near: 露崎　尊幸 / 金子　剛
+0039E3B0,1,,金子　剛,,near: マネージメントサポート / 飯塚　康弘
+0039E3C0,1,,飯塚　康弘,,near: 金子　剛 / プロデューサー
+0039E3D0,1,,プロデューサー,,near: 飯塚　康弘 / 木村　眞紀
+0039E3E0,1,,木村　眞紀,,near: プロデューサー / 藤田　政行
+0039E3F0,1,,藤田　政行,,near: 木村　眞紀 / ゼネラルプロデューサー
+0039E400,1,,ゼネラルプロデューサー,,near: 藤田　政行 / 櫻井　光俊
+0039E418,1,,櫻井　光俊,,near: ゼネラルプロデューサー / エグゼクティブプロデューサー
+0039E428,1,,エグゼクティブプロデューサー,,near: 櫻井　光俊 / Ｓ－ＮＥＯ
+0039E448,1,,Ｓ－ＮＥＯ,Ｓ－ＮＥＯ,near: エグゼクティブプロデューサー / 株式会社パオン
+0039E458,1,,株式会社パオン,,near: Ｓ－ＮＥＯ / ２００３年　株式会社スパイク
+0039E468,1,,２００３年　株式会社スパイク,,near: 株式会社パオン / 全団体制覇まで、あと　　　　団体
+0039E550,1,,全団体制覇まで、あと　　　　団体,Left to conquer:            promotions,near: ２００３年　株式会社スパイク / 挑戦する団体を選んでください。
+0039E5A0,1,,挑戦する団体を選んでください。,Choose a promotion to challenge.,near: 全団体制覇まで、あと　　　　団体 / ＳＷＡ　ヘビー級統一シングル
+0039E600,1,,ＳＷＡ　ヘビー級統一シングル,SWA Unified Heavy Singles,near: 挑戦する団体を選んでください。 / ＳＷＡ　ヘビー級統一タッグ
+0039E620,1,,ＳＷＡ　ヘビー級統一タッグ,SWA Unified Heavy Tag,near: ＳＷＡ　ヘビー級統一シングル / ＳＷＡ　Ｊｒ．ヘビー級統一シング
+0039E640,1,,ＳＷＡ　Ｊｒ．ヘビー級統一シングル,SWA Unified Jr. Heavy Singles,near: ＳＷＡ　ヘビー級統一タッグ / ＳＷＡ　Ｊｒ．ヘビー級統一タッグ
+0039E668,1,,ＳＷＡ　Ｊｒ．ヘビー級統一タッグ,SWA Unified Jr. Heavy Tag,near: ＳＷＡ　Ｊｒ．ヘビー級統一シング / ＳＷＡ　統一６人タッグ
+0039E690,1,,ＳＷＡ　統一６人タッグ,SWA Unified 6-Man Tag,near: ＳＷＡ　Ｊｒ．ヘビー級統一タッグ / ＳＷＡ　統一８人タッグ
+0039E6A8,1,,ＳＷＡ　統一８人タッグ,SWA Unified 8-Man Tag,near: ＳＷＡ　統一６人タッグ / モードセレクトへ
+0039E6C0,1,,モードセレクトへ,To Mode Select,near: ＳＷＡ　統一８人タッグ / コンティニュー
+0039E6D8,1,,コンティニュー,Continue,near: モードセレクトへ / 最初からはじめる
+0039E6E8,1,,最初からはじめる,Start Over,near: コンティニュー / キャンセル
+0039E700,1,,キャンセル,Cancel,near: 最初からはじめる / 開始状態を選んでください
+0039E710,1,,開始状態を選んでください,Choose where to start.,near: キャンセル / 現在の記録
+0039E730,1,,現在の記録,Current Record,near: 開始状態を選んでください / データが不足しているのでコンティ
+0039E740,1,,データが不足しているのでコンティニューはできません,Not enough data to continue.,near: 現在の記録 / Ｎｏ　Ｄａｔａ
+0039E7B8,1,,Ｎｏ　Ｄａｔａ,No Data,near: データが不足しているのでコンティ / Ｄａｔａ　Ｅｒｒｏｒ
+0039E7C8,1,,Ｄａｔａ　Ｅｒｒｏｒ,Data Error,near: Ｎｏ　Ｄａｔａ / 次の試合へ
+0039E7E0,1,,次の試合へ,Next Match,near: Ｄａｔａ　Ｅｒｒｏｒ / コンティニュー
+0039E7F0,1,,コンティニュー,Continue,near: 次の試合へ / クイックセーブ
+0039E800,1,,クイックセーブ,Quick Save,near: コンティニュー / ヘビー級統一シングルチャンピオン
+0039E810,1,,ヘビー級統一シングルチャンピオンシップ,Unified Heavyweight Singles Title,near: クイックセーブ / ヘビー級統一タッグチャンピオンシ
+0039E838,1,,ヘビー級統一タッグチャンピオンシップ,Unified Heavyweight Tag Title,near: ヘビー級統一シングルチャンピオン / Ｊｒ．ヘビー級統一シングルチャン
+0039E860,1,,Ｊｒ．ヘビー級統一シングルチャンピオンシップ,Unified Jr. Heavyweight Singles Title,near: ヘビー級統一タッグチャンピオンシ / Ｊｒ．ヘビー級統一タッグチャンピ
+0039E890,1,,Ｊｒ．ヘビー級統一タッグチャンピオンシップ,Unified Jr. Heavyweight Tag Title,near: Ｊｒ．ヘビー級統一シングルチャン / 統一６人タッグチャンピオンシップ
+0039E8C0,1,,統一６人タッグチャンピオンシップ,Unified 6-Man Tag Title,near: Ｊｒ．ヘビー級統一タッグチャンピ / 統一８人タッグチャンピオンシップ
+0039E8E8,1,,統一８人タッグチャンピオンシップ,Unified 8-Man Tag Title,near: 統一６人タッグチャンピオンシップ / クイックセーブしました
+0039E910,1,,クイックセーブしました,Quick saved.,near: 統一８人タッグチャンピオンシップ / 団体制覇まであと　　　　試合
+0039E928,1,,団体制覇まであと　　　　試合,Conquest in:            wins,near: クイックセーブしました / 優勝まであと　　　　試合
+0039E948,1,,優勝まであと　　　　試合,Title in:           wins,near: 団体制覇まであと　　　　試合 / 終了しますか？
+0039E968,1,,終了しますか？,Quit?,near: 優勝まであと　　　　試合 / キャンセル
+0039EA20,2,,試合開始,Start Match,found by reference (play-test 2026-10-29)
+0039EA30,2,,キャンセル,Cancel,near: 終了しますか？ / オーダーセレクト
+0039EA40,2,,オーダーセレクト,Order Select,near: キャンセル / オーダーセレクトに移りますか？
+0039EA58,1,,オーダーセレクトに移りますか？,Go to Order Select?,near: オーダーセレクト / 試合を開始しますか？
+0039EA78,2,,試合を開始しますか？,Start the match?,near: オーダーセレクトに移りますか？ / ３人以上エントリーして下さい
+0039EA90,1,,３人以上エントリーして下さい,Enter at least 3 wrestlers.,near: 試合を開始しますか？ / キャンセル
+0039EB88,1,,レスラーセレクト,Wrestler Select,found by reference (play-test 2026-10-29)
+0039EBC0,1,,キャンセル,Cancel,near: ３人以上エントリーして下さい / 名前入力へ戻る
+0039EBD0,1,,名前入力へ戻る,Edit Name,"near: キャンセル / これでよろしいですか？ | was ""Back to Name Entry"": too wide (play-test 2026-10-29)"
+0039EBE0,1,,これでよろしいですか？,Is this OK?,near: 名前入力へ戻る / ステレオ
+0039ED00,1,,ステレオ,Stereo,near: これでよろしいですか？ / モノラル
+0039ED10,1,,モノラル,Mono,near: ステレオ / キャンセル
+0039ED20,7,,キャンセル,Cancel,near: モノラル / 試合ＢＧＭ
+0039ED30,1,,試合ＢＧＭ,Match Music,near: キャンセル / レスラーテーマ
+0039ED40,1,,レスラーテーマ,Theme Music,near: 試合ＢＧＭ / サウンド設定
+0039ED50,1,,サウンド設定,Sound,near: レスラーテーマ / ボリューム設定
+0039ED60,1,,ボリューム設定,Volume,near: サウンド設定 / 入場シーン設定
+0039ED70,1,,入場シーン設定,Entrances,near: ボリューム設定 / セーブ確認設定
+0039ED80,1,,セーブ確認設定,Save Confirm,near: 入場シーン設定 / 振動機能設定
+0039ED90,1,,振動機能設定,Vibration,near: セーブ確認設定 / スタッフクレジット
+0039EDA0,1,,スタッフクレジット,Staff Credits,near: 振動機能設定 / モードセレクトヘ
+0039EDB8,1,,モードセレクトヘ,To Mode Select,near: スタッフクレジット / Ｙボタンで初期位置に戻ります
+0039EDD0,1,,Ｙボタンで初期位置に戻ります,Press Y to reset the position.,near: モードセレクトヘ / Ｘ　＝　
+0039EDF0,1,,Ｘ　＝　,X = ,near: Ｙボタンで初期位置に戻ります / Ｙ　＝　
+0039EE00,1,,Ｙ　＝　,Y = ,near: Ｘ　＝　 / 現在の設定は
+0039EE48,1,,現在の設定は,Current setting:,near: Ｙ　＝　 / スタッフクレジットを表示します
+0039EE58,1,,スタッフクレジットを表示します,Show the staff credits.,near: 現在の設定は / 時間切れ引き分け
+0039EE98,1,,時間切れ引き分け,Time-Up Draw,near: スタッフクレジットを表示します / リングアウト引き分け
+0039EEB0,1,,リングアウト引き分け,Ring-Out Draw,near: 時間切れ引き分け / Ｋ．Ｏ．引き分け
+0039EEC8,1,,Ｋ．Ｏ．引き分け,KO Draw,near: リングアウト引き分け / 獲得Ｐｏｉｎｔ.
+0039EEE0,1,,獲得Ｐｏｉｎｔ.,Points,near: Ｋ．Ｏ．引き分け / Ｋ．Ｏ．勝ち
+0039EEF0,1,,Ｋ．Ｏ．勝ち,KO Win,near: 獲得Ｐｏｉｎｔ. / リングアウト勝ち
+0039EF00,1,,リングアウト勝ち,Ring Out Win,near: Ｋ．Ｏ．勝ち / 反則勝ち
+0039EF18,1,,反則勝ち,DQ Win,near: リングアウト勝ち / 時間切れ引き分け
+0039EF28,1,,時間切れ引き分け,Time-Up Draw,near: 反則勝ち / 両者リングアウト
+0039EF40,1,,両者リングアウト,Double Ring-Out,near: 時間切れ引き分け / 両者Ｋ．Ｏ．
+0039EF58,1,,両者Ｋ．Ｏ．,Double KO,near: 両者リングアウト / 獲得Ｐｏｉｎｔ.
+0039EF68,1,,獲得Ｐｏｉｎｔ.,Points,near: 両者Ｋ．Ｏ． / 獲得Ｐｏｉｎｔ．
+0039EF98,1,,獲得Ｐｏｉｎｔ．,Points,near: 獲得Ｐｏｉｎｔ. / 一本勝負
+0039EFD0,1,,一本勝負,1 Fall,near: 獲得Ｐｏｉｎｔ． / 三本勝負
+0039EFE0,1,,三本勝負,2 of 3 Falls,near: 一本勝負 / 獲得Ｐｏｉｎｔ．
+0039EFF0,2,,獲得Ｐｏｉｎｔ．,Points,near: 三本勝負 / 合計試合時間
+0039F270,1,,合計試合時間,Total Time,near: 獲得Ｐｏｉｎｔ． / 平均試合時間
+0039F280,1,,平均試合時間,Avg. Time,near: 合計試合時間 / ギブｱｯプ
+0039F290,1,,ギブｱｯプ,Submission,near: 平均試合時間 / 時間切れ
+0039F2A0,1,,時間切れ,Time Up,near: ギブｱｯプ / 両者ﾘﾝグｱｳﾄ
+0039F2B0,1,,両者ﾘﾝグｱｳﾄ,Dbl Ring-Out,near: 時間切れ / 両者K.O.
+0039F2C0,1,,両者K.O.,Dbl KO,near: 両者ﾘﾝグｱｳﾄ / ひらがな
+0039F2D0,1,,ひらがな,Hiragana,near: 両者K.O. / 漢字変換
+0039F2E0,1,,漢字変換,Kanji,near: ひらがな / Ｎｏ Ｄａｔａ
+0039F458,1,,Ｎｏ Ｄａｔａ,No Data,near: 漢字変換 / 試合消化時点
+0039F468,1,,試合消化時点,Matches Played,near: Ｎｏ Ｄａｔａ / ポイント
+0039F478,1,,ポイント,Points,near: 試合消化時点 / 使用しない
+0039F488,2,,使用しない,Not Used,near: ポイント / 青ｺーﾅー
+0039F4A0,4,,青ｺーﾅー,Blue Corner,near: 使用しない / 赤ｺーﾅー
+0039F4B0,4,,赤ｺーﾅー,Red Corner,near: 青ｺーﾅー / 試合形式
+0039F4C0,1,,試合形式,Match Type,near: 赤ｺーﾅー / 試合時間
+0039F4D0,1,,試合時間,Time Limit,near: 試合形式 / 試合本数
+0039F4E0,1,,試合本数,Falls,near: 試合時間 / 試合会場
+0039F4F0,1,,試合会場,Venue,near: 試合本数 / ゲーﾑｽピード
+0039F500,1,,ゲーﾑｽピード,Game Speed,near: 試合会場 / COMｽｷｯプ
+0039F510,1,,COMｽｷｯプ,COM Skip,near: ゲーﾑｽピード / ﾛープﾁｪｯｸ
+0039F520,1,,ﾛープﾁｪｯｸ,Rope Break,near: COMｽｷｯプ / ﾗﾝバージｬｯｸ
+0039F530,1,,ﾗﾝバージｬｯｸ,Lumberjack,near: ﾛープﾁｪｯｸ / ﾄﾙﾈードバﾄﾙ
+0039F540,1,,ﾄﾙﾈードバﾄﾙ,Tornado Battle,near: ﾗﾝバージｬｯｸ / 反則ｶｳﾝﾄ
+0039F550,1,,反則ｶｳﾝﾄ,Foul Count,near: ﾄﾙﾈードバﾄﾙ / 場外ｶｳﾝﾄ [left]
+0039F560,1,,場外ｶｳﾝﾄ,Ring-Out Count,near: 反則ｶｳﾝﾄ / 試合中BGM [left]
+0039F570,1,,試合中BGM,Match Music,near: 場外ｶｳﾝﾄ / 対戦形式
+0039F580,1,,対戦形式,Matchup,near: 試合中BGM / 爆破時間
+0039F590,1,,爆破時間,Blast Timer,near: 対戦形式 / ｸﾘﾃｨｶﾙ確率
+0039F5A0,1,,ｸﾘﾃｨｶﾙ確率,Critical %,near: 爆破時間 / ｺーﾅーｵプｼｮﾝ
+0039F5B0,1,,ｺーﾅーｵプｼｮﾝ,Corner Option,near: ｸﾘﾃｨｶﾙ確率 / ポｲﾝﾄﾀｲプ
+0039F5C0,1,,ポｲﾝﾄﾀｲプ,Point Type,near: ｺーﾅーｵプｼｮﾝ / － 次へ －
+0039F5D0,1,,－ 次へ －,- Next -,near: ポｲﾝﾄﾀｲプ / 一本勝負
+0039F5E0,1,,一本勝負,1 Fall,near: － 次へ － / 三本勝負
+0039F5F0,1,,三本勝負,2 of 3 Falls,near: 一本勝負 / ｵﾝﾘーﾌｫーﾙ
+0039F600,1,,ｵﾝﾘーﾌｫーﾙ,Pin Only,near: 三本勝負 / ｵﾝﾘーギブｱｯプ
+0039F610,1,,ｵﾝﾘーギブｱｯプ,Sub Only,near: ｵﾝﾘーﾌｫーﾙ / 日本武闘館
+0039F620,1,,日本武闘館,Nippon <Butokan>,near: ｵﾝﾘーギブｱｯプ / 遊楽園ﾎーﾙ
+0039F630,1,,SPIKE DOME,SPIKE DOME,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+0039F640,3,,遊楽園ﾎーﾙ,<Yurakuen Hall>,near: 日本武闘館 / 村川町民体育館
+0039F650,1,,村川町民体育館,Murakawa Town Gym,near: 遊楽園ﾎーﾙ / ベｲｻｲド・ｺﾛｼｱﾑ
+0039F660,1,,ベｲｻｲド・ｺﾛｼｱﾑ,Bayside Coliseum,near: 村川町民体育館 / 川島球場
+0039F670,1,,川島球場,Kawashima Ballpark,near: ベｲｻｲド・ｺﾛｼｱﾑ / 山崎大倉鉄橋下広場
+0039F680,1,,山崎大倉鉄橋下広場,Under Okura Bridge,near: 川島球場 / 爆破なし
+0039F698,1,,爆破なし,No Blast,near: 山崎大倉鉄橋下広場 / 有刺鉄線
+0039F6A8,1,,有刺鉄線,Barbed Wire,near: 爆破なし / 5ポｲﾝﾄ制
+0039F6B8,1,,5ポｲﾝﾄ制,5 Points,near: 有刺鉄線 / 2ポｲﾝﾄ制
+0039F6C8,1,,2ポｲﾝﾄ制,2 Points,near: 5ポｲﾝﾄ制 / ＲＡＮＤＯＭ
+0039F8A8,2,,ＲＡＮＤＯＭ,Random,near: 2ポｲﾝﾄ制 / 特設デスマッチリング
+0039F8B8,1,,特設デスマッチリング,Deathmatch Ring,near: ＲＡＮＤＯＭ / ドデカゴンリング
+0039F8D0,1,,ドデカゴンリング,Dodecagon Ring,near: 特設デスマッチリング / ｰﾄ:
+0039FE10,1,,ｰﾄ:,,near: ドデカゴンリング / ひらがな
+003A00B8,1,,ひらがな,Hiragana,near: ｰﾄ: / 漢字変換
+003A00C8,1,,漢字変換,Kanji,near: ひらがな / ボックス
+003A00F0,1,,ボックス,Box,near: 漢字変換 / ボックスフィル
+003A0100,1,,ボックスフィル,Filled Box,near: ボックス / 文字入力
+003A0110,1,,文字入力,Text,near: ボックスフィル / 塗りつぶし
+003A0120,1,,塗りつぶし,Fill,near: 文字入力 / ズーム -
+003A0130,1,,ズーム -,Zoom -,near: 塗りつぶし / 取り消し
+003A0140,1,,取り消し,Undo,near: ズーム - / サンプルＣＧロード
+003A0150,1,,サンプルＣＧロード,Load Sample,near: 取り消し / 上下反転
+003A0168,1,,上下反転,Flip V,near: サンプルＣＧロード / 左右反転
+003A0178,1,,左右反転,Flip H,near: 上下反転 / サークル
+003A0188,1,,サークル,Circle,near: 左右反転 / ズーム +
+003A0198,1,,ズーム +,Zoom +,near: サークル / パレットシフト(前)
+003A01A8,1,,パレットシフト(前),Palette Shift Fwd,near: ズーム + / パレットシフト(後)
+003A01C0,1,,パレットシフト(後),Palette Shift Back,near: パレットシフト(前) / グラデーション作成
+003A01D8,1,,グラデーション作成,Make Gradient,near: パレットシフト(後) / イリミネーションマッチに参加する
+003A02C0,1,,イリミネーションマッチに参加するレスラーの出場順を指定して下さい。,Set the order of the wrestlers in the Elimination Match.,near: グラデーション作成 / Ｎｏ Ｄａｔａ
+003A0418,1,,Ｎｏ Ｄａｔａ,No Data,near: イリミネーションマッチに参加する / リーグに参加するレスラーを4組以
+003A0450,1,,リーグに参加するレスラーを4組以上登録して下さい。,Register at least 4 entries for the league.,near: Ｎｏ Ｄａｔａ / エントリー終了
+003A0568,1,,エントリー終了,End Entry,near: リーグに参加するレスラーを4組以 / ワンナイトトーナメント
+003A0580,1,,ワンナイトトーナメント,One Night Tournament,near: エントリー終了 / 金網爆破デスマッチトーナメント
+003A0598,1,,金網爆破デスマッチトーナメント,Exploding Cage DM Tournament,near: ワンナイトトーナメント / 有刺鉄線デスマッチトーナメント
+003A05B8,1,,有刺鉄線デスマッチトーナメント,Barbed Wire DM Tournament,near: 金網爆破デスマッチトーナメント / グルーサムファイティングトーナメ
+003A05D8,1,,グルーサムファイティングトーナメント,Gruesome Fighting Tournament,near: 有刺鉄線デスマッチトーナメント / ＳＷＡ公式ルールトーナメント
+003A0600,1,,ＳＷＡ公式ルールトーナメント,SWA Rules Tournament,near: グルーサムファイティングトーナメ / オープンリーグ
+003A0638,1,,オープンリーグ,Open League,near: ＳＷＡ公式ルールトーナメント / 金網爆破デスマッチリーグ
+003A0648,1,,金網爆破デスマッチリーグ,Exploding Cage DM League,near: オープンリーグ / 有刺鉄線デスマッチリーグ
+003A0668,1,,有刺鉄線デスマッチリーグ,Barbed Wire DM League,near: 金網爆破デスマッチリーグ / グルーサムファイティングリーグ
+003A0688,1,,グルーサムファイティングリーグ,Gruesome Fighting League,near: 有刺鉄線デスマッチリーグ / ＳＷＡ公式ルールリーグ
+003A06A8,1,,ＳＷＡ公式ルールリーグ,SWA Rules League,near: グルーサムファイティングリーグ / ＥＤＩＴ軍団
+003A06D8,1,,ＥＤＩＴ軍団,Edit Army,near: ＳＷＡ公式ルールリーグ / ＳＷＡヘビー級シングル
+003A06E8,1,,ＳＷＡヘビー級シングル,SWA Heavy Singles,near: ＥＤＩＴ軍団 / ＣＰｖｓＣＰ　　対戦中
+003A0730,1,,ＣＰｖｓＣＰ　　対戦中,CP vs CP    In Progress,near: ＳＷＡヘビー級シングル / 00分00秒
+003A0748,1,,00分00秒,00分00秒,"# keep: original bytes; 分/秒 are drawn as m/s by the fonts (fpztext.UNIT_GLYPHS), the result screen needs this exact shape (play-test 2026-10-29)"
+003A0758,1,,%2d分%02d秒,%2d分%02d秒,"# keep: original bytes; 分/秒 are drawn as m/s by the fonts (fpztext.UNIT_GLYPHS), the result screen needs this exact shape (play-test 2026-10-29)"
+003A0868,1,,Data Error,Data Error,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003A0878,1,,データが不足しているため使用できません,Not enough data; cannot be used.,near: %2d分%02d秒 / 初代チャンピオン
+003A08A0,1,,初代チャンピオン,First Champion,near: データが不足しているため使用でき / 第%d代チャンピオン
+003A08B8,1,,第%d代チャンピオン,Champion #%d,near: 初代チャンピオン / プレイヤー名
+003A08D0,1,,プレイヤー名,Player Name,near: 第%d代チャンピオン / 防衛回数 [left]
+003A08E0,1,,防衛回数,Defenses,near: プレイヤー名 / ひらがな
+003A08F0,1,,ひらがな,Letters,near: 防衛回数 / 漢字変換 | name entry: English keyboard page (fpztext.step_name_entry)
+003A0900,1,,漢字変換,Kanji,near: ひらがな / トーナメントに参加するレスラーを
+003A2DB0,1,,トーナメントに参加するレスラーを3組以上登録して下さい。,Register at least 3 entries for the tournament.,near: 漢字変換 / エントリー終了
+003A3018,1,,エントリー終了,End Entry,near: トーナメントに参加するレスラーを / CP・CP・CP
+003A3070,1,,CP・CP・CP,CP-CP-CP,near: エントリー終了 / 1P・CP・CP
+003A3080,1,,1P・CP・CP,1P-CP-CP,near: CP・CP・CP / 1P・2P・CP
+003A3090,1,,1P・2P・CP,1P-2P-CP,near: 1P・CP・CP / 1P・2P・3P
+003A30A0,1,,1P・2P・3P,1P-2P-3P,near: 1P・2P・CP / 2P・CP・CP
+003A30B0,1,,2P・CP・CP,2P-CP-CP,near: 1P・2P・3P / 2P・3P・CP
+003A30C0,1,,2P・3P・CP,2P-3P-CP,near: 2P・CP・CP / 2P・3P・4P
+003A30D0,1,,2P・3P・4P,2P-3P-4P,near: 2P・3P・CP / 3P・CP・CP
+003A30E0,1,,3P・CP・CP,3P-CP-CP,near: 2P・3P・4P / 3P・4P・CP
+003A30F0,1,,3P・4P・CP,3P-4P-CP,near: 3P・CP・CP / 4P・CP・CP
+003A3100,1,,4P・CP・CP,4P-CP-CP,near: 3P・4P・CP / CP・CP・CP・CP
+003A3110,1,,CP・CP・CP・CP,CP-CP-CP-CP,near: 4P・CP・CP / 1P・CP・CP・CP
+003A3120,1,,1P・CP・CP・CP,1P-CP-CP-CP,near: CP・CP・CP・CP / 1P・2P・CP・CP
+003A3130,1,,1P・2P・CP・CP,1P-2P-CP-CP,near: 1P・CP・CP・CP / 1P・2P・3P・CP
+003A3140,1,,1P・2P・3P・CP,1P-2P-3P-CP,near: 1P・2P・CP・CP / 1P・2P・3P・4P
+003A3150,1,,1P・2P・3P・4P,1P-2P-3P-4P,near: 1P・2P・3P・CP / 2P・CP・CP・CP
+003A3160,1,,2P・CP・CP・CP,2P-CP-CP-CP,near: 1P・2P・3P・4P / 2P・3P・CP・CP
+003A3170,1,,2P・3P・CP・CP,2P-3P-CP-CP,near: 2P・CP・CP・CP / 2P・3P・4P・CP
+003A3180,1,,2P・3P・4P・CP,2P-3P-4P-CP,near: 2P・3P・CP・CP / 3P・CP・CP・CP
+003A3190,1,,3P・CP・CP・CP,3P-CP-CP-CP,near: 2P・3P・4P・CP / 3P・4P・CP・CP
+003A31A0,1,,3P・4P・CP・CP,3P-4P-CP-CP,near: 3P・CP・CP・CP / 4P・CP・CP・CP
+003A31B0,1,,4P・CP・CP・CP,4P-CP-CP-CP,near: 3P・4P・CP・CP / 1P・1P・1P
+003A31C0,1,,1P・1P・1P,1P-1P-1P,near: 4P・CP・CP・CP / 2P・2P・2P
+003A31D0,1,,2P・2P・2P,2P-2P-2P,near: 1P・1P・1P / 3P・3P・3P
+003A31E0,1,,3P・3P・3P,3P-3P-3P,near: 2P・2P・2P / 4P・4P・4P
+003A31F0,1,,4P・4P・4P,4P-4P-4P,near: 3P・3P・3P / 1P・1P・1P・1P
+003A3200,1,,1P・1P・1P・1P,1P-1P-1P-1P,near: 4P・4P・4P / 2P・2P・2P・2P
+003A3210,1,,2P・2P・2P・2P,2P-2P-2P-2P,near: 1P・1P・1P・1P / 3P・3P・3P・3P
+003A3220,1,,3P・3P・3P・3P,3P-3P-3P-3P,near: 2P・2P・2P・2P / 4P・4P・4P・4P
+003A3230,1,,4P・4P・4P・4P,4P-4P-4P-4P,near: 3P・3P・3P・3P / 1P・3P・CP
+003A3240,1,,1P・3P・CP,1P-3P-CP,near: 4P・4P・4P・4P / 1P・4P・CP
+003A3250,1,,1P・4P・CP,1P-4P-CP,near: 1P・3P・CP / 1P・2P・4P
+003A3260,1,,1P・2P・4P,1P-2P-4P,near: 1P・4P・CP / 1P・3P・4P
+003A3270,1,,1P・3P・4P,1P-3P-4P,near: 1P・2P・4P / 2P・4P・CP
+003A3280,1,,2P・4P・CP,2P-4P-CP,near: 1P・3P・4P / 1P・3P・CP・CP
+003A3290,1,,1P・3P・CP・CP,1P-3P-CP-CP,near: 2P・4P・CP / 1P・4P・CP・CP
+003A32A0,1,,1P・4P・CP・CP,1P-4P-CP-CP,near: 1P・3P・CP・CP / 1P・2P・4P・CP
+003A32B0,1,,1P・2P・4P・CP,1P-2P-4P-CP,near: 1P・4P・CP・CP / 1P・3P・4P・CP
+003A32C0,1,,1P・3P・4P・CP,1P-3P-4P-CP,near: 1P・2P・4P・CP / 2P・4P・CP・CP
+003A32D0,1,,2P・4P・CP・CP,2P-4P-CP-CP,near: 1P・3P・4P・CP / Ｅｎｔｒｙ Ｎｏ.
+003A33F0,1,,Ｅｎｔｒｙ Ｎｏ.,Entry No.,near: 2P・4P・CP・CP / 獲得Ｐｏｉｎｔ.
+003A3408,1,,獲得Ｐｏｉｎｔ.,Points,near: Ｅｎｔｒｙ Ｎｏ. / Ｅｎｔｒｙ Ｎｏ
+003A3418,1,,Ｅｎｔｒｙ Ｎｏ,Entry No,near: 獲得Ｐｏｉｎｔ. / 初代チャンピオン
+003A3428,1,,初代チャンピオン,First Champion,near: Ｅｎｔｒｙ Ｎｏ / 第%d代チャンピオン
+003A3440,1,,第%d代チャンピオン,Champion #%d,near: 初代チャンピオン /    回目の防衛
+003A3458,1,,   回目の防衛,   Defense,near: 第%d代チャンピオン / 試合開始しますか？
+003A3658,1,,試合開始しますか？,Start the match?,near:    回目の防衛 / レスラーエントリーを終了しますか
+003A3670,1,,レスラーエントリーを終了しますか？,Finish wrestler entry?,near: 試合開始しますか？ / エディットチームを保存しますか？
+003A3698,1,,エディットチームを保存しますか？,Save the edit team?,near: レスラーエントリーを終了しますか / エディットチームを上書き保存しま
+003A36C0,1,,エディットチームを上書き保存しますか？,Overwrite the edit team?,near: エディットチームを保存しますか？ / 終了しますか？
+003A36E8,1,,終了しますか？,Quit?,near: エディットチームを上書き保存しま / エディットチームの選択を終了しま
+003A36F8,1,,エディットチームの選択を終了しますか？,Finish edit team selection?,near: 終了しますか？ / エディット中の画像データに上書き
+003A3720,1,,エディット中の画像データに上書きしていいですか？,Overwrite the image being edited?,near: エディットチームの選択を終了しま / 決勝リーグを開催しますか？
+003A3758,1,,決勝リーグを開催しますか？,Hold the final league?,near: エディット中の画像データに上書き / タイトルを返上しますか？
+003A3778,1,,タイトルを返上しますか？,Vacate the title?,near: 決勝リーグを開催しますか？ / 闘いの記録を削除しますか？
+003A3798,1,,闘いの記録を削除しますか？,Delete this Battle Record?,near: タイトルを返上しますか？ / 出場順選択を終了しますか？
+003A37B8,1,,出場順選択を終了しますか？,Finish order select?,near: 闘いの記録を削除しますか？ / 自動進行
+003A37D8,2,,自動進行,Auto,near: 出場順選択を終了しますか？ / クイックセーブ
+003A37E8,2,,クイックセーブ,Quick Save,near: 自動進行 / ランキング表
+003A37F8,1,,ランキング表,Rankings,near: クイックセーブ / ノーマル
+003A3808,1,,ノーマル,Normal,near: ランキング表 / エンドレス
+003A3818,1,,エンドレス,Endless,near: ノーマル / オーバーザロープ
+003A3828,1,,オーバーザロープ,Over the Rope,near: エンドレス / 時間差式
+003A3840,1,,時間差式,Staggered,near: オーバーザロープ / モードセレクトへ
+003A3850,6,,モードセレクトへ,To Mode Select,near: 時間差式 / ３組以上エントリーして下さい
+003A3868,1,,３組以上エントリーして下さい,Enter at least 3 entries.,near: モードセレクトへ / ４組以上エントリーして下さい
+003A3888,1,,４組以上エントリーして下さい,Enter at least 4 entries.,near: ３組以上エントリーして下さい / チームエディットへ
+003A38A8,1,,チームエディットへ,To Team Edit,near: ４組以上エントリーして下さい / 勝ち抜き戦
+003A38C0,1,,勝ち抜き戦,Elimination,near: チームエディットへ / 総当たり戦
+003A38D0,1,,総当たり戦,Round Robin,near: 勝ち抜き戦 / 総当たり戦（綱引き）
+003A38E0,1,,総当たり戦（綱引き）,Round Robin (Tug),near: 総当たり戦 / コンティニュー
+003A38F8,1,,コンティニュー,Continue,near: 総当たり戦（綱引き） / 最初からはじめる
+003A3908,1,,最初からはじめる,Start Over,near: コンティニュー / ワンナイトマッチ
+003A3920,1,,ワンナイトマッチ,One Night Match,near: 最初からはじめる / ワンナイトトーナメント
+003A3938,1,,ワンナイトトーナメント,One Night Tournament,near: ワンナイトマッチ / クイックセーブしました
+003A3950,1,,クイックセーブしました,Quick saved.,near: ワンナイトトーナメント / ロードしました
+003A3968,1,,ロードしました,Loaded.,near: クイックセーブしました / 自動進行１
+003A3978,1,,自動進行１,Auto 1,near: ロードしました / 自動進行２
+003A3988,1,,自動進行２,Auto 2,near: 自動進行１ / ショートネームを入力して下さい
+003A3998,1,,ショートネームを入力して下さい,Enter a short name.,near: 自動進行２ / ロングネームを入力して下さい
+003A39B8,1,,ロングネームを入力して下さい,Enter a long name.,near: ショートネームを入力して下さい / ショートネームとロングネームを入
+003A39D8,1,,ショートネームとロングネームを入力して下さい,Enter a short and long name.,near: ロングネームを入力して下さい / ニックネームを入力して下さい
+003A3A08,1,,ニックネームを入力して下さい,Enter a nickname.,near: ショートネームとロングネームを入 / ニックネームとショートネームを入
+003A3A28,1,,ニックネームとショートネームを入力して下さい,Enter a nickname and short name.,near: ニックネームを入力して下さい / 必殺技を入力して下さい
+003A3A58,1,,必殺技を入力して下さい,Enter a finisher name.,near: ニックネームとショートネームを入 / チーム名を入力して下さい
+003A3A70,1,,チーム名を入力して下さい,Enter a team name.,near: 必殺技を入力して下さい / 大会名を入力して下さい
+003A3A90,1,,大会名を入力して下さい,Enter a tournament name.,near: チーム名を入力して下さい / タイトルマッチ
+003A3AA8,1,,タイトルマッチ,Title Match,near: 大会名を入力して下さい / 歴代王者紹介
+003A3AB8,1,,歴代王者紹介,Past Champions,near: タイトルマッチ / タイトル返上
+003A3AC8,1,,タイトル返上,Vacate Title,near: 歴代王者紹介 / ベルトエディット
+003A3AD8,1,,ベルトエディット,Belt Edit,near: タイトル返上 / 闘いの記録選択
+003A3AF0,1,,闘いの記録選択,Select Record,near: ベルトエディット / 闘いの記録閲覧
+003A3B00,1,,闘いの記録閲覧,View Record,near: 闘いの記録選択 / 闘いの記録作成
+003A3B10,1,,闘いの記録作成,New Record,near: 闘いの記録閲覧 / 闘いの記録削除
+003A3B20,1,,闘いの記録削除,Delete Record,near: 闘いの記録作成 / コンフィグへ
+003A3B30,1,,コンフィグへ,To Config,near: 闘いの記録削除 / 名前を入力して下さい
+003A3B40,1,,名前を入力して下さい,Enter a name.,near: コンフィグへ / ノーマルマッチ
+003A3B58,2,,ノーマルマッチ,Normal Match,near: 名前を入力して下さい / 金網爆破デスマッチ
+003A3B68,2,,金網爆破デスマッチ,Exploding Cage DM,near: ノーマルマッチ / 有刺鉄線デスマッチ
+003A3B80,2,,有刺鉄線デスマッチ,Barbed Wire DM,near: 金網爆破デスマッチ / グルーサムファイティング
+003A3B98,2,,グルーサムファイティング,Gruesome Fighting,near: 有刺鉄線デスマッチ / ＳＷＡ公式ルールマッチ
+003A3BB8,2,,ＳＷＡ公式ルールマッチ,SWA Rules Match,near: グルーサムファイティング / レフェリーネームを入力して下さい
+003A3BD0,1,,レフェリーネームを入力して下さい,Enter a referee name.,near: ＳＷＡ公式ルールマッチ / タイトルネームを入力して下さい
+003A3BF8,1,,タイトルネームを入力して下さい,Enter a title name.,near: レフェリーネームを入力して下さい / エディットベルトを保存しますか？
+003A3C18,1,,エディットベルトを保存しますか？,Save the edit belt?,near: タイトルネームを入力して下さい / エディットベルトを上書き保存しま
+003A3C40,1,,エディットベルトを上書き保存しますか？,Overwrite the edit belt?,near: エディットベルトを保存しますか？ / 使用できないエディットチームがあ
+003A3C68,1,,使用できないエディットチームがあります,Some edit teams can't be used.,near: エディットベルトを上書き保存しま / 空白のみでは登録できません
+003A3C90,1,,空白のみでは登録できません,A name can't be only spaces.,near: 使用できないエディットチームがあ / 接続されていないコントローラがあ
+003A3CB0,1,,接続されていないコントローラがある為、開始できません,Can't start: a controller is not connected.,near: 空白のみでは登録できません / CPコントロールに変更しますか？
+003A3CE8,1,,CPコントロールに変更しますか？,Switch to CP control?,near: 接続されていないコントローラがあ / ﾐ
+003A65D0,1,,未初期化のスプライトを使用しました。,Used an uninitialized sprite.,found by reference (play-test 2026-10-29); story window (quick save)
+003A6648,1,,: 分岐先関数が見つからない,: branch target not found,found by reference (play-test 2026-10-29); story window (quick save)
+003A6698,1,,: jump先関数が見つからない,: jump target not found,found by reference (play-test 2026-10-29); story window (quick save)
+003A67D8,1,,%c2クイックセーブしますか？,%c2Quick save?,found by reference (play-test 2026-10-29); story window (quick save)
+003A67F8,1,,%c2どこにクイックセーブしますか？,%c2Quick save to which slot?,found by reference (play-test 2026-10-29); story window (quick save)
+003A6820,1,,%c0セーブしない,%c0Don't save,found by reference (play-test 2026-10-29); story window (quick save)
+003A68A8,1,,%c2セーブデータが存在します、,%c2Save data already exists.,found by reference (play-test 2026-10-29); story window (quick save)
+003A68C8,1,,上書きしますか？,Overwrite it?,found by reference (play-test 2026-10-29); story window (quick save)
+003A68E0,1,,］　　　　未使用,]    Empty,found by reference (play-test 2026-10-29); story window (quick save)
+003A6970,1,,Ｋ．Ｏ．勝ち,KO Win,found by reference (play-test 2026-10-29); story window (quick save)
+003A6980,1,,リングアウト勝ち,Ring-Out Win,found by reference (play-test 2026-10-29); story window (quick save)
+003A6998,1,,反則勝ち,DQ Win,found by reference (play-test 2026-10-29); story window (quick save)
+003A69A8,1,,時間切れ引き分け,Time-Up Draw,found by reference (play-test 2026-10-29); story window (quick save)
+003A69C0,1,,両者リングアウト,Double Ring-Out,found by reference (play-test 2026-10-29); story window (quick save)
+003A69D8,1,,両者Ｋ．Ｏ．,Double KO,found by reference (play-test 2026-10-29); story window (quick save)
+003A69E8,1,,獲得Ｐｏｉｎｔ.,Points Earned,found by reference (play-test 2026-10-29); story window (quick save)
+003AA728,1,,ﾐ,,near: CPコントロールに変更しますか？ / 不明
+003AA730,1,,不明,Unknown,near: ﾐ / 日本 [left] country
+003AA738,1,,日本,Japan,near: 不明 / ｱﾒﾘｶ [left] country
+003AA740,1,,ｱﾒﾘｶ,USA,near: 日本 / ｶﾅダ [left] country
+003AA748,1,,ｶﾅダ,Canada,near: ｱﾒﾘｶ / ドｲﾂ [left] country
+003AA750,1,,ドｲﾂ,Germany,near: ｶﾅダ / ﾒｷｼｺ [left] country
+003AA758,1,,ﾒｷｼｺ,Mexico,near: ドｲﾂ / ｲギﾘｽ [left] country
+003AA760,1,,ｲギﾘｽ,UK,near: ﾒｷｼｺ / ﾌﾗﾝｽ [left] country
+003AA768,1,,ﾌﾗﾝｽ,France,near: ｲギﾘｽ / ブﾗジﾙ [left] country
+003AA770,1,,ブﾗジﾙ,Brazil,near: ﾌﾗﾝｽ / ﾛｼｱ [left] country
+003AA778,1,,ﾛｼｱ,Russia,near: ブﾗジﾙ / プｴﾙﾄﾘｺ [left] country
+003AA780,1,,プｴﾙﾄﾘｺ,Puerto Rico,near: ﾛｼｱ / ｲﾝド [left] country
+003AA788,1,,ｲﾝド,India,near: プｴﾙﾄﾘｺ / ｽｰダﾝ [left] country
+003AA790,1,,ｽｰダﾝ,Sudan,near: ｲﾝド / ﾖﾙダﾝ [left] country
+003AA798,1,,ﾖﾙダﾝ,Jordan,near: ｽｰダﾝ / ｷｭｰバ [left] country
+003AA7A0,1,,ｷｭｰバ,Cuba,near: ﾖﾙダﾝ / ﾌｨﾝﾗﾝド [left] country
+003AA7A8,1,,ﾌｨﾝﾗﾝド,Finland,near: ｷｭｰバ / ｵﾗﾝダ [left] country
+003AA7B0,1,,ｵﾗﾝダ,Holland,near: ﾌｨﾝﾗﾝド / ｲﾀﾘｱ [left] country
+003AA7B8,1,,ｲﾀﾘｱ,Italy,near: ｵﾗﾝダ / ｽペｲﾝ [left] country
+003AA7C0,1,,ｽペｲﾝ,Spain,near: ｲﾀﾘｱ / ｽｲｽ [left] country
+003AA7C8,1,,ｽｲｽ,Switz.,near: ｽペｲﾝ / 中国 [left] country
+003AA7D0,1,,中国,China,near: ｽｲｽ / 韓国 [left] country
+003AA7D8,1,,韓国,S. Korea,near: 中国 / 朝鮮 [left] country
+003AA7E0,1,,朝鮮,Korea,near: 韓国 / ﾓﾝゴﾙ [left] country
+003AA7E8,1,,ﾓﾝゴﾙ,Mongolia,near: 朝鮮 / ﾀｲ [left] country
+003AA7F0,1,,ﾀｲ,Thailand,near: ﾓﾝゴﾙ / ｵｰｽﾄﾗﾘｱ [left] country
+003AA7F8,1,,ｵｰｽﾄﾗﾘｱ,Australia,near: ﾀｲ / ﾄﾝガ [left] country
+003AA800,1,,ﾄﾝガ,Tonga,near: ｵｰｽﾄﾗﾘｱ / 超竜館
+003AA808,1,,SWA,SWA,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA810,1,,NEO-ONE,<NEO-ONE>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA820,1,,EWF,<EWF>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA828,2,,超竜館,<Choryukan>,near: ﾄﾝガ / ﾊｲｸﾗｽ
+003AA830,1,,S-DOJYO,<S-DOJYO>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA838,1,,AWG,<AWG>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA840,1,,THREE-A,<THREE-A>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA848,1,,ﾊｲｸﾗｽ,<High Class>,near: 超竜館 / 女子
+003AA850,1,,WPA,<WPA>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA860,1,,女子,Women,near: ﾊｲｸﾗｽ / グﾚｲ
+003AA868,1,,BLADE,<BLADE>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA870,1,,グﾚｲ,Grey,near: 女子 / ＤＤＴ
+003AA878,1,,ＤＤＴ,DDT,near: グﾚｲ / ﾆーﾘﾌﾄ
+003AA888,1,,ﾆーﾘﾌﾄ,Knee Lift,near: ＤＤＴ / 膝蹴り
+003AA890,1,,膝蹴り,Knee Kick,near: ﾆーﾘﾌﾄ / 前蹴り
+003AA898,1,,前蹴り,Front Kick,near: 膝蹴り / ｷｯｸ
+003AA8A0,4,,ｷｯｸ,Kick,near: 前蹴り / ﾐドﾙｷｯｸ
+003AA8A8,4,,ﾐドﾙｷｯｸ,Middle Kick,near: ｷｯｸ / ｴビ固め
+003AA8B0,2,,ｴビ固め,Ebi Pin,near: ﾐドﾙｷｯｸ / 脇固め
+003AA8B8,1,,脇固め,Fujiwara Armbar,near: ｴビ固め / 真IW軍
+003AA8C0,1,,真IW軍,True <IW> Army,near: 脇固め / ＧＪ軍
+003AA8C8,1,,ＧＪ軍,<GJ> Army,near: 真IW軍 / GONGS軍
+003AA8D0,1,,GONGS軍,<GONGS> Army,near: ＧＪ軍 / 力丸隊
+003AA8D8,1,,力丸隊,Team <Rikimaru>,near: GONGS軍 / 続ける
+003AA9B0,1,,OFF,OFF,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA9B8,1,,ON,ON,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AAAF0,1,,PAUSE,PAUSE,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AAB00,1,,続ける,Continue,near: 力丸隊 / 中断
+003AAB08,1,,中断,Quit,near: 続ける / はい
+003AAB20,1,,はい,Yes,near: 中断 / いいえ
+003AAB28,1,,いいえ,No,near: はい / 未使用
+003AAC28,1,,未使用,Empty,near: いいえ / 新規
+003AAC30,1,,新規,New,near: 未使用 / 更新
+003AAC38,1,,更新,Edited,near: 新規 / 保存済
+003AAC40,1,,保存済,Saved,near: 更新 / 再読
+003AAC48,1,,再読,Reload,near: 保存済 / ﾛｰド
+003AAC90,1,,ﾛｰド,Load,near: 再読 / ｾｰブ
+003AAC98,1,,ｾｰブ,Save,near: ﾛｰド / ？
+003AACD0,1,,Mｳ,,
+003AACE0,1,,？,?,near: ｾｰブ / はい
+003AAD08,1,,はい,Yes,near: ？ / いいえ | dialog rows are centred
+003AAD10,1,,いいえ,No,near: はい / 立ち | dialog rows are centred
+003AAD40,5,,立ち,Strike,near: いいえ / 組み [left]
+003AAD48,18,,組み,Grapple,near: 立ち / バック [left]
+003AAD50,7,,バック,Bk Grapple,near: 組み / 走り [left]
+003AAD58,5,,走り,Running,near: バック / ｶｳﾝﾀｰ [left]
+003AAD60,3,,ｶｳﾝﾀｰ,Counter,near: 走り / 登って [left]
+003AAD68,8,,登って,Top Rope,near: ｶｳﾝﾀｰ / 起こす [left]
+003AAD70,2,,起こす,Lift,"near: 登って / 頭 | was ""Lift Up"": too wide (play-test 2026-10-29) [left]"
+003AAD78,4,,頭,Head,near: 起こす / 脚 [left]
+003AAD80,4,,脚,Legs,near: 頭 / 離れて [left]
+003AAD88,3,,離れて,Away,near: 脚 / 返し [left]
+003AAD90,2,,返し,Rev,near: 離れて / しない [left]
+003AAD98,1,,しない,Never,near: 返し / ある [left]
+003AADA0,1,,ある,Yes,near: しない / ない [left]
+003AADA8,1,,ない,No,near: ある / ガｰド [left]
+003AADB0,3,,ガｰド,Guard,near: ない / がぶり [left]
+003AADB8,3,,がぶり,Facelock,"near: ガｰド / 早い [left] | was ""Front Facelock"": ran into the button icons in CPU logic (play-test 2026-10-29)"
+003AADC0,1,,早い,Quick,near: がぶり / 遅い [left]
+003AADC8,1,,遅い,Slow,near: 早い / 拾う [left]
+003AADD0,1,,拾う,Pick Up,near: 遅い / 常時 [left]
+003AADD8,2,,常時,Always,near: 拾う / 慎重度
+003AADE0,1,,慎重度,Caution,near: 常時 / 柔軟性
+003AADE8,1,,柔軟性,Flexibility,near: 慎重度 / 協調性
+003AADF0,1,,協調性,Teamwork,near: 柔軟性 / ﾀｯﾁﾜｰｸ
+003AADF8,1,,ﾀｯﾁﾜｰｸ,Tag Work,near: 協調性 / 性格
+003AAE00,1,,性格,Personality,near: ﾀｯﾁﾜｰｸ / その他
+003AAE08,1,,その他,Other,near: 性格 / ﾊﾝﾏｰｽﾙｰ
+003AAE10,16,,ﾊﾝﾏｰｽﾙｰ,Irish Whip,near: その他 / 　
+003AAE18,6,,　,,near: ﾊﾝﾏｰｽﾙｰ / %3d％
+003AAE20,2,,%3d％,%3d%,near: 　 / ﾚｽﾗｰﾒｲｸ
+003AAE30,1,,ﾚｽﾗｰﾒｲｸ,Appearance,near: %3d％ / 戻る
+003AAE38,3,,戻る,Back,near: ﾚｽﾗｰﾒｲｸ / ﾀｲﾄﾙﾏｯﾁ
+003AAE88,3,,戻る,Back,found by reference (play-test 2026-10-29)
+003AAE90,3,,NoData,No Data,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AAEA0,1,,ﾀｲﾄﾙﾏｯﾁ,Title Match,near: 戻る / ｽﾄﾛﾝグ
+003AAEB0,3,,Empty,Empty,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AAED8,1,,ｽﾄﾛﾝグ,Strong,near: ﾀｲﾄﾙﾏｯﾁ / ﾃｸﾆｯｸ
+003AAEE0,1,,ﾃｸﾆｯｸ,Technical,near: ｽﾄﾛﾝグ / ｱﾏﾚｽ
+003AAEE8,1,,ｱﾏﾚｽ,Amateur,near: ﾃｸﾆｯｸ / パﾜｰ
+003AAEF0,1,,パﾜｰ,Power,near: ｱﾏﾚｽ / ﾙﾁｬ
+003AAEF8,1,,ﾙﾁｬ,Lucha,near: パﾜｰ / ﾐｽﾃﾘｱｽ
+003AAF00,1,,ﾐｽﾃﾘｱｽ,Mysterious,near: ﾙﾁｬ / 骨法
+003AAF08,1,,骨法,Koppo,near: ﾐｽﾃﾘｱｽ / 古武道
+003AAF10,1,,古武道,Kobudo,near: 骨法 / ボｸｼﾝグ
+003AAF18,1,,ボｸｼﾝグ,Boxing,near: 古武道 / 総合系
+003AAF20,1,,総合系,MMA,near: ボｸｼﾝグ / ﾚﾌｪﾘｰ
+003AAF28,1,,ﾚﾌｪﾘｰ,Referee,near: 総合系 / 男子Ｓ
+003AAF30,6,,男子Ｓ,Male S,near: ﾚﾌｪﾘｰ / 男子Ｍ
+003AAF38,6,,男子Ｍ,Male M,near: 男子Ｓ / 男子Ｌ
+003AAF40,6,,男子Ｌ,Male L,near: 男子Ｍ / 女子
+003AAF48,7,,女子,Women,near: 男子Ｌ / 男子Ｄ
+003AAF50,4,,男子Ｄ,Male D,near: 女子 / 熊
+003AAF58,9,,熊,Bear,near: 男子Ｄ / －
+003AAF60,15,,－,-,near: 熊 / 忍者服
+003AAF68,5,,忍者服,Ninja,near: － / 道着
+003AAF70,6,,道着,Gi,near: 忍者服 / ｱｽﾃｶｽｰﾂ
+003AAF78,1,,ｱｽﾃｶｽｰﾂ,Aztec Suit,near: 道着 / ベスト
+003AAF80,2,,ベスト,Vest,near: ｱｽﾃｶｽｰﾂ / えり1
+003AAF88,1,,えり1,Collar 1,near: ベスト / えり2
+003AAF90,1,,えり2,Collar 2,near: えり1 / 傷模様
+003AAF98,5,,傷模様,Scars,near: えり2 / バニー
+003AAFA0,1,,バニー,Bunny,near: 傷模様 / ﾀｰﾄﾙﾈｯｸ
+003AAFA8,1,,ﾀｰﾄﾙﾈｯｸ,Turtleneck,near: バニー / ビキニ
+003AAFB0,1,,ビキニ,Bikini,near: ﾀｰﾄﾙﾈｯｸ / えり
+003AAFB8,1,,えり,Collar,near: ビキニ / まわし
+003AAFC0,1,,まわし,Mawashi,near: えり / 長そで
+003AAFC8,3,,長そで,Long Slv,near: まわし / 半そで
+003AAFD0,2,,半そで,Short Slv,near: 長そで / 男子
+003AAFD8,1,,男子,Male,near: 半そで / 靴紐１
+003AAFE0,1,,靴紐１,Laces 1,near: 男子 / 靴紐２
+003AAFE8,1,,靴紐２,Laces 2,near: 靴紐１ / 靴紐
+003AAFF0,1,,靴紐,Laces,near: 靴紐２ / 膝模様
+003AAFF8,1,,膝模様,Knee Mark,near: 靴紐 / 素手
+003AB000,1,,素手,Bare,near: 膝模様 / 丸手袋
+003AB008,1,,丸手袋,Mitts,near: 素手 / 裸足
+003AB010,1,,裸足,Barefoot,near: 丸手袋 / 足袋
+003AB018,1,,足袋,Tabi,near: 裸足 / 構え
+003AB020,1,,構え,Stance,near: 足袋 / サイズ [left]
+003AB028,1,,サイズ,Size,near: 構え / 顔 [left]
+003AB030,2,,顔,Face,near: サイズ / #x66２ [left]
+003AB038,6,,#x66２,#x66２,near: 顔 / #x66３ # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+003AB040,6,,#x66３,#x66３,near: #x66２ / #x66４ # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+003AB048,4,,#x66４,#x66４,near: #x66３ / 手首 # layout: [left] #xNN = jump to x NN (0x20 a cell): the digit column is at 0x66 from the line start (play-test 2026-10-29) full-width digits: this list draws no single-byte digits
+003AB050,2,,手首,Wrist,near: #x66４ / 足首 [left]
+003AB058,2,,足首,Ankle,near: 手首 / 肌色 [left]
+003AB060,9,,肌色,Skin,near: 足首 / 基礎 [left]
+003AB068,9,,基礎,Base,near: 肌色 / 顔目 [left]
+003AB070,1,,顔目,Eyes,near: 基礎 / 頭髪 [left]
+003AB078,1,,頭髪,Hair,near: 顔目 / 顔１ [left]
+003AB080,1,,顔１,Face 1,near: 頭髪 / 顔２ [left]
+003AB088,1,,顔２,Face 2,near: 顔１ / 胸１ [left]
+003AB090,2,,胸１,Chest 1,near: 顔２ / 胸２ [left]
+003AB098,2,,胸２,Chest 2,near: 胸１ / 胸３ [left]
+003AB0A0,2,,胸３,Chest 3,near: 胸２ / 胸４ [left]
+003AB0A8,2,,胸４,Chest 4,near: 胸３ / 胸５ [left]
+003AB0B0,1,,胸５,Chest 5,near: 胸４ / 胸６ [left]
+003AB0B8,1,,胸６,Chest 6,near: 胸５ / 腹１ [left]
+003AB0C0,2,,腹１,Belly 1,near: 胸６ / 腹２ [left]
+003AB0C8,2,,腹２,Belly 2,near: 腹１ / 腹３ [left]
+003AB0D0,2,,腹３,Belly 3,near: 腹２ / 腹４ [left]
+003AB0D8,2,,腹４,Belly 4,near: 腹３ / 腹５ [left]
+003AB0E0,1,,腹５,Belly 5,near: 腹４ / 腹６ [left]
+003AB0E8,1,,腹６,Belly 6,near: 腹５ / 上腕１ [left]
+003AB0F0,2,,上腕１,Up Arm 1,near: 腹６ / 上腕２ [left]
+003AB0F8,2,,上腕２,Up Arm 2,near: 上腕１ / 上腕３ [left]
+003AB100,2,,上腕３,Up Arm 3,near: 上腕２ / 上腕４ [left]
+003AB108,1,,上腕４,Up Arm 4,near: 上腕３ / 下腕１ [left]
+003AB110,2,,下腕１,Forearm 1,near: 上腕４ / 下腕２ [left]
+003AB118,2,,下腕２,Forearm 2,near: 下腕１ / 下腕３ [left]
+003AB120,2,,下腕３,Forearm 3,near: 下腕２ / 下腕４ [left]
+003AB128,1,,下腕４,Forearm 4,near: 下腕３ / 手１ [left]
+003AB130,1,,手１,Hand 1,near: 下腕４ / 手２ [left]
+003AB138,1,,手２,Hand 2,near: 手１ / 手３ [left]
+003AB140,1,,手３,Hand 3,near: 手２ / 太腿１ [left]
+003AB148,2,,太腿１,Thigh 1,near: 手３ / 太腿２ [left]
+003AB150,2,,太腿２,Thigh 2,near: 太腿１ / 太腿３ [left]
+003AB158,2,,太腿３,Thigh 3,near: 太腿２ / 太腿４ [left]
+003AB160,2,,太腿４,Thigh 4,near: 太腿３ / 太腿５ [left]
+003AB168,1,,太腿５,Thigh 5,near: 太腿４ / 太腿６ [left]
+003AB170,1,,太腿６,Thigh 6,near: 太腿５ / すね１ [left]
+003AB178,2,,すね１,Shin 1,near: 太腿６ / すね２ [left]
+003AB180,2,,すね２,Shin 2,near: すね１ / すね３ [left]
+003AB188,2,,すね３,Shin 3,near: すね２ / すね４ [left]
+003AB190,2,,すね４,Shin 4,near: すね３ / すね５ [left]
+003AB198,1,,すね５,Shin 5,near: すね４ / すね６ [left]
+003AB1A0,1,,すね６,Shin 6,near: すね５ / 足１ [left]
+003AB1A8,1,,足１,Foot 1,near: すね６ / 足２ [left]
+003AB1B0,1,,足２,Foot 2,near: 足１ / 足３ [left]
+003AB1B8,1,,足３,Foot 3,near: 足２ / 単色 [left]
+003AB1C0,1,,単色,Solid,near: 足３ / グﾗデ
+003AB1C8,1,,グﾗデ,Grad.,near: 単色 / 肌ｘ番
+003AB1D0,1,,肌ｘ番,Skin x,near: グﾗデ / 肌
+003AB1E0,1,,肌,Skin,near: 肌ｘ番 / ｸﾞﾗﾃﾞ
+003AB1E8,1,,ｸﾞﾗﾃﾞ,Grad.,near: 肌 / ダﾐｰ
+003AB1F8,1,,ダﾐｰ,Dummy,near: ｸﾞﾗﾃﾞ / 突き技
+003AB268,1,,突き技,Punches,near: ダﾐｰ / 蹴り技 [left]
+003AB270,1,,蹴り技,Kicks,near: 突き技 / 投げ技 [left]
+003AB278,1,,投げ技,Throws,near: 蹴り技 / 関節技 [left]
+003AB280,1,,関節技,Locks,near: 投げ技 / 絞め技 [left]
+003AB288,1,,絞め技,Chokes,near: 関節技 / 馬力 [left]
+003AB290,1,,馬力,Power,near: 絞め技 / 瞬発力 [left]
+003AB298,1,,瞬発力,Agility,near: 馬力 / 腕力 [left]
+003AB2A0,1,,腕力,Strength,near: 瞬発力 / ﾗﾌ攻撃 [left]
+003AB2A8,1,,ﾗﾌ攻撃,Brawling,near: 腕力 / 対ﾗﾘｱｯﾄ [left]
+003AB2B0,1,,対ﾗﾘｱｯﾄ,vs. Lariat,near: ﾗﾌ攻撃 / 長い [left]
+003AB2C8,1,,長い,Long,near: 対ﾗﾘｱｯﾄ / 普通
+003AB2D0,2,,普通,Normal,near: 長い / 短い
+003AB2D8,1,,短い,Short,near: 普通 / 遅い
+003AB2E0,1,,遅い,Slow,near: 短い / 速い
+003AB2E8,1,,速い,Fast,near: 遅い / 女子１
+003AB2F0,1,,女子１,Female 1,near: 速い / 女子２
+003AB2F8,1,,女子２,Female 2,near: 女子１ / 女子３
+003AB300,1,,女子３,Female 3,near: 女子２ / かけ声
+003AB308,1,,かけ声,Voice,near: 女子３ / Ｘ [left]
+003AB310,1,,Ｘ,X,near: かけ声 / フリー
+003AB318,1,,フリー,Free,near: Ｘ / ﾃｸﾆｼｬﾝ
+003AB320,2,,ﾃｸﾆｼｬﾝ,Technician,near: フリー / ﾚｽﾘﾝグ
+003AB328,1,,ﾚｽﾘﾝグ,Wrestling,near: ﾃｸﾆｼｬﾝ / グﾗｳﾝド
+003AB330,1,,グﾗｳﾝド,Ground,near: ﾚｽﾘﾝグ / パﾜｰ
+003AB338,3,,パﾜｰ,Power,near: グﾗｳﾝド / ｱﾒﾘｶﾝ
+003AB340,2,,ｱﾒﾘｶﾝ,American,near: パﾜｰ / ジｭﾆｱ
+003AB348,2,,ジｭﾆｱ,Junior,near: ｱﾒﾘｶﾝ / ﾙﾁｬドｰﾙ
+003AB350,2,,ﾙﾁｬドｰﾙ,Luchador,near: ジｭﾆｱ / ﾋｰﾙ
+003AB358,2,,ﾋｰﾙ,Heel,near: ﾙﾁｬドｰﾙ / ﾐｽﾃﾘｱｽ
+003AB360,2,,ﾐｽﾃﾘｱｽ,Mysterious,near: ﾋｰﾙ / ｼｭｰﾀｰ
+003AB368,2,,ｼｭｰﾀｰ,Shooter,near: ﾐｽﾃﾘｱｽ / ﾌｧｲﾀｰ
+003AB370,2,,ﾌｧｲﾀｰ,Fighter,near: ｼｭｰﾀｰ / パﾝｻｰ
+003AB378,1,,パﾝｻｰ,<Panther*>,near: ﾌｧｲﾀｰ / ジｬｲｱﾝﾄ
+003AB380,2,,ジｬｲｱﾝﾄ,Giant,near: パﾝｻｰ / 魔性
+003AB388,2,,魔性,Devilish,near: ジｬｲｱﾝﾄ / 必殺
+003AB390,1,,必殺,Finisher,near: 魔性 / ﾃｸﾆｶﾙ
+003AB398,1,,ﾃｸﾆｶﾙ,Technical,near: 必殺 / 打撃
+003AB3A0,1,,打撃,Striking,near: ﾃｸﾆｶﾙ / なし
+003AB3A8,1,,なし,None,near: 打撃 / ｽﾀｰ性
+003AB3B0,1,,ｽﾀｰ性,Star Power,near: なし / 根性
+003AB3B8,1,,根性,Guts,near: ｽﾀｰ性 / 反撃
+003AB3C0,1,,反撃,Fightback,near: 根性 / 流血
+003AB3C8,1,,流血,Bleeding,near: 反撃 / ﾊｰドｺｱ
+003AB3D0,1,,ﾊｰドｺｱ,Hardcore,near: 流血 / 集中力
+003AB3D8,1,,集中力,Focus,near: ﾊｰドｺｱ / 柔軟性
+003AB3E0,1,,柔軟性,Flexibility,near: 集中力 / 猛反撃
+003AB3E8,1,,猛反撃,Fury,near: 柔軟性 / 見切り
+003AB3F0,1,,見切り,Insight,near: 猛反撃 / 闘魂
+003AB3F8,1,,闘魂,Toukon,near: 見切り / 怪物
+003AB400,1,,怪物,Monster,near: 闘魂 / 維新魂
+003AB408,1,,維新魂,Ishin,near: 怪物 / ハッ
+003AB598,2,,ハッ,Hah,near: 維新魂 / シッ
+003AB5A0,1,,シッ,Shi!,near: ハッ / シュッ
+003AB5A8,3,,シュッ,Shu!,near: シッ / フッ！
+003AB5B0,2,,フッ！,Fuh!,near: シュッ / ムゥン!
+003AB5B8,1,,ムゥン!,Mmn!,near: フッ！ / アァッ
+003AB5C0,2,,アァッ,Aah!,near: ムゥン! / ダァッ
+003AB5C8,2,,ダァッ,Daah!,near: アァッ / ウァッ
+003AB5D0,1,,ウァッ,Waah!,near: ダァッ / デャッ
+003AB5D8,1,,デャッ,Dyah!,near: ウァッ / オェッ
+003AB5E0,1,,オェッ,Oeh!,near: デャッ / ポォゥ
+003AB5E8,1,,ポォゥ,Pooh!,near: オェッ / ヘヘッ
+003AB5F0,1,,ヘヘッ,Heheh!,near: ポォゥ / ヨッ
+003AB5F8,1,,ヨッ,Yo!,near: ヘヘッ / オ～
+003AB600,1,,オ～,Ohh!,near: ヨッ / 押忍っ
+003AB608,1,,押忍っ,Osu!,near: オ～ / 稲妻
+003AB610,1,,稲妻,Inazuma!,near: 押忍っ / ＯＫ！
+003AB618,1,,ＯＫ！,OK!,near: 稲妻 / What？
+003AB620,2,,What？,What?,near: ＯＫ！ / 必殺！
+003AB628,2,,必殺！,Hissatsu!,near: What？ / ガオー
+003AB630,6,,ガオー,Gaoh!,near: 必殺！ / トゥッ
+003AB638,1,,トゥッ,Tuh!,near: ガオー / ウガァ
+003AB640,1,,ウガァ,Ugaa!,near: トゥッ / ハッ！
+003AB648,1,,ハッ！,Hah!,near: ウガァ / ファッ
+003AB650,1,,ファッ,Fah!,near: ハッ！ / オスッ
+003AB660,1,,オスッ,Ossu!,near: ファッ / ウガッ
+003AB668,1,,ウガッ,Ugah!,near: オスッ / テェ！
+003AB670,1,,Over,Over,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AB678,1,,テェ！,Teh!,near: ウガッ / ヤッ！
+003AB680,1,,ヤッ！,Yah!,near: テェ！ / オラ！
+003AB688,1,,オラ！,Ora!,near: ヤッ！ / ハイ！
+003AB690,1,,ハイ！,Hai!,near: オラ！ / やーぁ
+003AB698,1,,やーぁ,Yaaah!,near: ハイ！ / 遅い
+003AB6A0,2,,遅い,Slow,near: やーぁ / 普通
+003AB6A8,5,,普通,Normal,near: 遅い / 速い
+003AB6B0,2,,速い,Fast,near: 普通 / 下手
+003AB6B8,1,,下手,Poor,near: 速い / 上手い
+003AB6C0,1,,上手い,Good,near: 下手 / 弱い
+003AB6C8,1,,弱い,Weak,near: 上手い / 強い
+003AB6D0,1,,強い,Strong,near: 弱い / 低い
+003AB6D8,1,,低い,Low,near: 強い / 高い
+003AB6E0,1,,高い,High,near: 低い / 登れる
+003AB6E8,1,,登れる,Climbs,near: 高い / 女子１
+003AB6F0,1,,女子１,Female 1,near: 登れる / 女子２
+003AB6F8,1,,女子２,Female 2,near: 女子１ / 女子３
+003AB700,1,,女子３,Female 3,near: 女子２ / 階級
+003AB710,1,,階級,Class,near: 女子３ / 身長 [left]
+003AB718,1,,cm,cm,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font [left]"
+003AB720,1,,身長,Height,near: 階級 / 体重 [left]
+003AB728,1,,kg,kg,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font [left]"
+003AB730,1,,体重,Weight,near: 身長 / 年 [left]
+003AB738,1,,年,/,near: 体重 / 生年 [left]
+003AB740,1,,生年,Year,near: 年 / 月 [left]
+003AB748,1,,月,/,near: 生年 / 生月 [left]
+003AB750,1,,生月,Month,near: 月 / 日 [left]
+003AB758,1,,日, ,near: 生月 / 生日 [left]
+003AB760,1,,生日,Day,near: 日 / 出身地 [left]
+003AB768,1,,出身地,Hometown,near: 生日 / 返し技 [left]
+003AB770,1,,返し技,Reversals,near: 出身地 / ｸﾘﾃｨｶﾙ [left]
+003AB778,1,,ｸﾘﾃｨｶﾙ,Critical,near: 返し技 / 特殊ｽｷﾙ [left]
+003AB780,1,,特殊ｽｷﾙ,Skill,near: ｸﾘﾃｨｶﾙ / 回復力 [left]
+003AB788,1,,回復力,Recovery,near: 特殊ｽｷﾙ / 呼吸法 [left]
+003AB790,1,,呼吸法,Breathing,near: 回復力 / 精神力 [left]
+003AB798,1,,精神力,Spirit,near: 呼吸法 / ﾃｰﾏ曲 [left]
+003AB7A0,1,,ﾃｰﾏ曲,Theme,near: 精神力 / 不明 [left]
+003AB7F0,1,,不明,Unknown,near: ﾃｰﾏ曲 / 立ち
+003AB820,5,,立ち,Strike,near: 不明 / 走り [left]
+003AB828,2,,走り,Running,near: 立ち / ポスト [left]
+003AB830,4,,ポスト,Top Rope,near: 走り / 組み [left]
+003AB838,13,,組み,Grapple,near: ポスト / バック [left]
+003AB840,6,,バック,Bk Grapple,near: 組み / 突き技 [left]
+003AB848,1,,突き技,Punches,near: バック / 蹴り技
+003AB850,1,,蹴り技,Kicks,near: 突き技 / 投げ技
+003AB858,1,,投げ技,Throws,near: 蹴り技 / 関節技
+003AB860,1,,関節技,Locks,near: 投げ技 / 絞め技
+003AB868,1,,絞め技,Chokes,near: 関節技 / 馬力
+003AB870,1,,馬力,Power,near: 絞め技 / 瞬発力
+003AB878,1,,瞬発力,Agility,near: 馬力 / 腕力
+003AB880,1,,腕力,Strength,near: 瞬発力 / ﾗﾌ攻撃
+003AB888,1,,ﾗﾌ攻撃,Brawling,near: 腕力 / 主攻撃
+003AB890,1,,主攻撃,Main,near: ﾗﾌ攻撃 / 副攻撃
+003AB8A0,1,,副攻撃,Sub,near: 主攻撃 / 相性
+003AB8A8,1,,相性,Affinity,near: 副攻撃 / ：%d
+003AB8D8,1,,：%d,:%d,near: 相性 / ロード
+003AB930,1,,ロード,Load,near: ：%d / 戻る
+003AB938,2,,戻る,Back,near: ロード / 未使用
+003AB950,1,,未使用,Empty,near: 戻る / 聖:
+003AB990,1,,STOP,STOP,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AB998,1,,PLAYING,PLAYING,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003ABB40,1,,タッグ,Tag,near: 聖: / ベルト
+003ABB50,1,,ベルト,Belt,near: タッグ / 人数
+003ABB58,1,,人数,Type,near: ベルト / 階級
+003ABB60,1,,階級,Class,near: 人数 / 決定 [left]
+003ABB68,1,,決定,OK,near: 階級 / ベルト
+003ABBA0,1,,ベルト,Belt,near: 決定 / 決定
+003ABBA8,1,,決定,OK,near: ベルト / ｴ
+003ABBCC,1,,ｴ,,near: 決定 / はい
+003ABBD8,1,,はい,Yes,near: ｴ / いいえ
+003ABBE0,1,,いいえ,No,near: はい / ｃｍ
+003ABC10,1,,ｃｍ,cm,near: いいえ / ｋｇ
+003ABC18,1,,ｋｇ,kg,near: ｃｍ / 不明
+003ABC20,1,,不明,Unknown,near: ｋｇ / １９
+003ABC28,0,7,１９,19,near: 不明 / 年 [digits] [left] century of a birth year: digits like the game's own (play-test 2026-10-29)
+003ABC30,1,,年,/,near: １９ / 月
+003ABC38,1,,月,/,near: 年 / 日
+003ABC40,1,,日, ,near: 月 / 企画
+003ABC88,1,,企画,企画,# keep: staff credits (owner 2026-10-29)
+003ABC90,2,,門間 毅,門間 毅,# keep: staff credits (owner 2026-10-29)
+003ABC98,1,,佐藤 永,佐藤 永,# keep: staff credits (owner 2026-10-29)
+003ABCA0,1,,効果音,効果音,# keep: staff credits (owner 2026-10-29)
+003ABCA8,1,,作曲,作曲,# keep: staff credits (owner 2026-10-29)
+003ABCB0,1,,甲賀 崇,甲賀 崇,# keep: staff credits (owner 2026-10-29)
+003ABCB8,1,,協力,協力,# keep: staff credits (owner 2026-10-29)
+003ABCC0,1,,昇龍,昇龍,# keep: staff credits (owner 2026-10-29)
+003ABCC8,1,,制作,制作,# keep: staff credits (owner 2026-10-29)
+003ABCE8,1,,企画,,near: 制作 / 門間 毅
+003ABCF0,2,,門間 毅,,near: 企画 / 佐藤 永
+003ABCF8,1,,佐藤 永,,near: 門間 毅 / 効果音
+003ABD00,1,,効果音,,near: 佐藤 永 / 作曲
+003ABD08,1,,作曲,,near: 効果音 / 甲賀 崇
+003ABD10,1,,甲賀 崇,,near: 作曲 / 協力
+003ABD18,1,,協力,,near: 甲賀 崇 / 昇龍
+003ABD20,1,,昇龍,,near: 協力 / 制作
+003ABD28,1,,制作,,near: 昇龍 / 　＆　
+003ABDB8,1,,　＆　, & ,near: 制作 / 第
+003ABDC0,2,,第,#,near: 　＆　 / 試合
+003ABDC8,1,,試合,Match,near: 第 / 未消化
+003ABDD0,1,,未消化,Pending,near: 試合 / 終了
+003ABDF0,1,,終了,Quit,near: 未消化 / はい
+003ABDF8,1,,はい,Yes,near: 終了 / いいえ
+003ABE00,1,,いいえ,No,near: はい / 終了
+003ABE48,1,,終了,Quit,near: いいえ / 欠場
+003ABE80,6,,欠場,Out,near: 終了 / １ｓｔ
+003ABEB8,1,,１ｓｔ,1st,near: 欠場 / ２ｎｄ
+003ABEC0,1,,２ｎｄ,2nd,near: １ｓｔ / ３ｒｄ
+003ABEC8,1,,３ｒｄ,3rd,near: ２ｎｄ / ４ｔｈ
+003ABED0,1,,４ｔｈ,4th,near: ３ｒｄ / ５ｔｈ
+003ABED8,1,,５ｔｈ,5th,near: ４ｔｈ / ６ｔｈ
+003ABEE0,1,,６ｔｈ,6th,near: ５ｔｈ / ７ｔｈ
+003ABEE8,1,,７ｔｈ,7th,near: ６ｔｈ / ８ｔｈ
+003ABEF0,1,,８ｔｈ,8th,near: ７ｔｈ / 決定
+003ABF00,2,,分,m,"minutes unit, read by code (found by reference, play-test 2026-10-29: ""15分40秒"" on the result screen)"
+003ABF10,1,,決定,OK,near: ８ｔｈ / ＯＦＦ
+003ABF60,5,,ＯＦＦ,Off,near: 決定 / ＯＮ
+003ABF68,3,,ＯＮ,On,near: ＯＦＦ / 小
+003ABF70,2,,小,Low,near: ＯＮ / 中
+003ABF78,2,,中,Medium,near: 小 / 大
+003ABF80,2,,大,High,near: 中 / です
+003ABFA0,1,,です,.,near: 大 / 「
+003ABFA8,1,,「," """,near: です / 」
+003ABFB0,1,,」,"""",near: 「 / 、
+003ABFB8,1,,、,", ",near: 」 / ・
+003ABFC0,1,,・,/,near: 、 / ＢＧＭ
+003ABFC8,1,,ＢＧＭ,BGM,near: ・ / テーマ
+003ABFD0,1,,テーマ,Theme,near: ＢＧＭ / Ｘ [left]
+003ABFD8,1,,Ｘ,X,near: テーマ / Ｙ
+003ABFE0,1,,Ｙ,Y,near: Ｘ / ＋
+003ABFE8,1,,＋,+,near: Ｙ / －
+003ABFF0,1,,－,-,near: ＋ / 5分
+003AC0A8,1,,5分,5 min,near: － / 10分
+003AC0B0,1,,10分,10 min,near: 5分 / 15分
+003AC0B8,1,,15分,15 min,near: 10分 / 30分
+003AC0C0,1,,30分,30 min,near: 15分 / 45分
+003AC0C8,1,,45分,45 min,near: 30分 / 60分
+003AC0D0,1,,60分,60 min,near: 45分 / 無制限
+003AC0D8,1,,無制限,No Limit,near: 60分 / ｃｍ
+003AC170,1,,ｃｍ,cm,near: 無制限 / ｋｇ
+003AC178,1,,ｋｇ,kg,near: ｃｍ / 不明
+003AC180,1,,不明,Unknown,near: ｋｇ / １９
+003AC188,0,7,１９,19,near: 不明 / 年 [digits] [left] century of a birth year: digits like the game's own (play-test 2026-10-29)
+003AC190,1,,年,/,near: １９ / 月
+003AC198,1,,月,/,near: 年 / 日
+003AC1A0,1,,日, ,near: 月 / 勝
+003AC1C8,1,,勝,W,near: 日 / 敗
+003AC1D0,1,,敗,L,near: 勝 / 分
+003AC1D8,3,,分,Min.,near: 敗 / 最高
+003AC1E0,1,,最高,Best,near: 分 / 連勝
+003AC1E8,1,,連勝,W Streak,near: 最高 / 連敗
+003AC1F0,1,,連敗,L Streak,near: 連勝 / 時間
+003AC1F8,2,,時間,h,near: 連敗 / 秒
+003AC200,2,,秒,s,near: 時間 / 勝利
+003AC208,1,,勝利,Win,near: 秒 / 敗北
+003AC210,1,,敗北,Loss,near: 勝利 / 引分
+003AC218,1,,引分,Draw,near: 敗北 / ﾌｫーﾙ
+003AC220,1,,ﾌｫーﾙ,Pinfall,near: 引分 / ﾘﾝグｱｳﾄ
+003AC230,1,,ﾘﾝグｱｳﾄ,Ring-Out,near: ﾌｫーﾙ / 反則
+003AC238,1,,反則,DQ,near: ﾘﾝグｱｳﾄ / ｶﾀｶﾅ
+003AC260,1,,ｶﾀｶﾅ,Kata,near: 反則 / 単漢字
+003AC268,1,,単漢字,Kanji,near: ｶﾀｶﾅ / 英数字
+003AC270,1,,英数字,ABC,near: 単漢字 / 記号
+003AC278,1,,記号,Symbols,near: 英数字 / 決定
+003AC280,1,,決定,OK,near: 記号 / 勝率
+003AC288,1,,勝率,Win %,near: 決定 / －
+003AC290,1,,－,-,near: 勝率 / 連勝中
+003AC298,1,,連勝中,Win Streak,near: － / 連敗中
+003AC2A0,1,,連敗中,Loss Streak,near: 連勝中 / １.
+003AC2A8,1,,１.,1.,near: 連敗中 / ０００
+003AC2B0,1,,０００,000,near: １. / ０.
+003AC2B8,1,,０.,0.,near: ０００ / ﾘﾝグ
+003AC2C0,1,,ﾘﾝグ,Ring,near: ０. / COMﾚベﾙ
+003AC2C8,1,,COMﾚベﾙ,COM Level,near: ﾘﾝグ / ﾚﾌｪﾘー
+003AC2D0,1,,ﾚﾌｪﾘー,Referee,near: COMﾚベﾙ / ｶｯﾄプﾚｲ
+003AC2D8,1,,ｶｯﾄプﾚｲ,Cut Play,near: ﾚﾌｪﾘー / 100％
+003AC2E8,1,,ON,ON,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AC2F0,1,,OFF,OFF,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AC300,1,,100％,100%,near: ｶｯﾄプﾚｲ / 125％
+003AC308,1,,125％,125%,near: 100％ / 150％
+003AC310,1,,150％,150%,near: 125％ / 175％
+003AC318,1,,175％,175%,near: 150％ / 200％
+003AC320,1,,200％,200%,near: 175％ / 300％
+003AC328,1,,300％,300%,near: 200％ / 400％
+003AC330,1,,400％,400%,near: 300％ / 800％
+003AC338,1,,800％,800%,near: 400％ / 3ｶｳﾝﾄ
+003AC348,1,,3ｶｳﾝﾄ,3 Count,near: 800％ / 2ｶｳﾝﾄ
+003AC350,1,,2ｶｳﾝﾄ,2 Count,near: 3ｶｳﾝﾄ / 5分
+003AC358,2,,5分,5 min,near: 2ｶｳﾝﾄ / 10分
+003AC360,2,,10分,10 min,near: 5分 / 15分
+003AC368,2,,15分,15 min,near: 10分 / 30分
+003AC370,2,,30分,30 min,near: 15分 / 45分
+003AC378,2,,45分,45 min,near: 30分 / 60分
+003AC380,2,,60分,60 min,near: 45分 / 無制限
+003AC388,1,,無制限,No Limit,near: 60分 / ｼﾝグﾙ
+003AC390,1,,USA,USA,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AC398,1,,RANDOM,RANDOM,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AC3F0,1,,ｼﾝグﾙ,Singles,near: 無制限 / ﾀｯグ
+003AC3F8,1,,ﾀｯグ,Tag,near: ｼﾝグﾙ / 6人ﾀｯグ
+003AC400,1,,6人ﾀｯグ,6-Man Tag,near: ﾀｯグ / 8人ﾀｯグ
+003AC408,1,,8人ﾀｯグ,8-Man Tag,near: 6人ﾀｯグ / 混合
+003AC410,1,,混合,Mixed,near: 8人ﾀｯグ / 1分
+003AC418,1,,1分,1 Min,near: 混合 / なし
+003AC420,1,,なし,None,near: 1分 / 低い
+003AC428,1,,低い,Low,near: なし / 普通
+003AC430,1,,普通,Normal,near: 低い / 高い
+003AC438,1,,高い,High,near: 普通 / 蛍光灯
+003AC440,1,,蛍光灯,Tubes,near: 高い / －
+003AC470,1,,－,-,near: 蛍光灯 / ｶﾀｶﾅ
+003AC500,1,,ｶﾀｶﾅ,Kata,near: － / 単漢字
+003AC508,1,,単漢字,Kanji,near: ｶﾀｶﾅ / 英数字
+003AC510,1,,英数字,ABC,near: 単漢字 / 記号
+003AC518,1,,記号,Symbols,near: 英数字 / 決定
+003AC520,1,,決定,OK,near: 記号 / 終了
+003AC558,1,,終了,Quit,near: 決定 / ペン
+003AC560,1,,ペン,Pen,near: 終了 / ライン
+003AC568,1,,ライン,Line,near: ペン / コピー
+003AC570,1,,コピー,Copy,near: ライン / 消去
+003AC578,1,,消去,Clear,near: コピー / 拡大
+003AC580,1,,拡大,Zoom,near: 消去 / 回転
+003AC588,1,,回転,Rotate,near: 拡大 / 順位
+003AC5A0,1,,順位,Rank,league ranking header: the five headers share a text buffer sized to the Japanese (順位2 Ｎｏ2 名前2 Ｐｔ2 差1 glyphs) - stay within the Japanese glyph count (play-test 2026-10-29)
+003AC5A8,1,,Ｎｏ,No,league ranking header: the five headers share a text buffer sized to the Japanese (順位2 Ｎｏ2 名前2 Ｐｔ2 差1 glyphs) - stay within the Japanese glyph count (play-test 2026-10-29)
+003AC5B0,1,,名前,Name,league ranking header: the five headers share a text buffer sized to the Japanese (順位2 Ｎｏ2 名前2 Ｐｔ2 差1 glyphs) - stay within the Japanese glyph count (play-test 2026-10-29)
+003AC5B8,1,,Ｐｔ,Pt,league ranking header: the five headers share a text buffer sized to the Japanese (順位2 Ｎｏ2 名前2 Ｐｔ2 差1 glyphs) - stay within the Japanese glyph count (play-test 2026-10-29)
+003AC5C0,1,,差,±,league ranking header: the five headers share a text buffer sized to the Japanese (順位2 Ｎｏ2 名前2 Ｐｔ2 差1 glyphs) - stay within the Japanese glyph count (play-test 2026-10-29); ± = point difference
+003AC608,1,,記録名,Record,near: 差 / ・
+003AC620,1,,・,/,near: 記録名 / 戻る
+003AC628,1,,No Data,No Data,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AC630,1,,戻る,Back,near: ・ / 空位
+003AC638,1,,空位,Vacant,near: 戻る / 回
+003AC640,1,,回,x,near: 空位 / ｶﾀｶﾅ
+003AC648,1,,ｶﾀｶﾅ,More,near: 回 / 単漢字 | name entry: English keyboard page (fpztext.step_name_entry)
+003AC650,1,,単漢字,Pairs,near: ｶﾀｶﾅ / 英数字 | name entry: English keyboard page (fpztext.step_name_entry)
+003AC658,1,,英数字,ABC,near: 単漢字 / 記号
+003AC660,1,,記号,Symbols,near: 英数字 / 決定
+003AC668,1,,決定,OK,near: 記号 / ・
+003AC680,1,,・,/,near: 決定 / ＝
+003AC688,1,,＝,=,near: ・ / 入替え
+003AC6A8,1,,入替え,Swap,near: ＝ / ｏｆｆ
+003AC6B0,1,,ｏｆｆ,Off,near: 入替え / ｏｎ
+003AC6B8,0,7,ｏｎ,On,near: ｏｆｆ / 中間
+003AC6C0,1,,中間,Mid,near: ｏｎ / CP・CP
+003AC758,1,,CP・CP,CP-CP,near: 中間 / 1P・CP
+003AC760,1,,1P・CP,1P-CP,near: CP・CP / 1P・2P
+003AC768,1,,1P・2P,1P-2P,near: 1P・CP / 2P・CP
+003AC770,1,,2P・CP,2P-CP,near: 1P・2P / 2P・3P
+003AC778,1,,2P・3P,2P-3P,near: 2P・CP / 3P・CP
+003AC780,1,,3P・CP,3P-CP,near: 2P・3P / 3P・4P
+003AC788,1,,3P・4P,3P-4P,near: 3P・CP / 4P・CP
+003AC790,1,,4P・CP,4P-CP,near: 3P・4P / 1P・1P
+003AC798,1,,1P・1P,1P-1P,near: 4P・CP / 2P・2P
+003AC7A0,1,,2P・2P,2P-2P,near: 1P・1P / 3P・3P
+003AC7A8,1,,3P・3P,3P-3P,near: 2P・2P / 4P・4P
+003AC7B0,1,,4P・4P,4P-4P,near: 3P・3P / 1P・3P
+003AC7B8,1,,1P・3P,1P-3P,near: 4P・4P / 1P・4P
+003AC7C0,1,,1P・4P,1P-4P,near: 1P・3P / 2P・4P
+003AC7C8,1,,2P・4P,2P-4P,near: 1P・4P / はい
+003AC7F0,1,,はい,Yes,near: 2P・4P / いいえ
+003AC7F8,1,,いいえ,No,near: はい / ﾀ6:
+003AC860,3,,試合,Match,near: ｸ7: / 終了
+003AC868,3,,終了,Quit,near: 試合 / 試合へ
+003AC880,1,,試合へ,Match,near: 終了 / 戻る
+003AC888,2,,戻る,Back,near: 試合へ / `ﾈ:
+003ACFE0,2,,いいえ,No,found by reference (play-test 2026-10-29) [left]
+003ACFE8,2,,はい,Yes,found by reference (play-test 2026-10-29) [left]

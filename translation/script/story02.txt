@@ -1,0 +1,9416 @@
+# Story mode, scenario 2 (STORY.OAH SCENA\STORY02.STO). One block per page; ids are
+# story.message.page. Only the text lines are here: the build keeps each page's speaker and codes,
+# puts in the English, word-wraps it and encodes it for the story window.
+# Room: 20 cells a line, 4 lines a page counting the speaker line (so 3 text lines with a speaker,
+# 4 without). English is drawn two letters a cell: about 40 characters a line, 120 a page with a
+# speaker. %ssN is wrestler N's short name (roster), drawn one cell a letter. Write plain lines;
+# your line breaks are kept where they fit, and long lines are wrapped.
+# Codes: %ssN name (keep), %c0 / %c1 colour (keep where they are), %sw/%st/%sk match results.
+# Speaker labels that are words (記者 Reporter) are in translation/text/speakers.csv.
+# Choices and chapter titles (ids C...) are one line each: 40 characters at most.
+
+@ 2.000.00
+# speaker: 記者
+JP 「%ss132さん・・・！！」
+EN "%ss132...!"
+
+@ 2.000.01
+# speaker: 記者
+JP 「%ss132さん！！
+JP 　すさまじい試合でした！！」
+EN "%ss132! What an incredible match!"
+
+@ 2.000.02
+# speaker: 記者
+JP 「感動しました！！」
+EN "I was so moved!!"
+
+@ 2.000.03
+# speaker: 記者
+JP 「現在はフリーで活動中の
+JP 　%ss132さんですが、」
+EN "%ss132, you're working as a freelancer right now,"
+
+@ 2.000.04
+# speaker: 記者
+JP 「今後の予定を
+JP 　聞かせていただけませんか！？」
+EN "Could you tell us what your plans are?!"
+
+@ 2.000.05
+# speaker: 沖田 (%ss132)
+JP 「俺は・・・」
+EN "I..."
+
+@ 2.000.06
+# speaker: 沖田 (%ss132)
+JP 「俺は！！」
+EN "I...!"
+
+@ 2.000.07
+# speaker: 沖田 (%ss132)
+JP 「前から考えていたことがある！！」
+EN "There's something I've been thinking about for a long time!"
+
+@ 2.000.08
+# speaker: 沖田 (%ss132)
+JP 「俺は、俺の求めるプロレスを
+JP 　実現させるために
+JP 　自分の団体を作る・・・！！」
+EN "To make the pro wrestling I believe in a reality, I'm going to start my own promotion...!"
+
+@ 2.000.09
+# speaker: 沖田 (%ss132)
+JP 「%ss132は
+JP 　新団体を旗揚げする！！」
+EN "%ss132 is launching a new promotion!"
+
+@ 2.000.10
+# speaker: 沖田 (%ss132)
+JP 「新団体を旗揚げするんだ！！」
+EN "I'm launching a new promotion!"
+
+@ 2.001.00
+# speaker: 沖田 (%ss132)
+JP 　新団体の設立・・・！！
+EN Starting a new promotion...!
+
+@ 2.001.01
+# speaker: 沖田 (%ss132)
+JP 　思い立ったら吉日だ！！
+EN No time like the present!
+
+@ 2.001.02
+# speaker: 沖田 (%ss132)
+JP 　俺はすぐさま
+JP 　記者会見を開いた・・・！！
+EN I called a press conference right away...!
+
+@ 2.003.00
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: 沖田 (%ss132)
+JP 　スーパー%ss37に敗れた後、
+JP 　俺は、あることを真剣に考えていた。
+EN After I lost to <Super Tiger*>, there was something I'd been thinking hard about.
+
+@ 2.003.01
+# speaker: 沖田 (%ss132)
+JP 　俺の求めるプロレスって
+JP 　なんだ・・・？
+EN What is the pro wrestling I'm really after...?
+
+@ 2.003.02
+# speaker: 沖田 (%ss132)
+JP 　勝った負けただけが、
+JP 　プロレスの全てじゃないだろう・・・
+EN Winning and losing aren't all there is to pro wrestling...
+
+@ 2.003.03
+# speaker: 沖田 (%ss132)
+JP 　俺は・・・
+EN I...
+
+@ 2.003.04
+# speaker: 沖田 (%ss132)
+JP 　俺は、自分の求めるプロレスを
+JP 　実現させるために、
+JP 　自分のリングを作る・・・！！
+EN To make the pro wrestling I believe in a reality, I'm going to build my own ring...!
+
+@ 2.003.05
+# speaker: 沖田 (%ss132)
+JP 　俺は、新団体を設立するんだ！！
+EN I'm founding a new promotion!
+
+@ 2.009.00
+# speaker: 沖田 (%ss132)
+JP 　このやろう・・・！！
+EN You bastard...!
+
+@ 2.009.01
+# speaker: 沖田 (%ss132)
+JP 　ＵＷＨが俺を
+JP 　相手にしないと言うのなら、
+EN If <UWH> won't give me the time of day,
+
+@ 2.009.02
+# speaker: 沖田 (%ss132)
+JP 　嫌でも相手にせざるをえない
+JP 　状況に持ち込んでやる。
+EN I'll put them in a spot where they have no choice, like it or not.
+
+@ 2.009.03
+# speaker: 沖田 (%ss132)
+JP 　無視できるものなら
+JP 　無視してみろ・・・！！
+EN Go ahead and ignore me, if you can...!
+
+@ 2.010.00
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: アナウンサー
+JP 「さあ、スーパー%ss37が
+JP 　やって来ました。」
+EN "And here comes <Super Tiger*>."
+
+@ 2.010.01
+# speaker: アナウンサー
+JP 「今、エプロンサイドから
+JP 　トップロープへ・・・登らない。」
+EN "Now from the apron, up to the top rope... No, he's not going up."
+
+@ 2.010.02
+# speaker: アナウンサー
+JP 「登らない！？」
+EN "He's not going up?!"
+
+@ 2.010.03
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: アナウンサー
+JP 「スーパー%ss37、
+JP 　今日はトップロープへ登りません！！」
+EN "<Super Tiger*> isn't going up to the top rope today!"
+
+@ 2.011.00
+# speaker: アナウンサー
+JP 「セカンドロープと、
+JP 　トップロープの間をくぐり抜けて
+JP 　リングに入りました！！」
+EN "He's ducked between the second and top ropes into the ring!"
+
+@ 2.011.01
+# speaker: アナウンサー
+JP 「これ、何か変ですよ！？
+JP 　%ss37、
+JP 　どうしたんでしょうか！？」
+EN "Something's off here! What's wrong with %ss37?!"
+
+@ 2.011.02
+# speaker: 解説者
+JP 「調子が悪いとは
+JP 　聞いていませんね・・・。」
+EN "I haven't heard anything about him being in bad shape..."
+
+@ 2.011.03
+# speaker: 解説者
+JP 「心なしか体形が・・・
+JP 　何だか腹が出てませんか？」
+EN "Is it just me, or... isn't his belly sticking out?"
+
+@ 2.012.00
+# speaker: アナウンサー
+JP 「ああっ・・・！？」
+EN "Ahh...?!"
+
+@ 2.012.01
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: アナウンサー
+JP 「今、花道から
+JP 　もう一人のスーパー%ss37が
+JP 　現れました！？」
+EN "Now another <Super Tiger*> has appeared from the aisle?!"
+
+@ 2.013.00
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: アナウンサー
+JP 「%ss37が２人・・・！！
+JP 　スーパー%ss37が
+JP 　２人います！？」
+EN "Two %ss37s...! There are two <Super Tiger*>s?!"
+
+@ 2.013.01
+# speaker: アナウンサー
+JP 「リング上は、セコンドも交えて
+JP 　パニックになっています！！」
+EN "It's chaos in the ring, seconds and all!"
+
+@ 2.014.00
+# speaker: 若手
+JP 「誰だ！！おまえ！？」
+EN "Who the hell are you?!"
+
+@ 2.014.01
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: 沖田 (%ss132)
+JP 「見て分かんないのか？
+JP 　スーパー%ss37だろ。」
+EN "Can't you tell? I'm <Super Tiger*>."
+
+@ 2.014.02
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: 若手
+JP 「そんなスーパー%ss37が
+JP 　いるか！！」
+EN "There's no <Super Tiger*> like you!"
+
+@ 2.014.03
+# speaker: 若手
+JP 「こんな真似をして
+JP 　ただで済むと思っているのか！？」
+EN "You think you can pull a stunt like this and get away with it?!"
+
+@ 2.014.04
+# speaker: 沖田 (%ss132)
+JP 「思ってねえよ。
+JP 　だからやってんだろ。」
+EN "No, I don't. That's why I'm doing it."
+
+@ 2.014.05
+# speaker: 沖田 (%ss132)
+JP 「いいから
+JP 　かかって来いよ。」
+EN "Shut up and come at me."
+
+@ 2.014.06
+# speaker: 若手
+JP 「このやろう・・・！！」
+EN "You bastard...!"
+
+@ 2.015.00
+# speaker: パンサー (%ss37)
+JP 「やめろ！」
+EN "Stop!"
+
+@ 2.015.01
+# speaker: 若手
+JP 「で、でも
+JP 　加川さん・・・！」
+EN "B-but Kagawa...!"
+
+@ 2.015.02
+# speaker: パンサー (%ss37)
+JP 「時々いるだろ、こういうの。」
+EN "You get guys like this sometimes."
+
+@ 2.015.03
+# speaker: パンサー (%ss37)
+JP 「君、サインが欲しいなら
+JP 　後であげるから、
+JP 　リングを降りてくれないか。」
+EN "If you want an autograph, I'll give you one later. Would you please leave the ring?"
+
+@ 2.015.04
+# speaker: 沖田 (%ss132)
+JP 「さすが、最強団体の
+JP 　スーパースターは余裕があるね。」
+EN "Spoken like a superstar of the strongest promotion. So cool and collected."
+
+@ 2.015.05
+# speaker: 沖田 (%ss132)
+JP 「だがな、俺は素人じゃない。
+JP 　あんたと試合がしたい
+JP 　プロのレスラーだ。」
+EN "But I'm no amateur. I'm a pro wrestler who wants a match with you."
+
+@ 2.015.06
+# speaker: 沖田 (%ss132)
+JP 「いいかっこしてると
+JP 　泣きを見るぞ。」
+EN "Keep acting all high and mighty and you'll be sorry."
+
+@ 2.015.07
+# speaker: パンサー (%ss37)
+JP 「・・・！」
+EN "...!"
+
+@ 2.015.08
+# speaker: パンサー (%ss37)
+JP 「誰だか知らないが・・・」
+EN "I don't know who you are, but..."
+
+@ 2.015.09
+# speaker: パンサー (%ss37)
+JP 「プロだったら
+JP 　キチンとした筋道を通してから
+JP 　ここへ来い。」
+EN "If you're a pro, go through the proper channels before you come here."
+
+@ 2.015.10
+# speaker: パンサー (%ss37)
+JP 「ＵＷＨのリングは、
+JP 　真剣に格闘に取り組む者だけが
+JP 　登れる場所だ。」
+EN "The <UWH> ring is only for those who take fighting seriously."
+
+@ 2.015.11
+# speaker: パンサー (%ss37)
+JP 「パフォーマンスは通用しないぞ。」
+EN "Your little performance won't work here."
+
+@ 2.015.12
+# speaker: 沖田 (%ss132)
+JP 「それが気に入らねえんだ！！
+JP 　こっちだって大まじめじゃ！！」
+EN "That's what pisses me off! I'm dead serious too!"
+
+@ 2.015.13
+# speaker: 沖田 (%ss132)
+JP 「俺は覚悟の上でこうしてる！！」
+EN "I'm doing this knowing full well what it'll cost me!"
+
+@ 2.015.14
+# speaker: 沖田 (%ss132)
+JP 「おまえも最強を語るなら、
+JP 　この俺の挑戦を受けろ！！」
+EN "If you're going to talk about being the strongest, accept my challenge!"
+
+@ 2.015.15
+# speaker: パンサー (%ss37)
+JP 「いいだろう・・・」
+EN "All right..."
+
+@ 2.015.16
+# speaker: パンサー (%ss37)
+JP 「ここまで
+JP 　コケにされたのは初めてだ。」
+EN "No one's ever made a fool of me like this before."
+
+@ 2.015.17
+# speaker: パンサー (%ss37)
+JP 「おまえにＵＷＨの恐ろしさを
+JP 　教えてやる・・・！！」
+EN "I'll show you what <UWH> is really capable of...!"
+
+@ 2.016.00
+# speaker: 沖田 (%ss132)
+JP 「会場の皆様、お聞き下さい！！」
+EN "Ladies and gentlemen, may I have your attention!"
+
+@ 2.016.01
+# speaker: 沖田 (%ss132)
+JP 「私は、元ＯＬＩＶＥ　ＪＡＰＡＮの
+JP 　%ss132でございます！！」
+EN "I am %ss132, formerly of <OLIVE JAPAN>!"
+
+@ 2.017.00
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: 沖田 (%ss132)
+JP 「今、この場で、
+JP 　私とスーパー%ss37の
+JP 　シングルマッチが決定いたしました！！」
+EN "Here and now, a singles match between me and <Super Tiger*> has been made!"
+
+@ 2.017.01
+# speaker: 沖田 (%ss132)
+JP 「つきましては、
+JP 　試合の日時が決定次第
+JP 　ご報告いたします！！」
+EN "We'll announce the match date as soon as it's decided!"
+
+@ 2.017.02
+# speaker: 沖田 (%ss132)
+JP 「皆様、よろしくお願いします！！」
+EN "Thank you all for your support!"
+
+@ 2.018.00
+# speaker: 沖田 (%ss132)
+JP 　加川がやる気に
+JP 　なってくれたおかげで、
+EN Thanks to Kagawa getting fired up,
+
+@ 2.018.01
+# speaker: 沖田 (%ss132)
+JP 　試合までの段取りは
+JP 　驚くほどスムーズだった。
+EN everything leading up to the match went surprisingly smoothly.
+
+@ 2.018.02
+# speaker: 沖田 (%ss132)
+JP 　この時点で、
+JP 　大多数の関係者が俺のことを
+JP 　口だけの小物と思っていただろう・・・。
+EN At that point, most people in the business probably thought I was a small-timer who was all talk...
+
+@ 2.018.03
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: 沖田 (%ss132)
+JP 　スーパー%ss37は
+JP 　%ss132を秒殺するってな。
+EN That <Super Tiger*> would finish %ss132 in seconds.
+
+@ 2.018.04
+# speaker: 沖田 (%ss132)
+JP 　そうはいくか・・・！！
+EN Like hell he will...!
+
+@ 2.019.00
+# name-token: スーパー%ss37 = Super Tiger (real) / Super Panther (parody)
+# speaker: 記者
+JP 「%ss132さん、
+JP 　今日のスーパー%ss37との
+JP 　試合ですが、」
+EN "%ss132, about today's match with <Super Tiger*>..."
+
+@ 2.019.01
+# speaker: 記者
+JP 「勝算はありますか！？」
+EN "Do you think you can win?!"
+
+@ 2.019.02
+# speaker: 沖田 (%ss132)
+JP 「あんたらは
+JP 　俺が負けると思ってるんだろ？」
+EN "You all think I'm gonna lose, don't you?"
+
+@ 2.019.03
+# speaker: 沖田 (%ss132)
+JP 「俺はな、当たり前が嫌いなんだ。
+JP 　物事、やってみなけりゃ
+JP 　分からねえだろ？」
+EN "I hate the obvious. You never know until you try, right?"
+
+@ 2.019.04
+# speaker: 沖田 (%ss132)
+JP 「誰も予想していなかった
+JP 　結末にしてやるよ・・・！！」
+EN "I'll give you an ending nobody saw coming...!"
+
+@ 2.020.00
+# speaker: 沖田 (%ss132)
+JP 　膝を壊した引退レスラー・・・
+EN A retired wrestler with a wrecked knee...
+
+@ 2.020.01
+# speaker: 沖田 (%ss132)
+JP 　だがな・・・！！
+JP 　俺にだってな、一度はプロレスで
+JP 　頂点に立ったという意地がある！！
+EN But listen...! I've got my pride too. I stood at the top of pro wrestling once!
+
+@ 2.020.02
+# speaker: 沖田 (%ss132)
+JP 　ただでは終わらねえ・・・！！
+EN I won't go down quietly...!
+
+@ 2.020.03
+# speaker: 沖田 (%ss132)
+JP 　ただじゃ終わらせねえぞ！！
+EN I won't let it end quietly!
+
+@ 2.022.00
+# speaker: 沖田 (%ss132)
+JP 「%sf37
+JP 　%ss37か・・・。」
+EN "%sf37... %ss37, huh..."
+
+@ 2.022.01
+# speaker: 沖田 (%ss132)
+JP 「別に、ＶＪＰのプロレスに
+JP 　興味があるわけじゃないが、」
+EN "I'm not exactly interested in <VJP>-style wrestling, but"
+
+@ 2.022.02
+# speaker: 沖田 (%ss132)
+JP 「どれほどのものか
+JP 　一度見ておくのもいいか・・・。」
+EN "it might not hurt to see what it's all about, once."
+
+@ 2.022.03
+# speaker: 沖田 (%ss132)
+JP 　俺は、俺のプロレスと
+JP 　%ss37のプロレスが
+JP 　どう違うのか見るために、
+EN To see how my wrestling and %ss37's wrestling differ,
+
+@ 2.022.04
+# speaker: 沖田 (%ss132)
+JP 　ＶＪＰの興行に
+JP 　足を運ぶことにした。
+EN I decided to go to one of <VJP>'s shows.
+
+@ 2.022.05
+# speaker: 沖田 (%ss132)
+JP 　ほんの
+JP 　軽い気持ちだったんだ・・・
+EN I didn't think much of it at the time...
+
+@ 2.023.00
+# speaker: 沖田 (%ss132)
+JP 　これが、
+JP 　ＶＩＥＷ　ＪＡＰＡＮか・・・
+EN So this is <VIEW JAPAN>...
+
+@ 2.023.01
+# speaker: 沖田 (%ss132)
+JP 　ＯＪＰとは、やっぱり
+JP 　どことなく違うな・・・。
+EN It really is somehow different from <OJP>...
+
+@ 2.023.02
+# speaker: 沖田 (%ss132)
+JP 　Ｓ席、Ｓ席と・・・
+EN S seats, S seats...
+
+@ 2.023.03
+# speaker: 沖田 (%ss132)
+JP 　そうか！
+EN Oh, right!
+
+@ 2.023.04
+# speaker: 沖田 (%ss132)
+JP 　そういえば俺、
+JP 　チケット買ってプロレス見るのって
+JP 　初めてだったな。
+EN Come to think of it, this is the first time I've ever bought a ticket to watch wrestling.
+
+@ 2.023.05
+# speaker: 沖田 (%ss132)
+JP 　たまには客になるのも
+JP 　いいもんだ。
+EN Being a fan for once isn't bad.
+
+@ 2.024.00
+# speaker: アナウンサー
+JP 「さあ、東の入場門から・・・
+JP 　今、%ss37が
+JP 　やってまいりました。」
+EN "And now, from the east entrance... here comes %ss37."
+
+@ 2.024.01
+# speaker: アナウンサー
+JP 「いつものように、
+JP 　かろやかなステップで
+JP 　トップロープに登ります。」
+EN "Light on his feet as always, he climbs to the top rope."
+
+@ 2.025.00
+# speaker: アナウンサー
+JP 「%ss36さん、%ss37は
+JP 　調子いいみたいですね？」
+EN "%ss36, %ss37 looks to be in good shape, doesn't he?"
+
+@ 2.025.01
+# speaker: 若元 (%ss36)
+JP 「好調ですよ。
+JP 　動きにキレがあります。」
+EN "He's in great form. His movements are sharp."
+
+@ 2.025.02
+# speaker: アナウンサー
+JP 「おっと・・・！
+JP 　ちょっと待って下さい！！」
+EN "Whoa...! Wait a moment!"
+
+@ 2.026.00
+# speaker: アナウンサー
+JP 「リングサイドで、
+JP 　何か小競り合いが
+JP 　起きているようですね！？」
+EN "Looks like there's some kind of scuffle at ringside?!"
+
+@ 2.026.01
+# speaker: アナウンサー
+JP 「セコンドの
+JP 　若手選手が集まっています・・・！！」
+EN "The young boys working as seconds are gathering...!"
+
+@ 2.027.00
+# speaker: 沖田 (%ss132)
+JP 「なんだ、こら！！」
+EN "What the hell?!"
+
+@ 2.027.01
+# speaker: 沖田 (%ss132)
+JP 「俺は%ss37を
+JP 　見に来ただけだって
+JP 　言ってるだろ！！」
+EN "I told you, I just came to see %ss37!"
+
+@ 2.027.02
+# speaker: 沖田 (%ss132)
+JP 「離せ・・・
+JP 　離せって！！」
+EN "Let go... I said let go!"
+
+@ 2.027.03
+# speaker: 沖田 (%ss132)
+JP 「俺は客だ！！！」
+EN "I'm a paying customer!"
+
+@ 2.028.00
+# speaker: アナウンサー
+JP 「おおーーっと！！
+JP 　%ss132かあ！？」
+EN "Whooooa! Is that %ss132?!"
+
+@ 2.028.01
+# speaker: アナウンサー
+JP 「%ss132です！！！」
+EN "It's %ss132!"
+
+@ 2.028.02
+# speaker: アナウンサー
+JP 「ＯＪＰの%ss132が、
+JP 　ＶＪＰのリングサイドに
+JP 　現れました！！」
+EN "<OJP>'s %ss132 has shown up at ringside at <VJP>!"
+
+@ 2.028.03
+# speaker: アナウンサー
+JP 「若手選手と
+JP 　揉み合っています！！」
+EN "He's tangling with the young boys!"
+
+@ 2.029.00
+# speaker: アナウンサー
+JP 「%ss37を狙っての
+JP 　掟破りの乱入かあ！？」
+EN "Is this a rule-breaking invasion, gunning for %ss37?!"
+
+@ 2.029.01
+# speaker: 若元 (%ss36)
+JP 「大変なことですよ、
+JP 　これは・・・！！」
+EN "This is serious...!"
+
+@ 2.029.02
+# speaker: 若元 (%ss36)
+JP 「私もちょっと
+JP 　行って来ます。」
+EN "I'm going down there myself."
+
+@ 2.030.00
+# speaker: 沖田 (%ss132)
+JP 　ＯＪＰとＶＪＰが、
+JP 　犬猿の仲だってことは
+JP 　知ってたが・・・
+EN I knew <OJP> and <VJP> were at each other's throats, but...
+
+@ 2.030.01
+# speaker: 沖田 (%ss132)
+JP 　これはないんじゃないか？
+EN Isn't this a bit much?
+
+@ 2.030.02
+# speaker: 沖田 (%ss132)
+JP 　俺は試合を
+JP 　見に来ただけなんだぞ。
+EN I just came to watch the match.
+
+@ 2.031.00
+# speaker: 沖田 (%ss132)
+JP 　とにかく、その場は俺が
+JP 　会場から外へ出たことで収まった。
+EN Anyway, things calmed down once I left the arena.
+
+@ 2.031.01
+# speaker: 沖田 (%ss132)
+JP 　だけど、この騒ぎを
+JP 　マスコミが書き立てたことによって
+JP 　ＯＪＰ内部では大問題になり、
+EN But the press made a big deal of it, and it became a huge problem inside <OJP>.
+
+@ 2.031.02
+# speaker: 沖田 (%ss132)
+JP 　俺は%ss58さんから
+JP 　一ヶ月の謹慎処分を言い渡された・・・。
+EN %ss58 handed me a one-month suspension...
+
+@ 2.031.03
+# speaker: 沖田 (%ss132)
+JP 　何なんだこれ？
+EN What the hell is this?
+
+@ 2.031.04
+# speaker: 沖田 (%ss132)
+JP 　確かに、
+JP 　俺と%ss37の闘いが
+JP 　クローズアップされてた時だけに、
+EN Sure, with everyone talking about me fighting %ss37,
+
+@ 2.031.05
+# speaker: 沖田 (%ss132)
+JP 　俺の行動は軽率だった。
+EN what I did was careless.
+
+@ 2.031.06
+# speaker: 沖田 (%ss132)
+JP 　けどな、俺個人には、
+JP 　団体がどうのこうのって
+JP 　関係ないはずだろ？
+EN But promotions and all that stuff shouldn't have anything to do with me personally, right?
+
+@ 2.031.07
+# speaker: 沖田 (%ss132)
+JP 　こうなってくると、逆に
+JP 　どうしても%ss37と
+JP 　やってみたくなるよ。
+EN Now it just makes me want to fight %ss37 all the more.
+
+@ 2.031.08
+# speaker: 沖田 (%ss132)
+JP 　いいよ、今はおとなしくしてるよ。
+EN Fine, I'll keep quiet for now.
+
+@ 2.031.09
+# speaker: 沖田 (%ss132)
+JP 　でも、いずれはやるぜ、俺。
+EN But someday I'm gonna do it.
+
+@ 2.032.00
+# speaker: 沖田 (%ss132)
+JP 　一月後・・・
+JP 　謹慎の解けた俺は、
+JP 　久しぶりのリングに立つことになった。
+EN A month later... with my suspension over, I was back in the ring for the first time in a while.
+
+@ 2.032.01
+# speaker: 沖田 (%ss132)
+JP 　本来の俺なら、
+JP 　リングに戻れるということで、
+EN Normally, being able to get back in the ring
+
+@ 2.032.02
+# speaker: 沖田 (%ss132)
+JP 　踊り出すほど
+JP 　喜んだのだろうが、
+JP 　この時は、なぜか違っていた・・・。
+EN would have had me dancing for joy, but for some reason, this time was different...
+
+@ 2.033.00
+# speaker: 沖田 (%ss132)
+JP 　変だ・・・
+JP 　何なんだ、この胸騒ぎ・・・？
+EN Something's off... What's this bad feeling...?
+
+@ 2.033.01
+# speaker: 沖田 (%ss132)
+JP 　一ヶ月ぶりのリングだぞ・・・
+JP 　うれしいはずだろ・・・！？
+EN My first time in the ring in a month... I should be happy...?!
+
+@ 2.033.02
+# speaker: 沖田 (%ss132)
+JP 　どういうわけか
+JP 　今日は試合をする気になれない。
+EN For some reason, I just don't feel like fighting today.
+
+@ 2.033.03
+# speaker: 沖田 (%ss132)
+JP 　こんな気持ち
+JP 　初めてだ・・・
+EN I've never felt like this before...
+
+@ 2.035.00
+# speaker: 沖田 (%ss132)
+JP 　俺の闘いは、まだ終わらない。
+EN My fight isn't over yet.
+
+@ 2.035.01
+# speaker: 沖田 (%ss132)
+JP 　邪道の闘いは
+JP 　まだ終わっていない。
+EN The Outlaw's fight isn't over yet.
+
+@ 2.035.02
+# speaker: 沖田 (%ss132)
+JP 　俺が、どこまで
+JP 　プロレスを続けられるかは
+JP 　分からない・・・
+EN I don't know how much longer I can keep wrestling...
+
+@ 2.035.03
+# speaker: 沖田 (%ss132)
+JP 　だけど、
+JP 　人間って奴は
+JP 　可能性の生き物なんだ。
+EN But human beings are creatures of possibility.
+
+@ 2.035.04
+# speaker: 沖田 (%ss132)
+JP 　プロレスラー%ss132に
+JP 　出来ることがあれば、
+JP 　俺はどこまでも突き進む。
+EN As long as there's something pro wrestler %ss132 can do, I'll keep charging ahead.
+
+@ 2.035.05
+# speaker: 沖田 (%ss132)
+JP 　俺というレスラーの
+JP 　生き方を見て、
+EN If the fans watch the way I live as a wrestler
+
+@ 2.035.06
+# speaker: 沖田 (%ss132)
+JP 　ファンが自分の未来に
+JP 　何かの可能性を見出してくれれば、
+JP 　それ以上の幸せはないよ。
+EN and see some kind of possibility in their own future, I couldn't be happier.
+
+@ 2.035.07
+# speaker: 沖田 (%ss132)
+JP 　己の可能性を信じて突き進む。
+EN Believe in what you can do, and charge ahead.
+
+@ 2.035.08
+# speaker: 沖田 (%ss132)
+JP 　格好悪くたっていいじゃないか。
+JP 　失敗したっていいじゃないか。
+EN So what if you look uncool? So what if you fail?
+
+@ 2.035.09
+# speaker: 沖田 (%ss132)
+JP 　自分の人生に
+JP 　満足できるかどうか・・・
+EN Whether you can be satisfied with your own life...
+
+@ 2.035.10
+# speaker: 沖田 (%ss132)
+JP 　それが一番
+JP 　重要なことなんだから。
+JP 　%sf132
+EN That's what matters most.
+EN %sf132
+
+@ 2.036.00
+# speaker: 記者
+JP 「%ss55さん・・・
+JP 　本当にすさまじい試合でした！！」
+EN "%ss55... That was a truly incredible match!"
+
+@ 2.036.01
+# speaker: 記者
+JP 「%ss132選手との
+JP 　試合を終えて、
+JP 　今、どんな心境ですか！？」
+EN "How do you feel now that your match with %ss132 is over?!"
+
+@ 2.037.00
+# speaker: 小淵沢 (%ss55)
+JP 「まさか、%ss132が
+JP 　ここまでやるとは
+JP 　思わなかったね・・・。」
+EN "I never thought %ss132 would go this far..."
+
+@ 2.037.01
+# speaker: 小淵沢 (%ss55)
+JP 「完敗だよ。」
+EN "I was completely beaten."
+
+@ 2.037.02
+# speaker: 小淵沢 (%ss55)
+JP 「あいつは
+JP 　電流爆破だけの際物じゃなかった。」
+EN "He's not just some exploding-barbed-wire gimmick."
+
+@ 2.037.03
+# speaker: 小淵沢 (%ss55)
+JP 「頭に来る奴だが、
+JP 　認めないわけにはいかないな。」
+EN "He makes me mad, but I can't deny it."
+
+@ 2.039.00
+# speaker: 記者
+JP 「%ss132さん・・・！！
+JP 　本当に、本当に
+JP 　すばらしい試合でした！！」
+EN "%ss132...! That was truly, truly a fantastic match!"
+
+@ 2.039.01
+# speaker: 記者
+JP 「敗れはしましたが・・・
+JP 　私はこの試合、本年度の
+JP 　ベストバウトだと思います！！」
+EN "You may have lost... but I think this was the best bout of the year!"
+
+@ 2.039.02
+# speaker: 沖田 (%ss132)
+JP 「俺は・・・
+JP 　俺は間違ってるのか・・・？」
+EN "Am I... am I wrong...?"
+
+@ 2.039.03
+# speaker: 沖田 (%ss132)
+JP 「間違ってるのか！？」
+EN "Am I wrong?!"
+
+@ 2.039.04
+# speaker: 沖田 (%ss132)
+JP 「俺には分からん！！
+JP 　分からんから
+JP 　突き進むしかないんじゃ！！」
+EN "I don't know! And since I don't know, all I can do is keep charging ahead!"
+
+@ 2.039.05
+# speaker: 沖田 (%ss132)
+JP 「邪道は死なん！！」
+EN "The Outlaw never dies!"
+
+@ 2.039.06
+# speaker: 沖田 (%ss132)
+JP 「俺の求めるプロレスは
+JP 　まだまだこれからじゃ！！」
+EN "The wrestling I'm after is only just getting started!"
+
+@ 2.039.07
+# speaker: 沖田 (%ss132)
+JP 「邪道は死なんぞ！！」
+EN "The Outlaw will never die!"
+
+@ 2.045.00
+# speaker: 記者
+JP 「%ss132さん！！」
+EN "%ss132!"
+
+@ 2.045.01
+# speaker: 記者
+JP 「ＯＬＩＶＥ　ＪＡＰＡＮに
+JP 　乱入すると予告していますが、」
+EN "You've announced you're going to invade <OLIVE JAPAN>,"
+
+@ 2.045.02
+# speaker: 記者
+JP 「実際にターゲットとする選手は
+JP 　誰なんですか！？」
+EN "but who exactly is your target?!"
+
+@ 2.045.03
+# speaker: 記者
+JP 「やはり
+JP 　%ss44選手ですか！？」
+EN "Is it %ss44 after all?!"
+
+@ 2.045.04
+# speaker: 沖田 (%ss132)
+JP 「ＯＬＩＶＥ　ＪＡＰＡＮに
+JP 　邪道流を持ち込むことが、
+JP 　俺の最大の目的なんです。」
+EN "Bringing the outlaw style into <OLIVE JAPAN> is my biggest goal."
+
+@ 2.045.05
+# speaker: 沖田 (%ss132)
+JP 「誰ということはない。」
+EN "It's not about any one guy."
+
+@ 2.045.06
+# speaker: 沖田 (%ss132)
+JP 「メジャーのリングに
+JP 　インディーの魂を持って行く。」
+EN "I'm taking the indie spirit into the major leagues."
+
+@ 2.045.07
+# speaker: 沖田 (%ss132)
+JP 「俺は、伝導師なんです。」
+EN "I'm a missionary."
+
+@ 2.046.00
+# speaker: 小淵沢 (%ss55)
+JP 「%ss132、
+JP 　好き勝手なことを
+JP 　言ってるんじゃない。」
+EN "%ss132, don't go saying whatever you please."
+
+@ 2.046.01
+# speaker: 小淵沢 (%ss55)
+JP 「ＯＪＰには絶対、
+JP 　電流爆破は持ち込ませないぞ。」
+EN "You will never bring exploding barbed wire into <OJP>."
+
+@ 2.046.02
+# speaker: 沖田 (%ss132)
+JP 「%ss55・・・！！
+JP 　おまえ・・・！！」
+EN "%ss55...! You...!"
+
+@ 2.046.03
+# speaker: 記者
+JP 「%ss55選手！！
+JP 　ちょっと、いいですか！？」
+EN "%ss55! Can we have a moment?!"
+
+@ 2.046.04
+# speaker: 記者
+JP 「どうして
+JP 　ここへ見えられたんですか！？」
+EN "What brings you here?!"
+
+@ 2.046.05
+# speaker: 小淵沢 (%ss55)
+JP 「こいつにちょっと、
+JP 　言ってやりたいことがあるんですよ。」
+EN "There's something I want to tell this guy."
+
+@ 2.046.06
+# speaker: 小淵沢 (%ss55)
+JP 「乱入は何も、
+JP 　%ss132の専売特許というわけじゃ
+JP 　ないでしょう。」
+EN "Invading isn't %ss132's exclusive trademark, you know."
+
+@ 2.046.07
+# speaker: 小淵沢 (%ss55)
+JP 「俺だってやりますよ。
+JP 　時と場合によってはね。」
+EN "I'll do it too, when the time is right."
+
+@ 2.046.08
+# speaker: 沖田 (%ss132)
+JP 「%ss55・・・！！
+JP 　言いたいことってなんじゃ！？」
+EN "%ss55...! What is it you want to say?!"
+
+@ 2.046.09
+# speaker: 小淵沢 (%ss55)
+JP 「%ss132、よく聞け。
+JP 　俺はおまえに
+JP 　挑戦状を叩きつける。」
+EN "%ss132, listen up. I'm throwing down a challenge to you."
+
+@ 2.046.10
+# speaker: 小淵沢 (%ss55)
+JP 「俺と邪道流抜きで勝負しろ。」
+EN "Fight me without the outlaw stuff."
+
+@ 2.046.11
+# speaker: 小淵沢 (%ss55)
+JP 「金網と爆破という装飾品抜きで、
+JP 　俺と闘うんだ。」
+EN "No cage, no explosions, no decorations. Just you and me."
+
+@ 2.046.12
+# speaker: 小淵沢 (%ss55)
+JP 「おまえに
+JP 　その度胸があるか？」
+EN "Have you got the guts for that?"
+
+@ 2.046.13
+# speaker: 記者
+JP 「%ss55さん・・・！！」
+EN "%ss55...!"
+
+@ 2.046.14
+# speaker: 記者
+JP 「そ、それは、ＯＪＰの選手として
+JP 　正式に%ss132選手と
+JP 　闘うということですか！？」
+EN "D-do you mean you'll officially fight %ss132 as an <OJP> wrestler?!"
+
+@ 2.046.15
+# speaker: 小淵沢 (%ss55)
+JP 「ＯＪＰのマットには、
+JP 　%ss58さんや
+JP 　%ss59さんが作り、」
+EN "On the <OJP> mat, there's a tradition built up by %ss58 and %ss59,"
+
+@ 2.046.16
+# speaker: 小淵沢 (%ss55)
+JP 「守ってきた伝統みたいなものが
+JP 　あるんですよ。
+JP 　邪道は絶対に持ち込ませません。」
+EN "and protected over the years. I'll never let outlaw stuff in there."
+
+@ 2.046.17
+# speaker: 小淵沢 (%ss55)
+JP 「どうだ、%ss132？」
+EN "How about it, %ss132?"
+
+@ 2.046.18
+# speaker: 小淵沢 (%ss55)
+JP 「先にこっちから仕掛ければ、
+JP 　おまえはＯＪＰ流で
+JP 　闘わざるを得ないだろう？」
+EN "If we make the first move, you'll have no choice but to fight <OJP>-style, right?"
+
+@ 2.046.19
+# speaker: 小淵沢 (%ss55)
+JP 「断れば、
+JP 　おまえは逃げたことに
+JP 　なるんだからな。」
+EN "Turn it down, and you'll have run away."
+
+@ 2.046.20
+# speaker: 沖田 (%ss132)
+JP 「面白いのう、
+JP 　%ss55のおっさんよ・・・！！」
+EN "Now that's interesting, old man %ss55...!"
+
+@ 2.046.21
+# speaker: 沖田 (%ss132)
+JP 「その勝負、
+JP 　この%ss132！！
+JP 　受けて立つわ！！」
+EN "This %ss132 accepts your challenge!"
+
+@ 2.046.22
+# speaker: 沖田 (%ss132)
+JP 「邪道の魂は
+JP 　俺の胸の中にある！！」
+EN "The outlaw spirit lives right here in my chest!"
+
+@ 2.046.23
+# speaker: 沖田 (%ss132)
+JP 「ＯＪＰのリングで
+JP 　その魂を見せてやるわ！！」
+EN "I'll show that spirit in the <OJP> ring!"
+
+@ 2.047.00
+# speaker: 沖田 (%ss132)
+JP 　まさか、%ss55のおっさんが
+JP 　こういうやり方に出てくるとは
+JP 　思わなかった。
+EN I never thought old man %ss55 would come at me like this.
+
+@ 2.047.01
+# speaker: 沖田 (%ss132)
+JP 　ある意味、ＯＪＰサイドに踊らされた
+JP 　格好となったが、
+JP 　これだからプロレスは面白い。
+EN In a way, <OJP> played me, but that's what makes pro wrestling fun.
+
+@ 2.047.02
+# speaker: 沖田 (%ss132)
+JP 　不肖の息子の里帰りじゃ！！
+EN The black sheep is coming home!
+
+@ 2.047.03
+# speaker: 沖田 (%ss132)
+JP 　ＯＪＰのリングに
+JP 　インディー魂を見せるため、
+EN To show the <OJP> ring what the indie spirit is,
+
+@ 2.047.04
+# speaker: 沖田 (%ss132)
+JP 　俺は命をかけて闘う！！
+EN I'll fight with my life on the line!
+
+@ 2.049.00
+# speaker: 沖田 (%ss132)
+JP 　%ss15戦によって、
+JP 　邪道復活の
+JP 　確かな手ごたえをつかんだ俺は、
+EN The %ss15 match gave me a real feel that the Outlaw was back,
+
+@ 2.049.01
+# speaker: 沖田 (%ss132)
+JP 　次なる目標を
+JP 　古巣、ＯＬＩＶＥ　ＪＡＰＡＮのマットと
+JP 　決めた。
+EN and I set my next target: my old home, the <OLIVE JAPAN> mat.
+
+@ 2.049.02
+# speaker: 沖田 (%ss132)
+JP 　しかし、勢いづく俺の目の前に、
+JP 　思わぬ伏兵が現れる・・・！
+EN But just as I got on a roll, an unexpected enemy appeared in front of me...!
+
+@ 2.050.00
+# speaker: 記者
+JP 「%ss2選手に
+JP 　お聞きします。」
+EN "A question for %ss2."
+
+@ 2.050.01
+# speaker: 記者
+JP 「%ss132選手が、
+JP 　今度はＯＪＰのマットに行くと
+JP 　言っていますが、」
+EN "%ss132 says he's going to the <OJP> mat next,"
+
+@ 2.050.02
+# speaker: 記者
+JP 「それについて
+JP 　どう思われますか？」
+EN "What do you think about that?"
+
+@ 2.051.00
+# speaker: 慶介 (%ss2)
+JP 「ＯＪＰに行くとか
+JP 　どうとか、
+JP 　結局は逃げるつもりだろ？」
+EN "Going to <OJP> or whatever, he's just going to run off in the end, right?"
+
+@ 2.051.01
+# speaker: 慶介 (%ss2)
+JP 「あの乱入は、いったい
+JP 　何だったのかってことですよ。
+JP 　アレをうやむやには出来ないね。」
+EN "What was that invasion about, then? I can't let that slide."
+
+@ 2.051.02
+# speaker: 慶介 (%ss2)
+JP 「引退したけど、
+JP 　またプロレスやりたくなったから
+JP 　リングに戻って来たなんて、」
+EN "You retire, then come back to the ring because you feel like wrestling again..."
+
+@ 2.051.03
+# speaker: 慶介 (%ss2)
+JP 「それは引退じゃない。」
+EN "That's not retiring."
+
+@ 2.051.04
+# speaker: 慶介 (%ss2)
+JP 「しかも、
+JP 　%ss15とやったでしょう。」
+EN "And on top of that, he fought %ss15."
+
+@ 2.051.05
+# speaker: 慶介 (%ss2)
+JP 「%ss15は、
+JP 　ウエイトは違うが
+JP 　俺も狙っていたんだ。」
+EN "%ss15 is in a different weight class, but I was after him too."
+
+@ 2.051.06
+# speaker: 慶介 (%ss2)
+JP 「それで黙っていられるほど
+JP 　俺は人間が出来ちゃいない。」
+EN "I'm not a good enough man to keep quiet about that."
+
+@ 2.051.07
+# speaker: 慶介 (%ss2)
+JP 「正直、マジで
+JP 　ぶち殺すつもりでいますよ。」
+EN "Honestly, I'm seriously planning to kill him."
+
+@ 2.051.08
+# speaker: 記者
+JP 「具体的には、
+JP 　%ss132選手に
+JP 　挑戦状を送るとか、」
+EN "Specifically, will you send %ss132 a challenge,"
+
+@ 2.051.09
+# speaker: 記者
+JP 「何か
+JP 　対戦に向けての動きは
+JP 　あるんでしょうか？」
+EN "or make some other move toward a match?"
+
+@ 2.051.10
+# speaker: 慶介 (%ss2)
+JP 「ああっ！？
+JP 　それは違うだろう！！」
+EN "Huh?! You've got that backwards!"
+
+@ 2.051.11
+# speaker: 慶介 (%ss2)
+JP 「何で俺が
+JP 　奴に挑戦しなくちゃならないんだ！？
+JP 　格でも実力でも俺の方が上だ！！」
+EN "Why should I challenge him?! I'm above him in rank and in skill!"
+
+@ 2.051.12
+# speaker: 慶介 (%ss2)
+JP 「あいつがこれ以上、ＶＪＰマットを
+JP 　かき回すようなことがあったら
+JP 　俺がやる！！」
+EN "If he messes with the <VJP> mat any more, I'll take care of him!"
+
+@ 2.051.13
+# speaker: 慶介 (%ss2)
+JP 「やったら潰す！！
+JP 　それだけだ！！」
+EN "If we fight, I crush him! That's all there is to it!"
+
+@ 2.052.00
+# speaker: 沖田 (%ss132)
+JP 　%ss2・・・
+EN %ss2...
+
+@ 2.052.01
+# speaker: 沖田 (%ss132)
+JP 　こいつは目障りな男じゃのう。
+EN This guy's a real eyesore.
+
+@ 2.052.02
+# speaker: 沖田 (%ss132)
+JP 　そういえばこいつは、
+JP 　俺がＶＪＰのマットに乱入した時も
+JP 　一番最初につっかかって来たな。
+EN Come to think of it, when I crashed the <VJP> mat, he was the first to get in my face.
+
+@ 2.052.03
+# speaker: 沖田 (%ss132)
+JP 　上等じゃ・・・！！
+EN Bring it on...!
+
+@ 2.052.04
+# speaker: 沖田 (%ss132)
+JP 　ＯＪＰに行く前に
+JP 　おまえを血祭りに上げてやる！！
+EN Before I go to <OJP>, I'll make an example out of you!
+
+@ 2.052.05
+# speaker: 沖田 (%ss132)
+JP 　邪道流あいさつ！！
+JP 　受け取れ%ss2！！
+EN An outlaw-style greeting! Take it, %ss2!
+
+@ 2.053.00
+# speaker: アナウンサー
+JP 「%ss132です・・・！！
+JP 　邪道%ss132が
+JP 　再びＶＪＰマットに出現しました！！」
+EN "It's %ss132...! The Outlaw %ss132 has appeared on the <VJP> mat again!"
+
+@ 2.054.00
+# speaker: アナウンサー
+JP 「リング上の%ss2と
+JP 　にらみ合いのまま動きません！！」
+EN "He and %ss2 in the ring are just glaring at each other, not moving!"
+
+@ 2.054.01
+# speaker: アナウンサー
+JP 「%ss132！！
+JP 　今度の狙いは%ss2かあ！？」
+EN "%ss132! Is %ss2 his target this time?!"
+
+@ 2.055.00
+# speaker: 慶介 (%ss2)
+JP 「なんだおまえ！！
+JP 　ぶっ殺すぞ
+JP 　このやろう！！」
+EN "What the hell are you?! I'll kill you, you bastard!"
+
+@ 2.056.00
+# speaker: アナウンサー
+JP 「ああーーーっと！！
+JP 　%ss2！！%ss132に
+JP 　強烈なエルボーだあ！！」
+EN "Ohhhh! %ss2 hits %ss132 with a brutal elbow!"
+
+@ 2.056.01
+# speaker: アナウンサー
+JP 「%ss2！！
+JP 　%ss132に
+JP 　激しく蹴りを浴びせます！！」
+EN "%ss2! A storm of kicks on %ss132!"
+
+@ 2.056.02
+# speaker: アナウンサー
+JP 「なんだああーーーっ！！？」
+EN "What the-?!"
+
+@ 2.056.03
+# speaker: アナウンサー
+JP 「%ss132！！火を噴きました！！！
+JP 　紅蓮の炎が
+JP 　%ss2の顔面を直撃！！！」
+EN "%ss132 breathes fire! Crimson flames right in %ss2's face!"
+
+@ 2.057.00
+# speaker: 沖田 (%ss132)
+JP 　%ss2！！
+JP 　これは邪道流の対戦表明じゃ！！
+EN %ss2! That's an outlaw-style declaration of war!
+
+@ 2.057.01
+# speaker: 沖田 (%ss132)
+JP 　俺は逃げも隠れもせん！！
+JP 　おまえが俺との死闘をのぞむなら
+JP 　徹底的に邪道流で受けてやる！！
+EN I won't run or hide! If you want a fight to the death with me, I'll take you on, outlaw style all the way!
+
+@ 2.057.02
+# speaker: 沖田 (%ss132)
+JP 　花火の中で死ぬんじゃ！！
+JP 　%ss2！！
+EN You'll die in the fireworks, %ss2!
+
+@ 2.058.00
+# speaker: 記者
+JP 「%ss2選手！！
+JP 　ちょっと・・・いいですか！？」
+EN "%ss2! Do you have a moment...?!"
+
+@ 2.058.01
+# speaker: 記者
+JP 「%ss132選手との対戦は
+JP 　どうなるんでしょうか！？」
+EN "What's going to happen with a match against %ss132?!"
+
+@ 2.059.00
+# speaker: 慶介 (%ss2)
+JP 「%ss132は・・・
+JP 　ただのバカだ！！」
+EN "%ss132 is... just an idiot!"
+
+@ 2.059.01
+# speaker: 慶介 (%ss2)
+JP 「こんなの・・・おまえ！！
+JP 　絶対ゆるさねえ！！」
+EN "This... You! I'll never forgive this!"
+
+@ 2.059.02
+# speaker: 慶介 (%ss2)
+JP 「何でも来い！！」
+EN "Bring on anything!"
+
+@ 2.059.03
+# speaker: 慶介 (%ss2)
+JP 「何でもやれって言ってんだ！！
+JP 　絶対ぶっ殺してやる！！」
+EN "I said he can bring anything he wants! I'll kill him!"
+
+@ 2.059.04
+# speaker: 慶介 (%ss2)
+JP 「%ss132！！
+JP 　ぶっ殺してやるぞ！！」
+EN "%ss132! I'm going to kill you!"
+
+@ 2.060.00
+# speaker: 沖田 (%ss132)
+JP 　%ss2が
+JP 　怒り狂ったことによって、
+EN With %ss2 going berserk,
+
+@ 2.060.01
+# speaker: 沖田 (%ss132)
+JP 　俺と%ss2の電流爆破マッチは
+JP 　急ピッチで実現した。
+EN the exploding barbed wire match between me and %ss2 came together fast.
+
+@ 2.060.02
+# speaker: 沖田 (%ss132)
+JP 　まあ、おそらくＶＪＰのお偉方は、
+EN Well, the bigwigs at <VJP> probably figured
+
+@ 2.060.03
+# speaker: 沖田 (%ss132)
+JP 　興行的に考えて、
+JP 　%ss132は商売になると
+JP 　判断したんだろう。
+EN from a business standpoint that %ss132 would be good for their shows.
+
+@ 2.060.04
+# speaker: 沖田 (%ss132)
+JP 　とにかく、
+JP 　予定外の試合となったが
+JP 　やるからには勝つ！！
+EN Anyway, it's a match I didn't plan on, but if I'm doing it, I'm winning!
+
+@ 2.060.05
+# speaker: 沖田 (%ss132)
+JP 　%ss2！！
+JP 　命を賭ける闘いが
+JP 　どういうものか教えてやる！！
+EN %ss2! I'll teach you what it means to fight with your life on the line!
+
+@ 2.066.00
+# speaker: 沖田 (%ss132)
+JP 　%ss2との
+JP 　壮絶な闘いは終わった・・・
+EN My brutal battle with %ss2 was over...
+
+@ 2.066.01
+# speaker: 沖田 (%ss132)
+JP 　俺は満身創痍だったが、
+JP 　こんなところで立ち止まっては
+JP 　いられない。
+EN I was beaten up all over, but I couldn't stop here.
+
+@ 2.066.02
+# speaker: 沖田 (%ss132)
+JP 　俺はすでに、
+JP 　ＯＪＰのマットに乱入すると
+JP 　公言している。
+EN I'd already said publicly I was going to invade the <OJP> mat.
+
+@ 2.066.03
+# speaker: 沖田 (%ss132)
+JP 　ここまで来たら
+JP 　何が何でも突き進むのみ・・・！！
+EN Now that it's come this far, all I can do is charge ahead, whatever it takes...!
+
+@ 2.066.04
+# speaker: 沖田 (%ss132)
+JP 　邪道流の里帰りじゃ！！
+EN The outlaw style is coming home!
+
+@ 2.068.00
+# speaker: 記者
+JP 「%ss132さん・・・！！
+JP 　すばらしい試合でした！！」
+EN "%ss132...! That was a fantastic match!"
+
+@ 2.068.01
+# speaker: 記者
+JP 「%ss15選手に
+JP 　勝ちましたよ！！
+JP 　今の心境をお聞かせ下さい！！」
+EN "You beat %ss15! Tell us how you feel!"
+
+@ 2.068.02
+# speaker: 沖田 (%ss132)
+JP 「俺は・・・
+JP 　俺は命をかけて闘った！！
+JP 　闘ったんじゃ！！」
+EN "I... I fought with my life on the line! I fought!"
+
+@ 2.068.03
+# speaker: 沖田 (%ss132)
+JP 「メジャーとか、インディーとか、
+JP 　プロレスにボーダーなんて
+JP 　ないんじゃ！！」
+EN "Major, indie... There are no borders in pro wrestling!"
+
+@ 2.068.04
+# speaker: 沖田 (%ss132)
+JP 「俺は
+JP 　それを証明した！！」
+EN "And I proved it!"
+
+@ 2.068.05
+# speaker: 記者
+JP 「%ss132さん！！
+JP 　これからも、ＶＪＰマットで
+JP 　闘っていかれるおつもりですか！？」
+EN "%ss132! Do you plan to keep fighting on the <VJP> mat?!"
+
+@ 2.068.06
+# speaker: 記者
+JP 「今後の活動は
+JP 　どうなされるんですか！？」
+EN "What are your plans from here?!"
+
+@ 2.068.07
+# speaker: 沖田 (%ss132)
+JP 「俺はＯＪＰに行く・・・」
+EN "I'm going to <OJP>..."
+
+@ 2.068.08
+# speaker: 記者
+JP 「はあ・・・！？」
+EN "Huh...?!"
+
+@ 2.068.09
+# speaker: 沖田 (%ss132)
+JP 「次の狙いはＯＪＰじゃ！！」
+EN "My next target is <OJP>!"
+
+@ 2.068.10
+# speaker: 沖田 (%ss132)
+JP 「俺は
+JP 　古巣のマット、」
+EN "I'm going to my old home mat,"
+
+@ 2.068.11
+# speaker: 沖田 (%ss132)
+JP 「ＯＪＰに
+JP 　インディー魂を植え付けに行く！！」
+EN "to plant the indie spirit in <OJP>!"
+
+@ 2.070.00
+# speaker: 記者
+JP 「%ss15選手！！
+JP 　すさまじい試合でした！！」
+EN "%ss15! What an incredible match!"
+
+@ 2.070.01
+# speaker: 記者
+JP 「%ss132選手を倒した
+JP 　今の感想をお聞かせ下さい！！」
+EN "How does it feel to have beaten %ss132?!"
+
+@ 2.071.00
+# speaker: カイザー (%ss15)
+JP 「感想も何も、
+JP 　勝って当たり前ですよ。
+JP 　負けるわけない。」
+EN "How does it feel? I was supposed to win. No way I'd lose."
+
+@ 2.071.01
+# speaker: カイザー (%ss15)
+JP 「まあ、%ss132は
+JP 　よくやりましたね。
+JP 　意地と言うか。」
+EN "Well, %ss132 did a good job. He showed some guts, I'll say that."
+
+@ 2.071.02
+# speaker: カイザー (%ss15)
+JP 「そういうのは感じた。」
+EN "I felt that much from him."
+
+@ 2.071.03
+# speaker: カイザー (%ss15)
+JP 「でもね、電流は違うよ、
+JP 　やっぱり。」
+EN "But the electric stuff... that's something else, really."
+
+@ 2.071.04
+# speaker: 記者
+JP 「%ss132選手が、
+JP 　再戦を要求して来たら
+JP 　受けてたちますか？」
+EN "If %ss132 demands a rematch, will you accept?"
+
+@ 2.071.05
+# speaker: カイザー (%ss15)
+JP 「俺はね、いいけどね。
+JP 　その前に%ss2がやるでしょ。」
+EN "Me, I'm fine with it. But %ss2 will get to him first."
+
+@ 2.071.06
+# speaker: カイザー (%ss15)
+JP 「あいつがやる。
+JP 　%ss132は
+JP 　それで本当に終わりだよ。」
+EN "He'll take him on. And that'll really be the end of %ss132."
+
+@ 2.072.00
+# speaker: 沖田 (%ss132)
+JP 　俺は%ss15に負けた・・・
+EN I lost to %ss15...
+
+@ 2.072.01
+# speaker: 沖田 (%ss132)
+JP 　だが、メジャーのリングで
+JP 　俺は電流爆破をやった！！
+JP 　そして生き延びた・・・！！
+EN But I wrestled an exploding barbed wire match in a major ring! And I survived...!
+
+@ 2.072.02
+# speaker: 沖田 (%ss132)
+JP 　ＶＪＰのリングに、確かに
+JP 　%ss132の足跡は残ったんじゃ！！
+EN %ss132 left his mark on the <VJP> ring, no doubt about it!
+
+@ 2.072.03
+# speaker: 沖田 (%ss132)
+JP 　次はＯＪＰじゃ・・・！！
+EN Next up is <OJP>...!
+
+@ 2.072.04
+# speaker: 沖田 (%ss132)
+JP 　もう一つのメジャー、
+JP 　俺の次なる目標は、
+EN The other major. My next target...
+
+@ 2.072.05
+# speaker: 沖田 (%ss132)
+JP 　古巣、
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮのマットじゃ！！
+EN ...is my old home, the <OLIVE JAPAN> mat!
+
+@ 2.078.00
+# speaker: 記者
+JP 「%ss132さん・・・！！
+JP 　ちょ、ちょっと
+JP 　待って下さい！！」
+EN "%ss132...! W-Wait a moment, please!"
+
+@ 2.078.01
+# speaker: 記者
+JP 「今回の
+JP 　ＶＪＰマットへの
+JP 　突然の乱入は、」
+EN "This sudden run-in on the <VJP> mat..."
+
+@ 2.078.02
+# speaker: 記者
+JP 「プロレスラー%ss132の
+JP 　復活と考えて
+JP 　いいのでしょうか！？」
+EN "...does it mean the return of %ss132 the pro wrestler?!"
+
+@ 2.078.03
+# speaker: 沖田 (%ss132)
+JP 「他に何があるんじゃ！！」
+EN "What else would it mean?!"
+
+@ 2.078.04
+# speaker: 沖田 (%ss132)
+JP 「俺は、今の混沌としたプロレス界を
+JP 　活性化させるために戻って来た！！」
+EN "I came back to shake up the chaos the wrestling world is in right now!"
+
+@ 2.078.05
+# speaker: 沖田 (%ss132)
+JP 「メジャーのリングに、
+JP 　インディーズ魂を見せつけるために
+JP 　戻って来たんじゃ！！」
+EN "I came back to rub the majors' noses in some indie spirit!"
+
+@ 2.078.06
+# speaker: 記者
+JP 「%ss15選手の
+JP 　名前を出しましたが、」
+EN "You named %ss15..."
+
+@ 2.078.07
+# speaker: 記者
+JP 「どういった理由で
+JP 　%ss15選手なんでしょうか！？
+JP 　理由を聞かせて下さい！！」
+EN "Why %ss15, of all people?! Please tell us why!"
+
+@ 2.078.08
+# speaker: 沖田 (%ss132)
+JP 「俺は昔、ＯＪＰで
+JP 　ジュニアのトップまで登り詰めた！！」
+EN "Back in <OJP>, I climbed all the way to the top of the junior division!"
+
+@ 2.078.09
+# speaker: 沖田 (%ss132)
+JP 「今のジュニアはどうなんじゃ！？」
+EN "And how about the juniors now?!"
+
+@ 2.078.10
+# speaker: 沖田 (%ss132)
+JP 「今、メジャーでもっとも
+JP 　ジュニアの頂点に近い男と言ったら、
+JP 　%ss15しかいないだろう！！」
+EN "If you ask who in the majors is closest to the top of the juniors, it's %ss15, nobody else!"
+
+@ 2.078.11
+# speaker: 沖田 (%ss132)
+JP 「%ss15さんよう！！」
+EN "Hey, %ss15!"
+
+@ 2.078.12
+# speaker: 沖田 (%ss132)
+JP 「まさか
+JP 　この%ss132との対戦、
+JP 　逃げたりはせんじゃろうな！？」
+EN "You're not gonna run from a match with %ss132, are you?!"
+
+@ 2.079.00
+# speaker: 沖田 (%ss132)
+JP 　ＶＪＰサイドは初め、
+JP 　俺のことを
+JP 『レスラーとは認めない』として、
+EN At first, the <VJP> side said they "didn't recognize me as a wrestler"...
+
+@ 2.079.01
+# speaker: 沖田 (%ss132)
+JP 　俺の
+JP 　%ss15への
+JP 　挑戦を跳ね除けた。
+EN ...and turned down my challenge to %ss15.
+
+@ 2.079.02
+# speaker: 沖田 (%ss132)
+JP 　しかし、
+JP 　%ss15個人の記者会見により
+JP 　その流れは一気に変わる・・・！
+EN But %ss15's own press conference changed everything in one stroke...!
+
+@ 2.080.00
+# speaker: 記者
+JP 「%ss15選手！！
+JP 　%ss15戦実現への
+JP 　%ss132選手の一連の行動ですが、」
+EN "%ss15! About %ss132's whole campaign for a match with %ss15..."
+
+@ 2.080.01
+# speaker: 記者
+JP 「%ss15選手自身は、
+JP 　どのようにお考えですか！？」
+EN "What do you think of it yourself, %ss15?!"
+
+@ 2.081.00
+# speaker: カイザー (%ss15)
+JP 「何ですかね、アレは？」
+EN "What is that guy's deal?"
+
+@ 2.081.01
+# speaker: カイザー (%ss15)
+JP 「%ss2がね、
+JP 　%ss132を『ぶっ殺す』って
+JP 　言ってるんですよ。」
+EN "%ss2's been saying he's gonna 'kill' %ss132."
+
+@ 2.081.02
+# speaker: カイザー (%ss15)
+JP 「でもね、
+JP 　その前に俺がやりますよ。」
+EN "But I'll get to him first."
+
+@ 2.081.03
+# speaker: 記者
+JP 「%ss132選手は、
+JP 　デスマッチ形式を
+JP 　要求しているようですが・・・」
+EN "%ss132 seems to be demanding a deathmatch..."
+
+@ 2.081.04
+# speaker: カイザー (%ss15)
+JP 「どうでもいいよ、そんなの。
+JP 　あそこまでコケにされたらね。」
+EN "I don't care about that. Not after he made a fool of me like that."
+
+@ 2.081.05
+# speaker: カイザー (%ss15)
+JP 「あんな乱入、クソじゃねえか！！」
+EN "That run-in was garbage!"
+
+@ 2.081.06
+# speaker: カイザー (%ss15)
+JP 「%ss132！！
+JP 　逃がさねえから覚悟しておけよ！！」
+EN "%ss132! I'm not letting you get away, so get ready!"
+
+@ 2.082.00
+# speaker: 沖田 (%ss132)
+JP 　言うのう、%ss15・・・！
+EN Big talk, %ss15...!
+
+@ 2.082.01
+# speaker: 沖田 (%ss132)
+JP 　本人さえやる気になれば
+JP 　話は早い。
+EN As long as he wants it, things move fast.
+
+@ 2.082.02
+# speaker: 沖田 (%ss132)
+JP 　この%ss15発言により、
+JP 　世論はますます盛り上がり、
+EN %ss15's words got the public even more fired up,
+
+@ 2.082.03
+# speaker: 沖田 (%ss132)
+JP 　ＶＪＰサイドはついに、
+JP 　%ss132対%ss15の
+JP 　シングルマッチを決定した・・・！
+EN and the <VJP> side finally booked a singles match, %ss132 vs. %ss15...!
+
+@ 2.082.04
+# speaker: 沖田 (%ss132)
+JP 　しかも、電流爆破マッチじゃ！！
+EN And an exploding barbed wire match, at that!
+
+@ 2.082.05
+# speaker: 沖田 (%ss132)
+JP 　俺はインディーの代表として、
+JP 　メジャーの壁を破壊したんじゃ！！
+EN As the face of the indies, I broke down the wall of the majors!
+
+@ 2.083.00
+# speaker: 沖田 (%ss132)
+JP 　メジャーとか、
+JP 　インディーとか・・・
+EN Majors, indies...
+
+@ 2.083.01
+# speaker: 沖田 (%ss132)
+JP 　そういったプロレス界の
+JP 　ボーダーラインを破壊するため、
+JP 　俺は復活した！！
+EN I came back to destroy those borderlines in the wrestling world!
+
+@ 2.083.02
+# speaker: 沖田 (%ss132)
+JP 　この試合は負けんのじゃ！！
+EN I can't lose this match!
+
+@ 2.083.03
+# speaker: 沖田 (%ss132)
+JP 　俺が負ければ、
+JP 　全てのインディーレスラーが
+JP 　なめられる！！
+EN If I lose, every indie wrestler gets looked down on!
+
+@ 2.083.04
+# speaker: 沖田 (%ss132)
+JP 　絶対に勝つ！！
+EN I'll win, no matter what!
+
+@ 2.085.00
+# speaker: 街行く人
+JP 「あの、すみません。
+JP 　プロレスラーの
+JP 　%ss132さんですよね？」
+EN "Um, excuse me. You're %ss132, the pro wrestler, right?"
+
+@ 2.085.01
+# speaker: 沖田 (%ss132)
+JP 「そうだけど？」
+EN "Yeah, why?"
+
+@ 2.085.02
+# speaker: 街行く人
+JP 「サインもらえませんか？」
+EN "Could I have your autograph?"
+
+@ 2.085.03
+# speaker: 沖田 (%ss132)
+JP 「ああ、いいよ。」
+EN "Sure, no problem."
+
+@ 2.085.04
+# speaker: 街行く人
+JP 「ありがとうございます！」
+EN "Thank you so much!"
+
+@ 2.086.00
+# speaker: 沖田 (%ss132)
+JP 　プロレスラーの
+JP 　%ss132さん・・・か。
+EN %ss132, the pro wrestler... huh.
+
+@ 2.086.01
+# speaker: 沖田 (%ss132)
+JP 　プロレスをやめて３年・・・
+EN Three years since I quit wrestling...
+
+@ 2.086.02
+# speaker: 沖田 (%ss132)
+JP 　確かに芸能活動をしていた
+JP 　この３年は、
+JP 　それなりに有意義だった・・・。
+EN Sure, these three years in show business have meant something...
+
+@ 2.086.03
+# speaker: 沖田 (%ss132)
+JP 　今まで出来なかったことや、
+JP 　新しいことにも
+JP 　どんどんチャレンジした。
+EN I tried things I never could before, and took on one new challenge after another.
+
+@ 2.086.04
+# speaker: 沖田 (%ss132)
+JP 　けれど・・・
+JP 　この不完全燃焼感はなんだ？
+EN And yet... what is this feeling that I never burned all the way out?
+
+@ 2.086.05
+# speaker: 沖田 (%ss132)
+JP 　世間からすれば、
+JP 　やっぱり俺はプロレスラーなんだ。
+EN To the world, I'm still a pro wrestler.
+
+@ 2.086.06
+# speaker: 沖田 (%ss132)
+JP 　プロレスラーの
+JP 　%sf132・・・
+EN %sf132, the pro wrestler...
+
+@ 2.086.07
+# speaker: 沖田 (%ss132)
+JP 　俺の心のどこかには、まだ
+JP 　プロレスに対しての未練がある・・・。
+EN Somewhere in my heart, I still can't let go of wrestling...
+
+@ 2.087.00
+# speaker: 沖田 (%ss132)
+JP 　俺は密かに
+JP 　復帰の準備を始めた。
+EN I quietly began getting ready for a comeback.
+
+@ 2.087.01
+# speaker: 沖田 (%ss132)
+JP 　確かに俺は
+JP 　プロレスを引退した。
+JP 　あの時の気持ちに偽りはない。
+EN Yes, I retired from wrestling. And I meant it at the time.
+
+@ 2.087.02
+# speaker: 沖田 (%ss132)
+JP 　だけど・・・
+JP 　人間である以上、時の流れとともに
+JP 　考え方は変わって行く・・・！
+EN But... people are human. As time goes by, the way you think changes...!
+
+@ 2.087.03
+# speaker: 沖田 (%ss132)
+JP 　やっぱり俺はプロレスラーなんだ！！
+JP 　プロレスが大好きなんじゃ！！
+EN I'm a pro wrestler after all! I love pro wrestling!
+
+@ 2.087.04
+# speaker: 沖田 (%ss132)
+JP 　誰だって一生に一度くらいは、
+JP 　嘘をついたことがあるだろう？
+EN Everybody's told a lie at least once in their life, right?
+
+@ 2.087.05
+# speaker: 沖田 (%ss132)
+JP 　俺は例え、
+JP 　周りから『大嘘つき』と罵られようと、
+EN Even if people call me a "big fat liar"...
+
+@ 2.087.06
+# speaker: 沖田 (%ss132)
+JP 　もう一度
+JP 　プロレスで生きて行くことに決めた！！
+EN I've decided to live by wrestling one more time!
+
+@ 2.087.07
+# speaker: 沖田 (%ss132)
+JP 　プロレスラー
+JP 　%sf132の
+JP 　復活じゃ！！
+EN Pro wrestler %sf132 is back!
+
+@ 2.088.00
+# speaker: アナウンサー
+JP 「ああっ・・・！？」
+EN "Ahh...?!"
+
+@ 2.088.01
+# speaker: アナウンサー
+JP 「%ss132です・・・！！
+JP 　%sf132が
+JP 　ＶＪＰのリングに現れました！！」
+EN "It's %ss132...! %sf132 has shown up in the <VJP> ring!"
+
+@ 2.089.00
+# speaker: アナウンサー
+JP 「引退したはずの『邪道』が
+JP 　ＶＪＰのリングに乱入だ！！」
+EN "The 'Outlaw', who was supposed to be retired, has stormed the <VJP> ring!"
+
+@ 2.089.01
+# speaker: アナウンサー
+JP 「いったい
+JP 　何が起こったんだあ！？」
+EN "What on earth is going on?!"
+
+@ 2.090.00
+# speaker: 沖田 (%ss132)
+JP 「%ss132じゃ！！」
+EN "It's %ss132!"
+
+@ 2.090.01
+# speaker: 沖田 (%ss132)
+JP 「メジャーのジュニアの頂点が、
+JP 　どの程度のものか見るために
+JP 　ＶＪＰのリングに参ったぞ！！」
+EN "I've come to the <VJP> ring to see what the top of the major juniors is worth!"
+
+@ 2.091.00
+# speaker: 沖田 (%ss132)
+JP 「俺は%ss15に挑戦する！！」
+EN "I'm challenging %ss15!"
+
+@ 2.091.01
+# speaker: 沖田 (%ss132)
+JP 「ＶＪＰさんよう！！
+JP 　イエスかノーか
+JP 　即刻返答せい！！」
+EN "Hey, <VJP>! Yes or no?! Answer me right now!"
+
+@ 2.092.00
+# speaker: 慶介 (%ss2)
+JP 「%ss132！！
+JP 　てめえ！！」
+EN "%ss132! You bastard!"
+
+@ 2.092.01
+# speaker: 慶介 (%ss2)
+JP 「自分が何してるのか
+JP 　分かってんのか！？」
+EN "Do you even know what you're doing?!"
+
+@ 2.092.02
+# speaker: 慶介 (%ss2)
+JP 「おまえ、引退してるじゃねえか！！
+JP 　今すぐリングを降りろ！！」
+EN "You're retired! Get out of the ring right now!"
+
+@ 2.093.00
+# speaker: 沖田 (%ss132)
+JP 「なんじゃ！！
+JP 　おまえ！！」
+EN "What?! Who the hell are you?!"
+
+@ 2.094.00
+# speaker: アナウンサー
+JP 「ああーーっと！！」
+EN "Ohhh!!"
+
+@ 2.094.01
+# speaker: アナウンサー
+JP 「%ss132！！
+JP 　いきなり%ss2に
+JP 　ヘッドバット・・・！！」
+EN "%ss132 headbutts %ss2 out of nowhere...!"
+
+@ 2.095.00
+# speaker: アナウンサー
+JP 「リング内で乱闘が始まりました！！
+JP 　リング上はパニックだあ！！」
+EN "A brawl has broken out in the ring! It's pandemonium in there!"
+
+@ 2.095.01
+# speaker: 解説者
+JP 「%ss15が
+JP 　出て来ましたね・・・！」
+EN "Here comes %ss15...!"
+
+@ 2.095.02
+# speaker: アナウンサー
+JP 「%ss15です！！
+JP 　%ss15が
+JP 　リングに登りました！！」
+EN "It's %ss15! %ss15 has climbed into the ring!"
+
+@ 2.096.00
+# speaker: カイザー (%ss15)
+JP 「どういうことだ、おまえ！？
+JP 　今、俺の名前出したろう！？」
+EN "What's the big idea, huh?! You just said my name, didn't you?!"
+
+@ 2.096.01
+# speaker: カイザー (%ss15)
+JP 「やるなら
+JP 　いつでもやってやるぞ
+JP 　コラあ！！」
+EN "You want a fight? I'll take you on anytime, punk!"
+
+@ 2.097.00
+# speaker: 沖田 (%ss132)
+JP 　%ss15や%ss2、
+JP 　セコンドの若手など、
+EN %ss15, %ss2, the young boys working as seconds...
+
+@ 2.097.01
+# speaker: 沖田 (%ss132)
+JP 　リング上は、
+JP 　俺をフクロ叩きにしようとする
+JP 　ＶＪＰの選手であふれ返った。
+EN The ring overflowed with <VJP> wrestlers out to gang up on me.
+
+@ 2.097.02
+# speaker: 沖田 (%ss132)
+JP 　だが俺は
+JP 　こういうのには慣れっこだからな。
+EN But I'm used to this kind of thing.
+
+@ 2.097.03
+# speaker: 沖田 (%ss132)
+JP 　言いたいことは言ったから、
+JP 　早々にリングを後にした。
+EN I'd said what I came to say, so I left the ring quickly.
+
+@ 2.099.00
+# speaker: 沖田 (%ss132)
+JP 「６年間・・・
+JP 　俺はただガムシャラに
+JP 　突っ走って来た・・・。」
+EN "Six years... I just charged ahead like a madman..."
+
+@ 2.099.01
+# speaker: 沖田 (%ss132)
+JP 「命を賭けて突っ走って来た・・・。」
+EN "I charged ahead with my life on the line..."
+
+@ 2.099.02
+# speaker: 沖田 (%ss132)
+JP 「それはなぜじゃ！？」
+EN "And why?!"
+
+@ 2.099.03
+# speaker: 沖田 (%ss132)
+JP 「俺はプロレスが・・・
+JP 　プロレスが大好きなんじゃ！！」
+EN "Because I love wrestling... I love pro wrestling!"
+
+@ 2.100.00
+# speaker: 沖田 (%ss132)
+JP 「俺も、%ss106も、
+JP 　%ss134も、
+JP 　皆プロレスが好きなんじゃ！！」
+EN "Me, %ss106, %ss134... we all love pro wrestling!"
+
+@ 2.100.01
+# speaker: 沖田 (%ss132)
+JP 「おまえらがいる限り
+JP 　ＩＷは不滅じゃ！！」
+EN "As long as you're here, <IW> will never die!"
+
+@ 2.100.02
+# speaker: 沖田 (%ss132)
+JP 「おまえらがいる限り、
+JP 　インディーズは不滅なんじゃ！！」
+EN "As long as you're here, the indies will never die!"
+
+@ 2.101.00
+# speaker: 沖田 (%ss132)
+JP 「みんな・・・あばよ・・・。」
+EN "Everyone... so long..."
+
+@ 2.102.00
+# speaker: 沖田 (%ss132)
+JP 　これで終わった・・・
+EN It's over...
+
+@ 2.102.01
+# speaker: 沖田 (%ss132)
+JP 　やることは全てやった・・・
+JP 　もう、何も思い残すことはない。
+EN I did everything I had to do... I have no regrets left.
+
+@ 2.102.02
+# speaker: 沖田 (%ss132)
+JP 　プロレスよさらば・・・。
+EN Farewell, pro wrestling...
+
+@ 2.108.00
+# speaker: 沖田 (%ss132)
+JP 　俺は、邪道のケジメとして
+JP 　最後にどうしても
+JP 　爆破マッチをやりたかった。
+EN To settle things as the Outlaw, I wanted one last exploding match, no matter what.
+
+@ 2.108.01
+# speaker: 沖田 (%ss132)
+JP 　ＩＷのスタッフ達は
+JP 　そんな俺の気持ちを察してくれて、
+EN The <IW> staff understood how I felt,
+
+@ 2.108.02
+# speaker: 沖田 (%ss132)
+JP 　最後の爆破マッチを
+JP 　セッティングしてくれた。
+EN and set up one last exploding match for me.
+
+@ 2.108.03
+# speaker: 沖田 (%ss132)
+JP 　対戦相手は、
+JP 　長年苦楽を共にして来た
+JP 　%ss135だったが、
+EN My opponent was %ss135, who'd been through thick and thin with me for years, but...
+
+@ 2.108.04
+# speaker: 沖田 (%ss132)
+JP 　ここで、思いもしなかった
+JP 　事態が発生する。
+EN ...then something happened that I never saw coming.
+
+@ 2.110.00
+# speaker: 沖田 (%ss132)
+JP 　%ss1との闘いは終わった・・・。
+EN The fight with %ss1 was over...
+
+@ 2.110.01
+# speaker: 沖田 (%ss132)
+JP 　俺は%ss1との約束通り、
+JP 　プロレスを引退しなくてはならない。
+EN As I'd promised %ss1, I had to retire from wrestling.
+
+@ 2.110.02
+# speaker: 沖田 (%ss132)
+JP 　しかし俺は、邪道のケジメとして
+JP 　最後にどうしても
+JP 　爆破マッチをやりたかった。
+EN But to settle things as the Outlaw, I wanted one last exploding match, no matter what.
+
+@ 2.110.03
+# speaker: 沖田 (%ss132)
+JP 　ＩＷのスタッフ達は
+JP 　そんな俺の気持ちを察してくれて、
+EN The <IW> staff understood how I felt,
+
+@ 2.110.04
+# speaker: 沖田 (%ss132)
+JP 　最後の爆破マッチを
+JP 　セッティングしてくれた。
+EN and set up one last exploding match for me.
+
+@ 2.110.05
+# speaker: 沖田 (%ss132)
+JP 　対戦相手は、
+JP 　長年苦楽を共にして来た
+JP 　%ss135だったが、
+EN My opponent was %ss135, who'd been through thick and thin with me for years, but...
+
+@ 2.110.06
+# speaker: 沖田 (%ss132)
+JP 　ここで、思いもしなかった
+JP 　事態が発生する。
+EN ...then something happened that I never saw coming.
+
+@ 2.112.00
+# speaker: 五条 (%ss135)
+JP 「%ss132さん・・・」
+EN "%ss132..."
+
+@ 2.112.01
+# speaker: 五条 (%ss135)
+JP 「俺は%ss132さんの引退試合、
+JP 　出るつもりはありませんよ。」
+EN "I have no intention of being in your retirement match, %ss132."
+
+@ 2.112.02
+# speaker: 沖田 (%ss132)
+JP 「なんだと%ss135・・・！
+JP 　今、何て言った！？」
+EN "What, %ss135...! What did you just say?!"
+
+@ 2.112.03
+# speaker: 五条 (%ss135)
+JP 「引退試合には
+JP 　出ないと言ったんです。」
+EN "I said I won't be in your retirement match."
+
+@ 2.112.04
+# speaker: 五条 (%ss135)
+JP 「今の%ss132さんは
+JP 　おかしくなってる・・・！」
+EN "You've lost your way, %ss132...!"
+
+@ 2.112.05
+# speaker: 五条 (%ss135)
+JP 「名前を売ることばかりを意識して、
+JP 　昔のハングリーさがまるでない！！」
+EN "All you care about is making a name for yourself! The hunger you used to have is gone!"
+
+@ 2.112.06
+# speaker: 五条 (%ss135)
+JP 「そんな%ss132さんなんて、
+JP 　見たくなかったですよ・・・！」
+EN "I never wanted to see you like this, %ss132...!"
+
+@ 2.112.07
+# speaker: 沖田 (%ss132)
+JP 「%ss135！！
+JP 　俺はおかしくなんてなってないぞ！！」
+EN "%ss135! I haven't lost my way!"
+
+@ 2.112.08
+# speaker: 沖田 (%ss132)
+JP 「邪道の本質はな、形じゃない！！
+JP 　生き方なんじゃ！！」
+EN "Being the Outlaw isn't about style! It's a way of life!"
+
+@ 2.112.09
+# speaker: 沖田 (%ss132)
+JP 「俺という人間の生き方なんじゃ！！」
+EN "It's the way I live my life!"
+
+@ 2.112.10
+# speaker: 五条 (%ss135)
+JP 「%ss132さん・・・」
+EN "%ss132..."
+
+@ 2.112.11
+# speaker: 五条 (%ss135)
+JP 「もはや俺には、
+JP 　意見が合わなかったとしか
+JP 　言えませんね・・・。」
+EN "All I can say now is that we don't see eye to eye anymore..."
+
+@ 2.112.12
+# speaker: 五条 (%ss135)
+JP 「とにかく
+JP 　%ss132さんとの引退試合、
+JP 　俺は辞退させていただきます。」
+EN "Either way, I'm turning down your retirement match, %ss132."
+
+@ 2.112.13
+# speaker: 沖田 (%ss132)
+JP 「%ss135・・・！！」
+EN "%ss135...!"
+
+@ 2.113.00
+# speaker: 沖田 (%ss132)
+JP 　最大のライバルであり、
+JP 　最大の理解者であった
+JP 　%ss135の辞退は、
+EN %ss135, my greatest rival and the one who understood me best, turning me down...
+
+@ 2.113.01
+# speaker: 沖田 (%ss132)
+JP 　少なからず
+JP 　俺にショックを与えた・・・。
+EN ...it hit me pretty hard...
+
+@ 2.113.02
+# speaker: 沖田 (%ss132)
+JP 　だが、人間とはこういうものなんだ。
+EN But that's how people are.
+
+@ 2.113.03
+# speaker: 沖田 (%ss132)
+JP 　%ss135には%ss135の意見、
+JP 　生き方がある。
+EN %ss135 is %ss135. He has his own views, his own way of life.
+
+@ 2.113.04
+# speaker: 沖田 (%ss132)
+JP 　%ss135に対し、俺の考えを
+JP 　強制することは出来ないし、
+JP 　無理に従わせようとも思わない。
+EN I can't force my way of thinking on %ss135, and I won't try to make him follow me.
+
+@ 2.113.05
+# speaker: 沖田 (%ss132)
+JP 　%ss135よ！！
+JP 　自分の思うままに生きろ！！
+EN %ss135! Live the way you want to live!
+
+@ 2.113.06
+# speaker: 沖田 (%ss132)
+JP 　それこそが、自分を光らせる
+JP 　唯一の方法なんだからな！！
+EN That's the only way to make yourself shine!
+
+@ 2.114.00
+# speaker: 沖田 (%ss132)
+JP 　引退試合まで、もう
+JP 　わずかしか時間が残されていなかった。
+EN There was very little time left before the retirement match.
+
+@ 2.114.01
+# speaker: 沖田 (%ss132)
+JP 　すでにチケットは完売し、
+JP 　現時点で興行を中止することは
+JP 　不可能に近い。
+EN The tickets were already sold out. Calling off the show now was next to impossible.
+
+@ 2.114.02
+# speaker: 沖田 (%ss132)
+JP 　俺は限られた時間の中で、
+JP 　ドタキャンした%ss135の代役を
+JP 　捜さなければならなかった。
+EN With the clock running, I had to find someone to replace %ss135, who'd pulled out at the last minute.
+
+@ 2.114.03
+# speaker: 沖田 (%ss132)
+JP 　ＩＷの中では、
+JP 　%ss135に匹敵する男は
+JP 　%ss134しかいなかったが、
+EN In <IW>, the only man who could match %ss135 was %ss134, but...
+
+@ 2.114.04
+# speaker: 沖田 (%ss132)
+JP 　俺は、俺と同じ
+JP 　電流爆破のリングに
+JP 　%ss134を上げるのは嫌だった。
+EN I didn't want to put %ss134 in the same exploding barbed wire ring as me.
+
+@ 2.114.05
+# speaker: 沖田 (%ss132)
+JP 　%ss134はベビーフェイスとして
+JP 　すでに自分のスタイルを確立しており、
+EN %ss134 had already found his own style as a babyface,
+
+@ 2.114.06
+# speaker: 沖田 (%ss132)
+JP 　そんな%ss134に、
+JP 　無理やり%ss132流のプロレスを
+JP 　刷り込むことはやりたくなかった。
+EN and I didn't want to force the %ss132 brand of wrestling on %ss134.
+
+@ 2.114.07
+# speaker: 沖田 (%ss132)
+JP 　そんなことは出来ない・・・
+EN I couldn't do that...
+
+@ 2.114.08
+# speaker: 沖田 (%ss132)
+JP 　ＩＷのデスマッチは
+JP 　俺で終わりにするんだ・・・！
+EN <IW>'s deathmatches would end with me...!
+
+@ 2.114.09
+# speaker: 沖田 (%ss132)
+JP 　残された者達は、古い俺とは違う、
+JP 　新しいＩＷを作っていかなければ
+JP 　ならないんだから。
+EN The ones I left behind had to build a new <IW>, different from the old me.
+
+@ 2.114.10
+# speaker: 沖田 (%ss132)
+JP 　追い詰められ、
+JP 　どうにもならない状況になった時
+JP 　救世主は北からやって来た・・・！
+EN Just when I was cornered, with nowhere left to turn, a savior came from the north...!
+
+@ 2.115.00
+# speaker: ハヤテ (%ss106)
+JP 「%ss132さん！！
+JP 　引退試合のデスマッチ、
+JP 　俺にやらせてもらえませんか！？」
+EN "%ss132! Your retirement deathmatch... would you let me do it?!"
+
+@ 2.115.01
+# speaker: ハヤテ (%ss106)
+JP 「%ss132さんの
+JP 　引退試合のことを知って、
+JP 　急いで仙台からやって来たんです！！」
+EN "I heard about your retirement match, %ss132, and rushed here from Sendai!"
+
+@ 2.115.02
+# speaker: 沖田 (%ss132)
+JP 「%ss106・・・！」
+EN "%ss106...!"
+
+@ 2.115.03
+# speaker: ハヤテ (%ss106)
+JP 「%ss132さん、俺は・・・」
+EN "%ss132, I..."
+
+@ 2.115.04
+# speaker: ハヤテ (%ss106)
+JP 「%ss132さんから
+JP 　本当のインディーズ魂を
+JP 　教えられたんですよ・・・！」
+EN "You're the one who taught me what real indie spirit is, %ss132...!"
+
+@ 2.115.05
+# speaker: ハヤテ (%ss106)
+JP 「前回、%ss132さんと
+JP 　デスマッチをやった時、」
+EN "The last time we had a deathmatch, %ss132..."
+
+@ 2.115.06
+# speaker: ハヤテ (%ss106)
+JP 「この人とはいずれ、
+JP 　もう一度デスマッチをやると
+JP 　心に誓ってたんです！！」
+EN "...I swore to myself I'd have another deathmatch with this man someday!"
+
+@ 2.115.07
+# speaker: ハヤテ (%ss106)
+JP 「これが最後のチャンスでしょう！？
+JP 　やらせて下さい、ぜひ！！」
+EN "This is the last chance, isn't it?! Please, let me do it!"
+
+@ 2.115.08
+# speaker: 沖田 (%ss132)
+JP 「%ss106・・・
+JP 　おまえは最高じゃ！！」
+EN "%ss106... you're the best!"
+
+@ 2.115.09
+# speaker: 沖田 (%ss132)
+JP 「おまえが来てくれたおかげで、
+JP 　最後に大きな花火が上げられる！！」
+EN "Thanks to you, I can go out with one big fireworks show!"
+
+@ 2.115.10
+# speaker: 沖田 (%ss132)
+JP 「ＩＷの%ss132！！
+JP 　ゆきぐにプロレスの%ss106！！」
+EN "%ss132 of <IW>! %ss106 of <Yukiguni> Pro Wrestling!"
+
+@ 2.115.11
+# speaker: 沖田 (%ss132)
+JP 「二人で
+JP 　団体を超えた、
+JP 　インディーズ魂を見せるんじゃあ！！」
+EN "The two of us are gonna show 'em an indie spirit that goes beyond promotions!"
+
+@ 2.116.00
+# speaker: 沖田 (%ss132)
+JP 　俺の最後の舞台を
+JP 　演出するために、
+JP 　%ss106は来てくれた。
+EN %ss106 came to set the stage for my final show.
+
+@ 2.116.01
+# speaker: 沖田 (%ss132)
+JP 　俺にとって、
+JP 　これ以上のはなむけはないだろう・・・。
+EN I couldn't ask for a better send-off...
+
+@ 2.116.02
+# speaker: 沖田 (%ss132)
+JP 　やるぞ%ss106！！
+EN Let's do it, %ss106!
+
+@ 2.116.03
+# speaker: 沖田 (%ss132)
+JP 　邪道、
+JP 　%sf132！！
+JP 　最後まで派手に死んでみせる！！
+EN The Outlaw, %sf132! I'll go out in a blaze of glory, right to the end!
+
+@ 2.118.00
+# speaker: 沖田 (%ss132)
+JP 　俺はちっぽけな人間です。
+EN I'm a small man.
+
+@ 2.118.01
+# speaker: 沖田 (%ss132)
+JP 　でも、そのちっぽけな
+JP 　魂のパワーを見て欲しい。
+EN But I want you to see the power of this small soul.
+
+@ 2.118.02
+# speaker: 沖田 (%ss132)
+JP 　人間って奴は、
+JP 　やる気と可能性さえあれば
+JP 　何だって出来るんだ。
+EN As long as a person has the will and the chance, they can do anything.
+
+@ 2.118.03
+# speaker: 沖田 (%ss132)
+JP 　不可能だと思ったら、そこで
+JP 　何もかも終わっちまう。
+EN The moment you think it's impossible, it's all over.
+
+@ 2.118.04
+# speaker: 沖田 (%ss132)
+JP 　可能性があれば、どこまでも突き進む。
+EN If there's a chance, you push on as far as it goes.
+
+@ 2.118.05
+# speaker: 沖田 (%ss132)
+JP 　それが、
+JP 　人間としての生きる道だと
+JP 　俺は信じている。
+EN I believe that's the way a human being should live.
+
+@ 2.118.06
+# speaker: 沖田 (%ss132)
+JP 　俺という人間の生き方を見て
+JP 　ファンが何かを感じ取り、
+EN If the fans watch the way I live and feel something,
+
+@ 2.118.07
+# speaker: 沖田 (%ss132)
+JP 　自分の中にある、
+JP 　秘められた可能性を見出してくれれば
+JP 　それ以上の幸せはないよ。
+EN and find the hidden potential inside themselves, I couldn't be any happier.
+
+@ 2.118.08
+# speaker: 沖田 (%ss132)
+JP 　夢は、決して手の届かないものじゃない。
+EN A dream is never out of reach.
+
+@ 2.118.09
+# speaker: 沖田 (%ss132)
+JP 　夢は、自分の力でつかむものだから。
+JP 
+JP 　%sf132
+EN A dream is something you grab with your own hands.
+EN %sf132
+
+@ 2.119.00
+# speaker: 記者
+JP 「%ss98さん、あの・・・
+JP 　ひっ・・・！！」
+EN "%ss98, um... eek...!"
+
+@ 2.119.01
+# speaker: 武蔵 (%ss98)
+JP 「%ss132ーーー！！！」
+EN "%ss132!!!"
+
+@ 2.119.02
+# speaker: 武蔵 (%ss98)
+JP 「もう一回だ！！！
+JP 　もう一回、俺と勝負しろ！！！」
+EN "One more time! Fight me one more time!"
+
+@ 2.119.03
+# speaker: 武蔵 (%ss98)
+JP 「次は
+JP 　ただじゃすまさんぞーーー！！」
+EN "Next time, you won't get off so easy!!"
+
+@ 2.121.00
+# speaker: 記者
+JP 「%ss132さん・・・！！
+JP 　%ss132さん、
+JP 　一言コメントを・・・」
+EN "%ss132...! %ss132, a word, please..."
+
+@ 2.121.01
+# speaker: 沖田 (%ss132)
+JP 「大往生・・・
+JP 　大往生じゃ！！」
+EN "A good death... A beautiful death!"
+
+@ 2.121.02
+# speaker: 沖田 (%ss132)
+JP 「俺は死んだ！！
+JP 　死んだんじゃ！！」
+EN "I died! I'm dead!"
+
+@ 2.121.03
+# speaker: 沖田 (%ss132)
+JP 「%ss98の手によって・・・
+JP 　邪道は大往生じゃあ！！」
+EN "At the hands of %ss98... the Outlaw died a beautiful death!"
+
+@ 2.127.00
+# speaker: 記者
+JP 「%ss132さん、
+JP 　重要な話って何ですか？」
+EN "%ss132, what's this important thing you wanted to talk about?"
+
+@ 2.127.01
+# speaker: 沖田 (%ss132)
+JP 「悪かったな。
+JP 　急に呼び出して。」
+EN "Sorry for calling you out on such short notice."
+
+@ 2.127.02
+# speaker: 沖田 (%ss132)
+JP 「実はな、
+JP 　今日来てもらったのは、」
+EN "The reason I asked you here today..."
+
+@ 2.127.03
+# speaker: 沖田 (%ss132)
+JP 「あんたのところで、もう一度
+JP 　エキシビションマッチの企画を
+JP 　進めてもらえないかっていう話なんだ。」
+EN "...is that I want to know if your company would set up an exhibition match for me again."
+
+@ 2.127.04
+# speaker: 記者
+JP 「はあ？」
+EN "Huh?"
+
+@ 2.128.00
+# speaker: 沖田 (%ss132)
+JP 　前回、%ss45との
+JP 　エキシビションマッチの話が来た時、
+EN Last time, when the offer for an exhibition match with %ss45 came in,
+
+@ 2.128.01
+# speaker: 沖田 (%ss132)
+JP 　俺の中で、漠然とだが
+JP 　ひらめいたアイディアがあった。
+EN an idea flashed in my mind, vague as it was.
+
+@ 2.128.02
+# speaker: 沖田 (%ss132)
+JP 　%sf98は
+JP 　俺と同じ議員なんだ。
+EN %sf98 is a lawmaker, the same as me.
+
+@ 2.128.03
+# speaker: 沖田 (%ss132)
+JP 『チャリティー』を目的とした
+JP 　エキシビションマッチに招待されたら、
+JP 　そうやすやすとは断れないだろう。
+EN If he's invited to an exhibition match "for charity", he can't just turn it down.
+
+@ 2.128.04
+# speaker: 沖田 (%ss132)
+JP 　要は、対戦相手が
+JP 　俺だということを
+JP 　試合の寸前まで明かさないことだ。
+EN The key is not to reveal that I'm his opponent until right before the match.
+
+@ 2.128.05
+# speaker: 沖田 (%ss132)
+JP 　俺は、事の詳細を先方に話してみた。
+EN I explained the whole plan to them.
+
+@ 2.129.00
+# speaker: 記者
+JP 「%ss132さん、
+JP 　面白そうですけど・・・」
+EN "%ss132, that sounds fun, but..."
+
+@ 2.129.01
+# speaker: 記者
+JP 「それってなんだか、
+JP 　昔やってたテレビ番組みたいですね。」
+EN "Isn't that kind of like that TV show from way back?"
+
+@ 2.129.02
+# speaker: 沖田 (%ss132)
+JP 「ああ、俺も引っ掛けられたことが
+JP 　あったよ。」
+EN "Yeah, I got pranked on it once myself."
+
+@ 2.129.03
+# speaker: 沖田 (%ss132)
+JP 「実はな、この話はすでに
+JP 　秘密裏に
+JP 　某テレビ局にも通してあるんだ。」
+EN "Actually, I've already run this past a certain TV station, in secret."
+
+@ 2.129.04
+# speaker: 沖田 (%ss132)
+JP 「後は、あんたのところが
+JP 　話を了承してくれれば、
+JP 　この計画は間違いなく成功する。」
+EN "All that's left is for your company to agree, and this plan can't fail."
+
+@ 2.129.05
+# speaker: 記者
+JP 「分かりました。」
+EN "Understood."
+
+@ 2.129.06
+# speaker: 記者
+JP 「話が大きいので、
+JP 　私の一存では判断できませんが、
+JP 　前向きに検討してみます。」
+EN "It's a big deal, so I can't decide on my own, but I'll give it serious thought."
+
+@ 2.129.07
+# speaker: 記者
+JP 「ところで・・・
+JP 　会場なんかは、どの辺を
+JP 　考えていらっしゃるんですか？」
+EN "By the way... where are you thinking of holding it?"
+
+@ 2.129.08
+# speaker: 沖田 (%ss132)
+JP 「アフガニスタン。」
+EN "Afghanistan."
+
+@ 2.129.09
+# speaker: 記者
+JP 「アフ・・・
+JP 　ええっ！？」
+EN "Afgh... WHAT?!"
+
+@ 2.129.10
+# speaker: 沖田 (%ss132)
+JP 「なんだよ。
+JP 　アフガンは大変なんだぞ。」
+EN "What? Afghanistan's going through a lot, you know."
+
+@ 2.129.11
+# speaker: 沖田 (%ss132)
+JP 「俺はこの前、
+JP 　視察でアフガンの難民キャンプに
+JP 　行って来たんだが、」
+EN "The other day I went on an inspection trip to a refugee camp in Afghanistan,"
+
+@ 2.129.12
+# speaker: 沖田 (%ss132)
+JP 「あそこでプロレスやったら、
+JP 　子供達がどれだけ喜ぶかって
+JP 　真剣に思ったんだ。」
+EN "and I honestly thought about how happy the kids would be if we held a wrestling match there."
+
+@ 2.129.13
+# speaker: 沖田 (%ss132)
+JP 「俺はこの試合、
+JP 　アフガニスタン以外ではやらないよ。」
+EN "I won't do this match anywhere but Afghanistan."
+
+@ 2.129.14
+# speaker: 記者
+JP 「%ss132さん・・・
+JP 　スケール大きすぎますよ・・・。」
+EN "%ss132... you're thinking way too big..."
+
+@ 2.130.00
+# speaker: 沖田 (%ss132)
+JP 　俺が見て来た
+JP 　アフガンの状況はひどいものだった。
+EN What I saw in Afghanistan was terrible.
+
+@ 2.130.01
+# speaker: 沖田 (%ss132)
+JP 　俺の最後の試合を、
+EN My final match...
+
+@ 2.130.02
+# speaker: 沖田 (%ss132)
+JP 　難民キャンプの子供達に
+JP 　見せることが出来れば、
+JP 　俺は本当に本望だよ・・・！
+EN If I could show it to the children in the refugee camp, it'd be all I ever wanted...!
+
+@ 2.130.03
+# speaker: 沖田 (%ss132)
+JP 　企画を担当してくれた会社と、
+JP 　テレビ局のスタッフ達は
+JP 　良くやってくれた。
+EN The company in charge of the plan and the TV station staff did a great job.
+
+@ 2.130.04
+# speaker: 沖田 (%ss132)
+JP 　俺の考えた『史上最大の作戦』は
+JP 　ちゃくちゃくと進み、
+EN My "greatest operation in history" moved steadily ahead,
+
+@ 2.130.05
+# speaker: 沖田 (%ss132)
+JP 　ついに、
+JP 　夢にまで見た%ss98が
+JP 　アフガニスタンまでやって来た。
+EN and at last, the %ss98 I'd been dreaming of came all the way to Afghanistan.
+
+@ 2.130.06
+# speaker: 沖田 (%ss132)
+JP 　%ss98は
+JP 　アフガンの難民のためならと
+JP 　快く話を了承し、
+EN %ss98 gladly agreed, saying it was for the refugees of Afghanistan,
+
+@ 2.130.07
+# speaker: 沖田 (%ss132)
+JP 　笑顔でアフガニスタンに
+JP 　やって来たんだ。
+EN and came to Afghanistan with a smile on his face.
+
+@ 2.130.08
+# speaker: 沖田 (%ss132)
+JP 　%ss98さん、
+JP 　あんたはやっぱりすごいよ。
+EN %ss98... you really are something.
+
+@ 2.131.00
+# speaker: 武蔵 (%ss98)
+JP 「皆さん。」
+EN "Everyone."
+
+@ 2.131.01
+# speaker: 武蔵 (%ss98)
+JP 「私は、
+JP 　私個人の力が、」
+EN "I joined this project hoping..."
+
+@ 2.131.02
+# speaker: 武蔵 (%ss98)
+JP 「少しでもアフガニスタンで
+JP 　苦しんでいる人達の
+JP 　役に立てるならと思い、」
+EN "...that I, myself, could be of even a little help to the suffering people of Afghanistan."
+
+@ 2.131.03
+# speaker: 武蔵 (%ss98)
+JP 「この企画に参加しました。」
+EN "That's why I'm here."
+
+@ 2.131.04
+# speaker: 記者
+JP 「%ss98さん！！
+JP 　%ss98さん！！」
+EN "%ss98! %ss98!"
+
+@ 2.131.05
+# speaker: 記者
+JP 「それで、対戦相手は
+JP 　誰なんですか！？」
+EN "So who's your opponent?!"
+
+@ 2.131.06
+# speaker: 記者
+JP 「私達、報道関係の人間には
+JP 　まったく知らされていないんですが！」
+EN "We in the press haven't been told a single thing!"
+
+@ 2.131.07
+# speaker: 武蔵 (%ss98)
+JP 「さあ、私もよく聞いていません。」
+EN "Well, I haven't heard much myself."
+
+@ 2.131.08
+# speaker: 武蔵 (%ss98)
+JP 「どうやら、
+JP 　難民キャンプ代表の
+JP 　若者だという話です。」
+EN "Apparently it's a young man representing the refugee camp."
+
+@ 2.131.09
+# speaker: 武蔵 (%ss98)
+JP 「まあ、いつ、何時
+JP 　誰の挑戦でも受ける
+JP 　用意はあります。」
+EN "Well, I'm ready to take on anyone's challenge, anytime, anywhere."
+
+@ 2.131.10
+# speaker: 武蔵 (%ss98)
+JP 「いいかーーー！！
+JP 　行くぞーーー！！」
+EN "Are you ready?! Here we go!"
+
+@ 2.131.11
+# speaker: 武蔵 (%ss98)
+JP 「いーーーち、
+JP 　にーーーい、
+JP 　さーーーん、」
+EN "One! Two! Three!"
+
+@ 2.131.12
+# speaker: 沖田 (%ss132)
+JP 「ファイヤーーーーッ！！！」
+EN "FIIIIIRE!!!"
+
+@ 2.131.13
+# speaker: 記者
+JP 「%ss132・・・！？
+JP 　%ss132！！！」
+EN "%ss132...?! It's %ss132!!!"
+
+@ 2.131.14
+# speaker: 沖田 (%ss132)
+JP 「どうも、%ss98さん。」
+EN "Hello there, %ss98."
+
+@ 2.131.15
+# speaker: 沖田 (%ss132)
+JP 「私が、エキシビションマッチの
+JP 　対戦相手です。
+JP 　よろしくお願いします。」
+EN "I'm your opponent for the exhibition match. I look forward to it."
+
+@ 2.131.16
+# speaker: 武蔵 (%ss98)
+JP 「%ss132ー！！
+JP 　そうまでして、
+JP 　俺とやりたいかあーーー！！！」
+EN "%ss132! You want a match with me that badly?!"
+
+@ 2.131.17
+# speaker: 沖田 (%ss132)
+JP 「%sf98！！
+JP 　俺と勝負じゃあ！！」
+EN "%sf98! Fight me!"
+
+@ 2.131.18
+# speaker: 沖田 (%ss132)
+JP 「邪道の死に水！！
+JP 　きっちりと取ってもらう！！！」
+EN "You're gonna see the Outlaw off to his grave! Properly!"
+
+@ 2.132.00
+# speaker: 沖田 (%ss132)
+JP 　ついに、俺の念願がかなう！！
+EN At last, my long-cherished wish is coming true!
+
+@ 2.132.01
+# speaker: 沖田 (%ss132)
+JP 　最後の試合が
+JP 　金網デスマッチじゃないのは
+JP 　寂しいが、
+EN It's a shame my last match isn't a steel cage deathmatch, but...
+
+@ 2.132.02
+# speaker: 沖田 (%ss132)
+JP 『世界の火薬庫中東』で、
+JP 　電流爆破は
+JP 　いくらなんでもまずいだろ。
+EN ...but exploding barbed wire in the Middle East, "the world's powder keg", would be going a little too far.
+
+@ 2.132.03
+# speaker: 沖田 (%ss132)
+JP 　それでも、
+JP 　俺の心の中にある
+JP 　最後の花火は派手に爆発させてやる！！
+EN Even so, I'll set off the last fireworks in my heart with a big bang!
+
+@ 2.132.04
+# speaker: 沖田 (%ss132)
+JP 　アフガニスタンの子供達に、
+JP 　生きる勇気を与えるんじゃ！！
+EN I'm gonna give the children of Afghanistan the courage to live!
+
+@ 2.134.00
+# speaker: 沖田 (%ss132)
+JP 　%ss45との試合を終えた後、
+JP 　俺は、しばし思索にふけっていた。
+EN After my match with %ss45, I sat lost in thought for a while.
+
+@ 2.134.01
+# speaker: 沖田 (%ss132)
+JP 　%sf98と
+JP 　試合するには
+JP 　一筋縄ではいかない・・・
+EN Getting a match with %sf98 wasn't going to be easy...
+
+@ 2.134.02
+# speaker: 沖田 (%ss132)
+JP 　俺の挑発を、
+JP 　これほどまでに
+JP 　無視するところをみると、
+EN Seeing how completely he's ignored all my provocations,
+
+@ 2.134.03
+# speaker: 沖田 (%ss132)
+JP 　%ss98は本当に
+JP 　俺とは試合したくないんだろう。
+EN %ss98 really must not want to fight me.
+
+@ 2.134.04
+# speaker: 沖田 (%ss132)
+JP 　今までの戦法じゃ、
+JP 　%ss98は決して
+JP 　出てこない・・・。
+EN With the tactics I'd used so far, %ss98 would never come out...
+
+@ 2.134.05
+# speaker: 沖田 (%ss132)
+JP 　この時、俺の頭には
+JP 　一つの言葉が浮かんでいた。
+EN Just then, one word popped into my head.
+
+@ 2.134.06
+# speaker: 沖田 (%ss132)
+JP 『騙す』・・・
+EN "Trick"...
+
+@ 2.134.07
+# speaker: 沖田 (%ss132)
+JP 　そう、正攻法が通じないなら、
+JP 　俺にしか出来ない邪道流で行けば
+JP 　いいじゃないか！
+EN That's right. If the straight approach doesn't work, I'll go outlaw style, the way only I can!
+
+@ 2.134.08
+# speaker: 沖田 (%ss132)
+JP 『%ss98を騙して』
+JP 　俺と試合させるように仕向けるんだ！！
+EN I'll "trick %ss98" into having a match with me!
+
+@ 2.140.00
+# speaker: 沖田 (%ss132)
+JP 　可能な限り、
+JP 　%ss98を追っていた
+JP 　俺だったが・・・
+EN I chased %ss98 every chance I got, but...
+
+@ 2.140.01
+# speaker: 沖田 (%ss132)
+JP 　プロレス以外にも、タレント業、
+JP 　議員としての公務など、
+EN Besides wrestling, there was my TV work, my official duties as a lawmaker...
+
+@ 2.140.02
+# speaker: 沖田 (%ss132)
+JP 　日々、やるべき仕事は
+JP 　山のようにあった・・・。
+EN Every day, I had a mountain of work to do...
+
+@ 2.141.00
+# speaker: 記者
+JP 「%ss132さん。」
+EN "%ss132."
+
+@ 2.141.01
+# speaker: 記者
+JP 「実は今度、
+JP 　うちの会社で
+JP 　%ss132さんと%ss45さんの、
+EN "Actually, our company is planning a match between you, %ss132, and %ss45,"
+
+@ 2.141.02
+# speaker: 記者
+JP 「『ザ・議員対決』という
+JP 　エキシビションマッチの
+JP 　企画を立てたんですが・・・」
+EN "an exhibition match called 'The Battle of the Lawmakers'..."
+
+@ 2.141.03
+# speaker: 記者
+JP 「%ss132さん、どうでしょうか？」
+EN "What do you say, %ss132?"
+
+@ 2.142.00
+# speaker: 沖田 (%ss132)
+JP 　%ss45との
+JP 　ザ・議員対決の企画を聞いたとき、
+EN When I heard about the Battle of the Lawmakers with %ss45,
+
+@ 2.142.01
+# speaker: 沖田 (%ss132)
+JP 　初め俺は、『あ～あ、まったく
+JP 　つまんねえ企画立てるよ』と、
+JP 　思ったんだ。
+EN at first I thought, "Ugh, what a dumb idea."
+
+@ 2.142.02
+# speaker: 沖田 (%ss132)
+JP 　けれど、この時
+JP 　俺の中では
+JP 　ひらめく物があった。
+EN But right then, something clicked inside me.
+
+@ 2.142.03
+# speaker: 沖田 (%ss132)
+JP 『もしかして、
+JP 　これは%ss98戦に
+JP 　使えるんじゃないか？』ってね。
+EN "Hey, maybe I could use this for the %ss98 match?"
+
+@ 2.143.00
+# speaker: 沖田 (%ss132)
+JP 「いいですよ。
+JP 　やりましょう。」
+EN "Sure. Let's do it."
+
+@ 2.143.01
+# speaker: 記者
+JP 「本当ですか！？」
+EN "Really?!"
+
+@ 2.143.02
+# speaker: 記者
+JP 「ありがとうございます！
+JP 　それじゃ、さっそく
+JP 　%ss45さんと交渉してみます！」
+EN "Thank you! Then I'll start negotiating with %ss45 right away!"
+
+@ 2.143.03
+# speaker: 沖田 (%ss132)
+JP 「ええ、よろしくお願いします。」
+EN "Yes, I'm counting on you."
+
+@ 2.144.00
+# speaker: 伊達 (%ss45)
+JP 「%ss132！？」
+EN "%ss132?!"
+
+@ 2.144.01
+# speaker: 伊達 (%ss45)
+JP 「俺が%ss132と
+JP 　エキシビションマッチをやるって！？」
+EN "Me, in an exhibition match with %ss132?!"
+
+@ 2.144.02
+# speaker: 伊達 (%ss45)
+JP 「バカなことを言わないでくれ！！」
+EN "Don't be ridiculous!"
+
+@ 2.144.03
+# speaker: 記者
+JP 「で、ですが・・・
+JP 　すでに%ss132さんからは
+JP 　了承を得ています。」
+EN "B-But... %ss132 has already agreed."
+
+@ 2.144.04
+# speaker: 記者
+JP 「会場の手配など、
+JP 　そういったことは
+JP 　全てこちらで準備しますので・・・」
+EN "We'll take care of the venue and all that, so..."
+
+@ 2.144.05
+# speaker: 伊達 (%ss45)
+JP 「ああ、別に試合をするのが
+JP 　嫌ってわけじゃないんだ。」
+EN "Oh, it's not that I don't want to have the match."
+
+@ 2.144.06
+# speaker: 伊達 (%ss45)
+JP 「エキシビションというのが気に入らない。
+JP 　やるからには、本気でやる！」
+EN "It's the 'exhibition' part I don't like. If I do it, I'm doing it for real!"
+
+@ 2.144.07
+# speaker: 伊達 (%ss45)
+JP 「俺が%ss132を
+JP 　批判していることは
+JP 　知っているでしょう？」
+EN "You know I've been criticizing %ss132, don't you?"
+
+@ 2.144.08
+# speaker: 伊達 (%ss45)
+JP 「%ss132のように、
+JP 　主義の一貫しない奴は嫌いなんですよ。」
+EN "I can't stand guys like %ss132 who never stick to their principles."
+
+@ 2.144.09
+# speaker: 伊達 (%ss45)
+JP 「徹底的にぶちのめします！！」
+EN "I'll crush him completely!"
+
+@ 2.145.00
+# speaker: 沖田 (%ss132)
+JP 　主義が一貫してないだと！？
+EN I don't stick to my principles?!
+
+@ 2.145.01
+# speaker: 沖田 (%ss132)
+JP 　俺が選挙の時、
+EN Is he talking about the election,
+
+@ 2.145.02
+# speaker: 沖田 (%ss132)
+JP 　元々の政党をやめて、
+JP 　別な政党から出馬したことを
+JP 　言っているのか！？
+EN when I left my original party and ran for a different one?!
+
+@ 2.145.03
+# speaker: 沖田 (%ss132)
+JP 　考え方が違ったんだから
+JP 　しょうがないだろう！！
+EN We didn't see things the same way, so what else could I do?!
+
+@ 2.145.04
+# speaker: 沖田 (%ss132)
+JP 　一貫性があるからこそ、
+JP 　俺は妥協しなかった！！
+EN I didn't compromise precisely because I stick to my principles!
+
+@ 2.145.05
+# speaker: 沖田 (%ss132)
+JP 　そんなことも分からないのか！？
+EN Can't he even understand that?!
+
+@ 2.145.06
+# speaker: 沖田 (%ss132)
+JP 　おい、%ss45！！
+JP 　ぶちのめされるのは
+JP 　おまえの方だぞ！！
+EN Hey, %ss45! You're the one who's getting crushed!
+
+@ 2.145.07
+# speaker: 沖田 (%ss132)
+JP 　覚悟しておけよ！！
+EN Get ready!
+
+@ 2.146.00
+# speaker: 沖田 (%ss132)
+JP 　%ss45との議員対決は、
+JP 　趣向が変更され『マジ対決』となった。
+EN The lawmakers' battle with %ss45 changed its tune and became a "Dead Serious Showdown".
+
+@ 2.146.01
+# speaker: 沖田 (%ss132)
+JP 　当初、某会社が
+JP 　立案したはずのこの企画は、
+JP 　全面的にＯＪＰが介入することになり、
+EN The plan, first drawn up by a certain company, ended up fully taken over by <OJP>,
+
+@ 2.146.02
+# speaker: 沖田 (%ss132)
+JP 　ＯＬＩＶＥ　ＪＡＰＡＮ主催の
+JP 　ビッグイベントとなってしまったんだ。
+EN and turned into a big event put on by <OLIVE JAPAN>.
+
+@ 2.146.03
+# speaker: 沖田 (%ss132)
+JP 　俺は密かにうれしかったね。
+EN Secretly, I was happy.
+
+@ 2.146.04
+# speaker: 沖田 (%ss132)
+JP 　予期せぬ事態ではあったが、
+JP 　もう一度、古巣のＯＪＰのマットに
+JP 　立つことが出来たんだから。
+EN I hadn't seen it coming, but I got to stand on my old home's <OJP> mat once more.
+
+@ 2.146.05
+# speaker: 沖田 (%ss132)
+JP 　誰だって、故郷に帰れば
+JP 　気持ちいいものだろ。
+EN Coming home feels good for anybody, right?
+
+@ 2.146.06
+# speaker: 沖田 (%ss132)
+JP 　%ss45には悪いが、
+JP 　今日の試合は
+JP 　俺の独壇場にさせてもらうよ。
+EN Sorry, %ss45, but today's match is gonna be my show.
+
+@ 2.147.00
+# speaker: 沖田 (%ss132)
+JP 　自分の正当性を証明するためにも、
+JP 　降りかかる火の粉は
+JP 　払いのけなければならない・・・
+EN To prove I'm in the right, I have to brush off the sparks raining down on me...
+
+@ 2.147.01
+# speaker: 沖田 (%ss132)
+JP 　俺は勝つ・・・！！
+EN I'll win...!
+
+@ 2.147.02
+# speaker: 沖田 (%ss132)
+JP 　絶対に勝つんじゃ！！
+EN I'll win, no matter what!
+
+@ 2.149.00
+# speaker: 記者
+JP 「%ss132さん・・・！！
+JP 　%ss132さん！！」
+EN "%ss132...! %ss132!"
+
+@ 2.149.01
+# speaker: 記者
+JP 「試合後のコメントを一言・・・！！
+JP 　一言、お願いします！！」
+EN "A word after the match...! Just a word, please!"
+
+@ 2.149.02
+# speaker: 沖田 (%ss132)
+JP 「こんなもんじゃ・・・！！」
+EN "That's all he's got...!"
+
+@ 2.149.03
+# speaker: 沖田 (%ss132)
+JP 「%ss88なんて
+JP 　こんなもんじゃ！！」
+EN "That's all %ss88's got!"
+
+@ 2.149.04
+# speaker: 沖田 (%ss132)
+JP 「俺は邪道じゃ！！
+JP 　邪道だが、
+JP 　命を賭けてやってるんじゃ！！」
+EN "I'm the Outlaw! Outlaw I may be, but I put my life on the line!"
+
+@ 2.149.05
+# speaker: 沖田 (%ss132)
+JP 「俺は、プロレスに
+JP 　命を賭けて闘ってるんじゃ！！」
+EN "I put my life on the line when I fight in pro wrestling!"
+
+@ 2.151.00
+# speaker: 記者
+JP 「%ss88さん！！
+JP 　すごい試合でした！！」
+EN "%ss88! That was an incredible match!"
+
+@ 2.151.01
+# speaker: 記者
+JP 「今日の試合の結果について
+JP 　一言コメントをお願いします！！」
+EN "A word on the result of today's match, please!"
+
+@ 2.152.00
+# speaker: 旗本 (%ss88)
+JP 「コメントなんて、
+JP 　そんなもんねえだろ！！」
+EN "A comment? I don't have one!"
+
+@ 2.152.01
+# speaker: 旗本 (%ss88)
+JP 「こんな試合どうでもいい！！」
+EN "I don't care about this match!"
+
+@ 2.152.02
+# speaker: 旗本 (%ss88)
+JP 「なめるなよ%ss132！！
+JP 　次は必ずぶっ殺す！！」
+EN "Don't mess with me, %ss132! Next time I'll kill you for sure!"
+
+@ 2.152.03
+# speaker: 旗本 (%ss88)
+JP 「ぶっ殺すって言ってんだ！！
+JP 　俺は！！」
+EN "I said I'm gonna kill him!"
+
+@ 2.153.00
+# speaker: 沖田 (%ss132)
+JP 　%ss88は、
+JP 　俺を殺すことが出来なかった。
+EN %ss88 couldn't kill me.
+
+@ 2.153.01
+# speaker: 沖田 (%ss132)
+JP 　壮絶な試合だったが
+JP 　俺は生き延びた・・・！
+EN It was a brutal match, but I survived...!
+
+@ 2.153.02
+# speaker: 沖田 (%ss132)
+JP 　生き延びたのなら、
+JP 　当初の目的に向かって
+JP 　突き進むしかない。
+EN And if I survived, all I can do is charge toward my original goal.
+
+@ 2.153.03
+# speaker: 沖田 (%ss132)
+JP 　俺は%ss98戦を実現するために、
+JP 　以前より激しいアタックを開始した。
+EN To make the %ss98 match happen, I started pushing harder than ever.
+
+@ 2.153.04
+# speaker: 沖田 (%ss132)
+JP 　時間がある限り
+JP 　%ss98を付けまわした。
+JP 　もう、ストーカーだよ、俺。
+EN Whenever I had the time, I followed %ss98 around. I'm basically a stalker now.
+
+@ 2.153.05
+# speaker: 沖田 (%ss132)
+JP 　それでも%ss98は動かなかった。
+EN Even so, %ss98 didn't budge.
+
+@ 2.153.06
+# speaker: 沖田 (%ss132)
+JP 　徹底的に無視だよ、無視。
+JP 　%ss98さん、あんたすごいよ。
+EN He ignored me completely. Totally ignored me. %ss98, you're really something.
+
+@ 2.159.00
+# speaker: 沖田 (%ss132)
+JP 　俺はとにかく色々やった。
+EN I tried all kinds of things.
+
+@ 2.159.01
+# speaker: 沖田 (%ss132)
+JP 　%ss98の事務所にも行ったし、
+JP 　ＶＪＰのマットにも乱入した。
+EN I went to %ss98's office, and I stormed the <VJP> ring.
+
+@ 2.159.02
+# speaker: 沖田 (%ss132)
+JP 　だが、
+JP 　%sf98は
+JP 　まったく動かなかった・・・！
+EN But %sf98 didn't budge at all...!
+
+@ 2.159.03
+# speaker: 沖田 (%ss132)
+JP 　さすがに
+JP 　これにはまいったよ。
+JP 　全然反応してくれねえんだから。
+EN That really got to me. He wouldn't react at all.
+
+@ 2.159.04
+# speaker: 沖田 (%ss132)
+JP 　これは少し、
+JP 　アプローチの方法を
+JP 　変えた方がいいと思っていた時、
+EN Just when I was thinking I should change my approach a bit,
+
+@ 2.159.05
+# speaker: 沖田 (%ss132)
+JP 『ＮＥＯ－ＯＮＥ』の
+JP 　%sf88が、
+JP 　記者会見でこんなことを言いやがった。
+EN %sf88 of <NEO-ONE> said this at a press conference.
+
+@ 2.160.00
+# speaker: 記者
+JP 「%ss88さん、最近の
+JP 　一連の%ss132騒動の件ですが、」
+EN "%ss88, about all this recent commotion with %ss132..."
+
+@ 2.160.01
+# speaker: 記者
+JP 「それについて、
+JP 　%ss88さんは
+JP 　何か意見はありますか？」
+EN "Do you have any opinion on it, %ss88?"
+
+@ 2.161.00
+# speaker: 旗本 (%ss88)
+JP 「俺は、%ss132さんのことを
+JP 　プロレスラーとは
+JP 　認めてないですからね。」
+EN "I don't recognize %ss132 as a pro wrestler."
+
+@ 2.161.01
+# speaker: 旗本 (%ss88)
+JP 「%ss98さんだってそうでしょ。」
+EN "I'm sure %ss98 feels the same way."
+
+@ 2.161.02
+# speaker: 旗本 (%ss88)
+JP 「プロレスラーが
+JP 　芸人さんとは闘えないですよ。」
+EN "A pro wrestler can't fight an entertainer."
+
+@ 2.162.00
+# speaker: 沖田 (%ss132)
+JP 　おい！！
+JP 　俺がプロレスラーじゃないって
+JP 　どういうことだ！？
+EN Hey! What do you mean, I'm not a pro wrestler?!
+
+@ 2.162.01
+# speaker: 沖田 (%ss132)
+JP 　おまえらがやってることだけが
+JP 　プロレスだと思うなよ！！
+EN Don't think the stuff you guys do is the only pro wrestling!
+
+@ 2.162.02
+# speaker: 沖田 (%ss132)
+JP 　俺がやってきたことは
+JP 　確かに邪道じゃ・・・
+EN Sure, what I've done is the outlaw way...
+
+@ 2.162.03
+# speaker: 沖田 (%ss132)
+JP 　だがな、邪道流でも
+JP 　プロレスはプロレスなんじゃ！！
+EN But even outlaw style, pro wrestling is pro wrestling!
+
+@ 2.162.04
+# speaker: 沖田 (%ss132)
+JP 　完全にキレた俺は、
+JP 　勢いにまかせて
+JP 　ＮＥＯ－ＯＮＥマットに突撃した！！
+EN I completely snapped, and on impulse I charged into the <NEO-ONE> ring!
+
+@ 2.163.00
+# speaker: 沖田 (%ss132)
+JP 「おい、%ss88！！」
+EN "Hey, %ss88!"
+
+@ 2.163.01
+# speaker: 沖田 (%ss132)
+JP 「%sf132！！
+JP 　ＮＥＯ－ＯＮＥに参ったぞ！！」
+EN "%sf132 has come to <NEO-ONE>!"
+
+@ 2.163.02
+# speaker: 沖田 (%ss132)
+JP 「つまらねえプロレスやってるのは
+JP 　おまえらなんじゃ！！」
+EN "You're the ones doing boring pro wrestling!"
+
+@ 2.163.03
+# speaker: 沖田 (%ss132)
+JP 「俺の邪道を認めんのだったら、
+JP 　四の五の言わず俺と闘え！！」
+EN "If you don't accept the Outlaw, quit whining and fight me!"
+
+@ 2.163.04
+# speaker: 沖田 (%ss132)
+JP 「俺と闘って、叩き潰してみろ！！」
+EN "Fight me, and try to crush me!"
+
+@ 2.164.00
+# speaker: 旗本 (%ss88)
+JP 「%ss132さん、降参します。」
+EN "%ss132, I give up."
+
+@ 2.164.01
+# speaker: 旗本 (%ss88)
+JP 「俺達、弱小団体のリングは、
+JP 　%ss132さんを
+JP 　受け入れられるほどの大舞台じゃない。」
+EN "Our tiny little promotion's ring isn't a big enough stage to take you in, %ss132."
+
+@ 2.164.02
+# speaker: 旗本 (%ss88)
+JP 「残念ですが、他を当たって下さい。」
+EN "Too bad, but try somewhere else."
+
+@ 2.164.03
+# speaker: 沖田 (%ss132)
+JP 「%ss88・・・！！」
+EN "%ss88...!"
+
+@ 2.165.00
+# speaker: 沖田 (%ss132)
+JP 　門前払いを食らった俺は
+JP 　その腹いせに
+JP 　メインのリングに乱入した。
+EN Turned away at the door, I got back at him by storming the ring during the main event.
+
+@ 2.166.00
+# speaker: 沖田 (%ss132)
+JP 「おい！
+JP 　おい！！
+JP 　おい！！！」
+EN "Hey! Hey!! HEY!!!"
+
+@ 2.166.01
+# speaker: 沖田 (%ss132)
+JP 「%ss88！
+JP 　%ss88！！
+JP 　%ss88ーー！！！」
+EN "%ss88! %ss88!! %ss88!!!"
+
+@ 2.167.00
+# speaker: 沖田 (%ss132)
+JP 「いったい
+JP 　どういうことじゃい！！」
+EN "What the hell is this?!"
+
+@ 2.167.01
+# speaker: 沖田 (%ss132)
+JP 「俺と闘え！！」
+EN "Fight me!"
+
+@ 2.167.02
+# speaker: 沖田 (%ss132)
+JP 　この挑発に
+JP 　%ss88は思った通りに
+JP 　応戦してきた。
+EN Just as I'd expected, %ss88 took the bait and came at me.
+
+@ 2.167.03
+# speaker: 沖田 (%ss132)
+JP 　俺は、持っていたマイクで
+JP 　%ss88の額を殴りつけた。
+EN I clubbed %ss88 on the forehead with the mic in my hand.
+
+@ 2.167.04
+# speaker: 沖田 (%ss132)
+JP 　さらに、
+JP 　もんどりうった%ss88に
+JP 　パイプ椅子で追い討ちをかける。
+EN Then, as %ss88 tumbled over, I followed up with a folding chair.
+
+@ 2.168.00
+# speaker: 沖田 (%ss132)
+JP 　リング上はパニックとなり、
+JP 　俺は間隙を縫って会場を脱出した。
+EN The ring went into a panic, and I slipped out of the arena in the confusion.
+
+@ 2.169.00
+# speaker: 旗本 (%ss88)
+JP 「%ss132ーーー！！
+JP 　どこ行きやがった！？」
+EN "%ss132! Where'd you go?!"
+
+@ 2.169.01
+# speaker: 旗本 (%ss88)
+JP 「ぶっ殺してやる！！
+JP 　戻って来い！！」
+EN "I'll kill you! Get back here!"
+
+@ 2.170.00
+# speaker: 沖田 (%ss132)
+JP 　その日の記者会見で
+JP 　%ss88は、『一撃』で
+JP 　俺と闘うことを発表した・・・！
+EN At a press conference that day, %ss88 announced he'd fight me at "Ichigeki"...!
+
+@ 2.170.01
+# speaker: 沖田 (%ss132)
+JP 　初めから
+JP 　のぞむところなんじゃ！！
+EN That's exactly what I wanted from the start!
+
+@ 2.170.02
+# speaker: 沖田 (%ss132)
+JP 　俺の邪道流を認めないと言うなら、
+JP 　闘って俺を殺してみろ！！
+EN If you won't accept my outlaw style, then fight me and kill me!
+
+@ 2.170.03
+# speaker: 沖田 (%ss132)
+JP 　そうでなければ、何も言わさん！！
+EN Otherwise, you've got no right to say a thing!
+
+@ 2.171.00
+# speaker: 記者
+JP 「%ss88さん！！」
+EN "%ss88!"
+
+@ 2.171.01
+# speaker: 記者
+JP 「今日の
+JP 　%ss132選手との対決ですが、
+JP 　今の心境を一言お願いします！！」
+EN "About today's showdown with %ss132... a word on how you feel right now, please!"
+
+@ 2.172.00
+# speaker: 旗本 (%ss88)
+JP 「%ss132を抹殺する！！
+JP 　勘違いは、
+JP 　あの世でしろ！！」
+EN "I'm gonna wipe %ss132 out! He can take his delusions to the grave!"
+
+@ 2.173.00
+# speaker: 沖田 (%ss132)
+JP 　%ss88は
+JP 　相当熱くなっているようだな。
+EN Looks like %ss88 is pretty fired up.
+
+@ 2.173.01
+# speaker: 沖田 (%ss132)
+JP 　だが、
+JP 　俺が%ss88に仕掛けたのには、
+JP 　怒りだけじゃない思惑がある。
+EN But I didn't go after %ss88 just out of anger. I had a plan.
+
+@ 2.173.02
+# speaker: 沖田 (%ss132)
+JP 　俺は%ss88の先に
+JP 　%ss98を見ているんじゃ。
+EN Beyond %ss88, I've got my eyes on %ss98.
+
+@ 2.173.03
+# speaker: 沖田 (%ss132)
+JP 　%ss98の息のかかっている
+JP 　%ss88と闘うことによって、
+JP 　%ss98に強烈なアピールをする。
+EN By fighting %ss98's man %ss88, I'll send %ss98 a loud message.
+
+@ 2.173.04
+# speaker: 沖田 (%ss132)
+JP 　%ss88！！
+EN %ss88!
+
+@ 2.173.05
+# speaker: 沖田 (%ss132)
+JP 　おまえは俺のために、
+JP 　%ss98戦への
+JP 　踏み台になるんじゃ！！
+EN You're gonna be my stepping stone to the %ss98 match!
+
+@ 2.175.00
+# speaker: 街行く人
+JP 「あの、すみません。
+JP 　プロレスラーの
+JP 　%ss132さんですよね？」
+EN "Um, excuse me. You're %ss132, the pro wrestler, right?"
+
+@ 2.175.01
+# speaker: 沖田 (%ss132)
+JP 「そうだけど？」
+EN "Yeah, why?"
+
+@ 2.175.02
+# speaker: 街行く人
+JP 「サインもらえませんか？」
+EN "Could I have your autograph?"
+
+@ 2.175.03
+# speaker: 沖田 (%ss132)
+JP 「ああ、いいよ。」
+EN "Sure, no problem."
+
+@ 2.175.04
+# speaker: 街行く人
+JP 「ありがとうございます！」
+EN "Thank you so much!"
+
+@ 2.176.00
+# speaker: 沖田 (%ss132)
+JP 　プロレスラーの
+JP 　%ss132さん・・・か。
+EN %ss132, the pro wrestler... huh.
+
+@ 2.176.01
+# speaker: 沖田 (%ss132)
+JP 　プロレスをやめて３年・・・
+EN Three years since I quit wrestling...
+
+@ 2.176.02
+# speaker: 沖田 (%ss132)
+JP 　確かに芸能活動をしていた
+JP 　この３年は、
+JP 　それなりに有意義だった・・・。
+EN Sure, these three years in show business have meant something...
+
+@ 2.176.03
+# speaker: 沖田 (%ss132)
+JP 　今まで出来なかったことや、
+JP 　新しいことにも
+JP 　どんどんチャレンジした。
+EN I tried things I never could before, and took on one new challenge after another.
+
+@ 2.176.04
+# speaker: 沖田 (%ss132)
+JP 　もう一回学業をするために
+JP 　高校生にもなったし・・・
+EN I even became a high school student again to go back to my studies...
+
+@ 2.176.05
+# speaker: 沖田 (%ss132)
+JP 　出馬したら、なんと、
+JP 　当選して
+JP 　議員にまでなっちまった！！
+EN And when I ran for office, I actually won and became a lawmaker!
+
+@ 2.176.06
+# speaker: 沖田 (%ss132)
+JP 　けれど・・・
+JP 　この不完全燃焼感はなんだ？
+EN And yet... what is this feeling that I never burned all the way out?
+
+@ 2.176.07
+# speaker: 沖田 (%ss132)
+JP 　世間からすれば、
+JP 　やっぱり俺はプロレスラーなんだ。
+EN To the world, I'm still a pro wrestler.
+
+@ 2.176.08
+# speaker: 沖田 (%ss132)
+JP 　プロレスラーの
+JP 　%sf132・・・
+EN %sf132, the pro wrestler...
+
+@ 2.176.09
+# speaker: 沖田 (%ss132)
+JP 　俺の心のどこかには、まだ
+JP 　プロレスに対しての未練がある・・・。
+EN Somewhere in my heart, I still can't let go of wrestling...
+
+@ 2.177.00
+# speaker: 沖田 (%ss132)
+JP 　俺の、この不完全燃焼感を
+JP 　拭い去れることってなんだろう？
+EN What could wipe away this feeling that I never burned all the way out?
+
+@ 2.177.01
+# speaker: 沖田 (%ss132)
+JP 　俺は、%ss1との闘いを最後に
+JP 　プロレスを引退した・・・。
+EN I retired from wrestling after my fight with %ss1...
+
+@ 2.177.02
+# speaker: 沖田 (%ss132)
+JP 　あの時は確かに満足感があった。
+EN Back then, I really did feel satisfied.
+
+@ 2.177.03
+# speaker: 沖田 (%ss132)
+JP 　それを超える達成感・・・
+EN Something that tops that feeling...
+
+@ 2.177.04
+# speaker: 沖田 (%ss132)
+JP 　俺の、邪道の死に水を
+JP 　完全にすくい取ってくれる人物・・・
+EN Someone who can see me, the Outlaw, off to my grave once and for all...
+
+@ 2.177.05
+# speaker: 沖田 (%ss132)
+JP 　これはもう、
+JP 　たった一人しかいねえよな。
+EN There's only one man for that, isn't there?
+
+@ 2.178.00
+# speaker: 記者
+JP 「%ss132さん。」
+EN "%ss132."
+
+@ 2.178.01
+# speaker: 記者
+JP 「今回、突然の
+JP 　プロレスラー復帰宣言ですが、」
+EN "About your sudden announcement that you're returning as a wrestler..."
+
+@ 2.178.02
+# speaker: 記者
+JP 「そのような御決断をなされた理由とは、
+JP 　いったいなんだったのでしょうか？」
+EN "What was the reason behind that decision?"
+
+@ 2.178.03
+# speaker: 沖田 (%ss132)
+JP 「僕のプロレスラーとしての魂が、
+JP 　完全に死んではいなかった
+JP 　と言うことでしょうね。」
+EN "I guess my soul as a pro wrestler wasn't completely dead after all."
+
+@ 2.178.04
+# speaker: 沖田 (%ss132)
+JP 「今の生活に満足してないって
+JP 　わけじゃないですよ。」
+EN "It's not that I'm unhappy with the life I have now."
+
+@ 2.178.05
+# speaker: 沖田 (%ss132)
+JP 「でも、僕はやっぱり
+JP 　プロレスが好きなんだ。」
+EN "But I love pro wrestling, after all."
+
+@ 2.178.06
+# speaker: 沖田 (%ss132)
+JP 「『プロレスラー%ss132』
+JP 　なんです。」
+EN "I'm 'pro wrestler %ss132'."
+
+@ 2.178.07
+# speaker: 記者
+JP 「%ss132さん、具体的には
+JP 　どういった活動をなされる
+JP 　おつもりですか？」
+EN "%ss132, what exactly are you planning to do?"
+
+@ 2.178.08
+# speaker: 沖田 (%ss132)
+JP 「僕はね、プロレスラーとして
+JP 　大往生したいんですよ。」
+EN "You see, I want to die a good death as a pro wrestler."
+
+@ 2.178.09
+# speaker: 沖田 (%ss132)
+JP 「それで、邪道の死に水を
+JP 　完全にすくい取ってくれる人は、
+JP 　この人しかいないと思って・・・」
+EN "And I figured there's only one man who can see the Outlaw off to his grave once and for all..."
+
+@ 2.178.10
+# speaker: 沖田 (%ss132)
+JP 「色々と考えた結果 、それを、
+JP 　%sf98さんに
+JP 　取ってもらおうと思っています。 」
+EN "After a lot of thought, I want %sf98 to be the one to do it."
+
+@ 2.178.11
+# speaker: 記者
+JP 「えぇ・・・と、
+JP 　誰ですって！？」
+EN "Uh... who did you say?!"
+
+@ 2.178.12
+# speaker: 記者
+JP 「聞き違いでなければ・・・
+JP 　今、ものすごい名前が出たような
+JP 　気がするんですが・・・」
+EN "If I didn't mishear... I feel like an incredible name just came up..."
+
+@ 2.178.13
+# speaker: 沖田 (%ss132)
+JP 「だから、
+JP 　%sf98さん。
+JP 　知ってるでしょ？」
+EN "Like I said, %sf98. You know him, right?"
+
+@ 2.178.14
+# speaker: 記者
+JP 「知ってるって・・・
+JP 　え、えええっーーー！！！」
+EN "Know him...? Wh-WHAAAT?!"
+
+@ 2.178.15
+# speaker: 記者
+JP 「%ss98！？
+JP 　%sf98さん
+JP 　ですか！？」
+EN "%ss98?! %sf98?!"
+
+@ 2.178.16
+# speaker: 沖田 (%ss132)
+JP 「おい！
+JP 　さっきから
+JP 　そう言ってるだろ！！」
+EN "Hey! That's what I've been telling you!"
+
+@ 2.179.00
+# speaker: 沖田 (%ss132)
+JP 　この記者会見は、よほど
+JP 　センセーショナルだったらしく、
+JP 　プロレス界は大騒ぎとなった。
+EN That press conference must have been a real bombshell, because the wrestling world was in an uproar.
+
+@ 2.179.01
+# speaker: 沖田 (%ss132)
+JP 『%ss98は%ss132なんか
+JP 　相手にしない』
+JP 『また%ss132がフカしてる』・・・
+EN "%ss98 won't give %ss132 the time of day." "%ss132's talking big again."...
+
+@ 2.179.02
+# speaker: 沖田 (%ss132)
+JP 　色々言われたな。
+EN People said all kinds of things.
+
+@ 2.179.03
+# speaker: 沖田 (%ss132)
+JP 　でもなあ、
+JP 　邪道流で生きて来た俺には
+JP 　周りなんか関係ない。
+EN But I've lived outlaw style. I don't care what anyone says.
+
+@ 2.179.04
+# speaker: 沖田 (%ss132)
+JP 　一度目標を決めたら、
+JP 　後は突き進むだけだよ。
+EN Once I set a goal, all that's left is to charge ahead.
+
+@ 2.183.00
+# speaker: 沖田 (%ss132)
+JP 「俺は・・・今日、
+JP 　おまえらに言わなくちゃ
+JP 　いけないことがある・・・。
+EN "I... I've got something I have to tell you all today..."
+
+@ 2.183.01
+# speaker: 沖田 (%ss132)
+JP 「俺は・・・俺は・・・」
+EN "I... I..."
+
+@ 2.183.02
+# speaker: 観客
+JP 「%ss132ーーーっ！！」
+EN "%ss132!!"
+
+@ 2.184.00
+# speaker: 沖田 (%ss132)
+JP 「俺は今日の試合をもって、
+JP 　プロレスを引退する・・・！」
+EN "With today's match... I retire from pro wrestling...!"
+
+@ 2.184.01
+# speaker: 沖田 (%ss132)
+JP 「俺は今まで、
+JP 　ＩＷを守るために
+JP 　死に物狂いでやって来た・・・！」
+EN "Until now, I've fought like a man possessed to protect <IW>...!"
+
+@ 2.184.02
+# speaker: 沖田 (%ss132)
+JP 「プロレスを愛して、
+JP 　この身を削ってやって来た！！」
+EN "I loved pro wrestling, and I wore myself down for it!"
+
+@ 2.184.03
+# speaker: 沖田 (%ss132)
+JP 「ＩＷは・・・
+JP 　ＩＷは不滅じゃ！！」
+EN "<IW>... <IW> will never die!"
+
+@ 2.185.00
+# speaker: 沖田 (%ss132)
+JP 「おまえらがいる限り、
+JP 　不滅なんじゃ！！」
+EN "As long as you're here, it'll never die!"
+
+@ 2.186.00
+# speaker: 沖田 (%ss132)
+JP 「俺の愛したプロレスよ！！
+JP 　邪道の魂よ・・・！！」
+EN "Pro wrestling, which I loved! The soul of the Outlaw...!"
+
+@ 2.186.01
+# speaker: 沖田 (%ss132)
+JP 「さらば！！」
+EN "Farewell!"
+
+@ 2.187.00
+# speaker: 沖田 (%ss132)
+JP 　これで・・・
+JP 　これで、良かったんだ・・・！
+EN This... this was for the best...!
+
+@ 2.187.01
+# speaker: 沖田 (%ss132)
+JP 　今日の試合は、最高だった！！
+EN Today's match was the greatest!
+
+@ 2.187.02
+# speaker: 沖田 (%ss132)
+JP 　俺のプロレス人生は、
+JP 　最高の試合を経て完結したんだ！！
+EN My life in pro wrestling came to a close with the greatest match there is!
+
+@ 2.187.03
+# speaker: 沖田 (%ss132)
+JP 　いい気分じゃ・・・。
+EN Feels good...
+
+@ 2.187.04
+# speaker: 沖田 (%ss132)
+JP 　去り際は美しく・・・
+EN Go out with grace...
+
+@ 2.187.05
+# speaker: 沖田 (%ss132)
+JP 　さらば、ＩＷ。
+JP 　さらば、プロレスよ・・・。
+EN Farewell, <IW>. Farewell, pro wrestling...
+
+@ 2.189.00
+# speaker: 記者
+JP 「%ss1選手！！
+JP 　すごい試合でした！！」
+EN "%ss1! That was an incredible match!"
+
+@ 2.189.01
+# speaker: 記者
+JP 「%ss132選手との試合を終えた、
+JP 　今の感想を聞かせてもらえませんか！？」
+EN "Could you tell us how you feel now that your match with %ss132 is over?!"
+
+@ 2.190.00
+# speaker: 力丸 (%ss1)
+JP 「徹底的にやってやったぞ！！」
+EN "I gave him everything I had!"
+
+@ 2.190.01
+# speaker: 力丸 (%ss1)
+JP 「%ss132！！
+JP 　満足しただろ！！
+JP 　キチンとけじめつけろよ！！」
+EN "%ss132! You must be satisfied now! So keep your word and finish it properly!"
+
+@ 2.191.00
+# speaker: 沖田 (%ss132)
+JP 　%ss1は強かった・・・
+EN %ss1 was strong...
+
+@ 2.191.01
+# speaker: 沖田 (%ss132)
+JP 　だが、これで踏ん切りはついた。
+EN But now I can finally let go.
+
+@ 2.191.02
+# speaker: 沖田 (%ss132)
+JP 　俺は今まで、
+JP 　精一杯やって来た・・・！
+EN I've given it everything I had, all this time...!
+
+@ 2.191.03
+# speaker: 沖田 (%ss132)
+JP 　大好きなプロレスよ・・・
+EN Pro wrestling, which I love so much...
+
+@ 2.191.04
+# speaker: 沖田 (%ss132)
+JP 　ＩＷよ・・・！！
+JP 　さらば！！
+EN <IW>...! Farewell!
+
+@ 2.197.00
+# speaker: 沖田 (%ss132)
+JP 　%ss41との壮絶な闘いを経た後、
+JP 　俺は真剣に
+JP 　引退を考えるようになった・・・。
+EN After my brutal fight with %ss41, I started seriously thinking about retiring...
+
+@ 2.197.01
+# speaker: 沖田 (%ss132)
+JP 　気力はまだあった。
+EN I still had the will.
+
+@ 2.197.02
+# speaker: 沖田 (%ss132)
+JP 　だが・・・
+JP 　体はすでに
+JP 　限界を超えている・・・。
+EN But... my body was already past its limits...
+
+@ 2.197.03
+# speaker: 沖田 (%ss132)
+JP 　俺がリングを去る日は
+JP 　近いだろう。
+EN The day I leave the ring can't be far off.
+
+@ 2.197.04
+# speaker: 沖田 (%ss132)
+JP 　%ss1の話が降って沸いたのは、
+JP 　そんな時だった。
+EN That's when the %ss1 news came out of nowhere.
+
+@ 2.198.00
+# speaker: 真崎
+JP 「社長！！
+JP 　%ss1が
+JP 　正式にＶＪＰを脱退しましたよ！！」
+EN "Boss! %ss1 has officially quit <VJP>!"
+
+@ 2.198.01
+# speaker: 沖田 (%ss132)
+JP 「%ss1が・・・？
+JP 　どうして？」
+EN "%ss1...? Why?"
+
+@ 2.198.02
+# speaker: 真崎
+JP 「詳しいことは
+JP 　よく分かりませんが・・・」
+EN "I don't know the details, but..."
+
+@ 2.198.03
+# speaker: 真崎
+JP 「以前、
+JP 　ＶＪＰと決別した時と同じように、
+JP 　フロントとの不仲が原因のようですね。」
+EN "It sounds like trouble with the front office, the same as when he split with <VJP> before."
+
+@ 2.198.04
+# speaker: 沖田 (%ss132)
+JP 「真崎・・・
+JP 　俺、%ss1と
+JP 　金網デスマッチやれねえかな？」
+EN "Masaki... You think I could do a steel cage deathmatch with %ss1?"
+
+@ 2.198.05
+# speaker: 真崎
+JP 「%ss1・・・！？とですか？
+JP 　それはちょっと
+JP 　無理じゃないですかね・・・」
+EN "With %ss1...?! I don't think that's going to happen..."
+
+@ 2.198.06
+# speaker: 真崎
+JP 「%ss1は、
+JP 　変則的なプロレスを
+JP 　あまり良く思っていませんから・・・。」
+EN "%ss1 doesn't think much of offbeat wrestling..."
+
+@ 2.198.07
+# speaker: 真崎
+JP 「普通の試合ならまだしも、
+JP 　金網デスマッチとなると・・・
+JP 　難しいと思います・・・。」
+EN "A normal match maybe, but a steel cage deathmatch... I think it'd be tough..."
+
+@ 2.198.08
+# speaker: 沖田 (%ss132)
+JP 「普通の試合でもいいんだ。」
+EN "A normal match is fine."
+
+@ 2.198.09
+# speaker: 沖田 (%ss132)
+JP 「真崎、俺はな、
+JP 　近いうちに引退しようと考えてる。」
+EN "Masaki, listen. I'm thinking of retiring soon."
+
+@ 2.198.10
+# speaker: 真崎
+JP 「えっ・・・！？
+JP 　しゃ、社長！？」
+EN "Wha...?! B-Boss?!"
+
+@ 2.198.11
+# speaker: 沖田 (%ss132)
+JP 「いいから聞けよ。」
+EN "Just listen."
+
+@ 2.198.12
+# speaker: 沖田 (%ss132)
+JP 「俺はリングを去る前に、」
+EN "Before I leave the ring..."
+
+@ 2.198.13
+# speaker: 沖田 (%ss132)
+JP 「今までのプロレス人生の
+JP 　集大成になる試合をやってみたいと
+JP 　思っているんだ。」
+EN "...I want to have a match that sums up my whole life in pro wrestling."
+
+@ 2.198.14
+# speaker: 沖田 (%ss132)
+JP 「相手が
+JP 　%ss1ほどの大物なら、
+JP 　邪道のポリシーを捨ててもいい。」
+EN "If the opponent's as big a name as %ss1, I'll even throw away the Outlaw's policy."
+
+@ 2.198.15
+# speaker: 沖田 (%ss132)
+JP 「いや、ポリシーを捨てることもまた、
+JP 　邪道と言えるんじゃないか？」
+EN "No, wait... throwing away your policy is pretty outlaw too, isn't it?"
+
+@ 2.198.16
+# speaker: 沖田 (%ss132)
+JP 「とにかく、
+JP 　%ss1と闘うことは
+JP 　それだけの価値があるんだ。」
+EN "Either way, a fight with %ss1 is worth that much."
+
+@ 2.198.17
+# speaker: 真崎
+JP 「社長・・・。」
+EN "Boss..."
+
+@ 2.199.00
+# speaker: 沖田 (%ss132)
+JP 　俺は、その日から
+JP 　執拗に%ss1をつけまわした。
+EN From that day on, I followed %ss1 around relentlessly.
+
+@ 2.199.01
+# speaker: 沖田 (%ss132)
+JP 　初め、%ss1は
+JP 　まったく俺を
+JP 　相手にしなかったよ。
+EN At first, %ss1 wouldn't give me the time of day.
+
+@ 2.199.02
+# speaker: 沖田 (%ss132)
+JP 　ぶん殴られて
+JP 　追い返された時もあったな。
+EN There were even times he punched me and sent me packing.
+
+@ 2.199.03
+# speaker: 沖田 (%ss132)
+JP 　その時は俺もキレたけど、
+JP 　あまりに俺がしつこいんでね。
+EN I lost my temper then too, but I just kept at it.
+
+@ 2.199.04
+# speaker: 沖田 (%ss132)
+JP 『おまえが本当に引退するなら』
+JP 　と言う条件付きで、
+JP 　%ss1は試合を受けてくれた。
+EN On the condition "if you're really going to retire", %ss1 accepted the match.
+
+@ 2.199.05
+# speaker: 沖田 (%ss132)
+JP 　この俺が、%ss1相手に
+JP 　まともな試合をするというんで、
+JP 　マスコミはおおいに沸いたよ。
+EN The press went wild that someone like me would have a straight match with %ss1.
+
+@ 2.200.00
+# speaker: 記者
+JP 「%ss1さん！！
+JP 　本当に驚きました！！」
+EN "%ss1! This was a real surprise!"
+
+@ 2.200.01
+# speaker: 記者
+JP 「今回、%ss132選手との
+JP 　試合が決定したわけですが、」
+EN "Your match with %ss132 has now been set,"
+
+@ 2.200.02
+# speaker: 記者
+JP 「それについて
+JP 　一言コメントをお願いします。」
+EN "so could we get a comment on it?"
+
+@ 2.201.00
+# speaker: 力丸 (%ss1)
+JP 「しつこいんだよ、%ss132は。」
+EN "%ss132 just won't quit pestering me."
+
+@ 2.201.01
+# speaker: 力丸 (%ss1)
+JP 「俺も、『ああ、めんどくせえ。
+JP 　なんでもやってやるよ。』って
+JP 　気になったからな。
+EN "I got to the point of thinking, 'Ugh, what a pain. Fine, I'll do whatever.'"
+
+@ 2.201.02
+# speaker: 力丸 (%ss1)
+JP 「試合の内容については
+JP 　何も期待してないよ。」
+EN "I'm not expecting anything from the match."
+
+@ 2.201.03
+# speaker: 力丸 (%ss1)
+JP 「結果は
+JP 　やる前から分かってるだろ。」
+EN "You know how it'll turn out before it even starts."
+
+@ 2.201.04
+# speaker: 力丸 (%ss1)
+JP 「あいつは引退だよ。」
+EN "He's retiring. That's it."
+
+@ 2.202.00
+# speaker: 記者
+JP 「%ss132さん！！」
+EN "%ss132!"
+
+@ 2.202.01
+# speaker: 記者
+JP 「誰もが想像もしなかった
+JP 　%ss132対%ss1の
+JP 　シングルマッチですが、」
+EN "Nobody ever imagined a singles match between %ss132 and %ss1,"
+
+@ 2.202.02
+# speaker: 記者
+JP 「なぜ、
+JP 　%ss1選手だったのでしょう！？
+JP 　真相を教えて下さい！！」
+EN "so why %ss1?! Please tell us the real story!"
+
+@ 2.202.03
+# speaker: 沖田 (%ss132)
+JP 「%ss1は真っ直ぐ・・・」
+EN "%ss1 has always gone straight ahead..."
+
+@ 2.202.04
+# speaker: 沖田 (%ss132)
+JP 「ある意味、真っ直ぐに
+JP 　メジャーを突き進んで来た
+JP 　人間じゃないか・・・。」
+EN "In a way, he's a man who's charged straight down the majors' road his whole career..."
+
+@ 2.202.05
+# speaker: 沖田 (%ss132)
+JP 「これは
+JP 　俺の最後の挑戦なんじゃ・・・！」
+EN "This is my final challenge...!"
+
+@ 2.202.06
+# speaker: 沖田 (%ss132)
+JP 「邪道で生きて来た俺の、
+JP 　メジャーに対する
+JP 　最後の挑戦なんじゃ！！」
+EN "The final challenge to the majors from a man who's lived as an outlaw!"
+
+@ 2.202.07
+# speaker: 沖田 (%ss132)
+JP 「俺は
+JP 　%ss1の首を獲る！！」
+EN "I'm taking %ss1's head!"
+
+@ 2.203.00
+# speaker: 沖田 (%ss132)
+JP 　最後の挑戦・・・
+EN My final challenge...
+
+@ 2.203.01
+# speaker: 沖田 (%ss132)
+JP 　%ss1との試合が
+JP 　デスマッチじゃなかったことは、
+JP 　確かに心残りではある・・・。
+EN It's true I'm sorry the match with %ss1 isn't a deathmatch...
+
+@ 2.203.02
+# speaker: 沖田 (%ss132)
+JP 　だが、邪道の俺が、
+JP 　メジャーのビッグネームと闘うことは
+JP 　俺のプロレス人生の終焉に相応しい。
+EN But me, the Outlaw, fighting a big name from the majors is a fitting end to my career.
+
+@ 2.203.03
+# speaker: 沖田 (%ss132)
+JP 　邪道の夢・・・
+JP 　俺が目指して来たこと・・・
+EN The Outlaw's dream... what I've been chasing...
+
+@ 2.203.04
+# speaker: 沖田 (%ss132)
+JP 　俺は・・・！
+JP 　この試合で全てを出し切る！！
+EN I...! I'll give everything I've got in this match!
+
+@ 2.205.00
+# speaker: 沖田 (%ss132)
+JP 　１５歳の時、
+JP 　俺は高校を３日でやめて、
+JP 　自転車で日本一周の旅に出た・・・。
+EN At 15, I quit high school after three days and set off on a bike trip around Japan...
+
+@ 2.205.01
+# speaker: 沖田 (%ss132)
+JP 　たまたま地図帳で日本を見て、
+JP 　この国のでかさを
+JP 　自分の体で感じてみたいと思ったんだ。
+EN I happened to look at Japan in an atlas, and wanted to feel how big this country is with my own body.
+
+@ 2.205.02
+# speaker: 沖田 (%ss132)
+JP 　その後、俺は、
+JP 　プロレスラーとして生きながら、
+EN After that, while living as a pro wrestler,
+
+@ 2.205.03
+# speaker: 沖田 (%ss132)
+JP 　４１歳で高校生に戻り、
+JP 　大学生となって政治家になった・・・。
+EN I went back to high school at 41, went to college, and became a politician...
+
+@ 2.205.04
+# speaker: 沖田 (%ss132)
+JP 　我ながら信じられない人生だよな。
+EN Even I can't believe the life I've had.
+
+@ 2.205.05
+# speaker: 沖田 (%ss132)
+JP 　でも人間って奴は、
+JP 　やる気と可能性さえあれば
+JP 　何だって出来るんだ。
+EN But as long as a person has the will and the chance, they can do anything.
+
+@ 2.205.06
+# speaker: 沖田 (%ss132)
+JP 　不可能だと思ったら、
+JP 　そこで何もかも終わってしまう。
+EN The moment you think it's impossible, it's all over right there.
+
+@ 2.205.07
+# speaker: 沖田 (%ss132)
+JP 　俺はこれからも、
+JP 　プロレスラーとして
+JP 　やりたいことをやり続ける。
+EN From here on, too, I'll keep doing what I want to do as a pro wrestler.
+
+@ 2.205.08
+# speaker: 沖田 (%ss132)
+JP 　可能性があれば
+JP 　どこまでも突き進む。
+EN If there's a chance, I'll push on as far as it goes.
+
+@ 2.205.09
+# speaker: 沖田 (%ss132)
+JP 　格好悪くたっていいじゃないか。
+EN So what if I look uncool?
+
+@ 2.205.10
+# speaker: 沖田 (%ss132)
+JP 　夢は、決して手の届かないものじゃない。
+JP 　夢は、自分の力でつかむものだから。
+JP 　%sf132
+EN A dream is never out of reach: you grab it with your own hands.
+EN %sf132
+
+@ 2.206.00
+# speaker: 記者
+JP 「%ss1さん！！
+JP 　凄まじい気迫の試合でした！！」
+EN "%ss1! What a match, full of incredible fighting spirit!"
+
+@ 2.206.01
+# speaker: 記者
+JP 「%ss132選手について、
+JP 　何かコメントはありますか！？」
+EN "Do you have any comment about %ss132?!"
+
+@ 2.206.02
+# speaker: 力丸 (%ss1)
+JP 「長い間、
+JP 　%ss132を無視してきたけれど、」
+EN "I ignored %ss132 for a long time, but..."
+
+@ 2.206.03
+# speaker: 力丸 (%ss1)
+JP 「『ああ、面倒くせえ。
+JP 　そんなにやりたきゃやってやるよ。』
+JP 　って気になってな。」
+EN "I got to thinking, 'Ugh, what a pain. If you want it that bad, I'll give it to you.'"
+
+@ 2.206.04
+# speaker: 力丸 (%ss1)
+JP 「だけど、
+JP 　俺にそこまで思わせるっていうのは、
+JP 　どんなに難しいことか分かるだろ？」
+EN "But you know how hard it is to get me to feel that way, right?"
+
+@ 2.206.05
+# speaker: 力丸 (%ss1)
+JP 「単身敵地に乗り込んで来て、
+JP 　しかもＶＪＰでデスマッチ形式だしな。」
+EN "He walked into enemy territory alone, and in <VJP>, with a deathmatch to boot."
+
+@ 2.206.06
+# speaker: 力丸 (%ss1)
+JP 「あそこまでやられたら
+JP 　俺もやるしかないけど、
+JP 　普通の人間じゃ、あそこまで出来ない。」
+EN "When someone goes that far, I've got no choice. A normal person couldn't go that far."
+
+@ 2.206.07
+# speaker: 力丸 (%ss1)
+JP 「それでいて、最後は前代未聞の
+JP 　エンターテイメントとして
+JP 　完成させてしまう・・・」
+EN "And in the end, he turned it into entertainment like nobody's ever seen..."
+
+@ 2.206.08
+# speaker: 力丸 (%ss1)
+JP 「%ss132はバカだけど、
+JP 　奴こそ本物のプロだよ。」
+EN "%ss132's an idiot, but he's the real deal. A true pro."
+
+@ 2.206.09
+# speaker: 力丸 (%ss1)
+JP 「まったく、
+JP 　あいつの執念には
+JP 　頭が下がる。」
+EN "Honestly, I have to take my hat off to that guy's persistence."
+
+@ 2.212.00
+# speaker: 記者
+JP 「%ss132さん・・・！！
+JP 　%ss132さん、
+JP 　ちょっといいですか！？」
+EN "%ss132...! %ss132, have you got a moment?!"
+
+@ 2.212.01
+# speaker: 記者
+JP 「%ss1選手が
+JP 　%ss132さんへ、何かメッセージを
+JP 　送ったということですが・・・」
+EN "We hear %ss1 sent you some kind of message, %ss132..."
+
+@ 2.212.02
+# speaker: 記者
+JP 「そのメッセージとは
+JP 　いったい何だったのでしょうか！？」
+EN "What exactly was that message?!"
+
+@ 2.212.03
+# speaker: 沖田 (%ss132)
+JP 「%ss1は代理人を通して
+JP 　これを俺に送って来た。」
+EN "%ss1 sent me this through an agent."
+
+@ 2.212.04
+# speaker: 記者
+JP 「これは・・・？」
+EN "What is it...?"
+
+@ 2.212.05
+# speaker: 沖田 (%ss132)
+JP 「%ss1の汗が
+JP 　染み込んだＴシャツ・・・。」
+EN "A T-shirt, soaked in %ss1's sweat..."
+
+@ 2.212.06
+# speaker: 沖田 (%ss132)
+JP 「俺流の解釈では、
+JP 　%ss1は俺との試合のために
+JP 　ハードなトレーニングを開始した。」
+EN "The way I read it, %ss1 has started training hard for a match with me."
+
+@ 2.212.07
+# speaker: 沖田 (%ss132)
+JP 「つまり、
+JP 　いつでもやってやるということだ。」
+EN "In other words, he'll take me on anytime."
+
+@ 2.212.08
+# speaker: 沖田 (%ss132)
+JP 「なかなかオシャレな演出じゃのう。」
+EN "Pretty stylish way to put it, huh?"
+
+@ 2.212.09
+# speaker: 沖田 (%ss132)
+JP 「だが、俺にはこれ以上悠長に
+JP 　構えている時間はないんじゃ。」
+EN "But I don't have time to sit around waiting any longer."
+
+@ 2.212.10
+# speaker: 沖田 (%ss132)
+JP 「左膝に埋め込まれた爆弾が、
+JP 　そろそろ爆発しそうだからな。」
+EN "The bomb in my left knee is about ready to go off."
+
+@ 2.212.11
+# speaker: 記者
+JP 「爆弾・・・！？」
+EN "A bomb...?!"
+
+@ 2.212.12
+# speaker: 沖田 (%ss132)
+JP 「俺は１５年前、
+JP 　左膝を粉砕骨折してＯＪＰをやめた。」
+EN "Fifteen years ago, I shattered my left knee and left <OJP>."
+
+@ 2.212.13
+# speaker: 沖田 (%ss132)
+JP 「その時、
+JP 　手術で骨を繋ぎとめたワイヤーが
+JP 　今年で寿命になる。」
+EN "The wire they used in surgery to hold the bone together wears out this year."
+
+@ 2.212.14
+# speaker: 沖田 (%ss132)
+JP 「俺には、もはや、
+JP 　ウダウダとやりとりしている時間は
+JP 　ないんじゃ・・・！！」
+EN "I don't have time to dither around anymore...!"
+
+@ 2.213.00
+# speaker: 沖田 (%ss132)
+JP 　俺の懸命さを無視するかのように、
+JP 　その後、%ss1からの打診は
+JP 　プッツリと途絶えた・・・。
+EN As if ignoring how desperate I was, after that, word from %ss1 stopped cold...
+
+@ 2.213.01
+# speaker: 沖田 (%ss132)
+JP 　%ss1は、いったい
+JP 　何を考えているのか？
+EN What on earth was %ss1 thinking?
+
+@ 2.213.02
+# speaker: 沖田 (%ss132)
+JP 　時間のない俺は、
+JP 　いちかばちかの
+JP 　パフォーマンスを決行した。
+EN Out of time, I pulled an all-or-nothing stunt.
+
+@ 2.214.00
+# speaker: 田辺
+JP 「ああっーーーと！！
+JP 　今、エプロンサイドから・・・」
+EN "Ohhh!! Now, from the apron..."
+
+@ 2.214.01
+# speaker: 田辺
+JP 「%ss132です！！
+JP 　%ss132が現れました！！」
+EN "It's %ss132! %ss132 has appeared!"
+
+@ 2.215.00
+# speaker: 田辺
+JP 「%ss1を
+JP 　執念で追う%ss132！！」
+EN "%ss132, relentlessly chasing %ss1!"
+
+@ 2.215.01
+# speaker: 田辺
+JP 「またしても
+JP 　ＶＪＰのマットに乱入です！！」
+EN "Another run-in on the <VJP> mat!"
+
+@ 2.216.00
+# speaker: 沖田 (%ss132)
+JP 「%ss1は、いったい
+JP 　いつまで待たせるんじゃ・・・。」
+EN "Just how long is %ss1 gonna keep me waiting...?"
+
+@ 2.216.01
+# speaker: 沖田 (%ss132)
+JP 「このＴシャツの意味はなんじゃ！？
+JP 　俺は覚悟は出来てるぞ！！」
+EN "What's this T-shirt supposed to mean?! I'm ready!"
+
+@ 2.216.02
+# speaker: 沖田 (%ss132)
+JP 「おい！！%ss1！！
+JP 　よーーく見ておけ！！
+JP 　これがおまえの行く末じゃ！！」
+EN "Hey! %ss1! Take a good look! This is where you're headed!"
+
+@ 2.216.03
+# speaker: 沖田 (%ss132)
+JP 　俺は、
+JP 　%ss1から送られて来たＴシャツを
+JP 　ズタズタに破り捨てた。
+EN I tore the T-shirt %ss1 had sent me to shreds.
+
+@ 2.216.04
+# speaker: 沖田 (%ss132)
+JP 　同時に
+JP 　奴のプライドも
+JP 　ズタズタに破り捨ててやった。
+EN And I tore his pride to shreds along with it.
+
+@ 2.216.05
+# speaker: 沖田 (%ss132)
+JP 「出て来い%ss1！！
+JP 　俺はここまでやったぞ！！」
+EN "Come out, %ss1! Look how far I've gone!"
+
+@ 2.216.06
+# speaker: 沖田 (%ss132)
+JP 「おまえにプロレスラーとしての
+JP 　プライドがあるなら、」
+EN "If you've got any pride as a pro wrestler..."
+
+@ 2.216.07
+# speaker: 沖田 (%ss132)
+JP 「俺を倒しに来い！！」
+EN "...come and beat me!"
+
+@ 2.217.00
+# speaker: 記者
+JP 「%ss132さん！！」
+EN "%ss132!"
+
+@ 2.217.01
+# speaker: 記者
+JP 「%ss1さんが会見をして、
+JP 　%ss132戦を
+JP 　正式に発表しましたよ！！」
+EN "%ss1 held a press conference and officially announced the %ss132 match!"
+
+@ 2.217.02
+# speaker: 記者
+JP 「感想を聞かせて下さい！！」
+EN "Tell us how you feel!"
+
+@ 2.217.03
+# speaker: 沖田 (%ss132)
+JP 「そうですか。」
+EN "Is that so."
+
+@ 2.217.04
+# speaker: 沖田 (%ss132)
+JP 「今まで・・・
+JP 　それだけを目標に突き進んで来ました。」
+EN "All this time... that's the one goal I've been charging toward."
+
+@ 2.217.05
+# speaker: 沖田 (%ss132)
+JP 「俺の無謀な挑戦を受けてくれた
+JP 　%ss1さんに、
+JP 　一言、ありがとうと伝えて下さい。」
+EN "Please tell %ss1 thank you, from me, for accepting my reckless challenge."
+
+@ 2.217.06
+# speaker: 沖田 (%ss132)
+JP 　%ss132対%ss1、
+JP 　ノーロープ有刺鉄線
+JP 　電流爆破デスマッチは、
+EN %ss132 vs. %ss1, a No-Rope Exploding Barbed Wire Deathmatch...
+
+@ 2.217.07
+# speaker: 沖田 (%ss132)
+JP 　長い道のりの末、
+JP 　遂に完結する・・・！！
+EN After a long road, it finally comes to its end...!
+
+@ 2.218.00
+# speaker: 沖田 (%ss132)
+JP 　誰も信じちゃいなかった・・・
+EN Nobody believed it...
+
+@ 2.218.01
+# speaker: 沖田 (%ss132)
+JP 　誰もが不可能だと思っていた・・・
+EN Everybody thought it was impossible...
+
+@ 2.218.02
+# speaker: 沖田 (%ss132)
+JP 　だが俺はここに来た。
+JP 　俺は%ss1まで辿り着いた・・・！！
+EN But I made it here. I made it all the way to %ss1...!
+
+@ 2.218.03
+# speaker: 沖田 (%ss132)
+JP 　この試合は邪道の終焉にふさわしい。
+EN This match is a fitting end for the Outlaw.
+
+@ 2.218.04
+# speaker: 沖田 (%ss132)
+JP 　さらば、邪道よ！！
+EN Farewell, Outlaw!
+
+@ 2.220.00
+# speaker: 沖田 (%ss132)
+JP 　この試合を最後に、
+JP 　悪鬼蛇はプロレス界から
+JP 　完全に消滅した・・・。
+EN After this match, Akkija vanished from the wrestling world for good...
+
+@ 2.220.01
+# speaker: 沖田 (%ss132)
+JP 　だが、それは必要なことだった。
+EN But it had to be done.
+
+@ 2.220.02
+# speaker: 沖田 (%ss132)
+JP 　悪鬼蛇の死があってこそ、
+JP 　俺は王者との闘いに
+JP 　生き延びることが出来たんだ。
+EN It's only because Akkija died that I survived my fight with the champion.
+
+@ 2.220.03
+# speaker: 沖田 (%ss132)
+JP 　どんな形にしろ、
+JP 　ＩＧＰのチャンピオンと闘い、
+JP 　生き残ったという事実は記録として残る。
+EN However it happened, the fact that I fought the <IGP> champion and survived goes on the record.
+
+@ 2.220.04
+# speaker: 沖田 (%ss132)
+JP 　もはやＶＪＰサイドに、
+JP 　%ss1との闘いの前に
+JP 　切るべきカードは無くなったんじゃ！！
+EN <VJP> has no cards left to play before my fight with %ss1!
+
+@ 2.226.00
+# speaker: 沖田 (%ss132)
+JP 　俺には一つの作戦がある。
+EN I have a plan.
+
+@ 2.226.01
+# speaker: 沖田 (%ss132)
+JP 　さすがの俺も、
+JP 　現役バリバリのチャンピオンと
+JP 　正攻法で闘うのは無理がある。
+EN Even for me, fighting a reigning champion in his prime head-on is asking too much.
+
+@ 2.226.02
+# speaker: 沖田 (%ss132)
+JP 　%ss21との死闘で
+JP 　傷ついた体も、
+JP 　完全には癒えていない。
+EN My body hasn't fully healed from my deathmatch with %ss21 either.
+
+@ 2.226.03
+# speaker: 沖田 (%ss132)
+JP 　%ss42相手に、
+JP 　対等に闘える状況を
+JP 　作り出す方法・・・
+EN A way to fight %ss42 on even terms...
+
+@ 2.226.04
+# speaker: 沖田 (%ss132)
+JP 　答えは一つしかない。
+EN There's only one answer.
+
+@ 2.226.05
+# speaker: 沖田 (%ss132)
+JP 　封印したはずの
+JP 　俺のもう一つの顔・・・
+EN My other face, the one I'd sealed away...
+
+@ 2.226.06
+# speaker: 沖田 (%ss132)
+JP 　武零怒・悪鬼蛇を呼び戻すんじゃ！！
+EN I'll call back Bureido Akkija!
+
+@ 2.227.00
+# speaker: 田辺
+JP 「ああーっと！！
+JP 　%ss132が突如
+JP 　乱入して来ました！！」
+EN "Ohhh! %ss132 has suddenly stormed in!"
+
+@ 2.227.01
+# speaker: 田辺
+JP 「会場内には、嵐のように
+JP 　ペットボトルが飛び交っています！！」
+EN "Plastic bottles are flying through the arena like a storm!"
+
+@ 2.228.00
+# speaker: 田辺
+JP 「%ss132はリングに・・・！
+JP 　%ss42と対峙しました！！」
+EN "%ss132 is in the ring...! He's face to face with %ss42!"
+
+@ 2.228.01
+# speaker: 解説者
+JP 「%ss42は挑発には乗りませんね。
+JP 　でも、この状況は
+JP 　気を付けた方がいいですよ・・・！」
+EN "%ss42 isn't taking the bait. But he'd better be careful in this situation...!"
+
+@ 2.228.02
+# speaker: 田辺
+JP 「ああっ！！」
+EN "Ahh!!"
+
+@ 2.228.03
+# speaker: 田辺
+JP 「%ss132が
+JP 　%ss42の顔面めがけて、
+JP 　毒霧を噴射したーーー！！」
+EN "%ss132 sprays poison mist right in %ss42's face!!"
+
+@ 2.229.00
+# speaker: 田辺
+JP 「%ss42、
+JP 　たまらずリング外に
+JP 　エスケープ！！」
+EN "%ss42 can't take it and escapes outside the ring!"
+
+@ 2.230.00
+# speaker: 沖田 (%ss132)
+JP 「%ss1！！
+JP 　ＶＪＰ首脳陣よ、
+JP 　よく聞け！！」
+EN "%ss1! <VJP> brass! Listen up!"
+
+@ 2.230.01
+# speaker: 沖田 (%ss132)
+JP 「俺の次のターゲットは
+JP 　ＩＧＰ王者、
+JP 　%ss42じゃ！！」
+EN "My next target is the <IGP> champion, %ss42!"
+
+@ 2.230.02
+# speaker: 沖田 (%ss132)
+JP 「俺は%ss42と闘うために、
+JP 　南港から武零怒・悪鬼蛇を
+JP 　呼び戻す！！」
+EN "To fight %ss42, I'm calling Bureido Akkija back from Nanko!"
+
+@ 2.231.00
+# speaker: 沖田 (%ss132)
+JP 　過去、%ss42は、
+JP 　自分とは異なる人格のレスラー
+JP 　%ss43となり、
+EN In the past, %ss42 became %ss43, a wrestler with a whole different personality,
+
+@ 2.231.01
+# speaker: 沖田 (%ss132)
+JP 　ヒールとして
+JP 　活躍していたことがあった。
+EN and made a name for himself as a heel.
+
+@ 2.231.02
+# speaker: 沖田 (%ss132)
+JP 　俺は
+JP 　その真似をして、
+EN I copied that idea,
+
+@ 2.231.03
+# speaker: 沖田 (%ss132)
+JP 　ＩＷ時代、
+JP 　%ss132のもう一つの顔
+JP 　武零怒・悪鬼蛇を作った。
+EN and back in my <IW> days I created %ss132's other face, Bureido Akkija.
+
+@ 2.231.04
+# speaker: 沖田 (%ss132)
+JP 　%ss42は
+JP 　%ss43をパクられたことに、
+JP 　以前から腹を立てていたフシがあった。
+EN %ss42 had seemed sore for a long time about me ripping off %ss43.
+
+@ 2.231.05
+# speaker: 沖田 (%ss132)
+JP 　悪鬼蛇の復活は、
+JP 　%ss42の神経を逆なでするに
+JP 　違いないし、
+EN Akkija's return was sure to get on %ss42's nerves,
+
+@ 2.231.06
+# speaker: 沖田 (%ss132)
+JP 　ヒール対ヒールの闘いは、
+JP 　必ず俺に有利に作用するはずだ。
+EN and a heel-vs.-heel fight was bound to work in my favor.
+
+@ 2.231.07
+# speaker: 沖田 (%ss132)
+JP 　案の定、
+JP 　%ss42は俺の術中にハマった。
+EN Sure enough, %ss42 fell right into my trap.
+
+@ 2.232.00
+# speaker: 記者
+JP 「%ss42選手！！」
+EN "%ss42!"
+
+@ 2.232.01
+# speaker: 記者
+JP 「今日の
+JP 　%ss132選手の乱入について、
+JP 　コメントをお願いします！！」
+EN "A comment on %ss132's run-in today, please!"
+
+@ 2.233.00
+# speaker: 俊藤 (%ss42)
+JP 「あいつは
+JP 　触っちゃいけないものに
+JP 　触ったぞ・・・！！」
+EN "That guy touched something he shouldn't have...!"
+
+@ 2.233.01
+# speaker: 俊藤 (%ss42)
+JP 「どういうことになるか
+JP 　教えてやる！！
+JP 　悪鬼蛇を呼んで来い！！」
+EN "I'll show him what happens! Bring me Akkija!"
+
+@ 2.233.02
+# speaker: 俊藤 (%ss42)
+JP 「二度と復活出来ないよう、
+JP 　%ss43が
+JP 　地の底に埋めてやる！！」
+EN "%ss43 will bury him so deep he never comes back!"
+
+@ 2.234.00
+# speaker: 田辺
+JP 「%ss132さん、
+JP 　悪鬼蛇対%ss43の
+JP 　デスマッチが決定しました。」
+EN "%ss132, a deathmatch has been set: Akkija vs. %ss43."
+
+@ 2.234.01
+# speaker: 田辺
+JP 「今の心境を聞かせて下さい。」
+EN "Tell us how you feel right now."
+
+@ 2.234.02
+# speaker: 沖田 (%ss132)
+JP 「おい！
+JP 　おい！！
+JP 　おい！！！」
+EN "Hey! Hey!! HEY!!!"
+
+@ 2.234.03
+# speaker: 沖田 (%ss132)
+JP 「田辺！！！！
+JP 　おまえは悪鬼蛇対%ss43の
+JP 　試合が見たいか！？」
+EN "Tanabe!!! Do you want to see the Akkija vs. %ss43 match?!"
+
+@ 2.234.04
+# speaker: 田辺
+JP 「わたしは、
+JP 　悪鬼蛇対%ss43の
+JP 　試合が見たいです。」
+EN "I want to see the Akkija vs. %ss43 match."
+
+@ 2.234.05
+# speaker: 沖田 (%ss132)
+JP 「田辺！！
+JP 　おまえが諦めない限り、
+JP 　俺も諦めない！！」
+EN "Tanabe! As long as you don't give up, I won't either!"
+
+@ 2.234.06
+# speaker: 沖田 (%ss132)
+JP 「おまえは、どんなことがあっても
+JP 　試合の実況をしろ！！」
+EN "No matter what happens, you call that match!"
+
+@ 2.234.07
+# speaker: 沖田 (%ss132)
+JP 「悪鬼蛇は、命を賭けて
+JP 　%ss43と闘う！！」
+EN "Akkija will put his life on the line against %ss43!"
+
+@ 2.235.00
+# speaker: 沖田 (%ss132)
+JP 　この試合に負ければ、
+JP 　武零怒・悪鬼蛇は金輪際、
+JP 　ファンの前に姿を現すことはないだろう。
+EN If he loses this match, Bureido Akkija will never show himself to the fans again.
+
+@ 2.235.01
+# speaker: 沖田 (%ss132)
+JP 　悪鬼蛇は、%ss1への
+JP 　道のりの掛け橋となるために、
+EN Akkija came back to be a bridge on the road to %ss1,
+
+@ 2.235.02
+# speaker: 沖田 (%ss132)
+JP 　最初で最後の復活を遂げた。
+EN his first and last comeback.
+
+@ 2.235.03
+# speaker: 沖田 (%ss132)
+JP 　ただではすまんのじゃ！！
+EN This won't end quietly!
+
+@ 2.235.04
+# speaker: 沖田 (%ss132)
+JP 　作り物とはいえ、
+JP 　一つの人格が消滅を賭けて闘う！！
+JP 　%ss43！！覚悟せい！！
+EN He may be made up, but a whole person is fighting with his existence on the line! %ss43! Get ready!
+
+@ 2.237.00
+# speaker: 沖田 (%ss132)
+JP 「%ss21ーーー！！
+JP 　なぜ俺を
+JP 　殺してくれなかったんじゃ！！」
+EN "%ss21!!! Why didn't you kill me?!"
+
+@ 2.237.01
+# speaker: 沖田 (%ss132)
+JP 　俺は
+JP 　%ss21との闘いを生き抜いた。
+EN I survived my fight with %ss21.
+
+@ 2.237.02
+# speaker: 沖田 (%ss132)
+JP 　生き延びてしまったからには、
+JP 　真の邪道の終焉を目指して
+JP 　突き進むしかない・・・！
+EN Since I survived, all I can do is charge on toward the Outlaw's true end...!
+
+@ 2.237.03
+# speaker: 沖田 (%ss132)
+JP 　%ss21との死闘後も、
+JP 　相変わらず%ss1は
+JP 　まったく動く気配を見せなかった。
+EN Even after my deathmatch with %ss21, %ss1 still showed no sign of moving at all.
+
+@ 2.237.04
+# speaker: 沖田 (%ss132)
+JP 　ある程度予測はしていたが、
+EN I'd seen it coming, more or less, but...
+
+@ 2.237.05
+# speaker: 沖田 (%ss132)
+JP 　これほどまでに
+JP 　かたくなに無視を決め込むとは、
+JP 　よほど俺のことが嫌いらしい。
+EN To ignore me this stubbornly, he must really hate me.
+
+@ 2.237.06
+# speaker: 沖田 (%ss132)
+JP 　こうなれば、ＶＪＰのもう一人の大物、
+JP 　現ＩＧＰチャンピオンの
+JP 　%ss42に挑戦するしかない。
+EN If that's how it is, I'll have to challenge <VJP>'s other big name, current <IGP> champion %ss42.
+
+@ 2.237.07
+# speaker: 沖田 (%ss132)
+JP 　少なくとも
+JP 　ＩＧＰのチャンピオンと
+JP 　対等に闘えば、
+EN If I can at least fight the <IGP> champion on even terms,
+
+@ 2.237.08
+# speaker: 沖田 (%ss132)
+JP 　さすがの%ss1も、これ以上
+JP 　俺を無視をすることは出来ないだろう。
+EN not even %ss1 will be able to ignore me anymore.
+
+@ 2.243.00
+# speaker: 沖田 (%ss132)
+JP 　俺がＶＪＰに挑戦状を送ってから、
+JP 　すでに一ヶ月が過ぎようとしていた。
+EN Almost a month had gone by since I sent <VJP> my challenge.
+
+@ 2.243.01
+# speaker: 沖田 (%ss132)
+JP 　案の定、ＶＪＰサイドからは
+JP 　納得の行く返答はない。
+EN Just as I expected, <VJP> gave no answer worth a damn.
+
+@ 2.243.02
+# speaker: 沖田 (%ss132)
+JP 　ＶＪＰの皆さんよ。
+JP 　たった一人の邪道がそんなに怖いのかい？
+EN Hey, <VJP>. Are you that scared of one lone outlaw?
+
+@ 2.243.03
+# speaker: 沖田 (%ss132)
+JP 　あんたらが
+JP 　明確な答えをくれないって言うのなら、
+EN If you won't give me a clear answer,
+
+@ 2.243.04
+# speaker: 沖田 (%ss132)
+JP 　俺は俺で、邪道流の
+JP 　あいさつってやつをやらせてもらう。
+EN then I'll come say hello, outlaw style.
+
+@ 2.244.00
+# speaker: アナウンサー
+JP 「ああっと！！
+JP 　今、あれ・・・
+JP 　%ss132じゃないですか！？」
+EN "Ohhh! Is that... isn't that %ss132?!"
+
+@ 2.244.01
+# speaker: 解説者
+JP 「%ss132ですね・・・！」
+EN "That's %ss132...!"
+
+@ 2.245.00
+# speaker: アナウンサー
+JP 「%sf132です！
+JP 　渦中の%ss132、ついに
+JP 　ＶＪＰのマットに姿を現しました！！」
+EN "It's %sf132! The man at the center of the storm, %ss132, has finally appeared on the <VJP> mat!"
+
+@ 2.246.00
+# speaker: 沖田 (%ss132)
+JP 「邪道、%sf132
+JP 　ＶＪＰのマットに
+JP 　あいさつに参ったぞ！！」
+EN "The Outlaw, %sf132, has come to say hello to the <VJP> mat!"
+
+@ 2.247.00
+# speaker: 沖田 (%ss132)
+JP 「俺と%ss1を
+JP 　闘わせてくれるのかどうか、
+JP 　答えを聞きに来た！！」
+EN "I came to hear your answer: are you gonna let me fight %ss1 or not?!"
+
+@ 2.247.01
+# speaker: 沖田 (%ss132)
+JP 「イエスかノーか！？」
+EN "Yes or no?!"
+
+@ 2.248.00
+# speaker: 河野 (%ss21)
+JP 「おい、%ss132！！」
+EN "Hey, %ss132!"
+
+@ 2.248.01
+# speaker: 河野 (%ss21)
+JP 「ここは、素人が
+JP 　上がるところじゃねえぞ！！
+JP 　リングから降りろ！！」
+EN "This ring is no place for amateurs! Get out of the ring!"
+
+@ 2.248.02
+# speaker: 沖田 (%ss132)
+JP 「%ss21、おまえら、
+JP 　そんなに花火が怖いのか？」
+EN "%ss21, are you guys that scared of a few fireworks?"
+
+@ 2.249.00
+# speaker: 河野 (%ss21)
+JP 「邪道の花火は線香だろう？
+JP 　俺は素人には手を出さない！！」
+EN "The Outlaw's fireworks are sparklers, aren't they? I don't lay a hand on amateurs!"
+
+@ 2.250.00
+# speaker: 沖田 (%ss132)
+JP 　%ss21という男はここ数年、
+JP 　ＶＪＰの中で反体制として闘い続け、
+EN For the last few years, %ss21 had fought against the establishment inside <VJP>,
+
+@ 2.250.01
+# speaker: 沖田 (%ss132)
+JP 　若いファンを中心に
+JP 　カリスマ的に支持されている
+JP 　レスラーだった。
+EN a wrestler with a charismatic following, mostly among young fans.
+
+@ 2.250.02
+# speaker: 沖田 (%ss132)
+JP 　%ss21と話をしたのは
+JP 　これが初めてだったが、
+JP 　俺には分かった。
+EN It was the first time I'd ever talked to %ss21, but I could tell.
+
+@ 2.250.03
+# speaker: 沖田 (%ss132)
+JP 　この男はやる・・・！！
+EN This guy will fight me...!
+
+@ 2.250.04
+# speaker: 沖田 (%ss132)
+JP 　元々、いきなり%ss1を
+JP 　引きずり出すのは不可能だ。
+EN Dragging %ss1 out right off the bat was impossible from the start.
+
+@ 2.250.05
+# speaker: 沖田 (%ss132)
+JP 　だが、%ss21との闘いに
+JP 　俺が生き抜けば、
+JP 　%ss1も無視は出来ないだろう。
+EN But if I survived a fight with %ss21, even %ss1 couldn't ignore me.
+
+@ 2.250.06
+# speaker: 沖田 (%ss132)
+JP 　俺は、執拗に
+JP 　%ss21を挑発し始めた。
+EN I started provoking %ss21 relentlessly.
+
+@ 2.251.00
+# speaker: 田辺
+JP 「%ss132さん！！」
+EN "%ss132!"
+
+@ 2.251.01
+# speaker: 田辺
+JP 「%ss21選手との電流爆破マッチを
+JP 　強引に予告しましたが、
+JP 　本当に実現すると思いますか！？」
+EN "You've pushed for an exploding barbed wire match with %ss21. Will it really happen?!"
+
+@ 2.251.02
+# speaker: 沖田 (%ss132)
+JP 　田辺は
+JP 　ＶＩＥＷ　ＪＡＰＡＮを実況する
+JP 　アナウンサーだ。
+EN Tanabe is the announcer who calls <VIEW JAPAN>'s matches.
+
+@ 2.251.03
+# speaker: 沖田 (%ss132)
+JP 　アナウンサーとはいえ、
+JP 　ＶＪＰサイドの人間には変わりない。
+EN He may be an announcer, but he's still on <VJP>'s side.
+
+@ 2.251.04
+# speaker: 沖田 (%ss132)
+JP 　俺は
+JP 　こいつが現れる度に
+JP 　ボコボコにしてやった。
+EN Every time he showed up, I beat him black and blue.
+
+@ 2.251.05
+# speaker: 沖田 (%ss132)
+JP 　だがこいつは、
+JP 　懲りることなく俺の前に現れた。
+EN But he never learned, and kept showing up in front of me.
+
+@ 2.251.06
+# speaker: 沖田 (%ss132)
+JP 「おまえは
+JP 　俺とＶＩＥＷ　ＪＡＰＡＮ、
+JP 　どっちが好きだ！？」
+EN "Who do you like better, me or <VIEW JAPAN>?!"
+
+@ 2.251.07
+# speaker: 田辺
+JP 「わたしは、
+JP 　ＶＩＥＷ　ＪＡＰＡＮが好きです。」
+EN "I like <VIEW JAPAN>."
+
+@ 2.251.08
+# speaker: 沖田 (%ss132)
+JP 「田辺！」
+EN "Tanabe!"
+
+@ 2.251.09
+# speaker: 沖田 (%ss132)
+JP 「田辺！！」
+EN "Tanabe!!"
+
+@ 2.251.10
+# speaker: 沖田 (%ss132)
+JP 「田辺ーーー！！！」
+EN "TANABE!!!"
+
+@ 2.251.11
+# speaker: 沖田 (%ss132)
+JP 「おまえは俺と%ss21の
+JP 　電流爆破マッチを見たいか！？」
+EN "Do you want to see an exploding barbed wire match between me and %ss21?!"
+
+@ 2.251.12
+# speaker: 田辺
+JP 「わたしは%ss21選手と
+JP 　%ss132選手の、」
+EN "I want to see %ss21 and %ss132..."
+
+@ 2.251.13
+# speaker: 田辺
+JP 「ノーロープ有刺鉄線
+JP 　電流爆破デスマッチが見たいです。」
+EN "...in a No-Rope Exploding Barbed Wire Deathmatch."
+
+@ 2.251.14
+# speaker: 沖田 (%ss132)
+JP 「本心か！？」
+EN "You mean that?!"
+
+@ 2.251.15
+# speaker: 田辺
+JP 「本心です。」
+EN "I mean it."
+
+@ 2.252.00
+# speaker: 沖田 (%ss132)
+JP 　田辺が俺の前に現れるのは
+JP 　仕事だろうが、
+EN Tanabe showing up in front of me might just be his job,
+
+@ 2.252.01
+# speaker: 沖田 (%ss132)
+JP 　こいつの
+JP 　プロレスファンとしての情熱は
+JP 　本物だった。
+EN but his passion as a wrestling fan was the real thing.
+
+@ 2.252.02
+# speaker: 沖田 (%ss132)
+JP 　ＶＪＰサイドだとか、
+JP 　そんなものは関係ない。
+EN <VJP> side or not, none of that matters.
+
+@ 2.252.03
+# speaker: 沖田 (%ss132)
+JP 　本物のプロレスファンは、
+JP 　俺と%ss21のデスマッチを
+JP 　見たがっている。
+EN Real wrestling fans want to see a deathmatch between me and %ss21.
+
+@ 2.252.04
+# speaker: 沖田 (%ss132)
+JP 　俺は田辺を見て確信した。
+EN Seeing Tanabe, I was sure of it.
+
+@ 2.253.00
+# speaker: 沖田 (%ss132)
+JP 　俺の、%ss21に対する
+JP 　執拗な乱入と挑発に
+JP 　剛を煮やしたＶＪＰは、
+EN <VJP>, fed up with my relentless run-ins and provocations aimed at %ss21,
+
+@ 2.253.01
+# speaker: 沖田 (%ss132)
+JP 　３ヶ月後、遂に
+JP 　ドームでの%ss21との
+JP 　電流マッチを行うことを決定した。
+EN finally decided to hold an electrified match with %ss21 at the Dome, three months later.
+
+@ 2.253.02
+# speaker: 沖田 (%ss132)
+JP 　メジャーの牙城の一角を、
+JP 　邪道の俺は崩したんじゃ！！
+EN I, the Outlaw, had knocked down one corner of the majors' fortress!
+
+@ 2.253.03
+# speaker: 沖田 (%ss132)
+JP 　ドーム決戦、
+JP 　%ss132対%ss21、
+EN The Dome showdown, %ss132 vs. %ss21,
+
+@ 2.253.04
+# speaker: 沖田 (%ss132)
+JP 　ノーロープ有刺鉄線
+JP 　電流爆破デスマッチは実現した！！
+EN a No-Rope Exploding Barbed Wire Deathmatch, was really happening!
+
+@ 2.254.00
+# speaker: 沖田 (%ss132)
+JP 　俺の体力が
+JP 　ピークを過ぎていることは
+JP 　分かっている。
+EN I know my strength is past its peak.
+
+@ 2.254.01
+# speaker: 沖田 (%ss132)
+JP 　俺はレスラーとして、
+JP 　これ以上無様な醜態を晒し続けるなら
+JP 　死を選ぶ！！
+EN As a wrestler, if I'm going to keep making a disgrace of myself, I'd rather die!
+
+@ 2.254.02
+# speaker: 沖田 (%ss132)
+JP 　%ss21よ、俺を殺せ！！
+JP 　邪道の死に水を取ってくれ！！
+EN %ss21, kill me! See the Outlaw off to his grave!
+
+@ 2.254.03
+# speaker: 沖田 (%ss132)
+JP 　おまえに殺されるのなら本望じゃ！！
+JP 　俺は命を賭けてリングに上がる！！
+EN If I'm killed by you, I'll die happy! I'm stepping into the ring with my life on the line!
+
+@ 2.256.00
+# speaker: 沖田 (%ss132)
+JP 　俺はＩＷを
+JP 　去ることを決意した。
+EN I decided to leave <IW>.
+
+@ 2.256.01
+# speaker: 沖田 (%ss132)
+JP 　だが、俺の中にくすぶる
+JP 　この不完全燃焼感はなんだ？
+EN But what is this feeling smoldering inside me, that I never burned all the way out?
+
+@ 2.256.02
+# speaker: 沖田 (%ss132)
+JP 　俺はなぜ、
+JP 　歓迎されないことを覚悟してまで
+JP 　リングに戻らなければならなかったのか？
+EN Why did I have to come back to the ring, knowing I wouldn't be welcome?
+
+@ 2.256.03
+# speaker: 沖田 (%ss132)
+JP 　俺がプロレスでやり残したこと・・・
+EN The thing I left unfinished in pro wrestling...
+
+@ 2.256.04
+# speaker: 沖田 (%ss132)
+JP 　それは、メジャーへの挑戦・・・！！
+EN It's taking on the majors...!
+
+@ 2.256.05
+# speaker: 沖田 (%ss132)
+JP 　邪道として生きて来た俺の、
+JP 　最後の挑戦じゃ！！
+EN The final challenge of a man who's lived as an outlaw!
+
+@ 2.256.06
+# speaker: 沖田 (%ss132)
+JP 　俺はメジャーへ挑戦する！！
+EN I'm taking on the majors!
+
+@ 2.257.00
+# speaker: 沖田 (%ss132)
+JP 「おまえら、よく聞け！！」
+EN "All of you, listen up!"
+
+@ 2.257.01
+# speaker: 沖田 (%ss132)
+JP 「ＩＷを愛する全ファンに告ぐ！！
+JP 　俺はメジャーに
+JP 　挑戦状を叩きつける！！」
+EN "To every fan who loves <IW>! I'm throwing down the gauntlet to the majors!"
+
+@ 2.257.02
+# speaker: 沖田 (%ss132)
+JP 「おまえらの意気込みを
+JP 　ＶＪＰのマットへ持って行く！！」
+EN "I'll take your fighting spirit to the <VJP> mat!"
+
+@ 2.258.00
+# speaker: 記者
+JP 「%ss132さん！！」
+EN "%ss132!"
+
+@ 2.258.01
+# speaker: 記者
+JP 「ＶＪＰに挑戦状を突きつけると
+JP 　言ってましたが、具体的に
+JP 　何か動かれてるんですか！？」
+EN "You said you'd throw down a challenge to <VJP>. Have you actually made any moves?!"
+
+@ 2.258.02
+# speaker: 沖田 (%ss132)
+JP 「ＶＪＰには、もう
+JP 　挑戦状を送ってある。」
+EN "I've already sent <VJP> my challenge."
+
+@ 2.258.03
+# speaker: 沖田 (%ss132)
+JP 「具体的にはＶＪＰの重鎮である、
+JP 　%ss1の首をとる！！」
+EN "Specifically, I'm taking the head of <VJP>'s big gun, %ss1!"
+
+@ 2.258.04
+# speaker: 記者
+JP 「%ss1ですか！？
+JP 　本当ですか！？」
+EN "%ss1?! Are you serious?!"
+
+@ 2.258.05
+# speaker: 沖田 (%ss132)
+JP 「本当じゃ！！」
+EN "Dead serious!"
+
+@ 2.258.06
+# speaker: 沖田 (%ss132)
+JP 「俺は、やると言ったら必ずやる！！」
+EN "When I say I'll do something, I do it!"
+
+@ 2.258.07
+# speaker: 沖田 (%ss132)
+JP 「邪道がメジャーにけんかを売るんじゃ！！
+JP 　邪道、最期の夢じゃ！！」
+EN "The Outlaw is picking a fight with the majors! The Outlaw's last dream!"
+
+@ 2.260.00
+# speaker: 街行く人
+JP 「あの、すみません・・・。
+JP 　プロレスラーの
+JP 　%ss132さんですよね？」
+EN "Um, excuse me... You're %ss132, the pro wrestler, right?"
+
+@ 2.260.01
+# speaker: 沖田 (%ss132)
+JP 「そうだけど？」
+EN "Yeah, why?"
+
+@ 2.260.02
+# speaker: 街行く人
+JP 「サインもらえませんか？」
+EN "Could I have your autograph?"
+
+@ 2.260.03
+# speaker: 沖田 (%ss132)
+JP 「ああ、いいよ。」
+EN "Sure, no problem."
+
+@ 2.260.04
+# speaker: 街行く人
+JP 「ありがとうございます！」
+EN "Thank you so much!"
+
+@ 2.261.00
+# speaker: 沖田 (%ss132)
+JP 　プロレスラーの
+JP 　%ss132さん・・・か。
+EN %ss132, the pro wrestler... huh.
+
+@ 2.261.01
+# speaker: 沖田 (%ss132)
+JP 　プロレスをやめて
+JP 　もう一年も経つのに、
+EN It's already been a whole year since I quit wrestling,
+
+@ 2.261.02
+# speaker: 沖田 (%ss132)
+JP 　世間からすれば、
+JP 　やっぱり俺はプロレスラーか・・・。
+EN and to the world, I'm still a pro wrestler...
+
+@ 2.261.03
+# speaker: 沖田 (%ss132)
+JP 　今の生活に不満はない・・・
+JP 　けれど、俺の心のどこかには、
+EN I'm not unhappy with my life now... But somewhere in my heart,
+
+@ 2.261.04
+# speaker: 沖田 (%ss132)
+JP 　ポッカリ穴が空いている・・・。
+EN there's a big hole...
+
+@ 2.262.00
+# speaker: 沖田 (%ss132)
+JP 「はい、%ss132事務所です。」
+EN "Hello, %ss132's office."
+
+@ 2.262.01
+# speaker: 真崎
+JP 「お世話になった真崎です。」
+EN "It's Masaki. You took good care of me back then."
+
+@ 2.262.02
+# speaker: 沖田 (%ss132)
+JP 「おお、真崎！
+JP 　久しぶりじゃないか！
+EN "Oh, Masaki! Long time no see!"
+
+@ 2.262.03
+# speaker: 真崎
+JP 「社長、お久しぶりです。」
+EN "Long time no see, Boss."
+
+@ 2.262.04
+# speaker: 沖田 (%ss132)
+JP 「おいおい、社長はおまえじゃないか。
+JP 　どうしたんだ？」
+EN "Come on, you're the boss now. What's up?"
+
+@ 2.262.05
+# speaker: 真崎
+JP 「ええ、実は・・・」
+EN "Well, actually..."
+
+@ 2.263.00
+# speaker: 沖田 (%ss132)
+JP 　真崎の話はこうだった。
+EN Here's what Masaki told me.
+
+@ 2.263.01
+# speaker: 沖田 (%ss132)
+JP 　初期のＩＷ時代、
+JP 　俺と何度となく死闘を繰り広げた
+JP 　%sl136%ss136が、
+EN %sl136 %ss136, who'd had death match after death match with me back in the early <IW> days,
+
+@ 2.263.02
+# speaker: 沖田 (%ss132)
+JP 　引退にあたって、どうしても俺と
+JP 　タッグを組みたいと言っているらしい。
+EN was retiring, and he wanted to team up with me no matter what.
+
+@ 2.263.03
+# speaker: 沖田 (%ss132)
+JP 　奴とは敵同士だったとはいえ、
+JP 　古いライバルの
+JP 　最後の頼みぐらいは聞いてやりたい。
+EN We may have been enemies, but I wanted to grant an old rival's last request.
+
+@ 2.263.04
+# speaker: 沖田 (%ss132)
+JP 　俺は悩んだ・・・
+EN I agonized over it...
+
+@ 2.263.05
+# speaker: 沖田 (%ss132)
+JP 　プロレスをやめて一年。
+JP 　確かに、タレントの仕事や
+JP 　講演会に追われる日々は、
+EN A year since I quit wrestling. It's true my days, busy with TV work and speaking events,
+
+@ 2.263.06
+# speaker: 沖田 (%ss132)
+JP 　それなりに充実していた・・・。
+EN had been fulfilling enough...
+
+@ 2.263.07
+# speaker: 沖田 (%ss132)
+JP 　けれど・・・
+JP 　それが本当に
+JP 　俺の生き方なんだろうか・・・？
+EN But... is that really the way I want to live...?
+
+@ 2.263.08
+# speaker: 沖田 (%ss132)
+JP 　自分にウソをついては
+JP 　いないだろうか？
+EN Am I lying to myself?
+
+@ 2.263.09
+# speaker: 沖田 (%ss132)
+JP 　人生って一度っきりだろう？
+JP 　本当にやりたいことを封印して生きて、
+JP 　死ぬ時後悔はしないのか？
+EN You only live once, right? If you live with what you really want to do locked away, won't you regret it when you die?
+
+@ 2.263.10
+# speaker: 沖田 (%ss132)
+JP 　人からどんなに疎まれようと、
+JP 　嘘つきと罵られようと、
+EN No matter how much people resent me, no matter if they call me a liar,
+
+@ 2.263.11
+# speaker: 沖田 (%ss132)
+JP 　結局は
+JP 　自分がどうしたいかって
+JP 　ことじゃないのか？
+EN in the end, isn't it about what I want to do?
+
+@ 2.263.12
+# speaker: 沖田 (%ss132)
+JP 　俺は・・・
+JP 　俺は後悔なんてしたくない・・・！
+EN I... I don't want any regrets...!
+
+@ 2.264.00
+# speaker: 沖田 (%ss132)
+JP 「真崎、俺、出るよ。
+JP 　その試合
+JP 　俺にやらせてくれ。」
+EN "Masaki, I'm in. Let me wrestle that match."
+
+@ 2.264.01
+# speaker: 真崎
+JP 「社長、いいんですか！？
+JP 　あ、ありがとうございます・・・！！」
+EN "Boss, really?! Th-Thank you so much...!"
+
+@ 2.265.00
+# speaker: 沖田 (%ss132)
+JP 　%ss136の引退試合で
+JP 　カムバックした俺を、
+JP 　ファンは暖かく迎えてくれた。
+EN When I made my comeback in %ss136's retirement match, the fans gave me a warm welcome.
+
+@ 2.265.01
+# speaker: 沖田 (%ss132)
+JP 　けれど・・・それは、
+JP 『%ss136の引退試合』という
+JP 　大義名分があってのことだった・・・。
+EN But... that was only because I had the excuse of "%ss136's retirement match"...
+
+@ 2.265.02
+# speaker: 沖田 (%ss132)
+JP 　分かっていたさ。
+JP 　その後、ズルズルと試合に出ていれば、
+JP 　どういうことになるかなんて・・・。
+EN I knew it. If I kept dragging on with more matches after that, I knew what would happen...
+
+@ 2.266.00
+# speaker: 客Ａ
+JP 「帰れ、%ss132！！」
+EN "Go home, %ss132!"
+
+@ 2.266.01
+# speaker: 客Ｂ
+JP 「%ss132！！
+JP 　おまえなんて、もう
+JP 　ここには必要ないんだよ！！」
+EN "%ss132! Nobody needs you here anymore!"
+
+@ 2.267.00
+# speaker: 観衆
+JP 「帰れ！！帰れ！！帰れ！！帰れ！！」
+EN "Go home! Go home! Go home! Go home!"
+
+@ 2.268.00
+# speaker: 沖田 (%ss132)
+JP 　俺のいない一年・・・
+EN The year I was gone...
+
+@ 2.268.01
+# speaker: 沖田 (%ss132)
+JP 　ＩＷは、苦しみながらも
+JP 　新しいスタイルのプロレスを
+JP 　確立していた。
+EN <IW> struggled, but it found a new style of wrestling.
+
+@ 2.268.02
+# speaker: 沖田 (%ss132)
+JP 　俺の闘い方は、
+JP 　そんな新しいＩＷファンにとって、
+EN To those new <IW> fans, the way I fight...
+
+@ 2.268.03
+# speaker: 沖田 (%ss132)
+JP 　見るに耐えない
+JP 　古いプロレスにしか
+JP 　映らなかったんだろう・・・。
+EN ...must have looked like nothing but old, unwatchable wrestling...
+
+@ 2.268.04
+# speaker: 沖田 (%ss132)
+JP 　俺はＩＷに戻っては
+JP 　いけなかった・・・
+EN I shouldn't have gone back to <IW>...
+
+@ 2.268.05
+# speaker: 沖田 (%ss132)
+JP 　俺の作ったＩＷだが、
+JP 　そこにはもう
+JP 　俺の居場所はなかったよ・・・。
+EN I built <IW>, but there was no place left for me there...
+
+@ 2.270.00
+# speaker: 沖田 (%ss132)
+JP 「６年間・・・」
+EN "Six years..."
+
+@ 2.270.01
+# speaker: 沖田 (%ss132)
+JP 「俺は、ただガムシャラに
+JP 　突っ走って来た・・・
+JP 　命を賭けて突っ走って来た・・・！」
+EN "I just charged ahead like a madman... I charged ahead with my life on the line...!"
+
+@ 2.270.02
+# speaker: 沖田 (%ss132)
+JP 「それはなぜじゃ！？」
+EN "And why?!"
+
+@ 2.270.03
+# speaker: 沖田 (%ss132)
+JP 「俺はプロレスが・・・
+JP 　ＩＷが好きなんじゃ！！」
+EN "Because I love wrestling... I love <IW>!"
+
+@ 2.271.00
+# speaker: 沖田 (%ss132)
+JP 「俺も！！
+JP 　%sf135！！
+JP 　%ss134も！！」
+EN "Me! %sf135! %ss134 too!"
+
+@ 2.271.01
+# speaker: 沖田 (%ss132)
+JP 「皆、ＩＷが好きなんじゃ！！」
+EN "We all love <IW>!"
+
+@ 2.272.00
+# speaker: 沖田 (%ss132)
+JP 「ＩＷは絶対に潰れん・・・！！
+JP 　ＩＷは絶対に潰れんのじゃ！！」
+EN "<IW> will never go under...! <IW> will never, ever go under!"
+
+@ 2.273.00
+# speaker: 沖田 (%ss132)
+JP 「みんな・・・
+JP 　あばよ・・・。」
+EN "Everyone... so long..."
+
+@ 2.274.00
+# speaker: 沖田 (%ss132)
+JP 　終わった・・・
+JP 　これで、何もかも終わったな・・・。
+EN It's over... It's all over now...
+
+@ 2.280.00
+# speaker: 沖田 (%ss132)
+JP 　%ss41に負けて・・・
+JP 　本当に、ここら辺が潮時だと思った。
+EN After losing to %ss41... I really felt it was time to call it quits.
+
+@ 2.280.01
+# speaker: 沖田 (%ss132)
+JP 　俺の体は、
+JP 　ポンコツを通り越して
+JP 　すでにガシャガシャだった。
+EN My body was way past beat-up. It was already falling apart.
+
+@ 2.280.02
+# speaker: 沖田 (%ss132)
+JP 　左上腕骨剥離骨折、
+JP 　左膝粉砕骨折、
+JP 　右大腿部神経障害・・・
+EN Avulsion fracture of the left upper arm, shattered left knee, nerve damage in the right thigh...
+
+@ 2.280.03
+# speaker: 沖田 (%ss132)
+JP 　挙げればキリがない。
+JP 　医者には『全治一生』って言われたな。
+EN The list goes on and on. The doctor told me I'd "be healing for the rest of my life".
+
+@ 2.280.04
+# speaker: 沖田 (%ss132)
+JP 　リングの上で死んで、
+JP 　俺の後に続く者達の道を
+JP 　汚してはいけない・・・。
+EN If I die in the ring, I'll stain the road for those who come after me...
+
+@ 2.280.05
+# speaker: 沖田 (%ss132)
+JP 　俺は決意した。
+EN I made up my mind.
+
+@ 2.280.06
+# speaker: 沖田 (%ss132)
+JP 　２度目の引退。
+JP 　今度こそ、本当の引退を・・・。
+EN My second retirement. And this time, for real...
+
+@ 2.283.00
+# speaker: ランマル (%ss134)
+JP 「%ss132さん・・・」
+EN "%ss132..."
+
+@ 2.283.01
+# speaker: ランマル (%ss134)
+JP 「本当に・・・本当に
+JP 　長い間ありがとうございました。」
+EN "Really... thank you so much, for all these years."
+
+@ 2.283.02
+# speaker: 沖田 (%ss132)
+JP 「%ss134。
+JP 　ＩＷ・・・
+JP 　後のことは任せたぞ。」
+EN "%ss134. <IW>... I'm leaving the rest to you."
+
+@ 2.283.03
+# speaker: 沖田 (%ss132)
+JP 「これからは
+JP 　おまえらの時代じゃ・・・！」
+EN "From now on, it's your era...!"
+
+@ 2.283.04
+# speaker: ランマル (%ss134)
+JP 「%ss132さん・・・！」
+EN "%ss132...!"
+
+@ 2.283.05
+# speaker: 沖田 (%ss132)
+JP 「がんばれよ。」
+EN "Hang in there."
+
+@ 2.283.06
+# speaker: 沖田 (%ss132)
+JP 「俺を二度と・・・
+JP 　二度とリングに上げるな。」
+EN "Never... never let me back in the ring again."
+
+@ 2.283.07
+# speaker: ランマル (%ss134)
+JP 「%ss132さん・・・！！」
+EN "%ss132...!"
+
+@ 2.284.00
+# speaker: 沖田 (%ss132)
+JP 　ＩＷを潰さないこと・・・
+JP 　ただそれだけを考えて、
+JP 　ここまでやってきた。
+EN Not letting <IW> go under... that's the only thing I thought about all the way here.
+
+@ 2.284.01
+# speaker: 沖田 (%ss132)
+JP 『命の続く限り
+JP 　ＩＷは絶対に潰さん！！』
+EN "As long as I live, I will never let <IW> go under!"
+
+@ 2.284.02
+# speaker: 沖田 (%ss132)
+JP 　そう言い続けてきた俺が・・・
+JP 　生きてる間に
+JP 　ＩＷのリングから去ることは、
+EN For me, the one who kept saying that, to leave the <IW> ring while I'm still alive...
+
+@ 2.284.03
+# speaker: 沖田 (%ss132)
+JP 　ある意味、自分に対して
+JP 　つばを吐く行為かもしれない。
+EN ...might be like spitting in my own face, in a way.
+
+@ 2.284.04
+# speaker: 沖田 (%ss132)
+JP 　だが、それでいいんだ。
+EN But that's okay.
+
+@ 2.284.05
+# speaker: 沖田 (%ss132)
+JP 　俺はＩＷを守るためなら
+JP 　道化にでも何にでもなる。
+EN To protect <IW>, I'll be a clown or anything else.
+
+@ 2.284.06
+# speaker: 沖田 (%ss132)
+JP 　今のＩＷは、
+JP 　若手の%ss134を中心に
+JP 　まとまりつつある。
+EN <IW> is coming together now around a young wrestler, %ss134.
+
+@ 2.284.07
+# speaker: 沖田 (%ss132)
+JP 　俺の邪道プロレスとは違う、
+JP 　新しいＩＷのプロレスが
+JP 　生まれつつある。
+EN A new <IW> style of wrestling is being born, different from my outlaw wrestling.
+
+@ 2.284.08
+# speaker: 沖田 (%ss132)
+JP 　俺がこのまま邪道を続ければ、
+JP 　いつか必ずリングの上で死ぬ。
+EN If I keep up the outlaw way, someday I'll die in the ring for sure.
+
+@ 2.284.09
+# speaker: 沖田 (%ss132)
+JP 　俺の血が
+JP 　新しいＩＷのプロレスを
+JP 　汚してしまうことになる。
+EN My blood would stain the new <IW> wrestling.
+
+@ 2.284.10
+# speaker: 沖田 (%ss132)
+JP 　それだけは
+JP 　やっちゃならない・・・。
+EN That's the one thing I can't let happen...
+
+@ 2.284.11
+# speaker: 沖田 (%ss132)
+JP 　俺の引退は、
+JP 　新しいＩＷを守るためなんだ！！
+EN I'm retiring to protect the new <IW>!
+
+@ 2.284.12
+# speaker: 沖田 (%ss132)
+JP 　俺は%ss134との
+JP 　デスマッチを最後に、
+EN After a final deathmatch with %ss134,
+
+@ 2.284.13
+# speaker: 沖田 (%ss132)
+JP 　ＩＷを去る・・・！！
+EN I'll leave <IW>...!
+
+@ 2.286.00
+# speaker: 沖田 (%ss132)
+JP 「俺は・・・！！」
+EN "I...!"
+
+@ 2.286.01
+# speaker: 沖田 (%ss132)
+JP 「俺は、この体が続く限り！！
+JP 　デスマッチを闘い抜く！！」
+EN "As long as this body holds out, I'll fight deathmatches to the end!"
+
+@ 2.287.00
+# speaker: 沖田 (%ss132)
+JP 「この世の中に
+JP 『夢』という言葉がある限り、
+JP 　俺はＩＷを絶対潰さん！！」
+EN "As long as the word 'dream' exists in this world, I will never let <IW> go under!"
+
+@ 2.288.00
+# speaker: 沖田 (%ss132)
+JP 「俺は邪道で結構！！
+JP 　俺は邪道で結構じゃ！！」
+EN "Call me an outlaw, I don't care! I'm fine being the Outlaw!"
+
+@ 2.288.01
+# speaker: 沖田 (%ss132)
+JP 「おまえ達が一人でもいる限り、
+JP 　俺は・・・！！」
+EN "As long as even one of you is out there, I...!"
+
+@ 2.288.02
+# speaker: 沖田 (%ss132)
+JP 「絶対！！絶対！！
+JP 　ＩＷを潰さん！！」
+EN "Never! Never! I'll never let <IW> go under!"
+
+@ 2.289.00
+# speaker: 沖田 (%ss132)
+JP 　しかし・・・
+EN But...
+
+@ 2.289.01
+# speaker: 沖田 (%ss132)
+JP 　その後行われた、
+JP 　最初で最後の
+JP 　%ss41とのシングルデスマッチで、
+EN In my first and last singles deathmatch with %ss41 after that,
+
+@ 2.289.02
+# speaker: 沖田 (%ss132)
+JP 　俺は敗戦する・・・。
+EN I went down in defeat...
+
+@ 2.295.00
+# speaker: 客Ａ
+JP 「おい・・・！？
+JP 　%ss132が
+JP 　倒れたまま動かないぞ！？」
+EN "Hey...?! %ss132 is down and he's not moving?!"
+
+@ 2.295.01
+# speaker: 客Ｂ
+JP 「%ss132・・・！！
+JP 　%ss132ー！！」
+EN "%ss132...! %ss132!!"
+
+@ 2.295.02
+# speaker: 観客
+JP 「%ss132ーーー！！！」
+EN "%ss132!!!"
+
+@ 2.296.00
+# speaker: 真崎
+JP 「救急車・・・！！
+JP 　救急車を呼んでください！！」
+EN "An ambulance...! Somebody call an ambulance!"
+
+@ 2.297.00
+# speaker: 沖田 (%ss132)
+JP （冗談だろ・・・？
+JP 　体が全然動かねえ・・・。）
+EN (You're kidding me...? I can't move my body at all...)
+
+@ 2.297.01
+# speaker: 沖田 (%ss132)
+JP （意識が遠い・・・）
+EN (I'm fading out...)
+
+@ 2.297.02
+# speaker: 沖田 (%ss132)
+JP （俺・・・
+JP 　死ぬのか・・・？）
+EN (Am I... gonna die...?)
+
+@ 2.298.00
+# speaker: 真崎
+JP 「社長、一時は
+JP 　どうなることかと思いましたよ。」
+EN "Boss, for a while there I didn't know what was going to happen."
+
+@ 2.298.01
+# speaker: 真崎
+JP 「もし、社長の意識が
+JP 　戻らなかったら・・・」
+EN "If you hadn't come to, Boss..."
+
+@ 2.298.02
+# speaker: 五条 (%ss135)
+JP 「おい、真崎！
+JP 　縁起でもないこと言うな！」
+EN "Hey, Masaki! Don't say stuff like that!"
+
+@ 2.298.03
+# speaker: 沖田 (%ss132)
+JP 「いいよ、%ss135。」
+EN "It's fine, %ss135."
+
+@ 2.298.04
+# speaker: 沖田 (%ss132)
+JP 「俺、意識がない間
+JP 　花畑で熊と闘ってたんだ。」
+EN "While I was out, I was fighting a bear in a field of flowers."
+
+@ 2.298.05
+# speaker: 沖田 (%ss132)
+JP 「その熊に
+JP 　強烈なパンチをくらって
+JP 　目が覚めたんだけど、」
+EN "The bear hit me with a big punch and I woke up,"
+
+@ 2.298.06
+# speaker: 沖田 (%ss132)
+JP 「そこで
+JP 　そのまま負けてたら、
+JP 　俺は死んでたって医者が言うんだ。」
+EN "but the doctor says if I'd lost to it right there, I'd have died."
+
+@ 2.298.07
+# speaker: 沖田 (%ss132)
+JP 「それって臨死体験だろ？
+JP 　ホントにヤバかったんだな。」
+EN "That's a near-death experience, right? Guess it was really close, huh."
+
+@ 2.298.08
+# speaker: 五条 (%ss135)
+JP 「%ss132さん・・・。」
+EN "%ss132..."
+
+@ 2.298.09
+# speaker: 真崎
+JP 「社長・・・
+JP 　まだまだ死んでもらったら
+JP 　困りますよ！！」
+EN "Boss... we can't have you dying on us yet!"
+
+@ 2.298.10
+# speaker: 真崎
+JP 「近く、ＩＷに
+JP 　%ss41が参戦するんです！！
+JP 　%ss41ですよ！！」
+EN "%ss41 is coming to <IW> soon! %ss41, of all people!"
+
+@ 2.298.11
+# speaker: 真崎
+JP 「これほど
+JP 　すごいことはないんです！！」
+EN "It doesn't get any bigger than this!"
+
+@ 2.298.12
+# speaker: 真崎
+JP 「ファンのためにも、
+JP 　一日も早く元気になって下さい！！」
+EN "For the fans' sake too, please get well as soon as you can!"
+
+@ 2.298.13
+# speaker: 沖田 (%ss132)
+JP 「分かってるよ、真崎。」
+EN "I know, Masaki."
+
+@ 2.299.00
+# speaker: 沖田 (%ss132)
+JP 　強気に振舞っていた俺だったが、
+JP 　さすがに今回の重態騒ぎは応えた・・・。
+EN I acted tough, but this close call really got to me...
+
+@ 2.299.01
+# speaker: 沖田 (%ss132)
+JP 　もし俺が
+JP 　このまま行くところまで行って、
+EN If I keep pushing right to the very end,
+
+@ 2.299.02
+# speaker: 沖田 (%ss132)
+JP 　リングの上で死んだら
+JP 　残された奴らはどうなるだろう？
+EN and die in the ring, what'll happen to the ones I leave behind?
+
+@ 2.299.03
+# speaker: 沖田 (%ss132)
+JP 　俺にとっては、
+JP 　リングの上で死ぬことは
+JP 　本望かもしれない。
+EN For me, dying in the ring might be all I could ask for.
+
+@ 2.299.04
+# speaker: 沖田 (%ss132)
+JP 　けれど、残された奴らは
+JP 　そんなグロい部分を引きずって
+JP 　生きていきたくはないだろう・・・。
+EN But the ones left behind wouldn't want to drag that grisly memory around for the rest of their lives...
+
+@ 2.299.05
+# speaker: 沖田 (%ss132)
+JP 　皆の為に・・・
+EN For everyone's sake...
+
+@ 2.299.06
+# speaker: 沖田 (%ss132)
+JP 　俺は死ぬ前に
+JP 　リングを降りなきゃって
+JP 　思い始めてる・・・。
+EN I'm starting to think I have to step down from the ring before I die...
+
+@ 2.300.00
+# speaker: 沖田 (%ss132)
+JP 　%ss41、源組との
+JP 　タッグ戦は、
+EN The tag match against %ss41 and his Gen-gumi
+
+@ 2.300.01
+# speaker: 沖田 (%ss132)
+JP 　ＩＷ始まって以来の
+JP 　ビッグイベントとなった・・・！
+EN became the biggest event since <IW> began...!
+
+@ 2.300.02
+# speaker: 沖田 (%ss132)
+JP 　%ss41は
+JP 　ＯＪＰのトップレスラーだったが、
+JP 　今は退団して『ＲＹＵ』を設立していた。
+EN %ss41 had been a top wrestler in <OJP>, but he'd left and founded "<RYU>".
+
+@ 2.300.03
+# speaker: 沖田 (%ss132)
+JP 　今でも間違いなく
+JP 　プロレス界のトップスターだ。
+EN Even now, he's without a doubt a top star in the wrestling world.
+
+@ 2.300.04
+# speaker: 沖田 (%ss132)
+JP 　俺の育ったＯＪＰで
+JP 　スーパースターだった%ss41が、
+EN %ss41, who was a superstar in <OJP> where I came up,
+
+@ 2.300.05
+# speaker: 沖田 (%ss132)
+JP 　俺の作ったＩＷで
+JP 　試合をしてくれる・・・
+EN was going to have a match in <IW>, the promotion I built...
+
+@ 2.300.06
+# speaker: 沖田 (%ss132)
+JP 　これほどの喜びは
+JP 　かつてなかった・・・！
+EN I'd never felt joy like it...!
+
+@ 2.301.00
+# speaker: 沖田 (%ss132)
+JP 　今の俺に
+JP 　どれだけの力が残っているのか？
+EN How much strength do I have left now?
+
+@ 2.301.01
+# speaker: 沖田 (%ss132)
+JP 　満身創痍のこの体で、
+JP 　俺はどこまで行けるのか？
+EN With this battered body, how far can I go?
+
+@ 2.301.02
+# speaker: 沖田 (%ss132)
+JP 　俺は、この試合にそれを問う。
+JP 　この試合で、それを決める・・・！
+EN This match will answer that. This match will decide it...!
+
+@ 2.301.03
+# speaker: 沖田 (%ss132)
+JP 　%ss132は死なん！！
+EN %ss132 won't die!
+
+@ 2.301.04
+# speaker: 沖田 (%ss132)
+JP 　ＩＷは、まだまだ
+JP 　俺を必要としてるんだ！！
+EN <IW> still needs me!
+
+@ 2.307.00
+# speaker: 沖田 (%ss132)
+JP 　俺の始めた
+JP 　このデスマッチ形式は、
+JP 　確実にファンを獲得し、
+EN The deathmatch style I started definitely won over fans,
+
+@ 2.307.01
+# speaker: 沖田 (%ss132)
+JP 　いつしかＩＷは、
+JP 　メジャー団体に負けないほどの
+JP 　興行を打てるようになっていった。
+EN and before long, <IW> was putting on shows that rivaled the major promotions.
+
+@ 2.307.02
+# speaker: 沖田 (%ss132)
+JP 　だけど、度重なる
+JP 　限界を超えた死闘は、
+JP 　知らぬ間に俺の体を蝕んでいた・・・。
+EN But fight after fight past my limits was eating away at my body without me knowing...
+
+@ 2.308.00
+# speaker: 真崎
+JP 「社長！！
+JP 　手術したんですって！？」
+EN "Boss! I heard you had surgery?!"
+
+@ 2.308.01
+# speaker: 真崎
+JP 「どうして
+JP 　僕に言ってくれないんですか！？」
+EN "Why didn't you tell me?!"
+
+@ 2.308.02
+# speaker: 沖田 (%ss132)
+JP 「別に、大したことないだろ。」
+EN "Come on, it's no big deal."
+
+@ 2.308.03
+# speaker: 沖田 (%ss132)
+JP 「今朝起きたら
+JP 　のどが腫れてたんで、
+JP 　病院で膿をとってもらっただけだ。」
+EN "My throat was swollen when I woke up this morning, so I just had the pus drained at the hospital."
+
+@ 2.308.04
+# speaker: 真崎
+JP 「膿をとったって・・・
+JP 　それで、
+JP 　どこに行こうとしてるんですか！？」
+EN "Had the pus drained...? And where do you think you're going?!"
+
+@ 2.308.05
+# speaker: 真崎
+JP 「まさか、今日の試合に
+JP 　出るつもりじゃないでしょうね！？」
+EN "You're not planning to wrestle in today's match, are you?!"
+
+@ 2.308.06
+# speaker: 沖田 (%ss132)
+JP 「おまえ、うるさいよ。
+JP 　俺、あんまりしゃべれないんだから。」
+EN "You're too noisy. I can barely talk, you know."
+
+@ 2.308.07
+# speaker: 真崎
+JP 「しゃ、社長・・・！！
+JP 　今日の試合はただの試合じゃない・・・」
+EN "B-Boss...! Today's match isn't just any match..."
+
+@ 2.308.08
+# speaker: 真崎
+JP 「有刺鉄線
+JP 　時限爆弾デスマッチなんですよ！！」
+EN "It's a Barbed Wire Time Bomb Deathmatch!"
+
+@ 2.308.09
+# speaker: 真崎
+JP 「相手は、６メートルの高さの
+JP 　バルコニーからボディアタックする
+JP 　%ss138なんですよ！！」
+EN "Your opponent is %ss138, the guy who does body attacks off a balcony 6 meters up!"
+
+@ 2.309.00
+# speaker: 五条 (%ss135)
+JP 「おい、止めても無駄だよ。」
+EN "Hey, it's no use trying to stop him."
+
+@ 2.309.01
+# speaker: 五条 (%ss135)
+JP 「%ss132さんは
+JP 　一度言い出したら絶対に引かない人だ。」
+EN "Once %ss132 says something, he never backs down."
+
+@ 2.309.02
+# speaker: 五条 (%ss135)
+JP 「今までだって、
+JP 　何度俺が止めてきたことか・・・。」
+EN "How many times have I tried to stop him before..."
+
+@ 2.309.03
+# speaker: 沖田 (%ss132)
+JP 「２人とも心配するな。
+JP 　ＩＷは今、波に乗ってるんだ。」
+EN "Don't worry, you two. <IW> is riding a wave right now."
+
+@ 2.309.04
+# speaker: 沖田 (%ss132)
+JP 「ＩＷってだけで、
+JP 　客が集まるようになったんだぞ。」
+EN "Just the name <IW> is enough to pull in a crowd."
+
+@ 2.309.05
+# speaker: 沖田 (%ss132)
+JP 「そんな時に、
+JP 　メインイベンターの俺が
+JP 　試合に出ないわけにはいかないだろ。」
+EN "At a time like this, I can't have the main eventer skipping a match."
+
+@ 2.309.06
+# speaker: 沖田 (%ss132)
+JP 「それにな、デスマッチは
+JP 　初めから命がかかってるんだ。
+JP 　いつもと変わらないじゃないか。」
+EN "Besides, in a deathmatch your life's on the line from the start. It's no different from usual."
+
+@ 2.309.07
+# speaker: 真崎
+JP 「社長・・・。」
+EN "Boss..."
+
+@ 2.310.00
+# speaker: 沖田 (%ss132)
+JP 　６メートルの高さから
+JP 　ボディーアタックするだと？
+JP 　それがなんだ？
+EN A body attack from 6 meters up?
+EN So what?
+
+@ 2.310.01
+# speaker: 沖田 (%ss132)
+JP 　こっちは、３階から
+JP 　飛び降りたことがあるんだぜ。
+EN I once jumped from a third floor.
+
+@ 2.310.02
+# speaker: 沖田 (%ss132)
+JP 　俺は今まで、ただ
+JP 　ガムシャラに突っ走って来た。
+EN All my life, I've just charged ahead
+EN like a madman.
+
+@ 2.310.03
+# speaker: 沖田 (%ss132)
+JP 　そして、これからも
+JP 　それは変わらない。
+EN And that's never going to change.
+
+@ 2.310.04
+# speaker: 沖田 (%ss132)
+JP 　俺の命の続く限り・・・
+EN Not as long as I live...
+
+@ 2.312.00
+# speaker: 記者
+JP 「%ss132さん・・・
+JP 　%ss132さん！！
+JP 　一言お願いします！！」
+EN "%ss132... %ss132!!
+EN Just a word, please!!"
+
+@ 2.313.00
+# speaker: 沖田 (%ss132)
+JP 「何で・・・
+JP 　何でそこまで
+JP 　体を痛めつけるのかって・・・」
+EN "Why... why do I punish my body
+EN like this, you ask..."
+
+@ 2.313.01
+# speaker: 沖田 (%ss132)
+JP 「好きなんです。
+JP 　プロレスが大好きなんです。」
+EN "Because I love it.
+EN I love pro wrestling."
+
+@ 2.313.02
+# speaker: 沖田 (%ss132)
+JP 「あんたがた！！
+JP 　プロレスに夢をかけて
+JP 　何が悪い！！」
+EN "All of you!! What's wrong with
+EN staking your dreams on wrestling?!"
+
+@ 2.313.03
+# speaker: 沖田 (%ss132)
+JP 「邪道と罵られても
+JP 　ここまで来たんじゃ！！
+JP 　ＩＷはここまでになったんじゃ！！」
+EN "They called us outlaws, and we still
+EN made it this far!! <IW> made it this far!!"
+
+@ 2.313.04
+# speaker: 沖田 (%ss132)
+JP 「ありがとう・・・
+JP 　本当にありがとうございます！！」
+EN "Thank you...
+EN Thank you so much!!"
+
+@ 2.319.00
+# speaker: 記者
+JP 「%ss132さん！
+JP 　すごい試合でした・・・！」
+EN "%ss132! That was an incredible match...!"
+
+@ 2.319.01
+# speaker: 記者
+JP 「ただ、ＩＷの
+JP 　デスマッチ形式導入については
+JP 　賛否両論があります。」
+EN "But opinion is split on <IW>
+EN bringing in deathmatches."
+
+@ 2.319.02
+# speaker: 記者
+JP 「%ss132さんは、
+JP 　これからもデスマッチ路線を
+JP 　続けていかれると思うのですが、」
+EN "%ss132, I imagine you'll stay on the
+EN deathmatch path from here on, but..."
+
+@ 2.319.03
+# speaker: 記者
+JP 「その点も考慮して、
+JP 　今後のＩＷの展開について
+JP 　お聞かせ願えませんか？」
+EN "With that in mind, could you tell us
+EN where <IW> is headed next?"
+
+@ 2.320.00
+# speaker: 沖田 (%ss132)
+JP 「ＩＷは・・・
+JP 　ＩＷは、やっぱり
+JP 　弱小インディーズ団体なんですよ。」
+EN "<IW>... <IW> is still a tiny
+EN indie promotion."
+
+@ 2.320.01
+# speaker: 沖田 (%ss132)
+JP 「どこまで・・・
+JP 　どこまで行っても。」
+EN "No matter... no matter how far we go."
+
+@ 2.320.02
+# speaker: 沖田 (%ss132)
+JP 「だから、奇抜なことを
+JP 　やらなきゃいけない。
+JP 　デスマッチをやらなきゃいけない。」
+EN "So we have to do something wild.
+EN We have to do deathmatches."
+
+@ 2.320.03
+# speaker: 沖田 (%ss132)
+JP 「デスマッチは『邪道』だ、
+JP 　なんて言う人がいるけど、」
+EN "Some people say deathmatches
+EN are 'outlaw' wrestling, but..."
+
+@ 2.320.04
+# speaker: 沖田 (%ss132)
+JP 「じゃあいったい、
+JP 　何が『正道』なんですか？」
+EN "Then what exactly is 'orthodox'?"
+
+@ 2.320.05
+# speaker: 沖田 (%ss132)
+JP 「ＵＷＨのような、
+JP 　スポーツライクな
+JP 　プロレスが正道なんですか？」
+EN "Is sporty wrestling like <UWH>'s
+EN the orthodox way?"
+
+@ 2.320.06
+# speaker: 沖田 (%ss132)
+JP 「プロレスを真剣に愛して、
+JP 　プロレスで
+JP 　生き抜いて行くという意味では、」
+EN "If you truly love wrestling and
+EN live your life through it..."
+
+@ 2.320.07
+# speaker: 沖田 (%ss132)
+JP 「邪道も正道も関係ない。
+JP 　どちらも同じでしょ？」
+EN "Then outlaw or orthodox doesn't
+EN matter. It's all the same, right?"
+
+@ 2.320.08
+# speaker: 沖田 (%ss132)
+JP 「とにかく、
+JP 　ＩＷを理解してもらうには、」
+EN "Anyway, if we want people to
+EN understand <IW>..."
+
+@ 2.320.09
+# speaker: 沖田 (%ss132)
+JP 「俺達のやってることを
+JP 　見てもらうしかないんです。」
+EN "The only way is to show them
+EN what we do."
+
+@ 2.320.10
+# speaker: 沖田 (%ss132)
+JP 「会場に足を運んでもらって、
+JP 　生の試合を見てもらうしかない。」
+EN "Get them to come to the arena
+EN and see a live match. That's all."
+
+@ 2.320.11
+# speaker: 沖田 (%ss132)
+JP 「これから、
+JP 　デスマッチはもっともっと
+JP 　エスカレートして行くと思います。」
+EN "From here, I think the deathmatches
+EN will escalate more and more."
+
+@ 2.320.12
+# speaker: 沖田 (%ss132)
+JP 「でも、そうするしかない。」
+EN "But there's no other choice."
+
+@ 2.320.13
+# speaker: 沖田 (%ss132)
+JP 「そうすることでしか、
+JP 　ＩＷを伸ばして行く道はないと
+JP 　思っています。」
+EN "I believe it's the only road
+EN for <IW> to grow."
+
+@ 2.320.14
+# speaker: 沖田 (%ss132)
+JP 「俺達は、
+JP 　生き抜くために真剣に
+JP 　プロレスをやってるんです・・・！！」
+EN "We do pro wrestling dead seriously,
+EN just to survive...!!"
+
+@ 2.321.00
+# speaker: 沖田 (%ss132)
+JP 　自分のしてることが
+JP 　正しいか、正しくないかなんて
+JP 　俺にだって分かるわけがない。
+EN Whether what I'm doing is right
+EN or wrong... how would I know?
+
+@ 2.321.01
+# speaker: 沖田 (%ss132)
+JP 　そんなものは
+JP 　ずっと後になってみなきゃ分からんよ。
+EN That's something you only find out
+EN long, long afterward.
+
+@ 2.321.02
+# speaker: 沖田 (%ss132)
+JP 　今の俺に分かること・・・
+EN All I know right now...
+
+@ 2.321.03
+# speaker: 沖田 (%ss132)
+JP 　それは、
+JP 　目の前にいる敵を倒すこと・・・！！
+EN is that I have to beat the enemy
+EN in front of me...!!
+
+@ 2.321.04
+# speaker: 沖田 (%ss132)
+JP 　この命を賭けてリングに上がらなきゃ、
+JP 　ＩＷを守れないということだけだ！！
+EN And that unless I climb into the ring
+EN with my life on the line, I can't
+EN protect <IW>!!
+
+@ 2.322.00
+# speaker: トーゴー (%ss136)
+JP 「%ss132ーー！！
+JP 　今日こそ
+JP 　ぶっ殺ちてやるからなあ！！」
+EN "%ss132!! Today I keel you
+EN for sure!!"
+
+@ 2.322.01
+# speaker: 沖田 (%ss132)
+JP 「%ss136・・・てめえ！！
+JP 　ちゃんと日本語しゃべれ！！」
+EN "%ss136... you!!
+EN Speak proper Japanese!!"
+
+@ 2.322.02
+# speaker: トーゴー (%ss136)
+JP 「%ss132！！おまえ！！
+JP 　後悔するなよ！！」
+EN "%ss132!! You!!
+EN You gonna be sorry!!"
+
+@ 2.322.03
+# speaker: トーゴー (%ss136)
+JP 「首がちょん切れても
+JP 　知らねえぞ！！」
+EN "If your head get chopped off,
+EN not my problem!!"
+
+@ 2.323.00
+# speaker: 沖田 (%ss132)
+JP 「首！？
+JP 　望むところだ、てめえ・・・！！」
+EN "My head?! Bring it on, you...!!"
+
+@ 2.323.01
+# speaker: 沖田 (%ss132)
+JP 「上がれ！！リングに！！
+JP 　叩き潰してやる！！」
+EN "Get in the ring!!
+EN I'll crush you!!"
+
+@ 2.329.00
+# speaker: 沖田 (%ss132)
+JP 　決して順調とは言えなかった・・・。
+EN It was never smooth sailing...
+
+@ 2.329.01
+# speaker: 沖田 (%ss132)
+JP 　だが、ＩＷは
+JP 　その後も精一杯の興行を打ちながら
+JP 　なんとか存続し続けた。
+EN But <IW> kept running every show it
+EN could, and somehow it survived.
+
+@ 2.329.02
+# speaker: 沖田 (%ss132)
+JP 　俺はＩＷの今後の発展のために、
+JP 　ある試合形式を導入することにした。
+EN For <IW>'s future, I decided to
+EN bring in a new kind of match.
+
+@ 2.329.03
+# speaker: 沖田 (%ss132)
+JP 　デスマッチ形式・・・！
+EN The deathmatch...!
+
+@ 2.329.04
+# speaker: 沖田 (%ss132)
+JP 　俺という人間の生き方を表現するのに、
+JP 　これ以上の方法はないように思える。
+EN I can't think of a better way to show
+EN how a man like me lives.
+
+@ 2.329.05
+# speaker: 沖田 (%ss132)
+JP 　俺はデスマッチに全てを賭けた！！
+EN I bet everything on the deathmatch!!
+
+@ 2.330.00
+# speaker: 五条 (%ss135)
+JP 「%ss132さん・・・
+JP 　どうしたんですか？」
+EN "%ss132... what's wrong?"
+
+@ 2.330.01
+# speaker: 五条 (%ss135)
+JP 「今日は、ずいぶん
+JP 　元気ないじゃないですか？」
+EN "You don't seem like yourself today."
+
+@ 2.330.02
+# speaker: 沖田 (%ss132)
+JP 「%ss135・・・
+JP 　おまえ、ＩＷに来たことを
+JP 　後悔してないか？」
+EN "%ss135... do you regret
+EN coming to <IW>?"
+
+@ 2.330.03
+# speaker: 五条 (%ss135)
+JP 「%ss132さん・・・
+JP 　何言ってるんですか！」
+EN "%ss132... what are you saying?!"
+
+@ 2.330.04
+# speaker: 五条 (%ss135)
+JP 「俺は、
+JP 　%ss132さんから誘われて
+JP 　本当にうれしかったんですよ。」
+EN "When you invited me, %ss132,
+EN I was really happy."
+
+@ 2.330.05
+# speaker: 沖田 (%ss132)
+JP 「%ss135・・・。」
+EN "%ss135..."
+
+@ 2.330.06
+# speaker: 沖田 (%ss132)
+JP （ＯＪＰ時代、付き人の代わりに
+JP 　俺の身の回りの世話をしてくれたのは
+JP 　この%ss135だった・・・。）
+EN (Back in <OJP>, %ss135 looked after me
+EN even though he wasn't my attendant...)
+
+@ 2.330.07
+# speaker: 沖田 (%ss132)
+JP （%ss135は俺のために、
+JP 　ＯＪＰをやめて
+JP 　ＩＷに来てくれた・・・）
+EN (%ss135 left <OJP> and came to <IW>
+EN for my sake...)
+
+@ 2.330.08
+# speaker: 沖田 (%ss132)
+JP （今は感謝の言葉もない・・・。）
+EN (I can't even thank him enough...)
+
+@ 2.330.09
+# speaker: 五条 (%ss135)
+JP 「%ss132さん。
+JP 　俺、覚悟は出来てますよ。」
+EN "%ss132. I'm ready for this."
+
+@ 2.330.10
+# speaker: 五条 (%ss135)
+JP 「今のＩＷには、
+JP 　デスマッチが必要なんです。」
+EN "<IW> needs deathmatches right now."
+
+@ 2.330.11
+# speaker: 五条 (%ss135)
+JP 「うちのような,
+JP 　弱小インディペントが生き抜くためには、
+JP 　命を賭けた闘いを見せるしかない。」
+EN "For a tiny indie like us to survive,
+EN we have to show fights with our
+EN lives on the line."
+
+@ 2.330.12
+# speaker: 五条 (%ss135)
+JP 「そう言ったのは、
+JP 　%ss132さんじゃないですか！」
+EN "You're the one who said that,
+EN %ss132!"
+
+@ 2.330.13
+# speaker: 五条 (%ss135)
+JP 「今度の金網デスマッチ、
+JP 　俺は必ず成功させて見せます！！」
+EN "The cage deathmatch next time...
+EN I'll make it a success!!"
+
+@ 2.330.14
+# speaker: 沖田 (%ss132)
+JP 「%ss135・・・。」
+EN "%ss135..."
+
+@ 2.330.15
+# speaker: 沖田 (%ss132)
+JP 　そうだ・・・
+EN That's right...
+
+@ 2.330.16
+# speaker: 沖田 (%ss132)
+JP 　やるしかないんだ・・・！！
+EN There's no choice but to do it...!!
+
+@ 2.330.17
+# speaker: 沖田 (%ss132)
+JP 　命を賭けた
+JP 　パフォーマンスを見せる以外、
+JP 　ＩＷが生き残る道はない！！
+EN Short of putting our lives on the line
+EN for the crowd, <IW> has no way
+EN to survive!!
+
+@ 2.331.00
+# speaker: 沖田 (%ss132)
+JP 　俺は、命の続く限り
+JP 　ＩＷを潰さないと誓った・・・
+EN I swore I'd never let <IW> die,
+EN not while I'm alive...
+
+@ 2.331.01
+# speaker: 沖田 (%ss132)
+JP 　たとえ、
+JP 　この体がボロボロになろうと
+JP 　俺はデスマッチをやる！！
+EN Even if this body falls to pieces,
+EN I'll keep doing deathmatches!!
+
+@ 2.331.02
+# speaker: 沖田 (%ss132)
+JP 　皆、何かを賭けて闘う
+JP 　人間の姿を見たいんじゃ！！
+EN Everyone wants to see people
+EN fighting with something at stake!!
+
+@ 2.331.03
+# speaker: 沖田 (%ss132)
+JP 　命を賭けることが
+JP 　尊いと知っているから、
+JP 　人は集まるんじゃ！！
+EN People come because they know
+EN it's noble to risk your life!!
+
+@ 2.331.04
+# speaker: 沖田 (%ss132)
+JP 　ＩＷを守るために、
+JP 　俺はデスマッチを生き抜く！！
+EN To protect <IW>, I'll survive
+EN the deathmatches!!
+
+@ 2.333.00
+# speaker: 沖田 (%ss132)
+JP 　試合内容は稚拙だったが、
+JP 　旗揚げ戦は大成功だった・・・！
+EN The matches were crude, but the
+EN first show was a huge success...!
+
+@ 2.333.01
+# speaker: 沖田 (%ss132)
+JP 　俺の立ち上げたＩＷのために、
+JP 　これだけのお客さんが
+JP 　集まってくれた・・・
+EN All these people came out
+EN for <IW>, the promotion I started...
+
+@ 2.333.02
+# speaker: 沖田 (%ss132)
+JP 　俺は、感極まって
+JP 　リング上でマイクを握り締めた・・・！
+EN Overwhelmed, I gripped the mic
+EN in the ring...!
+
+@ 2.334.00
+# speaker: 沖田 (%ss132)
+JP 「僕は%ss58さんに
+JP 　育てられたものですから、 」
+EN "I was raised in this business
+EN by %ss58, so..."
+
+@ 2.334.01
+# speaker: 沖田 (%ss132)
+JP 「まさか
+JP 　こういう団体を創るとは
+JP 　思っていませんでした。」
+EN "I never thought I'd start
+EN a promotion like this."
+
+@ 2.334.02
+# speaker: 沖田 (%ss132)
+JP 「だけど、僕はとても
+JP 　プロレスが好きなんです。」
+EN "But I love pro wrestling so much."
+
+@ 2.334.03
+# speaker: 沖田 (%ss132)
+JP 「だから・・・
+JP 　だからどうしても、」
+EN "So... so no matter what..."
+
+@ 2.334.04
+# speaker: 沖田 (%ss132)
+JP 「格闘技の中で
+JP 　プロレスが一番だということを
+JP 　証明したかった！！」
+EN "I wanted to prove that pro wrestling
+EN is the best of all the fighting arts!!"
+
+@ 2.334.05
+# speaker: 沖田 (%ss132)
+JP 「その気持ちが
+JP 　ＩＷという形になったんだと
+JP 　思います・・・！！」
+EN "I think that feeling is what
+EN became <IW>...!!"
+
+@ 2.334.06
+# speaker: 沖田 (%ss132)
+JP 「皆さん、
+JP 　今日はどうも
+JP 　有難うございました！！」
+EN "Everyone, thank you so much
+EN for today!!"
+
+@ 2.340.00
+# speaker: 記者
+JP 「%ss132さん！！
+JP 　新団体『ＩＷ』の設立について、
+JP 　今後の抱負などをお聞かせ下さい！！」
+EN "%ss132!! Tell us your plans for
+EN your new promotion, <IW>!!"
+
+@ 2.341.00
+# speaker: 沖田 (%ss132)
+JP 「僕は一度引退した人間です。」
+EN "I'm a man who retired once."
+
+@ 2.341.01
+# speaker: 沖田 (%ss132)
+JP 「もう二度と、リングには戻れないと
+JP 　思っていました。」
+EN "I thought I could never go back
+EN to the ring."
+
+@ 2.341.02
+# speaker: 沖田 (%ss132)
+JP 「自分の力量は分かっています・・・。」
+EN "I know my own limits..."
+
+@ 2.341.03
+# speaker: 沖田 (%ss132)
+JP 「でも、それでも
+JP 　僕はプロレスが好きなんです。
+JP 　大好きなんです・・・！」
+EN "But even so, I love pro wrestling.
+EN I really love it...!"
+
+@ 2.341.04
+# speaker: 沖田 (%ss132)
+JP 「僕が生きて行く中で
+JP 　プロレスは・・・」
+EN "In my life, pro wrestling is..."
+
+@ 2.342.00
+# speaker: 大橋
+JP 「%ss132ーー！！
+JP 　俺ともう一回勝負しろ！！」
+EN "%ss132!! Fight me one more time!!"
+
+@ 2.342.01
+# speaker: 沖田 (%ss132)
+JP 「大橋・・・！！」
+EN "Ohashi...!!"
+
+@ 2.342.02
+# speaker: 沖田 (%ss132)
+JP 　突如として乱入して来た
+JP 　大橋のせいで、
+JP 　会見場はパニックと化した。
+EN Ohashi stormed in out of nowhere,
+EN and the press conference turned
+EN into chaos.
+
+@ 2.342.03
+# speaker: 沖田 (%ss132)
+JP 　大橋、てめえ！！
+EN Ohashi, you bastard!!
+
+@ 2.342.04
+# speaker: 沖田 (%ss132)
+JP 　どれだけ苦労して
+JP 　ここまでこぎつけたと思ってるんだ！？
+EN Do you know how hard I worked
+EN to get this far?!
+
+@ 2.342.05
+# speaker: 沖田 (%ss132)
+JP 　格闘家の祭典でやられたことを
+JP 　根に持って襲って来たんだろうが、
+JP 　このままじゃすまさねえぞ！！
+EN Still sore about what happened at the
+EN Fighters' Festival, huh? You won't
+EN get away with this!!
+
+@ 2.342.06
+# speaker: 沖田 (%ss132)
+JP 　俺の旗揚げ戦の相手は決まった！！
+EN Now I know who I'm facing
+EN at my first show!!
+
+@ 2.342.07
+# speaker: 沖田 (%ss132)
+JP 　こいつだ！！
+EN It's him!!
+
+@ 2.343.00
+# speaker: 沖田 (%ss132)
+JP 　遺恨がらみの旗揚げ戦になったが、
+JP 　この一戦の持つ重要性は
+JP 　よく分かっている。
+EN My first show became a grudge match,
+EN but I knew full well how much
+EN this one fight mattered.
+
+@ 2.343.01
+# speaker: 沖田 (%ss132)
+JP 　誰もが皆、
+JP 　こんなちっぽけな団体が
+JP 　生き残れるわけないと思っている。
+EN Everyone thinks a tiny promotion
+EN like this can't possibly survive.
+
+@ 2.343.02
+# speaker: 沖田 (%ss132)
+JP 　オレの試合の盛り上がりいかんで、
+JP 　今後のＩＷの行く末が
+JP 　決まってしまう。
+EN Whether my match fires up the crowd
+EN will decide where <IW> goes from here.
+
+@ 2.343.03
+# speaker: 沖田 (%ss132)
+JP 　少ないながら、オレを信じて
+JP 　ついて来てくれた奴らがいる！！
+EN There aren't many, but some guys
+EN believed in me and followed me!!
+
+@ 2.343.04
+# speaker: 沖田 (%ss132)
+JP 　夢を信じて、
+JP 　集まってくれた奴らがいる！！
+EN Some guys believed in the dream
+EN and came together!!
+
+@ 2.343.05
+# speaker: 沖田 (%ss132)
+JP 　そいつらのためにも、
+EN For their sake too...
+
+@ 2.343.06
+# speaker: 沖田 (%ss132)
+JP 　ＩＷは、
+JP 　絶対に潰すわけにはいかないんだ！！
+EN I can never let <IW> go under!!
+
+@ 2.345.00
+# speaker: 記者
+JP 「%ss132さん！！
+JP 　新団体『ＩＷ』の設立について、
+JP 　今後の抱負などをお聞かせ下さい！！」
+EN "%ss132!! Tell us your plans for
+EN your new promotion, <IW>!!"
+
+@ 2.346.00
+# speaker: 沖田 (%ss132)
+JP 「僕は一度引退した人間です。」
+EN "I'm a man who retired once."
+
+@ 2.346.01
+# speaker: 沖田 (%ss132)
+JP 「もう二度と、リングには戻れないと
+JP 　思っていました。」
+EN "I thought I could never go back
+EN to the ring."
+
+@ 2.346.02
+# speaker: 沖田 (%ss132)
+JP 「自分の力量は分かっています・・・。」
+EN "I know my own limits..."
+
+@ 2.346.03
+# speaker: 沖田 (%ss132)
+JP 「でも、それでも
+JP 　僕はプロレスが好きなんです。
+JP 　大好きなんです・・・！」
+EN "But even so, I love pro wrestling.
+EN I really love it...!"
+
+@ 2.346.04
+# speaker: 沖田 (%ss132)
+JP 「僕が生きて行く中で
+JP 　プロレスは・・・」
+EN "In my life, pro wrestling is..."
+
+@ 2.347.00
+# speaker: 大橋
+JP 「%ss132ーー！！
+JP 　俺ともう一回勝負しろ！！」
+EN "%ss132!! Fight me one more time!!"
+
+@ 2.347.01
+# speaker: 沖田 (%ss132)
+JP 「大橋・・・！！」
+EN "Ohashi...!!"
+
+@ 2.347.02
+# speaker: 沖田 (%ss132)
+JP 　突如として乱入して来た
+JP 　大橋のせいで、
+JP 　会見場はパニックと化した。
+EN Ohashi stormed in out of nowhere,
+EN and the press conference turned
+EN into chaos.
+
+@ 2.347.03
+# speaker: 沖田 (%ss132)
+JP 　大橋、てめえ！！
+EN Ohashi, you bastard!!
+
+@ 2.347.04
+# speaker: 沖田 (%ss132)
+JP 　どれだけ苦労して
+JP 　ここまでこぎつけたと思ってるんだ！？
+EN Do you know how hard I worked
+EN to get this far?!
+
+@ 2.347.05
+# speaker: 沖田 (%ss132)
+JP 　大橋とは昔ちょっとした遺恨があった。
+EN Ohashi and I had a little grudge
+EN from way back.
+
+@ 2.347.06
+# speaker: 沖田 (%ss132)
+JP 　その時の事を根に持って
+JP 　襲って来たんだろうが、
+JP 　このままじゃすまさねえぞ！！
+EN Still sore about that, huh?
+EN You won't get away with this!!
+
+@ 2.347.07
+# speaker: 沖田 (%ss132)
+JP 　俺の旗揚げ戦の相手は決まった！！
+EN Now I know who I'm facing
+EN at my first show!!
+
+@ 2.347.08
+# speaker: 沖田 (%ss132)
+JP 　こいつだ！！
+EN It's him!!
+
+@ 2.348.00
+# speaker: 沖田 (%ss132)
+JP 　遺恨がらみの旗揚げ戦になったが、
+JP 　この一戦の持つ重要性は
+JP 　よく分かっている。
+EN My first show became a grudge match,
+EN but I knew full well how much
+EN this one fight mattered.
+
+@ 2.348.01
+# speaker: 沖田 (%ss132)
+JP 　誰もが皆、
+JP 　こんなちっぽけな団体が
+JP 　生き残れるわけないと思っている。
+EN Everyone thinks a tiny promotion
+EN like this can't possibly survive.
+
+@ 2.348.02
+# speaker: 沖田 (%ss132)
+JP 　オレの試合の盛り上がりいかんで、
+JP 　今後のＩＷの行く末が
+JP 　決まってしまう。
+EN Whether my match fires up the crowd
+EN will decide where <IW> goes from here.
+
+@ 2.348.03
+# speaker: 沖田 (%ss132)
+JP 　少ないながら、オレを信じて
+JP 　ついて来てくれた奴らがいる！！
+EN There aren't many, but some guys
+EN believed in me and followed me!!
+
+@ 2.348.04
+# speaker: 沖田 (%ss132)
+JP 　夢を信じて、
+JP 　集まってくれた奴らがいる！！
+EN Some guys believed in the dream
+EN and came together!!
+
+@ 2.348.05
+# speaker: 沖田 (%ss132)
+JP 　そいつらのためにも、
+EN For their sake too...
+
+@ 2.348.06
+# speaker: 沖田 (%ss132)
+JP 　ＩＷは、
+JP 　絶対に潰すわけにはいかないんだ！！
+EN I can never let <IW> go under!!
+
+@ 2.350.00
+# speaker: 沖田 (%ss132)
+JP 　このやろう・・・！！
+EN You bastard...!
+
+@ 2.350.01
+# speaker: 沖田 (%ss132)
+JP 　自分達だけが
+JP 　真剣勝負だと思うなよ・・・！！
+EN Don't think you're the only ones
+EN fighting for real...!!
+
+@ 2.350.02
+# speaker: 沖田 (%ss132)
+JP 　俺は認めんぞ！！
+EN I won't accept it!!
+
+@ 2.350.03
+# speaker: 沖田 (%ss132)
+JP 　こっちだってなぁ・・・
+JP 　なあ！！
+JP 　本気なんだよ！！
+EN We're... we're dead serious too,
+EN you hear me?!
+
+@ 2.350.04
+# speaker: 沖田 (%ss132)
+JP 　俺はなあ、
+JP 　完全に火がついたぞ！！
+JP 　やってやろうじゃねえか！！
+EN I'm all fired up now!!
+EN Bring it on!!
+
+@ 2.350.05
+# speaker: 沖田 (%ss132)
+JP 　俺は、俺の目指す
+JP 　プロレスを実現させるために
+JP 　新しいリングを作る！！
+EN To make the wrestling I believe in
+EN real, I'll build a new ring!!
+
+@ 2.350.06
+# speaker: 沖田 (%ss132)
+JP 　自分のためのリングを作ってやる！！
+EN I'll build a ring of my own!!
+
+@ 2.352.00
+# speaker: 冴刃 (%ss184)
+JP 「チケットは、あるのか？」
+EN "Do you have a ticket?"
+
+@ 2.352.01
+# speaker: 沖田 (%ss132)
+JP 「おい・・・！
+JP 　おい！！」
+EN "Hey...! Hey!!"
+
+@ 2.352.02
+# speaker: 沖田 (%ss132)
+JP 「俺は客じゃないんだぞ！！
+JP 　ＵＷＨに挑戦状を持って来たんだ！！
+JP 　これを受け取れ！！」
+EN "I'm not a customer!! I came to hand
+EN <UWH> a challenge!! Take it!!"
+
+@ 2.353.00
+# speaker: 冴刃 (%ss184)
+JP 「チケットがないなら、これ以上
+JP 　中へ入るな。
+JP 　帰れ・・・！！」
+EN "If you have no ticket, don't come
+EN any further in. Go home...!!"
+
+@ C2.355
+# choice or chapter title
+JP １）無理やりＵＷＨのリングに乱入する
+EN 1) Storm the <UWH> ring by force
+
+@ C2.357
+# choice or chapter title
+JP ２）別の方法を考える
+EN 2) Think of another way
+
+@ 2.358.00
+# speaker: パイオニア豪
+JP 「%ss132さん。
+JP 　もう一度プロレスをやりたいって
+JP 　気持ちは分かりますが・・・」
+EN "%ss132, I understand you want to
+EN do pro wrestling again, but..."
+
+@ 2.358.01
+# speaker: パイオニア豪
+JP 「本当に
+JP 　俺達といっしょでいいんですか？」
+EN "Are you sure you want to be
+EN with us?"
+
+@ 2.358.02
+# speaker: パイオニア豪
+JP 「俺達はメジャーをやめて、
+JP 　新しいプロレスを作り出そうとしている
+JP 　インディーズなんですよ？」
+EN "We quit the majors. We're an indie
+EN trying to create a new kind of
+EN wrestling, you know?"
+
+@ 2.358.03
+# speaker: 沖田 (%ss132)
+JP 「俺は分かったんだよ。
+JP 　本当に自分がやりたいことが・・・。」
+EN "I've figured it out. What I really
+EN want to do..."
+
+@ 2.358.04
+# speaker: 沖田 (%ss132)
+JP 「プロレスをやめて４年、
+JP 　色々なことをやって来た。」
+EN "In the four years since I quit
+EN wrestling, I've done all sorts of things."
+
+@ 2.358.05
+# speaker: 沖田 (%ss132)
+JP 「タレントや電話機の販売・・・」
+EN "TV work, selling telephones..."
+
+@ 2.358.06
+# speaker: 沖田 (%ss132)
+JP 「水商売もやったし、
+JP 　工事現場での日雇い労働、
+JP 　新聞の勧誘員なんてのまでやった。」
+EN "I worked in bars, did day labor on
+EN construction sites, even sold
+EN newspaper subscriptions."
+
+@ 2.358.07
+# speaker: 沖田 (%ss132)
+JP 「そうやって、
+JP 　プロレスとは
+JP 　全然違うことをやって来て、」
+EN "Doing all that, things that had
+EN nothing to do with wrestling..."
+
+@ 2.358.08
+# speaker: 沖田 (%ss132)
+JP 「自分の中に
+JP 　絶対に譲れない気持ちがあることに
+JP 　気づいたんだ。」
+EN "I realized there's one feeling inside
+EN me I'll never give up."
+
+@ 2.358.09
+# speaker: 沖田 (%ss132)
+JP 「それは・・・」
+EN "And that's..."
+
+@ 2.358.10
+# speaker: 沖田 (%ss132)
+JP 「やっぱり俺は
+JP 　プロレスが大好きなんだという
+JP 　気持ちだ。」
+EN "That I really do love
+EN pro wrestling."
+
+@ 2.358.11
+# speaker: 沖田 (%ss132)
+JP 「壊れた膝なんてどうでもいい。
+JP 　インディーズだってかまわない。」
+EN "Forget my wrecked knee.
+EN I don't care if it's an indie."
+
+@ 2.358.12
+# speaker: 沖田 (%ss132)
+JP 「大好きなプロレスが出来れば・・・
+JP 　リングに上がれれば
+JP 　それでいいんだ！！」
+EN "If I can do the wrestling I love...
+EN if I can get in the ring...
+EN that's all I need!!"
+
+@ 2.358.13
+# speaker: パイオニア豪
+JP 「%ss132さん・・・」
+EN "%ss132..."
+
+@ 2.358.14
+# speaker: パイオニア豪
+JP 「%ss132さんの決意、
+JP 　よく分かりました。」
+EN "I understand your resolve,
+EN %ss132."
+
+@ 2.358.15
+# speaker: パイオニア豪
+JP 「いっしょにやりましょう。」
+EN "Let's do this together."
+
+@ 2.358.16
+# speaker: パイオニア豪
+JP 「俺達の手で
+JP 　プロレス界に新しい波を
+JP 　作り出すんです！！」
+EN "With our own hands, we'll make
+EN a new wave in the wrestling world!!"
+
+@ 2.358.17
+# speaker: 沖田 (%ss132)
+JP 　パイオニア豪率いる
+JP 『パイオニア戦士』は、
+EN Pioneer Go's group,
+EN the Pioneer Warriors...
+
+@ 2.358.18
+# speaker: 沖田 (%ss132)
+JP 　『プロレスこそ格闘技の頂点』
+JP 　をスローガンに、
+EN Under the slogan "Pro wrestling is
+EN the pinnacle of fighting"...
+
+@ 2.358.19
+# speaker: 沖田 (%ss132)
+JP 　少数の有志が集まって
+JP 　異種格闘技戦を前提に結成された
+JP 　異端集団だった。
+EN was a band of mavericks, a few
+EN volunteers brought together for
+EN mixed martial arts bouts.
+
+@ 2.358.20
+# speaker: 沖田 (%ss132)
+JP 　俺はパイオニア豪の行動力に感銘し、
+JP 　自分の信じるプロレスのために
+JP 　復帰することを決意した。
+EN Pioneer Go's drive inspired me,
+EN and I decided to come back for
+EN the wrestling I believe in.
+
+@ 2.358.21
+# speaker: 沖田 (%ss132)
+JP 　左膝は
+JP 　今でも９０度以上曲がらない。
+EN Even now, my left knee won't bend
+EN past 90 degrees.
+
+@ 2.358.22
+# speaker: 沖田 (%ss132)
+JP 　だが、いいんだ。
+EN But that's fine.
+
+@ 2.358.23
+# speaker: 沖田 (%ss132)
+JP 　俺はプロレスラーだから、
+JP 　それでもリングに上がるんだ・・・！！
+EN I'm a pro wrestler, so I'll get
+EN in the ring anyway...!!
+
+@ 2.359.00
+# speaker: 沖田 (%ss132)
+JP 　復帰第一戦。
+JP 　俺はパイオニア戦士として、
+EN My first match back.
+EN As one of the Pioneer Warriors...
+
+@ 2.359.01
+# speaker: 沖田 (%ss132)
+JP 『格闘家の祭典』というイベントで
+JP 　大橋隆志という
+JP 　空手家と試合することになった。
+EN I was booked against a karate man
+EN named Takashi Ohashi at an event
+EN called the Fighters' Festival.
+
+@ 2.359.02
+# speaker: 沖田 (%ss132)
+JP 　この試合で俺は、
+JP 　プロレスこそが
+JP 　最高だということを証明する。
+EN In this match, I'll prove that
+EN pro wrestling is the greatest.
+
+@ 2.359.03
+# speaker: 沖田 (%ss132)
+JP 『最強』じゃない。
+JP 　プロレスは最強を通り越した
+JP 『最高』なんだ！！
+EN Not the "strongest". Pro wrestling
+EN goes beyond strongest...
+EN it's the "greatest"!!
+
+@ 2.360.00
+# speaker: アナウンサー
+JP 「ああっーーと！！
+JP 　%ss132、観客席から
+JP 　パイプ椅子を持ってきた！！」
+EN "Ohhh!! %ss132 has grabbed a folding
+EN chair from the crowd!!"
+
+@ 2.360.01
+# speaker: アナウンサー
+JP 「すさまじい形相で
+JP 　大橋を殴りつける！！」
+EN "A terrifying look on his face as he
+EN beats Ohashi with it!!"
+
+@ 2.360.02
+# speaker: アナウンサー
+JP 「パイプ椅子が・・・
+JP 　吹っ飛んだ！！」
+EN "The chair... went flying!!"
+
+@ 2.361.00
+# speaker: 解説者
+JP 「%ss132・・・
+JP 　手に何か持っていますね・・・！？」
+EN "%ss132... he's got something
+EN in his hand...?!"
+
+@ 2.361.01
+# speaker: アナウンサー
+JP 「あっ！！
+JP 　大橋、流血です！！」
+EN "Ah!! Ohashi is bleeding!!"
+
+@ 2.362.00
+# speaker: アナウンサー
+JP 「額から
+JP 　大量の血が流れています！！」
+EN "Blood is pouring from his forehead!!"
+
+@ 2.362.01
+# speaker: 解説者
+JP 「多分、凶器だと思いますよ・・・！」
+EN "That has to be a foreign object...!"
+
+@ 2.362.02
+# speaker: アナウンサー
+JP 「大橋、リング上で
+JP 　グッタリしたまま起き上がれません！！
+JP 　ドクターストップか！？」
+EN "Ohashi is limp in the ring and can't
+EN get up!! Will the doctor stop it?!"
+
+@ 2.363.00
+# speaker: 沖田 (%ss132)
+JP 　俺は、格闘家の大橋を
+JP 　プロレス流に葬ってやった。
+EN I buried Ohashi the fighter,
+EN pro wrestling style.
+
+@ 2.363.01
+# speaker: 沖田 (%ss132)
+JP 　格闘家・・・？
+JP 　ふざけるな。
+EN A fighter...? Don't make me laugh.
+
+@ 2.363.02
+# speaker: 沖田 (%ss132)
+JP 　今、
+JP 　%sf184を
+JP 　中心とする、
+EN Right now, led by
+EN %sf184...
+
+@ 2.363.03
+# speaker: 沖田 (%ss132)
+JP 　格闘系の『ＵＷＨ』が
+JP 　すごい人気になっている。
+EN the shoot-style <UWH> is
+EN hugely popular.
+
+@ 2.363.04
+# speaker: 沖田 (%ss132)
+JP 　奴らは、自分達のプロレスだけが
+JP 　真に強いレスラーを作り出すための
+JP 　方法だと言ってはばからない。
+EN They make no secret of saying
+EN their way is the only way to make
+EN truly strong wrestlers.
+
+@ 2.363.05
+# speaker: 沖田 (%ss132)
+JP 　ＵＷＨの闘い方は、
+JP 　先人達が築き上げたプロレスを
+JP 　あからさまに否定している。
+EN <UWH>'s style flat-out rejects the
+EN pro wrestling our predecessors built.
+
+@ 2.363.06
+# speaker: 沖田 (%ss132)
+JP 　そんなもの
+JP 　俺が許せるわけないだろう・・・！
+EN How could I ever stand for that...!
+
+@ 2.363.07
+# speaker: 沖田 (%ss132)
+JP 　俺はＵＷＨに挑戦する。
+EN I'm going to challenge <UWH>.
+
+@ 2.363.08
+# speaker: 沖田 (%ss132)
+JP 　たった一人、
+JP 　俺は、プロレスに全てを賭けて
+JP 　生きて行くと決めたんだ！！
+EN All on my own... I decided to live
+EN my life betting everything on
+EN pro wrestling!!
+
+@ 2.363.09
+# speaker: 沖田 (%ss132)
+JP 　己の求めるプロレスの
+JP 　正当性を証明するためにも、
+JP 　俺は突き進むしかない！！
+EN To prove the wrestling I seek is
+EN the right one, I have no choice
+EN but to charge ahead!!
+
+@ 2.363.10
+# speaker: 沖田 (%ss132)
+JP 　待っていろよ！！
+JP 　ＵＷＨ！！
+EN Just you wait!! <UWH>!!
+
+@ 2.365.00
+# speaker: 沖田 (%ss132)
+JP 　コンチクショウ・・・
+JP 　このまま終わってたまるか・・・！！
+EN Damn it all...
+EN I won't let it end like this...!!
+
+@ 2.365.01
+# speaker: 沖田 (%ss132)
+JP 　俺にはやっぱり
+JP 　プロレスしかないんだ！！
+EN For me, there's nothing
+EN but pro wrestling!!
+
+@ 2.365.02
+# speaker: 沖田 (%ss132)
+JP 　必ず・・・
+EN I swear...
+
+@ 2.365.03
+# speaker: 沖田 (%ss132)
+JP 　俺は必ず
+JP 　プロレスの世界に戻ってやる！！
+EN I swear I'll get back into
+EN the wrestling world!!
+
+@ 2.367.00
+# speaker: 沖田 (%ss132)
+JP 　コンチクショウ・・・
+JP 　このまま終わってたまるか・・・！！
+EN Damn it all...
+EN I won't let it end like this...!!
+
+@ 2.367.01
+# speaker: 沖田 (%ss132)
+JP 　俺にはやっぱり
+JP 　プロレスしかないんだ！！
+EN For me, there's nothing
+EN but pro wrestling!!
+
+@ 2.367.02
+# speaker: 沖田 (%ss132)
+JP 　俺は必ず
+JP 　プロレスの世界に戻ってやるぞ！！
+EN I swear I'll get back into
+EN the wrestling world, I will!!
+
+@ 2.367.03
+# speaker: 沖田 (%ss132)
+JP 　よし！！
+JP 　やると決めたら、
+JP 　華々しく再スタートをきってやる！！
+EN All right!! Once I decide to do it,
+EN I'll make a splashy fresh start!!
+
+@ 2.367.04
+# speaker: 沖田 (%ss132)
+JP 　今、%ss184%sl184を中心とする
+JP 　格闘系の『ＵＷＨ』が
+JP 　すごい人気になっている。
+EN Right now, led by %sl184 %ss184,
+EN the shoot-style <UWH> is
+EN hugely popular.
+
+@ 2.367.05
+# speaker: 沖田 (%ss132)
+JP 　奴らは、自分達のプロレスだけが
+JP 　真に強いレスラーを作り出すための
+JP 　方法だと言ってはばからない。
+EN They make no secret of saying
+EN their way is the only way to make
+EN truly strong wrestlers.
+
+@ 2.367.06
+# speaker: 沖田 (%ss132)
+JP 　ＵＷＨの闘い方は、
+JP 　先人達が築き上げたプロレスを
+JP 　あからさまに否定している。
+EN <UWH>'s style flat-out rejects the
+EN pro wrestling our predecessors built.
+
+@ 2.367.07
+# speaker: 沖田 (%ss132)
+JP 　そんなもの
+JP 　俺が許せるわけないだろう・・・！
+EN How could I ever stand for that...!
+
+@ 2.367.08
+# speaker: 沖田 (%ss132)
+JP 　俺はＵＷＨに挑戦する。
+EN I'm going to challenge <UWH>.
+
+@ 2.367.09
+# speaker: 沖田 (%ss132)
+JP 　たった一人、
+JP 　俺は、プロレスに全てを賭けて
+JP 　生きて行くと決めたんだ！！
+EN All on my own... I decided to live
+EN my life betting everything on
+EN pro wrestling!!
+
+@ 2.367.10
+# speaker: 沖田 (%ss132)
+JP 　己の求めるプロレスの
+JP 　正当性を証明するためにも、
+JP 　俺は突き進むしかない！！
+EN To prove the wrestling I seek is
+EN the right one, I have no choice
+EN but to charge ahead!!
+
+@ 2.367.11
+# speaker: 沖田 (%ss132)
+JP 　待っていろよ！！
+JP 　ＵＷＨ！！
+EN Just you wait!! <UWH>!!
+
+@ 2.369.00
+# speaker: 沖田 (%ss132)
+JP 　だが、この膝じゃ
+JP 　プロレスは無理だ・・・。
+EN But with this knee, pro wrestling
+EN is impossible...
+
+@ 2.369.01
+# speaker: 沖田 (%ss132)
+JP 　いや・・・
+EN No...
+
+@ 2.369.02
+# speaker: 沖田 (%ss132)
+JP 　本当にそうなのか・・・？
+EN Is that really true...?
+
+@ 2.369.03
+# speaker: 沖田 (%ss132)
+JP 　やれるかやれないかは、
+JP 　俺の気持ち一つじゃないか・・・？
+EN Whether I can do it or not...
+EN isn't that all up to me...?
+
+@ 2.369.04
+# speaker: 沖田 (%ss132)
+JP 　自分に負けてどうする・・・！！
+EN What good is losing to myself...!!
+
+@ 2.369.05
+# speaker: 沖田 (%ss132)
+JP 　コンチクショウ・・・
+JP 　己に負けてたまるか・・・！！
+EN Damn it all...
+EN I won't lose to myself...!!
+
+@ 2.369.06
+# speaker: 沖田 (%ss132)
+JP 　俺にはやっぱり
+JP 　プロレスしかないんだ！！
+EN For me, there's nothing
+EN but pro wrestling!!
+
+@ 2.369.07
+# speaker: 沖田 (%ss132)
+JP 　必ず・・・
+EN I swear...
+
+@ 2.369.08
+# speaker: 沖田 (%ss132)
+JP 　俺は必ず
+JP 　プロレスの世界に戻ってやる！！
+EN I swear I'll get back into
+EN the wrestling world!!
+
+@ 2.371.00
+# speaker: 日雇い労働者
+JP 「あんちゃん、
+JP 　そろそろ休憩した方がいいぜ。
+JP 　あんた、昼も夜も働きづめだろ？」
+EN "Hey, pal, you oughta take a break.
+EN You've been working day and night,
+EN haven't you?"
+
+@ 2.371.01
+# speaker: 沖田 (%ss132)
+JP 「・・・。」
+EN "..."
+
+@ 2.371.02
+# speaker: 日雇い労働者
+JP 「あんた・・・
+JP 　前に、どっかで見たことある気が
+JP 　するんだよな・・・」
+EN "You know... I feel like I've seen
+EN you somewhere before..."
+
+@ 2.371.03
+# speaker: 日雇い労働者
+JP 「ひょっとして、
+JP 　プロレスかなんかしてなかったか？」
+EN "Weren't you a pro wrestler
+EN or somethin'?"
+
+@ 2.371.04
+# speaker: 沖田 (%ss132)
+JP 「人違いです・・・。」
+EN "You've got the wrong guy..."
+
+@ 2.372.00
+# speaker: 沖田 (%ss132)
+JP 　あれから４年・・・
+EN Four years since then...
+
+@ 2.372.01
+# speaker: 沖田 (%ss132)
+JP 　俺がプロレスをやめてから
+JP 　すでに４年が過ぎようとしていた・・・。
+EN Almost four years had passed
+EN since I quit wrestling...
+
+@ 2.372.02
+# speaker: 沖田 (%ss132)
+JP 　俺はいったい
+JP 　何をやってるんだ・・・？
+EN What the hell am I doing...?
+
+@ 2.372.03
+# speaker: 沖田 (%ss132)
+JP 　俺は・・・
+JP 　いったい何をすればいいんだ？
+EN What... what am I supposed to do?
+
+@ 2.372.04
+# speaker: 沖田 (%ss132)
+JP 　プロレス以外に
+JP 　俺に出来ることってあるのか？
+EN Is there anything I can do
+EN besides pro wrestling?
+
+@ C2.374
+# choice or chapter title
+JP １）プロレスはあきらめるしかない・・・
+EN 1) I'll have to give up wrestling...
+
+@ C2.376
+# choice or chapter title
+JP ２）いきなりＵＷＨに殴りこむ
+EN 2) Storm <UWH> right away
+
+@ C2.378
+# choice or chapter title
+JP ３）俺はプロレスをあきらめない！！
+EN 3) I'll never give up wrestling!!
+
+@ 2.379.00
+# speaker: 五条 (%ss135)
+JP 「%ss132さん！！
+JP 　いくらなんでも、無茶ですよ！！
+JP 　粉砕骨折なんですよ！！」
+EN "%ss132!! This is crazy, even for
+EN you!! It's a shattered bone!!"
+
+@ 2.379.01
+# speaker: 五条 (%ss135)
+JP 「医者から
+JP 　もうプロレスは出来ないって
+JP 　言われたんでしょう！？」
+EN "The doctor said you can't wrestle
+EN anymore, didn't he?!"
+
+@ 2.379.02
+# speaker: 五条 (%ss135)
+JP 「ここで無理したら
+JP 　本当に歩けなくなりますよ！！」
+EN "If you push it now, you really won't
+EN be able to walk!!"
+
+@ 2.379.03
+# speaker: 沖田 (%ss132)
+JP 「関係ない。」
+EN "Doesn't matter."
+
+@ 2.379.04
+# speaker: 沖田 (%ss132)
+JP 「出来るか出来ないかは
+JP 　俺が決めることだ。」
+EN "Whether I can or can't is
+EN for me to decide."
+
+@ 2.379.05
+# speaker: 五条 (%ss135)
+JP 「%ss132さん・・・！！」
+EN "%ss132...!"
+
+@ 2.379.06
+# speaker: 五条 (%ss135)
+JP 「左足、キチンと曲げること
+JP 　出来ないじゃないですか・・・」
+EN "You can't even bend your left leg
+EN properly..."
+
+@ 2.379.07
+# speaker: 五条 (%ss135)
+JP 「そんなんで、
+JP 　プロレスラーなんて
+JP 　続けられるわけないですよ・・・」
+EN "Like that, there's no way you can
+EN go on as a pro wrestler..."
+
+@ 2.379.08
+# speaker: 沖田 (%ss132)
+JP 「%ss135！！
+JP 　俺のプロレスは
+JP 　まだ終わってないぞ！！
+EN "%ss135!! My wrestling isn't
+EN over yet!!"
+
+@ 2.379.09
+# speaker: 沖田 (%ss132)
+JP 「こんな終わり方
+JP 　納得できるか！！」
+EN "Like I'd accept an ending like this!!"
+
+@ 2.379.10
+# speaker: 沖田 (%ss132)
+JP 「俺がレスラーとして
+JP 　続けられるかどうかは、
+JP 　試合に勝って必ず証明してやる！！」
+EN "Whether I can go on as a wrestler...
+EN I'll win a match and prove it!!"
+
+@ 2.380.00
+# speaker: 司馬 (%ss58)
+JP 「%ss132。」
+EN "%ss132."
+
+@ 2.380.01
+# speaker: 五条 (%ss135)
+JP 「社長・・・！！」
+EN "Boss...!!"
+
+@ 2.380.02
+# speaker: 沖田 (%ss132)
+JP 「%ss58社長！！
+JP 　お願いします！！
+JP 　俺にチャンスを下さい！！」
+EN "Boss!! Mr. %ss58, please!!
+EN Give me a chance!!"
+
+@ 2.380.03
+# speaker: 沖田 (%ss132)
+JP 「最後に一度だけチャンスを下さい！！
+JP 　俺、必ず勝ちますから・・・！！
+JP 　必ず勝ちますから！！」
+EN "Just one last chance!! I'll win, I
+EN swear...!! I swear I'll win!!"
+
+@ 2.380.04
+# speaker: 司馬 (%ss58)
+JP 「好きにしろ・・・。」
+EN "Do as you like..."
+
+@ 2.380.05
+# speaker: 沖田 (%ss132)
+JP 「あ、ありがとうございます・・・！！
+JP 　ありがとうございます！！
+JP 　%ss58社長！！」
+EN "Th-thank you...!! Thank you so
+EN much, Boss!! Mr. %ss58!!"
+
+@ 2.381.00
+# speaker: 沖田 (%ss132)
+JP 　プロレスラーとして
+JP 　再起を賭けた一戦・・・
+EN A match to stake my comeback
+EN as a pro wrestler on...
+
+@ 2.381.01
+# speaker: 沖田 (%ss132)
+JP 　手術した左膝は、試合中
+JP 　何度も痛みで動かなくなり、
+JP 　そのうち本当に動かなくなった・・・
+EN Again and again in the match, the pain
+EN locked up my operated left knee,
+EN until it really wouldn't move...
+
+@ 2.381.02
+# speaker: 沖田 (%ss132)
+JP 　生まれて初めてダメだと思った・・・
+EN For the first time in my life,
+EN I thought I was finished...
+
+@ 2.381.03
+# speaker: 沖田 (%ss132)
+JP 　もう、プロレスを
+JP 　やめるしかなかったよ・・・。
+EN I had no choice but to quit
+EN pro wrestling...
+
+@ 2.383.00
+# speaker: 沖田 (%ss132)
+JP 　左膝粉砕骨折・・・
+EN A shattered left knee...
+
+@ 2.383.01
+# speaker: 沖田 (%ss132)
+JP 　それが俺の怪我だった。
+EN That was my injury.
+
+@ 2.383.02
+# speaker: 沖田 (%ss132)
+JP 　ふざけんな・・・
+EN Screw this...
+
+@ 2.383.03
+# speaker: 沖田 (%ss132)
+JP 　ふざけんじゃねえ・・・！！
+EN Screw this...!!
+
+@ 2.383.04
+# speaker: 沖田 (%ss132)
+JP 　こんなところで
+JP 　終わってたまるか・・・！！
+EN Like hell I'm ending it here...!!
+
+@ 2.383.05
+# speaker: 沖田 (%ss132)
+JP 　俺はこんなところじゃ
+JP 　終わらねえぞ！！
+EN I'm not finished in a place
+EN like this!!
+
+@ 2.385.00
+# speaker: 沖田 (%ss132)
+JP 　左膝粉砕骨折・・・
+EN A shattered left knee...
+
+@ 2.385.01
+# speaker: 沖田 (%ss132)
+JP 　それが俺の怪我だった・・・
+EN That was my injury...
+
+@ 2.385.02
+# speaker: 沖田 (%ss132)
+JP 　生まれて初めてダメだと思った・・・
+EN For the first time in my life,
+EN I thought I was finished...
+
+@ 2.385.03
+# speaker: 沖田 (%ss132)
+JP 　もう、プロレスを
+JP 　やめるしかなかったよ・・・。
+EN I had no choice but to quit
+EN pro wrestling...
+
+@ 2.387.00
+# speaker: アナウンサー
+JP 「ああーーっと！！
+JP 　%ss132、どうしたんでしょう！？
+JP 　うずくまったまま動きません！！」
+EN "Ohhh!! What's happened to %ss132?!
+EN He's crouched down and not moving!!"
+
+@ 2.387.01
+# speaker: アナウンサー
+JP 「今、セコンドから・・・
+JP 　タンカですか！？」
+EN "Now the seconds are bringing...
+EN is that a stretcher?!"
+
+@ 2.388.00
+# speaker: アナウンサー
+JP 「膝・・・膝ですかね！？」
+EN "His knee... is it his knee?!"
+
+@ 2.388.01
+# speaker: 解説者
+JP 「%ss132は、
+JP 　タンカを拒否しているようですね。」
+EN "%ss132 seems to be refusing
+EN the stretcher."
+
+@ 2.388.02
+# speaker: アナウンサー
+JP 「%ss132、
+JP 　今セコンドに支えられて
+JP 　控え室に戻って行きます！！」
+EN "%ss132 is heading back to the locker
+EN room, held up by his seconds!!"
+
+@ 2.388.03
+# speaker: アナウンサー
+JP 「大丈夫でしょうか！？」
+EN "Is he going to be all right?!"
+
+@ 2.389.00
+# speaker: 沖田 (%ss132)
+JP 　悪い予感は的中した・・・
+EN My bad feeling came true...
+
+@ 2.389.01
+# speaker: 沖田 (%ss132)
+JP 　試合中、ネベロを追って
+JP 　リング下に飛び降りた時、
+EN During the match, I jumped to the
+EN floor after <Nevelo>...
+
+@ 2.389.02
+# speaker: 沖田 (%ss132)
+JP 　俺の左膝は
+JP 　グシャリと鳴って動かなくなった・・・
+EN and my left knee crunched
+EN and wouldn't move...
+
+@ 2.389.03
+# speaker: 沖田 (%ss132)
+JP 　この怪我は、
+JP 　レスラーとしては
+JP 　致命的だったんだ・・・。
+EN For a wrestler, that injury
+EN was fatal...
+
+@ C2.391
+# choice or chapter title
+JP １）もはや引退するしかない
+EN 1) Nothing left but to retire
+
+@ C2.393
+# choice or chapter title
+JP ２）病院に行って、様子を見る
+EN 2) See a doctor and wait
+
+@ C2.395
+# choice or chapter title
+JP ３）俺は、まだやるぞ！！
+EN 3) I'm not done yet!!
+
+@ 2.396.00
+# speaker: トミー (%ss59)
+JP 「どうした、%ss132？
+JP 　ずいぶん険しい顔してるじゃないか。」
+EN "What's wrong, %ss132? That's
+EN quite a grim face you've got."
+
+@ 2.396.01
+# speaker: 沖田 (%ss132)
+JP 「%ss59さん・・・」
+EN "%ss59..."
+
+@ 2.396.02
+# speaker: 沖田 (%ss132)
+JP 「いや、ＶＪＰの
+JP 　%sf37が
+JP 　どれくらい強いのかと思いましてね。」
+EN "Nah, I was just wondering how strong
+EN <VJP>'s %sf37 really is."
+
+@ 2.396.03
+# speaker: 沖田 (%ss132)
+JP 「向こうは、相当な人気じゃないですか。」
+EN "He's hugely popular over there."
+
+@ 2.396.04
+# speaker: トミー (%ss59)
+JP 「%ss132、そんなこと
+JP 　気にしてもしょうがないだろ。」
+EN "%ss132, there's no point
+EN worrying about that."
+
+@ 2.396.05
+# speaker: トミー (%ss59)
+JP 「誰が何と言っても、おまえは
+JP 　ＮＡＷジュニアのチャンピオンなんだ。」
+EN "Whatever anyone says, you're the
+EN <NAW> Junior Champion."
+
+@ 2.396.06
+# speaker: トミー (%ss59)
+JP 「ベルトを守るのに
+JP 　どれほどの強さが必要かは、
+JP 　おまえが一番よく知ってるだろう。」
+EN "You know better than anyone how
+EN strong you have to be to keep a belt."
+
+@ 2.396.07
+# speaker: 沖田 (%ss132)
+JP 「そうですね・・・。」
+EN "I guess so..."
+
+@ 2.397.00
+# speaker: 沖田 (%ss132)
+JP 　嫌な感じだ・・・。
+EN I've got a bad feeling...
+
+@ 2.397.01
+# speaker: 沖田 (%ss132)
+JP 　今まで何度となく
+JP 　リングに登って来たけれど、
+EN I've stepped into the ring
+EN more times than I can count...
+
+@ 2.397.02
+# speaker: 沖田 (%ss132)
+JP 　今日ほど試合に向かうのが
+JP 　重苦しく感じる日はなかった・・・。
+EN But never has heading to a match
+EN felt this heavy...
+
+@ 2.397.03
+# speaker: 沖田 (%ss132)
+JP 　%sf37が
+JP 　気になるのか・・・？
+EN Am I worried about
+EN %sf37...?
+
+@ 2.397.04
+# speaker: 沖田 (%ss132)
+JP 　確かに、
+JP 　あれだけ苦労して
+JP 　ベルトを持ち帰ったというのに、
+EN Sure, after all that work to
+EN bring the belt home...
+
+@ 2.397.05
+# speaker: 沖田 (%ss132)
+JP 　日本が
+JP 　%ss37人気一色だったのは
+JP 　気に入らない。
+EN it bugs me that all Japan cared
+EN about was %ss37.
+
+@ 2.397.06
+# speaker: 沖田 (%ss132)
+JP 　でも、今はそんなこと
+JP 　どうでもいいんだ。
+EN But none of that matters now.
+
+@ 2.397.07
+# speaker: 沖田 (%ss132)
+JP 　そんなことを
+JP 　いつまでもグズグズ考えてる
+JP 　俺じゃない。
+EN I'm not the kind of guy who
+EN keeps stewing over that stuff.
+
+@ 2.397.08
+# speaker: 沖田 (%ss132)
+JP 　%ss59さんの言った通り、
+EN Like %ss59 said...
+
+@ 2.397.09
+# speaker: 沖田 (%ss132)
+JP 　俺はただ
+JP 　ＮＡＷのジュニアチャンピオンとして
+JP 　恥ずかしくない闘いをすれば、
+EN As long as I fight in a way worthy
+EN of the <NAW> Junior Champion...
+
+@ 2.397.10
+# speaker: 沖田 (%ss132)
+JP 　それでいいんだ。
+EN That's all I need.
+
+@ 2.397.11
+# speaker: 沖田 (%ss132)
+JP 　それとは違う胸騒ぎ・・・
+EN This uneasy feeling is
+EN something else...
+
+@ 2.397.12
+# speaker: 沖田 (%ss132)
+JP 　なんなんだ、これ・・・？
+EN What is this...?
+
+@ 2.399.00
+# speaker: 沖田 (%ss132)
+JP 　俺はやった・・・！
+JP 　ついにチャンピオンになったんだ！！
+EN I did it...! I'm finally
+EN the champion!!
+
+@ 2.399.01
+# speaker: 沖田 (%ss132)
+JP 　これで、胸を張って日本に帰れる！！
+EN Now I can go home to Japan
+EN with my head held high!!
+
+@ 2.399.02
+# speaker: 沖田 (%ss132)
+JP 　日本についたら・・・
+EN Once I land in Japan...
+
+@ 2.399.03
+# speaker: 沖田 (%ss132)
+JP 　俺はスターだ！！
+EN I'll be a star!!
+
+@ 2.400.00
+# speaker: 沖田 (%ss132)
+JP 　喜び勇んで
+JP 　帰国の途についた俺だったが、
+EN I headed home bursting with joy...
+
+@ 2.400.01
+# speaker: 沖田 (%ss132)
+JP 　現実は
+JP 　そう甘いもんじゃなかった・・・。
+EN But reality wasn't so sweet...
+
+@ 2.401.00
+# speaker: 記者
+JP 「%ss132選手。」
+EN "%ss132."
+
+@ 2.401.01
+# speaker: 記者
+JP 「巷では、%ss132選手と
+JP 　ＶＪＰの
+JP 　%sf37で、」
+EN "Everyone's talking about %ss132
+EN vs. <VJP>'s %sf37..."
+
+@ 2.401.02
+# speaker: 記者
+JP 「ジュニアの
+JP 　統一チャンピオンを決めたらどうかと
+JP 　盛り上がっていますが、」
+EN "...a match to crown one unified
+EN junior champion."
+
+@ 2.401.03
+# speaker: 記者
+JP 「その点については
+JP 　どうお考えですか？」
+EN "What are your thoughts on that?"
+
+@ 2.401.04
+# speaker: 沖田 (%ss132)
+JP 「また
+JP 　%ss37ですか・・・」
+EN "%ss37 again..."
+
+@ 2.401.05
+# speaker: 沖田 (%ss132)
+JP 「個人的には
+JP 『やってやろうじゃないの』って
+JP 　気でいますよ。」
+EN "Personally, I'm all for it.
+EN 'Let's do it,' you know?"
+
+@ 2.401.06
+# speaker: 沖田 (%ss132)
+JP 「でも、現実的には
+JP 　不可能なんじゃないですか？
+JP 　うちとＶＪＰには色々あるし。」
+EN "But realistically, isn't it impossible?
+EN We've got history with <VJP>."
+
+@ 2.401.07
+# speaker: 記者
+JP 「実現すれば、
+JP 　ファンは喜ぶと思います。」
+EN "If it happens, I think the fans
+EN will be thrilled."
+
+@ 2.401.08
+# speaker: 記者
+JP 「今日の防衛戦、
+JP 　頑張って下さい。」
+EN "Good luck in your title defense today."
+
+@ 2.402.00
+# speaker: 沖田 (%ss132)
+JP 「・・・。」
+EN "..."
+
+@ 2.402.01
+# speaker: 沖田 (%ss132)
+JP 「俺の防衛戦より、
+JP 　%ss37の話題の方が
+JP 　重要って顔だったな・・・。」
+EN "Looked like %ss37 mattered more to
+EN him than my title defense..."
+
+@ C2.404
+# choice or chapter title
+JP １）%ss37を見に行く
+EN 1) Go see %ss37
+
+@ C2.406
+# choice or chapter title
+JP ２）見に行く必要はない
+EN 2) No need to go see him
+
+@ 2.407.00
+# speaker: 小淵沢 (%ss55)
+JP 「%ss132・・・
+JP 　そう気を落とすな。
+JP 　おまえはよくやったよ。」
+EN "%ss132... don't be so down.
+EN You did well."
+
+@ 2.407.01
+# speaker: 沖田 (%ss132)
+JP 「よくやっても、
+JP 　負けたらダメなんだ・・・！」
+EN "Doing well means nothing
+EN if you lose...!"
+
+@ 2.408.00
+# speaker: 沖田 (%ss132)
+JP 「俺はどんなことをしても
+JP 　チャンピオンになる！！」
+EN "I'll be champion no matter
+EN what it takes!!"
+
+@ 2.408.01
+# speaker: 沖田 (%ss132)
+JP 「たとえ、百回負けても
+JP 　百一回目には必ず勝つ！！」
+EN "Even if I lose a hundred times,
+EN I'll win the hundred-and-first!!"
+
+@ 2.408.02
+# speaker: 沖田 (%ss132)
+JP 「これからだ！！
+JP 　一度や二度の負けで
+JP 　弱音を吐いてたまるか！！」
+EN "This is just the start!! Like I'd
+EN whine over a loss or two!!"
+
+@ 2.408.03
+# speaker: 沖田 (%ss132)
+JP 　俺は、もう
+JP 　死に物狂いになったね。
+EN From then on, I fought like
+EN a man possessed.
+
+@ 2.409.00
+# speaker: 沖田 (%ss132)
+JP 　ようやくハブ・ネベロとの
+JP 　再戦までこぎつけ、
+EN It was two more months before I
+EN finally got my rematch with
+EN <Hab Nevelo>...
+
+@ 2.409.01
+# speaker: 沖田 (%ss132)
+JP 　ジュニアのチャンピオンベルトを
+JP 　奪取したのは、
+JP 　それから２ヶ月後のことだったよ。
+EN ...and took the junior
+EN title belt.
+
+@ 2.415.00
+# speaker: 沖田 (%ss132)
+JP 　夢と希望を胸に秘め、
+JP 　俺がＯＬＩＶＥ　ＪＡＰＡＮに
+JP 　入門したのは
+EN Full of hopes and dreams,
+EN I joined <OLIVE JAPAN>...
+
+@ 2.415.01
+# speaker: 沖田 (%ss132)
+JP 　１５才の春だった・・・
+EN in the spring, when I was 15...
+
+@ 2.415.02
+# speaker: 沖田 (%ss132)
+JP 　入門当時は、
+JP 　右も左も分からなくて
+JP 　本当に大変だったが、
+EN When I first joined, I didn't know
+EN left from right. It was really tough...
+
+@ 2.415.03
+# speaker: 沖田 (%ss132)
+JP 　とにかく俺は頑張ったよ。
+EN But I gave it everything I had.
+
+@ 2.415.04
+# speaker: 沖田 (%ss132)
+JP 　%ss58さんの
+JP 　付き人をしながらのデビュー戦・・・
+JP 　緊張したな。
+EN My debut, while I was still
+EN %ss58's attendant... I was so nervous.
+
+@ 2.415.05
+# speaker: 沖田 (%ss132)
+JP 　初めの頃は、
+JP 　なかなか勝てなくて
+JP 　落ち込んだ時もあった。
+EN In the beginning, I could hardly win,
+EN and sometimes I got down.
+
+@ 2.415.06
+# speaker: 沖田 (%ss132)
+JP 　俺はプロレスラーとして
+JP 　体には恵まれていない・・・
+EN I'm not built like a pro wrestler...
+
+@ 2.415.07
+# speaker: 沖田 (%ss132)
+JP 　だけど、やる気なら誰にも負けない。
+JP 　毎日が強くなるための修行だった。
+EN But nobody beats me for drive.
+EN Every day was training to get stronger.
+
+@ 2.415.08
+# speaker: 沖田 (%ss132)
+JP 　そんな俺が、
+JP 　やっとの思いで
+JP 　大きなチャンスをつかんだのは、
+EN And a guy like that finally grabbed
+EN his big chance...
+
+@ 2.415.09
+# speaker: 沖田 (%ss132)
+JP 　海外遠征に出て３年目、
+JP 　ＯＪＰに入団して
+JP 　９年目のことだった・・・
+EN In my third year overseas,
+EN my ninth year with <OJP>...
+
+@ 2.416.00
+# speaker: 沖田 (%ss132)
+JP 「ＮＡＷの
+JP 　ジュニアヘビー級
+JP 　タイトルマッチ！？」
+EN "An <NAW> Junior Heavyweight
+EN title match?!"
+
+@ 2.416.01
+# speaker: ケリー (%ss156)
+JP 「イエス、%ss132。
+JP 　私が、そのタイトルマッチに
+JP 　おまえを推薦した。」
+EN "Yes, %ss132. I recommended you
+EN for that title match."
+
+@ 2.416.02
+# speaker: ケリー (%ss156)
+JP 「おまえは
+JP 　ＮＡＷジュニアの
+JP 　チャンピオンに挑戦するんだ。」
+EN "You're going to challenge the
+EN <NAW> Junior Champion."
+
+@ 2.416.03
+# speaker: 沖田 (%ss132)
+JP 「俺が・・・
+JP 　タイトルマッチ・・・！！」
+EN "Me... a title match...!!"
+
+@ 2.416.04
+# speaker: 沖田 (%ss132)
+JP 「サンキュー、%ss156！！
+JP 　俺、必ず
+JP 　ＮＡＷのチャンピオンになるよ！！」
+EN "Thank you, %ss156!! I'll become
+EN the <NAW> champion for sure!!"
+
+@ 2.416.05
+# speaker: 沖田 (%ss132)
+JP 「サンキュー！！
+JP 　サンキュー！！」
+EN "Thank you!! Thank you!!"
+
+@ 2.416.06
+# speaker: ケリー (%ss156)
+JP 「ヘイ、%ss132！
+JP 　まだチャンピオンになれると
+JP 　決まったわけじゃないぞ。」
+EN "Hey, %ss132! It's not decided
+EN that you'll be champion yet."
+
+@ 2.416.07
+# speaker: ケリー (%ss156)
+JP 「いいファイトをして
+JP 　相手を倒さなきゃな！」
+EN "You have to fight well and
+EN beat him!"
+
+@ 2.417.00
+# speaker: ケリー (%ss156)
+JP 「チャンピオンの
+JP 　ネベロは
+JP 　強くて上手いレスラーだぞ。」
+EN "The champion, <Nevelo>, is a strong
+EN and skilled wrestler."
+
+@ 2.417.01
+# speaker: 沖田 (%ss132)
+JP 「わかっているさ！！
+JP 　俺は、ネベロには負けないよ！！」
+EN "I know!! I won't lose to <Nevelo>!!"
+
+@ 2.418.00
+# speaker: 沖田 (%ss132)
+JP 「勝つよ！！
+JP 　勝って必ず
+JP 　ジュニアのチャンピオンになる！！」
+EN "I'll win!! I'll win and become
+EN the junior champion for sure!!"
+
+@ 2.418.01
+# speaker: 沖田 (%ss132)
+JP 「約束するよ！！
+JP 　サンキュー、%ss156！！」
+EN "I promise!! Thank you, %ss156!!"
+
+@ 2.419.00
+# speaker: 小淵沢 (%ss55)
+JP 「%ss132、おまえ、
+JP 　海外に出てから何年になる？」
+EN "%ss132, how many years since
+EN you went overseas?"
+
+@ 2.419.01
+# speaker: 沖田 (%ss132)
+JP 「３年かな・・・。」
+EN "Three, I guess..."
+
+@ 2.419.02
+# speaker: 沖田 (%ss132)
+JP 「%ss58さんに海外遠征に
+JP 　行けって言われてから３年経った。
+JP 　長かったな・・・」
+EN "Three years since %ss58 told me
+EN to go on an overseas tour.
+EN It's been a long time..."
+
+@ 2.419.03
+# speaker: 沖田 (%ss132)
+JP 「初めは西ドイツに行って、
+JP 　それからプエルトリコだろ・・・」
+EN "First West Germany,
+EN then Puerto Rico..."
+
+@ 2.419.04
+# speaker: 沖田 (%ss132)
+JP 「サントドミンゴじゃ、」
+EN "And in Santo Domingo..."
+
+@ 2.419.05
+# speaker: 沖田 (%ss132)
+JP 「地元のレスラー達に
+JP 　トイレに押し込まれて
+JP 　殺されかけたからな。」
+EN "The local wrestlers shoved me into
+EN a toilet and nearly killed me."
+
+@ 2.419.06
+# speaker: 小淵沢 (%ss55)
+JP 「あれは
+JP 　おまえが悪いんだろう。」
+EN "That was your own fault."
+
+@ 2.419.07
+# speaker: 小淵沢 (%ss55)
+JP 「プロモーターが
+JP 　契約違反をしたとはいえ、」
+EN "Sure, the promoter broke
+EN the contract, but..."
+
+@ 2.419.08
+# speaker: 小淵沢 (%ss55)
+JP 「あそこまで食って掛かったら、
+JP 　プロモーターについている
+JP 　地元レスラーだって黙っちゃいないさ。」
+EN "If you go after him that hard,
+EN the local guys on his side
+EN won't just sit there."
+
+@ 2.419.09
+# speaker: 小淵沢 (%ss55)
+JP 「そうでなくても、
+JP 　俺達はヒールで憎まれてたからな。」
+EN "Besides, we were hated heels."
+
+@ 2.419.10
+# speaker: 沖田 (%ss132)
+JP 「バカ言うな！！」
+EN "Don't be stupid!!"
+
+@ 2.419.11
+# speaker: 沖田 (%ss132)
+JP 「連日試合を組まれて、
+JP 　ファイトマネーは３分の１だぞ！！」
+EN "They booked us every night and
+EN paid a third of our fight money!!"
+
+@ 2.419.12
+# speaker: 沖田 (%ss132)
+JP 「俺はな、
+JP 　そんな理不尽は許せねえ！！」
+EN "I can't stand that kind
+EN of injustice!!"
+
+@ 2.419.13
+# speaker: 小淵沢 (%ss55)
+JP 「わ、分かった分かった。
+JP 　そう熱くなるな。」
+EN "O-okay, okay.
+EN Don't get so worked up."
+
+@ 2.419.14
+# speaker: 小淵沢 (%ss55)
+JP 「とにかく、今はこうして
+JP 　アメリカのマットでプロレスが出来て、」
+EN "Anyway, now we get to wrestle
+EN in America..."
+
+@ 2.419.15
+# speaker: 小淵沢 (%ss55)
+JP 「タイトルマッチにも
+JP 　挑戦出来るようになったんだ。」
+EN "And you've even got
+EN a title match."
+
+@ 2.419.16
+# speaker: 小淵沢 (%ss55)
+JP 「サントドミンゴから逃げて来た俺達を、
+JP 　助けて可愛がってくれた
+JP 　%ss156さんのためにも、」
+EN "%ss156 took us in and looked after
+EN us when we fled Santo Domingo..."
+
+@ 2.419.17
+# speaker: 小淵沢 (%ss55)
+JP 「絶対タイトルをとってくれよ。」
+EN "So for his sake, win that title."
+
+@ 2.419.18
+# speaker: 沖田 (%ss132)
+JP 「当たり前だ！！」
+EN "You bet!!"
+
+@ 2.419.19
+# speaker: 沖田 (%ss132)
+JP 「俺は海外遠征に出る時
+JP 　心に誓ったんだ。」
+EN "When I left for my overseas tour,
+EN I made a vow."
+
+@ 2.419.20
+# speaker: 沖田 (%ss132)
+JP 「必ずチャンピオンになって
+JP 　凱旋してやるってなあ。」
+EN "That I'd come home a champion,
+EN no matter what."
+
+@ 2.419.21
+# speaker: 沖田 (%ss132)
+JP 「見てろ・・・！
+JP 　俺は必ずチャンピオンになる！！」
+EN "Watch me...! I'll be
+EN champion for sure!!"
+
+@ 2.419.22
+# speaker: 沖田 (%ss132)
+JP 「絶対に
+JP 　日本にチャンピオンベルトを
+JP 　持ち帰ってやるんだ！！」
+EN "I'll bring that championship belt
+EN home to Japan, no matter what!!"
+
+@ 2.420.00
+# speaker: 沖田 (%ss132)
+JP 　%ss58さんの
+JP 　付き人から始まって９年・・・
+EN Nine years since I started out
+EN as %ss58's attendant...
+
+@ 2.420.01
+# speaker: 沖田 (%ss132)
+JP 　入門から９年目にして、
+JP 　とうとうチャンピオンベルトに
+JP 　手が届くところまで登りつめた。
+EN Nine years after joining, I'd finally
+EN climbed within reach of a
+EN championship belt.
+
+@ 2.420.02
+# speaker: 沖田 (%ss132)
+JP 　なるようになるでやって来たけれど、
+JP 　我ながら
+JP 　よくここまで来れたもんだな・・・
+EN I just went along with whatever came,
+EN but I've come a long way, if I
+EN do say so myself...
+
+@ 2.420.03
+# speaker: 沖田 (%ss132)
+JP 　とにかく絶対に勝って、
+JP 　この腰にチャンピオンベルトを
+JP 　巻いてみせるぞ！！
+EN Anyway, I'll win for sure and wrap
+EN that championship belt around
+EN my waist!!
+
+@ 2.422.00
+# speaker: トミー (%ss59)
+JP 「社長、今度来る新人、
+JP 　結構面白そうな奴らしいですよ。」
+EN "Boss, I hear the new kid coming
+EN in is a pretty interesting guy."
+
+@ 2.422.01
+# speaker: 司馬 (%ss58)
+JP 「ほう、どんなんだ？」
+EN "Oh? How so?"
+
+@ 2.422.02
+# speaker: トミー (%ss59)
+JP 「ええ、なんでも中学の時
+JP 　友達と賭けをして、」
+EN "Well, back in junior high,
+EN he made a bet with a friend..."
+
+@ 2.422.03
+# speaker: トミー (%ss59)
+JP 「校舎の３階から
+JP 　飛び降りたことがあるとか・・・
+JP 　言ってましたね。」
+EN "And jumped off the third floor
+EN of the school... or so he said."
+
+@ 2.422.04
+# speaker: 司馬 (%ss58)
+JP 「・・・。」
+EN "..."
+
+@ 2.422.05
+# speaker: 司馬 (%ss58)
+JP 「%ss59、そいつ本当に大丈夫か？」
+EN "%ss59, is that guy
+EN really all right?"
+
+@ 2.423.00
+# speaker: 沖田 (%ss132)
+JP 「すげえ・・・
+JP 　これが本物のリングか・・・！」
+EN "Wow... so this is a real ring...!"
+
+@ 2.423.01
+# speaker: 沖田 (%ss132)
+JP 「俺・・・高校を３日でやめて、
+JP 　今まで好き勝手なことして
+JP 　さんざん親に心配かけて来たけど、」
+EN "I quit high school after three days
+EN and did whatever I wanted, and
+EN worried my parents sick, but..."
+
+@ 2.423.02
+# speaker: 沖田 (%ss132)
+JP 「ここまで来たら
+JP 　やるしかない。」
+EN "Now that I'm here, I've got to
+EN go through with it."
+
+@ 2.423.03
+# speaker: 沖田 (%ss132)
+JP 「人から勧められたとはいえ、
+JP 　男がいったん決めたことだ。」
+EN "Someone else suggested it, but
+EN a man sticks to what he decides."
+
+@ 2.423.04
+# speaker: 沖田 (%ss132)
+JP 「どんなことがあっても、
+JP 　この道でやり抜いて見せるぞ！！」
+EN "No matter what happens, I'll see
+EN this road through!!"
+
+@ 2.423.05
+# speaker: 沖田 (%ss132)
+JP 「でも・・・」
+EN "But..."
+
+@ 2.423.06
+# speaker: 沖田 (%ss132)
+JP 「俺、本当にレスラーとして
+JP 　あそこに立てるんだろうか・・・？」
+EN "Will I really get to stand in there
+EN as a wrestler...?"
+
+@ 2.424.00
+# speaker: トミー (%ss59)
+JP 「おい、%ss132！
+JP 　社長が来たぞ！
+JP 　早く、こっちに来い！」
+EN "Hey, %ss132! The boss is here!
+EN Get over here, quick!"
+
+@ 2.424.01
+# speaker: 沖田 (%ss132)
+JP 「あ、はい・・・！
+JP 　すぐ行きます！！」
+EN "Ah, yes, sir...!
+EN Coming right away!!"
+
+@ 2.425.00
+# speaker: 沖田 (%ss132)
+JP 「俺、%sf132
+JP 　と言います！！
+JP 　よろしくお願いします！！」
+EN "My name is %sf132!!
+EN Pleased to meet you, sir!!"
+
+@ 2.425.01
+# speaker: 司馬 (%ss58)
+JP 「おう、元気いいな。」
+EN "Hey, you've got spirit."
+
+@ 2.425.02
+# speaker: 沖田 (%ss132)
+JP （こ、これが本物の
+JP 　%sf58！！）
+EN (Th-this is the real
+EN %sf58!!)
+
+@ 2.425.03
+# speaker: 沖田 (%ss132)
+JP （テレビで見るより
+JP 　はるかに迫力があるな・・・）
+EN (He's way more intense than
+EN on TV...)
+
+@ 2.425.04
+# speaker: 沖田 (%ss132)
+JP （まるで
+JP 　でかい壁だ・・・！）
+EN (He's like a giant wall...!)
+
+@ 2.425.05
+# speaker: 司馬 (%ss58)
+JP 「まあ、とにかく
+JP 　がんばれや。」
+EN "Well, anyway, do your best."
+
+@ 2.425.06
+# speaker: 沖田 (%ss132)
+JP 「はい！！
+JP 　がんばります！！」
+EN "Yes, sir!! I'll do my best!!"
+
+@ 2.426.00
+# speaker: 沖田 (%ss132)
+JP 　やるぞ・・・やってやる！！
+JP 　俺もでかくなってやる ！！
+EN I'll do it... I'll show them!!
+EN I'll get big too!!
+
+@ 2.426.01
+# speaker: 沖田 (%ss132)
+JP 　必ず・・・
+JP 　必ず%ss58さんのように
+JP 　でっかいレスラーになってやるぞ！！
+EN I swear... I swear I'll become
+EN a huge wrestler like %ss58!!
+
+@ C2.429
+# choice or chapter title
+JP ３１０　%ss15戦
+EN 310 vs. %ss15
+
+@ C2.431
+# choice or chapter title
+JP ３１１　%ss2戦
+EN 311 vs. %ss2
+
+@ C2.433
+# choice or chapter title
+JP ３１２　%ss55戦
+EN 312 vs. %ss55
+
+@ C2.435
+# choice or chapter title
+JP ３１３　エンディング
+EN 313 Ending
+
+@ C2.437
+# choice or chapter title
+JP ４０３　ＶＪＰ乱入
+EN 403 <VJP> Invasion
+
+@ C2.439
+# choice or chapter title
+JP ５０４　ＵＷＨ乱入
+EN 504 <UWH> Invasion
+
+@ C2.441
+# choice or chapter title
+JP 最初のページへ
+EN To First Page
+
+@ C2.443
+# choice or chapter title
+JP ０１２第１２章　２人の邪神
+EN 012 Ch. 12: Two Dark Gods
+
+@ C2.445
+# choice or chapter title
+JP ０１３第１３章　%ss1
+EN 013 Ch. 13: %ss1
+
+@ C2.447
+# choice or chapter title
+JP ０１４第１４章　邪道終焉
+EN 014 Ch. 14: The End of the Outlaw
+
+@ C2.449
+# choice or chapter title
+JP ２０８　天龍戦の後、長州戦へ
+EN 208 After Tenryu, on to Choshu
+
+@ C2.451
+# choice or chapter title
+JP ２０９　宣戦布告
+EN 209 Declaration of War
+
+@ C2.453
+# choice or chapter title
+JP ２１０　%ss88戦
+EN 210 vs. %ss88
+
+@ C2.455
+# choice or chapter title
+JP ２１１　%ss45戦
+EN 211 vs. %ss45
+
+@ C2.457
+# choice or chapter title
+JP ２１２　アフガニスタン
+EN 212 Afghanistan
+
+@ C2.459
+# choice or chapter title
+JP ２１３　猪木編エンディング
+EN 213 Inoki Route Ending
+
+@ C2.461
+# choice or chapter title
+JP ３０８　長州戦後、サスケ戦へ
+EN 308 After Choshu, on to Sasuke
+
+@ C2.463
+# choice or chapter title
+JP ３０９　%ss15に挑戦
+EN 309 Challenge %ss15
+
+@ C2.465
+# choice or chapter title
+JP 次のページへ
+EN Next Page
+
+@ C2.467
+# choice or chapter title
+JP ００１第１章　入門
+EN 001 Ch. 1: Joining Up
+
+@ C2.469
+# choice or chapter title
+JP ００２第２章　チャンピオン
+EN 002 Ch. 2: Champion
+
+@ C2.471
+# choice or chapter title
+JP ００３第３章　怪我
+EN 003 Ch. 3: Injury
+
+@ C2.473
+# choice or chapter title
+JP ００４第４章　再起
+EN 004 Ch. 4: Comeback
+
+@ C2.475
+# choice or chapter title
+JP ００５第５章　ＩＷ旗揚げ
+EN 005 Ch. 5: <IW>'s First Show
+
+@ C2.477
+# choice or chapter title
+JP ００６第６章　邪道
+EN 006 Ch. 6: The Outlaw
+
+@ C2.479
+# choice or chapter title
+JP ００７第７章　死線
+EN 007 Ch. 7: On the Brink
+
+@ C2.481
+# choice or chapter title
+JP ００８第８章　２度目の引退
+EN 008 Ch. 8: Second Retirement
+
+@ C2.483
+# choice or chapter title
+JP ００９第９章　３度目の復帰
+EN 009 Ch. 9: Third Comeback
+
+@ C2.485
+# choice or chapter title
+JP ０１０第１０章　メジャー挑戦
+EN 010 Ch. 10: Taking On the Majors
+
+@ C2.487
+# choice or chapter title
+JP ０１１第１１章　乱入
+EN 011 Ch. 11: Invasion
+
+@ C2.489
+# choice or chapter title
+JP 次のページへ
+EN Next Page
