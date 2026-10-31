@@ -5,7 +5,7 @@ offsets; `u16`/`u32` little-endian unless marked BE. Findings are marked *verifi
 *from the code*.
 
 ## Contents
-- [Image](#image) · [Disc layout](#disc-layout) · [Executable and memory](#executable-and-memory)
+- [Image](#image) · [Disc layout](#disc-layout) · [Executable and memory](#executable-and-memory) · [Match rules](#match-rules)
 - [Archives and compression](#archives-and-compression) · [Text](#text) · [Story scripts](#story-scripts) · [Images](#images)
 - [Open questions](#open-questions)
 
@@ -271,8 +271,8 @@ compiled script for a small stack machine, the same in all seven files:
   thresholds reachable (Misawa's NOAH route needs > 30; the scenes give 25 at most). *From the code;
   not confirmed in play.*
 - Each scenario has a developer chapter menu (`<name>000`, `000a`...) that normal play never
-  shows; its first entry is the scenario's first scene. Scenario 7 (Liger) plays no matches: its
-  "match" scenes show a card and a Win / Lose choice.
+  shows; its first entry is the scenario's first scene. Scenario 7 (Liger) as shipped plays no
+  matches: its "match" scenes show a card and a Win / Lose choice (rebuilt: "The Liger scenario" below).
 - Match cards are messages with `%px320%py100` (the rules: ６０分　１本勝負, 時間無制限 バトルロイヤル),
   ＶＳ, and the two sides positioned left (x < 320) and right; result pages show 試合結果.
 - `%saN` prints story-only name N (the file's last section, `translation/text/story_names.csv`).
@@ -285,7 +285,7 @@ compiled script for a small stack machine, the same in all seven files:
   0x80000000 + a story name); +0x1C 16 bytes of match settings: rule flags (+0x1E; 0xA2 normal, 0x26 with
   +0x20 = 3 scenario 6's U-Inter rules), time limit in minutes (+0x21), venue (+0x23: 0 Budokan, 1 Spike Dome, 2 Korakuen Hall, 3 town gym, 4 USA, 6-8
   match rule venues, 10 dojo), ring (+0x24; menu id, 28 UWH with build group rings), referee (+0x26), COM level (+0x25;
-  every story opens at 2 and ends at 7-8; read around 0x11FFF0-0x120150) and critical % (+0x29; 0
+  most stories open at 2 (Sakuraba at 4-5) and end at 7-9; read around 0x11FFF0-0x120150) and critical % (+0x29; 0
   off .. 3, the check at 0x12D288). Locked roster wrestlers load fine by id.
 - Wrestler record (0x37E bytes): a roster record up to +0x1D4 (the roster then holds four 26-byte
   outfits: face u16, parts); +0x1D6 the colour block (0x164 bytes: 12 + 43 x 8, RGB555 ramps), which
@@ -323,6 +323,27 @@ compiled script for a small stack machine, the same in all seven files:
   from +0x72 are Z's from +0x74 for the first 45, then Z adds a slot (+0xCE) and more after +0xE2.
   CPU logic does not carry over. Moves belong to a slot type: use an id some wrestler has in that
   type (the same name can have several ids).
+
+## Match rules
+*Verified headless 2026-10-30 (test53; many trials with RAM pokes; scripts in the private notes) unless marked.* Frames are 1/60 s
+at Game Speed 100%; gauges read 0-65535. The match clock runs at double speed: one clock second is 30 frames.
+- **Wrestler records** (`STRHUMAN.BIN`, 0x23C bytes): D's layout to +0x19B, then CPU Logic shifted by Foe Dazed's new option; outfits
+  4 x 26 bytes from +0x1D4; voice u16 (bits 9-12 tone, 0-8 type); 47 themes. Decoder: `tools/fpzrecord.py`. Moves: `tools/fpzmoves.py`
+  (GS blocks, +0x1D..+0x22 are the attacker's own loss, *from the code*). Modes and engine tables: `tools/fpztables.py`.
+- **Pins:** the pinned man gets a timer from his missing stamina (8 frames at full, 207 at empty), falling 1 a frame. At 0, held × kicks
+  out free. In the last 3 frames before the 3, × with spirit over 25% costs 6144 and kicks out; at or under 25% the pin holds.
+- **Pin counts** by referee setting: 69 down to 61 frames a count (table 0x3AAB38). **Foul and Ring-Out counts:** tables 0x3AAB40 /
+  0x3AAB48 + 27 frames (117, 102, 87, 72, 57). Ring-Out to 20, Foul to 5, standing on a post to 5 (DQ). The apron doesn't count.
+- **Holds:** a timer falling 1 a frame; fresh D-pad presses take 7 off; buttons do nothing. Give-up at spirit 0, not stamina 0.
+- **COM Level** on screen = stored value + 1 (story match data holds the stored value). **Recovery** (+0x47, +0x48) has no effect:
+  frame-identical over 4000 frames.
+- **Stop at ropes** (0x2E0128) applies to a whipped wrestler only. Fighter, Grappler and Tiger refuse a whip instead of reversing it.
+- **SWA flag 0x4000:** above half stamina, no down time and a pin can be kicked out at once. **League:** ring-out or DQ win 4 points,
+  double ring-out 0. **Battle Royal:** Endless keeps the beaten in the ring; Over the Rope counts any spot off the ring as out;
+  Staggered adds a wrestler every 2 clock minutes. **Round Robin (Tug):** 1 point a win, a tied total goes to a picked playoff
+  (*verified in game*, owner 2026-10-30). **Victory Road:** a loss offers Continue; Blue Corner is 1P or CP, and CP wins count
+  (*verified in game*, owner 2026-10-30).
+- **Weapons:** three motions, about 1:2:4 damage. **Drag:** R1 alone.
 
 ## Images
 

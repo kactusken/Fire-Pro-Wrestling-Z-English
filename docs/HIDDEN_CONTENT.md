@@ -181,6 +181,7 @@ Nothing in the game mentions these. In Edit Mode > Wrestler Edit > Wrestler Make
 - **A built-in wrestler as a base:** on the Face row, hold SQUARE and press LEFT / RIGHT to load
   that face's whole wrestler: stance, size, parts, colours, outfit (0x14B608). A plain press changes
   only the face. Hold R1 to step by 10 (0x14AB38).
+- **Auto gradation:** in the swatch bar, SELECT fills the ramp with a straight blend between its first and last shades (0x14A248, 0x14B7C8; *verified headless 2026-10-30*).
 
 ## The developers' mode select
 *verified headless (2026-10-30, the numbers noted below, test50 with `--unlocks all` groups + `debug-chapters`, `debug-menu`)* / *from the code*

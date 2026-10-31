@@ -47,7 +47,7 @@ scenario,label,title,summary
 1,misawa0081,A Heavy Defense,Misawa keeps his titles but admits Kobashi was far stronger than he thought.
 1,misawa0083,Body at Its Limit,"After match after brutal match, Misawa's body finally gives out."
 1,misawa009,Baba's Offer,"While Misawa is sidelined, Baba asks him to take over the matchmaking."
-1,misawa0094,Taking the Book,Misawa takes on the matchmaking at once to shake AJPW out of its rut (no score).
+1,misawa0094,Taking the Book,Misawa takes on the matchmaking at once to shake AJPW out of its rut (+1 score).
 1,misawa0095,Time to Think,"Misawa asks for time, then takes on the matchmaking and recruits Ogawa (no score)."
 1,misawa0096,A New Tag Team,"Misawa teams with junior heavyweight Ogawa to challenge No Fear (Takayama and Omori), the first Triple Crown tag champions."
 1,misawa_gm08,Tag Titles vs. No Fear,Misawa and Ogawa challenge Takayama and Omori for the tag titles; a win adds 1 to the score.
@@ -56,7 +56,7 @@ scenario,label,title,summary
 1,misawa0093,The Partnership Pays Off,"The Ogawa team matures and succeeds, just before an incident that shakes the wrestling world."
 1,misawa010,President Misawa,"After the deaths of Baba and Jumbo, Misawa becomes AJPW president, and Vader, who has beaten the other Four Heavenly Kings, targets him."
 1,misawa0104,All-Out Offense,Misawa vows to go all out on offense against Vader (+1 score).
-1,misawa0105,A Match I Won't Lose,Misawa decides to fight a careful match he cannot lose (no score).
+1,misawa0105,A Match I Won't Lose,Misawa decides to fight a careful match he cannot lose (-3 score).
 1,misawa0106,Stopping Vader,"Misawa faces Vader, the strongest foreigner; a win adds 2 to the score."
 1,misawa0102,Vader Sweeps the Kings,"Vader beats Misawa, completing his sweep of the Four Heavenly Kings."
 1,misawa0101,Vader Stopped,Misawa beats Vader and dedicates the win to Baba.
@@ -186,7 +186,7 @@ scenario,label,title,summary
 2,oonita3121,Fuchi Beaten,Fuchi admits defeat and concedes Onita is more than an exploding-barbed-wire gimmick.
 2,oonita0131,Choshu's Respect,Choshu calls Onita an idiot but the real deal and takes his hat off to his persistence.
 2,oonita313,Ending: Outlaw Lives On,Ending after the Fuchi match: Onita keeps wrestling and urges fans to believe in themselves.
-2,oonita014,Ending: End of Heresy,Ending after the Choshu deathmatch: Onita looks back on his unlikely life and says a dream is never out of reach.
+2,oonita014,Ending: The End of the Outlaw,Ending after the Choshu deathmatch: Onita looks back on his unlikely life and says a dream is never out of reach.
 2,oonita000b,"Chapter Menu, Page 3","Developer chapter-select menu (page 3): jumps to scenes 310-313, 403 and 504; not reached in normal play."
 2,oonita000a,"Chapter Menu, Page 2",Developer chapter-select menu (page 2): jumps to chapters 12-14 and the 208-213 and 308-309 scenes; not reached in normal play.
 2,oonita000,"Chapter Menu, Page 1",Developer chapter-select menu (page 1): jumps to chapters 1-11; not reached in normal play.
@@ -195,7 +195,7 @@ scenario,label,title,summary
 3,hashimoto0010,"Blame Chono: 2,000 Squats","Hashimoto blames Chono, Mutoh gets dragged in, and all three are ordered to do 2,000 squats (no score)."
 3,hashimoto002,"Friends, Debut and Walkout","The three rookies become close friends, Hashimoto loses his debut match, and Choshu's Rebel Army walks out; Mutoh calls it a lucky break - do you agree?"
 3,hashimoto0020,Agree: A Chance to Shine,"Hashimoto agrees it is a chance to make a name, and Mutoh teases him about breaking Sakaguchi's expensive athlete's foot medicine (+1 score)."
-3,hashimoto0021,Disagree: More Responsibility,"Hashimoto says the walkout means more responsibility for the young boys, and Mutoh teases him about the broken athlete's foot medicine (+1 score)."
+3,hashimoto0021,Disagree: More Responsibility,"Hashimoto says the walkout means more responsibility for the young boys, and Mutoh teases him about the broken athlete's foot medicine (-1 score)."
 3,hashimoto0023,The Young Boys Step Up,"With so many seniors gone, Hashimoto admits the young boys came out ahead."
 3,hashimoto003,Young Lion Cup,"The renamed Young Lion Cup puts Hashimoto, Mutoh and Chono in one league, and Hashimoto names his first opponent Chono as his rival."
 3,hasi_gm00,Young Lion Cup vs. Chono,Hashimoto's league match against Masahiro Chono; the result changes neither the score nor the story.

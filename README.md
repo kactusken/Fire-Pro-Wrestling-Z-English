@@ -3,11 +3,13 @@
 An English translation patch for **Fire Pro Wrestling Z**, released for the PlayStation 2 in 2003, only in Japan.
 
 The whole game is in English: every mode and menu, the seven story scenarios (over 12,000 pages of
-text), the 244 wrestlers' names and profiles, 1,449 moves, and the menu graphics with Japanese text.
+text), the 244 wrestlers' names and profiles, 1,448 moves, and the menu graphics with Japanese text.
 The hardest part was the story window, which holds 20 Japanese characters a line: English fits
 because each cell is drawn as a pair of letters, in a font made for it.
 
 **[See screenshots](docs/SCREENSHOTS.md)** of the patched game.
+
+**[Read the player's guide](https://kactusken.github.io/Fire-Pro-Wrestling-Z-English/guide/)**: how to play, every mode, all 244 wrestlers and 1,448 moves with their numbers, the story walkthroughs and route map, and the secrets.
 
 > **Status: first public beta.** Everything in scope is translated, and every game mode has been
 > played in PCSX2, with the wrestler and team names checked in both name sets. Not every story route
@@ -48,6 +50,7 @@ Then:
 
 ## Notes for players
 
+- **Guide.** New to Fire Pro, or stuck? The [player's guide](https://kactusken.github.io/Fire-Pro-Wrestling-Z-English/guide/) covers everything from your first match to every story ending.
 - **Names.** Two patches: *Real Names* uses the actual wrestlers' names; *Parody Names* keeps the
   game's own parody names, translated.
 - **What's still in Japanese.** The staff credits, the title logo, promotion logos, in-world art
@@ -83,7 +86,8 @@ the game's formats.
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | The game's disc layout, archives, compression, data formats, and memory map |
 | [docs/PLATFORM.md](docs/PLATFORM.md) | PS2 pitfalls for this kind of work |
 | [docs/HIDDEN_CONTENT.md](docs/HIDDEN_CONTENT.md) | Unlockables, debug features, and unused and cut content |
-| [docs/STORY.md](docs/STORY.md) | Story mode: every route, decision, match and ending ([route map](docs/route-map/index.html)) |
+| [docs/guide/](docs/guide/index.html) | The player's guide (one page; data from `tools/guidedata.py` and `tools/storymap.py`) |
+| [docs/STORY.md](docs/STORY.md) | Story mode: every route, decision, match and ending ([route map](docs/guide/index.html#route-map)) |
 | [tools/README.md](tools/README.md) | Every tool, what it's for and how to run it |
 
 Quick start:

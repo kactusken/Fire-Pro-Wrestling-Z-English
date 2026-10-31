@@ -1,176 +1,176 @@
 # Story mode matches, from the scene scripts and match cards (tools/storymap.py; real names).
-# match: the game() number (empty in scenario 7, where you pick Win or Lose); win / lose: the
-# scene each result leads to (the same scene = the result only changes the score); win_score:
-# story score the script adds for a win.
-scenario,scene,match,hero,hero_side,opponents,rules,win,lose,win_score,notes
-1,misawa_gm01,0,Mitsuharu Misawa,Mitsuharu Misawa,Shiro Koshinaka,15 Min. One Fall,misawa0011,misawa0011,1,
-1,misawa_gm02,1,Mitsuharu Misawa,Mitsuharu Misawa,Kuniaki Kobayashi,60 Min. One Fall,misawa0033,misawa0034,1,
-1,misawa_gm03,2,Mitsuharu Misawa,Mitsuharu Misawa,Genichiro Tenryu,60 Min. One Fall,misawa00312,misawa00313,1,
-1,misawa_gm04,3,Mitsuharu Misawa,Mitsuharu Misawa,Jumbo Tsuruta,60 Min. One Fall,misawa0051,misawa0052,2,
-1,misawa_gm05,4,Mitsuharu Misawa,Mitsuharu Misawa,Stan Hansen,60 Min. One Fall,misawa0061,misawa0062,2,
-1,misawa_gm06,6,Mitsuharu Misawa,Mitsuharu Misawa & Kenta Kobashi,Toshiaki Kawada & Akira Taue,60 Min. One Fall,misawa00721,misawa00722,2,
-1,misawa00710,5,Mitsuharu Misawa,Mitsuharu Misawa,Toshiaki Kawada,60 Min. One Fall,misawa0073,misawa0074,1,
-1,misawa_gm07,8,Mitsuharu Misawa,Mitsuharu Misawa,Kenta Kobashi,60 Min. One Fall,misawa0081,misawa0082,2,
-1,misawa_gm08,9,Mitsuharu Misawa,Mitsuharu Misawa & Yoshinari Ogawa,Takao Omori & Yoshihiro Takayama,60 Min. One Fall,misawa0091,misawa0092,1,
-1,misawa0106,10,Mitsuharu Misawa,Mitsuharu Misawa,Vader,60 Min. One Fall,misawa0101,misawa0102,2,
-1,misawa_gm12,15,Mitsuharu Misawa,Mitsuharu Misawa,Shinya Hashimoto,60 Min. One Fall,misawa0201,misawa0201,0,
-1,misawa041,17,Mitsuharu Misawa,Mitsuharu Misawa,Manabu Nakanishi,60 Min. One Fall,misawa0410,misawa0411,0,
-1,misawa_gm09,11,Mitsuharu Misawa,Mitsuharu Misawa & Jun Akiyama,Shinya Hashimoto & Yuji Nagata,60 Min. One Fall,misawa0121,misawa0122,0,
-1,misawa_gm15,19,Mitsuharu Misawa,Mitsuharu Misawa,Kensuke Sasaki,60 Min. One Fall,misawa0310,misawa0311,0,
-1,misawa_gm13,16,Mitsuharu Misawa,Mitsuharu Misawa,Naoya Ogawa,60 Min. One Fall,misawa0202,misawa0202,0,
-1,misawa_gm16,18,Mitsuharu Misawa,Mitsuharu Misawa,Riki Choshu,60 Min. One Fall,misawa0420,misawa0420,0,
-1,misawa_gm10,12,Mitsuharu Misawa,Mitsuharu Misawa,Jun Akiyama,60 Min. One Fall,misawa0131,misawa0132,0,
-1,misawa_gm14,20,Mitsuharu Misawa,Mitsuharu Misawa,Genichiro Tenryu,60 Min. One Fall,misawa0313,misawa0313,0,
-1,misawa_gm11,14,Mitsuharu Misawa,Mitsuharu Misawa,Keiji Mutoh,60 Min. One Fall,misawa0151,misawa0152,0,
-2,oonita0021,0,Atsushi Onita,Atsushi Onita,Chavo Guerrero,60 Min. One Fall,oonita003,oonita0022,1,
-2,oonita5040,1,Atsushi Onita,Atsushi Onita,Super Tiger,60 Min. One Fall,oonita5041,oonita5042,1,
-2,oonita0051,2,Atsushi Onita,Atsushi Onita,Ohashi,60 Min. One Fall,oonita0052,oonita0052,1,
-2,oonita0060,3,Atsushi Onita,Atsushi Onita,Tarzan Goto,60 Min. One Fall,oonita0061,oonita0061,1,
-2,oonita0062,4,Atsushi Onita,Atsushi Onita,Mister Pogo,60 Min. One Fall,oonita0063,oonita0063,1,
-2,oonita0070,5,Atsushi Onita,Atsushi Onita,Mitsuhiro Matsunaga,60 Min. One Fall,oonita0071,oonita0071,1,
-2,oonita0072,6,Atsushi Onita,Atsushi Onita & Tarzan Goto,Genichiro Tenryu & Minamoto,60 Min. One Fall,oonita0073,oonita208,1,
-2,oonita2080,11,Atsushi Onita,Atsushi Onita,Riki Choshu,60 Min. One Fall,oonita2081,oonita2082,1,
-2,oonita0080,7,Atsushi Onita,Atsushi Onita,Hayabusa,60 Min. One Fall,oonita0081,oonita0081,0,
-2,oonita3080,15,Atsushi Onita,Atsushi Onita,The Great Sasuke,60 Min. One Fall,oonita3081,oonita3081,0,
-2,oonita2100,12,Atsushi Onita,Atsushi Onita,Shinya Hashimoto,60 Min. One Fall,oonita2101,oonita2102,0,
-2,oonita3100,16,Atsushi Onita,Atsushi Onita,Jushin Thunder Liger,60 Min. One Fall,oonita3101,oonita3102,0,
-2,oonita0110,8,Atsushi Onita,Atsushi Onita,Masahiro Chono,60 Min. One Fall,oonita0111,oonita0111,0,
-2,oonita2110,13,Atsushi Onita,Atsushi Onita,Hiroshi Hase,60 Min. One Fall,oonita2111,oonita2111,0,
-2,oonita3110,17,Atsushi Onita,Atsushi Onita,Kensuke Sasaki,60 Min. One Fall,oonita3111,oonita3111,0,
-2,oonita0120,9,Atsushi Onita,Atsushi Onita,The Great Muta,60 Min. One Fall,oonita0121,oonita0121,0,
-2,oonita2120,14,Atsushi Onita,Atsushi Onita,Antonio Inoki,60 Min. One Fall,oonita2121,oonita2122,0,
-2,oonita3120,18,Atsushi Onita,Atsushi Onita,Masanobu Fuchi,60 Min. One Fall,oonita3121,oonita3122,0,
-2,oonita0130,10,Atsushi Onita,Atsushi Onita,Riki Choshu,60 Min. One Fall,oonita0131,oonita0131,0,
-3,hasi_gm00,21,Shinya Hashimoto,Shinya Hashimoto,Masahiro Chono,15 Min. One Fall,hashimoto0030,hashimoto0030,1,
-3,hasi_gm01,0,Shinya Hashimoto,Shinya Hashimoto & Masahiro Chono & Keiji Mutoh,Tatsumi Fujinami & Kengo Kimura & Shiro Koshinaka,30 Min. One Fall,hashimoto0040,hashimoto0040,1,
-3,hasi_gm02,1,Shinya Hashimoto,Shinya Hashimoto,Halme,60 Min. One Fall,hashimoto0053,hashimoto0054,2,
-3,hasi_gm03,2,Shinya Hashimoto,Shinya Hashimoto,Genichiro Tenryu,60 Min. One Fall,hashimoto0063,hashimoto0064,2,
-3,hasi_gm04,3,Shinya Hashimoto,Shinya Hashimoto,The Great Muta,60 Min. One Fall,hashimoto0073,hashimoto0074,1,
-3,hasi_gm20,4,Shinya Hashimoto,Shinya Hashimoto,Masahiro Chono,60 Min. One Fall,hashimoto5081,hashimoto5081,1,
-3,hasi_gm19,5,Shinya Hashimoto,Shinya Hashimoto,Keiji Mutoh,60 Min. One Fall,hashimoto0073,hashimoto0074,1,
-3,hasi_gm05,6,Shinya Hashimoto,Shinya Hashimoto,Nobuhiko Takada,60 Min. One Fall,hashimoto0083,hashimoto0084,1,
-3,hasi_gm22,9,Shinya Hashimoto,Shinya Hashimoto,Kazuo Yamazaki,60 Min. One Fall,hashimoto0094,hashimoto0094,1,
-3,hasi_gm06,7,Shinya Hashimoto,Shinya Hashimoto,Riki Choshu,60 Min. One Fall,hashimoto0093,hashimoto0093,1,
-3,hasi_gm07,10,Shinya Hashimoto,Shinya Hashimoto,Naoya Ogawa,60 Min. One Fall,hashimoto011,hashimoto0102,2,
-3,hasi_gm21,8,Shinya Hashimoto,Shinya Hashimoto,Kensuke Sasaki,60 Min. One Fall,hashimoto0094,hashimoto0094,1,
-3,hasi_gm08,11,Shinya Hashimoto,Shinya Hashimoto,Naoya Ogawa,60 Min. One Fall,hashimoto112,hashimoto012,2,
-3,hasi_gm17,14,Shinya Hashimoto,Shinya Hashimoto,Genichiro Tenryu,60 Min. One Fall,hashimoto314,hashimoto314,0,
-3,hasi_gm12,16,Shinya Hashimoto,Shinya Hashimoto,Tatsumi Fujinami,60 Min. One Fall,hashimoto113,hashimoto113,0,
-3,hasi_gm14,18,Shinya Hashimoto,Shinya Hashimoto & Naoya Ogawa,Nobuhiko Takada & Masaaki Satake,60 Min. One Fall,hashimoto214,hashimoto214,0,
-3,hasi_gm09,22,Shinya Hashimoto,Shinya Hashimoto,Takao Omori,60 Min. One Fall,hashimoto0131,hashimoto0131,0,
-3,hasi_gm18,15,Shinya Hashimoto,Shinya Hashimoto,Toshiaki Kawada,60 Min. One Fall,hashimoto3141,hashimoto3141,0,
-3,hasi_gm13,17,Shinya Hashimoto,Shinya Hashimoto,Masahiro Chono,60 Min. One Fall,hashimoto1131,hashimoto1132,0,
-3,hasi_gm15,19,Shinya Hashimoto,Shinya Hashimoto,Jerome Le Banner,60 Min. One Fall,hashimoto2141,hashimoto2142,0,
-3,hasi_gm10,12,Shinya Hashimoto,Shinya Hashimoto & Yuji Nagata,Mitsuharu Misawa & Jun Akiyama,60 Min. One Fall,hashimoto015,hashimoto015,0,
-3,hasi_gm16,20,Shinya Hashimoto,Shinya Hashimoto,Kazuyuki Fujita,60 Min. One Fall,hashimoto216,hashimoto216,0,
-3,hasi_gm11,13,Shinya Hashimoto,Shinya Hashimoto,Mitsuharu Misawa,60 Min. One Fall,hashimoto0151,hashimoto0152,0,
-4,chono0025,0,Masahiro Chono,Masahiro Chono,Shinya Hashimoto,15 Min. One Fall,chono0020,chono0021,1,
-4,chono0035,1,Masahiro Chono,Masahiro Chono,Vader,60 Min. One Fall,chono0034,chono0034,1,
-4,chono0043,2,Masahiro Chono,Masahiro Chono & Shinya Hashimoto,Antonio Inoki & Sakaguchi,60 Min. One Fall,chono0044,chono0045,2,
-4,chono0051,3,Masahiro Chono,Masahiro Chono,Keiji Mutoh,60 Min. One Fall,chono0052,chono0053,1,
-4,chono0065,4,Masahiro Chono,Masahiro Chono,Rude,60 Min. One Fall,chono0066,chono0067,2,
-4,chono2081,5,Masahiro Chono,Masahiro Chono,Nobuhiko Takada,60 Min. One Fall,chono2082,chono2083,1,
-4,chono0074,7,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan,Riki Choshu & Junji Hirata,60 Min. One Fall,chono0076,chono0075,1,
-4,chono3080,6,Masahiro Chono,Masahiro Chono,Riki Choshu,60 Min. One Fall,chono3081,chono3082,2,
-4,chono4091,10,Masahiro Chono,Masahiro Chono,Flair,60 Min. One Fall,chono4092,chono4092,1,
-4,chono0085,8,Masahiro Chono,Masahiro Chono,Tatsumi Fujinami,60 Min. One Fall,chono0086,chono0087,2,
-4,chono0091,9,Masahiro Chono,Masahiro Chono,The Great Muta,60 Min. One Fall,chono0092,chono510,2,
-4,chono5101,15,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Hiro Saito,Jun Akiyama & Yoshihiro Takayama & Takao Omori,60 Min. One Fall,chono5102,chono5103,0,
-4,chono5111,16,Masahiro Chono,Masahiro Chono,Kenta Kobashi,60 Min. One Fall,chono5112,chono5113,0,
-4,chono0103,11,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Satoshi Kojima,Manabu Nakanishi & Yuji Nagata & Kensuke Sasaki,60 Min. One Fall,chono011,chono011,0,
-4,chono0112,12,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan,Toshiaki Kawada & Masanobu Fuchi,60 Min. One Fall,chono0113,chono0114,1,
-4,chono5121,17,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Takao Omori & Yoshihiro Takayama,Mitsuharu Misawa & Akira Taue & Jun Akiyama & Yoshinari Ogawa,60 Min. One Fall,chono513,chono513,0,
-4,chono0121,13,Masahiro Chono,Masahiro Chono & Giant Silva & Giant Singh,Hiroyoshi Tenzan & Satoshi Kojima & Hiro Saito,60 Min. One Fall,chono013,chono013,0,
-4,chono1121,18,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan,Keiji Mutoh & Taiyo Kea,60 Min. One Fall,chono1122,chono1123,1,
-4,chono7121,22,Masahiro Chono,Masahiro Chono & Scott Norton,Shinya Hashimoto & Shinjiro Otani,60 Min. One Fall,chono7123,chono7124,0,
-4,chono1131,19,Masahiro Chono,Masahiro Chono,Genichiro Tenryu,60 Min. One Fall,chono1132,chono1133,0,
-4,chono7131,21,Masahiro Chono,Masahiro Chono,Naoya Ogawa,60 Min. One Fall,chono7133,chono7134,0,
-4,chono0131,14,Masahiro Chono,Masahiro Chono,Mitsuharu Misawa,60 Min. One Fall,chono0132,chono0133,0,
-4,chono6141,20,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Hiro Saito,Tatsumi Fujinami & Manabu Nakanishi & Yuji Nagata,60 Min. One Fall,chono6142,chono6142,0,
-5,mutou0030,0,Keiji Mutoh,Keiji Mutoh,Tatsumi Fujinami,60 Min. One Fall,mutou0031,mutou0032,1,
-5,mutou0040,1,Keiji Mutoh,Keiji Mutoh & Shiro Koshinaka,Akira Maeda & Nobuhiko Takada,60 Min. One Fall,mutou0041,mutou0042,1,
-5,mutou0050,2,Keiji Mutoh,Keiji Mutoh,Flair,60 Min. One Fall,mutou006,mutou006,1,
-5,mutou0060,3,Keiji Mutoh,Keiji Mutoh & Masahiro Chono,Hiroshi Hase & Kensuke Sasaki,60 Min. One Fall,mutou0061,mutou0062,1,
-5,mutou0070,4,Keiji Mutoh,Keiji Mutoh & Hiroshi Hase,Rick Steiner & Scott Steiner,60 Min. One Fall,mutou0071,mutou0072,1,
-5,mutou3090,14,Keiji Mutoh,Keiji Mutoh,Antonio Inoki,60 Min. One Fall,mutou3091,mutou3091,0,
-5,mutou0080,5,Keiji Mutoh,Keiji Mutoh,Scott Norton,60 Min. One Fall,mutou0081,mutou0082,1,
-5,mutou0090,6,Keiji Mutoh,Keiji Mutoh,Shinya Hashimoto,60 Min. One Fall,mutou0091,mutou0092,1,
-5,mutou4090,15,Keiji Mutoh,Keiji Mutoh,Shinya Hashimoto,60 Min. One Fall,mutou4091,mutou4092,1,
-5,mutou0100,7,Keiji Mutoh,Keiji Mutoh,Nobuhiko Takada,60 Min. One Fall,mutou0101,mutou0102,1,
-5,mutou0110,8,Keiji Mutoh,Keiji Mutoh,Jushin Thunder Liger,60 Min. One Fall,mutou0111,mutou0112,1,
-5,mutou0120,9,Keiji Mutoh,Keiji Mutoh,Kensuke Sasaki,60 Min. One Fall,mutou013,mutou013,1,
-5,mutou5130,16,Keiji Mutoh,Keiji Mutoh,Satoshi Kojima,60 Min. One Fall,mutou5131,mutou5131,1,
-5,mutou0130,10,Keiji Mutoh,Keiji Mutoh,Masahiro Chono,60 Min. One Fall,mutou0131,mutou0132,1,
-5,mutou0140,11,Keiji Mutoh,Keiji Mutoh,Toshiaki Kawada,60 Min. One Fall,mutou0141,mutou0142,1,
-5,mutou1140,17,Keiji Mutoh,Keiji Mutoh,Taiyo Kea,60 Min. One Fall,mutou1141,mutou1142,0,
-5,mutou2140,20,Keiji Mutoh,Keiji Mutoh,Genichiro Tenryu,60 Min. One Fall,mutou2141,mutou2142,0,
-5,mutou0150,12,Keiji Mutoh,Keiji Mutoh & Hiroshi Hase,Jun Akiyama & Yuji Nagata,60 Min. One Fall,mutou0151,mutou0152,0,
-5,mutou1150,18,Keiji Mutoh,Kokushi Muso,Hakushi,60 Min. One Fall,mutou1151,mutou1152,0,
-5,mutou2150,21,Keiji Mutoh,Keiji Mutoh & Hiroshi Hase,Shinya Hashimoto & Naoya Ogawa,60 Min. One Fall,mutou2151,mutou2152,0,
-5,mutou0160,13,Keiji Mutoh,Keiji Mutoh,Genichiro Tenryu,60 Min. One Fall,mutou0161,mutou0162,0,
-5,mutou1160,19,Keiji Mutoh,The Great Muta,Satoshi Kojima,60 Min. One Fall,mutou1161,mutou1162,0,
-5,mutou2160,22,Keiji Mutoh,Keiji Mutoh,Mitsuharu Misawa,60 Min. One Fall,mutou2161,mutou2162,0,
-6,sakuraba_gm02,2,Kazushi Sakuraba,Kazushi Sakuraba,Yoshihiro Takayama,15 Min. One Fall,sakuraba1050,sakuraba1051,1,
-6,sakuraba_gm600,9,Kazushi Sakuraba,Kazushi Sakuraba,Hiromitsu Kanehara,15 Min. One Fall,sakuraba6050,sakuraba6051,1,
-6,sakuraba_gm04,0,Kazushi Sakuraba,Kazushi Sakuraba,Minato,15 Min. One Fall,sakuraba1060,sakuraba1060,1,
-6,sakuraba_gm601,1,Kazushi Sakuraba,Kazushi Sakuraba,Yoji Anjo,15 Min. One Fall,sakuraba6010,sakuraba6010,1,
-6,sakuraba_gm05,3,Kazushi Sakuraba,Kazushi Sakuraba,Orto,60 Min. One Fall,sakuraba10700,sakuraba10701,1,
-6,sakuraba_gm602,24,Kazushi Sakuraba,Kazushi Sakuraba,Orto,60 Min. One Fall,sakuraba60700,sakuraba60701,1,
-6,sakuraba_gm07,4,Kazushi Sakuraba,Kazushi Sakuraba,Yamamori,60 Min. One Fall,sakuraba1080,sakuraba1081,1,
-6,sakuraba_gm604,25,Kazushi Sakuraba,Kazushi Sakuraba,Yamamori,60 Min. One Fall,sakuraba6080,sakuraba6081,1,
-6,sakuraba_gm08,5,Kazushi Sakuraba,Kazushi Sakuraba,Minato,60 Min. One Fall,sakuraba1090,sakuraba1091,1,
-6,sakuraba_gm605,10,Kazushi Sakuraba,Kazushi Sakuraba,Yoji Anjo,60 Min. One Fall,sakuraba6090,sakuraba6091,1,
-6,sakuraba_gm09,6,Kazushi Sakuraba,Kazushi Sakuraba,Kama,60 Min. One Fall,sakuraba112,sakuraba1110,1,
-6,sakuraba_gm606,11,Kazushi Sakuraba,Kazushi Sakuraba & Hiromitsu Kanehara,Yuji Nagata & Takizawa,60 Min. One Fall,sakuraba6060,sakuraba6061,1,
-6,sakuraba_gm10,7,Kazushi Sakuraba,Kazushi Sakuraba,Rickson Gracie Jr.,60 Min. One Fall,sakuraba1120,sakuraba1120,1,
-6,sakuraba_gm607,26,Kazushi Sakuraba,Kazushi Sakuraba,Kama,60 Min. One Fall,sakuraba613,sakuraba713,1,
-6,sakuraba_gm11,8,Kazushi Sakuraba,Kazushi Sakuraba,Masao Orihara,60 Min. One Fall,sakuraba21220,sakuraba21221,1,
-6,sakuraba_gm608,28,Kazushi Sakuraba,Kazushi Sakuraba,Rickson Gracie Jr.,60 Min. One Fall,sakuraba6130,sakuraba6130,1,
-6,sakuraba_gm713,27,Kazushi Sakuraba,Kazushi Sakuraba,Masao Orihara,60 Min. One Fall,sakuraba71320,sakuraba71321,1,
-6,sakuraba_gm414,16,Kazushi Sakuraba,Kazushi Sakuraba & Masao Orihara,Yoji Anjo & Yoshihiro Takayama,60 Min. One Fall,sakuraba4140,sakuraba4141,1,
-6,sakuraba_gm300,12,Kazushi Sakuraba,Kazushi Sakuraba,Venom,60 Min. One Fall,sakuraba3140,sakuraba3141,1,
-6,sakuraba_gm715,29,Kazushi Sakuraba,Kazushi Sakuraba,Venom,60 Min. One Fall,sakuraba7150,sakuraba7151,1,
-6,sakuraba_gm301,13,Kazushi Sakuraba,Kazushi Sakuraba,Wanderlei Silva,60 Min. One Fall,sakuraba3150,sakuraba3151,1,
-6,sakuraba_gm556,36,Kazushi Sakuraba,Kazushi Sakuraba,Kendo Kashin,60 Min. One Fall,sakuraba5560,sakuraba5560,0,
-6,sakuraba_gm546,20,Kazushi Sakuraba,Killer Tiger Mask,Jun Akiyama,60 Min. One Fall,sakuraba547,sakuraba548,0,
-6,sakuraba_gm526,18,Kazushi Sakuraba,Tigre,Taiyo Kea,60 Min. One Fall,sakuraba527,sakuraba528,1,
-6,sakuraba_gm536,22,Kazushi Sakuraba,Kazushi Sakuraba,Kendo Kashin,60 Min. One Fall,sakuraba5360,sakuraba5360,0,
-6,sakuraba_gm516,17,Kazushi Sakuraba,Kazushi Sakuraba,Royce Gracie,60 Min. One Fall,sakuraba517,sakuraba518,0,
-6,sakuraba_gm716,30,Kazushi Sakuraba,Kazushi Sakuraba,Wanderlei Silva,60 Min. One Fall,sakuraba7160,sakuraba7161,1,
-6,sakuraba_gm5560,37,Kazushi Sakuraba,Kazushi Sakuraba,Masahiro Chono,60 Min. One Fall,sakuraba557,sakuraba558,0,
-6,sakuraba_gm548,35,Kazushi Sakuraba,Kazushi Sakuraba,Killer Tiger Mask & Tiger Mask & Tiger Mask II & Tiger Mask III & Tiger Mask IV,"No Time Limit, Battle Royal",sakuraba5480,sakuraba5480,0,
-6,sakuraba_gm547,21,Kazushi Sakuraba,Kazushi Sakuraba,Killer Tiger Mask & Tiger Mask & Tiger Mask II & Tiger Mask III & Tiger Mask IV,"No Time Limit, Battle Royal",sakuraba5470,sakuraba5470,0,
-6,sakuraba_gm528,34,Kazushi Sakuraba,Kazushi Sakuraba,Tigre & Keiji Mutoh & Masao Orihara & Yoji Anjo & Yoshihiro Takayama & Atsushi Onita,"No Time Limit, Battle Royal",sakuraba5280,sakuraba5280,0,
-6,sakuraba_gm527,19,Kazushi Sakuraba,Kazushi Sakuraba,Tigre & Keiji Mutoh & Masao Orihara & Yoji Anjo & Yoshihiro Takayama & Atsushi Onita,"No Time Limit, Battle Royal",sakuraba5270,sakuraba5270,0,
-6,sakuraba_gm5360,23,Kazushi Sakuraba,Kazushi Sakuraba,Masahiro Chono,60 Min. One Fall,sakuraba537,sakuraba538,0,
-6,sakuraba_gm518,33,Kazushi Sakuraba,Kazushi Sakuraba & Kazushi Sakuraba Jr.,Rickson Gracie & Rickson Gracie Jr.,60 Min. One Fall,sakuraba5180,sakuraba5180,1,
-6,sakuraba_gm302,14,Kazushi Sakuraba,Kazushi Sakuraba,Mirko CroCop,60 Min. One Fall,sakuraba317,sakuraba317,0,
-6,sakuraba_gm303,15,Kazushi Sakuraba,Kazushi Sakuraba & Kazushi Sakuraba Jr.,Rickson Gracie & Rickson Gracie Jr.,60 Min. One Fall,sakuraba3170,sakuraba3170,0,
-6,sakuraba_gm717,31,Kazushi Sakuraba,Kazushi Sakuraba,Mirko CroCop,60 Min. One Fall,sakuraba718,sakuraba718,0,
-6,sakuraba_gm718,32,Kazushi Sakuraba,Kazushi Sakuraba & Kazushi Sakuraba Jr.,Rickson Gracie & Rickson Gracie Jr.,60 Min. One Fall,sakuraba7180,sakuraba7180,0,
-7,lyger_gm001,,Jushin Thunder Liger,Jushin Thunder Liger,Fujiwara,(not played: you pick Win or Lose),lyger0011,lyger0012,,
-7,lyger_gm002,,Jushin Thunder Liger,Jushin Thunder Liger,Sano,(not played: you pick Win or Lose),lyger0021,lyger0022,,
-7,lyger_gm004,,Jushin Thunder Liger,Jushin Thunder Liger,Mutoh,(not played: you pick Win or Lose),lyger0041,lyger0042,,
-7,lyger_gm005,,Jushin Thunder Liger,Jushin Thunder Liger,Mark Rocco,(not played: you pick Win or Lose),lyger0051,lyger0052,,
-7,lyger_gm006,,Jushin Thunder Liger,Jushin Thunder Liger,Kuniaki Kobayashi,(not played: you pick Win or Lose),lyger0062,lyger0063,,
-7,lyger_gm206,,Jushin Thunder Liger,Jushin Thunder Liger,Maeda (sparring match),(not played: you pick Win or Lose),lyger2060,lyger2061,,
-7,lyger_gm007,,Jushin Thunder Liger,Jushin Thunder Liger,Hiroshi Hase,(not played: you pick Win or Lose),lyger0071,lyger0072,,
-7,lyger_gm207,,Jushin Thunder Liger,Jushin Thunder Liger,Yoshiaki Fujiwara,(not played: you pick Win or Lose),lyger2070,lyger2071,,
-7,lyger_gm008,,Jushin Thunder Liger,Jushin Thunder Liger,Wild Pegasus,(not played: you pick Win or Lose),lyger0081,lyger0081,,
-7,lyger_gm209,,Jushin Thunder Liger,Jushin Thunder Liger,Satake,(not played: you pick Win or Lose),lyger2090,lyger2091,,
-7,lyger_gm309,,Jushin Thunder Liger,Jushin Thunder Liger,Takada,(not played: you pick Win or Lose),lyger3090,lyger3091,,
-7,lyger_gm409,,Jushin Thunder Liger,Jushin Thunder Liger,Rutten,(not played: you pick Win or Lose),lyger4090,lyger4091,,
-7,lyger_gm009,,Jushin Thunder Liger,Jushin Thunder Liger,Shinjiro Otani,(not played: you pick Win or Lose),lyger0091,lyger0092,,
-7,lyger_gm210,,Jushin Thunder Liger,Jushin Thunder Liger,Karelin,(not played: you pick Win or Lose),lyger2100,lyger2101,,
-7,lyger_gm310,,Jushin Thunder Liger,Jushin Thunder Liger,Hashimoto,(not played: you pick Win or Lose),lyger3100,lyger3101,,
-7,lyger_gm410,,Jushin Thunder Liger,Jushin Thunder Liger,,(not played: you pick Win or Lose),lyger4100,lyger4101,,the card leaves the name blank; the story makes it Masakatsu Funaki
-7,lyger_gm010,,Jushin Thunder Liger,Jushin Thunder Liger,Naoki Sano,(not played: you pick Win or Lose),lyger0100,lyger0101,,
-7,lyger_gm211,,Jushin Thunder Liger,Jushin Thunder Liger,Maeda (retirement match),(not played: you pick Win or Lose),lyger2110,lyger2111,,
-7,lyger_gm011,,Jushin Thunder Liger,Jushin Thunder Liger,The Great Muta,(not played: you pick Win or Lose),lyger0110,lyger0111,,
-7,lyger_gm213,,Jushin Thunder Liger,Jushin Thunder Liger,Mirko,(not played: you pick Win or Lose),lyger2130,lyger2131,,
-7,lyger_gm014,,Jushin Thunder Liger,Jushin Thunder Liger,Yoshinobu Kanemaru,(not played: you pick Win or Lose),lyger0141,lyger0142,,"the card says Kanemaru, but the story and the chapter menu say Marufuji"
-7,lyger_gm012,,Jushin Thunder Liger,Jushin Thunder Liger,,(not played: you pick Win or Lose),lyger0120,lyger0121,,the card leaves the name blank; the story makes it Naoya Ogawa
-7,lyger_gm214,,Jushin Thunder Liger,Jushin Thunder Liger,Rickson,(not played: you pick Win or Lose),lyger2140,lyger2141,,
-7,lyger_gm015,,Jushin Thunder Liger,Jushin Thunder Liger,Mitsuharu Misawa,(not played: you pick Win or Lose),lyger0150,lyger0151,,
-7,lyger_gm013,,Jushin Thunder Liger,Jushin Thunder Liger,Antonio Inoki,(not played: you pick Win or Lose),lyger013,lyger013,,
-7,lyger_gm113,,Jushin Thunder Liger,Jushin Thunder Liger,Chono,(not played: you pick Win or Lose),lyger1130,lyger1131,,
+# match: the game() number; win / lose: the scene each result leads to (the same scene = the
+# result only changes the score); win_score, lose_score: story score the script adds for each
+# result; rule ... critical: the match record's settings, as stored.
+scenario,scene,match,hero,hero_side,opponents,rules,win,lose,win_score,lose_score,rule,rule2,minutes,venue,ring,com,referee,critical
+1,misawa_gm01,0,Mitsuharu Misawa,Mitsuharu Misawa,Shiro Koshinaka,15 Min. One Fall,misawa0011,misawa0011,1,0,162,0,15,2,1,2,7,0
+1,misawa_gm02,1,Mitsuharu Misawa,Mitsuharu Misawa,Kuniaki Kobayashi,60 Min. One Fall,misawa0033,misawa0034,1,-1,162,0,60,0,1,2,7,1
+1,misawa_gm03,2,Mitsuharu Misawa,Mitsuharu Misawa,Genichiro Tenryu,60 Min. One Fall,misawa00312,misawa00313,1,-1,162,0,60,2,1,3,1,2
+1,misawa_gm04,3,Mitsuharu Misawa,Mitsuharu Misawa,Jumbo Tsuruta,60 Min. One Fall,misawa0051,misawa0052,2,-1,162,0,60,0,1,3,1,2
+1,misawa_gm05,4,Mitsuharu Misawa,Mitsuharu Misawa,Stan Hansen,60 Min. One Fall,misawa0061,misawa0062,2,-1,162,0,60,0,1,3,1,2
+1,misawa_gm06,6,Mitsuharu Misawa,Mitsuharu Misawa & Kenta Kobashi,Toshiaki Kawada & Akira Taue,60 Min. One Fall,misawa00721,misawa00722,2,-1,178,0,60,0,1,3,1,2
+1,misawa00710,5,Mitsuharu Misawa,Mitsuharu Misawa,Toshiaki Kawada,60 Min. One Fall,misawa0073,misawa0074,1,-2,162,0,60,0,1,3,1,2
+1,misawa_gm07,8,Mitsuharu Misawa,Mitsuharu Misawa,Kenta Kobashi,60 Min. One Fall,misawa0081,misawa0082,2,-1,162,0,60,0,1,4,1,2
+1,misawa_gm08,9,Mitsuharu Misawa,Mitsuharu Misawa & Yoshinari Ogawa,Takao Omori & Yoshihiro Takayama,60 Min. One Fall,misawa0091,misawa0092,1,0,178,0,60,0,1,4,1,2
+1,misawa0106,10,Mitsuharu Misawa,Mitsuharu Misawa,Vader,60 Min. One Fall,misawa0101,misawa0102,2,-2,162,0,60,1,1,4,1,2
+1,misawa_gm12,15,Mitsuharu Misawa,Mitsuharu Misawa,Shinya Hashimoto,60 Min. One Fall,misawa0201,misawa0201,0,0,162,0,60,0,3,6,2,3
+1,misawa041,17,Mitsuharu Misawa,Mitsuharu Misawa,Manabu Nakanishi,60 Min. One Fall,misawa0410,misawa0411,0,0,162,0,60,2,0,6,0,3
+1,misawa_gm09,11,Mitsuharu Misawa,Mitsuharu Misawa & Jun Akiyama,Shinya Hashimoto & Yuji Nagata,60 Min. One Fall,misawa0121,misawa0122,0,0,178,0,60,0,3,5,2,3
+1,misawa_gm15,19,Mitsuharu Misawa,Mitsuharu Misawa,Kensuke Sasaki,60 Min. One Fall,misawa0310,misawa0311,0,0,162,0,60,2,1,6,0,3
+1,misawa_gm13,16,Mitsuharu Misawa,Mitsuharu Misawa,Naoya Ogawa,60 Min. One Fall,misawa0202,misawa0202,0,0,162,0,60,0,3,7,2,3
+1,misawa_gm16,18,Mitsuharu Misawa,Mitsuharu Misawa,Riki Choshu,60 Min. One Fall,misawa0420,misawa0420,0,0,162,0,60,1,0,7,0,3
+1,misawa_gm10,12,Mitsuharu Misawa,Mitsuharu Misawa,Jun Akiyama,60 Min. One Fall,misawa0131,misawa0132,0,0,162,0,60,0,2,6,7,3
+1,misawa_gm14,20,Mitsuharu Misawa,Mitsuharu Misawa,Genichiro Tenryu,60 Min. One Fall,misawa0313,misawa0313,0,0,162,0,60,0,1,7,1,3
+1,misawa_gm11,14,Mitsuharu Misawa,Mitsuharu Misawa,Keiji Mutoh,60 Min. One Fall,misawa0151,misawa0152,0,0,162,0,60,1,2,7,7,3
+2,oonita0021,0,Atsushi Onita,Atsushi Onita,Chavo Guerrero,60 Min. One Fall,oonita003,oonita0022,1,-1,162,0,60,4,22,2,4,0
+2,oonita5040,1,Atsushi Onita,Atsushi Onita,Super Tiger,60 Min. One Fall,oonita5041,oonita5042,1,-1,162,0,60,2,22,5,6,1
+2,oonita0051,2,Atsushi Onita,Atsushi Onita,Ohashi,60 Min. One Fall,oonita0052,oonita0052,1,-1,128,0,60,7,22,4,2,2
+2,oonita0060,3,Atsushi Onita,Atsushi Onita,Tarzan Goto,60 Min. One Fall,oonita0061,oonita0061,1,-1,128,0,60,6,22,4,2,2
+2,oonita0062,4,Atsushi Onita,Atsushi Onita,Mister Pogo,60 Min. One Fall,oonita0063,oonita0063,1,-1,128,0,60,6,22,4,2,2
+2,oonita0070,5,Atsushi Onita,Atsushi Onita,Mitsuhiro Matsunaga,60 Min. One Fall,oonita0071,oonita0071,1,-1,128,0,60,6,22,5,2,2
+2,oonita0072,6,Atsushi Onita,Atsushi Onita & Tarzan Goto,Genichiro Tenryu & Minamoto,60 Min. One Fall,oonita0073,oonita208,1,-1,178,0,60,0,22,6,2,2
+2,oonita2080,11,Atsushi Onita,Atsushi Onita,Riki Choshu,60 Min. One Fall,oonita2081,oonita2082,1,-1,162,0,60,0,0,7,0,3
+2,oonita0080,7,Atsushi Onita,Atsushi Onita,Hayabusa,60 Min. One Fall,oonita0081,oonita0081,0,0,128,0,60,6,22,5,2,2
+2,oonita3080,15,Atsushi Onita,Atsushi Onita,The Great Sasuke,60 Min. One Fall,oonita3081,oonita3081,0,0,128,0,60,6,7,6,2,3
+2,oonita2100,12,Atsushi Onita,Atsushi Onita,Shinya Hashimoto,60 Min. One Fall,oonita2101,oonita2102,0,0,162,0,60,0,3,7,2,3
+2,oonita3100,16,Atsushi Onita,Atsushi Onita,Jushin Thunder Liger,60 Min. One Fall,oonita3101,oonita3102,0,0,128,0,60,6,0,7,0,3
+2,oonita0110,8,Atsushi Onita,Atsushi Onita,Masahiro Chono,60 Min. One Fall,oonita0111,oonita0111,0,0,128,0,60,6,0,5,0,2
+2,oonita2110,13,Atsushi Onita,Atsushi Onita,Hiroshi Hase,60 Min. One Fall,oonita2111,oonita2111,0,0,162,0,60,0,1,6,1,3
+2,oonita3110,17,Atsushi Onita,Atsushi Onita,Kensuke Sasaki,60 Min. One Fall,oonita3111,oonita3111,0,0,128,0,60,6,0,8,0,3
+2,oonita0120,9,Atsushi Onita,Atsushi Onita,The Great Muta,60 Min. One Fall,oonita0121,oonita0121,0,0,128,0,60,6,0,6,0,2
+2,oonita2120,14,Atsushi Onita,Atsushi Onita,Antonio Inoki,60 Min. One Fall,oonita2121,oonita2122,0,0,162,0,60,0,22,8,3,3
+2,oonita3120,18,Atsushi Onita,Atsushi Onita,Masanobu Fuchi,60 Min. One Fall,oonita3121,oonita3122,0,0,162,0,60,0,1,8,1,3
+2,oonita0130,10,Atsushi Onita,Atsushi Onita,Riki Choshu,60 Min. One Fall,oonita0131,oonita0131,0,0,128,0,60,6,0,8,0,2
+3,hasi_gm00,21,Shinya Hashimoto,Shinya Hashimoto,Masahiro Chono,15 Min. One Fall,hashimoto0030,hashimoto0030,1,0,162,0,15,2,0,2,0,0
+3,hasi_gm01,0,Shinya Hashimoto,Shinya Hashimoto & Masahiro Chono & Keiji Mutoh,Tatsumi Fujinami & Kengo Kimura & Shiro Koshinaka,30 Min. One Fall,hashimoto0040,hashimoto0040,1,0,178,0,30,2,0,2,0,0
+3,hasi_gm02,1,Shinya Hashimoto,Shinya Hashimoto,Halme,60 Min. One Fall,hashimoto0053,hashimoto0054,2,-2,162,0,60,0,0,3,0,3
+3,hasi_gm03,2,Shinya Hashimoto,Shinya Hashimoto,Genichiro Tenryu,60 Min. One Fall,hashimoto0063,hashimoto0064,2,-1,162,0,60,0,0,4,0,2
+3,hasi_gm04,3,Shinya Hashimoto,Shinya Hashimoto,The Great Muta,60 Min. One Fall,hashimoto0073,hashimoto0074,1,0,162,0,60,0,0,4,0,2
+3,hasi_gm20,4,Shinya Hashimoto,Shinya Hashimoto,Masahiro Chono,60 Min. One Fall,hashimoto5081,hashimoto5081,1,-2,162,0,60,0,0,4,0,2
+3,hasi_gm19,5,Shinya Hashimoto,Shinya Hashimoto,Keiji Mutoh,60 Min. One Fall,hashimoto0073,hashimoto0074,1,0,162,0,60,0,0,5,0,2
+3,hasi_gm05,6,Shinya Hashimoto,Shinya Hashimoto,Nobuhiko Takada,60 Min. One Fall,hashimoto0083,hashimoto0084,1,-2,162,0,60,1,0,5,0,2
+3,hasi_gm22,9,Shinya Hashimoto,Shinya Hashimoto,Kazuo Yamazaki,60 Min. One Fall,hashimoto0094,hashimoto0094,1,-1,162,0,60,0,0,5,0,2
+3,hasi_gm06,7,Shinya Hashimoto,Shinya Hashimoto,Riki Choshu,60 Min. One Fall,hashimoto0093,hashimoto0093,1,-1,162,0,60,0,0,5,0,2
+3,hasi_gm07,10,Shinya Hashimoto,Shinya Hashimoto,Naoya Ogawa,60 Min. One Fall,hashimoto011,hashimoto0102,2,-2,162,0,60,1,0,6,0,2
+3,hasi_gm21,8,Shinya Hashimoto,Shinya Hashimoto,Kensuke Sasaki,60 Min. One Fall,hashimoto0094,hashimoto0094,1,-1,162,0,60,0,0,5,0,2
+3,hasi_gm08,11,Shinya Hashimoto,Shinya Hashimoto,Naoya Ogawa,60 Min. One Fall,hashimoto112,hashimoto012,2,-2,162,0,60,1,0,7,0,3
+3,hasi_gm17,14,Shinya Hashimoto,Shinya Hashimoto,Genichiro Tenryu,60 Min. One Fall,hashimoto314,hashimoto314,0,0,162,0,60,1,1,8,1,3
+3,hasi_gm12,16,Shinya Hashimoto,Shinya Hashimoto,Tatsumi Fujinami,60 Min. One Fall,hashimoto113,hashimoto113,0,0,162,0,60,0,0,6,0,3
+3,hasi_gm14,18,Shinya Hashimoto,Shinya Hashimoto & Naoya Ogawa,Nobuhiko Takada & Masaaki Satake,60 Min. One Fall,hashimoto214,hashimoto214,0,0,54,3,60,1,4,7,3,3
+3,hasi_gm09,22,Shinya Hashimoto,Shinya Hashimoto,Takao Omori,60 Min. One Fall,hashimoto0131,hashimoto0131,0,0,162,0,60,0,2,5,7,3
+3,hasi_gm18,15,Shinya Hashimoto,Shinya Hashimoto,Toshiaki Kawada,60 Min. One Fall,hashimoto3141,hashimoto3141,0,0,162,0,60,0,1,8,1,3
+3,hasi_gm13,17,Shinya Hashimoto,Shinya Hashimoto,Masahiro Chono,60 Min. One Fall,hashimoto1131,hashimoto1132,0,0,162,0,60,1,0,7,0,3
+3,hasi_gm15,19,Shinya Hashimoto,Shinya Hashimoto,Jerome Le Banner,60 Min. One Fall,hashimoto2141,hashimoto2142,0,0,4,3,60,1,16,8,3,3
+3,hasi_gm10,12,Shinya Hashimoto,Shinya Hashimoto & Yuji Nagata,Mitsuharu Misawa & Jun Akiyama,60 Min. One Fall,hashimoto015,hashimoto015,0,0,178,0,60,0,3,7,2,3
+3,hasi_gm16,20,Shinya Hashimoto,Shinya Hashimoto,Kazuyuki Fujita,60 Min. One Fall,hashimoto216,hashimoto216,0,0,4,3,60,1,18,8,3,3
+3,hasi_gm11,13,Shinya Hashimoto,Shinya Hashimoto,Mitsuharu Misawa,60 Min. One Fall,hashimoto0151,hashimoto0152,0,0,162,0,60,0,3,7,2,3
+4,chono0025,0,Masahiro Chono,Masahiro Chono,Shinya Hashimoto,15 Min. One Fall,chono0020,chono0021,1,0,162,0,15,2,0,2,0,0
+4,chono0035,1,Masahiro Chono,Masahiro Chono,Vader,60 Min. One Fall,chono0034,chono0034,1,-1,162,0,60,1,0,3,0,1
+4,chono0043,2,Masahiro Chono,Masahiro Chono & Shinya Hashimoto,Antonio Inoki & Sakaguchi,60 Min. One Fall,chono0044,chono0045,2,0,178,0,60,1,0,4,0,2
+4,chono0051,3,Masahiro Chono,Masahiro Chono,Keiji Mutoh,60 Min. One Fall,chono0052,chono0053,1,-1,162,0,60,0,0,4,0,2
+4,chono0065,4,Masahiro Chono,Masahiro Chono,Rude,60 Min. One Fall,chono0066,chono0067,2,-2,162,0,60,0,0,4,0,2
+4,chono2081,5,Masahiro Chono,Masahiro Chono,Nobuhiko Takada,60 Min. One Fall,chono2082,chono2083,1,-1,162,0,60,1,0,5,0,2
+4,chono0074,7,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan,Riki Choshu & Junji Hirata,60 Min. One Fall,chono0076,chono0075,1,0,178,0,60,2,0,4,0,2
+4,chono3080,6,Masahiro Chono,Masahiro Chono,Riki Choshu,60 Min. One Fall,chono3081,chono3082,2,-1,162,0,60,1,0,5,0,2
+4,chono4091,10,Masahiro Chono,Masahiro Chono,Flair,60 Min. One Fall,chono4092,chono4092,1,0,162,0,60,4,22,6,4,2
+4,chono0085,8,Masahiro Chono,Masahiro Chono,Tatsumi Fujinami,60 Min. One Fall,chono0086,chono0087,2,-1,162,0,60,1,0,5,0,2
+4,chono0091,9,Masahiro Chono,Masahiro Chono,The Great Muta,60 Min. One Fall,chono0092,chono510,2,-2,162,0,60,1,0,5,0,2
+4,chono5101,15,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Hiro Saito,Jun Akiyama & Yoshihiro Takayama & Takao Omori,60 Min. One Fall,chono5102,chono5103,0,0,178,0,60,0,2,6,7,3
+4,chono5111,16,Masahiro Chono,Masahiro Chono,Kenta Kobashi,60 Min. One Fall,chono5112,chono5113,0,0,162,0,60,0,2,8,7,3
+4,chono0103,11,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Satoshi Kojima,Manabu Nakanishi & Yuji Nagata & Kensuke Sasaki,60 Min. One Fall,chono011,chono011,0,0,178,0,60,0,0,5,0,3
+4,chono0112,12,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan,Toshiaki Kawada & Masanobu Fuchi,60 Min. One Fall,chono0113,chono0114,1,-2,178,0,60,0,1,6,1,3
+4,chono5121,17,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Takao Omori & Yoshihiro Takayama,Mitsuharu Misawa & Akira Taue & Jun Akiyama & Yoshinari Ogawa,60 Min. One Fall,chono513,chono513,0,0,178,0,60,0,2,9,7,3
+4,chono0121,13,Masahiro Chono,Masahiro Chono & Giant Silva & Giant Singh,Hiroyoshi Tenzan & Satoshi Kojima & Hiro Saito,60 Min. One Fall,chono013,chono013,0,0,178,0,60,2,0,6,0,3
+4,chono1121,18,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan,Keiji Mutoh & Taiyo Kea,60 Min. One Fall,chono1122,chono1123,1,-2,178,0,60,0,1,7,1,3
+4,chono7121,22,Masahiro Chono,Masahiro Chono & Scott Norton,Shinya Hashimoto & Shinjiro Otani,60 Min. One Fall,chono7123,chono7124,0,0,178,0,60,0,3,8,2,3
+4,chono1131,19,Masahiro Chono,Masahiro Chono,Genichiro Tenryu,60 Min. One Fall,chono1132,chono1133,0,0,162,0,60,0,1,8,1,3
+4,chono7131,21,Masahiro Chono,Masahiro Chono,Naoya Ogawa,60 Min. One Fall,chono7133,chono7134,0,0,162,0,60,0,3,9,2,3
+4,chono0131,14,Masahiro Chono,Masahiro Chono,Mitsuharu Misawa,60 Min. One Fall,chono0132,chono0133,0,0,162,0,60,1,0,8,0,3
+4,chono6141,20,Masahiro Chono,Masahiro Chono & Hiroyoshi Tenzan & Hiro Saito,Tatsumi Fujinami & Manabu Nakanishi & Yuji Nagata,60 Min. One Fall,chono6142,chono6142,0,0,178,0,60,2,0,7,0,3
+5,mutou0030,0,Keiji Mutoh,Keiji Mutoh,Tatsumi Fujinami,60 Min. One Fall,mutou0031,mutou0032,1,-1,162,0,60,2,0,2,0,0
+5,mutou0040,1,Keiji Mutoh,Keiji Mutoh & Shiro Koshinaka,Akira Maeda & Nobuhiko Takada,60 Min. One Fall,mutou0041,mutou0042,1,-1,178,0,60,2,0,5,0,1
+5,mutou0050,2,Keiji Mutoh,Keiji Mutoh,Flair,60 Min. One Fall,mutou006,mutou006,1,-1,162,0,60,4,22,4,4,2
+5,mutou0060,3,Keiji Mutoh,Keiji Mutoh & Masahiro Chono,Hiroshi Hase & Kensuke Sasaki,60 Min. One Fall,mutou0061,mutou0062,1,-1,178,0,60,0,0,4,0,2
+5,mutou0070,4,Keiji Mutoh,Keiji Mutoh & Hiroshi Hase,Rick Steiner & Scott Steiner,60 Min. One Fall,mutou0071,mutou0072,1,-1,178,0,60,0,0,4,0,2
+5,mutou3090,14,Keiji Mutoh,Keiji Mutoh,Antonio Inoki,60 Min. One Fall,mutou3091,mutou3091,0,0,162,0,60,0,0,8,0,3
+5,mutou0080,5,Keiji Mutoh,Keiji Mutoh,Scott Norton,60 Min. One Fall,mutou0081,mutou0082,1,-1,162,0,60,0,0,5,0,2
+5,mutou0090,6,Keiji Mutoh,Keiji Mutoh,Shinya Hashimoto,60 Min. One Fall,mutou0091,mutou0092,1,-1,162,0,60,1,0,6,0,2
+5,mutou4090,15,Keiji Mutoh,Keiji Mutoh,Shinya Hashimoto,60 Min. One Fall,mutou4091,mutou4092,1,-1,162,0,60,1,0,6,0,3
+5,mutou0100,7,Keiji Mutoh,Keiji Mutoh,Nobuhiko Takada,60 Min. One Fall,mutou0101,mutou0102,1,-1,162,0,60,1,0,5,0,2
+5,mutou0110,8,Keiji Mutoh,Keiji Mutoh,Jushin Thunder Liger,60 Min. One Fall,mutou0111,mutou0112,1,-1,162,0,60,0,0,5,0,2
+5,mutou0120,9,Keiji Mutoh,Keiji Mutoh,Kensuke Sasaki,60 Min. One Fall,mutou013,mutou013,1,-1,162,0,60,0,0,6,0,2
+5,mutou5130,16,Keiji Mutoh,Keiji Mutoh,Satoshi Kojima,60 Min. One Fall,mutou5131,mutou5131,1,-1,162,0,60,0,0,7,0,3
+5,mutou0130,10,Keiji Mutoh,Keiji Mutoh,Masahiro Chono,60 Min. One Fall,mutou0131,mutou0132,1,-1,162,0,60,1,0,8,0,2
+5,mutou0140,11,Keiji Mutoh,Keiji Mutoh,Toshiaki Kawada,60 Min. One Fall,mutou0141,mutou0142,1,-1,162,0,60,0,1,7,1,3
+5,mutou1140,17,Keiji Mutoh,Keiji Mutoh,Taiyo Kea,60 Min. One Fall,mutou1141,mutou1142,0,0,162,0,60,0,1,8,1,3
+5,mutou2140,20,Keiji Mutoh,Keiji Mutoh,Genichiro Tenryu,60 Min. One Fall,mutou2141,mutou2142,0,0,162,0,60,0,1,8,1,3
+5,mutou0150,12,Keiji Mutoh,Keiji Mutoh & Hiroshi Hase,Jun Akiyama & Yuji Nagata,60 Min. One Fall,mutou0151,mutou0152,0,0,178,0,60,1,0,7,0,3
+5,mutou1150,18,Keiji Mutoh,Kokushi Muso,Hakushi,60 Min. One Fall,mutou1151,mutou1152,0,0,162,0,60,0,1,8,2,3
+5,mutou2150,21,Keiji Mutoh,Keiji Mutoh & Hiroshi Hase,Shinya Hashimoto & Naoya Ogawa,60 Min. One Fall,mutou2151,mutou2152,0,0,178,0,60,1,3,8,2,3
+5,mutou0160,13,Keiji Mutoh,Keiji Mutoh,Genichiro Tenryu,60 Min. One Fall,mutou0161,mutou0162,0,0,162,0,60,0,1,6,1,3
+5,mutou1160,19,Keiji Mutoh,The Great Muta,Satoshi Kojima,60 Min. One Fall,mutou1161,mutou1162,0,0,162,0,60,0,1,8,1,3
+5,mutou2160,22,Keiji Mutoh,Keiji Mutoh,Mitsuharu Misawa,60 Min. One Fall,mutou2161,mutou2162,0,0,162,0,60,1,2,8,7,3
+6,sakuraba_gm02,2,Kazushi Sakuraba,Kazushi Sakuraba,Yoshihiro Takayama,15 Min. One Fall,sakuraba1050,sakuraba1051,1,0,38,3,15,10,22,5,6,2
+6,sakuraba_gm600,9,Kazushi Sakuraba,Kazushi Sakuraba,Hiromitsu Kanehara,15 Min. One Fall,sakuraba6050,sakuraba6051,1,0,38,3,15,10,22,5,6,2
+6,sakuraba_gm04,0,Kazushi Sakuraba,Kazushi Sakuraba,Minato,15 Min. One Fall,sakuraba1060,sakuraba1060,1,0,38,3,15,10,22,4,6,0
+6,sakuraba_gm601,1,Kazushi Sakuraba,Kazushi Sakuraba,Yoji Anjo,15 Min. One Fall,sakuraba6010,sakuraba6010,1,0,38,3,15,10,22,4,6,0
+6,sakuraba_gm05,3,Kazushi Sakuraba,Kazushi Sakuraba,Orto,60 Min. One Fall,sakuraba10700,sakuraba10701,1,0,38,3,60,0,22,5,6,2
+6,sakuraba_gm602,24,Kazushi Sakuraba,Kazushi Sakuraba,Orto,60 Min. One Fall,sakuraba60700,sakuraba60701,1,0,38,3,60,0,22,5,6,2
+6,sakuraba_gm07,4,Kazushi Sakuraba,Kazushi Sakuraba,Yamamori,60 Min. One Fall,sakuraba1080,sakuraba1081,1,0,38,3,60,2,22,5,6,2
+6,sakuraba_gm604,25,Kazushi Sakuraba,Kazushi Sakuraba,Yamamori,60 Min. One Fall,sakuraba6080,sakuraba6081,1,0,38,3,60,2,22,5,6,2
+6,sakuraba_gm08,5,Kazushi Sakuraba,Kazushi Sakuraba,Minato,60 Min. One Fall,sakuraba1090,sakuraba1091,1,0,38,3,60,0,22,5,6,2
+6,sakuraba_gm605,10,Kazushi Sakuraba,Kazushi Sakuraba,Yoji Anjo,60 Min. One Fall,sakuraba6090,sakuraba6091,1,0,38,3,60,0,22,5,6,2
+6,sakuraba_gm09,6,Kazushi Sakuraba,Kazushi Sakuraba,Kama,60 Min. One Fall,sakuraba112,sakuraba1110,1,0,38,3,60,0,22,6,3,2
+6,sakuraba_gm606,11,Kazushi Sakuraba,Kazushi Sakuraba & Hiromitsu Kanehara,Yuji Nagata & Takizawa,60 Min. One Fall,sakuraba6060,sakuraba6061,1,0,178,0,60,1,0,6,0,2
+6,sakuraba_gm10,7,Kazushi Sakuraba,Kazushi Sakuraba,Rickson Gracie Jr.,60 Min. One Fall,sakuraba1120,sakuraba1120,1,0,4,3,60,0,18,7,3,2
+6,sakuraba_gm607,26,Kazushi Sakuraba,Kazushi Sakuraba,Kama,60 Min. One Fall,sakuraba613,sakuraba713,1,0,38,3,60,0,22,6,3,2
+6,sakuraba_gm11,8,Kazushi Sakuraba,Kazushi Sakuraba,Masao Orihara,60 Min. One Fall,sakuraba21220,sakuraba21221,1,0,38,3,60,0,22,5,2,2
+6,sakuraba_gm608,28,Kazushi Sakuraba,Kazushi Sakuraba,Rickson Gracie Jr.,60 Min. One Fall,sakuraba6130,sakuraba6130,1,0,4,3,60,0,18,7,3,2
+6,sakuraba_gm713,27,Kazushi Sakuraba,Kazushi Sakuraba,Masao Orihara,60 Min. One Fall,sakuraba71320,sakuraba71321,1,0,38,3,60,0,22,5,2,2
+6,sakuraba_gm414,16,Kazushi Sakuraba,Kazushi Sakuraba & Masao Orihara,Yoji Anjo & Yoshihiro Takayama,60 Min. One Fall,sakuraba4140,sakuraba4141,1,0,178,0,60,2,22,6,2,3
+6,sakuraba_gm300,12,Kazushi Sakuraba,Kazushi Sakuraba,Venom,60 Min. One Fall,sakuraba3140,sakuraba3141,1,0,4,3,60,1,18,6,3,3
+6,sakuraba_gm715,29,Kazushi Sakuraba,Kazushi Sakuraba,Venom,60 Min. One Fall,sakuraba7150,sakuraba7151,1,0,4,3,60,1,18,6,3,3
+6,sakuraba_gm301,13,Kazushi Sakuraba,Kazushi Sakuraba,Wanderlei Silva,60 Min. One Fall,sakuraba3150,sakuraba3151,1,0,4,3,60,1,18,8,3,3
+6,sakuraba_gm556,36,Kazushi Sakuraba,Kazushi Sakuraba,Kendo Kashin,60 Min. One Fall,sakuraba5560,sakuraba5560,0,0,162,0,60,1,0,6,0,3
+6,sakuraba_gm546,20,Kazushi Sakuraba,Killer Tiger Mask,Jun Akiyama,60 Min. One Fall,sakuraba547,sakuraba548,0,0,162,0,60,0,2,7,7,3
+6,sakuraba_gm526,18,Kazushi Sakuraba,Tigre,Taiyo Kea,60 Min. One Fall,sakuraba527,sakuraba528,1,0,162,0,60,0,1,7,1,3
+6,sakuraba_gm536,22,Kazushi Sakuraba,Kazushi Sakuraba,Kendo Kashin,60 Min. One Fall,sakuraba5360,sakuraba5360,0,0,162,0,60,1,0,6,0,3
+6,sakuraba_gm516,17,Kazushi Sakuraba,Kazushi Sakuraba,Royce Gracie,60 Min. One Fall,sakuraba517,sakuraba518,0,0,4,3,60,1,18,7,3,3
+6,sakuraba_gm716,30,Kazushi Sakuraba,Kazushi Sakuraba,Wanderlei Silva,60 Min. One Fall,sakuraba7160,sakuraba7161,1,0,4,3,60,1,18,8,3,3
+6,sakuraba_gm5560,37,Kazushi Sakuraba,Kazushi Sakuraba,Masahiro Chono,60 Min. One Fall,sakuraba557,sakuraba558,0,0,162,0,60,1,0,7,0,3
+6,sakuraba_gm548,35,Kazushi Sakuraba,Kazushi Sakuraba,Killer Tiger Mask & Tiger Mask & Tiger Mask II & Tiger Mask III & Tiger Mask IV,"No Time Limit, Battle Royal",sakuraba5480,sakuraba5480,0,0,162,0,0,0,2,6,7,3
+6,sakuraba_gm547,21,Kazushi Sakuraba,Kazushi Sakuraba,Killer Tiger Mask & Tiger Mask & Tiger Mask II & Tiger Mask III & Tiger Mask IV,"No Time Limit, Battle Royal",sakuraba5470,sakuraba5470,0,0,162,0,0,0,2,6,7,3
+6,sakuraba_gm528,34,Kazushi Sakuraba,Kazushi Sakuraba,Tigre & Keiji Mutoh & Masao Orihara & Yoji Anjo & Yoshihiro Takayama & Atsushi Onita,"No Time Limit, Battle Royal",sakuraba5280,sakuraba5280,0,0,162,0,0,0,1,6,1,3
+6,sakuraba_gm527,19,Kazushi Sakuraba,Kazushi Sakuraba,Tigre & Keiji Mutoh & Masao Orihara & Yoji Anjo & Yoshihiro Takayama & Atsushi Onita,"No Time Limit, Battle Royal",sakuraba5270,sakuraba5270,0,0,162,0,0,0,1,6,1,3
+6,sakuraba_gm5360,23,Kazushi Sakuraba,Kazushi Sakuraba,Masahiro Chono,60 Min. One Fall,sakuraba537,sakuraba538,0,0,162,0,60,1,0,7,0,3
+6,sakuraba_gm518,33,Kazushi Sakuraba,Kazushi Sakuraba & Kazushi Sakuraba Jr.,Rickson Gracie & Rickson Gracie Jr.,60 Min. One Fall,sakuraba5180,sakuraba5180,1,0,20,3,60,1,18,7,3,3
+6,sakuraba_gm302,14,Kazushi Sakuraba,Kazushi Sakuraba,Mirko CroCop,60 Min. One Fall,sakuraba317,sakuraba317,0,0,4,3,60,1,18,8,3,3
+6,sakuraba_gm303,15,Kazushi Sakuraba,Kazushi Sakuraba & Kazushi Sakuraba Jr.,Rickson Gracie & Rickson Gracie Jr.,60 Min. One Fall,sakuraba3170,sakuraba3170,0,0,20,3,60,1,18,7,3,3
+6,sakuraba_gm717,31,Kazushi Sakuraba,Kazushi Sakuraba,Mirko CroCop,60 Min. One Fall,sakuraba718,sakuraba718,0,0,4,3,60,1,18,8,3,3
+6,sakuraba_gm718,32,Kazushi Sakuraba,Kazushi Sakuraba & Kazushi Sakuraba Jr.,Rickson Gracie & Rickson Gracie Jr.,60 Min. One Fall,sakuraba7180,sakuraba7180,0,0,20,3,60,1,18,7,3,3
+7,lyger_gm001,0,Jushin Thunder Liger,Yamada,Yoshiaki Fujiwara,15 Min. One Fall,lyger0011,lyger0012,1,0,162,0,15,10,22,2,6,0
+7,lyger_gm002,1,Jushin Thunder Liger,Yamada,Naoki Sano,15 Min. One Fall,lyger0021,lyger0022,1,0,162,0,15,2,0,2,0,1
+7,lyger_gm004,2,Jushin Thunder Liger,Yamada,Keiji Mutoh,15 Min. One Fall,lyger0041,lyger0042,1,0,162,0,15,0,0,3,0,2
+7,lyger_gm005,3,Jushin Thunder Liger,Yamada,Black Tiger,60 Min. One Fall,lyger0051,lyger0052,1,0,162,0,60,4,22,3,4,2
+7,lyger_gm006,4,Jushin Thunder Liger,Jushin Thunder Liger,Kuniaki Kobayashi,60 Min. One Fall,lyger0062,lyger0063,1,0,162,0,60,1,0,3,0,2
+7,lyger_gm206,5,Jushin Thunder Liger,Yamada,Akira Maeda,15 Min. One Fall,lyger2060,lyger2061,1,0,38,3,15,10,22,3,6,2
+7,lyger_gm007,6,Jushin Thunder Liger,Jushin Thunder Liger,Hiroshi Hase,60 Min. One Fall,lyger0071,lyger0072,1,0,162,0,60,0,0,3,0,2
+7,lyger_gm207,7,Jushin Thunder Liger,Jushin Thunder Liger,Yoshiaki Fujiwara,60 Min. One Fall,lyger2070,lyger2071,1,0,38,3,60,2,28,3,6,2
+7,lyger_gm008,8,Jushin Thunder Liger,Jushin Thunder Liger,Pegasus,60 Min. One Fall,lyger0081,lyger0082,1,0,162,0,60,0,0,4,0,2
+7,lyger_gm209,9,Jushin Thunder Liger,Jushin Thunder Liger,Masaaki Satake,60 Min. One Fall,lyger2090,lyger2091,1,0,38,3,60,2,22,4,6,2
+7,lyger_gm309,10,Jushin Thunder Liger,Jushin Thunder Liger,Nobuhiko Takada,60 Min. One Fall,lyger3090,lyger3091,1,0,38,3,60,0,28,4,6,2
+7,lyger_gm409,11,Jushin Thunder Liger,Jushin Thunder Liger,Minoru Suzuki,60 Min. One Fall,lyger4090,lyger4091,1,0,38,3,60,2,14,4,6,2
+7,lyger_gm009,12,Jushin Thunder Liger,Jushin Thunder Liger,Shinjiro Otani,60 Min. One Fall,lyger0091,lyger0092,1,0,162,0,60,0,0,4,0,2
+7,lyger_gm210,13,Jushin Thunder Liger,Jushin Thunder Liger,Aliksandr Karelin,60 Min. One Fall,lyger2100,lyger2101,1,0,38,3,60,0,22,5,6,2
+7,lyger_gm310,14,Jushin Thunder Liger,Jushin Thunder Liger,Shinya Hashimoto,60 Min. One Fall,lyger3100,lyger3101,1,0,162,0,60,1,0,5,0,2
+7,lyger_gm410,15,Jushin Thunder Liger,Jushin Thunder Liger,Masakatsu Funaki,60 Min. One Fall,lyger4100,lyger4101,1,0,38,3,60,1,14,5,6,2
+7,lyger_gm010,16,Jushin Thunder Liger,Jushin Thunder Liger,Naoki Sano,60 Min. One Fall,lyger0100,lyger0101,1,0,162,0,60,1,0,5,0,2
+7,lyger_gm211,17,Jushin Thunder Liger,Jushin Thunder Liger,Akira Maeda,60 Min. One Fall,lyger2110,lyger2111,1,0,38,3,60,0,22,6,6,3
+7,lyger_gm011,18,Jushin Thunder Liger,Jushin Thunder Liger,The Great Muta,60 Min. One Fall,lyger0110,lyger0111,1,0,162,0,60,0,0,6,0,3
+7,lyger_gm213,24,Jushin Thunder Liger,Jushin Thunder Liger,Mirko CroCop,60 Min. One Fall,lyger2130,lyger2131,1,0,4,3,60,1,18,7,3,3
+7,lyger_gm014,22,Jushin Thunder Liger,Jushin Thunder Liger,Naomichi Marufuji,60 Min. One Fall,lyger0141,lyger0142,1,0,162,0,60,0,2,6,7,3
+7,lyger_gm012,19,Jushin Thunder Liger,Jushin Thunder Liger,Naoya Ogawa,60 Min. One Fall,lyger0120,lyger0121,1,0,162,0,60,0,0,6,0,3
+7,lyger_gm214,25,Jushin Thunder Liger,Jushin Thunder Liger,Rickson Gracie,60 Min. One Fall,lyger2140,lyger2141,1,0,4,3,60,1,18,8,3,3
+7,lyger_gm015,23,Jushin Thunder Liger,Jushin Thunder Liger,Mitsuharu Misawa,60 Min. One Fall,lyger0150,lyger0151,1,0,162,0,60,1,22,8,6,3
+7,lyger_gm013,20,Jushin Thunder Liger,Jushin Thunder Liger,Antonio Inoki,60 Min. One Fall,lyger013,lyger013,1,0,162,0,60,1,0,7,0,3
+7,lyger_gm113,21,Jushin Thunder Liger,Jushin Thunder Liger,Masahiro Chono,60 Min. One Fall,lyger1130,lyger1131,1,0,162,0,60,0,0,7,0,3

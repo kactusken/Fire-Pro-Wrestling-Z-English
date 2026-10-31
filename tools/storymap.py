@@ -2,11 +2,11 @@
 """Story mode reference: the match table and the route map's data, from the scene scripts.
 
   storymap.py            write docs/story_matches.csv, the match tables in docs/STORY.md and the data
-                         block of docs/route-map/index.html
+                         block of docs/guide/index.html (its Route Map)
   storymap.py --check    exit 1 if either is out of date (tools/check.py)
   storymap.py --json F   also dump the route map's data, indented, for inspection
 
-Reads the original scripts (tools/storyflow.py walks every path), the English story text
+Reads the scripts as players get them (tools/storyflow.py walks every path), the English story text
 (translation/script/story0N.txt, real names) and the scene titles and summaries in
 docs/story_scenes.csv (scenario, label, title, summary - written by hand from the script).
 
@@ -31,7 +31,7 @@ import storyflow  # noqa: E402
 DOCS = paths.ROOT / 'docs'
 SCENES_CSV = DOCS / 'story_scenes.csv'
 MATCHES_CSV = DOCS / 'story_matches.csv'
-PAGE = DOCS / 'route-map' / 'index.html'
+PAGE = DOCS / 'guide' / 'index.html'
 STORY_MD = DOCS / 'STORY.md'
 DATA_START = '<script type="application/json" id="story-data">'
 DATA_END = '</script>'
@@ -40,21 +40,12 @@ SCENARIOS = {1: 'Mitsuharu Misawa', 2: 'Atsushi Onita', 3: 'Shinya Hashimoto', 4
              5: 'Keiji Mutoh', 6: 'Kazushi Sakuraba', 7: 'Jushin Thunder Liger'}
 RULES = {'時間無制限　1本勝負': 'No Time Limit, One Fall',
          '時間無制限　バトルロイヤル': 'No Time Limit, Battle Royal'}
-# Scenario 7 plays no matches: a card "試合（ＶＳname）" and a Win / Lose choice
-LIGER = {'藤原': 'Fujiwara', '佐野': 'Sano', '武藤': 'Mutoh', 'マーク・ロコ': 'Mark Rocco',
-         '小林邦明': 'Kuniaki Kobayashi', '馳浩': 'Hiroshi Hase', 'ワイルドペガサス': 'Wild Pegasus',
-         '大谷晋二郎': 'Shinjiro Otani', '佐野直喜': 'Naoki Sano', 'グレート・ムタ': 'The Great Muta',
-         'アントニオ猪木': 'Antonio Inoki', '金丸義信': 'Yoshinobu Kanemaru', '三沢光晴': 'Mitsuharu Misawa',
-         '蝶野': 'Chono', '前田＜スパーリングマッチ＞': 'Maeda (sparring match)',
-         '藤原嘉明': 'Yoshiaki Fujiwara', '佐竹': 'Satake', 'カレリン': 'Karelin',
-         '前田２': 'Maeda (retirement match)', 'ミルコ': 'Mirko', 'ヒクソン': 'Rickson', '高田': 'Takada',
-         '橋本': 'Hashimoto', 'ルッテン': 'Rutten', '': ''}
-NOTES = {'lyger_gm012': 'the card leaves the name blank; the story makes it Naoya Ogawa',
-         'lyger_gm410': 'the card leaves the name blank; the story makes it Masakatsu Funaki',
-         'lyger_gm014': 'the card says Kanemaru, but the story and the chapter menu say Marufuji'}
 # card names the codes print short: Ｓ + Tiger Mask is Super Tiger, %sa0 the story's Guerrero
 CARD_FIX = {'ＳTiger Mask': 'Super Tiger', 'Guerrero': 'Chavo Guerrero'}
-WIN, LOSE = '勝ち'.encode('cp932'), '負け'.encode('cp932')
+# A match record of the .STO (a count at header +0x10, then 44 bytes each): what the guide's tables show
+MATCH_RECORD = 44
+SETTINGS = {'rule': 0x1E, 'rule2': 0x20, 'minutes': 0x21, 'venue': 0x23, 'ring': 0x24, 'com': 0x25,
+            'referee': 0x26, 'critical': 0x29}
 
 
 class Names:
@@ -192,13 +183,6 @@ def scenario_data(n, names, titles):
                 if en:
                     lines.append([sp, en])
         matches = []
-        if n == 7 and cards:
-            opp = re.sub(r'(?s).*ＶＳ　?', '', cards[0]).split('）')[0].strip('　')
-            ch = v['choices'][0] if v['choices'] else []
-            res = {s.strings[c]: lab for lab, c in ch}
-            matches.append({'match': None, 'hero_side': hero, 'opponents': LIGER.get(opp, opp),
-                            'rules': '(not played: you pick Win or Lose)',
-                            'win': res.get(WIN, ''), 'lose': res.get(LOSE, ''), 'win_score': None})
         for mid in v['matches']:
             side, opp, rules = card(n, cards[0], names, hero) if cards else (hero, '', '')
             won = [x for x in v['exits'] if f'result(match {mid}) < 2' in x['when']]
@@ -206,14 +190,16 @@ def scenario_data(n, names, titles):
             if not won and not lost:
                 won = lost = v['exits'][:1]
             match_vs[mid] = opp
+            rec = s.h[4] + 4 + mid * MATCH_RECORD
             matches.append({'match': mid, 'hero_side': side, 'opponents': opp, 'rules': rules,
                             'win': won[0]['to'] if won else '', 'lose': lost[0]['to'] if lost else '',
-                            'win_score': won[0]['score'] if won else 0})
+                            'win_score': won[0]['score'] if won else 0,
+                            'lose_score': lost[0]['score'] if lost else 0,
+                            **{f: s.data[rec + at] for f, at in SETTINGS.items()}})
         for mt in matches:
-            mt['notes'] = NOTES.get(k, '')
-            rows.append({'scenario': n, 'scene': k, 'match': '' if mt['match'] is None else mt['match'],
-                         'hero': hero, **{f: mt[f] for f in ('hero_side', 'opponents', 'rules', 'win', 'lose')},
-                         'win_score': '' if mt['win_score'] is None else mt['win_score'], 'notes': mt['notes']})
+            rows.append({'scenario': n, 'scene': k, 'match': mt['match'], 'hero': hero,
+                         **{f: mt[f] for f in ('hero_side', 'opponents', 'rules', 'win', 'lose', 'win_score',
+                                               'lose_score', *SETTINGS)}})
         choices = []
         for ch in v['choices']:
             choices.append([{'to': lab, 'caption': names.text(eng.get(f'C{n}.{c:03d}', ('', ''))[1]
@@ -250,9 +236,9 @@ def build():
     w.writeheader()
     w.writerows(rows)
     table = ('# Story mode matches, from the scene scripts and match cards (tools/storymap.py; real names).\n'
-             '# match: the game() number (empty in scenario 7, where you pick Win or Lose); win / lose: the\n'
-             '# scene each result leads to (the same scene = the result only changes the score); win_score:\n'
-             '# story score the script adds for a win.\n' + o.getvalue())
+             '# match: the game() number; win / lose: the scene each result leads to (the same scene = the\n'
+             '# result only changes the score); win_score, lose_score: story score the script adds for each\n'
+             '# result; rule ... critical: the match record\'s settings, as stored.\n' + o.getvalue())
     return data, table, rows
 
 
@@ -265,16 +251,16 @@ def story_with(rows):
         a, b = f'<!-- matches {n} -->', f'<!-- /matches {n} -->'
         if a not in text:
             continue
-        out = ['**Matches** (in story order; win points = what the scene adds for a win, before the match bonus)', '',
-               '| Match | Scene | Your side | Opponents | Rules | Win -> | Lose -> | Win points |',
-               '|---|---|---|---|---|---|---|---|']
+        out = ['**Matches** (in story order; win and loss points = what the scene adds for each result, before '
+               'the match bonus)', '',
+               '| Match | Scene | Your side | Opponents | Rules | Win -> | Lose -> | Win points | Loss points |',
+               '|---|---|---|---|---|---|---|---|---|']
         for r in rows:
             if r['scenario'] != n:
                 continue
-            note = f" ({r['notes']})" if r['notes'] else ''
-            out.append(f"| {r['match'] if r['match'] != '' else '-'} | {r['scene']} | {r['hero_side']} | "
-                       f"{r['opponents'] or '?'}{note} | {r['rules']} | {r['win']} | {r['lose']} | "
-                       f"{r['win_score'] if r['win_score'] not in ('', 0) else ''} |")
+            out.append(f"| {r['match']} | {r['scene']} | {r['hero_side']} | "
+                       f"{r['opponents'] or '?'} | {r['rules']} | {r['win']} | {r['lose']} | "
+                       f"{r['win_score'] or ''} | {r['lose_score'] or ''} |")
         i, j = text.index(a) + len(a), text.index(b)
         text = text[:i] + '\n' + '\n'.join(out) + '\n' + text[j:]
     return text
@@ -284,6 +270,8 @@ def page_with(data):
     if not PAGE.exists():
         return None
     page = PAGE.read_text(encoding='utf-8')
+    if DATA_START not in page:
+        sys.exit(f'{paths.show(PAGE)}: no story-data block. Put back {DATA_START}{DATA_END}')
     a = page.index(DATA_START) + len(DATA_START)
     b = page.index(DATA_END, a)
     blob = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')

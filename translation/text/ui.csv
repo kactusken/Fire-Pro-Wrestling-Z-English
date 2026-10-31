@@ -20,7 +20,7 @@ id,refs,max_bytes,japanese,english,notes
 00394150,1,,ゆきぐにプﾛﾚｽ,<Yukiguni> Pro,near: 真田道場 / 関西プﾛﾚｽ
 00394160,1,,ZIP JAPAN,<ZIP JAPAN>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
 00394170,1,,関西プﾛﾚｽ,<Kansai Pro>,near: ゆきぐにプﾛﾚｽ / グﾛｰバﾙジｬパﾝ
-00394180,1,,グﾛｰバﾙジｬパﾝ,Global Japan,near: 関西プﾛﾚｽ / 武蔵 DynamicVer.
+00394180,1,,グﾛｰバﾙジｬパﾝ,<Global Japan>,near: 関西プﾛﾚｽ / 武蔵 DynamicVer.
 00394190,1,,MUSCLE-1,<MUSCLE-1>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
 003941A0,1,,武蔵 DynamicVer.,<Musashi> Dynamic Ver.,near: グﾛｰバﾙジｬパﾝ / 壱富士、弐鷹、参茄子
 003941B8,1,,SpinningPancer,SpinningPancer,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font; music title"
@@ -1252,6 +1252,7 @@ id,refs,max_bytes,japanese,english,notes
 003AA800,1,,ﾄﾝガ,Tonga,near: ｵｰｽﾄﾗﾘｱ / 超竜館
 003AA808,1,,SWA,SWA,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
 003AA810,1,,NEO-ONE,<NEO-ONE>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA818,1,,U.N.O,<U.N.O>,ring name: UFO in the real names (owner 2026-10-30)
 003AA820,1,,EWF,<EWF>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
 003AA828,2,,超竜館,<Choryukan>,near: ﾄﾝガ / ﾊｲｸﾗｽ
 003AA830,1,,S-DOJYO,<S-DOJYO>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
@@ -1259,6 +1260,7 @@ id,refs,max_bytes,japanese,english,notes
 003AA840,1,,THREE-A,<THREE-A>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
 003AA848,1,,ﾊｲｸﾗｽ,<High Class>,near: 超竜館 / 女子
 003AA850,1,,WPA,<WPA>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
+003AA858,1,,S-1,<S-1>,ring name: K-1 in the real names (owner 2026-10-30)
 003AA860,1,,女子,Women,near: ﾊｲｸﾗｽ / グﾚｲ
 003AA868,1,,BLADE,<BLADE>,"ASCII in the original (fpztext.ASCII_SHOWN): pair glyphs, not the wide font"
 003AA870,1,,グﾚｲ,Grey,near: 女子 / ＤＤＴ

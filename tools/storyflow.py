@@ -2,14 +2,14 @@
 """Story mode flow: every scene, choice, match and branch of the seven scenarios.
 
   storyflow.py dump [N]          print scenario N's (default all) scenes as a readable outline
-  storyflow.py json OUT.json     everything as JSON (the guide's route map, docs/story_*.csv)
+  storyflow.py json OUT.json     everything as JSON (the route map in docs/guide/, docs/story_*.csv)
 
 The .STO files are compiled scripts for a small stack machine (docs/TECHNICAL.md "Story
-scripts"). Header: +0x30 symbol count, +0x34 code start; symbols at 0x40, 0x38 bytes each (u32,
-u8, name, ..., +0x34 code position + 1); code = 16-byte instructions (runtime pointer, opcode,
+scripts"). Header: +0x30 symbol count, +0x34 code start; symbols at 0x40, 0x38 bytes each (name
+at +5; the u32 at -4 is the code position, counted from header +0x24 + 0x20); code = 16-byte instructions (runtime pointer, opcode,
 operand, value) up to the string table. Opcodes used here:
    0 load var (operand = index, value 1 local / 16 global)   1 address of var   4 assign
-   2 push (operand 1 int, 2 string id)   3 pop   5 add   11 compare (44 ==, 45 !=, 46 <, 47 <=, 48 >, 49 >=)
+   2 push (operand 1 int, 2 string id)   3 pop   5 add   10 negate   11 compare (44 ==, 45 !=, 46 <, 47 <=, 48 >, 49 >=)
   12 return   13 jump (function-relative)   14 jump if false   16 call script function
   20 show a message   26 choice menu (6 layout ints, then label/caption pairs)
   28 go to scene (at once: nothing after it runs)
@@ -27,6 +27,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import fpz  # noqa: E402
 import fpztext  # noqa: E402
+import ligerstory  # noqa: E402
+import storywrestlers  # noqa: E402
 
 CMP = {44: '==', 45: '!=', 46: '<', 47: '<=', 48: '>', 49: '>='}   # op11, table 0x3A6740
 
@@ -38,7 +40,7 @@ def load(data):
     for k in range(h[12]):
         o = 0x40 + k * 0x38
         name = data[o + 5:o + 0x30].split(b'\0')[0].decode('latin1')
-        syms.append((name, struct.unpack_from('<I', data, o + 0x34)[0] - 1))
+        syms.append((name, struct.unpack_from('<I', data, o - 4)[0] + (h[9] + 0x20 - h[13]) // 16))
     ins = [struct.unpack_from('<3I', data, o + 4) for o in range(h[13], h[10] + 0x20, 16)]
     return s, syms, ins
 
@@ -153,7 +155,10 @@ def walk(s, syms, ins, start, end):
                 n = t
                 del stack[-n:]
                 stack.append(Expr('0'))
-            elif op in (6, 7, 8, 9, 10, 21, 22, 24, 25):
+            elif op == 10:                  # unary minus (handler 0x1E7AC8)
+                v = stack.pop()
+                stack.append(Expr(str(-int(v)) if v.lstrip('-').isdigit() else f'(-{v})'))
+            elif op in (6, 7, 8, 9, 21, 22, 24, 25):
                 if len(stack) >= 2:
                     b, a_ = stack.pop(), stack.pop()
                     stack.append(Expr(f'({a_} op{op} {b})'))
@@ -165,20 +170,21 @@ def walk(s, syms, ins, start, end):
     return paths
 
 
+SHARED = 38
+
+
 def scene_functions(s, syms, ins):
-    """[(label, (start, end))]: the scene labels (symbols after the 38 shared script functions)
-    paired in order with the scene functions (non-empty functions from the first that shows a
-    message); a trailing stub function has no label."""
-    funcs = [f for f in functions(ins) if f[1] - f[0] > 2]
-    first = next(i for i, f in enumerate(funcs) if any(ins[j][0] == 20 for j in range(*f)))
-    return list(zip([n for n, _ in syms[SHARED:]], funcs[first:]))
-
-
-SHARED = 38       # key_wait ... quake: the same script functions at the top of every file
+    """[(label, (start, end))]: each scene label (the symbols after the 38 shared script functions)
+    with the function holding its code position. A trailing stub function has no label."""
+    funcs = functions(ins)
+    return [(name, next(f for f in funcs if f[0] <= pos <= f[1])) for name, pos in syms[SHARED:]]
 
 
 def scenario(n):
+    """The scenario as players get it: scenario 7 can only be played rebuilt (tools/ligerstory.py)."""
     data = fpztext.story_archive().read(f'SCENA\\STORY0{n}.STO')
+    if n == 7:
+        data = ligerstory.restore(data, storywrestlers.slots())
     s, syms, ins = load(data)
     scenes = {}
     for name, f in scene_functions(s, syms, ins):

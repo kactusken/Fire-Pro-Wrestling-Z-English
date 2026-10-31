@@ -59,6 +59,9 @@ REFEREE_GREEN = [      # the 8 built-in edit referees' unset colours: (address, 
     (0x2168E6, 4),
 ]
 CODE_PATCHES = [
+    # Group 'record-labels': always part of the English build. The record screen's labels (table
+    # 0x331B68) use 分 for draws and the time's "minutes" from one string; draws get 引分 (owner 2026-10-30).
+    ('record-labels', 'SLPM_623.42', 0x331B70, 0x003AC1D8, 0x003AC218, 'record screen: draws, not minutes'),
     # Group 'brightness': always part of the English build (owner 2026-10-29: the dim title and main
     # menu are to be full brightness, not optional - docs/TECHNICAL.md "Title and main menu
     # brightness"). Title screen: the title code draws the logo pieces with colour
@@ -231,7 +234,7 @@ CODE_PATCHES = [
     # Its test modes are gone: the number it returns goes to the normal main-menu switch.
     ('debug-menu', 'SLPM_623.42', 0x151758, 0x0C05591C, 0x0C0546AA, 'developer mode select instead of the main menu'),
 ]
-ALWAYS_GROUPS = {'brightness', 'edit-colours', 'cpu-labels'}       # in every translated build, not a choice (--unlocks can't drop them)
+ALWAYS_GROUPS = {'brightness', 'edit-colours', 'cpu-labels', 'record-labels'}       # in every translated build, not a choice (--unlocks can't drop them)
 UNLOCK_GROUPS = sorted(({p[0] for p in CODE_PATCHES} | {'rings', 'moves'}) - ALWAYS_GROUPS)
 PLAYER_GROUPS = [g for g in UNLOCK_GROUPS if not g.startswith('debug-')]
 DEFAULT_GROUPS = set()               # groups in the plain English build (owner decides; --unlocks all = PLAYER_GROUPS)

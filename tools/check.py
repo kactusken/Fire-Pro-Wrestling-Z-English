@@ -29,7 +29,7 @@ CHECKS = [
     ('lint', [PY, 'tools/lint.py'], True),
     # ('layout', [PY, 'tools/storycheck.py'], False),
     # ('vwf hook', [PY, 'tools/test_vwf.py'], False),
-    # ('guide data', [PY, 'tools/guidedata.py', '--check'], False),   # a reference page's data block (pagedata.py)
+    ('guide data', [PY, 'tools/guidedata.py', '--check'], False),   # docs/guide/index.html's data block (pagedata.py)
     ('story map', [PY, 'tools/storymap.py', '--check'], False),     # docs/story_matches.csv, the route map's data
 ]
 
