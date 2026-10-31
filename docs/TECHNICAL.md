@@ -343,6 +343,7 @@ at Game Speed 100%; gauges read 0-65535. The match clock runs at double speed: o
   Staggered adds a wrestler every 2 clock minutes. **Round Robin (Tug):** 1 point a win, a tied total goes to a picked playoff
   (*verified in game*, owner 2026-10-30). **Victory Road:** a loss offers Continue; Blue Corner is 1P or CP, and CP wins count
   (*verified in game*, owner 2026-10-30).
+- **Criticals** (0x12D240): the type and Critical % gates, then two rolls, the second a flat 10%, so 10% a hit is the ceiling. A critical zeroes every gauge the move damages (*verified headless*, test53, with 0x12D438 forced; the test cheat is in `tools/pnach.py`).
 - **Weapons:** three motions, about 1:2:4 damage. **Drag:** R1 alone.
 
 ## Images

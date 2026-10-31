@@ -27,6 +27,10 @@ import paths  # noqa: E402
 # (section, description, [(type, address, value)]) - type: byte, short, word (EE memory)
 # Sections with a backslash group the cheats in PCSX2's list: 'Money\\AP 99,999'.
 CHEATS = [
+    # the critical check's last step, 0x12D438: movz s0, zero, v0 -> li s0, 1 (docs/TECHNICAL.md "Match rules")
+    ('Match\\Every matching hit is a critical', 'Any hit whose move matches the wrestler'"'"'s Critical type is a critical, at any stamina, for both '
+     'wrestlers. Turn it off after use. Critical % must not be None.',
+     [('word', 0x12D438, 0x24100001)]),
     # ('Calendar\\Month = November (turn off again!)', 'Jumps to November so the December events come '
     #  'soon. Turn it on, end the month once, turn it off.', [('byte', 0x82aef3, 11)]),
 ]
