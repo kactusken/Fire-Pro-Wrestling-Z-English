@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""The guide's data block (docs/guide/index.html, block id page-data): every table the game holds.
+"""The data blocks of the guide's four pages (docs/guide/, block id page-data): every table the game holds.
 
   python3 tools/guidedata.py [--check]
 
 Reads the original's tables from extracted/ (tools/fpzrecord.py the wrestlers, tools/fpzmoves.py the
 moves, tools/fpztables.py the modes and match engine) with the English of translation/text/, in both
 name versions, so the page always shows the patch's names; and docs/story_matches.csv (tools/storymap.py).
---check only compares (tools/check.py runs it). The page itself comes from private/work/guide/page/:
-assemble.py there leaves this block empty, and this tool fills it.
+--check only compares, on all four pages (tools/check.py runs it). The pages themselves come from
+private/work/guide/page/: assemble.py there leaves these blocks empty, and this tool fills them.
 
-The block's shape, for the page's tables.js. A value that differs between the name versions is
-[real, parody], any other is plain.
-  names     {key: [real, parody]} for <span class="nm" data-k="key"> in the prose: wrestlers by the slug
-            of the real name (mitsuharu-misawa), p-<slug> promotions, ref-<slug> referees, m-<slug> moves
-            that differ, ring-<slug> rings, and the tokens of name_tokens.csv as they stand
-  entries   the guide search's wrestlers
+Each page gets only what it uses (page_blocks below): Guide wn and its rules and engine tables, Story
+wslugs and the story tables, Wrestlers the roster and what the dialog and the move card need, Create
+the moves and the editors' tables. The shapes, for the page's tables/ parts. A value that differs
+between the name versions is [real, parody], any other is plain.
+  wn        the wrestlers' names, for the Guide's links to their profiles
+  wslugs    the roster's real names as #entry- slugs, for the Story page's links to their profiles
   roster    [{n name, k nick, j Japanese, p promotion, c class, st style, cr critical, sk skill, rv reversals,
             f finisher, h, w, o hometown, b birth date, stn stance, sz size, th theme, v voices, pts edit
             points, hid locked at the start, se Skill Edit values (in seLabels order), pa 22 ratings,
@@ -24,7 +24,8 @@ The block's shape, for the page's tables.js. A value that differs between the na
             a [main, sub], e [main, sub], x flags, c critical classes, u used by, s own loss, w weakened by,
             new, ul (All Unlocked only)}]: every move a player can use
   lists     the 43 Move Edit lists; slots the 78 rows; ai the CPU Logic situations; choice the Skill Edit
-            lists; t all other tables (tools/fpztables.py) and story, the match tables by scenario
+            lists; t all other tables (tools/fpztables.py) and story, the match tables by scenario.
+            On Wrestlers a move keeps only its first list and lists only their titles: the card's use.
 """
 import argparse
 import csv
@@ -183,46 +184,15 @@ def story_block(t, z):
     return out
 
 
-def name_keys(z, roster, tr, moves):
-    """The names map: every switchable name the prose might use."""
-    out = {}
-
-    def add(key, value):
-        if isinstance(value, list):
-            out.setdefault(key, value)
-    for r in roster:
-        add(slug(r['n'][0] if isinstance(r['n'], list) else r['n']), r['n'])
-    for p in tr['promotions']:
-        add('p-' + slug(p['name'][0] if isinstance(p['name'], list) else p['name']), p['name'])
-    for p in tr['referees']:
-        add('ref-' + slug(p['name'][0] if isinstance(p['name'], list) else p['name']), p['name'])
-    for p in tr['rings']:
-        add('ring-' + slug(p['name'][0] if isinstance(p['name'], list) else p['name']), p['name'])
-    for m in moves:
-        add('m-' + slug(m['n'][0] if isinstance(m['n'], list) else m['n']), m['n'])
-    for token, (real, parody) in sorted(fpztext.name_tokens().items()):
-        if real != parody:
-            out.setdefault(token, [real, parody])
-    return out
-
-
 def build():
     z = fpzrecord.Tables()
     db = fpzmoves.load(z)
     t = fpztables.Tables(z, 'real'), fpztables.Tables(z, 'parody')
     tables = both(*(x.all() for x in t))
     roster, shape = roster_rows(z)
-    moves = moves_block(db)
     rows = z.rows()
-    by_id = {m['i']: m for m in moves}
-    pick = lambda v: v[0] if isinstance(v, list) else v
-    promo = [p['name'] for p in tables['promotions']]
-    entries = [{'id': f'w{k}', 'name': pick(r['n']) if not isinstance(r['n'], list) else ' / '.join(r['n']), 'group': 'Wrestler',
-                'text': f"{pick(promo[r['p']])} - finisher {pick(by_id[r['f']]['n']) if r['f'] in by_id else '?'}"}
-               for k, r in enumerate(roster)]
     tables['story'] = story_block(t, z)
-    return {'names': name_keys(z, roster, tables, moves), 'entries': entries, 'roster': roster, 'moves': moves,
-            'lists': lists_block(db, rows),
+    return {'roster': roster, 'moves': moves_block(db), 'lists': lists_block(db, rows),
             'slots': [{'l': r['label'], 'b': r['buttons'], 'k': r['list'], 'br': r['breath']} for r in rows],
             'groups': MOVE_FIRST_ROW_GROUPS, 'seLabels': shape['seLabels'], 'pa': shape['pa'], 'ai': shape['ai'],
             'atk': db['types']['attack'], 'def': db['types']['param_edit'][11:],
@@ -231,16 +201,34 @@ def build():
             't': tables}
 
 
+def page_blocks(d):
+    """{page under docs/guide/: its data block}: each page gets only what its tables use."""
+    t = d['t']
+    tables = lambda *names: {n: t[n] for n in names}
+    real = lambda n: n[0] if isinstance(n, list) else n
+    return {
+        'index.html': {'wn': [r['n'] for r in d['roster']], 'atk': d['atk'], 'choice': {k: d['choice'][k] for k in ('style', 'rev')},
+                       't': tables('save_files', 'size', 'critical', 'styles', 'breath', 'skills', 'layouts', 'settings_rows',
+                                   'rings', 'venues', 'referees', 'music', 'victory_road')},
+        'story/index.html': {'wslugs': sorted(slug(real(r['n'])) for r in d['roster']), 't': tables('story')},
+        'wrestlers/index.html': {'roster': d['roster'], 'moves': [{**m, 'l': m['l'][:1]} for m in d['moves']], 'lists': [{'t': x['t']} for x in d['lists']],
+                                 **{k: d[k] for k in ('slots', 'groups', 'seLabels', 'pa', 'ai', 'atk', 'def', 'choice')},
+                                 't': tables('promotions', 'teams')},
+        'create/index.html': {**{k: d[k] for k in ('moves', 'lists', 'slots', 'pa', 'atk', 'def')}, 't': tables('skill_costs', 'affinity', 'cpu_logic', 'skills')},
+    }
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0], epilog=paths.FOLDER_HELP,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--check', action='store_true', help='only check that the page is up to date')
     args = ap.parse_args(paths.configure(sys.argv[1:] if argv is None else argv))
-    page = paths.DOCS / 'guide' / 'index.html'
-    if not page.exists():
-        sys.exit(f'{paths.show(page)}: not there yet - run private/work/guide/page/assemble.py first')
-    if pagedata.write(page, build(), args.check) and args.check:
-        print(f'{paths.show(page)}: up to date')
+    pages = {paths.DOCS / 'guide' / k: v for k, v in page_blocks(build()).items()}
+    gone = [paths.show(p) for p in pages if not p.exists()]
+    if gone:
+        sys.exit(f'{", ".join(gone)}: not there yet - run private/work/guide/page/assemble.py first')
+    if all([pagedata.write(p, data, args.check) for p, data in pages.items()]) and args.check:
+        print('docs/guide/: all four pages up to date')
     return 0
 
 

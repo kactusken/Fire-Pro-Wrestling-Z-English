@@ -77,19 +77,20 @@ SIZE_DAMAGE, SIZE_BREATH = 0x2DFE78, 0x3AA950     # u16 4 x 4, u16 x 4, of 256
 SKILL_FLAGS = 0x2E2068                  # u32 x 22: the bits a skill sets (0x121354)
 # What each basic skill does (read in the match code, 0x12CF00-0x12DA40, 0x121354), by Skill Edit list position
 SKILL_EFFECTS = {
-    'Star Power': 'Below 4% stamina, the next hit after a taunt does 20% more. Any hit that lands clears the taunt.',
-    'Quick Return': 'Stays down an eighth as long at 5-20% stamina with over 60% spirit.',
-    'Comeback': 'Below 10% stamina with over 30% spirit: double critical chance.',
-    'Fast Start': 'Above 70% stamina: +1 main and sub attack.',
-    'Guts': 'Spirit emptied by a submission hold: gives up only 5% of the time.',
-    'Fightback': 'Below 2% stamina: +2 attack.',
-    'One-Hit KO': 'Finisher does 2.5x, the first two times it lands.',
-    'Bleeding': 'While bleeding, moves do 10% more.',
-    'Hardcore': 'Holding a weapon: +3 attack; hit by one: +3 defence.',
-    'Focus': 'Critical chance against him halved from Striking, Submission and Technical types.',
-    'Flexibility': 'Critical chance against him quartered from Suplex and Power types. Not Finisher type.',
-    'Hard Body': 'Pinned after a hit under about 8% of stamina, a kick-out press gets him out at once.',
+    'Star Power': 'Below 4% stamina, after a taunt: his next hit does 20% more damage. Any hit that lands uses it up.',
+    'Quick Return': 'Gets up eight times faster when his stamina is low but his spirit is high (5-20% stamina with over 60% spirit).',
+    'Comeback': 'Below 10% stamina with over 30% spirit: twice the chance to land a critical.',
+    'Fast Start': 'Above 70% stamina: +1 to the attack ratings behind every move he does.',
+    'Guts': 'When a submission hold empties his spirit, he gives up only 5% of the time instead of every time.',
+    'Fightback': 'Below 2% stamina: +2 to the attack ratings behind every move.',
+    'One-Hit KO': 'His finisher does 2.5 times its damage, the first two times he lands it in a match.',
+    'Bleeding': 'While he is bleeding, his moves do 10% more damage.',
+    'Hardcore': 'With a weapon: +3 to his attack ratings. Hit with one: +3 to his defence ratings.',
+    'Focus': 'Half as likely to suffer a critical from a Striking, Submission or Technical opponent.',
+    'Flexibility': 'A quarter as likely to suffer a critical from a Suplex or Power opponent. Finisher criticals are not reduced.',
+    'Hard Body': 'Small moves do not leave him open to a pin: pinned after a hit under about 8% of his stamina, holding the kick-out gets him out at the last moment, even with no spirit left.',
 }
+SKILL_NOTES = {'Toukon': "Antonio Inoki's skill.", 'Monster': "Jumbo Tsuruta's skill.", 'Ishin': "Riki Choshu's skill."}
 FULL_ROPES = 100
 
 
@@ -381,7 +382,7 @@ class Tables:
         out = []
         for k, n in enumerate(i['choices']):
             parts = [] if k < 13 else [b for f, b in basic.items() if flags[k] & f]
-            out.append({'name': n, 'pts': i['cost'][k], 'roster': counts[k], 'effect': SKILL_EFFECTS.get(n, ''), 'parts': parts})
+            out.append({'name': n, 'pts': i['cost'][k], 'roster': counts[k], 'effect': SKILL_EFFECTS.get(n, ''), 'note': SKILL_NOTES.get(n, ''), 'parts': parts})
         return out
 
     def affinity(self):

@@ -9,7 +9,11 @@ because each cell is drawn as a pair of letters, in a font made for it.
 
 **[See screenshots](docs/SCREENSHOTS.md)** of the patched game.
 
-**[Read the player's guide](https://kactusken.github.io/Fire-Pro-Wrestling-Z-English/guide/)**: how to play, every mode, all 244 wrestlers and 1,448 moves with their numbers, the story walkthroughs and route map, and the secrets.
+## Highlights
+
+- **A full player's guide.** [Read it here](https://kactusken.github.io/Fire-Pro-Wrestling-Z-English/guide/): how to play, every mode and rule, walkthroughs and a route map for every story, profiles of all 244 wrestlers, a guide to creating wrestlers, and all 1,448 moves with their numbers.
+- **Jushin Thunder Liger's story, playable.** A complete seventh scenario sits on the disc, but the game can't open it, and each of its matches is only a Win or Lose menu. The *All Unlocked* patches rebuild it as a working story: 26 real matches with their own rings, venues and referees, Game Over and Retry, and both endings.
+- **Six extra moves.** Phoenix Kick, Eiffel de Parachute, Blazing Tornado, Super Muscle Buster, Deadly Go-Round and Jumping Splash are finished moves that no list offers. The *All Unlocked* patches add them to Move Edit.
 
 > **Status: first public beta.** Everything in scope is translated, and every game mode has been
 > played in PCSX2, with the wrestler and team names checked in both name sets. Not every story route
@@ -86,8 +90,8 @@ the game's formats.
 | [docs/TECHNICAL.md](docs/TECHNICAL.md) | The game's disc layout, archives, compression, data formats, and memory map |
 | [docs/PLATFORM.md](docs/PLATFORM.md) | PS2 pitfalls for this kind of work |
 | [docs/HIDDEN_CONTENT.md](docs/HIDDEN_CONTENT.md) | Unlockables, debug features, and unused and cut content |
-| [docs/guide/](docs/guide/index.html) | The player's guide (one page; data from `tools/guidedata.py` and `tools/storymap.py`) |
-| [docs/STORY.md](docs/STORY.md) | Story mode: every route, decision, match and ending ([route map](docs/guide/index.html#route-map)) |
+| [docs/guide/](docs/guide/index.html) | The player's guide, four linked pages: Guide, [Story](docs/guide/story/index.html), [Wrestlers](docs/guide/wrestlers/index.html) and [Create a Wrestler](docs/guide/create/index.html) (data from `tools/guidedata.py` and `tools/storymap.py`) |
+| [docs/STORY.md](docs/STORY.md) | Story mode: every route, decision, match and ending ([route map](docs/guide/story/index.html#route-map)) |
 | [tools/README.md](tools/README.md) | Every tool, what it's for and how to run it |
 
 Quick start:

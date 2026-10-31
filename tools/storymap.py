@@ -2,7 +2,7 @@
 """Story mode reference: the match table and the route map's data, from the scene scripts.
 
   storymap.py            write docs/story_matches.csv, the match tables in docs/STORY.md and the data
-                         block of docs/guide/index.html (its Route Map)
+                         block of docs/guide/story/index.html (its Route Map)
   storymap.py --check    exit 1 if either is out of date (tools/check.py)
   storymap.py --json F   also dump the route map's data, indented, for inspection
 
@@ -31,7 +31,7 @@ import storyflow  # noqa: E402
 DOCS = paths.ROOT / 'docs'
 SCENES_CSV = DOCS / 'story_scenes.csv'
 MATCHES_CSV = DOCS / 'story_matches.csv'
-PAGE = DOCS / 'guide' / 'index.html'
+PAGE = DOCS / 'guide' / 'story' / 'index.html'
 STORY_MD = DOCS / 'STORY.md'
 DATA_START = '<script type="application/json" id="story-data">'
 DATA_END = '</script>'

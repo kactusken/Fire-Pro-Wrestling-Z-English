@@ -70,7 +70,7 @@ Set up from the translation kit (version 875a4bc). Tools marked *game* are stubs
 | [parts.py](parts.py) | bulk translation: `split` the untranslated text into part files for parallel translators, `check` a part (lint against the real limits), `status`, `merge` back (duplicates filled, blocks with errors skipped) |
 | [pagedata.py](pagedata.py) | fills the JSON data block of a reference page in `docs/` (`--check`); a game's data tool calls `pagedata.write()` |
 | [mipsdis.py](mipsdis.py) | *capstone*: disassembler with reference and call search (ELF or raw@base:64) |
-| [guidedata.py](guidedata.py) | *game*: the guide's data block (docs/guide/index.html, `--check`): every table the game holds, in both name versions |
+| [guidedata.py](guidedata.py) | *game*: the data blocks of the guide's four pages (docs/guide/, `--check`): every table the game holds, in both name versions, each page getting only what it uses |
 | [fpzrecord.py](fpzrecord.py) | *game*: the 244 wrestler records as English profiles (`--check`, `--tables`, a name or index) |
 | [fpzmoves.py](fpzmoves.py) | *game*: the moves: names, the 43 Move Edit lists, each move's numbers |
 | [fpztables.py](fpztables.py) | *game*: the mode tables (rings, Victory Road, Match Settings layouts...) and match engine tables (critical odds, styles, breath, skills) |

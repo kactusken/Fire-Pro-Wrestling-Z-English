@@ -2,7 +2,7 @@
 """Story mode flow: every scene, choice, match and branch of the seven scenarios.
 
   storyflow.py dump [N]          print scenario N's (default all) scenes as a readable outline
-  storyflow.py json OUT.json     everything as JSON (the route map in docs/guide/, docs/story_*.csv)
+  storyflow.py json OUT.json     everything as JSON (the route map in docs/guide/story/, docs/story_*.csv)
 
 The .STO files are compiled scripts for a small stack machine (docs/TECHNICAL.md "Story
 scripts"). Header: +0x30 symbol count, +0x34 code start; symbols at 0x40, 0x38 bytes each (name
