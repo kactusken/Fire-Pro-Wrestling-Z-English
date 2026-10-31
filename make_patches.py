@@ -57,8 +57,8 @@ MEDIUM = 'cartridge ROM' if FORMAT == 'bps' else 'disc image'
 
 # -S none: no secondary compression, which some patchers (Rom Patcher JS) can't read.
 # -A=: no application header (it would record local file paths).
-# Add '-B', str(1 << 30) for DVD images if a patch comes out large because data moved far.
-XDELTA_ENCODE = ['-e', '-9', '-S', 'none', '-A=', '-f']
+# -B: search the whole image: files that grew move to its end, past the default 64 MB window.
+XDELTA_ENCODE = ['-e', '-9', '-S', 'none', '-A=', '-f', '-B', str(1 << 30)]
 
 APPLY_HELP = {'xdelta': '''\
 How to apply
