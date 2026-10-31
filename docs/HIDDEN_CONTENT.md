@@ -318,6 +318,12 @@ background (`DOUJYOU`).
 Each of the six sits inside a run of listed moves, so they look removed rather than never made.
 `--unlocks moves` adds them, and all six play properly (*verified in game 2026-10-30*). Motions past the move table (reactions and the like) were not audited.
 
+Fire Pro Wrestling S, D and G add almost nothing to this list (*from the data, 2026-10-31*). Their move
+blocks have Z's layout, and comparing every frame's step and sprite offsets finds a twin in Z for all
+of D's 1,297 ids with motions and 99 of its 100 downloadable moves. S and G leave 43 blocks without a
+twin, all older animations of moves Z still has (Boston Crab, Neel Kick, Double-Leg Tackle). The one
+move with no equivalent is D's downloadable Vital Spot Kick; Z's Back Low Blow is a different animation.
+
 ## Downloadable moves
 *from the code*
 
