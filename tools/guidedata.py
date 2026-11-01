@@ -203,6 +203,20 @@ def build():
             't': tables}
 
 
+def move_users(d):
+    """The moves with who uses them, for Create's move card: uw, wrestler * 4 + flags (2 finisher, 1
+    signature), finishers and signatures first. Wrestlers works it out from its roster."""
+    users = {}
+    for wi, r in enumerate(d['roster']):
+        seen = {}
+        for v in r['mv']:
+            if v >> 2:
+                seen[v >> 2] = max(seen.get(v >> 2, 0), v & 3)
+        for i, fl in seen.items():
+            users.setdefault(i, []).append((-fl, wi))
+    return [{**m, 'uw': [wi * 4 - fl for fl, wi in sorted(users[m['i']])]} if m['i'] in users else m for m in d['moves']]
+
+
 def page_blocks(d):
     """{page under docs/guide/: its data block}: each page gets only what its tables use."""
     t = d['t']
@@ -216,7 +230,8 @@ def page_blocks(d):
         'wrestlers/index.html': {'roster': d['roster'], 'moves': [{**m, 'l': m['l'][:1]} for m in d['moves']], 'lists': [{'t': x['t']} for x in d['lists']],
                                  **{k: d[k] for k in ('slots', 'groups', 'seLabels', 'pa', 'ai', 'atk', 'def', 'choice')},
                                  't': tables('promotions', 'teams')},
-        'create/index.html': {**{k: d[k] for k in ('moves', 'lists', 'slots', 'pa', 'atk', 'def')}, 't': tables('skill_costs', 'affinity', 'cpu_logic', 'skills')},
+        'create/index.html': {**{k: d[k] for k in ('lists', 'slots', 'pa', 'atk', 'def')}, 't': tables('skill_costs', 'affinity', 'cpu_logic', 'skills'),
+                              'moves': move_users(d), 'wrestlers': [r['n'] for r in d['roster']]},
     }
 
 

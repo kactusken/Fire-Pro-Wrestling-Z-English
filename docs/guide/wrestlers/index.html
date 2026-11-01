@@ -423,7 +423,7 @@ h2 .anchor svg { width: 20px; height: 20px; }
    From its screens: fire and black panels, chrome grey (the light theme), the plum selection bar,
    gold lettering on blue slanted tabs (the wrestler select's card), the red attack and green defence
    of Param Edit's dials, and the slash that splits the main menu. Drawn in CSS: no game art. */
-:root { --fin: #d8342a; --fin-ink: #d8342a; --tab-a: #2146c8; --tab-b: #0f2a86; --tab-ink: #ffdb3d; --sel: #4e1241; --sel-ink: #fff3e6; --key: #2b2830; --key-ink: #fff; --ring-rope: #fff;
+:root { --ok: #1f8a4c; --fin: #d8342a; --fin-ink: #d8342a; --tab-a: #2146c8; --tab-b: #0f2a86; --tab-ink: #ffdb3d; --sel: #4e1241; --sel-ink: #fff3e6; --key: #2b2830; --key-ink: #fff; --ring-rope: #fff;
   --card: #120a0e; --card-2: #1e1319; --card-ink: #f6efe6; --card-muted: #cdb7a6; --card-frame: #ff9a3c;
   --atk: #e0392e; --atk-2: #ff7a55; --def: #1fa45a; --def-2: #58dc8c; --heat: 216, 66, 30; --tag-new: #1b44c8; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --tag-new: #7ea0ff; --sel: #5a1650; --key: #4b4852; --fin-ink: #ff7c6e; } }
@@ -479,7 +479,11 @@ html { scroll-padding-top: calc(var(--bar-h) + 20px); }
 .strip h1 { margin: 0; font: italic 800 36px/1 "Barlow Condensed", sans-serif; }
 .strip-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px 20px; flex: 1; min-width: 0; }
 .strip .hero-about { margin: 0; }
-.strip-jump { display: flex; gap: 16px; margin: 0; font-size: 15px; max-width: none; }
+.strip .gsearch { margin: 0; width: 210px; }
+.strip .gsearch .search { padding: 5px 28px 5px 10px; font-size: 14px; background: rgba(0, 0, 0, .35); border-color: rgba(255, 255, 255, .25); color: var(--hero-ink); }
+.strip .gsearch .search::placeholder { color: var(--hero-muted); }
+.strip .gs-key { color: var(--hero-muted); background: rgba(255, 255, 255, .1); border-color: rgba(255, 255, 255, .2); }
+.strip-jump { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0; font-size: 15px; max-width: none; }
 .strip-jump a { color: var(--hero-ink); text-underline-offset: 3px; }
 .strip .names-box { width: 250px; margin: 0; padding: 4px; background: rgba(0, 0, 0, .35); border-color: rgba(255, 255, 255, .22); }
 .strip .names-box .ns-btn { color: var(--hero-ink); border-color: rgba(255, 255, 255, .25); padding: 4px; }
@@ -586,11 +590,16 @@ td code { white-space: nowrap; overflow-wrap: normal; }
 .dt.wide { font-size: 14px; }
 .dt.wide th, .dt.wide td { padding: 6px 7px; }
 .dt.wide td:first-child, .dt.wide th:first-child { position: sticky; left: 0; z-index: 1; background: var(--panel); box-shadow: inset -1px 0 0 var(--rule); min-width: 190px; }
+.dt.wide tbody tr:nth-child(even) td:first-child { background: color-mix(in srgb, var(--code) 38%, var(--panel)); }
 .dt.wide th:first-child { z-index: 3; background: var(--code); }
 .dt.heat td.h { text-align: center; font-variant-numeric: tabular-nums; }
 /* the wide heat grids fit the column: fixed cells, and upright names when there are too many */
 .dt.heat { width: 100%; table-layout: fixed; }
+.dt.heat.many { min-width: 620px; }
 .dt.heat th:first-child { width: 112px; }
+.dt.heat td:first-child, .dt.heat th:first-child { position: sticky; left: 0; z-index: 1; background: var(--panel); box-shadow: inset -1px 0 0 var(--rule); }
+.dt.heat tbody tr:nth-child(even) td:first-child { background: color-mix(in srgb, var(--code) 38%, var(--panel)); }
+.dt.heat th:first-child { z-index: 3; background: var(--code); }
 .tablewrap .dt.heat th, .dt.heat th { font: 700 14.5px/1.1 "Barlow Condensed", sans-serif; padding: 6px 2px; white-space: nowrap; }
 .tablewrap .dt.heat td, .dt.heat td { padding: 5px 2px; font-weight: 600; }
 .tablewrap .dt.heat th:first-child, .tablewrap .dt.heat td:first-child { padding-left: 10px; }
@@ -652,13 +661,17 @@ a.w:hover { color: var(--accent); }
 .mc-moves .nums b { color: var(--ink); font-weight: 600; }
 
 /* the move card */
-[data-mi] { cursor: default; }
+[data-mi] { cursor: pointer; text-decoration: underline; text-decoration-color: rgba(176, 32, 14, .32); text-underline-offset: 2px; }
+[data-mi]:hover { color: var(--accent); text-decoration-color: var(--accent); }
 [data-mi]:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
-.mtip { position: fixed; z-index: 50; width: 330px; padding: 12px 14px; border-radius: 8px; background: var(--card); color: var(--card-ink); border: 1px solid var(--card-frame);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, .5); font-size: 14px; pointer-events: none; }
+.mtip { position: fixed; z-index: 50; width: min(350px, calc(100vw - 24px)); max-height: min(78vh, 520px); overflow-y: auto; padding: 12px 14px; border-radius: 8px; background: var(--card); color: var(--card-ink); border: 1px solid var(--card-frame);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .55); font-size: 14px; pointer-events: auto; }
+.mtip.is-pinned { outline: 2px solid var(--card-frame); }
 .mtip[hidden] { display: none; }
 .mtip p { margin: 0; max-width: none; }
-.mtip .mt-name { font: italic 800 21px "Barlow Condensed", sans-serif; }
+.mtip .mt-close { position: absolute; top: 8px; right: 8px; width: 24px; height: 24px; border-radius: 50%; border: 1px solid rgba(255,255,255,.3); background: rgba(255,255,255,.08); color: var(--card-ink); font-size: 15px; line-height: 1; cursor: pointer; display: grid; place-items: center; }
+.mtip .mt-close:hover { border-color: var(--card-frame); color: #ffcf3f; }
+.mtip .mt-name { font: italic 800 21px "Barlow Condensed", sans-serif; padding-right: 26px; }
 .mtip .mt-jp, .mtip .mt-cat { font-size: 12.5px; color: var(--card-muted); }
 .mtip .mt-cat { margin-top: 3px; }
 .mtip dl { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0 0; max-width: none; }
@@ -673,6 +686,16 @@ a.w:hover { color: var(--accent); }
 .mt-parts span { font-size: 12.5px; background: rgba(255,219,61,.14); color: #ffeebb; border-radius: 4px; padding: 2px 7px; }
 .mt-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px !important; }
 .mt-tags span { font-size: 12px; font-weight: 700; border: 1px solid rgba(255,255,255,.3); border-radius: 4px; padding: 1px 6px; }
+.mt-uwrap { margin-top: 8px; padding-top: 7px; border-top: 1px solid rgba(255,255,255,.14); font-size: 12.5px; line-height: 1.45; }
+.mt-uhead { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 4px; color: var(--card-muted); font-size: 12px; }
+.mt-users { display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.mt-u { display: inline-flex; align-items: center; gap: 3px; color: var(--card-ink); background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.16); border-radius: 4px; padding: 1px 6px; text-decoration: none; font-weight: 600; font-size: 12.5px; }
+.mt-u:hover { border-color: var(--card-frame); color: #ffcf3f; }
+.mt-u.fin { border-color: rgba(216,52,42,.75); background: rgba(216,52,42,.2); }
+.mt-u .b-f { font: 800 10px/1 "Barlow", sans-serif; color: #fff; background: var(--fin); padding: 1px 4px; border-radius: 2px; }
+.mt-u .b-s { font: 800 10px/1 "Barlow", sans-serif; color: var(--tab-ink); background: var(--tab-b); padding: 1px 4px; border-radius: 2px; }
+.mt-act { font: 600 11.5px "Barlow", sans-serif; color: #ffcf3f; background: transparent; border: 1px solid rgba(255,207,63,.45); border-radius: 4px; padding: 1px 6px; cursor: pointer; }
+.mt-act:hover { background: rgba(255,207,63,.16); border-color: #ffcf3f; }
 
 /* ================= the profile =================
    The header is the wrestler select's card: black double-framed panel, blue slanted tabs with gold
@@ -699,12 +722,24 @@ a.w:hover { color: var(--accent); }
 .pc-facts dd { margin: 1px 0 0; font-weight: 700; font-size: 15px; overflow-wrap: anywhere; }
 .pf-bar { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 16px; margin: 0 28px; border-bottom: 2px solid var(--rule); }
 .pf-bar .tabs { margin: 0; border-bottom: 0; }
-.pf-tools { display: flex; align-items: center; gap: 8px; padding-bottom: 8px; }
+.pf-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-bottom: 8px; }
+.pf-nav { display: inline-flex; align-items: center; gap: 4px; margin-right: 4px; }
+.pf-pos { font: 600 13px "Barlow", sans-serif; color: var(--muted); font-variant-numeric: tabular-nums; min-width: 4.4em; text-align: center; }
 .pf-cmp { font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
 .pf-cmp input { font: inherit; font-size: 14.5px; width: 15em; padding: 5px 10px; border-radius: 6px; border: 1px solid var(--rule); background: var(--panel); color: var(--ink); }
 .pf-btn { font: 600 13.5px "Barlow", sans-serif; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--rule); background: var(--panel); color: var(--ink); cursor: pointer; }
-.pf-btn:hover { border-color: var(--frame); }
+.pf-btn:hover:not(:disabled) { border-color: var(--frame); }
+.pf-btn:disabled { opacity: .45; cursor: default; }
 .pf-btn[hidden] { display: none; }
+@media (max-width: 720px) {
+  #profile { width: calc(100vw - 12px); height: calc(100vh - 12px); }
+  .pc { padding: 6px 48px 6px 6px; }
+  .pc-name { font-size: 28px; }
+  .pc-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px 10px; }
+  .pf-bar { margin: 0 12px; }
+  .pf-scroll { padding: 14px 12px 24px; }
+  .fly { grid-template-columns: 5.4em 1.4em minmax(0, 1fr) minmax(0, 1fr) 1.4em 5.4em; font-size: 13px; gap: 0 4px; }
+}
 
 .ov { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px 40px; align-items: start; }
 @media (max-width: 1000px) { .ov { grid-template-columns: 1fr; } }
@@ -782,9 +817,33 @@ ol.steps li::before { content: counter(step); position: absolute; left: 0; top: 
 .rm-section { margin: 0; padding: 40px 0 0; border-top: 1px solid var(--rule); }
 .rm-wrap { max-width: 1760px; margin: 0 auto; padding: 0 28px; }
 
+/* interactive story score calculator & checklist */
+.sc-calc { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 10px 14px; margin: 10px 0 14px; background: var(--panel); border: 1px solid var(--frame); border-left: 4px solid var(--accent); border-radius: 6px; position: sticky; top: calc(var(--bar-h) + 8px); z-index: 8; box-shadow: 0 4px 14px rgba(0,0,0,.08); }
+.sc-calc-main { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.sc-calc-title { font: 800 15px/1 "Barlow Condensed", sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.sc-calc-total { font: 800 24px/1 "Barlow Condensed", sans-serif; color: var(--accent); font-variant-numeric: tabular-nums; }
+.sc-calc-sub { font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.sc-checks { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.sc-chk { font: 700 12px/1.1 "Barlow", sans-serif; padding: 4px 8px; border-radius: 999px; background: var(--code); color: var(--muted); border: 1px solid var(--rule); white-space: nowrap; transition: background .12s, color .12s, border-color .12s; }
+.sc-chk.on { background: color-mix(in srgb, var(--ok) 16%, var(--panel)); color: var(--ok); border-color: color-mix(in srgb, var(--ok) 55%, var(--rule)); }
+.sc-reset { font: 700 12.5px/1 "Barlow", sans-serif; padding: 5px 10px; border-radius: 4px; border: 1px solid var(--frame); background: var(--code); color: var(--ink); cursor: pointer; }
+.sc-reset:hover { border-color: var(--accent); color: var(--accent); }
+.sc-ans-group { display: flex; flex-wrap: wrap; gap: 5px; }
+.sc-ans { font: 600 13.5px/1.2 "Barlow", sans-serif; padding: 4px 9px; border-radius: 4px; border: 1px solid var(--frame); background: var(--code); color: var(--ink); cursor: pointer; text-align: left; }
+.sc-ans:hover { border-color: var(--accent); }
+.sc-ans[aria-pressed="true"] { background: var(--sel); color: var(--sel-ink); border-color: var(--sel); }
+.sc-run { display: inline-flex; align-items: center; gap: 3px; white-space: nowrap; }
+.sc-res, .sc-bon { font: 700 12px/1 "Barlow", sans-serif; padding: 4px 6px; border-radius: 4px; border: 1px solid var(--frame); background: var(--code); color: var(--muted); cursor: pointer; font-variant-numeric: tabular-nums; min-width: 24px; text-align: center; }
+.sc-res:hover, .sc-bon:hover { border-color: var(--ink); color: var(--ink); }
+.sc-res.w[aria-pressed="true"] { background: var(--ok); color: #fff; border-color: var(--ok); }
+.sc-res.l[aria-pressed="true"] { background: var(--fin); color: #fff; border-color: var(--fin); }
+.sc-bon[data-b="1"], .sc-bon[data-b="2"], .sc-bon[data-b="3"] { background: color-mix(in srgb, var(--accent-2) 25%, var(--panel)); color: var(--ink); border-color: var(--accent-2); }
+.dt tbody tr.sc-won td { background: color-mix(in srgb, var(--ok) 10%, transparent); }
+.dt tbody tr.sc-lost td { background: color-mix(in srgb, var(--fin) 10%, transparent); }
+
 @media print {
   :root:root:root { --accent-2: #7f5800; --muted: #544c52; --frame: #8b858c; --code: #efefef; --rule: #c9c8ce; }
-  .pagebar, .strip-tools, .strip-ring, .strip::after { display: none !important; }
+  .pagebar, .strip-tools, .strip-ring, .strip::after, .sc-calc, .sc-col { display: none !important; }
   .strip { background: #fff; color: #000; overflow: visible; }
   .strip-inner { display: block; min-height: 0; padding: 0 0 3mm; max-width: none; }
   .strip-pre { color: #000; }
@@ -808,7 +867,7 @@ ol.steps li::before { content: counter(step); position: absolute; left: 0; top: 
   .dt th, .dt td { padding: 2px 4px; }
   .dt.pickable td:nth-child(2), .dt.pickable td.fin { white-space: normal; }
   .datatable-wrap, .tablewrap { max-height: none; overflow: visible; }
-  .dt.wide td:first-child, .dt.wide th:first-child, .dt thead th { position: static; box-shadow: none; }
+  .dt.wide td:first-child, .dt.wide th:first-child, .dt.heat td:first-child, .dt.heat th:first-child, .dt thead th { position: static; box-shadow: none; }
   .hero { background: #fff; }
   kbd.btn { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   .rm-section { display: none; }
@@ -914,7 +973,11 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
 
 <header class="strip"><div class="strip-inner">
   <div class="strip-name"><p class="strip-pre">Fire Pro Wrestling Z</p><h1 class="display">Wrestlers</h1></div>
-  <div class="strip-tools"><p class="strip-jump"><a href="#hidden-wrestlers">Hidden Wrestlers</a><a href="#promotions">Promotions</a><a href="#teams">Preset Teams</a></p><div class="names-box" role="group" aria-label="Wrestler and promotion names">
+  <div class="strip-tools"><p class="strip-jump"><a href="#wrestlers">Roster</a><a href="#hidden-wrestlers">Hidden Wrestlers</a><a href="#promotions">Promotions</a><a href="#teams">Preset Teams</a></p><div class="gsearch" role="search">
+    <input class="search" id="gq" type="search" placeholder="Search this page" autocomplete="off" spellcheck="false"
+      role="combobox" aria-expanded="false" aria-controls="gres" aria-autocomplete="list" aria-label="Search this page">
+    <kbd class="gs-key" aria-hidden="true">/</kbd>
+  </div><div class="names-box" role="group" aria-label="Wrestler and promotion names">
     <div class="ns-row"><button type="button" class="ns-btn" data-v="0" aria-pressed="true">Real Names</button><button type="button" class="ns-btn" data-v="1" aria-pressed="false">Parody Names</button></div></div><p class="hero-about"><button type="button" class="about-btn" id="printBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><path d="M6 14h12v7H6z"/></svg>Print or save as PDF</button></p></div>
   <svg class="strip-ring" viewBox="0 0 520 340" aria-hidden="true"><use href="#ring"/></svg>
 </div></header>
@@ -927,7 +990,7 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
 
 <section id="wrestlers" data-group="Reference">
 <h2>Wrestlers</h2>
-<p>All 244. Click a wrestler for his full profile: every Skill Edit value, all 22 ratings, all 78 move slots with their buttons, and his CPU Logic. Each profile has its own link and a Compare box. Hover a move for its numbers.</p>
+<p>All 244. Click a wrestler for his full profile: every Skill Edit value, all 22 ratings, all 78 move slots with their buttons, and his CPU Logic. Each profile has its own link and a Compare box. Hover or click a move for its numbers and who uses it.</p>
 <div data-table="roster"></div>
 <h3 id="hidden-wrestlers">The 45 Hidden Wrestlers</h3>
 <details class="spoiler"><summary>Who's locked until you clear a story</summary>
@@ -970,6 +1033,11 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
         <button type="button" role="tab" data-p="logic" aria-selected="false">CPU Logic</button>
       </div>
       <div class="pf-tools">
+        <div class="pf-nav" role="group" aria-label="Browse wrestlers">
+          <button type="button" class="pf-btn" id="pfPrev" title="Previous wrestler (←)">‹ Prev</button>
+          <span class="pf-pos" id="pfPos"></span>
+          <button type="button" class="pf-btn" id="pfNext" title="Next wrestler (→)">Next ›</button>
+        </div>
         <label class="pf-cmp">Compare with <input id="pfCmp" list="pfNames" type="search" placeholder="another wrestler" autocomplete="off" spellcheck="false"></label>
         <button type="button" class="pf-btn" id="pfCmpClear" hidden>Clear</button>
         <button type="button" class="pf-btn" id="pfCopy">Copy link</button>
@@ -982,6 +1050,7 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
 
 
 
+<div class="gres" id="gres" popover="manual" role="listbox" aria-label="Search results"></div>
 
 <dialog id="zoom" aria-label="Screenshot">
   <div class="dlg-head"><p id="zoomCap"></p><button class="dlg-close" type="button" aria-label="Close">×</button></div>
@@ -1280,7 +1349,7 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
      the element to point at. */
   const finds = [() => [...document.querySelectorAll('[data-table] tbody tr')].filter(tr => !tr.closest('[data-own-search]')).map(tr => {
     const table = tr.closest('table'), r = tr._r, row = () => [...table.tBodies[0].rows].find(x => x._r === r);
-    const text = [...tr.cells].map(c => c.textContent.trim()).filter(Boolean).join(' · ');
+    const text = [...tr.cells].filter(c => !c.classList.contains('sc-col')).map(c => c.textContent.trim()).filter(Boolean).join(' · ');
     return { kind: 'Table', el: tr, name: text.length > 90 ? text.slice(0, 90) + '…' : text, text,
       go() { let x = row(); if (x && x.hidden) { table._clear(); x = row(); } return x; } };
   })];
@@ -1291,43 +1360,95 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
   const mname = i => M[i] ? pick(M[i].n) : (i ? '?' : 'None');
   const LIST_T = i => D.lists[i] ? D.lists[i].t : '';
 
-  /* ---------- the move card: hover or focus a move ---------- */
+  /* who uses a move, finishers then signatures: [[wrestler, flags]]. Wrestlers has the roster to count;
+     Create gets the answer in its data block (wrestler * 4 + flags, D.wrestlers the names) */
+  const USERS = D.roster ? D.roster.map(w => w.n) : D.wrestlers;
+  const uses = {};
+  if (D.roster) {
+    D.roster.forEach((w, wi) => {
+      const seen = new Map();
+      w.mv.forEach(v => { const id = v >> 2, fl = v & 3; if (id) seen.set(id, Math.max(seen.get(id) || 0, fl)); });
+      for (const [id, fl] of seen) (uses[id] || (uses[id] = [])).push([wi, fl]);
+    });
+    Object.values(uses).forEach(u => u.sort((a, b) => (b[1] - a[1]) || (a[0] - b[0])));
+  } else D.moves.forEach(m => { uses[m.i] = (m.uw || []).map(v => [v >> 2, v & 3]); });
+  let onMoveFilter = null;       // Wrestlers: the card's Filter roster button
+
+  /* ---------- the move card: hover, focus, or click/tap to pin ---------- */
   const tip = document.createElement('div'); tip.className = 'mtip'; tip.hidden = true; tip.setAttribute('role', 'tooltip');
   document.body.appendChild(tip);
   const maxOf = i => Math.max(...D.moves.map(m => m.d[i]));
   const MAXS = maxOf(0), MAXP = maxOf(1), MAXB = maxOf(2);
   const OWN = ['stamina', 'spirit', 'neck', 'arm', 'back', 'leg'];
-  function tipHtml(m) {
+  let tipEl = null, tipPinned = false, tipTimer = null;
+  function tipHtml(m, showAll) {
     const [sta, spi, bre, neck, arm, back, leg] = m.d;
     const two = (a, l) => a[0] === a[1] ? esc(l[a[0]]) : `${esc(l[a[0]])} / ${esc(l[a[1]])}`;
     const bar = (lab, v, max) => `<div class="mt-bar"><span>${lab}</span><i><b style="width:${Math.min(100, v / max * 100)}%"></b></i><em>${v}</em></div>`;
     const parts = [['Neck', neck], ['Arm', arm], ['Back', back], ['Leg', leg]].filter(p => p[1]);
     const tags = [m.x & 2 ? 'Submission' : '', m.x & 1 ? 'Illegal' : '', m.b ? `Bleed ${m.b}%` : '', m.new ? 'New in Z' : '', m.ul ? 'All Unlocked' : ''].filter(Boolean);
     const own = m.s ? m.s.map((v, i) => v ? `${OWN[i]} ${v}` : '').filter(Boolean).join(', ') : '';
-    return `<p class="mt-name">${esc(pick(m.n))}</p><p class="mt-jp" lang="ja">${esc(m.j)}</p>
+    const uw = uses[m.i] || [], lim = showAll ? uw.length : 12;
+    const user = ([wi, fl]) => `<a class="mt-u${fl & 2 ? ' fin' : ''}" href="index.html#entry-${slug(pick0(USERS[wi]))}"${D.roster ? ` data-w="${wi}"` : ''}>${esc(pick(USERS[wi]))}${fl & 2 ? '<span class="b-f" title="Finisher">F</span>' : fl & 1 ? '<span class="b-s" title="Signature">S</span>' : ''}</a>`;
+    const usersHtml = uw.length ? `<div class="mt-uwrap"><div class="mt-uhead"><span>Used by (${uw.length})</span>${onMoveFilter && uw.length > 1 ? `<button type="button" class="mt-act" data-mfilter="${esc(pick(m.n))}">Filter roster</button>` : ''}</div><div class="mt-users">${uw.slice(0, lim).map(user).join('')}${uw.length > lim ? `<button type="button" class="mt-act" data-mmore="${m.i}">+${uw.length - lim} more…</button>` : ''}</div></div>` : '';
+    return `<button type="button" class="mt-close" aria-label="Close">×</button><p class="mt-name">${esc(pick(m.n))}</p><p class="mt-jp" lang="ja">${esc(m.j)}</p>
       <p class="mt-cat">${esc(LIST_T(m.l[0]))}</p>
       <div class="mt-bars">${bar('Stamina', sta, MAXS)}${bar('Spirit', spi, MAXP)}${bre ? bar('Breath', bre, MAXB) : ''}</div>
       ${parts.length ? `<div class="mt-parts">${parts.map(([n, v]) => `<span>${n} <b>${v}</b></span>`).join('')}</div>` : ''}
       <dl><div><dt>Attack</dt><dd>${two(m.a, D.atk)}</dd></div><div><dt>Resisted by</dt><dd>${two(m.e, D.def)}</dd></div>
-      <div><dt>Speed</dt><dd>${m.t} ticks</dd></div><div><dt>Used by</dt><dd>${m.u} wrestlers</dd></div>
+      <div><dt>Speed</dt><dd>${m.t} ticks</dd></div><div><dt>Used by</dt><dd>${m.u ? m.u + (m.u === 1 ? ' wrestler' : ' wrestlers') : 'None on roster'}</dd></div>
       ${m.c.length ? `<div><dt>Critical</dt><dd>${esc(m.c.join(', '))}</dd></div>` : ''}${own ? `<div><dt>Costs the user</dt><dd>${esc(own)}</dd></div>` : ''}${m.w ? `<div><dt>Weaker with a hurt</dt><dd>${esc(m.w.join(', '))}</dd></div>` : ''}</dl>
-      ${tags.length ? `<p class="mt-tags">${tags.map(t => `<span>${t}</span>`).join('')}</p>` : ''}`;
+      ${tags.length ? `<p class="mt-tags">${tags.map(t => `<span>${t}</span>`).join('')}</p>` : ''}${usersHtml}`;
   }
-  function showTip(el) {
-    const m = M[+el.dataset.mi]; if (!m) return;
-    const host = el.closest('dialog') || document.body; if (tip.parentNode !== host) host.appendChild(tip);
-    tip.innerHTML = tipHtml(m); tip.hidden = false;
+  function placeTip(el) {
+    if (!el || !el.isConnected) return;
     const r = el.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight;
-    /* beside the row, so it doesn't cover the rows around it */
+
     let x = r.right + 12, y = r.top;
     if (x + w > innerWidth - 12) x = r.left - w - 12;
     if (x < 12) { x = Math.max(12, Math.min(r.left, innerWidth - 12 - w)); y = r.bottom + 6; if (y + h > innerHeight - 12) y = r.top - h - 6; }
     tip.style.left = x + 'px'; tip.style.top = Math.max(12, Math.min(y, innerHeight - 12 - h)) + 'px';
   }
-  const hideTip = () => { tip.hidden = true; };
-  ['mouseover', 'focusin'].forEach(ev => document.addEventListener(ev, e => { const el = e.target.closest && e.target.closest('[data-mi]'); if (el) showTip(el); }));
-  ['mouseout', 'focusout'].forEach(ev => document.addEventListener(ev, e => { if (e.target.closest && e.target.closest('[data-mi]')) hideTip(); }));
-  addEventListener('scroll', hideTip, true);
+  function showTip(el, pin, showAll) {
+    const m = M[+el.dataset.mi]; if (!m) return;
+    clearTimeout(tipTimer);
+    if (tipPinned && !pin && el !== tipEl) return;
+    tipEl = el;
+    if (pin) tipPinned = true;
+    tip.classList.toggle('is-pinned', tipPinned);
+    const host = el.closest('dialog') || document.body; if (tip.parentNode !== host) host.appendChild(tip);
+    tip.innerHTML = tipHtml(m, showAll); tip.hidden = false;
+    placeTip(el);
+  }
+  const hideTip = () => { clearTimeout(tipTimer); tipPinned = false; tipEl = null; tip.classList.remove('is-pinned'); tip.hidden = true; };
+  const laterTip = () => { if (!tipPinned) { clearTimeout(tipTimer); tipTimer = setTimeout(hideTip, 180); } };
+  ['mouseover', 'focusin'].forEach(ev => document.addEventListener(ev, e => { const el = e.target.closest && e.target.closest('[data-mi]'); if (el) showTip(el, false); }));
+  ['mouseout', 'focusout'].forEach(ev => document.addEventListener(ev, e => { if (e.target.closest && e.target.closest('[data-mi]')) laterTip(); }));
+  tip.addEventListener('mouseenter', () => clearTimeout(tipTimer));
+  tip.addEventListener('mouseleave', laterTip);
+  document.addEventListener('click', e => {
+    const closeBtn = e.target.closest && e.target.closest('.mt-close');
+    if (closeBtn) { e.stopPropagation(); hideTip(); return; }
+    const moreBtn = e.target.closest && e.target.closest('[data-mmore]');
+    if (moreBtn && tipEl) { e.stopPropagation(); showTip(tipEl, true, true); return; }
+    const filtBtn = e.target.closest && e.target.closest('[data-mfilter]');
+    if (filtBtn) {
+      e.stopPropagation();
+      const mvName = filtBtn.dataset.mfilter;
+      hideTip();
+      if (onMoveFilter) onMoveFilter(mvName);
+      return;
+    }
+    const mi = e.target.closest && e.target.closest('[data-mi]');
+    if (mi) {
+      if (tipPinned && tipEl === mi && !tip.hidden) hideTip();
+      else showTip(mi, true);
+      return;
+    }
+    if (!tip.hidden && !tip.contains(e.target)) hideTip();
+  });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && !tip.hidden) { e.preventDefault(); e.stopPropagation(); hideTip(); } }, true);   // before the dialog sees it
+  addEventListener('scroll', e => { if (!tipPinned && e.target !== tip) hideTip(); }, true);
 
   /* ---------- the roster ---------- */
   const R = D.roster.map((e, i) => Object.assign({ i }, e));
@@ -1338,7 +1459,10 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
   const finName = e => mname(e.f);
   const hidTag = '<span class="tag hid" title="Locked until you clear any story scenario">Hidden</span>';
   let rosterDt = null, rosterEl = null;
-  RENDER['roster'] = el => { rosterEl = el; draw(el, () => { rosterDt = dt(el, {
+  onMoveFilter = name => { if (dlg.open) dlg.close(); if (rosterDt) { rosterDt.setQuery(name); rosterEl.scrollIntoView({ block: 'start' }); } };
+  finds.push(() => R.map(e => ({ kind: 'Wrestler', name: pick(e.n), group: [pick(e.k), promo(e.p), e.c].filter(Boolean).join(' · '), text: [both(e.n), both(e.k), e.j, e.o].join(' '),
+    go() { openProfile(e); return null; } })));
+  RENDER['roster'] = el => { rosterEl = el; el.dataset.ownSearch = ''; draw(el, () => { rosterDt = dt(el, {
     rows: R, count: 'wrestlers', q: 'Filter by name, nickname, move, style', tall: true, cls: 'pickable', sort: -1,
     chips: { get: e => promo(e.p), order: (a, b) => PR.findIndex(p => pick(p.name) === a) - PR.findIndex(p => pick(p.name) === b) },
     toggles: [{ label: 'Hidden at the start', test: e => e.hid }],
@@ -1362,11 +1486,42 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
 
   /* ---------- the wrestler dialog ---------- */
   const dlg = $('profile'), card = $('pfCard'), panel = $('pfPanel');
+  const prevBtn = $('pfPrev'), nextBtn = $('pfNext'), posSpan = $('pfPos');
   const ptabs = [...dlg.querySelectorAll('.tabs [role="tab"]')];
   let cur = null, pane = 'stats', cmp = null;
   const linkOf = e => 'entry-' + slug(pick0(e.n));
   const byLink = h => { const m = /^(?:entry|wrestler)-(.+)$/.exec(h); if (!m) return null;
     return R.find(e => (Array.isArray(e.n) ? e.n : [e.n]).some(n => slug(n) === m[1])) || null; };
+  function navPool() {
+    if (rosterEl) {
+      const vis = [...rosterEl.querySelectorAll('tbody tr:not([hidden])')].map(tr => tr._r).filter(Boolean);
+      if (vis.length && vis.includes(cur)) return vis;
+    }
+    return R;
+  }
+  function syncNav() {
+    if (!cur) return;
+    const pool = navPool(), idx = pool.indexOf(cur), len = pool.length;
+    if (posSpan) posSpan.textContent = `${idx + 1} / ${len}`;
+    if (prevBtn) {
+      prevBtn.disabled = len <= 1;
+      const p = pool[(idx - 1 + len) % len];
+      prevBtn.title = p ? `Previous: ${pick(p.n)} (←)` : 'Previous wrestler (←)';
+    }
+    if (nextBtn) {
+      nextBtn.disabled = len <= 1;
+      const n = pool[(idx + 1) % len];
+      nextBtn.title = n ? `Next: ${pick(n.n)} (→)` : 'Next wrestler (→)';
+    }
+  }
+  function stepNav(dir) {
+    if (!cur) return;
+    const pool = navPool(), idx = pool.indexOf(cur);
+    if (pool.length <= 1 || idx < 0) return;
+    openProfile(pool[(idx + dir + pool.length) % pool.length]);
+  }
+  if (prevBtn) prevBtn.addEventListener('click', () => stepNav(-1));
+  if (nextBtn) nextBtn.addEventListener('click', () => stepNav(1));
   function renderCard(e) {
     const facts = [['Class', e.c], ['Style', choice('style', e.st)], ['Reversals', choice('rev', e.rv)], ['Critical', choice('crit', e.cr)], ['Skill', choice('skill', e.sk)],
       ['Hometown', e.o], ['Height', e.h + ' cm'], ['Weight', e.w + ' kg'], ['Born', e.b || 'Unknown'], ['Stance', e.stn], ['Size', e.sz], ['Theme', e.th]];
@@ -1376,7 +1531,7 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
         <h3 class="pc-name">${esc(pick(e.n))}</h3>
         <p class="pc-nick">${esc(pick(e.k))}</p>
         <p class="pc-nick" lang="ja">${esc(e.j)}</p>
-        <p class="pc-fin"><span class="pc-tab">Finisher</span><b>${esc(finName(e))}</b></p>
+        <p class="pc-fin"><span class="pc-tab">Finisher</span><b${e.f ? ` tabindex="0" data-mi="${e.f}"` : ''}>${esc(finName(e))}</b></p>
       </div>
       <dl class="pc-facts">${facts.map(([l, v]) => `<div><dt>${esc(l)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
     </div></div>`;
@@ -1405,7 +1560,7 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
     } else if (pane === 'moves') {
       const cmpMove = (v, i) => { if (!cmp) return ''; const w = cmp.mv[i];
         return (w >> 2) === (v >> 2) ? '<small class="same">same</small>' : `<small>${esc(mname(w >> 2))}</small>`; };
-      panel.innerHTML = `<p class="hint">Move Edit's order. The finisher is in red; <span class="sig">S</span> marks the signature moves. Point at a move for its card.${cmp ? ` Under each move: ${esc(pick(cmp.n))}'s.` : ''}</p><div class="slots">${D.groups.map(([start, title], gi) => {
+      panel.innerHTML = `<p class="hint">Move Edit's order. The finisher is in red; <span class="sig">S</span> marks the signature moves. Hover or click a move for its card and users.${cmp ? ` Under each move: ${esc(pick(cmp.n))}'s.` : ''}</p><div class="slots">${D.groups.map(([start, title], gi) => {
         const end = gi + 1 < D.groups.length ? D.groups[gi + 1][0] : D.slots.length, items = [];
         for (let i = start; i < end; i++) { const s = D.slots[i], v = e.mv[i], id = v >> 2;
           items.push(`<li class="${!id ? 'none' : v & 2 ? 'fin' : ''}${cmp && (cmp.mv[i] >> 2) !== id ? ' diff' : ''}"><span class="k">${esc(s.l)} ${chips(s.b)}</span><span class="v"${id ? ` tabindex="0" data-mi="${id}"` : ''}>${esc(mname(id))}${id && v & 1 ? '<span class="sig">S</span>' : ''}${cmpMove(v, i)}</span></li>`); }
@@ -1418,22 +1573,29 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
           const detail = typeof d === 'number' ? mname(d) : pick(d);
           return [pick(label), btn, detail && detail !== pick(label) ? detail : '', pct, typeof d === 'number' ? d : 0]; }).filter(a => a[3] > 0).sort((p, q) => q[3] - p[3]);
         return `${s.c.length > 1 || pick(c.n) !== pick(s.s) ? `<h6>${esc(pick(c.n))}</h6>` : ''}<ul class="acts">${acts.map(([l, b, d, p, id]) =>
-          `<li><span>${esc(l)} ${chips(b)}${d ? `: <span${id ? ` data-mi="${id}"` : ''}>${esc(d)}</span>` : ''}</span><i><b style="width:${p}%"></b></i><b>${p}%</b></li>`).join('')}</ul>`;
+          `<li><span>${esc(l)} ${chips(b)}${d ? `: <span${id ? ` tabindex="0" data-mi="${id}"` : ''}>${esc(d)}</span>` : ''}</span><i><b style="width:${p}%"></b></i><b>${p}%</b></li>`).join('')}</ul>`;
       }).join('')}</section>`).join('')}</div>`;
     }
   }
   let backHash = '';
   function openProfile(e) {
+    hideTip();
     if (!dlg.open) backHash = location.hash && !byLink(location.hash.slice(1)) ? location.hash : '';
-    cur = e; if (cmp === e) cmp = null; renderCard(e); renderPane(); syncCmp();
+    cur = e; if (cmp === e) cmp = null; renderCard(e); renderPane(); syncCmp(); syncNav();
     history.replaceState(null, '', '#' + linkOf(e));
     if (!dlg.open) dlg.showModal();
   }
   dlg.addEventListener('close', () => { hideTip(); history.replaceState(null, '', backHash || location.pathname + location.search); });
-  ptabs.forEach(t => t.addEventListener('click', () => { pane = t.dataset.p; renderPane(); }));
+  dlg.addEventListener('keydown', e => {
+    if (e.ctrlKey || e.metaKey || e.altKey) return;
+    if (e.target.closest && e.target.closest('input, textarea, select, [contenteditable="true"]')) return;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); stepNav(-1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); stepNav(1); }
+  });
+  ptabs.forEach(t => t.addEventListener('click', () => { hideTip(); pane = t.dataset.p; renderPane(); }));
   dlg.querySelector('.pf-close').addEventListener('click', () => dlg.close());
   dlg.addEventListener('click', ev => { if (ev.target === dlg) dlg.close(); });
-  document.addEventListener('click', ev => { const a = ev.target.closest('[data-w]'); if (!a) return; ev.preventDefault(); openProfile(R[+a.dataset.w]); });
+  document.addEventListener('click', ev => { const a = ev.target.closest('[data-w]'); if (!a) return; ev.preventDefault(); hideTip(); openProfile(R[+a.dataset.w]); });
   const copyBtn = $('pfCopy');
   copyBtn.addEventListener('click', () => {
     const url = location.href, done = () => { copyBtn.textContent = 'Link copied'; setTimeout(() => { copyBtn.textContent = 'Copy link'; }, 1600); };
@@ -1443,22 +1605,17 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
   function fillNames() { cmpList.innerHTML = R.map(e => `<option value="${esc(pick(e.n))}">`).join(''); }
   function syncCmp() { cmpIn.value = cmp ? pick(cmp.n) : ''; cmpClear.hidden = !cmp; dlg.classList.toggle('comparing', !!cmp); }
   cmpIn.addEventListener('change', () => { const v = cmpIn.value.trim().toLowerCase();
-    const e = R.find(x => String(pick(x.n)).toLowerCase() === v); cmp = e && e !== cur ? e : null; renderPane(); syncCmp(); });
+    const e = R.find(x => String(pick(x.n)).toLowerCase() === v || (Array.isArray(x.n) && x.n.some(n => String(n).toLowerCase() === v))); cmp = e && e !== cur ? e : null; renderPane(); syncCmp(); });
   cmpClear.addEventListener('click', () => { cmp = null; renderPane(); syncCmp(); });
   fillNames();
 
-  /* After the tables: a #entry link opens its wrestler; the / key goes to the filter, the page's search */
-  redraws.push(() => { fillNames(); if (dlg.open && cur) { renderCard(cur); renderPane(); syncCmp(); } });
+  /* After the tables: a #entry link opens its wrestler */
+  redraws.push(() => { fillNames(); if (dlg.open && cur) { renderCard(cur); renderPane(); syncCmp(); syncNav(); } });
   afterFill.push(() => {
     const atLoad = byLink(location.hash.slice(1));
     if (atLoad) { rosterEl && rosterEl.scrollIntoView({ block: 'start' }); openProfile(atLoad); }
     window.addEventListener('hashchange', () => { const e = byLink(location.hash.slice(1)); if (e) openProfile(e); });
-    document.addEventListener('keydown', e => {
-      if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
-      const t = e.target; if (t.closest && t.closest('input, textarea, select, [contenteditable="true"], dialog[open]')) return;
-      const q = rosterEl && rosterEl.querySelector('.search'); if (!q) return;
-      e.preventDefault(); q.focus(); q.select();
-    });
+
   });
   /* ---------- fill the page ---------- */
   document.querySelectorAll('[data-table]').forEach(el => {
@@ -1534,12 +1691,12 @@ html.rm-lock, html.rm-lock body { overflow: hidden; }
   function sectionOf(el) {
     const sec = el.closest('main > section'); const h = sec && sec.querySelector('h2');
     let sub = null;
-    for (const x of heads) { if (x.el.tagName !== 'H2' && sec && sec.contains(x.el) && (x.el.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING)) sub = x.title; }
+    for (const x of heads) { if (x.el.tagName !== 'H2' && sec && sec.contains(x.el) && (x.el.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING)) sub = strip(x.el); }
     return (h ? strip(h) : '') + (sub ? ' › ' + sub : '');
   }
   function build() {
     index = [];
-    for (const h of heads) index.push({ kind: 'Section', rank: 0, t: h.title, s: h.el.tagName === 'H2' ? '' : sectionOf(h.el), key: fold(h.title), go: () => { openTo(h.el); location.hash = h.id; } });
+    for (const h of heads) { const t = strip(h.el); index.push({ kind: 'Section', rank: 0, t, s: h.el.tagName === 'H2' ? '' : sectionOf(h.el), key: fold(t), go: () => { openTo(h.el); location.hash = h.id; } }); }
     (window.pageEntries ? window.pageEntries() : []).forEach(e => {
       const t = String(e.name);
       index.push({ kind: e.kind, rank: 1, t, s: e.group || sectionOf(e.el), text: e.text, key: fold(t + ' ' + e.text), go: () => {

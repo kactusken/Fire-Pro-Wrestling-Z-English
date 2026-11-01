@@ -145,7 +145,7 @@ def condition(c, matches, n):
     m = re.fullmatch(r'result\(match (\d+)\) < 2', c)
     if m:
         vs = matches.get(int(m.group(1)), '')
-        return f'{"lost" if neg else "won"} match {m.group(1)}' + (f' (vs. {vs})' if vs else '')
+        return f'{"lost" if neg else "won"} match {int(m.group(1)) + 1}' + (f' (vs. {vs})' if vs else '')
     m = re.fullmatch(r'(score|match(\d+)) (<=|>=|<|>|==|!=) (-?\d+)', c)
     if m and m.group(1) == 'score':
         op, v = m.group(3), int(m.group(4))
