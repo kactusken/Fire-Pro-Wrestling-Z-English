@@ -6,6 +6,11 @@
   storymap.py --check    exit 1 if either is out of date (tools/check.py)
   storymap.py --json F   also dump the route map's data, indented, for inspection
 
+The page's data carries both name sets: a string that differs is {"~": [real, parody]} (routemap.js
+picks by the guide's Names switch). The script's names are resolved as the parody build does, so names
+the story keeps real in both builds stay real; the hand-written titles and summaries go through
+fpztext.swap_names.
+
 Reads the scripts as players get them (tools/storyflow.py walks every path), the English story text
 (translation/script/story0N.txt, real names) and the scene titles and summaries in
 docs/story_scenes.csv (scenario, label, title, summary - written by hand from the script).
@@ -41,7 +46,8 @@ SCENARIOS = {1: 'Mitsuharu Misawa', 2: 'Atsushi Onita', 3: 'Shinya Hashimoto', 4
 RULES = {'時間無制限　1本勝負': 'No Time Limit, One Fall',
          '時間無制限　バトルロイヤル': 'No Time Limit, Battle Royal'}
 # card names the codes print short: Ｓ + Tiger Mask is Super Tiger, %sa0 the story's Guerrero
-CARD_FIX = {'ＳTiger Mask': 'Super Tiger', 'Guerrero': 'Chavo Guerrero'}
+CARD_FIX = {'ＳTiger Mask': 'Super Tiger', 'Guerrero': 'Chavo Guerrero',
+            'ＳMask de Panther': 'Super Panther', 'Nevelo': 'Hab Nevelo'}
 # A match record of the .STO (a count at header +0x10, then 44 bytes each): what the guide's tables show
 MATCH_RECORD = 44
 SETTINGS = {'rule': 0x1E, 'rule2': 0x20, 'minutes': 0x21, 'venue': 0x23, 'ring': 0x24, 'com': 0x25,
@@ -49,11 +55,13 @@ SETTINGS = {'rule': 0x1E, 'rule2': 0x20, 'minutes': 0x21, 'venue': 0x23, 'ring':
 
 
 class Names:
-    """The real-name English for %ss/%sf/%sl/%sa codes and <tokens>."""
+    """The English for %ss/%sf/%sl/%sa codes and <tokens>, in the real names or the parody ones."""
 
-    def __init__(self):
+    def __init__(self, version='real'):
+        self.pre = 'en_' if version == 'real' else 'parody_'
         self.w = {int(r['idx']): r for r in fpztext.read_table('wrestlers.csv')}
-        self.tok = {r['token']: r['real'] for r in fpztext.read_table('name_tokens.csv')}
+        self.tok = ({r['token']: r['real'] for r in fpztext.read_table('name_tokens.csv')} if version == 'real'
+                    else {t: p for t, (_, p) in fpztext.name_tokens().items()})
         self.story = {r['id']: self.tokens(r['english']) for r in fpztext.read_table('story_names.csv')}
         self.cards = {r['japanese']: self.tokens(r['english'])
                       for r in fpztext.read_table('story_cards.csv') if r.get('english')}
@@ -65,7 +73,7 @@ class Names:
 
     def full(self, i):
         r = self.w.get(i)
-        return fpztext._full(r, 'en_') if r else f'#{i}'
+        return fpztext._full(r, self.pre) if r else f'#{i}'
 
     def code(self, kind, i, n):
         if kind == 'a':
@@ -73,7 +81,7 @@ class Names:
         r = self.w.get(i)
         if r is None:
             return f'#{i}'
-        return {'s': r['en_name1'], 'f': self.full(i), 'l': r['en_name2'] or r['en_name1']}[kind]
+        return {'s': r[self.pre + 'name1'], 'f': self.full(i), 'l': r[self.pre + 'name2'] or r[self.pre + 'name1']}[kind]
 
     def text(self, s, n):
         s = self.tokens(fpztext.unesc(s))
@@ -154,7 +162,7 @@ def scenario_data(n, names, titles):
     flow = {k: dict(zip(('messages', 'matches', 'choices', 'exits'), storyflow.summary(v['paths'])))
             for k, v in scenes.items()}
     eng = english(n, names)
-    hero = SCENARIOS[n]
+    hero = SCENARIOS[n] if names.pre == 'en_' else fpztext.swap_names(SCENARIOS[n])
     menu = next(k for k in flow if k.endswith('000'))
     start = flow[menu]['choices'][0][0][0]
     order, seen, todo = [], set(), [start]
@@ -206,13 +214,18 @@ def scenario_data(n, names, titles):
                                                               or s.strings[c].decode('cp932', 'replace'), n)}
                             for lab, c in ch])
         title, summary = titles.get((n, k), ('', ''))
+        if names.pre != 'en_':
+            title, summary = fpztext.swap_names(title), fpztext.swap_names(summary)
         out.append({'id': k, 'title': title, 'summary': summary, 'lines': lines, 'matches': matches,
                     'choices': choices, 'menu': k.startswith(menu),
                     'exits': [{'to': x['to'], 'when': x['when'], 'score': x['score']} for x in v['exits']]})
     for sc in out:                                # conditions in words, once every match is known
         for x in sc['exits']:
             x['when'] = [condition(c, match_vs, n) for c in x['when']]
-    return {'hero': hero, 'start': start, 'menu': menu, 'scenes': out}, rows
+    short = SCENARIOS[n].split()[-1]             # the map's chip
+    if names.pre != 'en_':
+        short = fpztext.swap_names(short)
+    return {'hero': hero, 'short': short, 'start': start, 'menu': menu, 'scenes': out}, rows
 
 
 def titles_table():
@@ -239,7 +252,16 @@ def build():
              '# match: the game() number; win / lose: the scene each result leads to (the same scene = the\n'
              '# result only changes the score); win_score, lose_score: story score the script adds for each\n'
              '# result; rule ... critical: the match record\'s settings, as stored.\n' + o.getvalue())
-    return data, table, rows
+    return merge(data, {n: scenario_data(n, Names('parody'), titles)[0] for n in SCENARIOS}), table, rows
+
+
+def merge(a, b):
+    """The real and parody data as one: every string that differs becomes {"~": [real, parody]}."""
+    if isinstance(a, dict):
+        return {k: merge(v, b[k]) for k, v in a.items()}
+    if isinstance(a, list):
+        return [merge(x, y) for x, y in zip(a, b, strict=True)]
+    return {'~': [a, b]} if a != b else a
 
 
 def story_with(rows):

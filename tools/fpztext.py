@@ -198,6 +198,52 @@ def name_tokens():
     return _TOKENS
 
 
+# The guide's prose: names written in the real form, and their parody form for its Names switch.
+PROSE_ALSO = {'New Japan': 'VIEW', 'All Japan': 'OLIVE', 'Big Japan': 'ZIP JAPAN', 'Michinoku Pro': 'YukiPro',
+              'Osaka Pro': 'Kansai Pro', 'Tigers': 'Panthers', 'Mirko': 'Micro', 'Royce': 'Voice',    # no table holds these
+              'NJPW': 'VJP', 'AJPW': 'OJP', 'FMW': 'IW', 'Tiger Mask': 'Panther'}      # the story's own forms
+PROSE_NOT = {'WWE'}                                 # only said of the real roster of earlier games
+_PROSE = None
+
+
+def prose_names():
+    """[(real, parody)], longest first: wrestlers' full and short names, the name tokens, and move names
+    with one of those in them; the same text twice is a move the parody build doesn't change ("Fujiwara
+    Armbar"), there so that its wrestler isn't swapped. A real form with two parody forms ("Sasaki") gets
+    the first, so roster order decides."""
+    global _PROSE
+    if _PROSE is None:
+        out = dict(PROSE_ALSO)
+        for r in read_table('wrestlers.csv'):
+            if r.get('parody_name1') and r.get('en_name1'):
+                out.setdefault(_full(r, 'en_'), _full(r, 'parody_'))
+                out.setdefault(r['en_name1'], r['parody_name1'])
+        for real, parody in name_tokens().values():
+            out.setdefault(real, parody)
+        names = _prose_regex(a for a, b in out.items() if a != b)
+        for r in read_table('moves.csv'):
+            real = resolve(r['english'], 'real')
+            if names.search(real):
+                out.setdefault(real, resolve(r['english'], 'parody'))
+        _PROSE = sorted(((a, b) for a, b in out.items() if a not in PROSE_NOT), key=lambda x: (-len(x[0]), x[0]))
+    return _PROSE
+
+
+def _prose_regex(reals):
+    return re.compile(r'(?<!\w)(' + '|'.join(re.escape(a) for a in sorted(reals, key=len, reverse=True)) + r')(?!\w)')
+
+
+def prose_pattern():
+    """The regular expression of every real form in prose_names(), one group, whole words only."""
+    return _prose_regex(a for a, _ in prose_names())
+
+
+def swap_names(text):
+    """Hand-written real-name text (a scene title) in the parody names."""
+    to = dict(prose_names())
+    return prose_pattern().sub(lambda m: to[m[1]], text)
+
+
 def resolve(text, names, where=''):
     """`text` with every <Token> replaced by its real (names='real') or parody name."""
     tokens = name_tokens()

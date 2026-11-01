@@ -21,6 +21,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import fpzmoves  # noqa: E402
 import fpzrecord  # noqa: E402
+import fpztext  # noqa: E402
 import paths  # noqa: E402
 import rings as ringpatch  # noqa: E402
 
@@ -100,6 +101,10 @@ class Tables:
     def __init__(self, z, names='real'):
         self.z, self.names = z, names
         self.items = {i['off']: i for i in z.skill_items(names)}
+
+    def note(self, skill):
+        t = SKILL_NOTES.get(skill, '')
+        return t if self.names == 'real' else fpztext.swap_names(t)
 
     # ---------- reading
 
@@ -382,7 +387,7 @@ class Tables:
         out = []
         for k, n in enumerate(i['choices']):
             parts = [] if k < 13 else [b for f, b in basic.items() if flags[k] & f]
-            out.append({'name': n, 'pts': i['cost'][k], 'roster': counts[k], 'effect': SKILL_EFFECTS.get(n, ''), 'note': SKILL_NOTES.get(n, ''), 'parts': parts})
+            out.append({'name': n, 'pts': i['cost'][k], 'roster': counts[k], 'effect': SKILL_EFFECTS.get(n, ''), 'note': self.note(n), 'parts': parts})
         return out
 
     def affinity(self):

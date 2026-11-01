@@ -26,6 +26,8 @@ between the name versions is [real, parody], any other is plain.
   lists     the 43 Move Edit lists; slots the 78 rows; ai the CPU Logic situations; choice the Skill Edit
             lists; t all other tables (tools/fpztables.py) and story, the match tables by scenario.
             On Wrestlers a move keeps only its first list and lists only their titles: the card's use.
+  names     every page: {k: [real, parody]} for its <span class="nm" data-k="k"> names in the prose, k
+            being the place in fpztext.prose_names() (assemble.py puts in the spans)
 """
 import argparse
 import csv
@@ -157,7 +159,7 @@ def story_block(t, z):
         if name in known:
             return known[name]
         hits = {p for r, p in known.items() if r.endswith(' ' + name)}
-        return hits.pop() if len(hits) == 1 else name
+        return hits.pop() if len(hits) == 1 else fpztext.swap_names(name)
 
     def names(text):
         real = text.split(' & ')
@@ -227,6 +229,9 @@ def main(argv=None):
     gone = [paths.show(p) for p in pages if not p.exists()]
     if gone:
         sys.exit(f'{", ".join(gone)}: not there yet - run private/work/guide/page/assemble.py first')
+    pairs = fpztext.prose_names()
+    for p, data in pages.items():      # the names in the prose, for the Names switch
+        data['names'] = {k: pairs[int(k)] for k in sorted(set(re.findall(r'class="nm" data-k="(\d+)"', p.read_text(encoding='utf-8'))), key=int)}
     if all([pagedata.write(p, data, args.check) for p, data in pages.items()]) and args.check:
         print('docs/guide/: all four pages up to date')
     return 0
